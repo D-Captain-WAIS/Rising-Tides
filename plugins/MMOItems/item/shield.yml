@@ -1,0 +1,31 @@
+FREEDOM:
+  base:
+    material: SHIELD
+    custom-nbt:
+    - Freedom 1
+ABYSSSHIELD:
+  base:
+    material: SHIELD
+    custom-nbt:
+    - AbyssShield 1
+    disable-smelting: true
+    max-durability: 40640.0
+    name: §5[The Dragon's Protection]
+    disable-crafting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: RARE
+    unstackable: true
+    durability-bar: true
+    lore:
+    - §oA Shield fashioned from the scales of the
+    - §l[Abyssal Dragon]
+    ability:
+      ability1:
+        type: MAGICAL_SHIELD
+        power: 70.0
+        cooldown: 15.0
+        mode: SHIFT_LEFT_CLICK
+        radius: 7.0
+    revision-id: 5

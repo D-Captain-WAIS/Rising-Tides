@@ -1,0 +1,63 @@
+info:
+  namespace: hmcwraps
+items:
+  fire_sword:
+    display_name: <white>Fire Sword
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: fire_sword
+  fire_pickaxe:
+    display_name: <white>Fire Pickaxe
+    resource:
+      material: NETHERITE_PICKAXE
+      generate: false
+      model_path: fire_pickaxe
+  silver_sword:
+    display_name: <white>Silver Sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: silver_sword
+  silver_axe:
+    display_name: <white>Silver Axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: silver_axe
+  silver_pickaxe:
+    display_name: <white>Silver Pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: silver_pickaxe
+  silver_shovel:
+    display_name: <white>Silver Shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: silver_shovel
+  silver_hoe:
+    display_name: <white>Silver Hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: silver_hoe
+  fire_sword_wrap:
+    display_name: <white>Fire Sword Wrap
+    resource:
+      material: PAPER
+      generate: false
+      model_path: fire_sword_wrap
+  fire_pickaxe_wrap:
+    display_name: <white>Fire Pickaxe Wrap
+    resource:
+      material: PAPER
+      generate: false
+      model_path: fire_pickaxe_wrap
+  unwrapper:
+    display_name: <white>Unwrapper
+    resource:
+      material: PAPER
+      generate: false
+      model_path: unwrapper

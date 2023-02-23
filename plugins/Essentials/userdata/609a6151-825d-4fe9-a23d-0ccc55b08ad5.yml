@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 2.203.193.187
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1670802089886
+  login: 1670798406362
+money: '0'
+last-account-name: MuldiTakesLS
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 744.080259588834
+  y: 65.0
+  z: -218.07499998807907
+  yaw: -161.31005859375
+  pitch: 11.617462158203125

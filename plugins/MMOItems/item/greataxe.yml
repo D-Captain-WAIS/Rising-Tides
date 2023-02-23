@@ -1,0 +1,30 @@
+ADRAGONTALON:
+  base:
+    material: NETHERITE_AXE
+    custom-nbt:
+    - ADragonTalon 1
+    name: §5[Wrath of the Abyss]
+    lore:
+    - §oAn axe formed from a talon of
+    - §othe §l[Abyssal Dragon]§o.
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 30.0
+    attack-speed: 1.2
+    tier: RARE
+    unstackable: true
+    two-handed: true
+    durability-bar: true
+    max-durability: 40640.0
+    revision-id: 5
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        mode: SHIFT_LEFT_CLICK
+        damage: 25.0
+        cooldown: 15.0
+        radius: 3.0
+        knockback: 0.5

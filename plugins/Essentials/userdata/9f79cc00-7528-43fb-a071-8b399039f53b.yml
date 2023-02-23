@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 68.171.186.43
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1669572401706
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1669573318156
+  login: 1669572279518
+money: '0'
+last-account-name: bluesteam
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: -51.097345112524025
+  y: 78.0
+  z: 486.7277853250494
+  yaw: -51.60040283203125
+  pitch: -8.849950790405273

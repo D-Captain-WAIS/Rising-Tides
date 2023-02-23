@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/gold_ingot"
+  },
+
+  "overrides": [
+    {"predicate": {"custom_model_data":33}, "model": "item/gold_exclaimation_mark"},
+		{"predicate": {"custom_model_data":63}, "model": "item/gold_question_mark"}
+	]
+}

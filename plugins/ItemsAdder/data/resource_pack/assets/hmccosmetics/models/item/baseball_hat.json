@@ -1,0 +1,75 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "hmccosmetics:item/baseball_hat",
+		"particle": "hmccosmetics:item/baseball_hat"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 7],
+			"to": [12, 3, 15],
+			"faces": {
+				"north": {"uv": [4, 5, 8, 6.5], "texture": "#0"},
+				"east": {"uv": [4, 6.5, 8, 8], "texture": "#0"},
+				"south": {"uv": [0, 8, 4, 9.5], "texture": "#0"},
+				"west": {"uv": [8, 0, 12, 1.5], "texture": "#0"},
+				"up": {"uv": [4, 4, 0, 0], "texture": "#0"},
+				"down": {"uv": [4, 4, 0, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 0, 2],
+			"to": [12, 0, 7],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 2.5, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 4, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 2.5, 0], "texture": "#0"},
+				"up": {"uv": [8, 2.5, 4, 0], "texture": "#0"},
+				"down": {"uv": [8, 2.5, 4, 5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 6.5, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, 6.5, 0]
+		},
+		"ground": {
+			"translation": [0.5, 5, -1]
+		},
+		"gui": {
+			"rotation": [16, 143, 0],
+			"translation": [-1, 5.5, 0]
+		},
+		"head": {
+			"rotation": [2, 0, 0],
+			"translation": [0, 19.75, -6.25],
+			"scale": [2, 2, 2]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, -0.75, -10.5],
+			"scale": [1.3, 1.3, 1.3]
+		}
+	},
+	"groups": [
+		{
+			"name": "baseball_hat",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

@@ -1,0 +1,119 @@
+conversations:
+  bogarp:
+    quester: "\n&9[Marine] &bBogarp &1[Captain]"
+    first: "first_arrival,get_going"
+    stop: "true"
+    NPC_options:
+      first_arrival:
+        text: "\nHey kid, it's time for your first solo mission, we recently got some info on the Bluejam pirates. They're supposedly making their return on Dawn Island somewhere. Your goal here is to go in and capture the Pirate Captain Bluejam\n"
+        conditions: "tag_first_arrival"
+        pointers: "started,disease"
+      lightly:
+        text: "\nDon't take him lightly, he is a man worth 16,900,000 berries. My advice to start, try asking around Foosha Village they may know a thing or two.\n"
+        pointers: "yessir,anxiety"
+      get_going:
+        text: "\nGet going already! Don't come back until you have news!\n"
+    player_options:
+      started:
+        text: "How do I get started?\n"
+        pointers: "lightly"
+      disease:
+        text: "Oh no sorry I can't. I have the Bluejam Pirates disease. It's a fatal disease that stops me from going near them!\n"
+      yessir:
+        text: "Sir, Yessir!\n"
+        events: "investigation,remove_f_arrival,notify_investigation"
+      anxiety:
+        text: "Sorry I can't have social anxiety!\n"
+  tatianna:
+    quester: "\n&aTatianna Kelvin"
+    first: "hello,talked"
+    stop: "true"
+    NPC_options:
+      hello:
+        text: "\nHello officer, how can I help you?\n"
+        conditions: "!tag_tatianna"
+        pointers: "know"
+      nope:
+        text: "\nNope! sorry, never heard of those guys.\n"
+        events: "talked_tatianna"
+      talked:
+        text: "\nGood luck officer!\n"
+    player_options:
+      know:
+        text: "Know anything about the Bluejam Pirates?\n"
+        pointers: "nope"
+  nowell:
+    quester: "\n&aNowell Racquel"
+    first: "hello,talked"
+    stop: "true"
+    NPC_options:
+      hello:
+        text: "\nWhat do you want!?\n"
+        conditions: "!tag_nowell"
+        pointers: "sorry"
+      know:
+        text: "\nDon't know who that is and don't care, but you guys should be doing your job better and getting rid of those bandits!\n"
+        events: "talked_nowell"
+      talked:
+        text: "\nYou better catch those bandits!\n"
+    player_options:
+      sorry:
+        text: "Sorry I guess?  just trying to see if you know anything about the Bluejam Pirates.\n"
+        pointers: "know"
+  parry:
+    quester: "\n&aParry Jeffery"
+    first: "hello,talked"
+    stop: "true"
+    NPC_options:
+      hello:
+        text: "\nHow you doing little one?\n"
+        conditions: "!tag_parry"
+        pointers: "heard"
+      remember:
+        text: "\nI remember those pirates used to be an active bunch in Gray Terminal back in the day, but I haven't heard anything about em' in quite a long time!\n"
+        events: "talked_parry"
+      talked:
+        text: "\nAny luck on your search?\n"
+    player_options:
+      heard:
+        text: "Hi, have you heard anything about the Bluejam Pirates?\n"
+        pointers: "remember"
+  jai:
+    quester: "\n&aJai Shavonne"
+    first: "nice,talked"
+    stop: "true"
+    NPC_options:
+      nice:
+        text: "\nNice costume you got kid, you here to arrest me?\n"
+        conditions: "!tag_jai"
+        pointers: "badge"
+      sorry:
+        text: "\nOh so very sorry sir but no i haven't heard anything about them, and I'm totally not doing anything illegal!\n"
+        events: "talked_jai"
+      talked:
+        text: "\nNothing illegal here! No sir!\n"
+    player_options:
+      badge:
+        text: "*AHEM* *flashes badge*, No,  i'm here to ask if you know anything about the Bluejam Pirates.\n"
+        pointers: "sorry"
+  gil:
+    quester: "\n&aGil Lyssa"
+    first: "face,thank"
+    stop: "true"
+    NPC_options:
+      face:
+        text: "\nOh it's a new face! We don't get many of those, but how may I help you officer? \n"
+        conditions: "!tag_gil"
+        pointers: "heard"
+      bandits:
+        text: "\nI heard some bandits mention their name and- Oh my god! I think I can see some bandits approaching the village!\n"
+        events: "play_combatTut,talked_gil"
+      thank:
+        text: "\nThank you for helping our village out!\n"
+    player_options:
+      heard:
+        text: "Hi, have you heard anything about the Bluejam Pirates?\n"
+        pointers: "bandits"
+  
+  
+  

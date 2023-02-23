@@ -1,0 +1,12 @@
+GuraCrack:
+  Type: ARMOR_STAND
+  Skills:
+  - teleportto{location=0,-999,0} @self ~onTimer:160
+  Options:
+    Despawn: true
+    MovementSpeed: 0
+    HasGravity: false
+    Silent: true
+    Invisible: true
+  Equipment:
+  - mmoitems{type=MISCELLANEOUS;id=GURACRACK}:4

@@ -1,0 +1,117 @@
+# Attributes.yml
+
+# For full details, visit
+# http://dev.bukkit.org/bukkit-plugins/skillapi/pages/attributes/
+
+# List of available stats to modify:
+#   armor            | [PREM, 1.9+] Vanilla damage mitigation
+#   armor-toughness  | [PREM, 1.9+] Secondary vanilla damage mitigation
+#   attack-speed	 | [PREM, 1.9+] Weapon recharge time
+#   cooldown         | [PREM] Modifies skill cooldowns
+#   defense-<type>   | [PREM] Reduces damage taken from various damage sources.
+#                    |     See the DamageCause docs to see supported types.
+#                    |     Use lower-case versions of it, such as "defense-block_explosion".
+#   exp              | [PREM] increases all class experience gained
+#   health           | The max health of the player
+#   hunger           | [PREM] Increases how long hunger lasts. This attribute is always based off of a base value of 1. A resulting value of 2 would double how long the hunger bar lasts, for example.
+#   hunger-heal      | [PREM] Increases how much you heal while satiated
+#   knockback-resist | [PREM, 1.9+] Probability of resisting knockback as a decimal (1.0 is 100% change to resist)
+#   luck	         | [PREM, 1.9+] loot table chances
+#   mana	         | The max mana of the player
+#   mana-regen       | The amount of mana regeneration the player has
+#   move-speed       | The movement speed of the player
+#   physical-damage  | The amount of damage done by physical (basic or projectile) attacks
+#   physical-defense | The amount of damage taken by physical (basic or projectile) attacks
+#   skill-damage	 | The amount of damage done by skills
+#   skill-defense    | The amount of damage taken by skills
+#   skill-damage-<classification>  | [PREM] The amount of damage done by skills with the specified classification
+#   skill-defense-<classification> | [PREM] The amount of damage taken by skills with the specified classification
+constitution: 
+  display: 'Constitution'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '1'
+  icon-lore: 
+  - '&6Constitution &7(&2{amount}&7)'
+  - ''
+  - '&7Increases durability.'
+  global: 
+    condition:  {}
+    mechanic:  {}
+    target:  {}
+  stats: 
+    health: 'a+v'
+willpower: 
+  display: 'Willpower'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '6'
+  icon-lore: 
+  - '&6Willpower &7(&2{amount}&7)'
+  - ''
+  - '&7Increases endurance and will.'
+  global: 
+    condition:  {}
+    mechanic:  {}
+    target:  {}
+  stats: 
+    mana-regen: 'a*0.025+1*v'
+agility: 
+  display: 'Agility'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '5'
+  icon-lore: 
+  - '&6Agility &7(&2{amount}&7)'
+  - ''
+  - '&7Increase movement capabilities'
+dexterity: 
+  display: 'Dexterity'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '10'
+  icon-lore: 
+  - '&6Dexterity &7(&2{amount}&7)'
+  - ''
+  - '&7Increases weapon proficiency.'
+strength: 
+  display: 'Strength'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '14'
+  icon-lore: 
+  - '&6Strength &7(&2{amount}&7)'
+  - ''
+  - '&7Increases raw strength.'
+  global: 
+    condition:  {}
+    mechanic:  {}
+    target:  {}
+accuracy: 
+  display: 'Accuracy'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '14'
+  icon-lore: 
+  - '&6Accuracy &7(&2{amount}&7)'
+  - ''
+  - '&7Increases accuracy.'
+  global: 
+    condition:  {}
+    mechanic:  {}
+    target:  {}
+endurance: 
+  display: 'Endurance'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '14'
+  icon-lore: 
+  - '&6Endurance &7(&2{amount}&7)'
+  - ''
+  - '&7Increases stamina.'
+  global: 
+    condition:  {}
+    mechanic:  {}
+    target:  {}
+  stats: 
+    mana: 'a*0.025+1*v'

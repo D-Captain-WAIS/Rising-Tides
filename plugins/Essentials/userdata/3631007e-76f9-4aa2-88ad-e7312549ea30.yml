@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 99.24.23.12
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1669348985303
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1669439194109
+  login: 1669436258019
+money: '0'
+last-account-name: YukkiTheFQxx
+lastlocation:
+  world: e80714c3-3001-48f0-978d-b9fcfc236840
+  world-name: world
+  x: 76.32151154100224
+  y: 160.0
+  z: -286.7032300507632
+  yaw: -44.51165008544922
+  pitch: 20.981334686279297
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 38.98049338973676
+  y: 66.77547864366376
+  z: 872.0983038789755
+  yaw: -126.72894287109375
+  pitch: 10.39952564239502

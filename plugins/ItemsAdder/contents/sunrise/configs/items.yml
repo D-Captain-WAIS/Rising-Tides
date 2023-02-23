@@ -1,0 +1,30 @@
+info:
+  namespace: sunrise
+items:
+  bogarp_coat:
+    display_name: "Bogarp's Coat"
+    permission: sunrise.bogarpcoat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/marinecoat
+    item_flags:
+    - HIDE_ATTRIBUTES
+  rusty_cutlass:
+    display_name: "Rusty Cutlass"
+    permission: sunrise.rustyCutlass
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: item/rusty_cutlass
+    item_flags:
+    - HIDE_ATTRIBUTES
+  rusty_pistol:
+    display_name: "Rusty Pistol"
+    permission: sunrise.rustyPistol
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: item/rusty_pistol
+    item_flags:
+    - HIDE_ATTRIBUTES

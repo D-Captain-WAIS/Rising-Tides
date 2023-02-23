@@ -1,0 +1,27 @@
+action-bar:
+  require-unique: true
+  elements:
+    slot-1:
+      asset: action-bar
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 0
+        y: 85
+    slot-2:
+      asset: action-bar
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 0
+        y: 75
+    slot-3:
+      asset: action-bar
+      position:
+        x: 50.0
+        y: 0.0
+      offset:
+        x: 0
+        y: 65

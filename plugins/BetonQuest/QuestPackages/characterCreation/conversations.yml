@@ -1,0 +1,299 @@
+conversations:
+  marine:
+    quester: "\n&1&l[Marine]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Captain Cobalt, an officer of the Marines! The Navy protects the peace around the world, catching bad guys and putting them in jail! Wanna help make the world a better place? You get:\n\n-No island travel cost\n-Bonus Beli Rates\n-Salary\n"
+        conditions: "!tag_talked_cobalt"
+        events: "talked_cobalt"
+        pointers: "great,refuse"
+      choose:
+        text: "\n&fAre you sure you want to enlist? Being a Marine is hard work!\n"
+        pointers: "join,refuse"
+    player_options:
+      great: 
+        text: "Sounds great!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      join:
+        text: "Yes! I'll enlist!\n"
+        event: "make_marine,pick_race_tp"
+  pirate:
+    quester: "\n&c&l[Pirate]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Loofi, a pirate! Pirates are outlaws, going wherever they want, doing whatever they want! Sound fun? You get:\n\n-Bonus mob drop rate\n-Bonus boss drop rate\n-Bonus dungeon drop rate\n"
+        conditions: "!tag_talked_loofi"
+        events: "talked_loofi"
+        pointers: "fun,refuse"
+      choose:
+        text: "\n&fAre you sure you want to become a pirate? It's very dangerous!\n"
+        pointers: "join,refuse"
+    player_options:
+      fun: 
+        text: "Sounds fun!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      join:
+        text: "Yes! I'll become an outlaw!\n"
+        event: "make_pirate,pick_race_tp"
+  revolutionary:
+    quester: "\n&a&l[Revolutionary]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Sado, Chief of Staff of the Revolutionary Army! Revolutionaries fight with the people, for the people, against the tyrannical world nobles! Want to help make a better tomorrow? You get:\n\n-Bonus trade items\n-Bonus trade prices\n-Bonus information npcs and secrets\n"
+        conditions: "!tag_talked_sado"
+        events: "talked_sado"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to become a revolutionary? The very world will be your enemy!\n"
+        pointers: "join,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      join:
+        text: "Yes! I want to fight for the people!\n"
+        event: "make_rev,pick_race_tp"
+  fishman:
+    quester: "\n&1&l[Fishman]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fey! I'm Jimbay, a Fishman! Fishmen are creatures of the sea! Want to be one of us? You get:\n\n-Bonus swim speed\n-Water breathing\n-Fishmen only skills\n"
+        conditions: "!tag_talked_jimbay"
+        events: "talked_jimbay"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to become a Fishman?\n"
+        pointers: "become,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      become:
+        text: "Yes! I want to be a fishman!\n"
+        event: "pick_class_tp"
+  mink:
+    quester: "\n&a&l[Mink]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Karot, a Mink! Minks are creatures of the wild! Want to be one of us? You get:\n\n-Bonus agility\n-Bonus jump height\n-Mink only skills\n"
+        conditions: "!tag_talked_karot"
+        events: "talked_karot"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to become a mink?\n"
+        pointers: "become,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      become:
+        text: "Yes! I want to be a mink!\n"
+        event: "pick_class_tp"
+  cyborg:
+    quester: "\n&b&l[Cyborg]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Furanku, a Cyborg! Cyborgs are cybernetic enhanced beings! Want to be one of us? You get:\n\n-Bonus defense\n-Bonus accuracy\n-Cyborg only skills\n"
+        conditions: "!tag_talked_furanku"
+        events: "talked_furanku"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to become a cyborg?\n"
+        pointers: "become,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      become:
+        text: "Yes! I want to be a Cyborg!\n"
+        event: "pick_class_tp"
+  longLimb:
+    quester: "\n&d&l[Long-Limb]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Scratchy Ape, a long-limb! Long-limbs are humans with longer arms or legs! Want to be one of us? You get:\n\n-Bonus dexterity\n-longer range\n-Long-limb only skills\n"
+        conditions: "!tag_talked_scratchy"
+        events: "talked_scratchy"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to become a long-limb?\n"
+        pointers: "become,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      become:
+        text: "Yes! I want to be a long-limb!\n"
+        event: "pick_class_tp"
+  human:
+    quester: "\n&c&l[Human]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Sango, a human! Humans are beings with immense will! Want to be one of us? You get:\n\n-Bonus willpower\n-Bonus Endurance\n-Human only skills\n"
+        conditions: "!tag_talked_sango"
+        events: "talked_sango"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to become a human?\n"
+        pointers: "become,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      become:
+        text: "Yes! I want to be a human!\n"
+        event: "pick_class_tp"
+  mWeapon:
+    quester: "\n&c&l[M. Weapon]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Mihuk, the World's Strongest Swordsman! Behind me are Whitehair and Zoru! We specialize in combat using melee weapons! Want to be like us? You get:\n\n-Starter Class: Melee Weapon Newbie\n"
+        conditions: "!tag_talked_mihuk"
+        events: "talked_mihuk"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to fight with a Melee Weapon?\n"
+        pointers: "becomeMarine,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      becomeMarine:
+        text: "Yes! I want to use a melee weapon!\n"
+        event: "marine_tp_MWN"
+  stringed:
+    quester: "\n&a&l[Stringed]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Usap, an aspiring Brave Warrior of the sea! With me is Margarita of the Koga Tribe! We specialize in combat using ranged stringed weapons! Want to learn how to use a bow, crossbow, or slingshot? You get:\n\n-Starter Class: Stringed Weapon Newbie\n"
+        conditions: "!tag_talked_usap"
+        events: "talked_usap"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to fight with a Melee Weapon?\n"
+        pointers: "becomeMarine,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      becomeMarine:
+        text: "Yes! I want to use a stringed weapon!\n"
+  guns:
+    quester: "\n&b&l[Guns]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Benny Buckmeister, first mate of Red Hair Sanct! With me is August and Yusap! We specialize in combat using guns! Want to be gun-toting buckaneer? You get:\n\n-Starter Class: Gun Newbie\n"
+        conditions: "!tag_talked_benny"
+        events: "talked_benny"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to fight with guns?\n"
+        pointers: "becomeMarine,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      becomeMarine:
+        text: "Yes! I want to use guns!\n"
+  doctor:
+    quester: "\n&d&l[Doctor]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Lauh, Captain of the Heart Pirates! With me is Marth of the Whitebeard Pirates! We specialize in using medical means to help ourselves and others in combat! Want to be a deadly life-saver? You get:\n\n-Starter Class: Paramedic\n"
+        conditions: "!tag_talked_lauh"
+        events: "talked_lauh"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to fight with medical knowledge?\n"
+        pointers: "becomeMarine,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      becomeMarine:
+        text: "Yes! I want to fight with medical knowledge!\n"  
+  melee:
+    quester: "\n&1&l[Melee]"
+    first: "desc,choose"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      desc:
+        text: "\n&fHey! I'm Gap, Naval Hero! With me is Luchy and Radin! We specialize in using our bodies to fight! Want to be a living weapon? You get:\n\n-Starter Class: Scrapper\n"
+        conditions: "!tag_talked_gap"
+        events: "talked_gap"
+        pointers: "plan,refuse"
+      choose:
+        text: "\n&fAre you sure you want to fight using your own body?\n"
+        pointers: "becomeMarine,refuse"
+    player_options:
+      plan: 
+        text: "Sounds like a plan!\n"
+        pointer: "choose"
+      refuse:
+        text: "No thanks\n"
+      becomeMarine:
+        text: "Yes! I want to fight with just my body!\n"
+        event: "marine_tp_scrapper"       
+        
+

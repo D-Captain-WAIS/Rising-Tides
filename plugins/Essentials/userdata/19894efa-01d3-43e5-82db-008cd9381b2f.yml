@@ -1,0 +1,63 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: true
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676925967550
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677119625716
+  login: 1677095253769
+money: '9992800.0'
+last-account-name: _D_Captain_
+lastlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 540.1502611757655
+  y: 78.49781172853822
+  z: -147.34390844317417
+  yaw: -167.93777465820312
+  pitch: 68.6072006225586
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 999.111794182167
+  y: 89.5
+  z: -226.69999998807907
+  yaw: 175.142333984375
+  pitch: 47.27577209472656
+homes:
+  start:
+    world: 23e27574-e2c8-4689-8402-f4e488332383
+    world-name: dev
+    x: -371.6564285139756
+    y: -10.0
+    z: 364.57296044310374
+    yaw: 6.271052360534668
+    pitch: 71.14292907714844
+  marinecut:
+    world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+    world-name: dawn_island
+    x: 1032.9981800079897
+    y: 50.0
+    z: -175.69999998807907
+    yaw: 36.17337417602539
+    pitch: 36.23352813720703
+  bandit:
+    world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+    world-name: dawn_island
+    x: 538.0928859179644
+    y: 77.0
+    z: -146.65986701612977
+    yaw: -130.5021209716797
+    pitch: 38.89017105102539

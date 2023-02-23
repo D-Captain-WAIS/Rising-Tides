@@ -1,0 +1,38 @@
+limit: 2
+active: 1
+health: 50.0
+mana: 20.0
+accounts: 
+  acc1: 
+    classes: 
+      Scrapper: 
+        level: 1
+        points: 1
+        exp: 0.0
+    skills: 
+      Flail: 
+        level: 5
+      Hard Kick: 
+        level: 5
+      Hard Punch: 
+        level: 5
+    binds:  {}
+    bar: 
+      enabled: 'true'
+      slots:  []
+    attrib-points: 0
+    attribs:  {}
+    hover:  {}
+    instant:  {}
+    hunger: 1.0
+    extra: 
+      combatItems: 
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb400bmqqbeclhn4ob6egt68qb1dlnmsp2vedrmusj418006t31cs1g01i4c5mm2pr5000000000400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'

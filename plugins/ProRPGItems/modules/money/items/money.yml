@@ -1,0 +1,14 @@
+# Due to how this plugin handles modules a material is required even though no
+# material will drop when giving money.
+material: GOLD_NUGGET
+name: 'Money'
+lore:
+- '&6Gives you money'
+tier: common
+money:
+  min: 1
+  max: 10
+  allow-decimals: false
+level:
+  min: 1
+  max: 1

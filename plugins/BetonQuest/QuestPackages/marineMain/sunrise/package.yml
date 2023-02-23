@@ -1,0 +1,27 @@
+npcs:
+  "28" : "bogarp"
+  "29" : "bogarp"
+  "30" : "tatianna"
+  "31" : "tatianna"
+  "32" : "nowell"
+  "33" : "nowell"
+  "34" : "parry"
+  "35" : "parry"
+  "36" : "jai"
+  "37" : "jai"
+  "38" : "gil"
+  "39" : "gil"
+
+hide_npcs:
+  "28" : tag_investigation
+  "29" : "!tag_investigation"
+  "31" : "!tag_tatianna"
+  "33" : "!tag_nowell"
+  "35" : "!tag_parry"
+  "37" : "!tag_jai"
+  "39" : "!tag_gil"
+  "30" : tag_tatianna
+  "32" : tag_nowell
+  "34" : tag_parry
+  "36" : tag_jai
+  "38" : tag_gil

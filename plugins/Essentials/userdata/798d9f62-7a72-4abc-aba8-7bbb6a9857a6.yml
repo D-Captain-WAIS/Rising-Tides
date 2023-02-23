@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 24.158.112.245
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1670805608035
+  login: 1670803928886
+money: '0'
+last-account-name: TricksterTaei
+logoutlocation:
+  world: e80714c3-3001-48f0-978d-b9fcfc236840
+  world-name: world
+  x: 65.69999998807907
+  y: 160.5
+  z: -282.17948688013485
+  yaw: -80.1806640625
+  pitch: 34.49565887451172

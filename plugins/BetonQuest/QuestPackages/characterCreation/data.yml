@@ -1,0 +1,123 @@
+events:
+  #first login to pick faction
+    picking_faction: "tag add picking_faction"
+    start: "folder to_choose_race,freeze_pt1,god_pt1"
+    pick_faction_tp: "folder to_choose_faction,picking_faction,pick_faction,freeze_pt2"
+    freeze_pt1: "freeze 1000"
+    freeze_pt2: "freeze 260"
+  #picking race
+    pick_race_tp: "folder to_choose_race,chose_faction,pick_race"
+  #picking class
+    pick_class_tp: "folder to_choose_class,chose_race,pick_class"
+  #teleport to start
+    marine_first_quest: "notify &6&lWelcome to Sunrise Island!\n&9&oSpeak to Marine Captain Bogarp! io:title"
+    marine_scrapper: "folder to_marine_first,set_scrapper,marine_cut,marineMain-sunrise.first_arrival"
+    marine_start: "folder bon_voyage,force_sit,marine_first_quest delay:19 period:5"
+    marine_tp_scrapper: "folder satisfied_tp,marine_scrapper,marine_start period:5"
+    marine_MWN: "folder to_marine_cut,set_MWN,marine_cut,marineMain-sunrise.first_arrival"
+    marine_tp_MWN: "folder satisfied_tp,marine_MWN,marine_start period:5"
+  #add "I have chosen" flags
+    chose_faction: "tag add chose_faction"
+    chose_race: "tag add chose_race"
+    chose_class: "tag add chose_class"
+  #teleports
+    to_choose_faction: "teleport 1;138;-2;dev;0;0.5"
+    to_choose_race: "teleport 1;138;1;dev;179.8;1"
+    to_choose_class: "teleport 0;138;-3;dev;-1;1"
+    to_marine_first: "teleport 1048.5;66;-162.5;dawn_island;0;0"
+    to_marine_cut: "teleport 1032.5;51;-175.5;dawn_island;0;0"
+  #cutscenes
+    force_sit: "opsudo sit"
+    marine_cut: "command cinematic play marineOpen %player%"
+  #marine
+    talked_cobalt: "tag add talked_cobalt"
+    make_marine: "command lp user %player% parent set marine"
+  #pirate
+    talked_loofi: "tag add talked_loofi"
+    make_pirate: "command lp user %player% parent set pirate"
+  #rev
+    talked_sado: "tag add talked_sado"
+    make_rev: "command lp user %player% parent set revolutionary"
+  #chatclear
+    empty_line: "notify \n"
+    chat_clear: "folder empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line delay:1"
+  #fishman
+    talked_jimbay: "tag add talked_jimbay"
+  #mink
+    talked_karot: "tag add talked_karot"
+  #cyborg
+    talked_furanku: "tag add talked_furanku"
+  #long limb
+    talked_scratchy: "tag add talked_scratchy"
+  #human
+    talked_sango: "tag add talked_sango"
+  #Melee Weapon
+    talked_mihuk: "tag add talked_mihuk"
+    set_MWN: "opsudo class profess Melee Weapon Newbie"
+  #Stringed Weapon
+    talked_usap: "tag add talked_usap"
+  #Guns
+    talked_benny: "tag add talked_benny"
+  #Doctor
+    talked_lauh: "tag add talked_lauh"
+  #Melee
+    talked_gap: "tag add talked_gap"
+    set_scrapper: "opsudo class profess scrapper"
+  #God's Dialogue pt.1
+    oh_no: "notify &6&oOh no %player%! &c&lYou died! &6&oThat's too bad... io:subtitle"
+    second_chance: "notify &6&oThat's alright though! I'm giving you a second chance! io:subtitle"
+    welcome: "notify &6&oWelcome to... io:title"
+    rising_tides: "notify &b&l[Rising Tides] io:title"
+    but_first: "notify &6&oYou'll enter this wonderful new world soon! But first... io:subtitle"
+    god_pt1: "folder oh_no,second_chance,welcome,rising_tides_logo,but_first,pick_faction_tp,talk,talk2 period:5"
+    talk: "notify &d&oWalk up to any character and right-click them to talk to them! io:subtitle"
+    talk2: "notify &d&oOpen chat and click on the dialogue option you want! io:subtitle"
+    pick_faction: "notify &d&lPick your faction! io:title"
+    rising_tides_logo: "notify io:totem customisation:1 sound:ui.toast.challenge_complete"
+  #God's dialogue pt.2
+    pick_race: "notify &d&lNow, pick your race! io:title"
+  #God's dialogue pt.3
+    pick_class: "notify &d&lFinally, pick your class! io:title"
+  #God's dialogue pt.4 
+    satisfied_tp: "folder to_choose_faction,freeze_pt2,satisfied,chose_class"
+    satisfied: "notify &6&oI hope you're satisfied with your choices! io:subtitle"
+    bon_voyage: "notify &b&lBon, voyage sailor! \n&6&oGet ready for the adventure of a lifetime! io:title"
+
+
+conditions:
+  #for hiding NPCs
+    tag_picking_faction: "tag picking_faction"
+    tag_chose_faction: "tag chose_faction"
+    tag_chose_race: "tag chose_race"
+    tag_chose_class: "tag chose_class"
+    hide_faction: "or !tag_picking_faction,tag_chose_faction"
+    hide_race: "or !tag_chose_faction,tag_chose_race"
+    hide_class: "or !tag_chose_race,tag_chose_class"
+  #marine
+    tag_talked_cobalt: "tag talked_cobalt"
+  #pirate
+    tag_talked_loofi: "tag talked_loofi"
+  #rev
+    tag_talked_sado: "tag talked_sado"
+  #fishman
+    tag_talked_jimbay: "tag talked_jimbay"
+  #mink
+    tag_talked_karot: "tag talked_karot"
+  #cyborg
+    tag_talked_furanku: "tag talked_furanku"
+  #long limb
+    tag_talked_scratchy: "tag talked_scratchy"
+  #human
+    tag_talked_sango: "tag talked_sango"
+  #Melee Weapon
+    tag_talked_mihuk: "tag talked_mihuk"
+  #Stringed Weapon
+    tag_talked_usap: "tag talked_usap"
+  #Guns
+    tag_talked_benny: "tag talked_benny"
+  #Doctor
+    tag_talked_lauh: "tag talked_lauh"
+  #Melee
+    tag_talked_gap: "tag talked_gap"
+  
+  

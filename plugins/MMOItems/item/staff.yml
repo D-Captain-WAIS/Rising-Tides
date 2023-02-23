@@ -1,0 +1,67 @@
+YGGYJR:
+  base:
+    material: STICK
+    custom-nbt:
+    - yggyjr 1
+    name: §b§o[Yggy Jr.]
+    displayed-type: World Tree Branch
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: DIVINE
+    disable-death-drop: true
+    staff-spirit: VOID_SPIRIT
+    sounds:
+      on-left-click:
+        sound: entity.lightning_bolt.impact
+        volume: 1.0
+        pitch: 1.0
+      on-attack:
+        sound: entity.lightning_bolt.thunder
+        volume: 5.0
+        pitch: 1.0
+    ability:
+      ability2:
+        type: BLINK
+        mode: SHIFT_RIGHT_CLICK
+        cooldown: 1.0
+        range: 562.0
+      ability1:
+        type: LIGHTNING_BEAM
+        damage: 50.0
+        mana: 0.0
+        cooldown: 2.0
+        radius: 10.0
+        mode: RIGHT_CLICK
+    skill-damage: 562.0
+    attack-speed: 3.0
+    range: 562.0
+    attack-damage: 50.0
+ABYSSSTAFF:
+  base:
+    material: STICK
+    custom-nbt:
+    - AbyssStaff 1
+    name: §d[Gift of the Dragon]
+    displayed-type: Staff
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: UNCOMMON
+    staff-spirit: VOID_SPIRIT
+    ability:
+      ability1:
+        type: BLINK
+        cooldown: 30.0
+        range: 5.0
+        mode: RIGHT_CLICK
+    attack-damage: 16.0
+    attack-speed: 2.0
+    unstackable: true
+

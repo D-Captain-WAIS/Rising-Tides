@@ -1,0 +1,21 @@
+bogarp_coat:
+  slot: BACKPACK
+  permission: "sunrisecosmetics.bogarpcoat"
+  item:
+    material: itemsadder:sunrise:bogarp_coat
+    name: "<blue>Bogarp's Coat<blue>"
+    amount: 1
+rusty_pistol:
+  slot: OFFHAND
+  permission: "sunrisecosmetics.rusty_pistol"
+  item:
+    material: itemsadder:sunrise:rusty_pistol
+    name: "<dark_gray><bold>Rusty Pistol"
+    amount: 1
+rusty_cutlass:
+  slot: OFFHAND
+  permission: "sunrisecosmetics.rusty_cutlass"
+  item:
+    material: itemsadder:sunrise:rusty_cutlass
+    name: "<dark_gray><bold>Rusty Cutlass"
+    amount: 1

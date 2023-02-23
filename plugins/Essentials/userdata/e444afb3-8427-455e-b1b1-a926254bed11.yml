@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 76.216.217.134
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1670207011318
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1670210820883
+  login: 1670206878338
+money: '0'
+last-account-name: Shapes_is_here
+nickname: Sadcat
+lastlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 506.7422972349454
+  y: 160.7137121611794
+  z: -125.26964781497361
+  yaw: -136.40692138671875
+  pitch: -24.54492950439453
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 57.48061440079671
+  y: 71.0
+  z: 726.9542518872153
+  yaw: 90.967529296875
+  pitch: 42.29963302612305

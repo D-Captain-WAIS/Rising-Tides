@@ -1,0 +1,49 @@
+enabled: true
+
+items:
+  IRON_SWORD:
+    wraps:
+      1:
+        permission: 'sunrise.rusty_cutlass'
+        uuid: 'rusty_cutlass'
+        id: 'itemsadder:sunrise:rusty_cutlass'
+        name: '<dark gray><bold> <gray>Wrap'
+        lore:
+          - '<gray>Apply this wrap to make your sword look silver!'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+        physical:
+          # The Bukkit material or a hook
+          id: 'itemsadder:sunrise:rusty_cutlass'
+          # Name displayed
+          name: '<red><bold>[Weapon Chassis] <dark_gray><bold>Rusty Cutlass'
+          # If the wrap should be given to the player after they unwrap the item or re wrap it
+          keep-after-unwrap: false
+          # Lore displayed
+          lore:
+            - '<white><italic>Apply this to an weapon will to change its appearance!'
+          flags:
+          - 'HIDE_ATTRIBUTES'
+  IRON_HOE:
+    wraps:
+      1:
+        permission: 'sunrise.rusty_pistol'
+        uuid: 'rusty_pistol'
+        id: 'itemsadder:sunrise:rusty_pistol'
+        name: '<dark gray><bold> <gray>Wrap'
+        lore:
+          - '<gray>Apply this wrap to make your sword look silver!'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+        physical:
+          # The Bukkit material or a hook
+          id: 'itemsadder:sunrise:rusty_pistol'
+          # Name displayed
+          name: '<red><bold>[Weapon Chassis] <dark_gray><bold>Rusty Pistol'
+          # If the wrap should be given to the player after they unwrap the item or re wrap it
+          keep-after-unwrap: false
+          # Lore displayed
+          lore:
+            - '<white><italic>Apply this to an weapon will to change its appearance!'
+          flags:
+          - 'HIDE_ATTRIBUTES'

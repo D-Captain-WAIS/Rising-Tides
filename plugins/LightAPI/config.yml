@@ -1,0 +1,18 @@
+general:
+  debug: false
+  enable-metrics: true
+  enable-compatibility-mode: true
+  force-enable-legacy: true
+  specific-handler-path: none
+  handlers:
+    craftbukkit:
+      factory-path: ru.beykerykt.minecraft.lightapi.bukkit.internal.handler.craftbukkit.HandlerFactory
+BukkitBackgroundServiceImpl:
+  corePoolSize: 1
+BukkitScheduledChunkObserverImpl:
+  tick-period: 2
+BukkitScheduledLightEngineImpl:
+  relight-strategy: DEFERRED
+  tick-period: 1
+  max-time-ms-in-per-tick: 50
+  max-iterations-in-per-tick: 256

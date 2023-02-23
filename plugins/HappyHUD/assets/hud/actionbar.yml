@@ -1,0 +1,7 @@
+action-bar:
+  layers:
+    text:
+      text: "%arg-1%"
+      font: "default-unicode"
+      outlined: true
+      align: center

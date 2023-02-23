@@ -1,0 +1,38 @@
+SUNDAYSPECIAL:
+  base:
+    material: APPLE
+    custom-nbt:
+    - ramen 1
+    name: §d[Sunday Special]
+    effects:
+      ABSORPTION:
+        duration: 120.0
+        amplifier: 4.0
+      REGENERATION:
+        duration: 20.0
+        amplifier: 2.0
+      FIRE_RESISTANCE:
+        duration: 300.0
+        amplifier: 1.0
+      DAMAGE_RESISTANCE:
+        duration: 300.0
+        amplifier: 1.0
+    restore-food: 4.0
+    restore-saturation: 9.6
+    lore:
+    - §oMade with and by §c§l[Heart]§5§o.
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    revision-id: 3
+    unstackable: true
+MERAMERA:
+  base:
+    material: APPLE
+    custom-nbt:
+    - MeraMera 1
+TORITORI:
+  base:
+    material: APPLE
+    custom-nbt:
+    - ToriTori 1

@@ -1,0 +1,83 @@
+events:
+  first_arrival: "tag add first_arrival"
+  remove_f_arrival: "tag delete first_arrival"
+  investigation: "tag add investigation"
+  #talk to NPCs
+  talked_tatianna: "tag add talked_tatianna"
+  talked_nowell: "tag add talked_nowell"
+  talked_parry: "tag add talked_parry"
+  talked_jai: "tag add talked_jai"
+  talked_gil: "tag add talked_gil"
+  #trigger cutscene
+  freeze_cut: "freeze 100"
+  combatTut: "command cinematic play marineCombatTut %player%"
+  play_combatTut: "folder freeze_cut,combatTut period:5"
+  #notify
+  notify_investigation: "notify &9&oSpeak to villagers around Foosha!\nFind out more about the Bluejam Pirates! io:title"
+
+conditions:
+  tag_first_arrival: "tag first_arrival"
+  tag_investigation: "tag investigation"
+  tag_tatianna: "tag talked_tatianna"
+  tag_nowell: "tag talked_nowell"
+  tag_parry: "tag talked_parry"
+  tag_jai: "tag talked_jai"
+  tag_gil: "tag talked_gil"
+
+items:
+  quest_available: "GOLD_INGOT custom-model-data:33"
+  quest_ongoing: "IRON_INGOT custom-model-data:63"
+  quest_objective: "GOLD_INGOT custom-model-data:63"
+  quest_complete: "IRON_INGOT custom-model-data:33"
+
+npc_holograms:
+  quest_available:
+    lines:
+      - "item:quest_available"
+    conditions: "tag_first_arrival"
+    check_interval: 20
+    npcs:
+    - 28
+  quest_ongoing:
+    lines:
+      - "item:quest_ongoing"
+    conditions: "tag_investigation"
+    check_interval: 20
+    npcs:
+    - 29
+  objective_tatianna:
+    lines:
+      - "item:quest_objective"
+    conditions: "!tag_tatianna"
+    check_interval: 20
+    npcs:
+    - 30
+  objective_nowell:
+    lines:
+      - "item:quest_objective"
+    conditions: "!tag_nowell"
+    check_interval: 20
+    npcs:
+    - 32
+  objective_parry:
+    lines:
+      - "item:quest_objective"
+    conditions: "!tag_parry"
+    check_interval: 20
+    npcs:
+    - 34
+  objective_jai:
+    lines:
+      - "item:quest_objective"
+    conditions: "!tag_jai"
+    check_interval: 20
+    npcs:
+    - 36
+  objective_gil:
+    lines:
+      - "item:quest_objective"
+    conditions: "!tag_gil"
+    check_interval: 20
+    npcs:
+    - 38
+  

@@ -1,0 +1,66 @@
+limit: 2
+active: 1
+health: 50.0
+mana: 20.0
+accounts: 
+  acc1: 
+    classes: 
+      Scrapper: 
+        level: 27
+        points: 8
+        exp: 575.0
+    skills: 
+      Flail: 
+        level: 5
+      Hard Kick: 
+        level: 5
+      Chaaaaaarge: 
+        level: 1
+      Dropkick: 
+        level: 3
+      Skedaddle: 
+        level: 5
+      Overhand Swing: 
+        level: 1
+      Get Out Of The Way: 
+        level: 3
+      Low Kick: 
+        level: 1
+      Hard Punch: 
+        level: 5
+      OneTwoThreeFour: 
+        level: 3
+      Double Punch: 
+        level: 3
+      Running Kick: 
+        level: 4
+    binds:  {}
+    bar: 
+      enabled: 'true'
+      slots: 
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      Hard Punch: 1
+      Hard Kick: 2
+      Flail: 3
+      Dropkick: 4
+      Get Out Of The Way: 5
+    attrib-points: 26
+    attribs:  {}
+    hover:  {}
+    instant:  {}
+    hunger: 1.0
+    extra: 
+      combatItems: 
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - '5000080016ip001pmmirj5cdp62pjk79m6aob40400agrfeln780g0'
+      - 'a0000g002d5i005bdd5n6aoric5j78ejnd1im2t2vedimap3j0400agrfeln78100'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'

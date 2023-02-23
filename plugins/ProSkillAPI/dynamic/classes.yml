@@ -1,0 +1,86 @@
+loaded: 'true'
+Scrapper: 
+  name: 'Scrapper'
+  action-bar: ''
+  prefix: ''
+  group: 'class'
+  mana: '&2Stamina'
+  max-level: 1000
+  parent: ''
+  needs-permission: 'true'
+  attributes: 
+    health-base: '50'
+    health-scale: '0'
+    mana-base: '20'
+    mana-scale: '0'
+    vitality-base: '0'
+    vitality-scale: '0'
+    spirit-base: '0'
+    spirit-scale: '0'
+    intelligence-base: '0'
+    intelligence-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+  mana-regen: 1.0
+  tree: 'BASIC_VERTICAL'
+  blacklist: 
+  - 'BOW'
+  - 'CROSSBOW'
+  skills: 
+  - 'Hard Punch'
+  - 'Hard Kick'
+  - 'Flail'
+  - 'Skedaddle'
+  - 'Double Punch'
+  - 'OneTwoThreeFour'
+  - 'Overhand Swing'
+  - 'Running Kick'
+  - 'Dropkick'
+  - 'Low Kick'
+  - 'Get Out Of The Way'
+  - 'Chaaaaaarge'
+  icon: 'YELLOW_DYE'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&dI like fighting with my hands and feet.'
+  exp-source: 16
+Melee Weapon Newbie: 
+  name: 'Melee Weapon Newbie'
+  action-bar: ''
+  prefix: ''
+  group: 'class'
+  mana: '&2Stamina'
+  max-level: 1000
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '50'
+    health-scale: '0'
+    mana-base: '50'
+    mana-scale: '0'
+    vitality-base: '0'
+    vitality-scale: '0'
+    spirit-base: '0'
+    spirit-scale: '0'
+    intelligence-base: '0'
+    intelligence-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+  mana-regen: 1.0
+  tree: 'REQUIREMENT'
+  blacklist:  []
+  skills: 
+  - 'Two Handed Swing'
+  - 'Piercing Strike'
+  - 'Hilt Strike'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&dClass 1'
+  exp-source: 16

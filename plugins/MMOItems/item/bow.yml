@@ -1,0 +1,64 @@
+ABYSSRANGERBOW:
+  base:
+    material: BOW
+    name: §d[Abyss Ranger's Bow]
+    attack-damage: 6.0
+    enchants:
+      unbreaking: 5.0
+      power: 7.0
+      infinity: 1.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: COMMON
+    lore:
+    - §oA Bow crafted from the Dragon's power
+    - §ofor use of its rangers.
+ABYSSBOWMASTERBOW:
+  base:
+    material: BOW
+    name: §d[Abyss Bowmaster's Bow]
+    attack-damage: 6.0
+    enchants:
+      unbreaking: 5.0
+      power: 10.0
+      infinity: 1.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: UNCOMMON
+    lore:
+    - §oA Bow crafted from the Dragon's power
+    - §ofor use of its Bowmasters.
+    revision-id: 2
+ADRAGONBOW:
+  base:
+    material: BOW
+    custom-nbt:
+    - ADragonBow 1
+    name: §5[Dragonwing Bow]
+    lore:
+    - §oA Bow formed from the wings of the
+    - §l[Abyssal Dragon]
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    arrow-particles:
+      particle: DRAGON_BREATH
+      amount: 10
+      speed: 0.01
+    max-durability: 60821.0
+    attack-damage: 45.0
+    arrow-velocity: 1.2
+    tier: RARE
+    unstackable: true
+    disable-repairing: true
+    attack-speed: 0.5
+    pvp-damage: 0.0
+    enchants:
+      infinity: 1.0

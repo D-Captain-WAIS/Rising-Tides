@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 69.116.168.131
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1669436519094
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1669438002258
+  login: 1669434749554
+money: '0'
+last-account-name: Twighnightplane
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 3.5193806870266604
+  y: 65.0
+  z: 943.9208388360036
+  yaw: 148.14544677734375
+  pitch: 14.797467231750488
+lastlocation:
+  world: e80714c3-3001-48f0-978d-b9fcfc236840
+  world-name: world
+  x: 76.40384457312426
+  y: 160.0
+  z: -286.4762600850152
+  yaw: -138.3125
+  pitch: 36.59654998779297

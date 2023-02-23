@@ -1,0 +1,163 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "./mereoleona"
+	},
+	"elements": [
+		{
+			"name": "Spine",
+			"from": [8, 0, 1.5],
+			"to": [9, 16, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 7.9, -0.4]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.25, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 0.25, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 0.25, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 0.25, 8], "texture": "#0"},
+				"up": {"uv": [0, 0, 0.5, 0.25], "texture": "#0"},
+				"down": {"uv": [0, 0, 0.5, 0.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Page",
+			"from": [8.5, 0.25, 2],
+			"to": [8.5, 15.75, 12.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 7.9, -0.4]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.5, 16], "texture": "#0"},
+				"east": {"uv": [10.75, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [15.75, 0, 16, 15.75], "texture": "#0"},
+				"west": {"uv": [11, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [15.75, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [15.75, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Front Pages",
+			"from": [8.25, 0.25, 2],
+			"to": [8.5, 15.75, 12.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 7.9, -0.4]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.5, 16], "texture": "#0"},
+				"east": {"uv": [10.75, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [15.75, 0, 16, 15.75], "texture": "#0"},
+				"west": {"uv": [11, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [15.75, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [15.75, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Back Pages",
+			"from": [8.5, 0.25, 2],
+			"to": [8.75, 15.75, 12.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 7.9, -0.4]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.5, 16], "texture": "#0"},
+				"east": {"uv": [10.75, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [15.75, 0, 16, 15.75], "texture": "#0"},
+				"west": {"uv": [11, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [15.75, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [15.75, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Back Cover",
+			"from": [8.75, 0, 2],
+			"to": [9, 16, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 7.9, -0.4]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.5, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 5.25, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 0.25, 15.75], "texture": "#0"},
+				"west": {"uv": [5.5, 0, 10.5, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 0.24024, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 0.25, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Front Cover",
+			"from": [8, 0, 2],
+			"to": [8.25, 16, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 7.9, -0.4]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.5, 16], "texture": "#0"},
+				"east": {"uv": [5.5, 0, 10.5, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 0.25, 15.75], "texture": "#0"},
+				"west": {"uv": [0, 0, 5.25, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 0.25, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 0.25, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [-0.25, 2.5, 0.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0.75, 1.5, -0.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 46.25, 0],
+			"translation": [5.75, -2.75, -5.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-13, 41, 4],
+			"translation": [3.5, -0.5, -3]
+		},
+		"ground": {
+			"translation": [0, 6.25, 0]
+		},
+		"gui": {
+			"rotation": [0, 90, 0],
+			"translation": [0.75, 0, 0],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [-0.5, 0.25, -1]
+		}
+	},
+	"groups": [
+		{
+			"name": "Book",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [
+				0,
+				{
+					"name": "Page",
+					"origin": [0.5, 8, -6],
+					"color": 0,
+					"children": [1]
+				},
+				{
+					"name": "FrontP",
+					"origin": [0, 8, -6],
+					"color": 0,
+					"children": [2]
+				},
+				{
+					"name": "BackP",
+					"origin": [1, 8, -6],
+					"color": 0,
+					"children": [3]
+				},
+				{
+					"name": "BackC",
+					"origin": [1, 8, -6],
+					"color": 0,
+					"children": [4]
+				},
+				{
+					"name": "FrontC",
+					"origin": [0, 8, -6],
+					"color": 0,
+					"children": [5]
+				}
+			]
+		}
+	]
+}

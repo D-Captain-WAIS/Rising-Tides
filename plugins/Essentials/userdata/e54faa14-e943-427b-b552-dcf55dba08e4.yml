@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: true
+muted: false
+jailed: false
+ip-address: 110.175.159.109
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1670466469484
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1670483970085
+  login: 1670466175393
+money: '0'
+last-account-name: uwudaddychan
+lastlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 678.3462871760476
+  y: 68.08822874030916
+  z: -212.610582537762
+  yaw: -160.4770965576172
+  pitch: 3.453341484069824
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 621.356036904677
+  y: 76.23707510742845
+  z: -215.03186582130184
+  yaw: -108.00701141357422
+  pitch: 19.9503173828125

@@ -1,0 +1,6 @@
+stamina:
+  value: '%sapi_default_scurrentmana%'
+  max: '%sapi_default_scurrentmaxmana%'
+class_exp:
+  value: '%sapi_player_class_scurrentexp%'
+  max: '%sapi_player_class_srequiredexp%'

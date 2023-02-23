@@ -1,0 +1,10 @@
+FAX:
+  base:
+    material: PAPER
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    unbreakable: true
+    hide-enchants: true
+    custom-nbt:
+    - Fax 1

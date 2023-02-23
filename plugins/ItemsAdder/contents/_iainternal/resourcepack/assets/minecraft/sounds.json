@@ -1,0 +1,17 @@
+{
+  "eldest.invasion_warning": {
+    "sounds": [
+      "invasionwarning"
+    ]
+  },
+  "eldest.dragon_arrival": {
+    "sounds": [
+      "dragonsarrival"
+    ]
+  },
+  "abyss.lightspeed_exit": {
+    "sounds": [
+      "lightspeedexit"
+    ]
+  }
+}

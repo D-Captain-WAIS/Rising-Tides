@@ -1,0 +1,23 @@
+limit: 2
+active: 1
+health: 0.0
+mana: 0.0
+accounts: 
+  acc1: 
+    classes:  {}
+    skills:  {}
+    binds:  {}
+    bar: 
+      enabled: 'true'
+      slots: 
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    attrib-points: 7
+    attribs:  {}
+    hover:  {}
+    instant:  {}
+    hunger: 1.0

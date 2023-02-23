@@ -1,0 +1,76 @@
+CAPSUMMON:
+  base:
+    material: HEART_OF_THE_SEA
+    name: §b§o[Spirit of Adventure]
+    lore:
+    - §9§oAn orb filled with the energy of the ocean
+    - §9§oand the spirit of adventure.
+    - __________________________________
+    - §c§oFind §b§l[Phoenix] §c§o on §f§l[§9§lThe White Leviathan§f§l]
+    - §c§oand give this to him to summon §4§l[D. Captain]
+    - §9§l§oGod of the Ocean, Adventure, and Tales
+    displayed-type: Deity Summoning Item
+    unstackable: true
+CAPCALL:
+  base:
+    material: BOOK
+    displayed-type: Deity Call Item
+    name: §b§o[Tales of The Unknown]
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    lore:
+    - §9§oAn book of tales regarding the possible impossible
+    - __________________________________
+    - §c§oFind §b§l[Phoenix] §c§o on §f§l[§9§lThe White Leviathan§f§l]
+    - §c§oand give this to him to call §4§l[D. Captain]
+    - §9§l§oGod of the Ocean, Adventure, and Tales
+    unstackable: true
+OBIHILT:
+  base:
+    material: STICK
+    custom-nbt:
+    - obiwan 1
+LUKEHILT:
+  base:
+    material: STICK
+    custom-nbt:
+    - luke 1
+SUNDAYSUMMON:
+  base:
+    material: END_CRYSTAL
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    name: §d§o[Fragment of Rampage]
+    displayed-type: Deity Summoning Item
+    lore:
+    - §b§oA trapped piece of raging magic that would cause
+    - §b§oimpending doom should it ever be released.
+    - '---------------------------------------'
+    - §5§oGive this to the Red Panda §8§l[Styx] §5§oin the
+    - §a§l[The Wild Alcove]§5§o to summon §4§l[Sunday]§5§o.
+    - §b§l§oGod of Madness, Beasts, and The Wild.
+SUNDAYCALL:
+  base:
+    material: BAMBOO
+    displayed-type: Deity Calling Item
+    name: §d§o[Odd Bamboo]
+    lore:
+    - §b§oLight it like sage but make sure not to breathe it in...
+    - '---------------------------------------'
+    - §5§oGive this to the Red Panda §8§l[Styx] §5§oin the
+    - §a§l[The Wild Alcove]§5§o to call §4§l[Sunday]§5§o.
+    - §b§l§oGod of Madness, Beasts, and The Wild.
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true

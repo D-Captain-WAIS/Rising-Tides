@@ -1,0 +1,116 @@
+marine-hp:
+  layers:
+    hp-text:
+      text: "<white>%hp-bar-value%/%hp-bar-max%"
+      font: "default-outline"
+      offset:
+        x: 90
+        y: -30
+    outline:
+      texture:
+        path: assets/r-tides/hp_empty.png
+    hp-bar:
+      texture:
+        path: assets/r-tides/marine_noborder.png
+      function:
+        listener: health
+        increment: 16
+        orientation: horizontal
+pirate-hp:
+  layers:
+    hp-text:
+      text: "<white>%hp-bar-value%/%hp-bar-max%"
+      font: "default-outline"
+      offset:
+        x: 90
+        y: -30
+    outline:
+      texture:
+        path: assets/r-tides/hp_empty.png
+    hp-bar:
+      texture:
+        path: assets/r-tides/pirate_noborder.png
+      function:
+        listener: health
+        increment: 16
+        orientation: horizontal
+revarmy-hp:
+  layers:
+    hp-text:
+      text: "<white>%hp-bar-value%/%hp-bar-max%"
+      font: "default-outline"
+      offset:
+        x: 90
+        y: -30
+    outline:
+      texture:
+        path: assets/r-tides/hp_empty.png
+    hp-bar:
+      texture:
+        path: assets/r-tides/revarmy_noborder.png
+      function:
+        listener: health
+        increment: 16
+        orientation: horizontal
+cp-hp:
+  layers:
+    hp-text:
+      text: "<white>%hp-bar-value%/%hp-bar-max%"
+      font: "default-outline"
+      offset:
+        x: 90
+        y: -30
+    outline:
+      texture:
+        path: assets/r-tides/hp_empty.png
+    hp-bar:
+      texture:
+        path: assets/r-tides/worldgovt_noborder.png
+      function:
+        listener: health
+        increment: 16
+        orientation: horizontal
+stamina:
+  layers:
+    stm-text:
+      text: "<white>%stm-bar-value%/%stm-bar-max%"
+      font: "default-outline"
+      offset:
+        x: 85
+        y: -15
+    outline:
+      texture:
+        path: assets/r-tides/stamina_empty.png
+    stm-bar:
+      texture:
+        path: assets/r-tides/stamina_full.png
+      offset:
+        x: 6
+        y: -3
+      function:
+        listener: stamina
+        increment: 16
+        orientation: horizontal
+exp-level:
+  layers:
+    level-exp:
+      text: "<white>Level: %sapi_player_class_level% Exp: %exp-bar-value%/%exp-bar-max%"
+      font: "default-outline"
+      offset:
+        x: 2
+        y: -15
+    outline:
+      texture:
+        path: assets/r-tides/exp_empty.png
+    exp-bar:
+      texture:
+        path: assets/r-tides/exp.png
+      offset:
+        x: 5
+        y: -1
+      function:
+        listener: class_exp
+        increment: 16
+        orientation: horizontal
+        
+

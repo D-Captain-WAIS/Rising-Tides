@@ -1,0 +1,57 @@
+configuration_version: v5
+worlds:
+  plots:
+    plot:
+      height: 62
+      size: 100
+      filling: stone
+      floor: grass_block
+      bedrock: true
+      biome: minecraft:forest
+      sign_material: OAK_WALL_SIGN
+      auto_merge: false
+      create_signs: true
+    wall:
+      place_top_block: true
+      block: smooth_quartz_slab
+      block_claimed: red_nether_brick_slab
+      filling: stone
+      height: 62
+    road:
+      width: 9
+      height: 62
+      block: smooth_stone
+      flags: {}
+    misc_spawn_unowned: false
+    home:
+      nonmembers: side
+      default: side
+    schematic:
+      specify_on_claim: false
+      on_claim: false
+      file: 'null'
+      schematics: []
+    chat:
+      forced: false
+      enabled: true
+    economy:
+      prices:
+        merge: 100
+        sell: 100
+        claim: 100
+      use: false
+    world:
+      max_gen_height: 319
+      max_height: 320
+      gamemode: creative
+      min_gen_height: -64
+      min_height: -63
+      border: false
+    event:
+      spawn:
+        egg: false
+        breeding: false
+        custom: true
+    natural_mob_spawning: false
+    mob_spawner_spawning: false
+    flags: {}

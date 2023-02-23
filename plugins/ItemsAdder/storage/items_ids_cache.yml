@@ -1,0 +1,64 @@
+PAPER:
+  z_iainternal:icon_left_blue: 10000
+  z_iainternal:icon_right_blue: 10001
+  z_iainternal:icon_search: 10002
+  z_iainternal:icon_cancel: 10003
+  z_iainternal:icon_arrow_chest: 10004
+  z_iainternal:icon_back_orange: 10005
+  z_iainternal:icon_next_orange: 10006
+  utilites:vivre: 10007
+  _iainternal:icon_left_blue: 10008
+  _iainternal:icon_right_blue: 10009
+  _iainternal:icon_search: 10010
+  _iainternal:icon_cancel: 10011
+  _iainternal:icon_arrow_chest: 10012
+  _iainternal:icon_back_orange: 10013
+  _iainternal:icon_next_orange: 10014
+  utilities:vivre: 10015
+  hmccosmetics:backpack: 10016
+  hmccosmetics:backpack_thirdperson: 10017
+  hmccosmetics:lantern_cosmetic: 10018
+  hmccosmetics:baseball_hat: 10019
+  hmccosmetics:hmccosmetics_icon: 10020
+  hmccosmetics:arrow_back: 10021
+  hmccosmetics:arrow_next: 10022
+  hmccosmetics:kite_item: 10023
+  hmccosmetics:future_wings: 10024
+  hmccosmetics:future_wings_thirdperson: 10025
+  hmccosmetics:frog_hat: 10026
+  hmccosmetics:jetpack: 10027
+  hmccosmetics:hammer: 10028
+  hmcwraps:fire_sword_wrap: 10029
+  hmcwraps:fire_pickaxe_wrap: 10030
+  hmcwraps:unwrapper: 10031
+  sunrise:bogarp_coat: 10032
+PLAYER_HEAD:
+  __manually_handled:iainternal__player_hat_slot: 10000
+  __manually_handled:iainternal__player_left_arm_slot: 10001
+  __manually_handled:iainternal__player_right_arm_slot: 10002
+  __manually_handled:iainternal__player_phead_0: 10003
+  __manually_handled:iainternal__player_parm_left_3: 10004
+  __manually_handled:iainternal__player_pbody_2: 10005
+  __manually_handled:iainternal__player_pleg_left_1: 10006
+  __manually_handled:iainternal__player_pleg_right_5: 10007
+  __manually_handled:iainternal__player_parm_right_4: 10008
+LEATHER_HORSE_ARMOR:
+  hmccosmetics:beanie: 10000
+  hmccosmetics:paintbrush: 10001
+  hmccosmetics:explorer_backpack: 10002
+NETHERITE_SWORD:
+  hmcwraps:fire_sword: 10000
+NETHERITE_PICKAXE:
+  hmcwraps:fire_pickaxe: 10000
+IRON_SWORD:
+  hmcwraps:silver_sword: 10000
+  sunrise:rusty_cutlass: 10001
+IRON_AXE:
+  hmcwraps:silver_axe: 10000
+IRON_PICKAXE:
+  hmcwraps:silver_pickaxe: 10000
+IRON_SHOVEL:
+  hmcwraps:silver_shovel: 10000
+IRON_HOE:
+  hmcwraps:silver_hoe: 10000
+  sunrise:rusty_pistol: 10001

@@ -1,0 +1,117 @@
+conversations:
+  God:
+    quester: "&6&l[God]"
+    first: choose
+    NPC_options:
+      choose:
+        text: "&fWhat do you need?"
+        pointers: "class,points,dummies"
+      class_select:
+        text: "&fWhat about your class do you need?"
+        pointers: "scrapper,reset_class"
+      set_scrapper:
+        text: "&fYou are now a scrapper"
+        events: "set_scrapper"
+      class_reset:
+        text: "&fYour class has been reset"
+        events: "reset_class_final"
+      points_select:
+        text: "&fWhat points do you want to give to yourself? (You cannot subtract points, you'll have to reset your class)"
+        pointers: "exp,sp"
+      exp_choose: 
+        text: "&fHow much exp do you want?"
+        pointers: "100xp,500xp,1000xp,5000xp,10000xp"
+      100xp_confirm:
+        text: "&fHere you go"
+        events: "give_100xp"
+      500xp_confirm:
+        text: "&fHere you go"
+        events: "give_500xp"
+      1000xp_confirm:
+        text: "&fHere you go"
+        events: "give_1000xp"
+      5000xp_confirm:
+        text: "&fHere you go"
+        events: "give_5000xp"
+      10000xp_confirm:
+        text: "&fHere you go"
+        events: "give_10000xp"
+      sp_choose:
+        text: "&fHow many skill points do you want?"
+        pointers: "1sp,5sp,10sp"
+      1sp_confirm:
+        text: "&fHere you go"
+        events: "give_1sp"
+      5sp_confirm:
+        text: "&fHere you go"
+        events: "give_5sp"
+      10sp_confirm:
+        text: "&fHere you go"
+        events: "give_10sp"
+      dummies_select:
+        text: "&fDo you want to reset the dummies?"
+        pointers: "reset_kb,reset,reset_all"
+      reset_confirm:
+        text: "&fReset the no-knockback dummies"
+        events: "reset_dummies"
+      reset_kb_confirm:
+        text: "&fReset the knockback dummies"
+        events: "reset_dummiesKB"
+      reset_all_confirm:
+        text: "&fReset all dummies"
+        events: "reset_dummies,reset_dummiesKB"
+    player_options:
+      class:
+        text: "I want to change my class"
+        pointers: "class_select"
+      points:
+        text: "I want to give myself exp/points"
+        pointers: "points_select"
+      dummies:
+        text: "I want to spawn/reset the dummies"
+        pointers: "dummies_select"
+      scrapper:
+        text: "I want to become a scrapper"
+        pointers: "set_scrapper"
+      reset_class:
+        text: "I want to reset my class"
+        pointers: "class_reset"
+      exp:
+        text: "I want to give myself experience"
+        pointers: "exp_choose"
+      sp:
+        text: "I want to give myself skill points"
+        pointers: "sp_choose"
+      100xp:
+        text: "100xp"
+        pointers: "100xp_confirm"
+      500xp:
+        text: "500xp"
+        pointers: "500xp_confirm"
+      1000xp:
+        text: "1000xp"
+        pointers: "1000xp_confirm"
+      5000xp:
+        text: "5000xp"
+        pointers: "5000xp_confirm"
+      10000xp:
+        text: "10000xp"
+        pointers: "10000xp_confirm"
+      1sp:
+        text: "1sp"
+        pointers: "1sp_confirm"
+      5sp:
+        text: "5sp"
+        pointers: "5sp_confirm"
+      10sp:
+        text: "10sp"
+        pointers: "10sp_confirm"
+      reset:
+        text: "I want to reset the no-knockback dummies"
+        pointers: "reset_confirm"
+      reset_kb:
+        text: "I want to reset the knockback dummies"
+        pointers: "reset_kb_confirm"
+      reset_all:
+        text: "I want to reset all the dummies"
+        pointers: "reset_all_confirm"

@@ -1,0 +1,19 @@
+info:
+  namespace: utilities
+items:
+  vivre:
+    display_name: "&8&l[Vivre Card]"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/vivre.png
+    events:
+      interact:
+        right:
+          execute_commands:
+            cmd1:
+              command: 'cp vivre {player}'
+              as_console: true
+              delay: 0
+    

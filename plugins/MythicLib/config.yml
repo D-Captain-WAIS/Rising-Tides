@@ -1,0 +1,169 @@
+# DO NOT TOUCH
+config-version: 4
+
+# Edit general plugin number formatting here.
+# Restart your server when changing this so that MMOItems and MMOCore update as well
+number-format:
+  decimal-separator: .
+
+# Defines how defense behaves. The formula should return the
+# final amount of damage dealt, given the following inputs:
+# - damage dealt #damage#
+# - player defense #defense#
+#
+# The default formula is inspired from Path of Exile, you can
+# learn more about it on their wiki: https://pathofexile.fandom.com/wiki/Armour
+defense-application: '#damage# * (1 - (#defense# / (5 * #damage# + #defense#)))'
+
+# Allows to scale health up/down to a specific
+# amount so extra health does not fill up the screen.
+# Requires a SERVER reload when changed.
+# Delay should be used if your Users experience issues revolving around seeing too many hearts still. This can occur with plugins such as MySQL Inventory Bridge
+# The delay is in ticks. 20 ticks = 1 second
+health-scale:
+  enabled: false
+  scale: 20
+  delay: 0
+
+# Set to false to prevent players from dealing damage to other
+# players using abilities OR custom weapons like staffs or muskets.
+# This is an useful option for PvE servers.
+player-ability-damage: true
+
+critical-strikes:
+  weapon:
+    # Default = 2 meaning crits deal 200% of the initial damage
+    coefficient: 2
+    cooldown: 3
+    max-chance: 80
+  skill:
+    # Default = 1.5 meaning crits deal 150% of the initial damage
+    coefficient: 1.5
+    cooldown: 3
+    max-chance: 80
+
+# Default and max. values of armor stats. These systems
+# all have a cooldown which can be reduced using the
+# '*** Cooldown Reduction' item stat.
+mitigation:
+
+  # Edit mitigation messages here. Leave to blank for no message.
+  message:
+
+    # Whether or not they should display on action bar instead of chat
+    action-bar: true
+
+    parry: '&cYou just parried #damage# damage.'
+    block: '&cYou just blocked #damage# damage.' # Use #power# to display block power.
+    dodge: '&cYou just dodged #damage# damage.'
+
+  block:
+    power:
+      default: 25.0
+      max: 75.0
+    rating-max: 80.0
+    cooldown:
+      base: 5.0
+      min: 1.0
+
+  dodge:
+    knockback:
+      enabled: true
+      force: 1.0
+    rating-max: 80.0
+    cooldown:
+      base: 5.0
+      min: 1.0
+
+  parry:
+    knockback:
+      enabled: true
+      force: 1.0
+    rating-max: 80.0
+    cooldown:
+      base: 8.0
+      min: 2.0
+
+# Displays in-game damage or heal indicators.
+# Requires /reload when changed.
+# Supported Plugins:
+# - HolographicDisplays
+# - DecentHolograms
+# - CMI
+# - Holograms
+# - TrHologram
+game-indicators:
+
+  # When an entity is being damaged
+  # Use format: 'ᜌ{icon} &f{value}ᜌ' along with the resource pack
+  # provided in the wiki in order to remove the gray background
+  damage:
+    enabled: true
+    decimal-format: '0.#'
+    format: '{icon} &f{value}'
+    custom-font:
+      enabled: false
+      normal:
+        '0': 'ᜀ'
+        '1': 'ᜁ'
+        '2': 'ᜂ'
+        '3': 'ᜃ'
+        '4': 'ᜄ'
+        '5': 'ᜅ'
+        '6': 'ᜆ'
+        '7': 'ᜇ'
+        '8': 'ᜈ'
+        '9': 'ᜉ'
+        'dot': 'ᜊ'
+        'inter': 'ᜍ'
+      crit:
+        '0': 'ᜐ'
+        '1': 'ᜑ'
+        '2': 'ᜒ'
+        '3': 'ᜓ'
+        '4': '᜔'
+        '5': '᜕'
+        '6': '᜖'
+        '7': '᜗'
+        '8': '᜘'
+        '9': '᜙'
+        'dot': 'ᜋ'
+        'inter': 'ᜍ'
+    icon:
+      weapon:
+        normal: '&c🗡'
+        crit: '&c&l🗡'
+      skill:
+        normal: '&6★'
+        crit: '&6&l★'
+    split-holograms: true
+    radial-velocity: 1
+    gravity: 1
+    initial-upward-velocity: 1
+    entity-height-percent: 0.75
+    y-offset: 0.1
+
+  # When an entity regens some health
+  regen:
+    enabled: false
+    decimal-format: '0.#'
+    format: '&a+#'
+    radial-velocity: 1
+    gravity: 1
+    initial-upward-velocity: 1
+    entity-height-percent: 0.75
+    y-offset: 0.1
+
+# Due to a change made in 1.1.6 related to the movement speed
+# attribute, players see their movement speed reset to .1 when logging in
+#
+# Set to false when having issues with another plugin interfering
+# with the player's movement speed
+fix-movement-speed: true
+
+# Limits the amount of damage particles that can be sent to a player
+# every tick. By default it's set to 10 particles/tick. These particles
+# can be quite annoying and can even crash the client if there are too many.
+damage-particles-cap:
+  max-per-tick: 10
+  enabled: false

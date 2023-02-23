@@ -1,0 +1,37 @@
+ATTRIBUTES: 
+  rows: 1
+  pages: 1
+  slots: 
+    1: 
+      dexterity: 5
+      constitution: 2
+      strength: 6
+      willpower: 3
+      accuracy: 7
+      endurance: 1
+      agility: 4
+stMelee Weapon Newbie: 
+  rows: 3
+  pages: 1
+  slots: 
+    1: 
+      hilt strike: 4
+      piercing strike: 3
+      two handed swing: 5
+stScrapper: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      flail: 8
+      hard kick: 3
+      chaaaaaarge: 42
+      dropkick: 30
+      skedaddle: 6
+      overhand swing: 45
+      get out of the way: 24
+      low kick: 48
+      hard punch: 0
+      onetwothreefour: 27
+      double punch: 9
+      running kick: 12

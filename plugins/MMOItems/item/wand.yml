@@ -1,0 +1,24 @@
+ABYSSWAND:
+  base:
+    material: STICK
+    custom-nbt:
+    - VoidStaff 1
+    name: §d[Abyssal Mage's Wand]
+    lore:
+    - §oA wand divined from the power of the Dragon
+    - §ofor use of its mages.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-speed: 0.5
+    attack-damage: 10.0
+    range: 10.0
+    tier: COMMON
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    revision-id: 3
+    max-durability: 500.0

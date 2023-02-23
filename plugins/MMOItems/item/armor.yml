@@ -1,0 +1,303 @@
+CAPHAT:
+  base:
+    material: DIAMOND_HOE
+    custom-nbt:
+    - caphat 1
+    name: §9§o[D. Captain's Bicorn]
+    displayed-type: Hat
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    tier: DIVINE
+    unbreakable: true
+    armor: 20.0
+    armor-toughness: 1000.0
+    max-health: 10000.0
+    fire-damage-reduction: 50.0
+    magic-damage-reduction: 50.0
+    knockback-resistance: 1.0
+    damage-reduction: 100.0
+    disable-death-drop: true
+    lore:
+    - §3§oA Divine Hat for the most legendary of adventures!
+    goop-hat: true
+    max-health-regeneration: 15.0
+CAPCOAT:
+  base:
+    material: DIAMOND_HOE
+    custom-nbt:
+    - capcoat 1
+    - CapCoat 1
+    name: §9§o[D. Captain's Naval Coat]
+    tier: DIVINE
+    displayed-type: Coat
+    unbreakable: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    disable-death-drop: true
+    health-regeneration: 500.0
+ACHAMPIONHELM:
+  base:
+    material: NETHERITE_HELMET
+    name: §d[Abyss Champion's Helmet]
+    custom-nbt:
+    - AbyssChampion 1
+    lore:
+    - §oA helmet forged with the Dragon's power for
+    - §ouse of its Champions.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    max-durability: 60840.0
+    revision-id: 5
+    tier: UNCOMMON
+    armor: 5.0
+    armor-toughness: 15.0
+    damage-reduction: 12.0
+    defense: 25.0
+ACHAMPIONCHEST:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: §d[Abyss Champion's Chestplate]
+    custom-nbt:
+    - AbyssChampion 1
+    lore:
+    - §oA chestplate forged with the Dragon's power for
+    - §ouse of its Champions.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    max-durability: 60840.0
+    revision-id: 5
+    tier: UNCOMMON
+    armor: 10.0
+    armor-toughness: 15.0
+    damage-reduction: 12.0
+    defense: 25.0
+ACHAMPIONLEGS:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: §d[Abyss Champion's Leggings]
+    custom-nbt:
+    - AbyssChampion 1
+    lore:
+    - §oLeggings forged with the Dragon's power for
+    - §ouse of its Champions.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    max-durability: 60840.0
+    revision-id: 5
+    tier: UNCOMMON
+    armor: 8.0
+    armor-toughness: 15.0
+    damage-reduction: 12.0
+    defense: 25.0
+ACHAMPIONBOOTS:
+  base:
+    material: NETHERITE_BOOTS
+    name: §d[Abyss Champion's Boots]
+    custom-nbt:
+    - AbyssChampion 1
+    lore:
+    - §oBoots forged with the Dragon's power for
+    - §ouse of its Champions.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    max-durability: 60840.0
+    revision-id: 6
+    tier: UNCOMMON
+    armor: 5.0
+    armor-toughness: 15.0
+    damage-reduction: 12.0
+    defense: 25.0
+    fall-damage-reduction: 60.0
+ADRAGONHELM:
+  base:
+    material: NETHERITE_HELMET
+    name: §5[Abyssal Dragonscale Helmet]
+    custom-nbt:
+    - ADragonArmor 1
+    lore:
+    - §oA Helmet formed from the remains of
+    - §othe §l[Abyssal Dragon]§o.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    durability-bar: true
+    max-durability: 81280.0
+    revision-id: 5
+    tier: RARE
+    armor: 5.0
+    armor-toughness: 25.0
+    damage-reduction: 20.0
+    defense: 50.0
+ADRAGONCHEST:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: §5[Abyssal Dragonscale Chestplate]
+    custom-nbt:
+    - ADragonArmor 1
+    lore:
+    - §oA Chestplate formed from the remains of
+    - §othe §l[Abyssal Dragon]§o.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    durability-bar: true
+    max-durability: 81280.0
+    revision-id: 5
+    tier: RARE
+    armor: 12.0
+    armor-toughness: 25.0
+    damage-reduction: 20.0
+    defense: 50.0
+ADRAGONLEGS:
+  base:
+    material: NETHERITE_LEGGINGS
+    custom-nbt:
+    - ADragonArmor 1
+    name: §5[Abyssal Dragonscale Leggings]
+    lore:
+    - §oLeggings formed from the remains of
+    - §othe §l[Abyssal Dragon]§o.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    durability-bar: true
+    max-durability: 81280.0
+    revision-id: 5
+    tier: RARE
+    armor: 8.0
+    armor-toughness: 25.0
+    damage-reduction: 20.0
+    defense: 50.0
+ADRAGONBOOTS:
+  base:
+    material: NETHERITE_BOOTS
+    name: §5[Abyssal Dragonscale Boots]
+    custom-nbt:
+    - ADragonArmor 1
+    lore:
+    - §oBoots formed from the remains of
+    - §othe §l[Abyssal Dragon]§o.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    durability-bar: true
+    max-durability: 81280.0
+    revision-id: 6
+    tier: RARE
+    armor: 5.0
+    armor-toughness: 25.0
+    damage-reduction: 20.0
+    defense: 50.0
+    fall-damage-reduction: 72.0
+ASOLDIERHELM:
+  base:
+    material: NETHERITE_HELMET
+    name: §d[Abyss Soldier's Helm]
+    lore:
+    - §oA helmet forged with the Dragon's power for
+    - §ouse of its soldiers.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    enchants:
+      unbreaking: 5.0
+      protection: 6.0
+    tier: COMMON
+    armor: 3.0
+    armor-toughness: 3.0
+ASOLDIERCHEST:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: §d[Abyss Soldier's Chestplate]
+    lore:
+    - §oA chestplate forged with the Dragon's power for
+    - §ouse of its soldiers.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    enchants:
+      unbreaking: 5.0
+      protection: 6.0
+    tier: COMMON
+    armor: 8.0
+    armor-toughness: 3.0
+ASOLDIERLEGS:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: §d[Abyss Soldier's Leggings]
+    lore:
+    - §oLeggings forged with the Dragon's power for
+    - §ouse of its soldiers.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    enchants:
+      unbreaking: 5.0
+      protection: 6.0
+    tier: COMMON
+    armor: 6.0
+    armor-toughness: 3.0
+ASOLDIERBOOTS:
+  base:
+    material: NETHERITE_BOOTS
+    name: §d[Abyss Soldier's Boots]
+    lore:
+    - §oBoots forged with the Dragon's power for
+    - §ouse of its soldiers.
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    enchants:
+      unbreaking: 5.0
+      protection: 6.0
+    tier: COMMON
+    armor: 3.0
+    armor-toughness: 3.0

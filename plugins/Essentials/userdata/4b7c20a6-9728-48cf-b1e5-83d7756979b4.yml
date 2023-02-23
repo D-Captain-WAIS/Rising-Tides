@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 69.141.156.123
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1670535406425
+  login: 1670534685516
+money: '0'
+last-account-name: BigWh33l
+lastlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: -201.76850462724587
+  y: 102.26132415726147
+  z: 549.3468149803371
+  yaw: 133.9676513671875
+  pitch: 17.22905158996582
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 520.9276299353999
+  y: 106.24874195993905
+  z: -154.32734253117584
+  yaw: 172.64759826660156
+  pitch: 16.200336456298828

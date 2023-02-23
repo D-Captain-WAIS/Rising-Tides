@@ -1,0 +1,13 @@
+title: "<white>:offset_-8::cosmetics_gui:"
+rows: 6
+items:
+  sunrise:
+    slots:
+      - 1
+    item:
+      material: PAPER
+      name: "<gold><bold>[Sunrise Island]"
+    type: empty
+    actions:
+      any:
+        - "[MENU] sunrise -o"

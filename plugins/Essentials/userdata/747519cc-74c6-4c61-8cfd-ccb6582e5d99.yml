@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 172.58.78.137
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1670978973802
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1671042661299
+  login: 1671042474920
+money: '0'
+last-account-name: Crash__Stitches
+lastlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 534.3000000119209
+  y: 53.0
+  z: -196.30000001192093
+  yaw: -174.1768798828125
+  pitch: 5.876589298248291
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 652.8563717188414
+  y: 89.80792495202999
+  z: -257.85912873052564
+  yaw: -73.55098724365234
+  pitch: 33.09961700439453

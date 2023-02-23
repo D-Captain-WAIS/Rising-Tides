@@ -1,0 +1,41 @@
+# HappyHud by Ehhthan
+
+layout:
+  # The layouts that every user starts with.
+  default:
+    - 'marine-layout'
+
+translation:
+  # What language the plugin should display when resolving translations.
+  locale: en_us
+
+# The default value for how often placeholders should check for an update.
+check-update: 5
+
+# The way that numbers are displayed.
+decimal-format: '#.##'
+
+# Should the layouts only be displayed to the user if they accepted the resource pack.
+display-only-accepted: false
+
+# The settings of the default action bar messages.
+action-bar:
+  # The popup to use for the action bar.
+  popup: action-bar
+  # Amount of time in ticks for the action bar message to last. Set to 0 to not show.
+  last-for: 40
+
+# If you would like to copy the built-resource pack to a different location.
+copy-resource-pack:
+  enabled: true
+  # The location to copy each namespace to. The parent path is your plugins directory.
+  namespaces:
+    minecraft: "ItemsAdder/contents/_iainternal/resourcepack/assets"
+    happyhud: "ItemsAdder/contents"
+    
+# Enable this if your server supports both 1.18 and 1.19.
+# This will add a drop shadow to newer clients.
+compatibility-mode: false
+
+# Do not change this.
+config-version: 3

@@ -1,0 +1,36 @@
+npcs:
+  '0': "pirate"
+  '1': "marine"
+  '2': "revolutionary"
+  '3': "cyborg"
+  '4': "fishman"
+  '5': "mink"
+  '6': "human"
+  '7': "longLimb"
+  '8': "mWeapon"
+  '9': "stringed"
+  '10': "guns"
+  '11': "doctor"
+  '12': "melee"
+
+hide_npcs:
+  '0': hide_faction
+  '1': hide_faction
+  '2': hide_faction
+  '3': hide_race
+  '4': hide_race
+  '5': hide_race
+  '6': hide_race
+  '7': hide_race
+  '8': hide_class
+  '9': hide_class
+  '10': hide_class
+  '11': hide_class
+  '12': hide_class
+  '13': hide_class
+  '14': hide_class
+  '15': hide_class
+  '17': hide_class
+  '18': hide_class
+  '19': hide_class
+  '20': hide_class

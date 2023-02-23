@@ -1,0 +1,27 @@
+title: "<white>:offset_-8::cosmetics_gui:"
+rows: 6
+items:
+  rusty_cutlass_menu:
+    slots:
+      - 1
+    item:
+      material: itemsadder:sunrise:rusty_cutlass
+      name: "<dark_gray><bold>Rusty Cutlass"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_rusty_cutlass%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_rusty_cutlass%" 
+    type: cosmetic
+    cosmetic: rusty_cutlass
+  rusty_pistol_menu:
+    slots:
+      - 2
+    item:
+      material: itemsadder:sunrise:rusty_pistol
+      name: "<dark_gray><bold>Rusty Pistol"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_rusty_pistol%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_rusty_pistol%" 
+    type: cosmetic
+    cosmetic: rusty_pistol

@@ -1,0 +1,141 @@
+############################################
+#           Made by Daoshi#1130            #
+############################################
+DummyGD1:
+  Type: pig
+  Display: '&6[Dummy]'
+  Health: 10000
+  Options:
+    Collidable: false
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 10
+    MaxCombatDistance: 40
+    Persistent: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - doNothing
+  Skills:
+  - model{mid=dummy;n=false} @self ~onSpawn
+  - healpercent{m=1} @self ~onTimer:200
+
+#reset all variables on combatstart
+  - setvariable{var=caster.totaldamage;type=FLOAT;value="0"} ~onEnterCombat
+  - setvariable{var=caster.timer;type=INTEGER;value="0"} ~onEnterCombat
+  - setvariable{var=caster.dps;type=FLOAT;value="0"} ~onEnterCombat
+
+#add 1 second to timer every second, and keep adding total damage every hit
+  - variableMath{var=caster.timer;equation="<caster.var.timer>+1"} @self ~onTimer:20
+  - variableMath{var=caster.totaldamage;equation="<skill.var.damage-amount>+<caster.var.totaldamage>"} ~onDamaged
+
+#divide total damage by timer to get dps
+  - variableMath{var=caster.dps;equation="<caster.var.totaldamage>/<caster.var.timer>"} ~onDamaged
+
+#setname as dps variable
+  - setname{name=&6DPS - <caster.var.dps>} @self ~onDamaged
+DummyGD2:
+  Type: pig
+  Display: '&6[Dummy]'
+  Health: 10000
+  Options:
+    Collidable: false
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 10
+    MaxCombatDistance: 40
+    Persistent: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - doNothing
+  Skills:
+  - model{mid=dummy;n=false} @self ~onSpawn
+  - healpercent{m=1} @self ~onTimer:200
+
+#reset all variables on combatstart
+  - setvariable{var=caster.totaldamage;type=FLOAT;value="0"} ~onEnterCombat
+  - setvariable{var=caster.timer;type=INTEGER;value="0"} ~onEnterCombat
+  - setvariable{var=caster.dps;type=FLOAT;value="0"} ~onEnterCombat
+
+#add 1 second to timer every second, and keep adding total damage every hit
+  - variableMath{var=caster.timer;equation="<caster.var.timer>+1"} @self ~onTimer:20
+  - variableMath{var=caster.totaldamage;equation="<skill.var.damage-amount>+<caster.var.totaldamage>"} ~onDamaged
+
+#divide total damage by timer to get dps
+  - variableMath{var=caster.dps;equation="<caster.var.totaldamage>/<caster.var.timer>"} ~onDamaged
+
+#setname as dps variable
+  - setname{name=&6DPS - <caster.var.dps>} @self ~onDamaged
+DummyGD1KB:
+  Type: pig
+  Display: '&6[Dummy]'
+  Health: 10000
+  Options:
+    Collidable: false
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Silent: true
+    FollowRange: 10
+    MaxCombatDistance: 40
+    Persistent: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - doNothing
+  Skills:
+  - model{mid=dummy;n=false} @self ~onSpawn
+  - healpercent{m=1} @self ~onTimer:200
+
+#reset all variables on combatstart
+  - setvariable{var=caster.totaldamage;type=FLOAT;value="0"} ~onEnterCombat
+  - setvariable{var=caster.timer;type=INTEGER;value="0"} ~onEnterCombat
+  - setvariable{var=caster.dps;type=FLOAT;value="0"} ~onEnterCombat
+
+#add 1 second to timer every second, and keep adding total damage every hit
+  - variableMath{var=caster.timer;equation="<caster.var.timer>+1"} @self ~onTimer:20
+  - variableMath{var=caster.totaldamage;equation="<skill.var.damage-amount>+<caster.var.totaldamage>"} ~onDamaged
+
+#divide total damage by timer to get dps
+  - variableMath{var=caster.dps;equation="<caster.var.totaldamage>/<caster.var.timer>"} ~onDamaged
+
+#setname as dps variable
+  - setname{name=&6DPS - <caster.var.dps>} @self ~onDamaged
+DummyGD2KB:
+  Type: pig
+  Display: '&6[Dummy]'
+  Health: 10000
+  Options:
+    Collidable: false
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Silent: true
+    FollowRange: 10
+    MaxCombatDistance: 40
+    Persistent: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+    - doNothing
+  Skills:
+  - model{mid=dummy;n=false} @self ~onSpawn
+  - healpercent{m=1} @self ~onTimer:200
+
+#reset all variables on combatstart
+  - setvariable{var=caster.totaldamage;type=FLOAT;value="0"} ~onEnterCombat
+  - setvariable{var=caster.timer;type=INTEGER;value="0"} ~onEnterCombat
+  - setvariable{var=caster.dps;type=FLOAT;value="0"} ~onEnterCombat
+
+#add 1 second to timer every second, and keep adding total damage every hit
+  - variableMath{var=caster.timer;equation="<caster.var.timer>+1"} @self ~onTimer:20
+  - variableMath{var=caster.totaldamage;equation="<skill.var.damage-amount>+<caster.var.totaldamage>"} ~onDamaged
+
+#divide total damage by timer to get dps
+  - variableMath{var=caster.dps;equation="<caster.var.totaldamage>/<caster.var.timer>"} ~onDamaged
+
+#setname as dps variable
+  - setname{name=&6DPS - <caster.var.dps>} @self ~onDamaged
