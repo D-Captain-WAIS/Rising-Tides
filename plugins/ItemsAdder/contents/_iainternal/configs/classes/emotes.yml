@@ -10,3 +10,102 @@ emotes:
       take_damage: false
       deal_damage: false
       in_air: false
+  hard_kick:
+    id: hard_kick
+    enabled: true
+    can_player_move: false
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  hard_punch:
+    id: hard_punch
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  flail:
+    id: flail
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  double_punch:
+    id: double_punch
+    enabled: true
+    can_player_move: false
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  ottf:
+    id: 1234
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  overhand_swing:
+    id: overhand_swing
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  running_kick:
+    id: running_kick
+    enabled: true
+    can_player_move: false
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  dropkick:
+    id: dropkick
+    enabled: true
+    can_player_move: false
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  low_kick:
+    id: low_kick
+    enabled: true
+    can_player_move: false
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  gootw:
+    id: gootw
+    enabled: true
+    can_player_move: false
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  Haoshoku:
+    id: Haoshoku
+    enabled: true
+    can_player_move: false
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false

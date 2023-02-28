@@ -53,6 +53,14 @@ NETHERITE_PICKAXE:
 IRON_SWORD:
   hmcwraps:silver_sword: 10000
   sunrise:rusty_cutlass: 10001
+  sunrise:duelist_single_common: 10002
+  sunrise:duelist_single_uncommon: 10003
+  sunrise:duelist_single_rare: 10004
+  sunrise:duelist_single_ultra_rare: 10005
+  sunrise:duelist_single_epic: 10006
+  sunrise:duelist_single_legendary: 10007
+  sunrise:duelist_single_mythical: 10008
+  sunrise:duelist_single_unique: 10009
 IRON_AXE:
   hmcwraps:silver_axe: 10000
 IRON_PICKAXE:
@@ -62,3 +70,43 @@ IRON_SHOVEL:
 IRON_HOE:
   hmcwraps:silver_hoe: 10000
   sunrise:rusty_pistol: 10001
+GOLD_NUGGET:
+  sunrise:bullet: 10000
+BOOK:
+  utilities:constitution: 10000
+  utilities:endurance: 10001
+  utilities:willpower: 10002
+  utilities:agility: 10003
+  utilities:strength: 10004
+  utilities:dexterity: 10005
+  utilities:accuracy: 10006
+  utilities:finesse: 10007
+  utilities:missions: 10008
+  utilities:respec: 10009
+  utilities:chassis: 10010
+  utilities:skills: 10011
+  utilities:combat: 10012
+PUMPKIN_SEEDS:
+  utilities:empty: 10000
+  sunrise:hard_punch: 10001
+  sunrise:hard_kick: 10002
+  sunrise:flail: 10003
+  sunrise:skedaddle: 10004
+  sunrise:double_punch: 10005
+  sunrise:ottf: 10006
+  sunrise:overhand_swing: 10007
+  sunrise:running_kick: 10008
+  sunrise:dropkick: 10009
+  sunrise:low_kick: 10010
+  sunrise:gootw: 10011
+  sunrise:charge: 10012
+GOLDEN_SWORD:
+  sunrise:wraps_common: 10000
+  sunrise:wraps_uncommon: 10001
+  sunrise:wraps_rare: 10002
+  sunrise:wraps_ultra_rare: 10003
+  sunrise:wraps_epic: 10004
+  sunrise:wraps_legendary: 10005
+  sunrise:wraps_mythical: 10006
+  sunrise:wraps_unique: 10007
+  sunrise:mountain_wraps: 10008

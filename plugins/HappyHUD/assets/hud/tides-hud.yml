@@ -1,10 +1,10 @@
 marine-hp:
   layers:
     hp-text:
-      text: "<white>%hp-bar-value%/%hp-bar-max%"
+      text: "<white>%nf_###E0X_sapi_default_currenthealth%/%nf_###E0X_sapi_default_currentmaxhealth%"
       font: "default-outline"
       offset:
-        x: 90
+        x: 70
         y: -30
     outline:
       texture:
@@ -22,7 +22,7 @@ pirate-hp:
       text: "<white>%hp-bar-value%/%hp-bar-max%"
       font: "default-outline"
       offset:
-        x: 90
+        x: 70
         y: -30
     outline:
       texture:
@@ -40,7 +40,7 @@ revarmy-hp:
       text: "<white>%hp-bar-value%/%hp-bar-max%"
       font: "default-outline"
       offset:
-        x: 90
+        x: 70
         y: -30
     outline:
       texture:
@@ -58,7 +58,7 @@ cp-hp:
       text: "<white>%hp-bar-value%/%hp-bar-max%"
       font: "default-outline"
       offset:
-        x: 90
+        x: 70
         y: -30
     outline:
       texture:
@@ -73,10 +73,10 @@ cp-hp:
 stamina:
   layers:
     stm-text:
-      text: "<white>%stm-bar-value%/%stm-bar-max%"
+      text: "<white>%nf_###E0X_sapi_default_currentmana%/%nf_###E0X_sapi_default_currentmaxmana%"
       font: "default-outline"
       offset:
-        x: 85
+        x: 65
         y: -15
     outline:
       texture:
@@ -94,7 +94,7 @@ stamina:
 exp-level:
   layers:
     level-exp:
-      text: "<white>Level: %sapi_player_class_level% Exp: %exp-bar-value%/%exp-bar-max%"
+      text: "<white>Level: %sapi_player_class_level% Exp: %nf_####E0X_sapi_default_currentexp%/%nf_####E0X_sapi_default_currentrequiredexp%"
       font: "default-outline"
       offset:
         x: 2

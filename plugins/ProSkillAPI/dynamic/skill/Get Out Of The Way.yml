@@ -2,7 +2,6 @@ Get Out Of The Way:
   name: 'Get Out Of The Way'
   type: 'Active'
   max-level: 5
-  skill-req: 'Skeddaddle'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -11,7 +10,7 @@ Get Out Of The Way:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '0'
+    cooldown-base: '4'
     cooldown-scale: '0'
     mana-base: '5'
     mana-scale: '0'
@@ -19,19 +18,21 @@ Get Out Of The Way:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10011
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&f&oAgility'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oDive to the side! I’ll worry about landing later…'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 

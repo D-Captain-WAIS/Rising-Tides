@@ -1,0 +1,12 @@
+location: dev:-14.583:-29.000:-0.523
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&l[Dummies with Knockback]'
+    height: 0.3
+  actions: {}

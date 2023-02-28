@@ -13,5 +13,60 @@
     "sounds": [
       "lightspeedexit"
     ]
+  },
+  "risingtides.conq_haki": {
+    "sounds": [
+      "conqhaki"
+    ]
+  },
+  "risingtides.statup": {
+    "sounds": [
+      "statup"
+    ]
+  },
+  "risingtides.respec": {
+    "sounds": [
+      "respec"
+    ]
+  },
+  "scrapper.hard_punch": {
+    "sounds": [
+      "hardpunch"
+    ]
+  },
+  "scrapper.hard_kick": {
+    "sounds": [
+      "hardkick"
+    ]
+  },
+  "scrapper.flail": {
+    "sounds": [
+      "flail"
+    ]
+  },
+  "scrapper.double_punch": {
+    "sounds": [
+      "doublepunch"
+    ]
+  },
+  "scrapper.ottf": {
+    "sounds": [
+      "ottf"
+    ]
+  },
+  "scrapper.overhand_swing": {
+    "sounds": [
+      "overhand"
+    ]
+  },
+  "scrapper.dropkick": {
+    "sounds": [
+      "dropkick"
+    ]
+  },
+  "scrapper.low_kick": {
+    "sounds": [
+      "lowkick"
+    ]
   }
 }

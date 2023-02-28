@@ -1,0 +1,26 @@
+General:
+  # What plugin to use for the party system. Defaults to DungeonParties, which is provided by Mythic Dungeons.
+  PartyPlugin: DungeonParties
+  # The max number of instances that can be run on this server.
+  MaxInstances: 10
+  # The interval between autosaves of the dungeon while in edit mode in seconds. 0 disables autosave. (NOT RECOMMENDED)
+  AutoSaveInterval: 300
+  # What the function builder item's material is. Must be a valid Spigot material.
+  # Useful if you have another plugin that also uses FEATHER for a tool, like goPaint
+  FunctionBuilderItem: FEATHER
+  # Whether the `/md stuck` command kills the player.
+  StuckKillsPlayer: false
+  # Whether only the party leader is allowed to start a dungeon for the party.
+  LeaderOnlyQueue: true
+  # Whether to require all party members confirm they're ready before entering a dungeon after the play command is run.
+  # Note: This check is used if there is no queue to get into the dungeon.
+  ReadyCheckOnCommand: true
+  # Whether to require all party members confirm they're ready before entering a dungeon after waiting in the queue.
+  ReadyCheckInQueue: true
+  # How long the ready check (from when a dungeon becomes available) will wait for all players to be ready.
+  ReadyCheckTime: 45
+  PartyFinder:
+    # Whether to automatically broadcast party recruitments regularly.
+    AutoBroadcast: true
+    # How many minutes there should be between each broadcast of a recruitment listing.
+    ListingBroadcastPeriod: 5

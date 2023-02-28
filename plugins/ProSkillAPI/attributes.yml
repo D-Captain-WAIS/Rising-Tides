@@ -40,7 +40,7 @@ constitution:
     mechanic:  {}
     target:  {}
   stats: 
-    health: 'a+v'
+    health: '((a*0.05)*a)+v'
 willpower: 
   display: 'Willpower'
   max: '999'
@@ -55,7 +55,7 @@ willpower:
     mechanic:  {}
     target:  {}
   stats: 
-    mana-regen: 'a*0.025+1*v'
+    mana-regen: 'a+(0.05)*v'
 agility: 
   display: 'Agility'
   max: '999'
@@ -114,4 +114,17 @@ endurance:
     mechanic:  {}
     target:  {}
   stats: 
-    mana: 'a*0.025+1*v'
+    mana: '((a*0.05)*a)+v'
+finesse: 
+  display: 'Finesse'
+  max: '999'
+  icon: 'ink sack'
+  icon-data: '14'
+  icon-lore: 
+  - '&6Finesse &7(&2{amount}&7)'
+  - ''
+  - '&7Increases finesse'
+  global: 
+    condition:  {}
+    mechanic:  {}
+    target:  {}

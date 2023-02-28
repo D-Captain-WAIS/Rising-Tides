@@ -19,19 +19,21 @@ Hard Punch:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10001
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Stamina: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oI’ll just throw my hand as hard as I can…'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -40,68 +42,84 @@ Hard Punch:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Single-b: 
+          type: 'target'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            range-base: '3'
+            range-scale: '0'
+            tolerance-base: '1'
+            tolerance-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'false'
           children: 
-            Single-c: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
-              children: 
-                Channel-d: 
-                  type: 'mechanic'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    counts: 'True'
-                    still: 'False'
-                    time-base: '0.5'
-                    time-scale: '0'
-                  children:  {}
-                Delay-e: 
-                  type: 'mechanic'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    counts: 'True'
-                    delay-base: '0.5'
-                    delay-scale: '0'
-                  children: 
-                    Damage-f: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '15'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Custom'
-                      children:  {}
-            Command-g: 
+            Channel-c: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote hard_punch'
-                type: 'OP'
+                still: 'False'
+                time-base: '0.5'
+                time-scale: '0'
               children:  {}
+            Delay-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.5'
+                delay-scale: '0'
+              children: 
+                Damage-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'hpunch_damage'
+                    value-scale: '0'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Custom'
+                  children:  {}
+                Sound-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    sound: 'Custom'
+                    custom: 'minecraft:scrapper.hard_punch'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
+                  children:  {}
+        Command-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            command: 'iaemote hard_punch'
+            type: 'OP'
+          children:  {}
+        Value Placeholder-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'hpunch_damage'
+            type: 'Number'
+            placeholder: '%math_20+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
 Hard Kick: 
   name: 'Hard Kick'
   type: 'Active'
@@ -122,19 +140,20 @@ Hard Kick:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10002
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&9&oI’ll just throw my leg out as hard as I can I guess'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -143,68 +162,86 @@ Hard Kick:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote hard_kick'
+            type: 'OP'
+          children:  {}
+        Cone-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '4'
+            range-scale: '0'
+            angle-base: '75'
+            angle-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'False'
+            max-base: '99'
+            max-scale: '0'
           children: 
-            Command-c: 
+            Channel-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote hard_kick'
-                type: 'OP'
-              children:  {}
-            Single-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '5'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                still: 'False'
+                time-base: '0.65'
+                time-scale: '0'
               children: 
-                Channel-e: 
+                Delay-e: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    still: 'False'
-                    time-base: '0.65'
-                    time-scale: '0'
+                    delay-base: '0.65'
+                    delay-scale: '0'
                   children: 
-                    Delay-f: 
+                    Damage-f: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '0.65'
-                        delay-scale: '0'
-                      children: 
-                        Damage-g: 
-                          type: 'mechanic'
-                          indicator: 'None'
-                          data: 
-                            icon-key: ''
-                            counts: 'True'
-                            type: 'Damage'
-                            value-base: '20'
-                            value-scale: '1'
-                            true: 'False'
-                            classifier: 'default'
-                            knockback: 'True'
-                            cause: 'Custom'
-                          children:  {}
+                        type: 'Damage'
+                        value-base: 'kick_damage'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                    Sound-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        sound: 'Custom'
+                        custom: 'minecraft:scrapper.hard_kick'
+                        volume-base: '100'
+                        volume-scale: '0'
+                        pitch-base: '1'
+                        pitch-scale: '0'
+                      children:  {}
+        Value Placeholder-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'kick_damage'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
 Flail: 
   name: 'Flail'
   type: 'Active'
@@ -217,7 +254,7 @@ Flail:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '3'
+    cooldown-base: '4'
     cooldown-scale: '0'
     mana-base: '5'
     mana-scale: '0'
@@ -225,19 +262,20 @@ Flail:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10003
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&9&oI’ll just throw my leg out as hard as I can I guess'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -246,59 +284,76 @@ Flail:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote flail'
+            type: 'OP'
+          children:  {}
+        Area-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            radius-base: '3'
+            radius-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'False'
+            max-base: '99'
+            max-scale: '0'
+            random: 'False'
           children: 
-            Command-c: 
+            Delay-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                command: 'iaemote flail'
-                type: 'OP'
-              children:  {}
-            Single-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '2'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                counts: 'False'
+                delay-base: '0.4'
+                delay-scale: '0'
               children: 
-                Delay-e: 
+                Damage-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'flail_damage'
+                    value-scale: ' {}'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Delay-f: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
-                    delay-base: '0.4'
+                    delay-base: '0.2'
                     delay-scale: '0'
                   children: 
-                    Damage-f: 
+                    Damage-g: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
-                        counts: 'True'
+                        counts: 'False'
                         type: 'Damage'
-                        value-base: '6'
+                        value-base: 'flail_damage'
                         value-scale: '1'
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Entity Attack'
+                        cause: 'Custom'
                       children:  {}
-                    Delay-g: 
+                    Delay-h: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -307,53 +362,66 @@ Flail:
                         delay-base: '0.2'
                         delay-scale: '0'
                       children: 
-                        Damage-h: 
+                        Damage-i: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
                             icon-key: ''
-                            counts: 'False'
+                            counts: 'True'
                             type: 'Damage'
-                            value-base: '6'
+                            value-base: 'flail_damage'
                             value-scale: '1'
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Custom'
+                            cause: 'Entity Attack'
                           children:  {}
-                        Delay-i: 
-                          type: 'mechanic'
-                          indicator: 'None'
-                          data: 
-                            icon-key: ''
-                            counts: 'False'
-                            delay-base: '0.2'
-                            delay-scale: '0'
-                          children: 
-                            Damage-j: 
-                              type: 'mechanic'
-                              indicator: 'None'
-                              data: 
-                                icon-key: ''
-                                counts: 'True'
-                                type: 'Damage'
-                                value-base: '6'
-                                value-scale: '1'
-                                true: 'False'
-                                classifier: 'default'
-                                knockback: 'True'
-                                cause: 'Entity Attack'
-                              children:  {}
-                Channel-k: 
+                Sound-j: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    still: 'False'
-                    time-base: '0.7'
-                    time-scale: '0'
+                    sound: 'Custom'
+                    custom: 'minecraft:scrapper.flail'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
                   children:  {}
+            Channel-k: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                still: 'False'
+                time-base: '0.7'
+                time-scale: '0'
+              children:  {}
+            Sound-l: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.hard_punch'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-m: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'flail_damage'
+            type: 'Number'
+            placeholder: '%math_10+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
 Hilt Bash: 
   name: 'Hilt Bash'
   type: 'Active'
@@ -374,7 +442,7 @@ Hilt Bash:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
+  msg: '&6{player} &2has cast &6{skill}&r'
   icon: 'JACK_O_LANTERN'
   icon-data: 0
   icon-durability: 0
@@ -746,19 +814,22 @@ Double Punch:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10005
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name}'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oPunch with both my arms at the same time! '
+  - '&9&oThat should work!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -767,79 +838,97 @@ Double Punch:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote double_punch'
+            type: 'OP'
+          children:  {}
+        Cone-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '4'
+            range-scale: '0'
+            angle-base: '75'
+            angle-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'False'
+            max-base: '99'
+            max-scale: '0'
           children: 
-            Command-c: 
+            Channel-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote double_punch'
-                type: 'OP'
-              children:  {}
-            Single-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                still: 'False'
+                time-base: '0.45'
+                time-scale: '0'
               children: 
-                Channel-e: 
+                Delay-e: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    still: 'False'
-                    time-base: '0.45'
-                    time-scale: '0'
+                    delay-base: '0.45'
+                    delay-scale: '0'
                   children: 
-                    Delay-f: 
+                    Damage-f: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '0.45'
-                        delay-scale: '0'
-                      children: 
-                        Damage-g: 
-                          type: 'mechanic'
-                          indicator: 'None'
-                          data: 
-                            icon-key: ''
-                            counts: 'True'
-                            type: 'Damage'
-                            value-base: '20'
-                            value-scale: '1'
-                            true: 'False'
-                            classifier: 'default'
-                            knockback: 'True'
-                            cause: 'Entity Attack'
-                          children:  {}
-                        Push-h: 
-                          type: 'mechanic'
-                          indicator: 'None'
-                          data: 
-                            icon-key: ''
-                            counts: 'True'
-                            type: 'Fixed'
-                            speed-base: '0.3'
-                            speed-scale: '0.3'
-                            source: 'none'
-                          children:  {}
+                        type: 'Damage'
+                        value-base: 'double_punch_dmg'
+                        value-scale: '5'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                    Push-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Fixed'
+                        speed-base: '0.3'
+                        speed-scale: '0.05'
+                        source: 'none'
+                      children:  {}
+            Sound-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.double_punch'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'double_punch_dmg'
+            type: 'Number'
+            placeholder: '%math_30+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
 OneTwoThreeFour: 
   name: 'OneTwoThreeFour'
   type: 'Active'
@@ -861,19 +950,21 @@ OneTwoThreeFour:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10006
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oCombos are nice! Right?'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -882,82 +973,98 @@ OneTwoThreeFour:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote 1234'
+            type: 'OP'
+          children:  {}
+        Single-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '3'
+            range-scale: '0'
+            tolerance-base: '0'
+            tolerance-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'false'
           children: 
-            Command-c: 
+            Delay-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote 1234'
-                type: 'OP'
-              children:  {}
-            Single-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                delay-base: '0.4'
+                delay-scale: '0'
               children: 
-                Delay-e: 
+                Damage-e: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.4'
+                    type: 'Damage'
+                    value-base: 'ootf_dmg'
+                    value-scale: '5'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Delay-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.2'
                     delay-scale: '0'
                   children: 
-                    Damage-f: 
+                    Damage-g: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         type: 'Damage'
-                        value-base: '12'
-                        value-scale: '1'
+                        value-base: 'ootf_dmg'
+                        value-scale: '5'
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
                       children:  {}
-                    Delay-g: 
+                    Delay-h: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '0.2'
+                        delay-base: '.2'
                         delay-scale: '0'
                       children: 
-                        Damage-h: 
+                        Damage-i: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
                             type: 'Damage'
-                            value-base: '12'
-                            value-scale: '1'
+                            value-base: 'ootf_dmg'
+                            value-scale: '5'
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Entity Attack'
+                            cause: 'Custom'
                           children:  {}
-                        Delay-i: 
+                        Delay-j: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -966,53 +1073,53 @@ OneTwoThreeFour:
                             delay-base: '.2'
                             delay-scale: '0'
                           children: 
-                            Damage-j: 
+                            Damage-k: 
                               type: 'mechanic'
                               indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
                                 type: 'Damage'
-                                value-base: '12'
-                                value-scale: '1'
+                                value-base: 'ootf_dmg'
+                                value-scale: '5'
                                 true: 'False'
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Custom'
                               children:  {}
-                            Delay-k: 
-                              type: 'mechanic'
-                              indicator: 'None'
-                              data: 
-                                icon-key: ''
-                                counts: 'True'
-                                delay-base: '.2'
-                                delay-scale: '0'
-                              children: 
-                                Damage-l: 
-                                  type: 'mechanic'
-                                  indicator: 'None'
-                                  data: 
-                                    icon-key: ''
-                                    counts: 'True'
-                                    type: 'Damage'
-                                    value-base: '12'
-                                    value-scale: '1'
-                                    true: 'False'
-                                    classifier: 'default'
-                                    knockback: 'True'
-                                    cause: 'Custom'
-                                  children:  {}
-                Channel-m: 
-                  type: 'mechanic'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    counts: 'True'
-                    still: 'False'
-                    time-base: '1.2'
-                    time-scale: '0'
-                  children:  {}
+            Channel-l: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                still: 'False'
+                time-base: '1.2'
+                time-scale: '0'
+              children:  {}
+            Sound-m: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.ottf'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-n: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'ootf_dmg'
+            type: 'Number'
+            placeholder: '%math_12+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
 Overhand Swing: 
   name: 'Overhand Swing'
   type: 'Active'
@@ -1026,7 +1133,7 @@ Overhand Swing:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '4'
+    cooldown-base: '6'
     cooldown-scale: '0'
     mana-base: '4'
     mana-scale: '0'
@@ -1034,19 +1141,22 @@ Overhand Swing:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10007
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oIt would hit pretty hard if I put my hand up '
+  - '&9&oreally high and threw it down! I think?'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -1055,68 +1165,94 @@ Overhand Swing:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote overhand_swing'
+            type: 'OP'
+          children:  {}
+        Single-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '3'
+            range-scale: '0'
+            tolerance-base: '1.5'
+            tolerance-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'false'
           children: 
-            Command-c: 
+            Channel-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote overhand_swing'
-                type: 'OP'
+                still: 'True'
+                time-base: '.45'
+                time-scale: '0'
               children:  {}
-            Single-d: 
-              type: 'target'
+            Delay-e: 
+              type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                counts: 'True'
+                delay-base: '0.45'
+                delay-scale: '0'
               children: 
-                Channel-e: 
+                Damage-f: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    still: 'True'
-                    time-base: '.45'
-                    time-scale: '0'
+                    type: 'Damage'
+                    value-base: 'swing_dmg'
+                    value-scale: '5'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
                   children:  {}
-                Delay-f: 
+                Status-g: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.45'
-                    delay-scale: '0'
-                  children: 
-                    Damage-g: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '25'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Entity Attack'
-                      children:  {}
+                    status: 'Stun'
+                    duration-base: '2'
+                    duration-scale: '0.2'
+                  children:  {}
+            Sound-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.overhand_swing'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'swing_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
 Running Kick: 
   name: 'Running Kick'
   type: 'Active'
@@ -1139,18 +1275,21 @@ Running Kick:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10008
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
+  - '&6&oStat scale:'
+  - '&c&oStrength'
+  - '&f&oAgility'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&9&oIf I kick while running,'
+  - '&9&othat should make it stronger!'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -1159,82 +1298,97 @@ Running Kick:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote running_kick'
+            type: 'OP'
+          children:  {}
+        Launch-c: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            relative: 'Target'
+            forward-base: 'runningspeed'
+            forward-scale: '0.02'
+            upward-base: '0'
+            upward-scale: '0'
+            right-base: '0'
+            right-scale: '0'
+          children:  {}
+        Delay-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.8'
+            delay-scale: '0'
           children: 
-            Command-c: 
-              type: 'mechanic'
+            Cone-e: 
+              type: 'target'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                command: 'iaemote running_kick'
-                type: 'OP'
-              children:  {}
-            Launch-d: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                relative: 'Target'
-                forward-base: '3'
-                forward-scale: '0'
-                upward-base: '0'
-                upward-scale: '0'
-                right-base: '0'
-                right-scale: '0'
-              children:  {}
-            Delay-e: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.8'
-                delay-scale: '0'
+                range-base: '4'
+                range-scale: '0'
+                angle-base: '75'
+                angle-scale: '0'
+                group: 'Enemy'
+                wall: 'False'
+                caster: 'False'
+                max-base: '99'
+                max-scale: '0'
               children: 
-                Single-f: 
-                  type: 'target'
+                Damage-f: 
+                  type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    range-base: '4'
-                    range-scale: '0'
-                    tolerance-base: '0'
-                    tolerance-scale: '0'
-                    group: 'Enemy'
-                    wall: 'False'
-                    caster: 'false'
-                  children: 
-                    Damage-g: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '20'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Custom'
-                      children:  {}
-            Channel-h: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                still: 'False'
-                time-base: '0.8'
-                time-scale: '0'
-              children:  {}
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'rkick_dmg'
+                    value-scale: '10'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Custom'
+                  children:  {}
+        Channel-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            still: 'False'
+            time-base: '0.8'
+            time-scale: '0'
+          children:  {}
+        Value Placeholder-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'rkick_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
+        Value Placeholder-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'runningspeed'
+            type: 'Number'
+            placeholder: '%math_2.5+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
 Dropkick: 
   name: 'Dropkick'
   type: 'Active'
@@ -1248,7 +1402,7 @@ Dropkick:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '0'
+    cooldown-base: '6'
     cooldown-scale: '0'
     mana-base: '5'
     mana-scale: '0'
@@ -1257,18 +1411,21 @@ Dropkick:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10009
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
+  - '&6&oStat scale:'
+  - '&c&oStrength'
+  - '&f&oAgility'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&9&oWhat if I kicked with both my legs'
+  - '&9&oat the same time?'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -1277,101 +1434,119 @@ Dropkick:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            type: 'On Ground'
-          children: 
-            Command-c: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                command: 'iaemote dropkick'
-                type: 'OP'
-              children:  {}
-            Delay-d: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.5'
-                delay-scale: '0'
-              children: 
-                Single-e: 
-                  type: 'target'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    range-base: '5'
-                    range-scale: '0'
-                    tolerance-base: '0'
-                    tolerance-scale: '0'
-                    group: 'Enemy'
-                    wall: 'False'
-                    caster: 'false'
-                  children: 
-                    Damage-f: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '25'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Entity Attack'
-                      children:  {}
-                    Push-g: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Fixed'
-                        speed-base: '.5'
-                        speed-scale: '.5'
-                        source: 'none'
-                      children:  {}
-            Delay-h: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.15'
-                delay-scale: '0'
-              children: 
-                Launch-i: 
-                  type: 'mechanic'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    counts: 'True'
-                    relative: 'Target'
-                    forward-base: '0.5'
-                    forward-scale: '0'
-                    upward-base: '0'
-                    upward-scale: '0'
-                    right-base: '0'
-                    right-scale: '0'
-                  children:  {}
-        Channel-j: 
+        Command-b: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
-            still: 'False'
-            time-base: '1'
-            time-scale: '0'
+            command: 'iaemote dropkick'
+            type: 'OP'
+          children:  {}
+        Delay-c: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.5'
+            delay-scale: '0'
+          children: 
+            Cone-d: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                range-base: '4'
+                range-scale: '0'
+                angle-base: '75'
+                angle-scale: '0'
+                group: 'Enemy'
+                wall: 'False'
+                caster: 'False'
+                max-base: '99'
+                max-scale: '0'
+              children: 
+                Damage-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'dkick_dmg'
+                    value-scale: '10'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Push-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Fixed'
+                    speed-base: '.5'
+                    speed-scale: '.1'
+                    source: 'none'
+                  children:  {}
+                Sound-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    sound: 'Custom'
+                    custom: 'minecraft:scrapper.dropkick'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
+                  children:  {}
+        Delay-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.15'
+            delay-scale: '0'
+          children: 
+            Launch-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'jumpspeed'
+                forward-scale: '0'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Value Placeholder-j: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'dkick_dmg'
+            type: 'Number'
+            placeholder: '%math_35+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
+        Value Placeholder-k: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'jumpspeed'
+            type: 'Number'
+            placeholder: '%math_0.5+({sapi_player_class_attribute:agility}*0.01)%'
           children:  {}
 Low Kick: 
   name: 'Low Kick'
@@ -1394,19 +1569,22 @@ Low Kick:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10010
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oAim for the shins! '
+  - '&9&oOr…whatever low part...'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -1415,81 +1593,99 @@ Low Kick:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote low_kick'
+            type: 'OP'
+          children:  {}
+        Channel-c: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            still: 'True'
+            time-base: '0.33'
+            time-scale: '0'
+          children:  {}
+        Delay-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.33'
+            delay-scale: '0'
           children: 
-            Command-c: 
-              type: 'mechanic'
+            Cone-e: 
+              type: 'target'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                command: 'iaemote low_kick'
-                type: 'OP'
-              children:  {}
-            Channel-d: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                still: 'True'
-                time-base: '0.33'
-                time-scale: '0'
-              children:  {}
-            Delay-e: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.33'
-                delay-scale: '0'
+                range-base: '4'
+                range-scale: '0'
+                angle-base: '75'
+                angle-scale: '0'
+                group: 'Enemy'
+                wall: 'False'
+                caster: 'False'
+                max-base: '99'
+                max-scale: '0'
               children: 
-                Single-f: 
-                  type: 'target'
+                Damage-f: 
+                  type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    range-base: '5'
-                    range-scale: '0'
-                    tolerance-base: '0'
-                    tolerance-scale: '0'
-                    group: 'Enemy'
-                    wall: 'False'
-                    caster: 'false'
-                  children: 
-                    Damage-g: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '20'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Custom'
-                      children:  {}
-                    Potion-h: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        potion: 'Slow'
-                        ambient: 'False'
-                        tier-base: '1'
-                        tier-scale: '0'
-                        seconds-base: '5'
-                        seconds-scale: '1'
-                      children:  {}
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'lkick_dmg'
+                    value-scale: '5'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Custom'
+                  children:  {}
+                Potion-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Slow'
+                    ambient: 'False'
+                    tier-base: '1'
+                    tier-scale: '0'
+                    seconds-base: '2'
+                    seconds-scale: '0.2'
+                  children:  {}
+                Sound-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    sound: 'Custom'
+                    custom: 'minecraft:scrapper.low_kick'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
+                  children:  {}
+        Value Placeholder-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'lkick_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
 Chaaaaaarge: 
   name: 'Chaaaaaarge'
   type: 'Active'
@@ -1511,19 +1707,22 @@ Chaaaaaarge:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10012
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oAim for the shins! '
+  - '&9&oOr…whatever low part...'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -1633,7 +1832,6 @@ Get Out Of The Way:
   name: 'Get Out Of The Way'
   type: 'Active'
   max-level: 5
-  skill-req: 'Skeddaddle'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -1642,7 +1840,7 @@ Get Out Of The Way:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '0'
+    cooldown-base: '4'
     cooldown-scale: '0'
     mana-base: '5'
     mana-scale: '0'
@@ -1650,19 +1848,21 @@ Get Out Of The Way:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10011
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&f&oAgility'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oDive to the side! I’ll worry about landing later…'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -1740,19 +1940,21 @@ Skedaddle:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10004
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&f&oAgility'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - "&9&oI'll expend some stamina to increase my leg power!"
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -1774,3 +1976,159 @@ Skedaddle:
             seconds-base: '5'
             seconds-scale: '0'
           children:  {}
+lvlup: 
+  name: 'lvlup'
+  type: 'Dynamic'
+  max-level: 1
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '0'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '0'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Command-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            command: 'cp addstpt'
+            type: 'OP'
+          children:  {}
+regen: 
+  name: 'regen'
+  type: 'passive'
+  max-level: 1
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'false'
+  attributes: 
+    level-base: '0'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '0'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Passive-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            seconds-base: '1'
+            seconds-scale: '0'
+          children: 
+            Value Placeholder-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'False'
+                key: 'noncombatheal'
+                type: 'Number'
+                placeholder: '%math_2+(0.1*{sapi_player_class_attribute:willpower})%'
+              children:  {}
+            Self-d: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Combat-e: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    combat: 'False'
+                    seconds: '10'
+                  children: 
+                    Heal-f: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Health'
+                        value-base: 'noncombatheal'
+                        value-scale: '1'
+                      children:  {}
+                Combat-g: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    combat: 'True'
+                    seconds: '10'
+                  children: 
+                    Heal-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Health'
+                        value-base: 'combatheal'
+                        value-scale: '1'
+                      children:  {}
+            Value Placeholder-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'False'
+                key: 'combatheal'
+                type: 'Number'
+                placeholder: '%math_2+(0.05*{sapi_player_class_attribute:willpower})%'
+              children:  {}

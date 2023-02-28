@@ -63,9 +63,6 @@ Targeting:
   # - world2
   player-ally: 'false'
 
-  # Whether to check for player allies via Parties
-  parties-ally: 'false'
-
   # Whether for skills to affect NPCs
   affect-npcs: 'false'
 
@@ -102,7 +99,7 @@ Classes:
   modify-health: 'true'
 
   # The default health for players without a class
-  classless-hp: '20'
+  classless-hp: '50'
 
   # Whether non-castable auto-leveled skills are shown
   show-auto-skills: 'false'
@@ -136,7 +133,7 @@ Skills:
   allow-downgrade: 'true'
 
   # Whether messages should be shown on casting a skill
-  show-messages: 'true'
+  show-messages: 'false'
 
   # The radius in which to show cast messages to nearby players
   message-radius: '20'
@@ -217,6 +214,12 @@ Items:
   # 39 = helmet
   # 40 = off hand
   slots: 
+  - '27'
+  - '28'
+  - '29'
+  - '30'
+  - '31'
+  - '32'
   - '36'
   - '37'
   - '38'
@@ -343,7 +346,7 @@ Casting:
   cast-indicator: 
 
     # Whether the feature is enabled
-    enabled: 'true'
+    enabled: 'false'
 
     # How tightly to pack particles in the effect. A higher
     # density will play more particles. It represents the
@@ -374,7 +377,7 @@ Casting:
   # are available for use.
   item: 
     type: 'BOOK'
-    data: '0'
+    data: '10012'
     durability: '0'
     name: '&dSkills'
     lore: 
@@ -471,7 +474,7 @@ Skill Bar:
   empty-icon: 
     material: 'PUMPKIN_SEEDS'
     durability: '0'
-    data: '0'
+    data: '10000'
     text: '&7Unassigned'
 
   # The default layout for skill bars
@@ -587,6 +590,10 @@ Experience:
     wither: '500'
     witherskeleton: '5'
     zombie: '2'
+
+  # If false use formula
+  # If true use levels.yml
+  use-levels: 'false'
 
 # How much logging to do when loading SkillAPI
 # When testing setting up skills/classes, increase this to 1-5

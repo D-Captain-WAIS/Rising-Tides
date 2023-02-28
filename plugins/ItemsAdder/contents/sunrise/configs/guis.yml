@@ -1,0 +1,11 @@
+info:
+  namespace: sunrise
+font_images:
+  vivre:
+    path: gui/vivre
+    suggest_in_command: true
+    y_position: 15
+  skills:
+    path: gui/skill_green
+    suggest_in_command: true
+    y_position: 15

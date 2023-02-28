@@ -107,13 +107,49 @@ conversations:
         pointers: "heard"
       bandits:
         text: "\nI heard some bandits mention their name and- Oh my god! I think I can see some bandits approaching the village!\n"
-        events: "play_combatTut,talked_gil"
+        events: "play_combatTut,talked_gil,folder_combat,add_stopped_raid,talked_tatianna,talked_nowell,talked_parry,talked_jai"
       thank:
         text: "\nThank you for helping our village out!\n"
     player_options:
       heard:
         text: "Hi, have you heard anything about the Bluejam Pirates?\n"
         pointers: "bandits"
-  
+  vivre_guide:
+    quester: "\n&6&l[God]"
+    first: "like"
+    stop: 'true'
+    NPC_options:
+      like:
+        text: "\nYou have gained a level for the first time!\nWould you like to listen to the vivre card guide?\n"
+        pointers: "accept,refuse"
+      again:
+        text: "\nAlright! You can always check the guides through the vivre card!\n"
+        events: "ask_chassis"
+    player_options:
+      accept:
+        text: "Yes!\n"
+        events: "vivre_guide"
+      refuse:
+        text: "No!\n"
+        pointers: "again"
+  chassis_guide:
+    quester: "\n&6&l[God]"
+    first: "like"
+    stop: 'true'
+    NPC_options:
+      like:
+        text: "\nYou have gotten chassis for the first time!\nWould you like to listen to the chassis guide?\n"
+        conditions: "!tag_asked_chassis"
+        pointers: "accept,refuse"
+      again:
+        text: "\nAlright! You can always check the guides through the vivre card!\n"
+        events: "asked_chassis"
+    player_options:
+      accept:
+        text: "Yes!\n"
+        events: "chassis_guide,asked_chassis"
+      refuse:
+        text: "No!\n"
+        pointers: "again"
   
   

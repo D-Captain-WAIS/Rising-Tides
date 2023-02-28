@@ -16,4 +16,106 @@ items:
               command: 'cp vivre {player}'
               as_console: true
               delay: 0
+      drop:
+        cancel: true  
+  constitution:
+    display_name: "&a&l[Constitution]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/constitution.png
+  endurance:
+    display_name: "&2&l[Endurance]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/endurance.png
+  willpower:
+    display_name: "&a&l[Willpower]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/willpower.png
+  agility:
+    display_name: "&f&l[Agility]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/agility.png
+  strength:
+    display_name: "&c&l[Strength]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/strength.png
+  dexterity:
+    display_name: "&9&l[Dexterity]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/dexterity.png
+  accuracy:
+    display_name: "&6&l[Accuracy]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/accuracy.png
+  finesse:
+    display_name: "&5&l[finesse]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/finesse.png
+  respec:
+    display_name: "&b&l[Respec]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/respec.png
+  missions:
+    display_name: "&e&l[Missions]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/mission.png
+  skills:
+    display_name: "&c&l[Skills]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/skills.png
+  chassis:
+    display_name: "&d&l[Chassis]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/chassis.png  
+  combat:
+    display_name: "&c&l[Comabt]"
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+      - item/combat.png
+  empty:
+    display_name: ""
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true 
+      textures:
+      - item/empty.png
+
+  
     

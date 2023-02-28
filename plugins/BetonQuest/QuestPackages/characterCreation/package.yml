@@ -12,6 +12,7 @@ npcs:
   '10': "guns"
   '11': "doctor"
   '12': "melee"
+  '40': "god"
 
 hide_npcs:
   '0': hide_faction
@@ -34,3 +35,4 @@ hide_npcs:
   '18': hide_class
   '19': hide_class
   '20': hide_class
+  '40': hide_god

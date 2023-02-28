@@ -256,7 +256,7 @@ forceprofess:
   name: 'forceprofess'
   description: 'Professes a player'
   permission: 'skillapi.force'
-  args: '<player> <class>'
+  args: '<player> <class> [-s]'
   sender: 'CONSOLE_ONLY'
   enabled: 'true'
   cooldown: 0

@@ -1,0 +1,569 @@
+# |------------------------------------------------------------------------
+# |                       CommandPanels Template File
+# |                            By RockyHawk v1.1
+# | https://www.spigotmc.org/resources/command-panels-custom-guis.67788/
+# |------------------------------------------------------------------------
+panels:
+  vivre:
+    perm: vivre
+    rows: 6
+    title: ':offset_-8::vivre:'
+    empty: AIR
+    pre-load-commands:
+    - 'add-data= statpoints 0'
+    - 'add-data= investedstatpoints 0'
+    - 'add-data= resetprice 1000'
+    sound-on-open: item_book_page_turn
+    item:
+      '12':
+        material: BOOK
+        stack: 1
+        name: '&e&l[Missions]'
+        customdata: 10008
+        commands:
+        - msg= &cWIP
+        - cpc
+      '13':
+        material: BOOK
+        stack: 1
+        name: '&c&l[Skills]'
+        customdata: 10011
+        commands:
+        - class skill
+        - msg= &e&oYou contemplate on your current skills...
+      '14':
+        material: BOOK
+        stack: 1
+        name: '&d&l[Chassis]'
+        customdata: 10010
+        commands:
+        - cosmetic
+        - cpc
+      '22':
+        material: cps= self
+        name: '&4&l[%cp-player-name%]'
+        lore:
+        - '&aClass: &e%sapi_default_currentgroupname%'
+        - '&aLevel: %sapi_default_currentlevel%'
+      #strength
+      '23':
+        material: BOOK
+        name: '&c&l[STRENGTH] : &f&l%sapi_player_class_attribute:strength%'
+        customdata: 10004
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&c&l[STRENGTH] : &f&l%sapi_player_class_attribute:strength%'
+          customdata: 10004
+          lore:
+          - ''
+          - "&c&oIncreases proficiency with" 
+          - "&c&ostrength related skills"
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% strength 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% strength 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&c&l[STRENGTH] : &f&l%sapi_player_class_attribute:strength%'
+          customdata: 10004
+          lore:
+          - ''
+          - "&c&oIncreases proficiency with" 
+          - "&c&ostrength related skills"
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% strength 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&c&l[STRENGTH] : &f&l%sapi_player_class_attribute:strength%'
+          customdata: 10004
+          lore:
+          - ''
+          - "&c&oIncreases proficiency with" 
+          - "&c&ostrength related skills"
+          - ''
+          - '&4You have no available stat points!'
+      #constitution
+      '20':
+        material: BOOK
+        name: '&a&l[CONSTITUTION] : &f&l%sapi_player_class_attribute:constitution%'
+        customdata: 10000
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&a&l[CONSTITUTION] : &f&l%sapi_player_class_attribute:constitution%'
+          customdata: 10000
+          lore:
+          - ''
+          - '&a&oIncreases Health and proficiency'
+          - '&a&owith constitution related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% constitution 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% constitution 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&a&l[CONSTITUTION] : &f&l%sapi_player_class_attribute:constitution%'
+          customdata: 10000
+          lore:
+          - ''
+          - '&a&oIncreases Health and proficiency'
+          - '&a&owith constitution related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% constitution 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&a&l[CONSTITUTION] : &f&l%sapi_player_class_attribute:constitution%'
+          customdata: 10000
+          lore:
+          - ''
+          - '&a&oIncreases Health and proficiency'
+          - '&a&owith constitution related skills'
+          - ''
+          - '&4You have no available stat points!'
+      #endurance
+      '21':
+        material: BOOK
+        name: '&2&l[ENDURANCE] : &f&l%sapi_player_class_attribute:endurance%'
+        customdata: 10001
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&2&l[ENDURANCE] : &f&l%sapi_player_class_attribute:endurance%'
+          customdata: 10001
+          lore:
+          - ''
+          - '&2&oIncreases Stamina and proficiency'
+          - '&2&owith endurance related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% endurance 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% endurance 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&2&l[ENDURANCE] : &f&l%sapi_player_class_attribute:endurance%'
+          customdata: 10001
+          lore:
+          - ''
+          - '&2&oIncreases Stamina and proficiency'
+          - '&2&owith endurance related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% endurance 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&a&l[ENDURANCE] : &f&l%sapi_player_class_attribute:endurance%'
+          customdata: 10001
+          lore:
+          - ''
+          - '&2&oIncreases Stamina and proficiency'
+          - '&2&owith endurance related skills'
+          - ''
+          - '&4You have no available stat points!'
+      #willpower
+      '29':
+        material: BOOK
+        name: '&d&l[WILLPOWER] : &f&l%sapi_player_class_attribute:willpower%'
+        customdata: 10002
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&d&l[WILLPOWER] : &f&l%sapi_player_class_attribute:willpower%'
+          customdata: 10002
+          lore:
+          - ''
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% willpower 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% willpower 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&d&l[WILLPOWER] : &f&l%sapi_player_class_attribute:willpower%'
+          customdata: 10002
+          lore:
+          - ''
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% willpower 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&d&l[WILLPOWER] : &f&l%sapi_player_class_attribute:willpower%'
+          customdata: 10002
+          lore:
+          - ''
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
+          - ''
+          - '&4You have no available stat points!'
+      #dex
+      '24':
+        material: BOOK
+        name: '&9&l[DEXTERITY] : &f&l%sapi_player_class_attribute:dexterity%'
+        customdata: 10005
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&9&l[DEXTERITY] : &f&l%sapi_player_class_attribute:dexterity%'
+          customdata: 10005
+          lore:
+          - ''
+          - '&9&oIncreases proficiency' 
+          - '&9&owith dexterity related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% dexterity 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% dexterity 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&9&l[DEXTERITY] : &f&l%sapi_player_class_attribute:dexterity%'
+          customdata: 10005
+          lore:
+          - ''
+          - '&9&oIncreases proficiency' 
+          - '&9&owith dexterity related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% dexterity 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&9&l[DEXTERITY] : &f&l%sapi_player_class_attribute:dexterity%'
+          customdata: 10005
+          lore:
+          - ''
+          - '&9&oIncreases proficiency' 
+          - '&9&owith dexterity related skills'
+          - ''
+          - '&4You have no available stat points!'
+      #accuracy
+      '32':
+        material: BOOK
+        name: '&6&l[ACCURACY] : &f&l%sapi_player_class_attribute:accuracy%'
+        customdata: 10006
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&6&l[ACCURACY] : &f&l%sapi_player_class_attribute:accuracy%'
+          customdata: 10006
+          lore:
+          - ''
+          - '&6&oIncreases proficiency' 
+          - '&6&owith accuracy related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% accuracy 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% accuracy 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&6&l[ACCURACY] : &f&l%sapi_player_class_attribute:accuracy%'
+          customdata: 10006
+          lore:
+          - ''
+          - '&6&oIncreases proficiency' 
+          - '&6&owith accuracy related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% accuracy 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&6&l[ACCURACY] : &f&l%sapi_player_class_attribute:accuracy%'
+          customdata: 10006
+          lore:
+          - ''
+          - '&6&oIncreases proficiency' 
+          - '&6&owith accuracy related skills'
+          - ''
+          - '&4You have no available stat points!'
+      #agility
+      '30':
+        material: BOOK
+        name: '&f&l[AGILITY] : &f&l%sapi_player_class_attribute:agility%'
+        customdata: 10003
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&f&l[AGILITY] : &f&l%sapi_player_class_attribute:agility%'
+          customdata: 10003
+          lore:
+          - ''
+          - '&f&oIncreases proficiency' 
+          - '&f&owith agility related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% agility 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% agility 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&f&l[AGILITY] : &f&l%sapi_player_class_attribute:agility%'
+          customdata: 10003
+          lore:
+          - ''
+          - '&f&oIncreases proficiency' 
+          - '&f&owith agility related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% agility 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&f&l[AGILITY] : &f&l%sapi_player_class_attribute:agility%'
+          customdata: 10003
+          lore:
+          - ''
+          - '&f&oIncreases proficiency' 
+          - '&f&owith agility related skills'
+          - ''
+          - '&4You have no available stat points!'
+      #finesse
+      '33':
+        material: BOOK
+        name: '&5&l[FINESSE] : &f&l%sapi_player_class_attribute:finesse%'
+        customdata: 10007
+        has0:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 10
+          material: BOOK
+          name: '&5&l[FINESSE] : &f&l%sapi_player_class_attribute:finesse%'
+          customdata: 10007
+          lore:
+          - ''
+          - '&f&oIncreases proficiency' 
+          - '&f&owith finesse related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          - '&a[Shift + Left Click] &f: &e+10'
+          commands:
+          - "left= console= class forceattr %cp-player-name% finesse 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= class forceattr %cp-player-name% finesse 10"
+          - "leftshift= math-data= statpoints -10"
+          - "leftshift= math-data= investedstatpoints +10"
+          - "leftshift= math-data= resetprice +1000"
+          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has1:
+          value0: '%cp-data-statpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&5&l[FINESSE] : &f&l%sapi_player_class_attribute:finesse%'
+          customdata: 10007
+          lore:
+          - ''
+          - '&f&oIncreases proficiency' 
+          - '&f&owith finesse related skills'
+          - ''
+          - '&fAvailable Points: &e%cp-data-statpoints%'
+          - '&a[Left Click] &f: &e+1'
+          commands:
+          - "left= console= class forceattr %cp-player-name% finesse 1"
+          - "left= math-data= statpoints -1"
+          - "left= math-data= investedstatpoints +1"
+          - "left= math-data= resetprice +100"
+          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+        has2:
+          value0: '%cp-data-statpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&5&l[FINESSE] : &f&l%sapi_player_class_attribute:finesse%'
+          customdata: 10007
+          lore:
+          - ''
+          - '&f&oIncreases proficiency' 
+          - '&f&owith finesse related skills'
+          - ''
+          - '&4You have no available stat points!'
+      '31':
+        material: BOOK
+        name: '&b&l[Reset Stats]'
+        customdata: 10009
+        has0:
+          value0: '%cp-data-investedstatpoints%'
+          compare0: 0
+          material: BOOK
+          name: '&b&l[Reset Stats]'
+          customdata: 10009
+          lore:
+          - '&aYou have spent: %cp-data-investedstatpoints% Stat Points'
+        has1:
+          value0: '%cp-data-investedstatpoints% ISGREATER'
+          compare0: 1
+          material: BOOK
+          name: '&b&l[Reset Stats]'
+          customdata: 10009
+          lore:
+          - '&aYou have spent: %cp-data-investedstatpoints% Stat Points'
+          - '&aYou need ฿%cp-data-resetprice% to reset'
+          commands:
+          - "paywall= %cp-data-resetprice%"
+          - "console= class forceattr %cp-player-name%"
+          - "math-data= statpoints +%cp-data-investedstatpoints%"
+          - "set-data= resetprice 1000"
+          - "set-data= investedstatpoints 0"
+          - "playsound minecraft:risingtides.respec master %cp-player-name%"
+        
+  
+        
+
+
+
+      

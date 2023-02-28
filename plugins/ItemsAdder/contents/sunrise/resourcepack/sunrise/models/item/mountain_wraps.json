@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "sunrise:item/mountain_wraps",
+		"particle": "sunrise:item/mountain_wraps"
+	},
+	"elements": [
+		{
+			"from": [5.75, -0.25, 6.75],
+			"to": [10.25, 4.25, 11.25],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 2, 9]},
+			"faces": {
+				"north": {"uv": [14.5, 0, 10, 4.5], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 0, 4.5, 4.5], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [4.5, 14.5, 0, 10], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [5, 0, 9.5, 4.5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [5, 5, 9.5, 9.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 5, 4.5, 9.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 4, 1]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 4, 1]
+		},
+		"gui": {
+			"rotation": [-55.38, -21.35, -27.79],
+			"translation": [6, 6.5, 0],
+			"scale": [2, 2, 2]
+		}
+	}
+}

@@ -11,7 +11,7 @@ Dropkick:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '0'
+    cooldown-base: '6'
     cooldown-scale: '0'
     mana-base: '5'
     mana-scale: '0'
@@ -20,18 +20,21 @@ Dropkick:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10009
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
+  - '&6&oStat scale:'
+  - '&c&oStrength'
+  - '&f&oAgility'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&9&oWhat if I kicked with both my legs'
+  - '&9&oat the same time?'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -40,99 +43,117 @@ Dropkick:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            type: 'On Ground'
-          children: 
-            Command-c: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                command: 'iaemote dropkick'
-                type: 'OP'
-              children:  {}
-            Delay-d: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.5'
-                delay-scale: '0'
-              children: 
-                Single-e: 
-                  type: 'target'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    range-base: '5'
-                    range-scale: '0'
-                    tolerance-base: '0'
-                    tolerance-scale: '0'
-                    group: 'Enemy'
-                    wall: 'False'
-                    caster: 'false'
-                  children: 
-                    Damage-f: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '25'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Entity Attack'
-                      children:  {}
-                    Push-g: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Fixed'
-                        speed-base: '.5'
-                        speed-scale: '.5'
-                        source: 'none'
-                      children:  {}
-            Delay-h: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.15'
-                delay-scale: '0'
-              children: 
-                Launch-i: 
-                  type: 'mechanic'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    counts: 'True'
-                    relative: 'Target'
-                    forward-base: '0.5'
-                    forward-scale: '0'
-                    upward-base: '0'
-                    upward-scale: '0'
-                    right-base: '0'
-                    right-scale: '0'
-                  children:  {}
-        Channel-j: 
+        Command-b: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
-            still: 'False'
-            time-base: '1'
-            time-scale: '0'
+            command: 'iaemote dropkick'
+            type: 'OP'
+          children:  {}
+        Delay-c: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.5'
+            delay-scale: '0'
+          children: 
+            Cone-d: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                range-base: '4'
+                range-scale: '0'
+                angle-base: '75'
+                angle-scale: '0'
+                group: 'Enemy'
+                wall: 'False'
+                caster: 'False'
+                max-base: '99'
+                max-scale: '0'
+              children: 
+                Damage-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'dkick_dmg'
+                    value-scale: '10'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Push-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Fixed'
+                    speed-base: '.5'
+                    speed-scale: '.1'
+                    source: 'none'
+                  children:  {}
+                Sound-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    sound: 'Custom'
+                    custom: 'minecraft:scrapper.dropkick'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
+                  children:  {}
+        Delay-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.15'
+            delay-scale: '0'
+          children: 
+            Launch-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'jumpspeed'
+                forward-scale: '0'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Value Placeholder-j: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'dkick_dmg'
+            type: 'Number'
+            placeholder: '%math_35+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
+        Value Placeholder-k: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'jumpspeed'
+            type: 'Number'
+            placeholder: '%math_0.5+({sapi_player_class_attribute:agility}*0.01)%'
           children:  {}

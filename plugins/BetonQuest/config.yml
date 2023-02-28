@@ -48,6 +48,7 @@ sounds:
 cmd_blacklist:
 - spawn
 hook:
+  fake-block: true
   decentholograms: true
   citizens: true
   mythicmobs: true

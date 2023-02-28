@@ -18,19 +18,22 @@ Double Punch:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10005
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name}'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oPunch with both my arms at the same time! '
+  - '&9&oThat should work!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -39,76 +42,94 @@ Double Punch:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote double_punch'
+            type: 'OP'
+          children:  {}
+        Cone-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '4'
+            range-scale: '0'
+            angle-base: '75'
+            angle-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'False'
+            max-base: '99'
+            max-scale: '0'
           children: 
-            Command-c: 
+            Channel-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote double_punch'
-                type: 'OP'
-              children:  {}
-            Single-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                still: 'False'
+                time-base: '0.45'
+                time-scale: '0'
               children: 
-                Channel-e: 
+                Delay-e: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    still: 'False'
-                    time-base: '0.45'
-                    time-scale: '0'
+                    delay-base: '0.45'
+                    delay-scale: '0'
                   children: 
-                    Delay-f: 
+                    Damage-f: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '0.45'
-                        delay-scale: '0'
-                      children: 
-                        Damage-g: 
-                          type: 'mechanic'
-                          indicator: 'None'
-                          data: 
-                            icon-key: ''
-                            counts: 'True'
-                            type: 'Damage'
-                            value-base: '20'
-                            value-scale: '1'
-                            true: 'False'
-                            classifier: 'default'
-                            knockback: 'True'
-                            cause: 'Entity Attack'
-                          children:  {}
-                        Push-h: 
-                          type: 'mechanic'
-                          indicator: 'None'
-                          data: 
-                            icon-key: ''
-                            counts: 'True'
-                            type: 'Fixed'
-                            speed-base: '0.3'
-                            speed-scale: '0.3'
-                            source: 'none'
-                          children:  {}
+                        type: 'Damage'
+                        value-base: 'double_punch_dmg'
+                        value-scale: '5'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                    Push-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Fixed'
+                        speed-base: '0.3'
+                        speed-scale: '0.05'
+                        source: 'none'
+                      children:  {}
+            Sound-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.double_punch'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'double_punch_dmg'
+            type: 'Number'
+            placeholder: '%math_30+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}

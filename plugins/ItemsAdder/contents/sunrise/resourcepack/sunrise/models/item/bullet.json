@@ -1,0 +1,45 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "sunrise:item/bullet",
+		"particle": "sunrise:item/bullet"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 6.5],
+			"to": [9, 2, 8.5],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#0"},
+				"south": {"uv": [2, 0, 4, 2], "texture": "#0"},
+				"west": {"uv": [2, 2, 4, 4], "texture": "#0"},
+				"up": {"uv": [2, 6, 0, 4], "texture": "#0"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 7, 0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 7.25, 0]
+		},
+		"firstperson_righthand": {
+			"translation": [4.25, 8, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [4.5, 7.75, 0]
+		},
+		"ground": {
+			"translation": [0, 5.25, 0]
+		},
+		"gui": {
+			"translation": [0, 28, 0],
+			"scale": [4, 4, 4]
+		},
+		"fixed": {
+			"translation": [0, 7.25, 0]
+		}
+	}
+}

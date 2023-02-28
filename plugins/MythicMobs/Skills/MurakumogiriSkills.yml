@@ -1213,34 +1213,65 @@ GekishinRings:
 Haoshoku:
   Skills:
   - command{c="iaemote Haoshoku";op=true;ac=true} @trigger
+  - sound{s=risingtides.conq_haki;v=6} @selflocation
   - delay 20
   - skill{s=HaoshokuBlast}
-  - sound{s=block.beacon.activate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.activate;p=0.75;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.75;v=6} @selflocation
   - skill{s=HaoshokuLightning}
   - delay 8
   - skill{s=HaoshokuBlast}
-  - sound{s=block.beacon.activate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.activate;p=0.75;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.75;v=6} @selflocation
   - skill{s=HaoshokuLightning}
   - delay 8
   - skill{s=HaoshokuBlast}
-  - sound{s=block.beacon.activate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.activate;p=0.75;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.75;v=6} @selflocation
   - skill{s=HaoshokuLightning}
   - delay 8
   - skill{s=HaoshokuBlast}
-  - sound{s=block.beacon.activate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.5;v=6} @selflocation
-  - sound{s=block.beacon.activate;p=0.75;v=6} @selflocation
-  - sound{s=block.beacon.deactivate;p=0.75;v=6} @selflocation
+  - skill{s=HaoshokuLightning}
+  - delay 8
+  - skill{s=HaoshokuBlast}
   - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning}  
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning}
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning}
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning}
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning}
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning} 
+  - delay 8
+  - skill{s=HaoshokuBlast}
+  - skill{s=HaoshokuLightning}  
+     
 HaoshokuBlast:
   Skills:
   - effect:particlering{p=reddust;color=#ffffff;radius=3;points=100;amount=1;hS=0;vS=0} @selflocation

@@ -24,14 +24,14 @@ class:
   # or just deleted
   profess-refund-attributes: 'false'
 
-  # Whether or not this class is reset when players use the reset command
+  # whether this class is reset when players use the reset command
   can-reset: 'true'
 
-  # Whether or not players professed as the same base class in this group
+  # whether players professed as the same base class in this group
   # are considered allies and cannot attack each other
   friendly: 'false'
 
-  # Whether or not to show a scoreboard for classes within this group.
+  # whether to show a scoreboard for classes within this group.
   # Scoreboards must be enabled for this to work.
   show-scoreboard: 'true'
 
@@ -57,12 +57,12 @@ class:
   # If use-custom-attribute-points is enabled, this is ignored.
   attribs-per-level: 1.0
 
-  # Whether or not to use custom skill point distribution.
+  # whether to use custom skill point distribution.
   # When enabled, skill points are given based on custom-points
   # instead of points-per-level
   use-custom-points: 'false'
 
-  # Whether or not to use custom attribute point distribution.
+  # whether to use custom attribute point distribution.
   # When enabled, attribute points are given based on custom-attribute-points
   # instead of attribs-per-level
   use-custom-attribute-points: 'false'

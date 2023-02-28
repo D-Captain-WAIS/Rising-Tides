@@ -1,4 +1,5 @@
 pl:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bRozpoczales rozmowe z {1}&b!&e===='
@@ -60,6 +61,7 @@ pl:
   condition_variable_not_met: 'no' # TODO: missing translation
   chest_occupied: This chest is already in use # TODO: missing translation
 en:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e===================================================='
@@ -99,9 +101,9 @@ en:
   items_to_craft: '&2{1} items left to craft'
   busy: '&cYou can''t talk while fighting.'
   quest_canceled: '&2Quest {1}&2 canceled!'
-  cancel: '&cCancel the quest'
-  cancel_page: Canceling quests
-  compass: '&cCompass targets'
+  cancel: '&cCancel a Quest'
+  cancel_page: '&cSelect which quest to cancel'
+  compass: '&cSelect a Quest Compass target'
   compass_page: Choose target
   command_blocked: '&cYou can''t use that command while in conversation.'
   language_changed: '&2Language changed!'
@@ -121,6 +123,7 @@ en:
   condition_variable_not_met: 'no'
   chest_occupied: This chest is already in use
 de:
+  items_to_enchant: '&2Noch {1} Dinge zu verzaubern'
   level_to_gain: '&2Noch {1} Level zu sammeln'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bGespräch mit {1}&b begonnen!&e===='
@@ -162,9 +165,9 @@ de:
   items_to_craft: '&2Noch {1} Dinge herzustellen'
   busy: '&cDu kannst dich nicht während eines Kampfes unterhalten.'
   quest_canceled: '&2Quest {1}&2 abgebrochen!'
-  cancel: '&cQuest abbrechen'
-  cancel_page: Quests abbrechen
-  compass: '&cKompassziel'
+  cancel: '&cEine Quest abbrechen'
+  cancel_page: '&cWähle welche Quest du abbrichst'
+  compass: Kompassziel verwalten
   compass_page: Wähle Ziel
   command_blocked: '&cDu kannst diesen Befehl nicht benutzen, solange du in einem
     Gespräch bist.'
@@ -184,6 +187,7 @@ de:
   condition_variable_not_met: nein
   chest_occupied: Die Truhe wird bereits benutzt
 fr:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bLa conversation avec {1}&b est engagée!&e===='
@@ -245,6 +249,7 @@ fr:
   condition_variable_not_met: non
   chest_occupied: This chest is already in use # TODO: missing translation
 cn:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&b与{1}&b对话中&e===='
@@ -303,6 +308,7 @@ cn:
   condition_variable_not_met: 否
   chest_occupied: 这个箱子已经在使用了
 es:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bLa conversacion con {1}&b ha comenzado.&e===='
@@ -364,6 +370,7 @@ es:
   condition_variable_not_met: 'no'
   chest_occupied: This chest is already in use # TODO: missing translation
 nl:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bGesprek met {1}&b begonnen!&e===='
@@ -424,6 +431,7 @@ nl:
   condition_variable_not_met: nee
   chest_occupied: This chest is already in use # TODO: missing translation
 it:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bConversazione con {1}&b iniziata!&e===='
@@ -485,6 +493,7 @@ it:
   condition_variable_not_met: 'no'
   chest_occupied: This chest is already in use # TODO: missing translation
 hu:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bBeszélgetés a következővel {1}&b elkezdve!&e===='
@@ -547,6 +556,7 @@ hu:
   condition_variable_not_met: nem
   chest_occupied: This chest is already in use # TODO: missing translation
 vi:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bĐối thoại với {1}&b bắt đầu!&e===='
@@ -607,6 +617,7 @@ vi:
   condition_variable_not_met: không
   chest_occupied: This chest is already in use # TODO: missing translation
 pt-br:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bComeçou a conversar com {1}&b!&e===='
@@ -662,6 +673,7 @@ pt-br:
   condition_variable_not_met: não
   chest_occupied: This chest is already in use # TODO: missing translation
 pt-pt:
+  items_to_enchant: '&2{1} items left to enchant'
   level_to_gain: '&2{1} levels left to gain'
   conversation_prefix: '&2[&9{1}&2] '
   conversation_start: '&e====&bA conversa com {1}&b começou.&e===='
@@ -716,3 +728,4 @@ pt-pt:
   condition_variable_met: sim
   condition_variable_not_met: não
   chest_occupied: Este bau já se encontra em uso
+configVersion: 2.0.0-CONFIG-1 # Don't change this! The plugin's automatic config updater handles it.

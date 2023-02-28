@@ -1,0 +1,22 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+rusty_cutlass:
+  id: iron_sword
+  Model: 10001
+  Attributes:
+    All:
+      Damage: 0
+rusty_pistol:
+  id: iron_hoe
+  Model: 10001
+  Attributes:
+    All:
+      Damage: 0
+bullet:
+  id: gold_nugget
+  Model: 10000
+  Attributes:
+    All:
+      Damage: 0

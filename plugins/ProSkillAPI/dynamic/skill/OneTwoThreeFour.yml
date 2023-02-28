@@ -19,19 +19,21 @@ OneTwoThreeFour:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10006
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oCombos are nice! Right?'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -40,82 +42,98 @@ OneTwoThreeFour:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote 1234'
+            type: 'OP'
+          children:  {}
+        Single-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '3'
+            range-scale: '0'
+            tolerance-base: '0'
+            tolerance-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'false'
           children: 
-            Command-c: 
+            Delay-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote 1234'
-                type: 'OP'
-              children:  {}
-            Single-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                delay-base: '0.4'
+                delay-scale: '0'
               children: 
-                Delay-e: 
+                Damage-e: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.4'
+                    type: 'Damage'
+                    value-base: 'ootf_dmg'
+                    value-scale: '5'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Delay-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.2'
                     delay-scale: '0'
                   children: 
-                    Damage-f: 
+                    Damage-g: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         type: 'Damage'
-                        value-base: '12'
-                        value-scale: '1'
+                        value-base: 'ootf_dmg'
+                        value-scale: '5'
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
                       children:  {}
-                    Delay-g: 
+                    Delay-h: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '0.2'
+                        delay-base: '.2'
                         delay-scale: '0'
                       children: 
-                        Damage-h: 
+                        Damage-i: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
                             type: 'Damage'
-                            value-base: '12'
-                            value-scale: '1'
+                            value-base: 'ootf_dmg'
+                            value-scale: '5'
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Entity Attack'
+                            cause: 'Custom'
                           children:  {}
-                        Delay-i: 
+                        Delay-j: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -124,50 +142,50 @@ OneTwoThreeFour:
                             delay-base: '.2'
                             delay-scale: '0'
                           children: 
-                            Damage-j: 
+                            Damage-k: 
                               type: 'mechanic'
                               indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
                                 type: 'Damage'
-                                value-base: '12'
-                                value-scale: '1'
+                                value-base: 'ootf_dmg'
+                                value-scale: '5'
                                 true: 'False'
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Custom'
                               children:  {}
-                            Delay-k: 
-                              type: 'mechanic'
-                              indicator: 'None'
-                              data: 
-                                icon-key: ''
-                                counts: 'True'
-                                delay-base: '.2'
-                                delay-scale: '0'
-                              children: 
-                                Damage-l: 
-                                  type: 'mechanic'
-                                  indicator: 'None'
-                                  data: 
-                                    icon-key: ''
-                                    counts: 'True'
-                                    type: 'Damage'
-                                    value-base: '12'
-                                    value-scale: '1'
-                                    true: 'False'
-                                    classifier: 'default'
-                                    knockback: 'True'
-                                    cause: 'Custom'
-                                  children:  {}
-                Channel-m: 
-                  type: 'mechanic'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    counts: 'True'
-                    still: 'False'
-                    time-base: '1.2'
-                    time-scale: '0'
-                  children:  {}
+            Channel-l: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                still: 'False'
+                time-base: '1.2'
+                time-scale: '0'
+              children:  {}
+            Sound-m: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.ottf'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-n: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'ootf_dmg'
+            type: 'Number'
+            placeholder: '%math_12+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}

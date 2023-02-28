@@ -14,7 +14,7 @@ conversations:
         events: "set_scrapper"
       class_reset:
         text: "&fYour class has been reset"
-        events: "reset_class_final"
+        events: "reset_class"
       points_select:
         text: "&fWhat points do you want to give to yourself? (You cannot subtract points, you'll have to reset your class)"
         pointers: "exp,sp"

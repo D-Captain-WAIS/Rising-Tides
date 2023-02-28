@@ -563,3 +563,17 @@ Classes:
       Once: '&cYou can select a class only once! But you can create new profile for
         new character.'
     Done: You're &a%class% &7now!
+ItemGenerator:
+  Cmd:
+    Create:
+      Desc: Creates a new item generator.
+      Done: '&aCreated %id%.yml item generator!'
+      Error:
+        ExistingId: '&cAn item generator with that id already exists.'
+        ExistingFile: '&cA file with that name already exists.'
+    Editor:
+      Desc: Opens the ItemGenerator in-game editor.
+      Error:
+        InvalidItem: '&cNo such item generator!'
+        AlreadyOpen: '&cAn editor for this item generator is already open by %player%'
+        InvalidInput: '%input% &cis not a valid %value%'

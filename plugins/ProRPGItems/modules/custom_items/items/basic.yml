@@ -1,7 +1,9 @@
-name: MurakumogiriPrime
+name: Basic Item
 lore: []
-material: DIAMOND_SWORD
-model-data: 123
+material: IRON_INGOT
+color: -1,-1,-1
 unbreakable: true
 item-flags: []
-tier: Named
+enchantments:
+  sharpness: 4
+tier: default

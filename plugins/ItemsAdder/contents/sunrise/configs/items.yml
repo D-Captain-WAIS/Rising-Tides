@@ -28,3 +28,247 @@ items:
       model_path: item/rusty_pistol
     item_flags:
     - HIDE_ATTRIBUTES
+  bullet:
+    display_name: "bullet"
+    permission: sunrise.bullet
+    resource:
+      material: GOLD_NUGGET
+      generate: false
+      model_path: item/bullet
+    item_flags:
+    - HIDE_ATTRIBUTES
+  mountain_wraps:
+    display_name: "Mountain Wraps"
+    permission: sunrise.mountain_wraps
+    resource:
+      material: GOLDEN_SWORD
+      generate: false
+      model_path: item/mountain_wraps
+    item_flags:
+    - HIDE_ATTRIBUTES
+  duelist_single_common:
+    displayname: "&7&l[Common]"
+    permission: risingtides.duelist_single_common
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_common.png
+  duelist_single_uncommon:
+    displayname: "&2&l[Uncommon]"
+    permission: risingtides.duelist_single_uncommon
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_uncommon.png
+  duelist_single_rare:
+    displayname: "&a&l[Rare]"
+    permission: risingtides.duelist_single_rare
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_rare.png
+  duelist_single_ultra_rare:
+    displayname: "&b&l[Ultra Rare]"
+    permission: risingtides.duelist_ultra_rare
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_ultra_rare.png
+  duelist_single_epic:
+    displayname: "&5&l[Epic]"
+    permission: risingtides.duelist_epic
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_epic.png
+  duelist_single_legendary:
+    displayname: "&e&l[Legendary]"
+    permission: risingtides.duelist_legendary
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_legendary.png
+  duelist_single_mythical:
+    displayname: "&4&l[Mythical]"
+    permission: risingtides.duelist_mythical
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_mythical.png
+  duelist_single_unique:
+    displayname: "&6&l[Unique]"
+    permission: risingtides.duelist_unique
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - item/duelist_unique.png
+  wraps_common:
+    displayname: "&7&l[Common]"
+    permission: risingtides.wraps_common
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_common.png
+  wraps_uncommon:
+    displayname: "&2&l[Uncommon]"
+    permission: risingtides.wraps_uncommon
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_uncommon.png
+  wraps_rare:
+    displayname: "&a&l[Rare]"
+    permission: risingtides.wraps_rare
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_rare.png
+  wraps_ultra_rare:
+    displayname: "&b&l[Ultra Rare]"
+    permission: risingtides.wraps_ultra_rare
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_ultra_rare.png
+  wraps_epic:
+    displayname: "&5&l[Epic]"
+    permission: risingtides.wraps_epic
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_epic.png
+  wraps_legendary:
+    displayname: "&e&l[Legendary]"
+    permission: risingtides.wraps_legendary
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_legendary.png
+  wraps_mythical:
+    displayname: "&4&l[Mythical]"
+    permission: risingtides.wraps_mythical
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_mythical.png
+  wraps_unique:
+    displayname: "&6&l[Unique]"
+    permission: risingtides.wraps_unique
+    resource:
+      material: GOLDEN_SWORD
+      generate: true
+      textures:
+      - item/wraps_unique.png
+  hard_punch:
+    displayname: "&cHard Punch"
+    permission: risingtides.hard_punch
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/hard_punch.png
+  hard_kick:
+    displayname: "&cHard Kick"
+    permission: risingtides.hard_kick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/hard_kick.png    
+  flail:
+    displayname: "&cflail"
+    permission: risingtides.flail
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/flail.png  
+  skedaddle:
+    displayname: "&cskedaddle"
+    permission: risingtides.skedaddle
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/skedaddle.png   
+  double_punch:
+    displayname: "&cdouble_punch"
+    permission: risingtides.double_punch
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/double_punch.png    
+  ottf:
+    displayname: "&c1234"
+    permission: risingtides.ottf
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/ottf.png 
+  overhand_swing:
+    displayname: "&coverhand_swing"
+    permission: risingtides.overhand_swing
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/overhand_swing.png  
+  running_kick:
+    displayname: "&running_kick"
+    permission: risingtides.running_kick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/running_kick.png 
+  dropkick:
+    displayname: "&dropkick"
+    permission: risingtides.dropkick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/dropkick.png 
+  low_kick:
+    displayname: "&low_kick"
+    permission: risingtides.low_kick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/low_kick.png 
+  gootw:
+    displayname: "&gootw"
+    permission: risingtides.gootw
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/gootw.png
+  charge:
+    displayname: "&charge"
+    permission: risingtides.charge
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/charge.png
+
+       

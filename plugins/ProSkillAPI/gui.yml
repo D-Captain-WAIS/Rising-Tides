@@ -10,28 +10,44 @@ ATTRIBUTES:
       accuracy: 7
       endurance: 1
       agility: 4
+stMWNewbie: 
+  rows: 3
+  pages: 1
+  slots: 
+    1: 
+      hilt strike: 0
+      two handed swing: 18
+      piercing strike: 9
 stMelee Weapon Newbie: 
   rows: 3
   pages: 1
   slots: 
     1: 
-      hilt strike: 4
-      piercing strike: 3
-      two handed swing: 5
+      hilt strike: 0
+      piercing strike: 2
+      two handed swing: 4
 stScrapper: 
   rows: 6
   pages: 1
   slots: 
     1: 
-      flail: 8
-      hard kick: 3
-      chaaaaaarge: 42
-      dropkick: 30
-      skedaddle: 6
-      overhand swing: 45
-      get out of the way: 24
-      low kick: 48
-      hard punch: 0
-      onetwothreefour: 27
-      double punch: 9
-      running kick: 12
+      flail: 4
+      hard kick: 15
+      chaaaaaarge: 29
+      dropkick: 33
+      skedaddle: 11
+      overhand swing: 40
+      get out of the way: 20
+      low kick: 42
+      hard punch: 13
+      onetwothreefour: 31
+      double punch: 22
+      running kick: 24
+stMeleeWeaponNewbie: 
+  rows: 3
+  pages: 1
+  slots: 
+    1: 
+      hilt strike: 0
+      two handed swing: 18
+      piercing strike: 9

@@ -1,0 +1,74 @@
+meleeBanditA:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Melee Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - players
+  - attacker
+  Skills:
+  - model{m=melee_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - randomskill{s=HardPunch,HardKick,PunchKick} @target ~onAttack
+swordBanditA:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Sword Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - players
+  - attacker
+  Skills:
+  - model{m=melee_weapon_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=melee_weapon_bandit_a;b=held;i=rusty_cutlass} @self ~onSpawn
+  - randomskill{s=HardSwing,DoubleSwing} @target ~onAttack
+pistolBanditA:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Pistol Bandit]'
+  Health: 30
+  Damage: 0
+  Options:
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  - fleeConditional{distance=3.5;speed=0.8;safespeed=0.8;conditions=[  - inlineofsight true ]}
+  AITargetSelectors:
+  - clear
+  - players
+  Skills:
+  - model{m=gun_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=gun_bandit_a;b=held;i=rusty_pistol} @self ~onSpawn
+  - skill{s=PistolShot} @target ~onTimer:140
+bullet:
+  Type: ARMOR_STAND
+  Options:
+    Despawn: true
+    MovementSpeed: 0
+    HasGravity: false
+    Silent: true
+    Invisible: true
+  Equipment:
+  - bullet HEAD

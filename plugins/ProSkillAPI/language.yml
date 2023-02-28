@@ -23,10 +23,10 @@ Errors:
 GUI: 
   attribute-title: 'Attributes ({points} points)'
   profess-title: 'Profess'
-  skill-tree: '{class}'
+  skill-tree: ':offset_-8::skills:'
   skill-class-list: '{player}'
 Skill Tree: 
-  title: '{name} ({level}/{max})'
+  title: ':offset_-8::vivre:'
   type: '&2Skill Type: &6{name}'
   requirement: 
     met: '&2'

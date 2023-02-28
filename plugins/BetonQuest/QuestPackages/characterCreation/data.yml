@@ -5,27 +5,35 @@ events:
     pick_faction_tp: "folder to_choose_faction,picking_faction,pick_faction,freeze_pt2"
     freeze_pt1: "freeze 1000"
     freeze_pt2: "freeze 260"
+    is_marine: "tag add is_marine"
+    is_pirate: "tag add is_pirate"
+    is_rev: "tag add is_rev"
   #picking race
     pick_race_tp: "folder to_choose_race,chose_faction,pick_race"
   #picking class
     pick_class_tp: "folder to_choose_class,chose_race,pick_class"
   #teleport to start
     marine_first_quest: "notify &6&lWelcome to Sunrise Island!\n&9&oSpeak to Marine Captain Bogarp! io:title"
-    marine_scrapper: "folder to_marine_first,set_scrapper,marine_cut,marineMain-sunrise.first_arrival"
+    marine_teleport: "folder to_marine_first,marine_cut,marineMain-sunrise.first_arrival"
     marine_start: "folder bon_voyage,force_sit,marine_first_quest delay:19 period:5"
-    marine_tp_scrapper: "folder satisfied_tp,marine_scrapper,marine_start period:5"
-    marine_MWN: "folder to_marine_cut,set_MWN,marine_cut,marineMain-sunrise.first_arrival"
-    marine_tp_MWN: "folder satisfied_tp,marine_MWN,marine_start period:5"
+    marine_start_folder: "folder satisfied_tp,marine_teleport,marine_start,kill_test_dummy period:5"
   #add "I have chosen" flags
     chose_faction: "tag add chose_faction"
     chose_race: "tag add chose_race"
     chose_class: "tag add chose_class"
+    confirmed_class: "tag add confirmed_class"
+    remove_chose_class: "tag delete chose_class"
+    reset_class_choice: "folder remove_chose_class,kill_test_dummy,to_choose_class,devStuff.reset_class"
   #teleports
     to_choose_faction: "teleport 1;138;-2;dev;0;0.5"
     to_choose_race: "teleport 1;138;1;dev;179.8;1"
     to_choose_class: "teleport 0;138;-3;dev;-1;1"
+    to_class_test: "teleport 0;138;-6;dev;-1;1"
     to_marine_first: "teleport 1048.5;66;-162.5;dawn_island;0;0"
     to_marine_cut: "teleport 1032.5;51;-175.5;dawn_island;0;0"
+  #testdummy
+    spawn_test_dummy: "command mm m spawn DummyGD1 1 dev,0,138,-3"
+    kill_test_dummy: "command mm m kill DummyGD1"
   #cutscenes
     force_sit: "opsudo sit"
     marine_cut: "command cinematic play marineOpen %player%"
@@ -63,6 +71,7 @@ events:
   #Melee
     talked_gap: "tag add talked_gap"
     set_scrapper: "opsudo class profess scrapper"
+    test_scrapper: "folder set_scrapper,chose_class,to_class_test,spawn_test_dummy,ask_combat_guide"
   #God's Dialogue pt.1
     oh_no: "notify &6&oOh no %player%! &c&lYou died! &6&oThat's too bad... io:subtitle"
     second_chance: "notify &6&oThat's alright though! I'm giving you a second chance! io:subtitle"
@@ -79,9 +88,19 @@ events:
   #God's dialogue pt.3
     pick_class: "notify &d&lFinally, pick your class! io:title"
   #God's dialogue pt.4 
-    satisfied_tp: "folder to_choose_faction,freeze_pt2,satisfied,chose_class"
+    satisfied_tp: "folder to_choose_faction,freeze_pt2,satisfied,confirmed_class"
     satisfied: "notify &6&oI hope you're satisfied with your choices! io:subtitle"
-    bon_voyage: "notify &b&lBon, voyage sailor! \n&6&oGet ready for the adventure of a lifetime! io:title"
+    bon_voyage: "notify &b&lBon voyage sailor! \n&6&oGet ready for the adventure of a lifetime! io:title"
+  #combat_tutorial dialogue
+    asked_combat: "tag add asked_combat"
+    look_at_chat: "notify &6&oPlease pay attention to chat! io:subtitle"
+    hover: "notify &6&oTo switch between combat and passive mode, use your mouse wheel to select the 9th slot in your hotbar!"
+    press_nums: "notify &6&oTo use your skills, simply press the designated numbers (default: 1-6) on your keyboard!"
+    last_two: "notify &6&oThe last two slots are used for your battle equipment. The 7th slot is for a consumable while the 8th is for your weapon!"
+    combat_guide: "folder look_at_chat,hover,press_nums,last_two delay:4 period:7"
+    conv_combat_guide: "conversation combat_guide"
+    ask_combat_guide: "folder conv_combat_guide delay:3"
+
 
 
 conditions:
@@ -90,15 +109,23 @@ conditions:
     tag_chose_faction: "tag chose_faction"
     tag_chose_race: "tag chose_race"
     tag_chose_class: "tag chose_class"
+    tag_confirmed_class: "tag confirmed_class"
     hide_faction: "or !tag_picking_faction,tag_chose_faction"
     hide_race: "or !tag_chose_faction,tag_chose_race"
     hide_class: "or !tag_chose_race,tag_chose_class"
+    hide_god: "or !tag_chose_class,tag_confirmed_class"
+  
+  #checking if asked for guides
+    tag_asked_combat: "tag asked_combat"
   #marine
     tag_talked_cobalt: "tag talked_cobalt"
+    tag_is_marine: "tag is_marine"
   #pirate
     tag_talked_loofi: "tag talked_loofi"
+    tag_is_pirate: "tag is_pirate"
   #rev
     tag_talked_sado: "tag talked_sado"
+    tag_is_rev: "tag is_rev"
   #fishman
     tag_talked_jimbay: "tag talked_jimbay"
   #mink
@@ -119,5 +146,6 @@ conditions:
     tag_talked_lauh: "tag talked_lauh"
   #Melee
     tag_talked_gap: "tag talked_gap"
+  
   
   

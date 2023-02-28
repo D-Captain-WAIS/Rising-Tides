@@ -21,7 +21,10 @@ items:
           keep-after-unwrap: false
           # Lore displayed
           lore:
-            - '<white><italic>Apply this to an weapon will to change its appearance!'
+            - '<red><italic>Sharp Duelist '
+            - '<red><italic>Dual Sharp Duelist'
+            - '<white>Apply this to the appropriate'
+            - '<white>weapon will to change its appearance!'
           flags:
           - 'HIDE_ATTRIBUTES'
   IRON_HOE:
@@ -39,11 +42,39 @@ items:
           # The Bukkit material or a hook
           id: 'itemsadder:sunrise:rusty_pistol'
           # Name displayed
-          name: '<red><bold>[Weapon Chassis] <dark_gray><bold>Rusty Pistol'
+          name: '<blue><bold>[Weapon Chassis] <dark_gray><bold>Rusty Pistol'
           # If the wrap should be given to the player after they unwrap the item or re wrap it
           keep-after-unwrap: false
           # Lore displayed
           lore:
-            - '<white><italic>Apply this to an weapon will to change its appearance!'
+            - '<red><italic>Pistol'
+            - '<red><italic>Dual Pistols'
+            - '<white>Apply this to the appropriate'
+            - '<white>weapon will to change its appearance!'
+          flags:
+          - 'HIDE_ATTRIBUTES'
+  GOLDEN_SWORD:
+    wraps:
+      1:
+        permission: 'sunrise.mountain_wraps'
+        uuid: 'mountain_wraps'
+        id: 'itemsadder:sunrise:mountain_wraps'
+        name: '<dark gray><bold> <gray>Wrap'
+        lore:
+          - '<gray>Apply this wrap to make your sword look silver!'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+        physical:
+          # The Bukkit material or a hook
+          id: 'itemsadder:sunrise:mountain_wraps'
+          # Name displayed
+          name: '<blue><bold>[Weapon Chassis] <dark_gray><bold>Mountain Hand Wraps'
+          # If the wrap should be given to the player after they unwrap the item or re wrap it
+          keep-after-unwrap: false
+          # Lore displayed
+          lore:
+            - '<red><italic>Hand Wraps'
+            - '<white>Apply this to the appropriate'
+            - '<white>weapon will to change its appearance!'
           flags:
           - 'HIDE_ATTRIBUTES'

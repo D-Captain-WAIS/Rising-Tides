@@ -1,39 +1,41 @@
 limit: 10
 active: 1
-health: 50.0
-mana: 20.0
+health: 1730.0
+mana: 1290.0
 accounts: 
   acc1: 
     classes: 
       Scrapper: 
-        level: 1
-        points: 1
-        exp: 0.0
+        level: 141
+        points: 119
+        exp: 14335.0
     skills: 
-      Flail: 
-        level: 5
       Hard Kick: 
         level: 5
       Chaaaaaarge: 
-        level: 0
+        level: 1
+      regen: 
+        level: 1
+      Low Kick: 
+        level: 1
+      Hard Punch: 
+        level: 5
+      Flail: 
+        level: 5
       Dropkick: 
-        level: 0
+        level: 5
       Skedaddle: 
         level: 5
       Overhand Swing: 
-        level: 0
+        level: 3
       Get Out Of The Way: 
-        level: 0
-      Low Kick: 
-        level: 0
-      Hard Punch: 
-        level: 5
+        level: 3
       OneTwoThreeFour: 
-        level: 0
+        level: 3
       Double Punch: 
-        level: 0
+        level: 3
       Running Kick: 
-        level: 0
+        level: 3
     binds:  {}
     bar: 
       enabled: 'true'
@@ -47,9 +49,12 @@ accounts:
       Hard Punch: 1
       Hard Kick: 2
       Flail: 3
-      Skedaddle: 4
-    attrib-points: 116
-    attribs:  {}
+      Double Punch: 4
+      OneTwoThreeFour: 5
+      Dropkick: 6
+    attrib-points: 145
+    attribs: 
+      strength: 425
     hover: 
       Flail: 0
       Running Kick: 1
@@ -69,6 +74,6 @@ accounts:
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
-      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4007mqqbeclhn4ob6egt70obgclp0k003ehgme2g019kn8pbdedgm8p35e84000j9cg00atj9epp6a20015n62rb5edo62or5004nat39dhkn8qb5ec00600f8dqn6t3fdl6mup35dh262t310002e7oa003m8qbje1m62u880024sobdck04cup2c9nmop1279q74tb55gh6it31dhkm68hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8irapkncsj5411m2sj4bkh7q0000400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'

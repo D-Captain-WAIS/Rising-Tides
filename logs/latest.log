@@ -1,0 +1,865 @@
+[00:00:23] [Server thread/INFO]: _D_Captain_ issued server command: /feed
+[00:06:58] [Craft Scheduler Thread - 561 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[00:21:58] [Craft Scheduler Thread - 563 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[00:36:58] [Craft Scheduler Thread - 600 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[00:51:58] [Craft Scheduler Thread - 614 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[01:06:58] [Craft Scheduler Thread - 623 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[01:14:36] [Server thread/INFO]: _D_Captain_ issued server command: /feed
+[01:20:35] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[01:21:58] [Craft Scheduler Thread - 641 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[01:33:08] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[01:35:40] [Server thread/INFO]: _D_Captain_ issued server command: /iazip
+[01:35:40] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[01:35:40] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[01:35:40] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[01:35:40] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[01:35:40] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m516ms[m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[01:35:40] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Started generation[m
+[01:35:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[01:35:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[01:35:41] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:35:41] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:35:41] [Server thread/INFO]: [Mythic] Reloading plugin...
+[01:35:41] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[01:35:41] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[01:35:41] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[01:35:41] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[01:35:41] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[01:35:41] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1mCompressed 13 PNGs in 151ms. 35.0 kB->27.6 kB[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mPNG 'hmccosmetics:item/block/jetpack' not found for model. File: D:\Rising-Tides\plugins\ItemsAdder\data\resource_pack\assets\hmccosmetics\models\item\jetpack.json[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Generated resourcepack[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[OK] Your zip file will be protected from unzip (as set in config.yml)[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Compressing resource_pack ... [m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_exclaimation_mark.json[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_question_mark.json[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_exclaimation_mark.json[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_question_mark.json[m
+[01:35:42] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/rising_tides.json[m
+[01:35:43] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/optifine/emissive.properties[m
+[01:35:43] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/spawner.json[m
+[01:35:43] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_tall_painting.json[m
+[01:35:43] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_painting.json[m
+[01:35:43] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_big_painting.json[m
+[01:35:43] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/original/note_block.json[m
+[01:35:43] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/base/block_tile.json[m
+[01:35:44] [Craft Scheduler Thread - 627 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_long_painting.json[m
+[01:35:44] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] pack.zip successfully compressed: [0;36;1mD:\Rising-Tides\plugins\ItemsAdder/output/generated.zip[m
+[01:35:44] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Follow this tutorial before asking for support: [0;36;1mhttps://itemsadder.devs.beer/plugin-usage/resourcepack-hosting/resourcepack-on-dropbox[m
+[01:35:44] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Compressed in 2043ms[m
+[01:35:44] [Craft Scheduler Thread - 627 - ItemsAdder/INFO]: [ItemsAdder] [m[0;31;1mREAD HERE: 
+[0;33;22m1. [0;33;1mupload the [0;36;1mgenerated.zip [0;33;1mfile on DropBox!
+[0;33;22m2. [0;33;1mchange the [0;36;1murl [0;33;1min [0;36;1mconfig.yml (if needed)
+[0;33;22m3. [0;33;1mexecute the [0;36;1m/iareload [0;33;1mcommand (to refresh the plugin)
+[0;33;22m4. [0;33;1mexecute [0;36;1m/iatexture all [0;33;1m(to refresh the pack to every player)[m
+[01:36:29] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[01:36:29] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[01:36:29] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[01:36:29] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[01:36:29] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[01:36:29] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[01:36:29] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m295ms[m
+[01:36:29] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[01:36:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[01:36:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[01:36:29] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:36:29] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[01:36:30] [Server thread/INFO]: [Mythic] Reloading plugin...
+[01:36:30] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[01:36:30] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[01:36:30] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[01:36:30] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[01:36:30] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[01:36:30] [Craft Scheduler Thread - 633 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/tbj6i5l78smaonm/generated.zip?raw=1[m
+[01:36:34] [Server thread/INFO]: _D_Captain_ issued server command: /iatexture all
+[01:36:34] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Applying every player... [m
+[01:36:34] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mWarning: null checksum. Make sure to run /iazip command to generate the resourcepack![m
+[01:36:34] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Applied to [0;33;1m1[0;32;1m players[m
+[01:36:41] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[01:36:44] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[01:36:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[01:36:44] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[01:36:44] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[01:36:44] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[01:36:44] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[01:36:46] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[01:36:58] [Craft Scheduler Thread - 652 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[01:37:08] [Server thread/INFO]: _D_Captain_ issued server command: /iaget sunrise:hard_punch
+[01:37:12] [Server thread/INFO]: _D_Captain_ issued server command: /iaget sunrise:hard_kick
+[01:37:18] [Server thread/INFO]: _D_Captain_ issued server command: /iaget sunrise:flail
+[01:37:22] [Server thread/INFO]: _D_Captain_ issued server command: /iaget sunrise:skedaddle
+[01:37:57] [Server thread/INFO]: _D_Captain_ issued server command: /iacustommodeldata sunrise:hard_punch
+[01:51:58] [Craft Scheduler Thread - 674 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[02:06:58] [Craft Scheduler Thread - 670 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[02:12:35] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[02:12:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[02:12:35] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[02:12:35] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[02:12:35] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[02:12:35] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[02:12:40] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[02:18:20] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[02:18:20] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[02:18:20] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[02:18:20] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[02:18:20] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[02:18:20] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[02:18:20] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m297ms[m
+[02:18:21] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[02:18:21] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[02:18:21] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[02:18:21] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:18:21] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:18:21] [Server thread/INFO]: [Mythic] Reloading plugin...
+[02:18:21] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[02:18:21] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[02:18:21] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[02:18:21] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[02:18:21] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[02:18:22] [Craft Scheduler Thread - 700 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/tbj6i5l78smaonm/generated.zip?raw=1[m
+[02:21:58] [Craft Scheduler Thread - 703 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[02:36:58] [Craft Scheduler Thread - 718 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[02:43:35] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[02:43:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[02:43:35] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[02:43:35] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[02:43:35] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[02:43:35] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[02:43:36] [Server thread/INFO]: _D_Captain_ issued server command: /gmc
+[02:43:42] [Server thread/INFO]: _D_Captain_ issued server command: /gma
+[02:43:45] [Server thread/INFO]: _D_Captain_ issued server command: /class customize
+[02:44:33] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[02:44:41] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[02:44:42] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[02:44:46] [Server thread/INFO]: _D_Captain_ issued server command: /class customize
+[02:44:57] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[02:50:27] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[02:50:27] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[02:50:27] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[02:50:27] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[02:50:27] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[02:50:27] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[02:50:27] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m281ms[m
+[02:50:27] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[02:50:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[02:50:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[02:50:27] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aGil Lyssa restricted
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:50:27] [Server thread/INFO]: Attempt to teleport removed player §aParry Jeffery restricted
+[02:50:28] [Server thread/INFO]: [Mythic] Reloading plugin...
+[02:50:28] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[02:50:28] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[02:50:28] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[02:50:28] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[02:50:28] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[02:50:28] [Craft Scheduler Thread - 728 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/tbj6i5l78smaonm/generated.zip?raw=1[m
+[02:50:30] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[02:50:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[02:50:30] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[02:50:30] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[02:50:30] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[02:50:30] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[02:50:31] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[02:51:58] [Craft Scheduler Thread - 733 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[02:55:59] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[02:58:58] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[02:58:58] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[02:58:58] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[02:58:58] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[02:58:58] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[02:58:58] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[02:58:59] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:00:19] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:01:22] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[03:01:22] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[03:01:22] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[03:01:22] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[03:01:22] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[03:01:22] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[03:01:23] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:01:59] [Server thread/INFO]: _D_Captain_ issued server command: /class customize
+[03:02:58] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:03:36] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:03:58] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[03:03:58] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[03:03:58] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[03:03:58] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[03:03:58] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[03:03:58] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[03:03:59] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:04:32] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[03:04:32] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[03:04:32] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[03:04:32] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[03:04:32] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[03:04:32] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[03:04:33] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:05:48] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[03:05:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[03:05:48] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[03:05:48] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[03:05:48] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[03:05:48] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[03:05:49] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:06:07] [Server thread/INFO]: _D_Captain_ issued server command: /class customize
+[03:06:12] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:06:40] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:06:58] [Craft Scheduler Thread - 751 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[03:07:19] [Server thread/INFO]: _D_Captain_ issued server command: /class customize
+[03:07:28] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[03:07:55] [Server thread/INFO]: _D_Captain_ issued server command: /warp gd
+[03:08:57] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[03:10:58] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[03:11:55] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[03:12:42] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[03:13:00] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[03:13:03] [Server thread/INFO]: [HMCCosmetics] sunrise | true
+[03:13:04] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[03:13:07] [Server thread/INFO]: [CommandPanels] Panel Opened for [PL] _D_Captain_ [CTO]
+[03:13:23] [Server thread/INFO]: _D_Captain_ lost connection: Disconnected
+[03:13:23] [Server thread/INFO]: _D_Captain_ left the game
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [36mGenerating dummy.bbmodel.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [36mGenerating gun_bandit_a.bbmodel.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [36mGenerating melee_bandit_a.bbmodel.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [36mGenerating melee_weapon_bandit_a.bbmodel.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [36mGenerating phoenixform.bbmodel.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: The cube [34mfront_right_talons[33m in bone [34mfront_right_talons[33m is rotated in multiple axis. Choosing one axis.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: The cube [34mfront_right_talons[33m in bone [34mfront_right_talons[33m is rotated in multiple axis. Choosing one axis.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: The cube [34mfront_right_talons[33m in bone [34mbone[33m is rotated in multiple axis. Choosing one axis.[0m
+[03:16:08] [Craft Scheduler Thread - 770 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: The cube [34mfront_right_talons[33m in bone [34mfront_left_talons[33m is rotated in multiple axis. Choosing one axis.[0m
+[03:16:09] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: Model reloaded.
+[03:16:09] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [0m
+[03:16:09] [Craft Scheduler Thread - 770 - ModelEngine/INFO]: [ModelEngine] [38;5;46mResource pack zipped.[0m
+[03:21:58] [Craft Scheduler Thread - 769 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 1 offline users.
+[03:21:58] [Craft Scheduler Thread - 769 - ProRPGItems/INFO]: [ProRPGItems] Saved and cleaned 1 offline loaded users.
+[03:36:58] [Craft Scheduler Thread - 779 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[03:51:58] [Craft Scheduler Thread - 792 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[04:06:58] [Craft Scheduler Thread - 822 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[04:21:58] [Craft Scheduler Thread - 809 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[04:36:58] [Craft Scheduler Thread - 862 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[04:51:58] [Craft Scheduler Thread - 855 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[05:06:58] [Craft Scheduler Thread - 900 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[05:21:58] [Craft Scheduler Thread - 908 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[05:36:58] [Craft Scheduler Thread - 932 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[05:51:58] [Craft Scheduler Thread - 929 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[05:58:16] [Craft Scheduler Thread - 953 - Vault/INFO]: [Vault] Checking for Updates ... 
+[05:58:16] [Craft Scheduler Thread - 953 - Vault/INFO]: [Vault] No new version available
+[06:06:58] [Craft Scheduler Thread - 952 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[06:21:58] [Craft Scheduler Thread - 985 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[06:28:16] [Craft Scheduler Thread - 974 - LibsDisguises/INFO]: [LibsDisguises] Now looking for update on Github..
+[06:36:58] [Craft Scheduler Thread - 990 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[06:51:58] [Craft Scheduler Thread - 1007 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[07:06:58] [Craft Scheduler Thread - 1033 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[07:21:58] [Craft Scheduler Thread - 1045 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[07:36:58] [Craft Scheduler Thread - 1066 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[07:51:58] [Craft Scheduler Thread - 1080 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[08:06:58] [Craft Scheduler Thread - 1102 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[08:21:58] [Craft Scheduler Thread - 1086 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[08:36:58] [Craft Scheduler Thread - 1086 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[08:51:58] [Craft Scheduler Thread - 1137 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[09:06:58] [Craft Scheduler Thread - 1141 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[09:21:58] [Craft Scheduler Thread - 1159 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[09:36:58] [Craft Scheduler Thread - 1188 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[09:51:58] [Craft Scheduler Thread - 1211 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[10:06:58] [Craft Scheduler Thread - 1222 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[10:21:58] [Craft Scheduler Thread - 1228 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[10:23:54] [Server thread/INFO]: com.mojang.authlib.GameProfile@2203903c[id=<null>,name=_D_Captain_,properties={},legacy=false] (/127.0.0.1:64739) lost connection: Disconnected
+[10:36:58] [Craft Scheduler Thread - 1251 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 0 online users | 0 offline users.
+[10:38:34] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5113ms or 102 ticks behind
+[10:39:01] [User Authenticator #2/INFO]: UUID of player _D_Captain_ is 19894efa-01d3-43e5-82db-008cd9381b2f
+[10:39:02] [Server thread/INFO]: _D_Captain_ joined the game
+[10:39:02] [Server thread/INFO]: _D_Captain_[/127.0.0.1:49558] logged in with entity id 372875 at ([dev]-16.90778019815542, -31.0, 8.628296711003907)
+[10:39:02] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mWarning: null checksum. Make sure to run /iazip command to generate the resourcepack![m
+[10:39:15] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 10620ms or 212 ticks behind
+[10:39:16] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[10:39:37] [Server thread/INFO]: _D_Captain_ issued server command: /iazip
+[10:39:38] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[10:39:38] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[10:39:38] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[10:39:38] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[10:39:38] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m519ms[m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:39:38] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Started generation[m
+[10:39:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[10:39:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[10:39:38] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[10:39:39] [Server thread/INFO]: [Mythic] Reloading plugin...
+[10:39:39] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[10:39:39] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[10:39:39] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[10:39:39] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[10:39:39] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mPNG 'hmccosmetics:item/block/jetpack' not found for model. File: D:\Rising-Tides\plugins\ItemsAdder\data\resource_pack\assets\hmccosmetics\models\item\jetpack.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Generated resourcepack[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[OK] Your zip file will be protected from unzip (as set in config.yml)[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Compressing resource_pack ... [m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_exclaimation_mark.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_question_mark.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_exclaimation_mark.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_question_mark.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/rising_tides.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/optifine/emissive.properties[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/spawner.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_tall_painting.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_painting.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_big_painting.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/original/note_block.json[m
+[10:39:40] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/base/block_tile.json[m
+[10:39:41] [Craft Scheduler Thread - 1257 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_long_painting.json[m
+[10:39:41] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] pack.zip successfully compressed: [0;36;1mD:\Rising-Tides\plugins\ItemsAdder/output/generated.zip[m
+[10:39:41] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Follow this tutorial before asking for support: [0;36;1mhttps://itemsadder.devs.beer/plugin-usage/resourcepack-hosting/resourcepack-on-dropbox[m
+[10:39:41] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Compressed in 1214ms[m
+[10:39:41] [Craft Scheduler Thread - 1257 - ItemsAdder/INFO]: [ItemsAdder] [m[0;31;1mREAD HERE: 
+[0;33;22m1. [0;33;1mupload the [0;36;1mgenerated.zip [0;33;1mfile on DropBox!
+[0;33;22m2. [0;33;1mchange the [0;36;1murl [0;33;1min [0;36;1mconfig.yml (if needed)
+[0;33;22m3. [0;33;1mexecute the [0;36;1m/iareload [0;33;1mcommand (to refresh the plugin)
+[0;33;22m4. [0;33;1mexecute [0;36;1m/iatexture all [0;33;1m(to refresh the pack to every player)[m
+[10:40:45] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[10:40:45] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[10:40:45] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[10:40:45] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[10:40:45] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[10:40:45] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[10:40:45] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m429ms[m
+[10:40:46] [Craft Scheduler Thread - 1252 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[10:40:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[10:40:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[10:40:46] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[10:40:47] [Server thread/INFO]: [Mythic] Reloading plugin...
+[10:40:47] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[10:40:47] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[10:40:47] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[10:40:47] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[10:40:47] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[10:40:48] [Craft Scheduler Thread - 1265 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/i271z0xrl9fv4n7/generated.zip?raw=1[m
+[10:40:53] [Server thread/INFO]: _D_Captain_ issued server command: /iatexture all
+[10:40:53] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Applying every player... [m
+[10:40:53] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mWarning: null checksum. Make sure to run /iazip command to generate the resourcepack![m
+[10:40:53] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Applied to [0;33;1m1[0;32;1m players[m
+[10:41:20] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[10:41:37] [Server thread/INFO]: _D_Captain_ issued server command: /playsound minecraft:scrapper.flail master _D_Captain_
+[10:41:37] [Server thread/INFO]: [_D_Captain_: Played sound minecraft:scrapper.flail to _D_Captain_]
+[10:45:15] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[10:45:15] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[10:45:15] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[10:45:15] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[10:45:15] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[10:45:15] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[10:49:50] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[10:49:50] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[10:49:50] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[10:49:50] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[10:49:50] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[10:49:50] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[10:51:18] [Server thread/INFO]: _D_Captain_ issued server command: /iazip
+[10:51:18] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[10:51:18] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[10:51:18] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[10:51:18] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[10:51:18] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m295ms[m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:51:18] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Started generation[m
+[10:51:19] [Craft Scheduler Thread - 1279 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mPNG 'hmccosmetics:item/block/jetpack' not found for model. File: D:\Rising-Tides\plugins\ItemsAdder\data\resource_pack\assets\hmccosmetics\models\item\jetpack.json[m
+[10:51:19] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:51:19] [Craft Scheduler Thread - 1279 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Generated resourcepack[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[OK] Your zip file will be protected from unzip (as set in config.yml)[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Compressing resource_pack ... [m
+[10:51:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[10:51:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[10:51:19] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_exclaimation_mark.json[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_question_mark.json[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_exclaimation_mark.json[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_question_mark.json[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/rising_tides.json[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/optifine/emissive.properties[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/spawner.json[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_tall_painting.json[m
+[10:51:19] [Server thread/INFO]: [Mythic] Reloading plugin...
+[10:51:19] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_painting.json[m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_big_painting.json[m
+[10:51:19] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[10:51:19] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[10:51:19] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[10:51:19] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/original/note_block.json[m
+[10:51:19] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[10:51:19] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/base/block_tile.json[m
+[10:51:20] [Craft Scheduler Thread - 1284 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_long_painting.json[m
+[10:51:20] [Craft Scheduler Thread - 1284 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] pack.zip successfully compressed: [0;36;1mD:\Rising-Tides\plugins\ItemsAdder/output/generated.zip[m
+[10:51:20] [Craft Scheduler Thread - 1284 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Follow this tutorial before asking for support: [0;36;1mhttps://itemsadder.devs.beer/plugin-usage/resourcepack-hosting/resourcepack-on-dropbox[m
+[10:51:20] [Craft Scheduler Thread - 1284 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Compressed in 1024ms[m
+[10:51:20] [Craft Scheduler Thread - 1284 - ItemsAdder/INFO]: [ItemsAdder] [m[0;31;1mREAD HERE: 
+[0;33;22m1. [0;33;1mupload the [0;36;1mgenerated.zip [0;33;1mfile on DropBox!
+[0;33;22m2. [0;33;1mchange the [0;36;1murl [0;33;1min [0;36;1mconfig.yml (if needed)
+[0;33;22m3. [0;33;1mexecute the [0;36;1m/iareload [0;33;1mcommand (to refresh the plugin)
+[0;33;22m4. [0;33;1mexecute [0;36;1m/iatexture all [0;33;1m(to refresh the pack to every player)[m
+[10:52:04] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[10:52:04] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[10:52:04] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[10:52:04] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[10:52:04] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[10:52:04] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[10:52:04] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m299ms[m
+[10:52:04] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[10:52:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[10:52:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[10:52:04] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[10:52:04] [Server thread/INFO]: [Mythic] Reloading plugin...
+[10:52:04] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[10:52:04] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[10:52:04] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[10:52:04] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[10:52:05] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[10:52:05] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[10:52:05] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[10:52:05] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[10:52:05] [Craft Scheduler Thread - 1273 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/3h1tfw5we19zgi6/generated.zip?raw=1[m
+[10:52:10] [Server thread/INFO]: _D_Captain_ issued server command: /iatexture all
+[10:52:10] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Applying every player... [m
+[10:52:10] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mWarning: null checksum. Make sure to run /iazip command to generate the resourcepack![m
+[10:52:10] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Applied to [0;33;1m1[0;32;1m players[m
+[10:52:14] [Craft Scheduler Thread - 1287 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[10:52:53] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[10:54:32] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[10:55:13] [Server thread/INFO]: _D_Captain_ issued server command: /iazip
+[10:55:13] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[10:55:13] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[10:55:13] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[10:55:13] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[10:55:13] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m665ms[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Started generation[m
+[10:55:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[10:55:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[10:55:14] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mPNG 'hmccosmetics:item/block/jetpack' not found for model. File: D:\Rising-Tides\plugins\ItemsAdder\data\resource_pack\assets\hmccosmetics\models\item\jetpack.json[m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m [m
+[10:55:14] [Craft Scheduler Thread - 1278 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Generated resourcepack[m
+[10:55:15] [Server thread/INFO]: [Mythic] Reloading plugin...
+[10:55:15] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[10:55:15] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[10:55:15] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[10:55:15] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[OK] Your zip file will be protected from unzip (as set in config.yml)[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Compressing resource_pack ... [m
+[10:55:15] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_exclaimation_mark.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/gold_question_mark.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_exclaimation_mark.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/iron_question_mark.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;36;1mSkipped file. Already added as stream: assets/minecraft/models/item/rising_tides.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/optifine/emissive.properties[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/spawner.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_tall_painting.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_painting.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_big_painting.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/original/note_block.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/block/base/block_tile.json[m
+[10:55:15] [Craft Scheduler Thread - 1273 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mFile compression skipped: duplicate entry: assets/minecraft/models/item/base/furniture_long_painting.json[m
+[10:55:16] [Craft Scheduler Thread - 1273 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] pack.zip successfully compressed: [0;36;1mD:\Rising-Tides\plugins\ItemsAdder/output/generated.zip[m
+[10:55:16] [Craft Scheduler Thread - 1273 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Follow this tutorial before asking for support: [0;36;1mhttps://itemsadder.devs.beer/plugin-usage/resourcepack-hosting/resourcepack-on-dropbox[m
+[10:55:16] [Craft Scheduler Thread - 1273 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Compressed in 1414ms[m
+[10:55:16] [Craft Scheduler Thread - 1273 - ItemsAdder/INFO]: [ItemsAdder] [m[0;31;1mREAD HERE: 
+[0;33;22m1. [0;33;1mupload the [0;36;1mgenerated.zip [0;33;1mfile on DropBox!
+[0;33;22m2. [0;33;1mchange the [0;36;1murl [0;33;1min [0;36;1mconfig.yml (if needed)
+[0;33;22m3. [0;33;1mexecute the [0;36;1m/iareload [0;33;1mcommand (to refresh the plugin)
+[0;33;22m4. [0;33;1mexecute [0;36;1m/iatexture all [0;33;1m(to refresh the pack to every player)[m
+[10:55:43] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[10:55:43] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[10:55:43] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[10:55:43] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[10:55:43] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[10:55:43] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[10:55:43] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m317ms[m
+[10:55:44] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[10:55:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[10:55:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[10:55:44] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[10:55:44] [Server thread/INFO]: [Mythic] Reloading plugin...
+[10:55:44] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[10:55:44] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[10:55:44] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[10:55:44] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[10:55:44] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[10:55:48] [Craft Scheduler Thread - 1291 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/ed5f1fqkhx05twm/generated.zip?raw=1[m
+[10:55:49] [Server thread/INFO]: _D_Captain_ issued server command: /iatexture all
+[10:55:49] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Applying every player... [m
+[10:55:49] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mWarning: null checksum. Make sure to run /iazip command to generate the resourcepack![m
+[10:55:49] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Applied to [0;33;1m1[0;32;1m players[m
+[10:57:10] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[11:00:10] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[11:00:10] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[11:00:10] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[11:00:10] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[11:00:10] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[11:00:10] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[11:00:10] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m395ms[m
+[11:00:10] [Craft Scheduler Thread - 1298 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[11:00:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[11:00:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[11:00:11] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[11:00:11] [Server thread/INFO]: [Mythic] Reloading plugin...
+[11:00:11] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[11:00:11] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[11:00:11] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[11:00:11] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[11:00:11] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[11:00:12] [Craft Scheduler Thread - 1246 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/ed5f1fqkhx05twm/generated.zip?raw=1[m
+[11:00:16] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[11:00:22] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[11:04:51] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[11:04:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[11:04:51] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[11:04:51] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[11:04:51] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[11:04:51] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[11:05:17] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[11:05:37] [Server thread/INFO]: [CommandPanels] Panel Opened for [] _D_Captain_
+[11:07:14] [Craft Scheduler Thread - 1292 - ProRPGItems/INFO]: [ProRPGItems] Auto-save: Saved 1 online users | 0 offline users.
+[11:08:46] [Server thread/INFO]: _D_Captain_ issued server command: /class reload
+[11:08:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sapi [1.0.0]
+[11:08:46] [Server thread/INFO]: [ProSkillAPI] ProSkillAPI hook into PlaceholderAPI: §asuccess.
+[11:08:46] [Server thread/INFO]: [ProSkillAPI] Registration complete
+[11:08:46] [Server thread/INFO]: [ProSkillAPI]  - 18 skills
+[11:08:46] [Server thread/INFO]: [ProSkillAPI]  - 2 classes
+[11:09:50] [Server thread/INFO]: _D_Captain_ issued server command: /iareload
+[11:09:50] [Server thread/INFO]: [ItemsAdder] [m[0;33;1mReloading...[m
+[11:09:51] [Server thread/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Extracting internal contents from .jar[m
+[11:09:51] [Server thread/INFO]: [ItemsAdder] [m[0;32;1m[Pack] DONE extracting internal contents from .jar[m
+[11:09:51] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mDetected legacy ItemsAdder pack (pre 3.3.0).[m
+[11:09:51] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mTrying to load files, unexpected results might occur.[m
+[11:09:51] [Server thread/WARN]: [ItemsAdder] [m[0;33;1mIt's adviced to follow the new guidelines: https://a.devs.beer/ia-new-guidelines-330[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/WARN]: [ItemsAdder] [m[0;33;1mUnknown emote 'ottf'. File:/contents/_iainternal/configs/classes/emotes.yml[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mLoaded [0;36;1m81[0;33;1m items[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m188[0;33;1m REAL block IDs[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m750[0;33;1m REAL_NOTE block IDs[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m63[0;33;1m REAL_TRANSPARENT block IDs[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m127[0;33;1m REAL_WIRE block IDs[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m0[0;33;1m/[0;36;1m14[0;33;1m FIRE block IDs[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;33;1mUsed [0;36;1m17[0;33;1m/[0;36;1m6608[0;33;1m font_images[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/ERROR]: [ItemsAdder] [m[0;31;1mGUI error: can't find font_image. Check ia_gui.yml, attribute: [0;36;1msettings.categories_view.font_image.name[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded [0;36;1m1[0;33;1m categories[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Init] Loaded successfully in [0;36;1m368ms[m
+[11:09:51] [Craft Scheduler Thread - 1301 - ItemsAdder/INFO]: [ItemsAdder] [m[0;36;1m[Pack] Checking resourcepack url... [m
+[11:09:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: img [1.0.1]
+[11:09:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: iaplayerstat [1.0.1]
+[11:09:51] [Server thread/INFO]: [ItemsAdder] [mReloading ItemsAdder Custom Entities Citizens NPCs[m
+[11:09:51] [Server thread/INFO]: [Mythic] Reloading plugin...
+[11:09:51] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[11:09:51] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[11:09:51] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[11:09:51] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 17 mobs.[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 19 skills.[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 6 mythic items.[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[11:09:52] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[11:09:52] [Server thread/INFO]: [Mythic] Mythic has finished reloading!
+[11:09:52] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[11:09:52] [Server thread/WARN]: [MythicMobs] ?[33m Config Error for Drop '[4mmmoitems{type=MISCELLANEOUS;id=GURACRACK}:4[0m[33m' in 'plugins\MythicMobs\Mobs\guracrack.yml': [37mDrop type not found.[0m[0m
+[11:09:53] [Craft Scheduler Thread - 1307 - ItemsAdder/INFO]: [ItemsAdder] [m[0;32;1m[Pack] Resourcepack URL is valid (external-host). Url: https://www.dropbox.com/s/ed5f1fqkhx05twm/dev%20server.zip?raw=1[m
+[11:10:39] [Server thread/INFO]: _D_Captain_ issued server command: /feed

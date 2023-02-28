@@ -1,0 +1,60 @@
+HardPunch:
+  Cooldown: 3
+  TargetConditions:
+  - distance{d=<2}
+  Skills:
+  - state{s=hard_punch;lo=0} @self
+  - delay 13
+  - damage{a=2}
+  - state{s=walk;lo=0} @self
+HardKick:
+  Cooldown: 3
+  TargetConditions:
+  - distance{d=<2}
+  Skills:
+  - state{s=hard_punch;lo=0} @self
+  - delay 12
+  - damage{a=3}
+  - state{s=walk;lo=0} @self
+PunchKick:
+  Cooldown: 3
+  TargetConditions:
+  - distance{d=<2}
+  Skills:
+  - state{s=punch_kick;lo=0} @self
+  - delay 13
+  - damage{a=2}
+  - delay 20
+  - damage{a=1}
+  - state{s=walk;lo=0} @self
+HardSwing:
+  Cooldown: 4
+  TargetConditions:
+  - distance{d=<3}
+  Skills:
+  - state{s=hard_swing;lo=0} @self
+  - delay 13
+  - damage{a=2}
+  - state{s=walk;lo=0} @self
+DoubleSwing:
+  Cooldown: 4
+  TargetConditions:
+  - distance{d=<3}
+  Skills:
+  - state{s=double_swing;lo=0} @self
+  - delay 13
+  - damage{a=2}
+  - delay 20
+  - damage{a=1}
+  - state{s=walk;lo=0} @self
+PistolShot:
+  TargetConditions:
+  - distance{d=>3}
+  Skills:
+  - state{s=single_shot;lo=0} @self
+  - delay 13
+  - sound{s=entity.generic.explode;p=2} @self
+  - projectile{bulletType=MOB;mob=bullet;onHit=PistolShot-Hit;v=8;i=1;hR=0.5;vR=0.5;} @target
+PistolShot-Hit:
+  Skills:
+  - damage{a=3}

@@ -18,7 +18,7 @@ Hilt Bash:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
+  msg: '&6{player} &2has cast &6{skill}&r'
   icon: 'JACK_O_LANTERN'
   icon-data: 0
   icon-durability: 0

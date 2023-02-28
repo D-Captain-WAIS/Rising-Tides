@@ -82,12 +82,12 @@ void main() {
                 layer = 2;
                 break;
             case 106:
-                xOffset = int(guiSize.x * (-2.0/100))-85;
+                xOffset = int(guiSize.x * (-2.0/100))-65;
                 yOffset = int(guiSize.y * (50.0/100))-15;
                 layer = 3;
                 break;
             case 107:
-                xOffset = int(guiSize.x * (-2.0/100))-85;
+                xOffset = int(guiSize.x * (-2.0/100))-65;
                 yOffset = int(guiSize.y * (50.0/100))-12;
                 layer = 3;
                 break;
@@ -102,12 +102,12 @@ void main() {
                 layer = 2;
                 break;
             case 110:
-                xOffset = int(guiSize.x * (-1.0/100))-90;
+                xOffset = int(guiSize.x * (-1.0/100))-70;
                 yOffset = int(guiSize.y * (50.0/100))+10;
                 layer = 3;
                 break;
             case 111:
-                xOffset = int(guiSize.x * (-1.0/100))-90;
+                xOffset = int(guiSize.x * (-1.0/100))-70;
                 yOffset = int(guiSize.y * (50.0/100))+13;
                 layer = 3;
                 break;

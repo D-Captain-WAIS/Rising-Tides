@@ -1,0 +1,18 @@
+panels:  
+  addstpt:
+    perm: stpt
+    rows: 1
+    title: 's'
+    empty: WHITE_STAINED_GLASS_PANE
+    pre-load-commands:
+    - 'set-data= statpoints %math_(({cp-data-statpoints}+{sapi_default_currentlevel})-({cp-data-statpoints}+{cp-data-investedstatpoints})-1)*5%'
+    commands-on-open:
+    - cpc
+    item:
+      '1':
+        material: FEATHER
+        stack: 1
+        name: '&e&l[Missions]'
+        commands:
+        - msg= &cWIP
+        - cpc

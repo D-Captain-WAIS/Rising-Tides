@@ -11,7 +11,7 @@ Overhand Swing:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '4'
+    cooldown-base: '6'
     cooldown-scale: '0'
     mana-base: '4'
     mana-scale: '0'
@@ -19,19 +19,22 @@ Overhand Swing:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10007
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oIt would hit pretty hard if I put my hand up '
+  - '&9&oreally high and threw it down! I think?'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -40,65 +43,91 @@ Overhand Swing:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote overhand_swing'
+            type: 'OP'
+          children:  {}
+        Single-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '3'
+            range-scale: '0'
+            tolerance-base: '1.5'
+            tolerance-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'false'
           children: 
-            Command-c: 
+            Channel-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
-                command: 'iaemote overhand_swing'
-                type: 'OP'
+                still: 'True'
+                time-base: '.45'
+                time-scale: '0'
               children:  {}
-            Single-d: 
-              type: 'target'
+            Delay-e: 
+              type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                counts: 'True'
+                delay-base: '0.45'
+                delay-scale: '0'
               children: 
-                Channel-e: 
+                Damage-f: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    still: 'True'
-                    time-base: '.45'
-                    time-scale: '0'
+                    type: 'Damage'
+                    value-base: 'swing_dmg'
+                    value-scale: '5'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
                   children:  {}
-                Delay-f: 
+                Status-g: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.45'
-                    delay-scale: '0'
-                  children: 
-                    Damage-g: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '25'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Entity Attack'
-                      children:  {}
+                    status: 'Stun'
+                    duration-base: '2'
+                    duration-scale: '0.2'
+                  children:  {}
+            Sound-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.overhand_swing'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'swing_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}

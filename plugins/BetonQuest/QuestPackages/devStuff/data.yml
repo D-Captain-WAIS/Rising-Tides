@@ -1,9 +1,11 @@
 events:
   set_scrapper: "opsudo class profess scrapper"
   set_MWN: "opsudo class profess Melee Weapon Newbie"
-  reset_class: "opsudo class reset"
+  reset_class_command: "opsudo class reset"
   reset_class_confirm: "opsudo class reset confirm"
-  reset_class_final: "folder reset_class,reset_class_confirm"
+  stat_point_reset: "command cpdata set %player% statpoints 0"
+  invested_stpt_reset: "command cpdata set %player% investedstatpoints 0"
+  reset_class: "folder reset_class_command,reset_class_confirm,stat_point_reset,invested_stpt_reset"
   give_100xp: "opsudo class exp 100"
   give_500xp: "opsudo class exp 500"
   give_1000xp: "opsudo class exp 1000"

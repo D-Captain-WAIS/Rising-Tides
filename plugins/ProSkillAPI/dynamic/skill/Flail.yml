@@ -10,7 +10,7 @@ Flail:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '3'
+    cooldown-base: '4'
     cooldown-scale: '0'
     mana-base: '5'
     mana-scale: '0'
@@ -18,19 +18,20 @@ Flail:
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  msg: '&6{player} &2has cast &6{skill}&r'
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10003
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&c&l{name} '
+  - '&6&oStat scale:'
+  - '&c&oStrength'
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&9&oI’ll just throw my leg out as hard as I can I guess'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -39,59 +40,76 @@ Flail:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Command-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            command: 'iaemote flail'
+            type: 'OP'
+          children:  {}
+        Area-c: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            radius-base: '3'
+            radius-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'False'
+            max-base: '99'
+            max-scale: '0'
+            random: 'False'
           children: 
-            Command-c: 
+            Delay-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                command: 'iaemote flail'
-                type: 'OP'
-              children:  {}
-            Single-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '2'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                counts: 'False'
+                delay-base: '0.4'
+                delay-scale: '0'
               children: 
-                Delay-e: 
+                Damage-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'flail_damage'
+                    value-scale: ' {}'
+                    true: 'False'
+                    classifier: 'default'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Delay-f: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
-                    delay-base: '0.4'
+                    delay-base: '0.2'
                     delay-scale: '0'
                   children: 
-                    Damage-f: 
+                    Damage-g: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
-                        counts: 'True'
+                        counts: 'False'
                         type: 'Damage'
-                        value-base: '6'
+                        value-base: 'flail_damage'
                         value-scale: '1'
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Entity Attack'
+                        cause: 'Custom'
                       children:  {}
-                    Delay-g: 
+                    Delay-h: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -100,50 +118,63 @@ Flail:
                         delay-base: '0.2'
                         delay-scale: '0'
                       children: 
-                        Damage-h: 
+                        Damage-i: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
                             icon-key: ''
-                            counts: 'False'
+                            counts: 'True'
                             type: 'Damage'
-                            value-base: '6'
+                            value-base: 'flail_damage'
                             value-scale: '1'
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Custom'
+                            cause: 'Entity Attack'
                           children:  {}
-                        Delay-i: 
-                          type: 'mechanic'
-                          indicator: 'None'
-                          data: 
-                            icon-key: ''
-                            counts: 'False'
-                            delay-base: '0.2'
-                            delay-scale: '0'
-                          children: 
-                            Damage-j: 
-                              type: 'mechanic'
-                              indicator: 'None'
-                              data: 
-                                icon-key: ''
-                                counts: 'True'
-                                type: 'Damage'
-                                value-base: '6'
-                                value-scale: '1'
-                                true: 'False'
-                                classifier: 'default'
-                                knockback: 'True'
-                                cause: 'Entity Attack'
-                              children:  {}
-                Channel-k: 
+                Sound-j: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    still: 'False'
-                    time-base: '0.7'
-                    time-scale: '0'
+                    sound: 'Custom'
+                    custom: 'minecraft:scrapper.flail'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
                   children:  {}
+            Channel-k: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                still: 'False'
+                time-base: '0.7'
+                time-scale: '0'
+              children:  {}
+            Sound-l: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Custom'
+                custom: 'minecraft:scrapper.hard_punch'
+                volume-base: '100'
+                volume-scale: '0'
+                pitch-base: '1'
+                pitch-scale: '0'
+              children:  {}
+        Value Placeholder-m: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'flail_damage'
+            type: 'Number'
+            placeholder: '%math_10+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}

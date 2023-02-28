@@ -1,0 +1,11 @@
+# the followings are units of order.
+OrderChars:
+  - k
+  - M
+  - B
+  - T
+  - Q
+  - P
+  - E
+  - Z
+  - Y

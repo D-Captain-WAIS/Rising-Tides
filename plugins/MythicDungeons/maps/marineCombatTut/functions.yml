@@ -1,0 +1,340 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: &id001
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: NONE
+  location:
+    ==: org.bukkit.Location
+    x: -18.0
+    y: 64.0
+    z: 8.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -11.0
+    y: 64.0
+    z: 10.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -14.0
+    y: 64.0
+    z: 7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -5.0
+    y: 64.0
+    z: 17.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 64.0
+    z: 14.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -16.0
+    y: 64.0
+    z: 4.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -11.0
+    y: 64.0
+    z: 13.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -21.0
+    y: 64.0
+    z: 8.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -4.0
+    y: 64.0
+    z: 20.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -15.0
+    y: 64.0
+    z: 11.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -11.0
+    y: 64.0
+    z: 20.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -18.0
+    y: 64.0
+    z: 12.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -12.0
+    y: 64.0
+    z: 16.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -19.0
+    y: 64.0
+    z: 5.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 64.0
+    z: 21.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionStartDungeon
+  targetType: &id002
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: PARTY
+  location:
+    ==: org.bukkit.Location
+    x: 7.0
+    y: 64.0
+    z: -2.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionFinishDungeon
+  leave: true
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 64.0
+    z: 7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 15
+    allowRetrigger: true
+    radius: 0.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBanditA
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -9.0
+    y: 64.0
+    z: 17.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -129.5214385986328

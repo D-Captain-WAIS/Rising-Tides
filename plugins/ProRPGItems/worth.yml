@@ -25,6 +25,7 @@ worth-calculator:
     THORNMAIL: 3
     HEALTH_REGEN: 3
     MANA_REGEN: 10
+    BASE_ATTACK_SPEED: 1
   by-damage-types:
     _vanilla_generic: 5
     magical: 2
@@ -193,6 +194,10 @@ worth-calculator:
     item_generator:
       common:
         '1': 120
+      mountainwraps:
+        '1': 154
+      test:
+        '1': 157
     custom_items:
       basic:
         '1': 156

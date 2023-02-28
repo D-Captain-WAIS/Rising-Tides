@@ -135,7 +135,7 @@ unwrapper:
   # The Bukkit material or a hook
   id: 'itemsadder:hmcwraps:unwrapper'
   # Name displayed
-  name: '<green><bold>Unwrapper'
+  name: '<green><bold>[Chassis Remover]'
   # Lore displayed
   lore:
     - '<green>Apply this to an item to unwrap it!'

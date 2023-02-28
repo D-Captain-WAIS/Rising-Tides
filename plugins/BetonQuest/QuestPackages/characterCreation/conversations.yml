@@ -21,7 +21,7 @@ conversations:
         text: "No thanks\n"
       join:
         text: "Yes! I'll enlist!\n"
-        event: "make_marine,pick_race_tp"
+        event: "make_marine,is_marine,pick_race_tp"
   pirate:
     quester: "\n&c&l[Pirate]"
     first: "desc,choose"
@@ -44,7 +44,7 @@ conversations:
         text: "No thanks\n"
       join:
         text: "Yes! I'll become an outlaw!\n"
-        event: "make_pirate,pick_race_tp"
+        event: "make_pirate,is_pirate,pick_race_tp"
   revolutionary:
     quester: "\n&a&l[Revolutionary]"
     first: "desc,choose"
@@ -67,7 +67,7 @@ conversations:
         text: "No thanks\n"
       join:
         text: "Yes! I want to fight for the people!\n"
-        event: "make_rev,pick_race_tp"
+        event: "make_rev,is_rev,pick_race_tp"
   fishman:
     quester: "\n&1&l[Fishman]"
     first: "desc,choose"
@@ -205,7 +205,7 @@ conversations:
         text: "No thanks\n"
       becomeMarine:
         text: "Yes! I want to use a melee weapon!\n"
-        event: "marine_tp_MWN"
+        event: "test_scrapper"
   stringed:
     quester: "\n&a&l[Stringed]"
     first: "desc,choose"
@@ -284,16 +284,68 @@ conversations:
         events: "talked_gap"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to fight using your own body?\n"
-        pointers: "becomeMarine,refuse"
+        text: "\n&fWant to try out Scrapper?\n"
+        pointers: "scrapperTest,refuse"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      becomeMarine:
-        text: "Yes! I want to fight with just my body!\n"
-        event: "marine_tp_scrapper"       
+      scrapperTest:
+        text: "Yes!\n"
+        event: "test_scrapper"
+  god:
+    quester: "\n&6&l[God]"
+    first: "marine,pirate,rev"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      marine:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_marine"
+        pointers: "marine_yes,refuse"
+      pirate:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_pirate"
+        pointers: "pirate_yes,refuse"
+      rev:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_rev"
+        pointers: "rev_yes,refuse"
+    player_options:
+      marine_yes:
+        text: "I want this class!\n"
+        events: "marine_start_folder"
+      rev_yes:
+        text: "I want this class!\n"
+      pirate_yes:
+        text: "I want this class!\n"
+      refuse:
+        text: "No, I'd like to choose something else!"
+        events: "reset_class_choice"
+  combat_guide:
+    quester: "\n&6&l[God]"
+    first: "like"
+    stop: 'true'
+    final_events: "chat_clear"
+    NPC_options:
+      like:
+        text: "\nWould you like to listen to the combat guide?\n"
+        conditions: "!tag_asked_combat"
+        pointers: "accept,refuse"
+    player_options:
+      accept:
+        text: "Yes!\n"
+        events: "combat_guide,asked_combat"
+      refuse:
+        text: "No!\n"
+        events: "asked_combat"
+
+
+      
+
+
+
         
 
