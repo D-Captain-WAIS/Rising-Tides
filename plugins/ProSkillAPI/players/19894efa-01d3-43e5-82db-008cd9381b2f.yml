@@ -1,41 +1,41 @@
-limit: 10
+limit: 2
 active: 1
-health: 1730.0
-mana: 1290.0
+health: 55.04999923706055
+mana: 32.05
 accounts: 
   acc1: 
     classes: 
       Scrapper: 
-        level: 141
-        points: 119
-        exp: 14335.0
+        level: 2
+        points: 2
+        exp: 0.0
     skills: 
       Hard Kick: 
         level: 5
       Chaaaaaarge: 
-        level: 1
+        level: 0
       regen: 
         level: 1
       Low Kick: 
-        level: 1
+        level: 0
       Hard Punch: 
         level: 5
       Flail: 
         level: 5
       Dropkick: 
-        level: 5
+        level: 0
       Skedaddle: 
         level: 5
       Overhand Swing: 
-        level: 3
+        level: 0
       Get Out Of The Way: 
-        level: 3
+        level: 0
       OneTwoThreeFour: 
-        level: 3
+        level: 0
       Double Punch: 
-        level: 3
+        level: 0
       Running Kick: 
-        level: 3
+        level: 0
     binds:  {}
     bar: 
       enabled: 'true'
@@ -49,12 +49,9 @@ accounts:
       Hard Punch: 1
       Hard Kick: 2
       Flail: 3
-      Double Punch: 4
-      OneTwoThreeFour: 5
-      Dropkick: 6
-    attrib-points: 145
-    attribs: 
-      strength: 425
+      Skedaddle: 4
+    attrib-points: 3
+    attribs:  {}
     hover: 
       Flail: 0
       Running Kick: 1
@@ -74,6 +71,6 @@ accounts:
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
-      - 'k00010004qb4007mqqbeclhn4ob6egt70obgclp0k003ehgme2g019kn8pbdedgm8p35e84000j9cg00atj9epp6a20015n62rb5edo62or5004nat39dhkn8qb5ec00600f8dqn6t3fdl6mup35dh262t310002e7oa003m8qbje1m62u880024sobdck04cup2c9nmop1279q74tb55gh6it31dhkm68hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8irapkncsj5411m2sj4bkh7q0000400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - '5000080016ip002pmmirj5cdp62pjk79jmur34cln5usrndtp682g00dq62po1005larj2e9im2qr1c9m6a08300348obdc5jma0000000600991km8pa6dhgmeso0000062g02987aojcd5hk4tbbddkn8lj1dhqmaso800pn0sjfdlhm6rrickt6crr7elplur3fe9imsbbhe9o6enr9ehimqnr3d1gn4pr5edkn8pbdbthmgobictin600ooajjegr8c5p6epbj78gc59r6aln6oqbdd5q6ap0100b6grb3etp62s3j79rn4obg5lo6gubjd5hm2r010c01ms3idtp70pr9ehimqspqe5p70pqvd5q6aravdhincpbc000000g800b6grb3etp62s3j79nn4qb7d5n62r1ddpgmqp805gj389jcbcj669jcatim2s3fdog5eqbcdgj389jcbkg2ce16dh6mutbeehgmirh0atp62s3j1001os3idtp70pr9ehimqspqe5p70pqvd5q6aravdlnm8tbcck00sqbkclmlupr5dpin4obkdtp0g01fe1p6urb3cdnn4p9qcpnmetbjbtm6usj5domn2sjgctfmit35dlfnasr5e9fm6r31edpm6r31edpg09m2ktgs59rcsae96862ktgl0r31f5in4823dhgn6spq431aepijcdp62s3gclp0m019e1p6usjgctkn8pbdect72sjgctfmit35dlfm6q31e9jmasr9ehimqnr3d1gn4pr5ec000002vvvvvvvvvvvvu1o04lo74rrie1jmit35dlpjksbie1jluqbkclmlup31dlgmepave1k7isr9cdgmo0000084050un18un18v80hahte2hte2i20021k6qorne9gn0spqetp62s1dd5i003jddtqmst31d5n5utric5o761o04lo74rrie1jmit35dlpjksbie1jluqbkclmlutbjclp5uorcc5pn6orcc5pn600000600000119m6sj1e1o6asg300d6grb3etp62s3j79nn4qb7d5n62r1ddlnm8pbc5lkm80004s80g00oe1p6usjgctkn8pbdect72sjgctfmit35dlfmip001lmmutbeehgmirjne9gn0so800i70sjfdlhm6rrickt6crr7elplur3fe9imsbbhe9o6enrjclq5uor1cdk6a0001002us3idtmm6orfe9ijkpjfctqn6nrcdtp6arhde5p70pqvd5q6aravchgmqob7clfn0q3pedkm6obc00hs59pmsad98824c5mm2pr578gc59r66kn30cp0oajjeb90oajmce9e6cpg0280290n8t3id5h7at359lnm8qb6d5in4soa000000o80024sobdck00qpr5dpin4qb35pgn4rbfe83001i1dlnnarjk7vo00000000000o0157n0pbic5q6irre0000000b0025ala98g0000040kfh2sspj4pj6lalj75g4hfpo440012jdhnn8004d1im2p08006k2t3ke9km4tbkcl762rb500bmqqbeclhn4ob6egt6epbeclp6iopec5p6qrri0040012ec5mma00jctimspbid5hisobkehgm6qqje1imap0600342rbfeln7800000000000001g02afe1in4obkd5nms0000000m004alakih000000800v25ppj69j6dalb6eb092vjh0800256r3feg00grb1d5n6gobecg4003a1ehq74qb2elq6ajj1dlig07jdd5n6aoric5j78ej7cln6asj9ccn62t3kc5hmmnrje1imap0010008jj1dlig0537cln6asj9ccn62t3kc5hmmh31dlgmep8600342rbfeln78g0800000000001g02afe1in4obkd5nms0000000m004alakih000000800v25ppj69j6dalb6eb092vjgo800256r3feg00grb1d5n6gobecg4003a1ehq74qb2elq6ajj1dlig07rdd5n6aoric5j78ej7cln6asj9ccn62t3kc5hmmnr4c5mm2pr5001g03q3elpn8rrd9lnm8pbc8hgn8o8000jhg2g00ti6isrgdhgni2000h762rb5058nm8j5f1q74o9279dnm8j2dtm688hqehp7ap9c49kn8obcd5hi4ej6c5m76p9c49qmsp35e9m6irj5cgh3kpj1dhpmab12edq74qbbclq6gsjfeljmg8hqcpgmosr55gh6uoj6elpm6obkcli24ej6c5m76p9c49hmur3fe8h3k8j4c5p6mnricli24b12ehingt1278h5m8jt5hti4ojfdhi24ejke9qmab12d5q62r39cch3kpj1dhpmab12cdnmorri48t24sj5cgh2o8jkcls788hq49bmaobgdtn20lr9dhm24v9cfch64rrccgh3kt3ieliio8j9ehgmoqb348t6cobcediio8j3dtm6ush278h68obiddfn4pb448m24t35f1q24eh2bkg24v9cfch64rrccgh3kt3ieliio8j9ehgmoqb348t6cobcediio8j3dtm6ush278h68obiddfmesj1f4h2o8jkcls788hq496mutbeehgmirh0atp62s3j49ulqb12ehingt1278h24v890024orrick40000014092up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq49p6ap125gh78pboegh3k8i8c5n6882ne9gn0sp2fleio8jkcls788hq48h7q063fch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t24pric5si4b12ehingt1278h58qb5e8t208jt5hti4qbkc5m6iop279j62r3jckm24orfdhnn48hq49i62sjbbtjn4obp48m24t35f1q24eh28dnmqrbfdoh7qn9c49q6au3k48t248jt02tnm8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh6it31dhkm68hqcpgmosr55gh7arj4clp6oqbecli24ej6c5m76p9c49pn8sj9ddin8q3idtqmeq1279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh66rrcdtp24eh2ctp62u925gh78pboegh3k8icclr6ar1q40h7qb3r49kn8obcd5hi4ej6c5m76p9c49hmur3fe8h3k8jnd1kn8p925gh78pboegh3k8hi49ulqb12ehingt1278h24v801dti4t35f1q24eh249ug21br49ingt3ic4h3kmrr49h6ur3448t78sjlckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq49jn4pb5doh2o8jkcls788hq4bh9p4p049uioup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24orfdhnn48hq49jn4pb5doh2o8jkcls788hq4986oobpclp20grcc5pn6eh049uioup2d5q62r39cch3kpj1dhpmab12cdnmorri48t24tr8d5q6a8hc49q6au3k48t24kr3e9gn0s35e8h7qn9c49q6au3k48t248jt005nm8jkcls788hq48h7q00bfch78pboegh3k8h2fk0huup2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq49jmur3448m24t35f1q24eh2sad98824c5mm2pr578g24v9cfch6it31dhkm68hqcpgmosr55gh66rrcdtp24eh2etk6it3548m24t35f1q24eh26kn30cp049uioup2d5q62r39cch3kpj1dhpmab12cdnmorri48t24pric5si4b12ehingt1278h2q812fkm7m8j9ehgmoqb348t6cobcediio8j3dtm6ush278h7eq39ehii4b12ehingt1278h3ibhj6ch7qn9c49q6au3k48t248jt005nm8jkcls788hq48h7q0000400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'

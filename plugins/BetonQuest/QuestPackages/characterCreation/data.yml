@@ -15,7 +15,8 @@ events:
   #teleport to start
     marine_first_quest: "notify &6&lWelcome to Sunrise Island!\n&9&oSpeak to Marine Captain Bogarp! io:title"
     marine_teleport: "folder to_marine_first,marine_cut,marineMain-sunrise.first_arrival"
-    marine_start: "folder bon_voyage,force_sit,marine_first_quest delay:19 period:5"
+    marine_start: "folder bon_voyage,marine_notify delay:19 period:4"
+    marine_notify: "folder force_sit,marine_first_quest"
     marine_start_folder: "folder satisfied_tp,marine_teleport,marine_start,kill_test_dummy period:5"
   #add "I have chosen" flags
     chose_faction: "tag add chose_faction"
@@ -37,6 +38,7 @@ events:
   #cutscenes
     force_sit: "opsudo sit"
     marine_cut: "command cinematic play marineOpen %player%"
+    stop_cut: "command cinematic stop %player%"
   #marine
     talked_cobalt: "tag add talked_cobalt"
     make_marine: "command lp user %player% parent set marine"
@@ -73,14 +75,14 @@ events:
     set_scrapper: "opsudo class profess scrapper"
     test_scrapper: "folder set_scrapper,chose_class,to_class_test,spawn_test_dummy,ask_combat_guide"
   #God's Dialogue pt.1
-    oh_no: "notify &6&oOh no %player%! &c&lYou died! &6&oThat's too bad... io:subtitle"
-    second_chance: "notify &6&oThat's alright though! I'm giving you a second chance! io:subtitle"
+    oh_no: "notify &6&oOh no %player%! &c&lYou died! \n&6&oThat's too bad... io:title"
+    second_chance: "notify &6&oThat's alright though! \n&6&oI'm giving you a second chance! io:title"
     welcome: "notify &6&oWelcome to... io:title"
     rising_tides: "notify &b&l[Rising Tides] io:title"
-    but_first: "notify &6&oYou'll enter this wonderful new world soon! But first... io:subtitle"
+    but_first: "notify &6&oYou'll enter this wonderful new world soon! \n&6&oBut first... io:title"
     god_pt1: "folder oh_no,second_chance,welcome,rising_tides_logo,but_first,pick_faction_tp,talk,talk2 period:5"
-    talk: "notify &d&oWalk up to any character and right-click them to talk to them! io:subtitle"
-    talk2: "notify &d&oOpen chat and click on the dialogue option you want! io:subtitle"
+    talk: "notify &d&oWalk up to any character and \n&d&oright-click them to talk to them! io:title"
+    talk2: "notify &d&oOpen chat and click on \n&d&othe dialogue option you want! io:title"
     pick_faction: "notify &d&lPick your faction! io:title"
     rising_tides_logo: "notify io:totem customisation:1 sound:ui.toast.challenge_complete"
   #God's dialogue pt.2
@@ -89,7 +91,7 @@ events:
     pick_class: "notify &d&lFinally, pick your class! io:title"
   #God's dialogue pt.4 
     satisfied_tp: "folder to_choose_faction,freeze_pt2,satisfied,confirmed_class"
-    satisfied: "notify &6&oI hope you're satisfied with your choices! io:subtitle"
+    satisfied: "notify &6&oI hope you're satisfied with your choices! io:title"
     bon_voyage: "notify &b&lBon voyage sailor! \n&6&oGet ready for the adventure of a lifetime! io:title"
   #combat_tutorial dialogue
     asked_combat: "tag add asked_combat"
@@ -101,8 +103,6 @@ events:
     conv_combat_guide: "conversation combat_guide"
     ask_combat_guide: "folder conv_combat_guide delay:3"
 
-
-
 conditions:
   #for hiding NPCs
     tag_picking_faction: "tag picking_faction"
@@ -113,8 +113,7 @@ conditions:
     hide_faction: "or !tag_picking_faction,tag_chose_faction"
     hide_race: "or !tag_chose_faction,tag_chose_race"
     hide_class: "or !tag_chose_race,tag_chose_class"
-    hide_god: "or !tag_chose_class,tag_confirmed_class"
-  
+    hide_god: "or !tag_chose_class,tag_confirmed_class"  
   #checking if asked for guides
     tag_asked_combat: "tag asked_combat"
   #marine
