@@ -1,7 +1,7 @@
 enabled: true
 
 items:
-  IRON_SWORD:
+  GRAY_DYE:
     wraps:
       1:
         permission: 'sunrise.rusty_cutlass'
@@ -53,7 +53,7 @@ items:
             - '<white>weapon will to change its appearance!'
           flags:
           - 'HIDE_ATTRIBUTES'
-  GOLDEN_SWORD:
+  COAL:
     wraps:
       1:
         permission: 'sunrise.mountain_wraps'

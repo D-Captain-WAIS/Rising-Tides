@@ -110,3 +110,12 @@ GOLDEN_SWORD:
   sunrise:wraps_mythical: 10006
   sunrise:wraps_unique: 10007
   sunrise:mountain_wraps: 10008
+GRAY_DYE:
+  sunrise:duelist_single_common: 10000
+  sunrise:rusty_cutlass: 10001
+GREEN_DYE:
+  sunrise:duelist_single_uncommon: 10000
+LIME_DYE:
+  sunrise:duelist_single_rare: 10000
+COAL:
+  sunrise:rusty_cutlass: 10000

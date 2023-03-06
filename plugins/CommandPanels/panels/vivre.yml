@@ -69,12 +69,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% strength 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -93,7 +93,7 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has2:
           value0: '%cp-data-statpoints%'
           compare0: 0
@@ -130,12 +130,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% constitution 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -154,7 +154,7 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has2:
           value0: '%cp-data-statpoints%'
           compare0: 0
@@ -191,12 +191,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% endurance 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -215,7 +215,7 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has2:
           value0: '%cp-data-statpoints%'
           compare0: 0
@@ -252,12 +252,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% willpower 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -276,7 +276,7 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has2:
           value0: '%cp-data-statpoints%'
           compare0: 0
@@ -313,12 +313,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% dexterity 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -337,7 +337,7 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has2:
           value0: '%cp-data-statpoints%'
           compare0: 0
@@ -374,12 +374,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% accuracy 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -434,12 +434,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% agility 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -458,7 +458,7 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has2:
           value0: '%cp-data-statpoints%'
           compare0: 0
@@ -495,12 +495,12 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
           - "leftshift= console= class forceattr %cp-player-name% finesse 10"
           - "leftshift= math-data= statpoints -10"
           - "leftshift= math-data= investedstatpoints +10"
           - "leftshift= math-data= resetprice +1000"
-          - "leftshift= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "leftshift= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has1:
           value0: '%cp-data-statpoints% ISGREATER'
           compare0: 1
@@ -519,7 +519,7 @@ panels:
           - "left= math-data= statpoints -1"
           - "left= math-data= investedstatpoints +1"
           - "left= math-data= resetprice +100"
-          - "left= playsound minecraft:risingtides.statup master %cp-player-name%"
+          - "left= console= playsound minecraft:risingtides.statup master %cp-player-name%"
         has2:
           value0: '%cp-data-statpoints%'
           compare0: 0
@@ -559,7 +559,7 @@ panels:
           - "math-data= statpoints +%cp-data-investedstatpoints%"
           - "set-data= resetprice 1000"
           - "set-data= investedstatpoints 0"
-          - "playsound minecraft:risingtides.respec master %cp-player-name%"
+          - "console= playsound minecraft:risingtides.respec master %cp-player-name%"
         
   
         

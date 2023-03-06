@@ -4,38 +4,38 @@ godmode: false
 muted: false
 jailed: false
 ip-address: 127.0.0.1
-afk: false
+afk: true
 socialspy: false
 npc: false
 powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1677603007528
+  lastteleport: 1678067185926
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1677636594277
-  login: 1677598742651
+  logout: 1678039981007
+  login: 1678040436767
 money: '9695300.0'
 last-account-name: _D_Captain_
 lastlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 717.2098894382682
-  y: 66.0
-  z: -205.47420274545527
-  yaw: 102.60929107666016
-  pitch: 7.905816078186035
+  x: 899.3686364621378
+  y: 65.0
+  z: -215.06645164367367
+  yaw: -105.94775390625
+  pitch: 15.261457443237305
 logoutlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 753.8036900747917
+  x: 557.2926460109873
   y: 65.0
-  z: -209.98305431932076
-  yaw: 76.33984375
-  pitch: 40.933128356933594
+  z: -294.3244100937872
+  yaw: -148.5263671875
+  pitch: 28.630874633789062
 homes:
   marinecut:
     world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1

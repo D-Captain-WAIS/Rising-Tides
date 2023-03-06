@@ -95,7 +95,7 @@ Hard Kick:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                     Sound-g: 
                       type: 'mechanic'

@@ -198,6 +198,8 @@ worth-calculator:
         '1': 154
       test:
         '1': 157
+      rustycutlass:
+        '1': 169
     custom_items:
       basic:
         '1': 156

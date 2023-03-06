@@ -25,7 +25,6 @@ Hard Punch:
   icon-durability: 0
   icon-lore: 
   - '&c&l{name} '
-  - ''
   - '&6&oStat scale:'
   - '&c&oStrength'
   - ''
@@ -86,7 +85,7 @@ Hard Punch:
                     true: 'False'
                     classifier: 'default'
                     knockback: 'True'
-                    cause: 'Custom'
+                    cause: 'Entity Attack'
                   children:  {}
                 Sound-f: 
                   type: 'mechanic'
@@ -217,7 +216,7 @@ Hard Kick:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                     Sound-g: 
                       type: 'mechanic'
@@ -426,6 +425,7 @@ Hilt Bash:
   name: 'Hilt Bash'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -502,7 +502,17 @@ Hilt Bash:
                     knockback: 'True'
                     cause: 'Entity Attack'
                   children:  {}
-        Single-f: 
+                Status-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Stun'
+                    duration-base: '0.5'
+                    duration-scale: '0.2'
+                  children:  {}
+        Single-g: 
           type: 'target'
           indicator: 'None'
           data: 
@@ -527,27 +537,30 @@ Hilt Strike:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '2'
+    cooldown-base: '6'
     cooldown-scale: '0'
-    mana-base: '2'
+    mana-base: '5'
     mana-scale: '0'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&9&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oThe hilt of this weapon is really sturdy!'
+  - '&9&o This should be able to do good damage.'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -556,50 +569,19 @@ Hilt Strike:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
+        Item-b: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
           children: 
-            Single-c: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                range-base: '3'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
-              children: 
-                Delay-d: 
-                  type: 'mechanic'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    counts: 'True'
-                    delay-base: '0.6'
-                    delay-scale: '0'
-                  children: 
-                    Damage-e: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Damage'
-                        value-base: '15'
-                        value-scale: '1'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Custom'
-                      children:  {}
-            Command-f: 
+            Command-c: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -608,6 +590,53 @@ Hilt Strike:
                 command: 'iaemote hilt_strike'
                 type: 'OP'
               children:  {}
+            Channel-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                still: 'True'
+                time-base: '0.54'
+                time-scale: '0'
+              children: 
+                Single-e: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '3'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-f: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'hstrike_dmg'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children:  {}
+        Value Placeholder-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'hstrike_dmg'
+            type: 'Number'
+            placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
 Piercing Strike: 
   name: 'Piercing Strike'
   type: 'Active'
@@ -629,18 +658,21 @@ Piercing Strike:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&9&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oI’ll jab my weapon directly into them,'
+  - '&9&oand that should do plenty of damage!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -649,34 +681,41 @@ Piercing Strike:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
+        Item-b: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
           children: 
-            Single-c: 
-              type: 'target'
+            Delay-c: 
+              type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                range-base: '5'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                counts: 'True'
+                delay-base: '0.6'
+                delay-scale: '0'
               children: 
-                Delay-d: 
-                  type: 'mechanic'
+                Cone-d: 
+                  type: 'target'
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    counts: 'True'
-                    delay-base: '0.6'
-                    delay-scale: '0'
+                    range-base: '4'
+                    range-scale: '0'
+                    angle-base: '15'
+                    angle-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
                   children: 
                     Damage-e: 
                       type: 'mechanic'
@@ -685,12 +724,12 @@ Piercing Strike:
                         icon-key: ''
                         counts: 'True'
                         type: 'Damage'
-                        value-base: '15'
-                        value-scale: '1'
+                        value-base: 'pstrike_dmg'
+                        value-scale: '0'
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
             Command-f: 
               type: 'mechanic'
@@ -701,6 +740,16 @@ Piercing Strike:
                 command: 'iaemote piercing_strike'
                 type: 'OP'
               children:  {}
+        Value Placeholder-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'pstrike_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
 Two Handed Swing: 
   name: 'Two Handed Swing'
   type: 'Active'
@@ -713,7 +762,7 @@ Two Handed Swing:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '2'
+    cooldown-base: '5'
     cooldown-scale: '0'
     mana-base: '2'
     mana-scale: '0'
@@ -722,18 +771,21 @@ Two Handed Swing:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&9&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oIf I use both of my hands to hold the weapon,'
+  - '&9&o it should do more damage, right?'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -742,34 +794,41 @@ Two Handed Swing:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
+        Item-b: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
           children: 
-            Single-c: 
-              type: 'target'
+            Delay-c: 
+              type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                range-base: '4'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                counts: 'True'
+                delay-base: '0.6'
+                delay-scale: '0'
               children: 
-                Delay-d: 
-                  type: 'mechanic'
+                Cone-d: 
+                  type: 'target'
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    counts: 'True'
-                    delay-base: '0.6'
-                    delay-scale: '0'
+                    range-base: '4'
+                    range-scale: '0'
+                    angle-base: '75'
+                    angle-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
                   children: 
                     Damage-e: 
                       type: 'mechanic'
@@ -778,12 +837,12 @@ Two Handed Swing:
                         icon-key: ''
                         counts: 'True'
                         type: 'Damage'
-                        value-base: '20'
-                        value-scale: '1'
+                        value-base: '2hswing_dmg'
+                        value-scale: '0'
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
             Command-f: 
               type: 'mechanic'
@@ -794,6 +853,16 @@ Two Handed Swing:
                 command: 'iaemote 2hand_swing'
                 type: 'OP'
               children:  {}
+        Value Placeholder-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: '2hswing_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
 Double Punch: 
   name: 'Double Punch'
   type: 'Active'
@@ -989,7 +1058,7 @@ OneTwoThreeFour:
             icon-key: ''
             range-base: '3'
             range-scale: '0'
-            tolerance-base: '0'
+            tolerance-base: '1.5'
             tolerance-scale: '0'
             group: 'Enemy'
             wall: 'False'
@@ -1016,7 +1085,7 @@ OneTwoThreeFour:
                     true: 'False'
                     classifier: 'default'
                     knockback: 'True'
-                    cause: 'Entity Attack'
+                    cause: 'Custom'
                   children:  {}
                 Delay-f: 
                   type: 'mechanic'
@@ -1039,7 +1108,7 @@ OneTwoThreeFour:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Entity Attack'
+                        cause: 'Custom'
                       children:  {}
                     Delay-h: 
                       type: 'mechanic'
@@ -1047,7 +1116,7 @@ OneTwoThreeFour:
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '.2'
+                        delay-base: '0.2'
                         delay-scale: '0'
                       children: 
                         Damage-i: 
@@ -1070,7 +1139,7 @@ OneTwoThreeFour:
                           data: 
                             icon-key: ''
                             counts: 'True'
-                            delay-base: '.2'
+                            delay-base: '0.2'
                             delay-scale: '0'
                           children: 
                             Damage-k: 
@@ -1227,7 +1296,7 @@ Overhand Swing:
                     icon-key: ''
                     counts: 'True'
                     status: 'Stun'
-                    duration-base: '2'
+                    duration-base: '1'
                     duration-scale: '0.2'
                   children:  {}
             Sound-h: 
@@ -1307,21 +1376,89 @@ Running Kick:
             command: 'iaemote running_kick'
             type: 'OP'
           children:  {}
-        Launch-c: 
+        Channel-c: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
-            relative: 'Target'
-            forward-base: 'runningspeed'
-            forward-scale: '0.02'
-            upward-base: '0'
-            upward-scale: '0'
-            right-base: '0'
-            right-scale: '0'
+            still: 'False'
+            time-base: '0.8'
+            time-scale: '0'
           children:  {}
-        Delay-d: 
+        Value Placeholder-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'rkick_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
+        Value Placeholder-e: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'runningspeed'
+            type: 'Number'
+            placeholder: '%math_1.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Ground-f: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            type: 'On Ground'
+          children: 
+            Launch-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'runningspeed'
+                forward-scale: '0.02'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Ground-h: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            type: 'Not On Ground'
+          children: 
+            Launch-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'airspeed'
+                forward-scale: '0.01'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Value Placeholder-j: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'airspeed'
+            type: 'Number'
+            placeholder: '%math_0.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Delay-k: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -1330,14 +1467,14 @@ Running Kick:
             delay-base: '0.8'
             delay-scale: '0'
           children: 
-            Cone-e: 
+            Cone-l: 
               type: 'target'
               indicator: 'None'
               data: 
                 icon-key: ''
                 range-base: '4'
                 range-scale: '0'
-                angle-base: '75'
+                angle-base: '45'
                 angle-scale: '0'
                 group: 'Enemy'
                 wall: 'False'
@@ -1345,7 +1482,7 @@ Running Kick:
                 max-base: '99'
                 max-scale: '0'
               children: 
-                Damage-f: 
+                Damage-m: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -1359,36 +1496,16 @@ Running Kick:
                     knockback: 'True'
                     cause: 'Custom'
                   children:  {}
-        Channel-g: 
-          type: 'mechanic'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            counts: 'True'
-            still: 'False'
-            time-base: '0.8'
-            time-scale: '0'
-          children:  {}
-        Value Placeholder-h: 
-          type: 'mechanic'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            counts: 'True'
-            key: 'rkick_dmg'
-            type: 'Number'
-            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
-          children:  {}
-        Value Placeholder-i: 
-          type: 'mechanic'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            counts: 'True'
-            key: 'runningspeed'
-            type: 'Number'
-            placeholder: '%math_2.5+({sapi_player_class_attribute:agility}*0.01)%'
-          children:  {}
+            Status-n: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                status: 'Root'
+                duration-base: '0.25'
+                duration-scale: '0'
+              children:  {}
 Dropkick: 
   name: 'Dropkick'
   type: 'Active'
@@ -1731,49 +1848,90 @@ Chaaaaaarge:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
+        Self-b: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            group: 'enemy'
+            wall: 'false'
+            caster: 'false'
+          children: 
+            Potion-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                potion: 'Damage resistance'
+                ambient: 'True'
+                tier-base: '2'
+                tier-scale: '0'
+                seconds-base: '2'
+                seconds-scale: '0.2'
+              children:  {}
+        Value Placeholder-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'airspeed'
+            type: 'Number'
+            placeholder: '%math_0.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Value Placeholder-e: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'runningspeed'
+            type: 'Number'
+            placeholder: '%math_1.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Ground-f: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
             type: 'On Ground'
           children: 
-            Single-c: 
-              type: 'target'
+            Launch-g: 
+              type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                range-base: '25'
-                range-scale: '0'
-                tolerance-base: '1'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
-              children: 
-                Self-d: 
-                  type: 'target'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    group: 'enemy'
-                    wall: 'false'
-                    caster: 'false'
-                  children: 
-                    Launch-e: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        relative: 'Target'
-                        forward-base: '4'
-                        forward-scale: '0'
-                        upward-base: '0'
-                        upward-scale: '0'
-                        right-base: '0'
-                        right-scale: '0'
-                      children:  {}
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'runningspeed'
+                forward-scale: '0.02'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Ground-h: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            type: 'Not On Ground'
+          children: 
+            Launch-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'airspeed'
+                forward-scale: '0.01'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
 Skeddaddle: 
   name: 'Skeddaddle'
   type: 'Active'
@@ -1832,6 +1990,7 @@ Get Out Of The Way:
   name: 'Get Out Of The Way'
   type: 'Active'
   max-level: 5
+  skill-req: 'Skeddaddle'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -1871,40 +2030,42 @@ Get Out Of The Way:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Delay-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            delay-base: '0.16'
+            delay-scale: '0'
           children: 
-            Command-c: 
-              type: 'mechanic'
+            Ground-c: 
+              type: 'condition'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                command: 'iaemote gootw'
-                type: 'OP'
-              children:  {}
-            Channel-d: 
-              type: 'mechanic'
+                type: 'Not On Ground'
+              children: 
+                Launch-d: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: '.75'
+                    forward-scale: '0'
+                    upward-base: '0'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+            Ground-e: 
+              type: 'condition'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                still: 'False'
-                time-base: '1'
-                time-scale: '0'
-              children:  {}
-            Delay-e: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.16'
-                delay-scale: '0'
+                type: 'On Ground'
               children: 
                 Launch-f: 
                   type: 'mechanic'
@@ -1919,6 +2080,43 @@ Get Out Of The Way:
                     upward-scale: '0'
                     right-base: '0'
                     right-scale: '0'
+                  children:  {}
+        Command-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            command: 'iaemote gootw'
+            type: 'OP'
+          children:  {}
+        Delay-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.75'
+            delay-scale: '0'
+          children: 
+            Self-i: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-j: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Root'
+                    duration-base: '.3'
+                    duration-scale: '0'
                   children:  {}
 Skedaddle: 
   name: 'Skedaddle'
@@ -2021,6 +2219,7 @@ regen:
   name: 'regen'
   type: 'passive'
   max-level: 1
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'false'
@@ -2075,7 +2274,7 @@ regen:
                 counts: 'False'
                 key: 'noncombatheal'
                 type: 'Number'
-                placeholder: '%math_2+(0.1*{sapi_player_class_attribute:willpower})%'
+                placeholder: '%math_2*(0.1*{sapi_player_class_attribute:willpower})%'
               children:  {}
             Self-d: 
               type: 'target'
@@ -2130,5 +2329,1562 @@ regen:
                 counts: 'False'
                 key: 'combatheal'
                 type: 'Number'
-                placeholder: '%math_2+(0.05*{sapi_player_class_attribute:willpower})%'
+                placeholder: '%math_2*(0.05*{sapi_player_class_attribute:willpower})%'
               children:  {}
+Two Handed Swing (1): 
+  name: 'Two Handed Swing'
+  type: 'Active'
+  max-level: '5'
+  skill-req: 'None'
+  skill-req-lvl: '1'
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '2'
+    cooldown-scale: '0'
+    mana-base: '2'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: '0'
+  icon-durability: '0'
+  icon-lore: 
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  desc: ' []'
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Delay-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.6'
+                delay-scale: '0'
+              children: 
+                Cone-d: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    angle-base: '75'
+                    angle-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
+                  children: 
+                    Damage-e: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: '2hswing_dmg'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children: ' {}'
+            Command-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote 2hand_swing'
+                type: 'OP'
+              children: ' {}'
+        Value Placeholder-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: '2hswing_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children: ' {}'
+Dash Swing: 
+  name: 'Dash Swing'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '6'
+    cooldown-scale: '0'
+    mana-base: '5'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - '&f&oAgility'
+  - ''
+  - '&9&oI’ll run forward as fast as I can'
+  - '&9&oand swing my weapon!'
+  - ''
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote dash_swing'
+                type: 'OP'
+              children:  {}
+            Ground-d: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'On Ground'
+              children: 
+                Launch-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: 'dgroundspeed'
+                    forward-scale: '0.01'
+                    upward-base: '0'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+            Ground-f: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Not On Ground'
+              children: 
+                Launch-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: 'dairspeed'
+                    forward-scale: '0.02'
+                    upward-base: '0'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+            Delay-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '1'
+                delay-scale: '0'
+              children: 
+                Single-i: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-j: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'dswing_dmg'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+        Value Placeholder-k: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dgroundspeed'
+            type: 'Number'
+            placeholder: '%math_2+({sapi_player_class_attribute:agility}*0.02)%'
+          children:  {}
+        Value Placeholder-l: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dairspeed'
+            type: 'Number'
+            placeholder: '%math_ 1+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Value Placeholder-m: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dswing_dmg'
+            type: 'Number'
+            placeholder: '%math_20+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+Charged Attack: 
+  name: 'Charged Attack'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Double Attack'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '8'
+    cooldown-scale: '0'
+    mana-base: '10'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oIf I sit there and charge my attack'
+  - '&9&oit’ll do massive damage!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Delay-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '1.4'
+                delay-scale: '0'
+              children: 
+                Single-d: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-e: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'cattack_dmg'
+                        value-scale: '10'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children:  {}
+            Command-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote charged_attack'
+                type: 'OP'
+              children:  {}
+        Value Placeholder-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'cattack_dmg'
+            type: 'Number'
+            placeholder: '%math_35+({sapi_player_class_attribute:dexterity}*0.4)+{qrpg_damage_physical}%'
+          children:  {}
+Double Attack: 
+  name: 'Double Attack'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '6'
+    cooldown-scale: '0'
+    mana-base: '6'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oInstead of one swing,'
+  - '&9&owhat if I do two?'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote double_attack'
+                type: 'OP'
+              children:  {}
+            Delay-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.5'
+                delay-scale: '0'
+              children: 
+                Single-e: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-f: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'dattack_dmg'
+                        value-scale: '5'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                Delay-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.4'
+                    delay-scale: '0'
+                  children: 
+                    Single-h: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        range-base: '4'
+                        range-scale: '0'
+                        tolerance-base: '1'
+                        tolerance-scale: '0'
+                        group: 'Enemy'
+                        wall: 'False'
+                        caster: 'false'
+                      children: 
+                        Damage-i: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'dattack_dmg'
+                            value-scale: '5'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Custom'
+                          children:  {}
+        Value Placeholder-j: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dattack_dmg'
+            type: 'Number'
+            placeholder: '%math_20+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+Overhead Swing: 
+  name: 'Overhead Swing'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Charged Attack'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '6'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '8'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oIf I raise my weapon above my head'
+  - '&9&oit should be faster and stronger!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Delay-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '1'
+                delay-scale: '0'
+              children: 
+                Single-d: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-e: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'oswing_dmg'
+                        value-scale: '8'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children:  {}
+            Command-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote overhead_swing'
+                type: 'OP'
+              children:  {}
+        Value Placeholder-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'oswing_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.35)+{qrpg_damage_physical}%'
+          children:  {}
+Evade Strike: 
+  name: 'Evade Strike'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '5'
+    cooldown-scale: '0'
+    mana-base: '5'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oIf I raise my weapon above my head'
+  - '&9&oit should be faster and stronger!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'airspeed'
+            type: 'Number'
+            placeholder: '%math_-1-({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Value Placeholder-c: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'groundspeed'
+            type: 'Number'
+            placeholder: '%math_-2-({sapi_player_class_attribute:agility}*0.02)%'
+          children:  {}
+        Value Placeholder-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'estrike_dmg'
+            type: 'Number'
+            placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-e: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote evade_strike'
+                type: 'OP'
+              children:  {}
+            Delay-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '.33'
+                delay-scale: '0'
+              children: 
+                Single-h: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'estrike_dmg'
+                        value-scale: '6'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                Delay-j: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '.31'
+                    delay-scale: '0'
+                  children: 
+                    Ground-k: 
+                      type: 'condition'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        type: 'Not On Ground'
+                      children: 
+                        Launch-l: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            relative: 'Target'
+                            forward-base: 'airspeed'
+                            forward-scale: '-0.02'
+                            upward-base: '0'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                          children:  {}
+                    Ground-m: 
+                      type: 'condition'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        type: 'On Ground'
+                      children: 
+                        Launch-n: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            relative: 'Target'
+                            forward-base: 'groundspeed'
+                            forward-scale: '-0.05'
+                            upward-base: '0'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                          children:  {}
+                    Delay-o: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '.6'
+                        delay-scale: '0'
+                      children: 
+                        Status-p: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            status: 'Root'
+                            duration-base: '0.5'
+                            duration-scale: '0'
+                          children:  {}
+Quick Swings: 
+  name: 'Quick Swings'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Evade Strike'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '7'
+    cooldown-scale: '0'
+    mana-base: '12'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oI’ll rapidly swing my weapon!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'qswings_dmg'
+            type: 'Number'
+            placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-c: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote quick_swings'
+                type: 'OP'
+              children:  {}
+            Delay-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '.37'
+                delay-scale: '0'
+              children: 
+                Single-f: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'qswings_dmg'
+                        value-scale: '6'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                Delay-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '.24'
+                    delay-scale: '0'
+                  children: 
+                    Single-i: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        range-base: '4'
+                        range-scale: '0'
+                        tolerance-base: '1'
+                        tolerance-scale: '0'
+                        group: 'Enemy'
+                        wall: 'False'
+                        caster: 'false'
+                      children: 
+                        Damage-j: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'qswings_dmg'
+                            value-scale: '6'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Custom'
+                          children:  {}
+                    Delay-k: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '.24'
+                        delay-scale: '0'
+                      children: 
+                        Single-l: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '4'
+                            range-scale: '0'
+                            tolerance-base: '1'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'false'
+                          children: 
+                            Damage-m: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                type: 'Damage'
+                                value-base: 'qswings_dmg'
+                                value-scale: '6'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Custom'
+                              children:  {}
+                        Delay-n: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            delay-base: '.24'
+                            delay-scale: '0'
+                          children: 
+                            Single-o: 
+                              type: 'target'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                range-base: '4'
+                                range-scale: '0'
+                                tolerance-base: '1'
+                                tolerance-scale: '0'
+                                group: 'Enemy'
+                                wall: 'False'
+                                caster: 'false'
+                              children: 
+                                Damage-p: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    type: 'Damage'
+                                    value-base: 'qswings_dmg'
+                                    value-scale: '6'
+                                    true: 'False'
+                                    classifier: 'default'
+                                    knockback: 'True'
+                                    cause: 'Custom'
+                                  children:  {}
+Poke: 
+  name: 'Poke'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Quick Swings'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '3'
+    cooldown-scale: '0'
+    mana-base: '4'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oI don’t wanna get too close…'
+  - '&9&owhat about a small poke?'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'poke_dmg'
+            type: 'Number'
+            placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-c: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote poke'
+                type: 'OP'
+              children:  {}
+            Delay-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.5'
+                delay-scale: '0'
+              children: 
+                Single-f: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'poke_dmg'
+                        value-scale: '4'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                    Push-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Fixed'
+                        speed-base: '0.25'
+                        speed-scale: '.05'
+                        source: 'none'
+                      children:  {}
+Jump Attack: 
+  name: 'Jump Attack'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Weeeee'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '8'
+    cooldown-scale: '0'
+    mana-base: '10'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oI’ll leap in the air and '
+  - '&9&oslam down with my weapon!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'jattack_dmg'
+            type: 'Number'
+            placeholder: '%math_35+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-c: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote jump_attack'
+                type: 'OP'
+              children:  {}
+            Launch-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: '0'
+                forward-scale: '0'
+                upward-base: '0.6'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+            Delay-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '.9'
+                delay-scale: '0'
+              children: 
+                Single-g: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'jattack_dmg'
+                        value-scale: '8'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                    Potion-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Slow'
+                        ambient: 'True'
+                        tier-base: '3'
+                        tier-scale: '0'
+                        seconds-base: '3'
+                        seconds-scale: '0.2'
+                      children:  {}
+Weeeee: 
+  name: 'Weeeee'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '10'
+    cooldown-scale: '0'
+    mana-base: '12'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - "&9&oI'll try spinning!"
+  - "&9&oThat's a good trick!"
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote weeeee'
+                type: 'OP'
+              children:  {}
+            Delay-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '.6'
+                delay-scale: '0'
+              children: 
+                Area-e: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    radius-base: '4'
+                    radius-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
+                    random: 'False'
+                  children: 
+                    Damage-f: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'wee_dmg'
+                        value-scale: '8'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                    Push-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Fixed'
+                        speed-base: '-1'
+                        speed-scale: '0.2'
+                        source: 'none'
+                      children:  {}
+                    Status-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        status: 'Silence'
+                        duration-base: '1.2'
+                        duration-scale: '0.2'
+                      children:  {}
+                Delay-i: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '.3'
+                    delay-scale: '0'
+                  children: 
+                    Area-j: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        radius-base: '4'
+                        radius-scale: '0'
+                        group: 'Enemy'
+                        wall: 'False'
+                        caster: 'False'
+                        max-base: '99'
+                        max-scale: '0'
+                        random: 'False'
+                      children: 
+                        Damage-k: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'wee_dmg'
+                            value-scale: '8'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Custom'
+                          children:  {}
+                        Push-l: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Fixed'
+                            speed-base: '-1'
+                            speed-scale: '0.2'
+                            source: 'none'
+                          children:  {}
+                    Delay-m: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '.4'
+                        delay-scale: '0'
+                      children: 
+                        Area-n: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            radius-base: '3'
+                            radius-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                            random: 'False'
+                          children: 
+                            Damage-o: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                type: 'Damage'
+                                value-base: 'wee_dmg'
+                                value-scale: '8'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Custom'
+                              children:  {}
+        Value Placeholder-p: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'wee_dmg'
+            type: 'Number'
+            placeholder: '%math_10+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}

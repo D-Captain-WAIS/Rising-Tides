@@ -43,46 +43,87 @@ Chaaaaaarge:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
+        Self-b: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            group: 'enemy'
+            wall: 'false'
+            caster: 'false'
+          children: 
+            Potion-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                potion: 'Damage resistance'
+                ambient: 'True'
+                tier-base: '2'
+                tier-scale: '0'
+                seconds-base: '2'
+                seconds-scale: '0.2'
+              children:  {}
+        Value Placeholder-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'airspeed'
+            type: 'Number'
+            placeholder: '%math_0.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Value Placeholder-e: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'runningspeed'
+            type: 'Number'
+            placeholder: '%math_1.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Ground-f: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
             type: 'On Ground'
           children: 
-            Single-c: 
-              type: 'target'
+            Launch-g: 
+              type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                range-base: '25'
-                range-scale: '0'
-                tolerance-base: '1'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
-              children: 
-                Self-d: 
-                  type: 'target'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    group: 'enemy'
-                    wall: 'false'
-                    caster: 'false'
-                  children: 
-                    Launch-e: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        relative: 'Target'
-                        forward-base: '4'
-                        forward-scale: '0'
-                        upward-base: '0'
-                        upward-scale: '0'
-                        right-base: '0'
-                        right-scale: '0'
-                      children:  {}
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'runningspeed'
+                forward-scale: '0.02'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Ground-h: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            type: 'Not On Ground'
+          children: 
+            Launch-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'airspeed'
+                forward-scale: '0.01'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}

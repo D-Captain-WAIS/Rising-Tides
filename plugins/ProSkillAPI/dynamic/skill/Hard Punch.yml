@@ -24,7 +24,6 @@ Hard Punch:
   icon-durability: 0
   icon-lore: 
   - '&c&l{name} '
-  - ''
   - '&6&oStat scale:'
   - '&c&oStrength'
   - ''
@@ -85,7 +84,7 @@ Hard Punch:
                     true: 'False'
                     classifier: 'default'
                     knockback: 'True'
-                    cause: 'Custom'
+                    cause: 'Entity Attack'
                   children:  {}
                 Sound-f: 
                   type: 'mechanic'

@@ -5,9 +5,6 @@ events:
     pick_faction_tp: "folder to_choose_faction,picking_faction,pick_faction,freeze_pt2"
     freeze_pt1: "freeze 1000"
     freeze_pt2: "freeze 260"
-    is_marine: "tag add is_marine"
-    is_pirate: "tag add is_pirate"
-    is_rev: "tag add is_rev"
   #picking race
     pick_race_tp: "folder to_choose_race,chose_faction,pick_race"
   #picking class
@@ -42,12 +39,15 @@ events:
   #marine
     talked_cobalt: "tag add talked_cobalt"
     make_marine: "command lp user %player% parent set marine"
+    is_marine: "tag add is_marine"
   #pirate
     talked_loofi: "tag add talked_loofi"
     make_pirate: "command lp user %player% parent set pirate"
+    is_pirate: "tag add is_pirate"
   #rev
     talked_sado: "tag add talked_sado"
     make_rev: "command lp user %player% parent set revolutionary"
+    is_rev: "tag add is_rev"
   #chatclear
     empty_line: "notify \n"
     chat_clear: "folder empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line delay:1"

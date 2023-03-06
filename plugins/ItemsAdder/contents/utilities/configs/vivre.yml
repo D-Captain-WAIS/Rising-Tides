@@ -15,7 +15,6 @@ items:
             cmd1:
               command: 'cp vivre {player}'
               as_console: true
-              delay: 0
       drop:
         cancel: true  
   constitution:

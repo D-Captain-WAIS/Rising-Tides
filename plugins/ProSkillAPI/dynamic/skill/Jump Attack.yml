@@ -1,0 +1,139 @@
+Jump Attack: 
+  name: 'Jump Attack'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Weeeee'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '8'
+    cooldown-scale: '0'
+    mana-base: '10'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oI’ll leap in the air and '
+  - '&9&oslam down with my weapon!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'jattack_dmg'
+            type: 'Number'
+            placeholder: '%math_35+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-c: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote jump_attack'
+                type: 'OP'
+              children:  {}
+            Launch-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: '0'
+                forward-scale: '0'
+                upward-base: '0.6'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+            Delay-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '.9'
+                delay-scale: '0'
+              children: 
+                Single-g: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'jattack_dmg'
+                        value-scale: '8'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                    Potion-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Slow'
+                        ambient: 'True'
+                        tier-base: '3'
+                        tier-scale: '0'
+                        seconds-base: '3'
+                        seconds-scale: '0.2'
+                      children:  {}

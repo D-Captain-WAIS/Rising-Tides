@@ -52,21 +52,89 @@ Running Kick:
             command: 'iaemote running_kick'
             type: 'OP'
           children:  {}
-        Launch-c: 
+        Channel-c: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
-            relative: 'Target'
-            forward-base: 'runningspeed'
-            forward-scale: '0.02'
-            upward-base: '0'
-            upward-scale: '0'
-            right-base: '0'
-            right-scale: '0'
+            still: 'False'
+            time-base: '0.8'
+            time-scale: '0'
           children:  {}
-        Delay-d: 
+        Value Placeholder-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'rkick_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
+        Value Placeholder-e: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'runningspeed'
+            type: 'Number'
+            placeholder: '%math_1.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Ground-f: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            type: 'On Ground'
+          children: 
+            Launch-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'runningspeed'
+                forward-scale: '0.02'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Ground-h: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            type: 'Not On Ground'
+          children: 
+            Launch-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                relative: 'Target'
+                forward-base: 'airspeed'
+                forward-scale: '0.01'
+                upward-base: '0'
+                upward-scale: '0'
+                right-base: '0'
+                right-scale: '0'
+              children:  {}
+        Value Placeholder-j: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'airspeed'
+            type: 'Number'
+            placeholder: '%math_0.75+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Delay-k: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -75,14 +143,14 @@ Running Kick:
             delay-base: '0.8'
             delay-scale: '0'
           children: 
-            Cone-e: 
+            Cone-l: 
               type: 'target'
               indicator: 'None'
               data: 
                 icon-key: ''
                 range-base: '4'
                 range-scale: '0'
-                angle-base: '75'
+                angle-base: '45'
                 angle-scale: '0'
                 group: 'Enemy'
                 wall: 'False'
@@ -90,7 +158,7 @@ Running Kick:
                 max-base: '99'
                 max-scale: '0'
               children: 
-                Damage-f: 
+                Damage-m: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -104,33 +172,13 @@ Running Kick:
                     knockback: 'True'
                     cause: 'Custom'
                   children:  {}
-        Channel-g: 
-          type: 'mechanic'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            counts: 'True'
-            still: 'False'
-            time-base: '0.8'
-            time-scale: '0'
-          children:  {}
-        Value Placeholder-h: 
-          type: 'mechanic'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            counts: 'True'
-            key: 'rkick_dmg'
-            type: 'Number'
-            placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
-          children:  {}
-        Value Placeholder-i: 
-          type: 'mechanic'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            counts: 'True'
-            key: 'runningspeed'
-            type: 'Number'
-            placeholder: '%math_2.5+({sapi_player_class_attribute:agility}*0.01)%'
-          children:  {}
+            Status-n: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                status: 'Root'
+                duration-base: '0.25'
+                duration-scale: '0'
+              children:  {}

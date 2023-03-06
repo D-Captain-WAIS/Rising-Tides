@@ -115,7 +115,10 @@ regions:
     gd:
         members:
             groups: [trust-dev, trust-gd]
-        flags: {entry: deny}
+        flags:
+            entry: deny
+            deny-spawn: ['minecraft:slime']
+            natural-hunger-drain: deny
         owners: {}
         type: poly2d
         priority: 0

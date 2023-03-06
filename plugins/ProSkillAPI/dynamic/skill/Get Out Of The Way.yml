@@ -2,6 +2,7 @@ Get Out Of The Way:
   name: 'Get Out Of The Way'
   type: 'Active'
   max-level: 5
+  skill-req: 'Skeddaddle'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -41,40 +42,42 @@ Get Out Of The Way:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
-          type: 'condition'
+        Delay-b: 
+          type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            counts: 'True'
+            delay-base: '0.16'
+            delay-scale: '0'
           children: 
-            Command-c: 
-              type: 'mechanic'
+            Ground-c: 
+              type: 'condition'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                command: 'iaemote gootw'
-                type: 'OP'
-              children:  {}
-            Channel-d: 
-              type: 'mechanic'
+                type: 'Not On Ground'
+              children: 
+                Launch-d: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: '.75'
+                    forward-scale: '0'
+                    upward-base: '0'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+            Ground-e: 
+              type: 'condition'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                still: 'False'
-                time-base: '1'
-                time-scale: '0'
-              children:  {}
-            Delay-e: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                delay-base: '0.16'
-                delay-scale: '0'
+                type: 'On Ground'
               children: 
                 Launch-f: 
                   type: 'mechanic'
@@ -89,4 +92,41 @@ Get Out Of The Way:
                     upward-scale: '0'
                     right-base: '0'
                     right-scale: '0'
+                  children:  {}
+        Command-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            command: 'iaemote gootw'
+            type: 'OP'
+          children:  {}
+        Delay-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            delay-base: '0.75'
+            delay-scale: '0'
+          children: 
+            Self-i: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-j: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Root'
+                    duration-base: '.3'
+                    duration-scale: '0'
                   children:  {}

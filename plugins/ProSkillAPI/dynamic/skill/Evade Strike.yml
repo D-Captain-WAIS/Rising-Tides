@@ -1,0 +1,201 @@
+Evade Strike: 
+  name: 'Evade Strike'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '5'
+    cooldown-scale: '0'
+    mana-base: '5'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oIf I raise my weapon above my head'
+  - '&9&oit should be faster and stronger!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'airspeed'
+            type: 'Number'
+            placeholder: '%math_-1-({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Value Placeholder-c: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'groundspeed'
+            type: 'Number'
+            placeholder: '%math_-2-({sapi_player_class_attribute:agility}*0.02)%'
+          children:  {}
+        Value Placeholder-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'estrike_dmg'
+            type: 'Number'
+            placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.25)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-e: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote evade_strike'
+                type: 'OP'
+              children:  {}
+            Delay-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '.33'
+                delay-scale: '0'
+              children: 
+                Single-h: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'estrike_dmg'
+                        value-scale: '6'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                Delay-j: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '.31'
+                    delay-scale: '0'
+                  children: 
+                    Ground-k: 
+                      type: 'condition'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        type: 'Not On Ground'
+                      children: 
+                        Launch-l: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            relative: 'Target'
+                            forward-base: 'airspeed'
+                            forward-scale: '-0.02'
+                            upward-base: '0'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                          children:  {}
+                    Ground-m: 
+                      type: 'condition'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        type: 'On Ground'
+                      children: 
+                        Launch-n: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            relative: 'Target'
+                            forward-base: 'groundspeed'
+                            forward-scale: '-0.05'
+                            upward-base: '0'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                          children:  {}
+                    Delay-o: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '.6'
+                        delay-scale: '0'
+                      children: 
+                        Status-p: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            status: 'Root'
+                            duration-base: '0.5'
+                            duration-scale: '0'
+                          children:  {}

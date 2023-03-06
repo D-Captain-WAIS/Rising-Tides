@@ -10,29 +10,27 @@ Scrapper:
   attributes: 
     health-base: '50'
     health-scale: '5'
-    mana-base: '30'
+    mana-base: '20'
     mana-scale: '2'
     constitution-base: '0'
-    constitution-scale: '1'
+    constitution-scale: '0'
     willpower-base: '0'
-    willpower-scale: '1'
+    willpower-scale: '0'
     agility-base: '0'
-    agility-scale: '1'
+    agility-scale: '0'
     dexterity-base: '0'
-    dexterity-scale: '1'
+    dexterity-scale: '0'
     strength-base: '0'
-    strength-scale: '1'
+    strength-scale: '0'
     accuracy-base: '0'
-    accuracy-scale: '1'
+    accuracy-scale: '0'
     endurance-base: '0'
-    endurance-scale: '1'
+    endurance-scale: '0'
     finesse-base: '0'
-    finesse-scale: '1'
-  mana-regen: 4.0
+    finesse-scale: '0'
+  mana-regen: 1.0
   tree: 'BASIC_VERTICAL'
-  blacklist: 
-  - 'BOW'
-  - 'CROSSBOW'
+  blacklist:  []
   skills: 
   - 'Hard Punch'
   - 'Hard Kick'
@@ -46,7 +44,6 @@ Scrapper:
   - 'Low Kick'
   - 'Get Out Of The Way'
   - 'Chaaaaaarge'
-  - 'regen'
   icon: 'YELLOW_DYE'
   icon-data: 0
   icon-durability: 0

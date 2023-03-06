@@ -19,18 +19,21 @@ Piercing Strike:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&9&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&9&oI’ll jab my weapon directly into them,'
+  - '&9&oand that should do plenty of damage!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -39,34 +42,41 @@ Piercing Strike:
       data: 
         icon-key: ''
       children: 
-        Ground-b: 
+        Item-b: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
-            type: 'On Ground'
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
           children: 
-            Single-c: 
-              type: 'target'
+            Delay-c: 
+              type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                range-base: '5'
-                range-scale: '0'
-                tolerance-base: '0'
-                tolerance-scale: '0'
-                group: 'Enemy'
-                wall: 'False'
-                caster: 'false'
+                counts: 'True'
+                delay-base: '0.6'
+                delay-scale: '0'
               children: 
-                Delay-d: 
-                  type: 'mechanic'
+                Cone-d: 
+                  type: 'target'
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    counts: 'True'
-                    delay-base: '0.6'
-                    delay-scale: '0'
+                    range-base: '4'
+                    range-scale: '0'
+                    angle-base: '15'
+                    angle-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
                   children: 
                     Damage-e: 
                       type: 'mechanic'
@@ -75,12 +85,12 @@ Piercing Strike:
                         icon-key: ''
                         counts: 'True'
                         type: 'Damage'
-                        value-base: '15'
-                        value-scale: '1'
+                        value-base: 'pstrike_dmg'
+                        value-scale: '0'
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
             Command-f: 
               type: 'mechanic'
@@ -91,3 +101,13 @@ Piercing Strike:
                 command: 'iaemote piercing_strike'
                 type: 'OP'
               children:  {}
+        Value Placeholder-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'pstrike_dmg'
+            type: 'Number'
+            placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}

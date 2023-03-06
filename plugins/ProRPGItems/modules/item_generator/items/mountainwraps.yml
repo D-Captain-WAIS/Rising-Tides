@@ -1,129 +1,34 @@
-# Item name.
-# Placeholders:
-# - %prefix_tier% - Random prefix depends on item Tier.
-# - %prefix_material% - Random prefix depends on item Material.
-# - %prefix_type% - Random prefix depends on item Sub Group.
-# - %suffix_tier% - Random suffix depends on item Tier.
-# - %suffix_material% - Random suffix depends on item Material.
-# - %suffix_type% - Random suffix depends on item Sub Group.
-# - %item_type% - Localized name of Item Sub Groups or Item Groups or Item Materials.
 name: §4§l[§c§lWeapon Will§4§l] §8§lMountain Wraps
-# Placeholders:
-# - Tier placeholders. 
-# - %ITEM_LEVEL% - Item level number.
-# - %ITEM_LEVEL_ROMAN% - Item level in Roman number.
-# - %ITEM_UNTRADEABLE% - Applies Untradeable Attribute (must be enabled in Soulbound module).
-# - %ITEM_CHARGES% - Applies and displays item charges attribute.
-# - %ITEM_AMMO% - Generates and displays bow ammo type.
-# - %ITEM_HAND% - Generates and displays item hand type.
-# - %ITEM_SET% - Displays item set lore if item is an element of any set.
-# - %USER_CLASS% - Generates and displays player class requirements.
-# - %USER_LEVEL% - Generates and displays player level requirements.
-# - %USER_SOULBOUND% - Generates and displays player soulbound requirements.
-# - %GENERATOR_ABILITY% - Generates and displays item abilities.
-# - %GENERATOR_DAMAGE% - Generates and displays item damages.
-# - %GENERATOR_DEFENSE% - Generates and displays item defenses.
-# - %GENERATORS_STATS% - Generates and displays item stats.
-# - %GENERATOR_SOCKETS_[TYPE]% - Generates and displays item [TYPE] sockets.
 lore:
-- '&cHand Wraps'
+- '%item_type%'
 - '&7Tier: %TIER_NAME%'
 - '&7Level: &f%ITEM_LEVEL%'
-- '%ITEM_AMMO%'
-- '%ITEM_HAND%'
-- '%ENCHANTS%'
-- ''
-- '%USER_CLASS%'
 - '%USER_LEVEL%'
 - ''
-- '%ITEM_SET%'
-- ''
-- '%GENERATOR_ABILITY%'
-- '%GENERATOR_DEFENSE%'
 - '%GENERATOR_DAMAGE%'
-- '%GENERATOR_STATS%'
-- '%GENERATOR_SOCKETS_GEM%'
-- '%GENERATOR_SOCKETS_ESSENCE%'
-- '%GENERATOR_SOCKETS_RUNE%'
-
-# [Optional] Custom item model data from resourcepack.
-model-data: 123
-
-# [Optional] Item amount.
-amount: 1
-
-# [Optional]
-# Custom head texture. For player heads only.
-# Some textures can be find here: https://minecraft-heads.com/
-skull-hash: ''
-
-# [Optional] 
-# Adds random enchantment to make item glow.
-enchanted: false
-
-# [Optional]
-# Item color for Leather armor and Potions.
-# Syntax: R,G,B. -1 will define random color (0-255).
 color: -1,-1,-1
-
-# [Optional]
-# Makes item unbreakable.
 unbreakable: true
-
-# [Optional]
-# Item Flags. Use '*' to apply all flags.
-# See "Item Options" above for link to flags
 item-flags:
-- HIDE_ATTRIBUTES
-- HIDE_ENCHANTS
-
-# [Required]
-# Item Tier.
-# If item missed this setting, it will throw an console error and won't be loaded.
+- '*'
 tier: common
-
-# [Required]
-# Item level.
 level:
   min: 2
   max: 2
-
-# Item Attribute Generator.
 generator:
-  # Chance to generate item prefix and suffix that depends on Tier, Type and Material.
   prefix-chance: 0.0
   suffix-chance: 0.0
-  # List of Materials that will be generated.
   materials:
-    # When true, ONLY materials from the list below will be used in generation.
-    # When false, all materials EXCEPT the materials from the list below will be used in generation.
     reverse: true
     black-list:
-    - GOLDEN_SWORD
-    # Item stat modifiers depends on item type.
-    # Here you can increase generated item stats by a certain value for certain items.
-    # NOTE: Modifiers has addictive behavior, this means it will ADD specified value to the item stat.
-    # TIP 1: You can add percent symbol at the end of value to make it work as a multiplier.
-    # TIP 2: You can provide negative values to decrease stat value. Use -100% to disable certain stat fro, being generated.
+    - COAL
     stat-modifiers: {}
     model-data:
-      default:
-      - 10000
-  
-  # Player requirements depends on item level.
-  user-requirements-by-level:
-    class:
-      '2': Scrapper
-  
-  # Item enchantments.
+      default: []
+  user-requirements-by-level: {}
   enchantments:
-    # Minimum and maximum generated enchantments.
     minimum: 0
     maximum: 0
-    # When true, prevents from generating enchants that are not suitable for that item or has a level higher than possible.
     safe-only: false
-    # Enchantments list.
-    # Key = Enchantmnet, Value = Level Range.
     list:
       sharpness: '1:2'
       knockback: '1:2'
@@ -131,22 +36,12 @@ generator:
       silk_touch: 0:1
       smite: '1:2'
     safe-levels: true
-  
-  # Ammo Type generation chances.
   ammo-types: {}
-  
-  # Hand Type generation chances.
   hand-types:
     TWO: 100.0
-  
-  # Damage Type generation.
   damage-types:
-    # Minimum and maximum generated damages.
     minimum: 1
     maximum: 1
-    # Here you can define damage lore order and add additional lines.
-    # This format will replace %GENERATOR_DAMAGE% placeholder.
-    # Damage placeholder format: %DAMAGE_[ID]%, where [ID] is damage identifier.
     lore-format:
     - '%DAMAGE_PHYSICAL%'
     - '%DAMAGE_MAGICAL%'
@@ -157,14 +52,9 @@ generator:
     - ''
     - '%DAMAGE__VANILLA_GENERIC%'
     list:
-      # Damage Type identifier.
       physical:
-        # Generation chance.
         chance: 100.0
-        # Value scaling depends by item level.
-        # Formula is: value * ((scale * 100 - 100) * level / 100 + 1)
         scale-by-level: 1.0
-        # Value range.
         min: 5.0
         max: 10.0
         flat-range: false
@@ -211,14 +101,9 @@ generator:
         max: 0
         flat-range: false
         round: false
-  
-  # Defense generation.
   defense-types:
-    minimum: 0
-    maximum: 0
-    # Here you can define defense lore order and add additional lines.
-    # This format will replace %GENERATOR_DEFENSE% placeholder.
-    # Defense placeholder format: %DEFENSE_[ID]%, where [ID] is defense identifier.
+    minimum: 1
+    maximum: 2
     lore-format:
     - '%DEFENSE_PHYSICAL%'
     - '%DEFENSE_MAGICAL%'
@@ -228,11 +113,8 @@ generator:
     - '%DEFENSE_WIND%'
     - ''
     list:
-      # Defense Type identifier.
       physical:
         chance: 100.0
-        # Value scaling depends by item level.
-        # Formula is: value * ((scale * 100 - 100) * level / 100 + 1)
         scale-by-level: 1.025
         min: 3.25
         max: 8.75
@@ -273,16 +155,10 @@ generator:
         max: 0
         flat-range: false
         round: false
-  
-  # Item Stat generation.
   item-stats:
     minimum: 0
     maximum: 0
-    # Here you can define stat lore order and add additional lines.
-    # This format will replace %GENERATOR_STATS% placeholder.
-    # Item stat placeholder format: %ITEM_STAT_[TYPE]%, where [TYPE] is Item Stat type.
     lore-format:
-    - '%ITEM_STAT_DIRECT_DAMAGE%'
     - '%ITEM_STAT_AOE_DAMAGE%'
     - '%ITEM_STAT_CRITICAL_RATE%'
     - '%ITEM_STAT_CRITICAL_DAMAGE%'
@@ -292,6 +168,7 @@ generator:
     - '%ITEM_STAT_BLOCK_DAMAGE%'
     - '%ITEM_STAT_LOOT_RATE%'
     - '%ITEM_STAT_MOVEMENT_SPEED%'
+    - '%ITEM_STAT_BASE_ATTACK_SPEED%'
     - '%ITEM_STAT_ATTACK_SPEED%'
     - '%ITEM_STAT_MAX_HEALTH%'
     - '%ITEM_STAT_PENETRATION%'
@@ -301,7 +178,6 @@ generator:
     - '%ITEM_STAT_THORNMAIL%'
     - '%ITEM_STAT_MANA_REGEN%'
     - '%ITEM_STAT_BLEED_RATE%'
-    - '%ITEM_STAT_RANGE%'
     - '%ITEM_STAT_HEALTH_REGEN%'
     - '%ITEM_STAT_SALE_PRICE%'
     - '%ITEM_STAT_DISARM_RATE%'
@@ -312,11 +188,8 @@ generator:
     - '%ITEM_STAT_DURABILITY%'
     - ''
     list:
-      # Item Stat identifier.
       critical_rate:
         chance: 20.0
-        # Value scaling depends by item level.
-        # Formula is: value * ((scale * 100 - 100) * level / 100 + 1)
         scale-by-level: 1.025
         min: 3.0
         max: 6.25
@@ -357,56 +230,75 @@ generator:
         max: 10.0
         flat-range: false
         round: false
-      max_health:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
+      vampirism:
+        chance: 5.0
+        scale-by-level: 1.025
+        min: 1.5
+        max: 4.5
         flat-range: false
         round: false
-      attack_speed:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
+      burn_rate:
+        chance: 8.0
+        scale-by-level: 1.025
+        min: 4.5
+        max: 12.5
         flat-range: false
         round: false
-      aoe_damage:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
+      durability:
+        chance: 100.0
+        scale-by-level: 1.025
+        min: 150
+        max: 700
         flat-range: false
         round: false
-      pvp_damage:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
+      penetration:
+        chance: 6.0
+        scale-by-level: 1.025
+        min: 4.5
+        max: 10.0
         flat-range: false
         round: false
-      disarm_rate:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      pvp_defense:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      mana_regen:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
+      loot_rate:
+        chance: 7.5
+        scale-by-level: 1.025
+        min: 2.0
+        max: 10.0
         flat-range: false
         round: false
       movement_speed:
+        chance: 3.5
+        scale-by-level: 1.025
+        min: 7.5
+        max: 15.0
+        flat-range: false
+        round: false
+      attack_speed:
+        chance: 4.75
+        scale-by-level: 1.025
+        min: 5.0
+        max: 10.0
+        flat-range: false
+        round: false
+      max_health:
+        chance: -1
+        scale-by-level: 1.025
+        min: 5.0
+        max: 10.0
+        flat-range: false
+        round: false
+      aoe_damage:
+        chance: 5
+        scale-by-level: 1.025
+        min: 5.0
+        max: 10.0
+        flat-range: false
+        round: false
+      range:
+        chance: 20.0
+        scale-by-level: 1.025
+        min: 5.0
+        max: 25.0
+      pvp_defense:
         chance: 0.0
         scale-by-level: 1.0
         min: 0
@@ -420,49 +312,7 @@ generator:
         max: 0
         flat-range: false
         round: false
-      thornmail:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      burn_rate:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      pve_defense:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      durability:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      pve_damage:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      loot_rate:
-        chance: 0.0
-        scale-by-level: 1.0
-        min: 0
-        max: 0
-        flat-range: false
-        round: false
-      penetration:
+      bleed_rate:
         chance: 0.0
         scale-by-level: 1.0
         min: 0
@@ -476,36 +326,136 @@ generator:
         max: 0
         flat-range: false
         round: false
-      vampirism:
+      disarm_rate:
         chance: 0.0
         scale-by-level: 1.0
         min: 0
         max: 0
         flat-range: false
         round: false
-      bleed_rate:
+      pve_defense:
         chance: 0.0
         scale-by-level: 1.0
         min: 0
         max: 0
         flat-range: false
         round: false
-  
-  # Socket generation.
+      mana_regen:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+        round: false
+      thornmail:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+        round: false
+      pve_damage:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+        round: false
+      pvp_damage:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+        round: false
+  skillapi-attributes:
+    minimum: 1
+    maximum: 1
+    lore-format:
+    - '%SKILLAPI_ATTRIBUTE_VITALITY%'
+    - '%SKILLAPI_ATTRIBUTE_SPIRIT%'
+    - '%SKILLAPI_ATTRIBUTE_INTELLIGENCE%'
+    - '%SKILLAPI_ATTRIBUTE_DEXTERITY%'
+    - '%SKILLAPI_ATTRIBUTE_STRENGTH%'
+    - '%SKILLAPI_ATTRIBUTE_CONSTITUTION%'
+    - '%SKILLAPI_ATTRIBUTE_WILLPOWER%'
+    - '%SKILLAPI_ATTRIBUTE_AGILITY%'
+    - '%SKILLAPI_ATTRIBUTE_ACCURACY%'
+    - '%SKILLAPI_ATTRIBUTE_ENDURANCE%'
+    - '%SKILLAPI_ATTRIBUTE_FINESSE%'
+    list:
+      vitality:
+        chance: 20.0
+        scale-by-level: 1.025
+        min: 3.0
+        max: 6.25
+      spirit:
+        chance: 20.0
+        scale-by-level: 1.025
+        min: 1.1
+        max: 1.25
+      intelligence:
+        chance: 10.0
+        scale-by-level: 1.025
+        min: 2.5
+        max: 4.0
+      dexterity:
+        chance: 10.0
+        scale-by-level: 1.025
+        min: 4.5
+        max: 7.5
+        flat-range: false
+      strength:
+        chance: 10.0
+        scale-by-level: 1.025
+        min: 1.5
+        max: 7.0
+        flat-range: false
+      constitution:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+      willpower:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+      agility:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+      accuracy:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+      endurance:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
+      finesse:
+        chance: 0.0
+        scale-by-level: 1.0
+        min: 0
+        max: 0
+        flat-range: false
   sockets:
-    # Must be a valid Socket Type.
     GEM:
       minimum: 0
       maximum: 0
-      # Here you can define socket lore order and add additional lines.
-      # This format will replace %GENERATOR_SOCKETS_[TYPE]% placeholder.
-      # Socket placeholder is: %SOCKET_[TYPE]_[CATEGORY]%, where [TYPE] is Socket Type, [CATEGORY] is Socket Category.
       lore-format:
       - '&8&m               &f  「 GEMS 」  &8&m               '
       - '%SOCKET_GEM_COMMON%'
       - '%SOCKET_GEM_RARE%'
       list:
-        # Socket Category.
         common:
           chance: 35.0
         rare:
@@ -528,72 +478,15 @@ generator:
       list:
         default:
           chance: 35.0
-  
-  # Ability generation.
-  abilities:
+  skills:
     minimum: 0
     maximum: 0
-    # List of mouse clicks that will be linked with abilities.
-    # Ability amount can not be greater than keys amount.
-    # Possible values: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT.
-    allowed-clicks:
-    - RIGHT
-    - LEFT
-    # Your custom variables depends on item level.
-    # Item will always use the greatest key less than or equal to the item level.
-    # Variable placeholder format: %var_[name]%.
-    variables-by-level:
-      # Item level
-      '1':
-        # Variable name: Value
-        rad: 4.0
-        dur: '&f10 &7seconds'
-        durTick: 200
-      '2':
-        rad: 7.0
-        dur: '&f15 &7seconds'
-        durTick: 300
-      '3':
-        rad: 10.0
-        dur: '&f20 &7seconds'
-        durTick: 400
-    # List of your custom abilities.
     list:
-      # Ability identifier. Must be unique.
       ability-1:
-        # Generation chance.
         chance: 0.0
-        # Usage cooldown.
-        cooldown: 5.0
-        # Here you can define how the ability will look in item lore.
-        # It will replace the %GENERATOR_ABILITY% placeholder.
-        # Next abilities will be added under the first one.
-        # Placeholders:
-        # - %key% - Mouse key to use that ability.
+        min-level: 1
+        max-level: 1
         lore-format:
-        - '&bSample Ability: &7[&f%key%&7]'
-        # Custom Actions that will be executed when ability is activated.
-        # You can use ability variables here.
-        actions:
-          default:
-            target-selectors:
-              radius:
-              - '[RADIUS] ~distance: %var_rad%; ~allow-self: false; ~party-member:
-                false; ~attackable: true;'
-              self:
-              - '[SELF]'
-            conditions:
-              list: []
-              actions-on-fail: 'null'
-            action-executors:
-            - '[PROGRESS_BAR] ~title: &e&lCasting...; ~subtitle: •; ~color-empty:
-              &7; ~color-fill: &e; ~duration: 35; ~target: self;'
-            - '[PARTICLE_SIMPLE] ~offset: 0.2,0.3,0.2; ~speed: 0.1; ~name: FLAME;
-              ~target: radius; ~amount: 30; ~delay: 23;'
-            - '[POTION] ~name: BLINDNESS; ~amount: 1; ~duration: %var_durTick%; ~target:
-              radius; ~delay: 23;'
-            - '[BURN] ~duration: %var_durtick%; ~target: radius; ~delay: 23;'
-            - '[SOUND] ~name: BLOCK_FIRE_EXTINGUISH; ~target: self; ~delay: 23;'
-
-# This section is useless.
+        - '&bSample Ability: &7[&f%level%&7]'
 target-requirements: {}
+enchanted: false

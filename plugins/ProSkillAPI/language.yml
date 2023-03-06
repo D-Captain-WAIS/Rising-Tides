@@ -54,13 +54,13 @@ Stats:
   exp: '&2Exp'
   attrib: '&2AP'
 Status: 
-  silenced: '&4You are silenced for another &6{duration} &4seconds'
+  silenced: '&4You cannot use skills for another &6{duration} &4seconds'
   stunned: '&4You are stunned for another &6{duration} &4seconds'
-  rooted: '&4You are rooted for another &6{duration} &4seconds'
+  rooted: '&4You cannot move for another &6{duration} &4seconds'
   disarmed: '&4You are disarmed for another &6{duration} &4seconds'
-  invincible: '&4That target is invincible for another &6{duration} &4seconds'
+  invincible: '&4That target is invincible'
   absorbed: '&4That target is absorbing attacks to gain health for another &6{duration} &4seconds'
-  channeling: '&4You are still channeling for another &6{duration} &4seconds'
+  channeling: "&4You're in the middle of a skill"
 Combo: 
   left: '&6Left'
   right: '&6Right'

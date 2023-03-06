@@ -111,57 +111,30 @@ modules:
     name: Drops
 
 item-sub-types:
-  axe:
-    name: Axe
+  single_duelist_sharp:
+    name: '&cSingle Sharp Duelist'
     materials:
-    - WOODEN_AXE
-    - GOLDEN_AXE
-    - IRON_AXE
-    - DIAMOND_AXE
-    - STONE_AXE
-    - NETHERITE_AXE
-  sword:
-    name: Sword
+    - GRAY_DYE
+    - GREEN_DYE
+    - LIME_DYE
+    - CYAN_DYE
+    - PURPLE_DYE
+    - YELLOW_DYE
+    - RED_DYE
+    - ORANGE_DYE
+  hand_wraps:
+    name: '&cHand Wraps'
     materials:
-    - WOODEN_SWORD
-    - GOLDEN_SWORD
-    - IRON_SWORD
-    - DIAMOND_SWORD
-    - STONE_SWORD
-    - NETHERITE_SWORD
-  shears:
-    name: Shears
-    materials:
-    - SHEARS
-  shovel:
-    name: Shovel
-    materials:
-    - WOODEN_SHOVEL
-    - GOLDEN_SHOVEL
-    - IRON_SHOVEL
-    - DIAMOND_SHOVEL
-    - STONE_SHOVEL
-    - NETHERITE_SHOVEL
-  pickaxe:
-    name: Pickaxe
-    materials:
-    - WOODEN_PICKAXE
-    - GOLDEN_PICKAXE
-    - IRON_PICKAXE
-    - DIAMOND_PICKAXE
-    - STONE_PICKAXE
-    - NETHERITE_PICKAXE
-  hoe:
-    name: Hoe
-    materials:
-    - WOODEN_HOE
-    - GOLDEN_HOE
-    - IRON_HOE
-    - DIAMOND_HOE
-    - STONE_HOE
-    - NETHERITE_HOE
+    - COAL
+    - SCUTE
+    - EMERALD
+    - DIAMOND
+    - AMETHYST_SHARD
+    - GOLD_INGOT
+    - BRICK
+    - COPPER_INGOT
   helmet:
-    name: Helmet
+    name: 'Helmet'
     materials:
     - GOLDEN_HELMET
     - IRON_HELMET
@@ -171,7 +144,7 @@ item-sub-types:
     - TURTLE_HELMET
     - NETHERITE_HELMET
   chestplate:
-    name: Chestplate
+    name: 'Torso'
     materials:
     - GOLDEN_CHESTPLATE
     - IRON_CHESTPLATE
@@ -189,7 +162,7 @@ item-sub-types:
     - LEATHER_LEGGINGS
     - NETHERITE_LEGGINGS
   boots:
-    name: Boots
+    name: 'Boots'
     materials:
     - GOLDEN_BOOTS
     - IRON_BOOTS
@@ -225,23 +198,22 @@ item-groups:
   WEAPON:
     name: Weapon
     materials:
-    - WOODEN_SWORD
-    - WOODEN_AXE
-    - STONE_SWORD
-    - STONE_AXE
-    - GOLDEN_SWORD
-    - GOLDEN_AXE
-    - IRON_SWORD
-    - IRON_AXE
-    - DIAMOND_SWORD
-    - DIAMOND_AXE
-    - NETHERITE_SWORD
-    - NETHERITE_AXE
-    - SHEARS
-    - FISHING_ROD
-    - BOW
-    - CROSSBOW
-    - TRIDENT
+    - COAL
+    - SCUTE
+    - EMERALD
+    - DIAMOND
+    - AMETHYST_SHARD
+    - GOLD_INGOT
+    - BRICK
+    - COPPER_INGOT
+    - GRAY_DYE
+    - GREEN_DYE
+    - LIME_DYE
+    - CYAN_DYE
+    - PURPLE_DYE
+    - YELLOW_DYE
+    - RED_DYE
+    - ORANGE_DYE
   TOOL:
     name: Tool
     materials:

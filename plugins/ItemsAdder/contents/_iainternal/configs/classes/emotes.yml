@@ -13,7 +13,7 @@ emotes:
   hard_kick:
     id: hard_kick
     enabled: true
-    can_player_move: false
+    can_player_move: true
     cancel_conditions:
       sneak: false
       take_damage: false
@@ -40,7 +40,7 @@ emotes:
   double_punch:
     id: double_punch
     enabled: true
-    can_player_move: false
+    can_player_move: true
     cancel_conditions:
       sneak: false
       take_damage: false
@@ -67,7 +67,7 @@ emotes:
   running_kick:
     id: running_kick
     enabled: true
-    can_player_move: false
+    can_player_move: true
     cancel_conditions:
       sneak: false
       take_damage: false
@@ -76,7 +76,7 @@ emotes:
   dropkick:
     id: dropkick
     enabled: true
-    can_player_move: false
+    can_player_move: true
     cancel_conditions:
       sneak: false
       take_damage: false
@@ -85,16 +85,16 @@ emotes:
   low_kick:
     id: low_kick
     enabled: true
-    can_player_move: false
+    can_player_move: true
     cancel_conditions:
       sneak: false
-      take_damage: false
+      take_damage: true
       deal_damage: false
       in_air: false
   gootw:
     id: gootw
     enabled: true
-    can_player_move: false
+    can_player_move: true
     cancel_conditions:
       sneak: false
       take_damage: false
@@ -103,7 +103,115 @@ emotes:
   Haoshoku:
     id: Haoshoku
     enabled: true
-    can_player_move: false
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  2hand_swing:
+    id: 2hand_swing
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  piercing_strike:
+    id: piercing_strike
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  hilt_strike:
+    id: hilt_strike
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  dash_swing:
+    id: dash_swing
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  double_attack:
+    id: double_attack
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  charged_attack:
+    id: charged_attack
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  overhead_swing:
+    id: overhead_swing
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  evade_strike:
+    id: evade_strike
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  quick_swings:
+    id: quick_swings
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  poke:
+    id: poke
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  weeeee:
+    id: weeeee
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  jump_attack:
+    id: jump_attack
+    enabled: true
+    can_player_move: true
     cancel_conditions:
       sneak: false
       take_damage: false

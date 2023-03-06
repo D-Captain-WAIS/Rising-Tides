@@ -1,0 +1,219 @@
+Quick Swings: 
+  name: 'Quick Swings'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Evade Strike'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '7'
+    cooldown-scale: '0'
+    mana-base: '12'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oI’ll rapidly swing my weapon!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'qswings_dmg'
+            type: 'Number'
+            placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-c: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote quick_swings'
+                type: 'OP'
+              children:  {}
+            Delay-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '.37'
+                delay-scale: '0'
+              children: 
+                Single-f: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'qswings_dmg'
+                        value-scale: '6'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+                Delay-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '.24'
+                    delay-scale: '0'
+                  children: 
+                    Single-i: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        range-base: '4'
+                        range-scale: '0'
+                        tolerance-base: '1'
+                        tolerance-scale: '0'
+                        group: 'Enemy'
+                        wall: 'False'
+                        caster: 'false'
+                      children: 
+                        Damage-j: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'qswings_dmg'
+                            value-scale: '6'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Custom'
+                          children:  {}
+                    Delay-k: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '.24'
+                        delay-scale: '0'
+                      children: 
+                        Single-l: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '4'
+                            range-scale: '0'
+                            tolerance-base: '1'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'false'
+                          children: 
+                            Damage-m: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                type: 'Damage'
+                                value-base: 'qswings_dmg'
+                                value-scale: '6'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Custom'
+                              children:  {}
+                        Delay-n: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            delay-base: '.24'
+                            delay-scale: '0'
+                          children: 
+                            Single-o: 
+                              type: 'target'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                range-base: '4'
+                                range-scale: '0'
+                                tolerance-base: '1'
+                                tolerance-scale: '0'
+                                group: 'Enemy'
+                                wall: 'False'
+                                caster: 'false'
+                              children: 
+                                Damage-p: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    type: 'Damage'
+                                    value-base: 'qswings_dmg'
+                                    value-scale: '6'
+                                    true: 'False'
+                                    classifier: 'default'
+                                    knockback: 'True'
+                                    cause: 'Custom'
+                                  children:  {}

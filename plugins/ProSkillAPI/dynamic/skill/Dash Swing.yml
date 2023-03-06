@@ -1,0 +1,175 @@
+Dash Swing: 
+  name: 'Dash Swing'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '6'
+    cooldown-scale: '0'
+    mana-base: '5'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - '&f&oAgility'
+  - ''
+  - '&9&oI’ll run forward as fast as I can'
+  - '&9&oand swing my weapon!'
+  - ''
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Sharp Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote dash_swing'
+                type: 'OP'
+              children:  {}
+            Ground-d: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'On Ground'
+              children: 
+                Launch-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: 'dgroundspeed'
+                    forward-scale: '0.01'
+                    upward-base: '0'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+            Ground-f: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Not On Ground'
+              children: 
+                Launch-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    relative: 'Target'
+                    forward-base: 'dairspeed'
+                    forward-scale: '0.02'
+                    upward-base: '0'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                  children:  {}
+            Delay-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '1'
+                delay-scale: '0'
+              children: 
+                Single-i: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '4'
+                    range-scale: '0'
+                    tolerance-base: '1'
+                    tolerance-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'false'
+                  children: 
+                    Damage-j: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'dswing_dmg'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}
+        Value Placeholder-k: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dgroundspeed'
+            type: 'Number'
+            placeholder: '%math_2+({sapi_player_class_attribute:agility}*0.02)%'
+          children:  {}
+        Value Placeholder-l: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dairspeed'
+            type: 'Number'
+            placeholder: '%math_ 1+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Value Placeholder-m: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dswing_dmg'
+            type: 'Number'
+            placeholder: '%math_20+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}

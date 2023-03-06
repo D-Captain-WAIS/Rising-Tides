@@ -11,13 +11,22 @@ ATTRIBUTES:
       endurance: 1
       agility: 4
 stMWNewbie: 
-  rows: 3
+  rows: 6
   pages: 1
   slots: 
     1: 
-      hilt strike: 0
-      two handed swing: 18
-      piercing strike: 9
+      weeeee: 20
+      hilt strike: 15
+      evade strike: 24
+      double attack: 22
+      dash swing: 11
+      jump attack: 29
+      charged attack: 31
+      overhead swing: 40
+      piercing strike: 4
+      two handed swing: 13
+      poke: 42
+      quick swings: 33
 stMelee Weapon Newbie: 
   rows: 3
   pages: 1

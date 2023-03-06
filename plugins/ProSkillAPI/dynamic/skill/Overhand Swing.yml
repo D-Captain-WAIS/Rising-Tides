@@ -105,7 +105,7 @@ Overhand Swing:
                     icon-key: ''
                     counts: 'True'
                     status: 'Stun'
-                    duration-base: '2'
+                    duration-base: '1'
                     duration-scale: '0.2'
                   children:  {}
             Sound-h: 

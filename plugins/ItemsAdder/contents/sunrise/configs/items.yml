@@ -14,7 +14,7 @@ items:
     display_name: "Rusty Cutlass"
     permission: sunrise.rustyCutlass
     resource:
-      material: IRON_SWORD
+      material: GRAY_DYE
       generate: false
       model_path: item/rusty_cutlass
     item_flags:
@@ -50,7 +50,7 @@ items:
     displayname: "&7&l[Common]"
     permission: risingtides.duelist_single_common
     resource:
-      material: IRON_SWORD
+      material: GRAY_DYE
       generate: true
       textures:
       - item/duelist_common.png
@@ -58,7 +58,7 @@ items:
     displayname: "&2&l[Uncommon]"
     permission: risingtides.duelist_single_uncommon
     resource:
-      material: IRON_SWORD
+      material: GREEN_DYE
       generate: true
       textures:
       - item/duelist_uncommon.png
@@ -66,7 +66,7 @@ items:
     displayname: "&a&l[Rare]"
     permission: risingtides.duelist_single_rare
     resource:
-      material: IRON_SWORD
+      material: LIME_DYE
       generate: true
       textures:
       - item/duelist_rare.png

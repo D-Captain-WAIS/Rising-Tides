@@ -2,6 +2,7 @@ Hilt Bash:
   name: 'Hilt Bash'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -78,7 +79,17 @@ Hilt Bash:
                     knockback: 'True'
                     cause: 'Entity Attack'
                   children:  {}
-        Single-f: 
+                Status-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Stun'
+                    duration-base: '0.5'
+                    duration-scale: '0.2'
+                  children:  {}
+        Single-g: 
           type: 'target'
           indicator: 'None'
           data: 

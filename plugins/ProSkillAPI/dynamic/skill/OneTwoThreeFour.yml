@@ -58,7 +58,7 @@ OneTwoThreeFour:
             icon-key: ''
             range-base: '3'
             range-scale: '0'
-            tolerance-base: '0'
+            tolerance-base: '1.5'
             tolerance-scale: '0'
             group: 'Enemy'
             wall: 'False'
@@ -85,7 +85,7 @@ OneTwoThreeFour:
                     true: 'False'
                     classifier: 'default'
                     knockback: 'True'
-                    cause: 'Entity Attack'
+                    cause: 'Custom'
                   children:  {}
                 Delay-f: 
                   type: 'mechanic'
@@ -108,7 +108,7 @@ OneTwoThreeFour:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Entity Attack'
+                        cause: 'Custom'
                       children:  {}
                     Delay-h: 
                       type: 'mechanic'
@@ -116,7 +116,7 @@ OneTwoThreeFour:
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '.2'
+                        delay-base: '0.2'
                         delay-scale: '0'
                       children: 
                         Damage-i: 
@@ -139,7 +139,7 @@ OneTwoThreeFour:
                           data: 
                             icon-key: ''
                             counts: 'True'
-                            delay-base: '.2'
+                            delay-base: '0.2'
                             delay-scale: '0'
                           children: 
                             Damage-k: 
