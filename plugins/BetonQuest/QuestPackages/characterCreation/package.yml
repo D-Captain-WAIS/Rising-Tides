@@ -2,11 +2,10 @@ npcs:
   '0': "pirate"
   '1': "marine"
   '2': "revolutionary"
-  '3': "cyborg"
-  '4': "fishman"
+  '3': "skycitizen"
+  '4': "seadweller"
   '5': "mink"
   '6': "human"
-  '7': "longLimb"
   '8': "mWeapon"
   '9': "stringed"
   '10': "guns"
@@ -22,7 +21,6 @@ hide_npcs:
   '4': hide_race
   '5': hide_race
   '6': hide_race
-  '7': hide_race
   '8': hide_class
   '9': hide_class
   '10': hide_class

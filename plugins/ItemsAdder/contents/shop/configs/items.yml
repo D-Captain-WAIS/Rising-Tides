@@ -1,0 +1,39 @@
+info:
+  namespace: shop
+items:
+  purple_scarf:
+    display_name: "Purple Scarf"
+    permission: shop.purplescarf
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/purplescarf
+    item_flags:
+    - HIDE_ATTRIBUTES
+  hat_mask:
+    display_name: "Hat w/ Mask"
+    permission: shop.hatmask
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/hatmask
+    item_flags:
+    - HIDE_ATTRIBUTES
+  cap_hat:
+    display_name: "Cap's Hat"
+    permission: admin.caphat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/capdivine
+    item_flags:
+    - HIDE_ATTRIBUTES
+  cap_coat:
+    display_name: "Cap's Coat"
+    permission: admin.capcoat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/capcoat
+    item_flags:
+    - HIDE_ATTRIBUTES

@@ -14,7 +14,7 @@ resource-pack:
       pack-port: 8163
     external-host:
       enabled: true
-      url: https://www.dropbox.com/s/u2uv7jx4hcnazf7/generated.zip?dl=1
+      url: https://www.dropbox.com/s/6t8zpxd6s7v3jvr/generated.zip?dl=1
       skip-url-file-type-check___DONT_ASK_HELP_IF_SET_TRUE: false
   apply-on-join: true
   kick-player-on-decline: true
@@ -65,11 +65,14 @@ resource-pack:
     contents-folders-priority:
     - vanilla
     - _iainternal
+    merge_other_plugins_resourcepacks_folders:
+    - ModelEngine/resource pack
   items:
     CustomModelData-starting-value:
       ALL: 10000
       DIAMOND: 11000
   1_19_3_atlas_support: true
+  fix_force_unicode_font_images: true
 config_files:
   lang: en
   dictionaries-lang: en
@@ -87,6 +90,7 @@ blocks:
   campfire:
     unlit-on-place: true
     allow-any-item: true
+    drop_when_broken: false
   disable-REAL: false
   disable-REAL_NOTE: false
   disable-REAL_TRANSPARENT: false
@@ -95,9 +99,11 @@ blocks:
   convert-vanilla-blocks:
     enabled: false
     only-new-chunks: true
+  convert-legacy-ia-region-files: true
+  remove-unused-palettes-on-region-save: false
 items:
   fix-show-attack-and-damage-as-lore: true
-  give_death_location_maps: true
+  give_death_location_maps: false
   hide-custom-durability-lore: false
 liquids:
   enabled: true
@@ -139,6 +145,9 @@ font_images:
   player-display-name:
     enabled: true
     update-every-ticks: 1200
+  iaimage-book:
+    max-line-length: 18
+    placeholder-font: minecraft:default
 effects:
   hide-scoreboard-numbers: false
   text-effects:
@@ -198,11 +207,13 @@ debug:
     log-extract-default-resources: false
     log-not-extract-default-resources-already-exist: false
   blocks:
-    log-save: false
-    log-save-on-unload: false
     log-mined-unknown-blocks: true
     log-convert-vanilla-blocks: false
     log-unusual-block-break: false
+    log-save-load:
+      enabled: false
+      min-ms: 0
+    log-fix-bugged-blocks: false
   worlds-populators:
     log-loading: false
     log-loading-disabled: false

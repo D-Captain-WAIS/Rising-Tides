@@ -12,9 +12,9 @@ Dropkick:
     cost-base: '1'
     cost-scale: '0'
     cooldown-base: '6'
-    cooldown-scale: '0'
-    mana-base: '5'
-    mana-scale: '0'
+    cooldown-scale: '0.4'
+    mana-base: '40'
+    mana-scale: '2'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
@@ -24,8 +24,9 @@ Dropkick:
   icon-data: 10009
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
-  - '&6&oStat scale:'
+  - '&9&l{name} '
+  - ''
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - '&f&oAgility'
   - ''
@@ -114,7 +115,20 @@ Dropkick:
                     pitch-base: '1'
                     pitch-scale: '0'
                   children:  {}
-        Delay-h: 
+                Potion-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Slow'
+                    ambient: 'True'
+                    tier-base: '2'
+                    tier-scale: '0'
+                    seconds-base: '3'
+                    seconds-scale: '0'
+                  children:  {}
+        Delay-i: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -123,7 +137,7 @@ Dropkick:
             delay-base: '0.15'
             delay-scale: '0'
           children: 
-            Launch-i: 
+            Launch-j: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -137,7 +151,7 @@ Dropkick:
                 right-base: '0'
                 right-scale: '0'
               children:  {}
-        Value Placeholder-j: 
+        Value Placeholder-k: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -147,7 +161,7 @@ Dropkick:
             type: 'Number'
             placeholder: '%math_35+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
           children:  {}
-        Value Placeholder-k: 
+        Value Placeholder-l: 
           type: 'mechanic'
           indicator: 'None'
           data: 

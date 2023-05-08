@@ -5,28 +5,24 @@ events:
     pick_faction_tp: "folder to_choose_faction,picking_faction,pick_faction,freeze_pt2"
     freeze_pt1: "freeze 1000"
     freeze_pt2: "freeze 260"
+    freeze_pt3: "freeze 100"
   #picking race
     pick_race_tp: "folder to_choose_race,chose_faction,pick_race"
   #picking class
     pick_class_tp: "folder to_choose_class,chose_race,pick_class"
-  #teleport to start
-    marine_first_quest: "notify &6&lWelcome to Sunrise Island!\n&9&oSpeak to Marine Captain Bogarp! io:title"
-    marine_teleport: "folder to_marine_first,marine_cut,marineMain-sunrise.first_arrival"
-    marine_start: "folder bon_voyage,marine_notify delay:19 period:4"
-    marine_notify: "folder force_sit,marine_first_quest"
-    marine_start_folder: "folder satisfied_tp,marine_teleport,marine_start,kill_test_dummy period:5"
-  #add "I have chosen" flags
+  #add "I have chosen" flags/choice events
     chose_faction: "tag add chose_faction"
     chose_race: "tag add chose_race"
     chose_class: "tag add chose_class"
     confirmed_class: "tag add confirmed_class"
+    leave_test: "opsudo dungeon leave"
     remove_chose_class: "tag delete chose_class"
-    reset_class_choice: "folder remove_chose_class,kill_test_dummy,to_choose_class,devStuff.reset_class"
+    reset_class_choice: "folder remove_chose_class,leave_test,devStuff.reset_class"
   #teleports
     to_choose_faction: "teleport 1;138;-2;dev;0;0.5"
     to_choose_race: "teleport 1;138;1;dev;179.8;1"
     to_choose_class: "teleport 0;138;-3;dev;-1;1"
-    to_class_test: "teleport 0;138;-6;dev;-1;1"
+    to_class_test: "command md play testclass %player%"
     to_marine_first: "teleport 1048.5;66;-162.5;dawn_island;0;0"
     to_marine_cut: "teleport 1032.5;51;-175.5;dawn_island;0;0"
   #testdummy
@@ -34,11 +30,12 @@ events:
     kill_test_dummy: "command mm m kill DummyGD1"
   #cutscenes
     force_sit: "opsudo sit"
-    marine_cut: "command cinematic play marineOpen %player%"
-    stop_cut: "command cinematic stop %player%"
+    marine_cut: "opsudo pcam start marinestart"
   #marine
     talked_cobalt: "tag add talked_cobalt"
-    make_marine: "command lp user %player% parent set marine"
+    #cp is command panel
+    marine_displays: "opsudo cp marinestart"
+    make_marine: "folder marine_displays,is_marine"
     is_marine: "tag add is_marine"
   #pirate
     talked_loofi: "tag add talked_loofi"
@@ -52,34 +49,59 @@ events:
     empty_line: "notify \n"
     chat_clear: "folder empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line,empty_line delay:1"
   #fishman
-    talked_jimbay: "tag add talked_jimbay"
+    talked_jynbei: "tag add talked_jynbei"
+    set_fishman: "opsudo class profess fishman"
+    set_merfolk: "opsudo class profess merfolk"
+    is_fishman: "tag add is_fishman"
+    is_merfolk: "tag add is_merfolk"
   #mink
     talked_karot: "tag add talked_karot"
-  #cyborg
-    talked_furanku: "tag add talked_furanku"
-  #long limb
-    talked_scratchy: "tag add talked_scratchy"
+    set_diurnal: "opsudo class profess dmink"
+    set_nocturnal: "opsudo class profess nmink"
+    is_diurnal: "tag add is_diurnal"
+    is_nocturnal: "tag add is_nocturnal"
+  #skycitizen
+    talked_wypah: "tag add talked_wypah"
+    set_shandian: "opsudo class profess shandian"
+    set_birkan: "opsudo class profess birkan"
+    is_shandian: "tag add is_shandian"
+    is_birkan: "tag add is_birkan"
   #human
     talked_sango: "tag add talked_sango"
+    set_human: "opsudo class profess human"
+    is_human: "tag add is_human"
   #Melee Weapon
     talked_mihuk: "tag add talked_mihuk"
-    set_MWN: "opsudo class profess Melee Weapon Newbie"
+    set_MWN: "opsudo class profess MWNewbie"
+    give_sword: "command itemgen give %player% standardsword"
+    take_sword: "take standardsword"
+    test_MWN: "folder set_MWN,chose_class,to_class_test,give_sword,ask_combat_guide"
   #Stringed Weapon
     talked_usap: "tag add talked_usap"
+    set_SWN: "opsudo class profess SWNewbie"
+    give_bow: "command itemgen give %player% standardbow"
+    take_bow: "take standardbow"
+    test_SWN: "folder set_SWN,chose_class,to_class_test,give_bow,ask_combat_guide"
   #Guns
     talked_benny: "tag add talked_benny"
+    set_GN: "opsudo class profess GunNewbie"
+    give_pistol: "command itemgen give %player% standardpistol"
+    take_pistol: "take standardpistol"
+    test_GN: "folder set_GN,chose_class,to_class_test,give_pistol,ask_combat_guide"
   #Doctor
     talked_lauh: "tag add talked_lauh"
   #Melee
     talked_gap: "tag add talked_gap"
     set_scrapper: "opsudo class profess scrapper"
-    test_scrapper: "folder set_scrapper,chose_class,to_class_test,spawn_test_dummy,ask_combat_guide"
+    give_gloves: "command itemgen give %player% standardgloves"
+    take_gloves: "take standardgloves"
+    test_scrapper: "folder set_scrapper,chose_class,to_class_test,give_gloves,ask_combat_guide"
   #God's Dialogue pt.1
-    oh_no: "notify &6&oOh no %player%! &c&lYou died! \n&6&oThat's too bad... io:title"
+    oh_no: "notify &6&oOh no %player%! &c&l&oYou died! \n&6&oThat's too bad... io:title"
     second_chance: "notify &6&oThat's alright though! \n&6&oI'm giving you a second chance! io:title"
     welcome: "notify &6&oWelcome to... io:title"
     rising_tides: "notify &b&l[Rising Tides] io:title"
-    but_first: "notify &6&oYou'll enter this wonderful new world soon! \n&6&oBut first... io:title"
+    but_first: "notify &6&oYou'll enter this wonderful \n&6&onew world soon! But first... io:title"
     god_pt1: "folder oh_no,second_chance,welcome,rising_tides_logo,but_first,pick_faction_tp,talk,talk2 period:5"
     talk: "notify &d&oWalk up to any character and \n&d&oright-click them to talk to them! io:title"
     talk2: "notify &d&oOpen chat and click on \n&d&othe dialogue option you want! io:title"
@@ -88,10 +110,10 @@ events:
   #God's dialogue pt.2
     pick_race: "notify &d&lNow, pick your race! io:title"
   #God's dialogue pt.3
-    pick_class: "notify &d&lFinally, pick your class! io:title"
+    pick_class: "notify &d&lFinally, pick your \n&d&lprimary class! io:title"
   #God's dialogue pt.4 
-    satisfied_tp: "folder to_choose_faction,freeze_pt2,satisfied,confirmed_class"
-    satisfied: "notify &6&oI hope you're satisfied with your choices! io:title"
+    satisfied_tp: "folder leave_test,freeze_pt3,satisfied,confirmed_class"
+    satisfied: "notify &6&oI hope you're satisfied \n&6&owith your choices! io:title"
     bon_voyage: "notify &b&lBon voyage sailor! \n&6&oGet ready for the adventure of a lifetime! io:title"
   #combat_tutorial dialogue
     asked_combat: "tag add asked_combat"
@@ -102,9 +124,16 @@ events:
     combat_guide: "folder look_at_chat,hover,press_nums,last_two delay:4 period:7"
     conv_combat_guide: "conversation combat_guide"
     ask_combat_guide: "folder conv_combat_guide delay:3"
+  #teleport to starts
+    marine_first_quest: "notify &6&lWelcome to Sunrise Island!\n&9&oSpeak to Marine Captain Bogarp! io:title"
+    marine_teleport: "folder to_marine_first,marine_cut,marineMain-sunrise.first_arrival"
+    marine_start: "folder bon_voyage,marine_notify delay:19"
+    marine_notify: "folder marine_first_quest,force_sit delay:1"
+    marine_start_folder: "folder satisfied_tp,marine_teleport,marine_start period:5"
 
 conditions:
   #for hiding NPCs
+    in_character_creation: "region charactercreation"
     tag_picking_faction: "tag picking_faction"
     tag_chose_faction: "tag chose_faction"
     tag_chose_race: "tag chose_race"
@@ -126,15 +155,20 @@ conditions:
     tag_talked_sado: "tag talked_sado"
     tag_is_rev: "tag is_rev"
   #fishman
-    tag_talked_jimbay: "tag talked_jimbay"
+    tag_talked_jynbei: "tag talked_jynbei"
+    tag_is_fishman: "tag is_fishman"
+    tag_is_merfolk: "tag is_merfolk"
   #mink
     tag_talked_karot: "tag talked_karot"
-  #cyborg
-    tag_talked_furanku: "tag talked_furanku"
-  #long limb
-    tag_talked_scratchy: "tag talked_scratchy"
+    tag_is_diurnal: "tag is_diurnal"
+    tag_is_nocturnal: "tag is_nocturnal"
+  #skycitizen
+    tag_talked_wypah: "tag talked_wypah"
+    tag_is_shandian: "tag is_shandian"
+    tag_is_birkan: "tag is_birkan"
   #human
     tag_talked_sango: "tag talked_sango"
+    tag_is_human: "tag is_human"
   #Melee Weapon
     tag_talked_mihuk: "tag talked_mihuk"
   #Stringed Weapon
@@ -145,6 +179,16 @@ conditions:
     tag_talked_lauh: "tag talked_lauh"
   #Melee
     tag_talked_gap: "tag talked_gap"
-  
+  #has items
+    has_sword: "item standardsword"
+    has_gun: "item standardpistol"
+    has_bow: "item standardbow"
+    has_gloves: "item standardgloves"
+    has_weapon: "or has_sword,has_gun,has_bow,has_gloves"
+items:
+  standardsword: GRAY_DYE lore-containing:Single_Sharp_Duelist
+  standardbow: RAW_IRON lore-containing:Bow
+  standardpistol: WHITE_DYE lore-containing:Single_Gunslinger
+  standardgloves: COAL lore-containing:Gloves
   
   

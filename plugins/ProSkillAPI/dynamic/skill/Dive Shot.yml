@@ -1,0 +1,361 @@
+Dive Shot: 
+  name: 'Dive Shot'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'RUN'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '10'
+    cooldown-scale: '0.2'
+    mana-base: '55'
+    mana-scale: '4'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&9&oDexterity'
+  - ''
+  - '&9&oIf I raise my weapon above my head'
+  - '&9&oit should be faster and stronger!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'airspeed'
+            type: 'Number'
+            placeholder: '%math_-0.5-({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
+        Value Placeholder-c: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'groundspeed'
+            type: 'Number'
+            placeholder: '%math_-1.5-({sapi_player_class_attribute:agility}*0.02)%'
+          children:  {}
+        Value Placeholder-d: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dshot_dmg'
+            type: 'Number'
+            placeholder: '%math_10+({sapi_player_class_attribute:accuracy}*0.1)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-e: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Gunslinger'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote pdive_shot'
+                type: 'OP'
+              children:  {}
+            Delay-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.05'
+                delay-scale: '0'
+              children: 
+                Delay-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.05'
+                    delay-scale: '0'
+                  children: 
+                    Ground-i: 
+                      type: 'condition'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        type: 'Not On Ground'
+                      children: 
+                        Launch-j: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            relative: 'Target'
+                            forward-base: 'airspeed'
+                            forward-scale: '-0.02'
+                            upward-base: '0'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                          children:  {}
+                    Ground-k: 
+                      type: 'condition'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        type: 'On Ground'
+                      children: 
+                        Launch-l: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            relative: 'Target'
+                            forward-base: 'groundspeed'
+                            forward-scale: '-0.05'
+                            upward-base: '0'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                          children:  {}
+                    Delay-m: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '0.4'
+                        delay-scale: '0'
+                      children: 
+                        Sound-n: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            sound: 'Entity generic explode'
+                            volume-base: '100'
+                            volume-scale: '0'
+                            pitch-base: '2'
+                            pitch-scale: '0'
+                          children:  {}
+                        Delay-o: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            delay-base: '0.6'
+                            delay-scale: '0'
+                          children: 
+                            Self-p: 
+                              type: 'target'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                group: 'enemy'
+                                wall: 'false'
+                                caster: 'false'
+                              children: 
+                                Status-q: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    status: 'Root'
+                                    duration-base: '0.4'
+                                    duration-scale: '0'
+                                  children:  {}
+                        Particle-r: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            particle: 'Campfire cosy smoke'
+                            arrangement: 'Sphere'
+                            radius-base: '0.1'
+                            radius-scale: '0'
+                            particles-base: '3'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '1'
+                            speed: '0.1'
+                            forward: '0'
+                            upward: '0'
+                            right: '0'
+                          children:  {}
+                        Value-s: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            key: 'readybleedproc'
+                            min-value-base: '1'
+                            min-value-scale: '0'
+                            max-value-base: '3'
+                            max-value-scale: '0'
+                          children: 
+                            Value Add-t: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                key: 'readybleedproc'
+                                amount-base: 'subtractbleedproc'
+                                amount-scale: '0'
+                              children:  {}
+                            Item Projectile-u: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                group: 'Enemy'
+                                material: 'Gold nugget'
+                                amount: '1'
+                                byte: '10000'
+                                hide-flags: 
+                                - ' '
+                                - '{'
+                                - '}'
+                                custom: 'False'
+                                velocity-base: '6'
+                                velocity-scale: '0'
+                                lifespan-base: '1'
+                                lifespan-scale: '0'
+                                spread: 'Cone'
+                                amount-base: '1'
+                                amount-scale: '0'
+                                angle-base: '30'
+                                angle-scale: '0'
+                                forward-base: '1.5'
+                                forward-scale: '0'
+                                upward-base: '0.6'
+                                upward-scale: '0'
+                                right-base: '0'
+                                right-scale: '0'
+                                use-effect: 'False'
+                              children: 
+                                Damage-v: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    type: 'Damage'
+                                    value-base: 'dshot_dmg'
+                                    value-scale: '4'
+                                    true: 'False'
+                                    classifier: 'default'
+                                    knockback: 'True'
+                                    cause: 'Entity Attack'
+                                  children:  {}
+                                Flag-w: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    key: 'Bleed'
+                                    seconds-base: '3'
+                                    seconds-scale: '0'
+                                  children:  {}
+                        Value-x: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            key: 'readybleedproc'
+                            min-value-base: '0'
+                            min-value-scale: '0'
+                            max-value-base: '0'
+                            max-value-scale: '0'
+                          children: 
+                            Item Projectile-y: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                group: 'Enemy'
+                                material: 'Gold nugget'
+                                amount: '1'
+                                byte: '10000'
+                                hide-flags: 
+                                - ' '
+                                - '{'
+                                - '}'
+                                custom: 'False'
+                                velocity-base: '6'
+                                velocity-scale: '0'
+                                lifespan-base: '1'
+                                lifespan-scale: '0'
+                                spread: 'Cone'
+                                amount-base: '1'
+                                amount-scale: '0'
+                                angle-base: '30'
+                                angle-scale: '0'
+                                forward-base: '1.5'
+                                forward-scale: '0'
+                                upward-base: '0.6'
+                                upward-scale: '0'
+                                right-base: '0'
+                                right-scale: '0'
+                                use-effect: 'False'
+                              children: 
+                                Damage-z: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    type: 'Damage'
+                                    value-base: 'dshot_dmg'
+                                    value-scale: '0'
+                                    true: 'False'
+                                    classifier: 'default'
+                                    knockback: 'True'
+                                    cause: 'Entity Attack'
+                                  children:  {}

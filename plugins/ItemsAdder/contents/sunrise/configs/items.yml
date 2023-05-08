@@ -270,5 +270,40 @@ items:
       generate: true
       textures:
       - item/charge.png
-
+  standard_issue_bow:
+    display_name: "standard_issue_bow"
+    permission: sunrise.standard_issue_bow
+    resource:
+      material: RAW_IRON
+      generate: false
+      model_path: item/standard_issue_bow
+    item_flags:
+    - HIDE_ATTRIBUTES
+  standard_sword:
+    display_name: "Standard Sword"
+    permission: sunrise.standardSword
+    resource:
+      material: GRAY_DYE
+      generate: false
+      model_path: item/standardsword
+    item_flags:
+    - HIDE_ATTRIBUTES
+  standard_gloves:
+    display_name: "Mountain Wraps"
+    permission: sunrise.mountain_wraps
+    resource:
+      material: COAL
+      generate: false
+      model_path: item/standard_issue_gloves
+    item_flags:
+    - HIDE_ATTRIBUTES
+  standard_pistol:
+    display_name: "Standard Pistol"
+    permission: sunrise.standardPistol
+    resource:
+      material: WHITE_DYE
+      generate: false
+      model_path: item/standardpistol
+    item_flags:
+    - HIDE_ATTRIBUTES
        

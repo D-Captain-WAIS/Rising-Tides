@@ -11,28 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1670981932013
+  lastteleport: 1677384159205
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1670982419842
-  login: 1670982388472
+  logout: 1677385027756
+  login: 1677376930818
 money: '0'
 last-account-name: MiracleMartin
 lastlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 665.8936864514321
-  y: 80.4782283985005
-  z: -155.29209988832545
-  yaw: 47.989501953125
-  pitch: 14.627348899841309
+  x: -672.655092162969
+  y: 80.12383275693426
+  z: -72.92596102950955
+  yaw: -77.23102569580078
+  pitch: 18.299556732177734
 logoutlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 630.3712406528201
-  y: 68.0
-  z: -167.94446544477043
-  yaw: 6.65814208984375
-  pitch: 14.965725898742676
+  x: -718.663972062696
+  y: 65.59137080703812
+  z: -210.19436231397478
+  yaw: 93.17636108398438
+  pitch: 36.449554443359375

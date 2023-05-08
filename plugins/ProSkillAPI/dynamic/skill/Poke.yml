@@ -12,15 +12,15 @@ Poke:
     cost-base: '1'
     cost-scale: '0'
     cooldown-base: '3'
-    cooldown-scale: '0'
-    mana-base: '4'
-    mana-scale: '0'
+    cooldown-scale: '0.2'
+    mana-base: '20'
+    mana-scale: '2'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -106,9 +106,9 @@ Poke:
                         value-base: 'poke_dmg'
                         value-scale: '4'
                         true: 'False'
-                        classifier: 'default'
+                        classifier: 'wounding'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                     Push-h: 
                       type: 'mechanic'
@@ -120,4 +120,14 @@ Poke:
                         speed-base: '0.25'
                         speed-scale: '.05'
                         source: 'none'
+                      children:  {}
+                    Flag-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        key: 'wounded'
+                        seconds-base: '10'
+                        seconds-scale: '1'
                       children:  {}

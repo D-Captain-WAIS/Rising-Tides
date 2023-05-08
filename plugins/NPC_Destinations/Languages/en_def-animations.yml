@@ -1,0 +1,51 @@
+﻿language:
+  version: 1.0.6
+
+messages:
+  no_permissions: "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"NPCDest_Animations\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"No permissions\"}]"
+  invalid_command:  "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"NPCDest_Animations\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"Invalid command\"}]"
+  invalid_npc:  "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"NPCDest_Animations\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"You must have a NPC selected to use this command or add --npc # anywhere in your command.\"}]"
+  npc_permission: "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"NPCDest_Animations\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"You do not have permissions to this NPC\"}]"
+  plugin_debug: "[{\"text\":\"&2[&NPCDest_Animations&2] &6 <message>\"}]"
+  plugin_help_command: ",{\"text\":\"locanimate\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/npcdest locanimate \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/npcdest locanimate <loc#> <animation> &6--npc #\n&eDescription&2:\n  &fSets the animations to play upon arrival to a location.\n&eVariables&2:\n&7    Sleep&f - NPC will sleep at the location.\n&7    Chest&f - Opens a chest\n&7    Chest_Fill&f - Opens a chest and empties inventory to it\n&7    CHEST_EMPTY&f - Opens a chest and takes the inventory from it\n&7    Compost&f - Composts inventory\n&7    Fish&f - Set the NPC to fish at the location (no fish)\n&7    Fish_Add&f - Set the NPC to fish at the location (keeps fish)\n&7    Sit&f - NPC will sit at the location\n&7    Swing&f - NPC will swing its arm at a set interval\n&7    Clear&f - Removes the animation setting\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locanimate\"}},{\"text\":\" \",\"color\":\"white\"}"
+  plugin_destination_generic: ",{\"text\":\"&a♒&e\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/npcdest --npc <npc.id> locanimate <location.id> \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"                 &6Animation Settings \n&eCurrent Settings\n&eAnimation&2: &f <animations.setting>\n&eUsage&2:\n  &f/npcdest locanimate <loc#> <animation> &6--npc #\n&eDescription&2:\n  &fSets the animations to play upon arrival to a location.\n&eVariables&2:\n&7    Sleep&f - NPC will sleep at the location.\n&7    Chest&f - Opens a chest\n&7    Chest_Fill&f - Opens a chest and empties inventory to it\n&7    CHEST_EMPTY&f - Opens a chest and takes the inventory from it\n&7    Compost&f - Composts inventory\n&7    Fish&f - Set the NPC to fish at the location (no fish)\n&7    Fish_Add&f - Set the NPC to fish at the location (keeps fish)\n&7    Sit&f - NPC will sit at the location\n&7    Swing&f - NPC will swing its arm at a set interval\n&7    Clear&f - Removes the animation setting\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locanimate\"}}"
+  plugin_destination_swing: ",{\"text\":\"&a♒&e\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/npcdest --npc <npc.id> locanimate <location.id> \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"                 &6Animation Settings \n&eCurrent Settings\n  &7Animation&2: &f <animations.setting>\n  &7Interval&2: &f  <animations.interval>\n  &7Sound&2: &f     <animations.sound>\n  &7Volume&2: &f    <animations.volume>\n  &7Pitch&2: &f      <animations.pitch>\n &7Category&2: &f  <animations.category>\n&eUsage&2:\n  &f/npcdest locanimate <loc#> <animation> &6--npc #\n&eDescription&2:\n  &fSets the animations to play upon arrival to a location.\n&eVariables&2:\n&7    Sleep&f - NPC will sleep at the location.\n&7    Chest&f - Opens a chest\n&7    Chest_Fill&f - Opens a chest and empties inventory to it\n&7    CHEST_EMPTY&f - Opens a chest and takes the inventory from it\n&7    Compost&f - Composts inventory\n&7    Fish&f - Set the NPC to fish at the location (no fish)\n&7    Fish_Add&f - Set the NPC to fish at the location (keeps fish)\n&7    Sit&f - NPC will sit at the location\n&7    Swing&f - NPC will swing its arm at a set interval\n&7    Clear&f - Removes the animation setting\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locanimate\"}}"
+  plugin_description: "NPC Destinations Animations \n&f  This plugin enables different animations / actions at a location.\n\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locanimate"
+  command_badargs: "[{\"text\":\"Invalid arguments /npcdest locanimate <loc#> <animation>\",\"color\":\"GREEN\"}]"
+  command_added_notactive: "[{\"text\":\"Your animation has been assigned to this location (<animations.setting>)\",\"color\":\"GREEN\"}]"
+  command_added_active: "[{\"text\":\"Your animation has been assigned to this location (<animations.setting>), and it has been activated.\",\"color\":\"GREEN\"}]"
+  command_updated: "[{\"text\":\"The location has been updated. Setting: <animations.setting>\",\"color\":\"GREEN\"}]"
+  command_removed: "[{\"text\":\"Animations has been removed from the requested location\",\"color\":\"GREEN\"}]"
+
+result_messages:
+  true_text: true
+  false_text: false
+  disabled_text: Disabled
+  none: No animation assigned
+  sneak: Start sneaking
+  fish_add: Fishing, keep caught fish
+  fish: Fishing, caught fish destroyed
+  chest_fill: Open chest and desposit inventory
+  chest_empty: Open chest and removes inventory
+  chest: Open chest only
+  sleep: Sleep at location
+  sit: Sit on a block
+  swing: Swing arm
+  compost: Add items to composter from inventory
+  armsbounce: Time to party!
+
+console_messages:
+  plugin_ondisable: NPCDest_Animations shutdown.
+  plugin_savingdata: Saving NPC data
+  plugin_savingerror: Failed saving NPC data
+  plugin_error: Error> <message>
+  plugin_debug: Debug> <message>
+  plugin_langloaded: Language Loaded (<message>)
+  plugin_version: MC Version found (<message>)
+  plugin_unknownversion: Unknown minecraft version <message>. Attempting to use the most recent version. Check for updates (https://www.spigotmc.org/resources/nunpcdestinations-automate-npc-travel-and-locations-1-8-3-1-9-4.13863/)
+
+debug_messages:
+  path_processing: "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"NPCDest_Animations\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"Processing for (<npc.id>) <npc.name>\",\"color\":\"GREEN\"}]"
+
+command_jsonhelp:
+  command_locanimate_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/npcdest <commandname> \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&6Destinations Animations Plugin \n&eDescription&2:\n  &fSets the animations to play upon arrival to a location.\n&eVariables&2:\n&7    Sleep&f - NPC will sleep at the location.\n&7    Chest&f - Opens a chest\n&7    CHEST_FILL&f - Opens a chest and empties inventory to it\n&7    CHEST_EMPTY&f - Opens a chest and takes the inventory from it\n&7    COMPOST&f - Compost inventory\n&7    FISH&f - Set the NPC to fish at the location (no fish)\n&7    FISH_ADD&f - Set the NPC to fish at the location (keeps fish)\n&7    Clear&f - Removes the animation setting\n&ePermission&2:\n<permission>\"}}"

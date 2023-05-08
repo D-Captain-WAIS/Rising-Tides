@@ -112,5 +112,13 @@ exp-level:
         listener: class_exp
         increment: 16
         orientation: horizontal
+hotbar-trim:
+  layers:
+    trim:
+      texture:
+        path: assets/r-tides/hotbar_trim.png
+      offset:
+        x: 0
+        y: 9
         
 

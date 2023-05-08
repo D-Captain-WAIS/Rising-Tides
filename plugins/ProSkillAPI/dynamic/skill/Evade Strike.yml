@@ -10,16 +10,16 @@ Evade Strike:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '5'
-    cooldown-scale: '0'
-    mana-base: '5'
-    mana-scale: '0'
+    cooldown-base: '9'
+    cooldown-scale: '0.4'
+    mana-base: '55'
+    mana-scale: '4'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -50,7 +50,7 @@ Evade Strike:
             counts: 'False'
             key: 'airspeed'
             type: 'Number'
-            placeholder: '%math_-1-({sapi_player_class_attribute:agility}*0.01)%'
+            placeholder: '%math_-0.5-({sapi_player_class_attribute:agility}*0.01)%'
           children:  {}
         Value Placeholder-c: 
           type: 'mechanic'
@@ -60,7 +60,7 @@ Evade Strike:
             counts: 'False'
             key: 'groundspeed'
             type: 'Number'
-            placeholder: '%math_-2-({sapi_player_class_attribute:agility}*0.02)%'
+            placeholder: '%math_-1.5-({sapi_player_class_attribute:agility}*0.02)%'
           children:  {}
         Value Placeholder-d: 
           type: 'mechanic'
@@ -127,7 +127,7 @@ Evade Strike:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                 Delay-j: 
                   type: 'mechanic'

@@ -11,16 +11,16 @@ Jump Attack:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '8'
-    cooldown-scale: '0'
-    mana-base: '10'
-    mana-scale: '0'
+    cooldown-base: '10'
+    cooldown-scale: '0.4'
+    mana-base: '60'
+    mana-scale: '4.5'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -74,21 +74,7 @@ Jump Attack:
                 command: 'iaemote jump_attack'
                 type: 'OP'
               children:  {}
-            Launch-e: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                relative: 'Target'
-                forward-base: '0'
-                forward-scale: '0'
-                upward-base: '0.6'
-                upward-scale: '0'
-                right-base: '0'
-                right-scale: '0'
-              children:  {}
-            Delay-f: 
+            Delay-e: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -97,7 +83,7 @@ Jump Attack:
                 delay-base: '.9'
                 delay-scale: '0'
               children: 
-                Single-g: 
+                Single-f: 
                   type: 'target'
                   indicator: 'None'
                   data: 
@@ -110,7 +96,7 @@ Jump Attack:
                     wall: 'False'
                     caster: 'false'
                   children: 
-                    Damage-h: 
+                    Damage-g: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -122,9 +108,9 @@ Jump Attack:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
-                    Potion-i: 
+                    Potion-h: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -136,4 +122,40 @@ Jump Attack:
                         tier-scale: '0'
                         seconds-base: '3'
                         seconds-scale: '0.2'
+                      children:  {}
+            Single-i: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                range-base: '15'
+                range-scale: '0'
+                tolerance-base: '2.5'
+                tolerance-scale: '0'
+                group: 'Enemy'
+                wall: 'False'
+                caster: 'false'
+              children: 
+                Self-j: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    group: 'enemy'
+                    wall: 'false'
+                    caster: 'false'
+                  children: 
+                    Launch-k: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        relative: 'Target'
+                        forward-base: '1.5'
+                        forward-scale: '0'
+                        upward-base: '0.5'
+                        upward-scale: '0'
+                        right-base: '0'
+                        right-scale: '0'
                       children:  {}

@@ -34,6 +34,40 @@ regen:
   - '&2Cooldown: {attr:cooldown}'
   desc:  []
   components: 
+    Took Skill Damage-i: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+        mana: 'False'
+        cooldown: 'False'
+        target: 'True'
+        dmg-min: '0'
+        dmg-max: '99999999999'
+        category: 
+        - 'igniter'
+      children: 
+        Value-j: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            key: 'ignitestacks'
+            min-value-base: '0'
+            min-value-scale: '0'
+            max-value-base: '2'
+            max-value-scale: '0'
+          children: 
+            Value Add-k: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'ignitestacks'
+                amount-base: '1'
+                amount-scale: '0'
+              children:  {}
     Initialize: 
       type: 'trigger'
       indicator: 'None'
@@ -59,52 +93,7 @@ regen:
                 type: 'Number'
                 placeholder: '%math_2*(0.1*{sapi_player_class_attribute:willpower})%'
               children:  {}
-            Self-d: 
-              type: 'target'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                group: 'enemy'
-                wall: 'false'
-                caster: 'false'
-              children: 
-                Combat-e: 
-                  type: 'condition'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    combat: 'False'
-                    seconds: '10'
-                  children: 
-                    Heal-f: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Health'
-                        value-base: 'noncombatheal'
-                        value-scale: '1'
-                      children:  {}
-                Combat-g: 
-                  type: 'condition'
-                  indicator: 'None'
-                  data: 
-                    icon-key: ''
-                    combat: 'True'
-                    seconds: '10'
-                  children: 
-                    Heal-h: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        type: 'Health'
-                        value-base: 'combatheal'
-                        value-scale: '1'
-                      children:  {}
-            Value Placeholder-i: 
+            Value Placeholder-d: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -112,5 +101,41 @@ regen:
                 counts: 'False'
                 key: 'combatheal'
                 type: 'Number'
-                placeholder: '%math_2*(0.05*{sapi_player_class_attribute:willpower})%'
+                placeholder: '%math_2*(0.025*{sapi_player_class_attribute:willpower})%'
               children:  {}
+            Combat-e: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                combat: 'False'
+                seconds: '10'
+              children: 
+                Heal-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Health'
+                    value-base: 'noncombatheal'
+                    value-scale: '0'
+                  children:  {}
+            Combat-g: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                combat: 'True'
+                seconds: '10'
+              children: 
+                Heal-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Health'
+                    value-base: 'combatheal'
+                    value-scale: '0'
+                  children:  {}

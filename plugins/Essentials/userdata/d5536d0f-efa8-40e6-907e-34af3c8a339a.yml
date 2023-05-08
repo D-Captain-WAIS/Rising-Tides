@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 92.21.168.113
+ip-address: 88.105.144.102
 afk: false
 socialspy: false
 npc: false
@@ -11,28 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1669320574307
+  lastteleport: 1675701874221
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1669321708731
-  login: 1669318576378
+  logout: 1675702286890
+  login: 1675701184082
 money: '0'
 last-account-name: sternfox5658
 lastlocation:
-  world: e80714c3-3001-48f0-978d-b9fcfc236840
-  world-name: world
-  x: 76.40384457312426
-  y: 160.0
-  z: -286.4762600850152
-  yaw: -138.3125
-  pitch: 36.59654998779297
+  world: 23e27574-e2c8-4689-8402-f4e488332383
+  world-name: dev
+  x: 1.2591235751059242
+  y: -28.131401438588107
+  z: -10.23385636203967
+  yaw: 17.7879638671875
+  pitch: 9.207181930541992
 logoutlocation:
   world: 23e27574-e2c8-4689-8402-f4e488332383
   world-name: dev
-  x: 16.88959905543731
-  y: -11.0
-  z: -2.9483815015206303
-  yaw: -91.35665893554688
-  pitch: 8.850116729736328
+  x: 11.70328793949021
+  y: -31.0
+  z: 11.124111568782839
+  yaw: 115.68072509765625
+  pitch: 15.74986457824707

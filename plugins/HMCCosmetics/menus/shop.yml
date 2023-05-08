@@ -1,0 +1,27 @@
+title: ":offset_-8::vivre:"
+rows: 6
+items:
+  purple_scarf:
+    slots:
+      - 1
+    item:
+      material: itemsadder:shop:purple_scarf
+      name: "<dark_purple><bold>Purple Scarf"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_purple_scarf%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_purple_scarf%" 
+    type: cosmetic
+    cosmetic: purple_scarf
+  hat_mask:
+    slots:
+      - 2
+    item:
+      material: itemsadder:shop:hat_mask
+      name: "<gold><bold>Hat w/ Mask"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_hat_mask%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_hat_mask%" 
+    type: cosmetic
+    cosmetic: hat_mask

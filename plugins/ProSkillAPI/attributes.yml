@@ -40,7 +40,7 @@ constitution:
     mechanic:  {}
     target:  {}
   stats: 
-    health: '((a*0.05)*a)+v'
+    health: '((a*0.025)*a)+v'
 willpower: 
   display: 'Willpower'
   max: '999'
@@ -55,7 +55,7 @@ willpower:
     mechanic:  {}
     target:  {}
   stats: 
-    mana-regen: 'a+(0.01)*v'
+    mana-regen: '0.1*a'
 agility: 
   display: 'Agility'
   max: '999'

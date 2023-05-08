@@ -11,10 +11,10 @@ Overhand Swing:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '6'
-    cooldown-scale: '0'
-    mana-base: '4'
-    mana-scale: '0'
+    cooldown-base: '8'
+    cooldown-scale: '0.5'
+    mana-base: '45'
+    mana-scale: '3'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
@@ -24,9 +24,9 @@ Overhand Swing:
   icon-data: 10007
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&9&l{name} '
   - ''
-  - '&6&oStat scale:'
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - ''
   - '&9&oIt would hit pretty hard if I put my hand up '

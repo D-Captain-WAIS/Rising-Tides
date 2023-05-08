@@ -25,11 +25,11 @@ settings:
   netty-threads: 4
   attribute:
     maxHealth:
-      max: 2048.0
+      max: 9.9999999999E10
     movementSpeed:
       max: 2048.0
     attackDamage:
-      max: 2048.0
+      max: 9.9999999999E10
   log-villager-deaths: true
   log-named-deaths: true
 messages:

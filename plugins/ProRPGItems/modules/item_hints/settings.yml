@@ -1,7 +1,7 @@
 command-aliases: itemhints,hints
 
 glow:
-  enabled: true
+  enabled: false
   ignored-items:
     vanilla: false
     by-material:
@@ -17,7 +17,7 @@ glow:
     - 'module name'
 
 hint:
-  enabled: true
+  enabled: false
   format:
     singular: '%name%'
     plural: '%name% &7x%amount%'

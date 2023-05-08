@@ -11,16 +11,16 @@ Quick Swings:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '7'
-    cooldown-scale: '0'
-    mana-base: '12'
-    mana-scale: '0'
+    cooldown-base: '10'
+    cooldown-scale: '0.4'
+    mana-base: '60'
+    mana-scale: '4'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -107,7 +107,7 @@ Quick Swings:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                 Delay-h: 
                   type: 'mechanic'
@@ -143,7 +143,7 @@ Quick Swings:
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Custom'
+                            cause: 'Entity Attack'
                           children:  {}
                     Delay-k: 
                       type: 'mechanic'
@@ -179,7 +179,7 @@ Quick Swings:
                                 true: 'False'
                                 classifier: 'default'
                                 knockback: 'True'
-                                cause: 'Custom'
+                                cause: 'Entity Attack'
                               children:  {}
                         Delay-n: 
                           type: 'mechanic'
@@ -215,5 +215,24 @@ Quick Swings:
                                     true: 'False'
                                     classifier: 'default'
                                     knockback: 'True'
-                                    cause: 'Custom'
+                                    cause: 'Entity Attack'
                                   children:  {}
+            Self-q: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-r: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '1.1'
+                    duration-scale: '0'
+                  children:  {}

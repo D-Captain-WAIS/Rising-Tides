@@ -22,7 +22,7 @@ tiers:
     name: '%TIER_COLOR%Common'
   uncommon:
     color: '&2'
-    name: '%TIER_COLOR%Common'
+    name: '%TIER_COLOR%Uncommon'
   rare:
     color: '&a'
     name: '%TIER_COLOR%Rare'
@@ -53,7 +53,7 @@ modules:
     enabled: true
     name: Runes
   arrows:
-    enabled: true
+    enabled: false
     name: Arrows
   sets:
     enabled: true
@@ -122,6 +122,7 @@ item-sub-types:
     - YELLOW_DYE
     - RED_DYE
     - ORANGE_DYE
+    - PAPER
   hand_wraps:
     name: '&cHand Wraps'
     materials:
@@ -214,6 +215,8 @@ item-groups:
     - YELLOW_DYE
     - RED_DYE
     - ORANGE_DYE
+    - RAW_IRON
+    - WHITE_DYE
   TOOL:
     name: Tool
     materials:

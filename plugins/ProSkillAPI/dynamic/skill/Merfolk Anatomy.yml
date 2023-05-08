@@ -1,0 +1,194 @@
+Merfolk Anatomy: 
+  name: 'Merfolk Anatomy'
+  type: 'Passive'
+  max-level: 1
+  skill-req-lvl: 0
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '0'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&lSea-Dweller Anatomy'
+  - ''
+  - '&9&oMy &9&l&oMerfolk &9&olineage means I am'
+  - '&c&ostronger &9&oand &a&ohealthier'
+  - '&9&othan most races.'
+  - ''
+  - '&9&oI can also &b&obreathe &9&oand'
+  - '&b&omove faster &9&o&nunderwater&9&o.'
+  - ''
+  - '&6&o+5% &c&oStrength'
+  - '&6&o+5% &a&oConstitution'
+  - '&6&o+3 in &c&oStrength &6&oevery 5 levels'
+  - '&6&o+3 in &a&oConstitution &6&oevery 5 levels'
+  desc:  []
+  components: 
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Passive-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            seconds-base: '1'
+            seconds-scale: '0'
+          children: 
+            Attribute-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'strength'
+                operation: 'ADD_NUMBER'
+                amount-base: 'strength_bonus'
+                amount-scale: '0'
+                seconds-base: '1'
+                seconds-scale: '0'
+                stackable: 'True'
+              children:  {}
+            Attribute-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'constitution'
+                operation: 'ADD_NUMBER'
+                amount-base: 'const_bonus'
+                amount-scale: '0'
+                seconds-base: '1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Value Placeholder-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'const_bonus'
+                type: 'Number'
+                placeholder: '%math_{sapi_player_class_attribute:constitution}*0.05%'
+              children:  {}
+            Value Placeholder-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'strength_bonus'
+                type: 'Number'
+                placeholder: '%math_{sapi_player_class_attribute:strength}*0.05%'
+              children:  {}
+            Value Placeholder-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'lvlover5'
+                type: 'Number'
+                placeholder: '%math_0:DOWN_{sapi_default_currentlevel}/5%'
+              children:  {}
+            Value Set-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: '5lv_bonus'
+                value-base: '4'
+                value-scale: '0'
+              children:  {}
+            Value Multiply-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: '5lv_bonus'
+                multiplier-base: 'lvlover5'
+                multiplier-scale: '0'
+              children:  {}
+            Attribute-j: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'strength'
+                operation: 'ADD_NUMBER'
+                amount-base: '5lv_bonus'
+                amount-scale: '0'
+                seconds-base: '1.1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Attribute-k: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'constitution'
+                operation: 'ADD_NUMBER'
+                amount-base: '5lv_bonus'
+                amount-scale: '0'
+                seconds-base: '1.1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Water-l: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                state: 'In Water'
+              children: 
+                Potion-m: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Water breathing'
+                    ambient: 'True'
+                    tier-base: '1'
+                    tier-scale: '0'
+                    seconds-base: '1'
+                    seconds-scale: '0'
+                  children:  {}
+                Potion-n: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Dolphins grace'
+                    ambient: 'True'
+                    tier-base: '3'
+                    tier-scale: '0'
+                    seconds-base: '1'
+                    seconds-scale: '0'
+                  children:  {}

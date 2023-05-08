@@ -1,0 +1,184 @@
+Dirt Star: 
+  name: 'Dirt Star'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Bola Shot'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '9'
+    cooldown-scale: '0.4'
+    mana-base: '30'
+    mana-scale: '6'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&5&oFinesse'
+  - ''
+  - "&a&oI'm gonna put some"
+  - '&a&odirt in your eye...'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote bmultishot_star'
+                type: 'OP'
+              children:  {}
+            Value Placeholder-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'bdstar_dmg'
+                type: 'Number'
+                placeholder: '%math_25+({sapi_player_class_attribute:finesse}*0.1)+{qrpg_damage_physical}%'
+              children:  {}
+            Self-e: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '0.6'
+                    duration-scale: '0'
+                  children:  {}
+            Delay-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.5'
+                delay-scale: '0'
+              children: 
+                Particle Projectile-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    gravity: '-0.005'
+                    pierce: 'False'
+                    group: 'Enemy'
+                    velocity-base: '3'
+                    velocity-scale: '0'
+                    lifespan-base: '10'
+                    lifespan-scale: '0'
+                    spread: 'Cone'
+                    amount-base: '1'
+                    amount-scale: '0'
+                    angle-base: '30'
+                    angle-scale: '0'
+                    forward-base: '1.5'
+                    forward-scale: '0'
+                    upward-base: '0.75'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                    particle: 'Block crack'
+                    material: 'Dirt'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '2'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    frequency: '0.05'
+                    use-effect: 'False'
+                  children: 
+                    Potion-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Weakness'
+                        ambient: 'True'
+                        tier-base: '1'
+                        tier-scale: '0'
+                        seconds-base: '4'
+                        seconds-scale: '0.2'
+                      children:  {}
+                    Potion-j: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Blindness'
+                        ambient: 'True'
+                        tier-base: '3'
+                        tier-scale: '0'
+                        seconds-base: '2'
+                        seconds-scale: '0.4'
+                      children:  {}
+                    Damage-k: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'bdstar_dmg'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children:  {}

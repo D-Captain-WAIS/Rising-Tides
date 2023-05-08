@@ -217,3 +217,157 @@ emotes:
       take_damage: false
       deal_damage: false
       in_air: false
+  pcritical_shot:
+    id: pcritical_shot
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  pchamber_blast:
+    id: pchamber_blast
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  pdouble_tap:
+    id: pdouble_tap
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  pblunder_leap:
+    id: pblunder_leap
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  pspray_and_pray:
+    id: pspray_and_pray
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  prun:
+    id: prun
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  pdive_shot:
+    id: pdive_shot
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  bmultishot_star:
+    id: bmultishot_star
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  bcatapult:
+    id: bcatapult
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  barcing_projectile:
+    id: barcing_projectile
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  bspecial_volley:
+    id: bspecial_volley
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  bola_shot:
+    id: bola_shot
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+    hide_equipment:
+      mainhand: true
+  fire_starter:
+    id: fire_starter
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+    hide_equipment:
+      mainhand: true
+  caltrops:
+    id: caltrops
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+    hide_equipment:
+      mainhand: true
+  slipup:
+    id: slipup
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+    hide_equipment:
+      mainhand: true
+  whats_that:
+    id: whats_that
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+    hide_equipment:
+      mainhand: true

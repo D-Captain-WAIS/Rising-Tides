@@ -2,6 +2,7 @@ Hilt Strike:
   name: 'Hilt Strike'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -100,7 +101,17 @@ Hilt Strike:
                         knockback: 'True'
                         cause: 'Entity Attack'
                       children:  {}
-        Value Placeholder-g: 
+                    Status-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        status: 'Stun'
+                        duration-base: '1'
+                        duration-scale: '0.2'
+                      children:  {}
+        Value Placeholder-h: 
           type: 'mechanic'
           indicator: 'None'
           data: 

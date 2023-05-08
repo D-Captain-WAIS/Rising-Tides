@@ -10,9 +10,9 @@ Flail:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '4'
+    cooldown-base: '6'
     cooldown-scale: '0'
-    mana-base: '5'
+    mana-base: '6'
     mana-scale: '0'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
@@ -23,11 +23,11 @@ Flail:
   icon-data: 10003
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
-  - '&6&oStat scale:'
+  - '&9&l{name} '
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - ''
-  - '&9&oI’ll just throw my leg out as hard as I can I guess'
+  - '&9&oThis always worked when I was younger!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -107,7 +107,7 @@ Flail:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                     Delay-h: 
                       type: 'mechanic'
@@ -145,17 +145,7 @@ Flail:
                     pitch-base: '1'
                     pitch-scale: '0'
                   children:  {}
-            Channel-k: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                still: 'False'
-                time-base: '0.7'
-                time-scale: '0'
-              children:  {}
-            Sound-l: 
+            Sound-k: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -168,7 +158,7 @@ Flail:
                 pitch-base: '1'
                 pitch-scale: '0'
               children:  {}
-        Value Placeholder-m: 
+        Value Placeholder-l: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -178,3 +168,22 @@ Flail:
             type: 'Number'
             placeholder: '%math_10+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
           children:  {}
+        Self-m: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            group: 'enemy'
+            wall: 'false'
+            caster: 'false'
+          children: 
+            Status-n: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                status: 'Silence'
+                duration-base: '0.7'
+                duration-scale: '0'
+              children:  {}

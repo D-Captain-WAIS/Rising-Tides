@@ -13,8 +13,8 @@ Low Kick:
     cost-scale: '0'
     cooldown-base: '5'
     cooldown-scale: '0'
-    mana-base: '5'
-    mana-scale: '0'
+    mana-base: '15'
+    mana-scale: '4'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
@@ -24,9 +24,9 @@ Low Kick:
   icon-data: 10010
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&9&l{name} '
   - ''
-  - '&6&oStat scale:'
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - ''
   - '&9&oAim for the shins! '
@@ -98,7 +98,7 @@ Low Kick:
                     true: 'False'
                     classifier: 'default'
                     knockback: 'True'
-                    cause: 'Custom'
+                    cause: 'Entity Attack'
                   children:  {}
                 Potion-g: 
                   type: 'mechanic'
@@ -108,7 +108,7 @@ Low Kick:
                     counts: 'True'
                     potion: 'Slow'
                     ambient: 'False'
-                    tier-base: '1'
+                    tier-base: '3'
                     tier-scale: '0'
                     seconds-base: '2'
                     seconds-scale: '0.2'

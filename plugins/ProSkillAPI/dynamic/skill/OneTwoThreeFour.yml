@@ -2,7 +2,6 @@ OneTwoThreeFour:
   name: 'OneTwoThreeFour'
   type: 'Active'
   max-level: 5
-  skill-req: 'Double Punch'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -11,22 +10,22 @@ OneTwoThreeFour:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '5'
-    cooldown-scale: '0'
-    mana-base: '5'
-    mana-scale: '0'
+    cooldown-base: '9'
+    cooldown-scale: '0.4'
+    mana-base: '40'
+    mana-scale: '3'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
-  msg: '&6{player} &2has cast &6{skill}&r'
+  msg: '&6{player} &2has cast &6{skill}'
   icon: 'PUMPKIN_SEEDS'
   icon-data: 10006
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&9&l{name} '
   - ''
-  - '&6&oStat scale:'
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - ''
   - '&9&oCombos are nice! Right?'
@@ -85,7 +84,7 @@ OneTwoThreeFour:
                     true: 'False'
                     classifier: 'default'
                     knockback: 'True'
-                    cause: 'Custom'
+                    cause: 'Entity Attack'
                   children:  {}
                 Delay-f: 
                   type: 'mechanic'
@@ -108,7 +107,7 @@ OneTwoThreeFour:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                     Delay-h: 
                       type: 'mechanic'
@@ -131,7 +130,7 @@ OneTwoThreeFour:
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Custom'
+                            cause: 'Entity Attack'
                           children:  {}
                         Delay-j: 
                           type: 'mechanic'
@@ -154,19 +153,9 @@ OneTwoThreeFour:
                                 true: 'False'
                                 classifier: 'default'
                                 knockback: 'True'
-                                cause: 'Custom'
+                                cause: 'Entity Attack'
                               children:  {}
-            Channel-l: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                still: 'False'
-                time-base: '1.2'
-                time-scale: '0'
-              children:  {}
-            Sound-m: 
+            Sound-l: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -179,7 +168,7 @@ OneTwoThreeFour:
                 pitch-base: '1'
                 pitch-scale: '0'
               children:  {}
-        Value Placeholder-n: 
+        Value Placeholder-m: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -189,3 +178,22 @@ OneTwoThreeFour:
             type: 'Number'
             placeholder: '%math_12+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
           children:  {}
+        Self-n: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            group: 'enemy'
+            wall: 'false'
+            caster: 'false'
+          children: 
+            Status-o: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                status: 'Silence'
+                duration-base: '1.2'
+                duration-scale: '0'
+              children:  {}

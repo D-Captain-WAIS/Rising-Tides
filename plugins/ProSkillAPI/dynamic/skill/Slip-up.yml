@@ -1,0 +1,345 @@
+Slip-up: 
+  name: 'Slip-up'
+  type: 'Active'
+  max-level: 1
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '10'
+    cooldown-scale: '0'
+    mana-base: '5'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&5&oFinesse'
+  - ''
+  - '&a&oI’m going to use this explosive! '
+  - '&a&ooh my hand slippe-'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote slipup'
+                type: 'OP'
+              children:  {}
+            Delay-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.7'
+                delay-scale: '0'
+              children: 
+                Particle Animation-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '1'
+                    frequency: '0.05'
+                    angle: '0'
+                    start: '0'
+                    duration-base: '0.2'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '-0.7'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Electric spark'
+                    arrangement: 'Sphere'
+                    radius-base: '0'
+                    radius-scale: '0'
+                    particles-base: '3'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    forward: '0.25'
+                    upward: '0.7'
+                    right: '0.25'
+                    -with-rotation: 'False'
+                  children:  {}
+                Delay-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.2'
+                    delay-scale: '0'
+                  children: 
+                    Self-g: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Offset-h: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            forward-base: '0'
+                            forward-scale: '0'
+                            upward-base: '0'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                            group: 'enemy'
+                            wall: 'false'
+                            caster: 'false'
+                          children: 
+                            Particle Animation-i: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                steps: '1'
+                                frequency: '0.05'
+                                angle: '0'
+                                start: '0'
+                                duration-base: '2'
+                                duration-scale: '0'
+                                h-translation-base: '0'
+                                h-translation-scale: '0'
+                                v-translation-base: '0'
+                                v-translation-scale: '0'
+                                h-cycles: '1'
+                                v-cycles: '1'
+                                particle: 'Fireworks spark'
+                                arrangement: 'Sphere'
+                                radius-base: '0'
+                                radius-scale: '0'
+                                particles-base: '3'
+                                particles-scale: '0'
+                                visible-radius: '25'
+                                dx: '0'
+                                dy: '0'
+                                dz: '0'
+                                amount: '1'
+                                speed: '0.1'
+                                forward: '0'
+                                upward: '0'
+                                right: '0'
+                                -with-rotation: 'False'
+                              children:  {}
+                            Delay-j: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                delay-base: '2'
+                                delay-scale: '0'
+                              children: 
+                                Area-k: 
+                                  type: 'target'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    radius-base: '5'
+                                    radius-scale: '0'
+                                    group: 'Both'
+                                    wall: 'False'
+                                    caster: 'False'
+                                    max-base: '99'
+                                    max-scale: '0'
+                                    random: 'False'
+                                  children: 
+                                    Damage-l: 
+                                      type: 'mechanic'
+                                      indicator: 'None'
+                                      data: 
+                                        icon-key: ''
+                                        counts: 'True'
+                                        type: 'Damage'
+                                        value-base: 'bslipup_dmg'
+                                        value-scale: '0'
+                                        true: 'False'
+                                        classifier: 'explosive'
+                                        knockback: 'True'
+                                        cause: 'Entity Attack'
+                                      children:  {}
+                                    Launch-m: 
+                                      type: 'mechanic'
+                                      indicator: 'None'
+                                      data: 
+                                        icon-key: ''
+                                        counts: 'True'
+                                        relative: 'Target'
+                                        forward-base: '0'
+                                        forward-scale: '0'
+                                        upward-base: '1'
+                                        upward-scale: '0'
+                                        right-base: '0'
+                                        right-scale: '0'
+                                      children:  {}
+                                Sound-n: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    sound: 'Entity generic explode'
+                                    volume-base: '400'
+                                    volume-scale: '0'
+                                    pitch-base: '0.5'
+                                    pitch-scale: '0'
+                                  children:  {}
+                                Particle-o: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    particle: 'Explosion large'
+                                    arrangement: 'Sphere'
+                                    radius-base: '4'
+                                    radius-scale: '0'
+                                    particles-base: '4'
+                                    particles-scale: '0'
+                                    visible-radius: '25'
+                                    dx: '0'
+                                    dy: '0'
+                                    dz: '0'
+                                    amount: '1'
+                                    speed: '0.1'
+                                    forward: '0'
+                                    upward: '0'
+                                    right: '0'
+                                  children:  {}
+                            Sound-p: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                sound: 'Entity creeper primed'
+                                volume-base: '400'
+                                volume-scale: '0'
+                                pitch-base: '2'
+                                pitch-scale: '0'
+                              children:  {}
+                        Potion-q: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            potion: 'Speed'
+                            ambient: 'True'
+                            tier-base: '4'
+                            tier-scale: '0'
+                            seconds-base: '1.5'
+                            seconds-scale: '0'
+                          children:  {}
+            Value Placeholder-r: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'bslipup_dmg'
+                type: 'Number'
+                placeholder: '%math_30+({sapi_player_class_attribute:finesse}*0.6)+{qrpg_damage_physical}%'
+              children:  {}
+            Self-s: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-t: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Root'
+                    duration-base: '1.2'
+                    duration-scale: '0'
+                  children:  {}
+            Value Placeholder-u: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'setburn'
+                type: 'Number'
+                placeholder: '%math_10+({sapi_player_class_attribute:finesse}*0.15)+{qrpg_damage_physical}%'
+              children:  {}
+        Self-v: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            group: 'enemy'
+            wall: 'false'
+            caster: 'false'
+          children: 
+            Status-w: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                status: 'Silence'
+                duration-base: '0.75'
+                duration-scale: '0'
+              children:  {}

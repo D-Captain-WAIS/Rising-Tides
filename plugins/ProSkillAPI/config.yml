@@ -293,7 +293,7 @@ GUI:
   - 'exp_lost'
 
   # Whether to display class information on a scoreboard
-  scoreboard-enabled: 'true'
+  scoreboard-enabled: 'false'
 
   # Whether to add a prefix to players with their class name
   show-class-name: 'false'

@@ -1,0 +1,57 @@
+SWNewbie: 
+  name: 'SWNewbie'
+  action-bar: ''
+  prefix: ''
+  group: 'class'
+  mana: '&2Stamina'
+  max-level: 1000
+  parent: ''
+  needs-permission: 'true'
+  attributes: 
+    health-base: '50'
+    health-scale: '5'
+    mana-base: '30'
+    mana-scale: '2'
+    constitution-base: '0'
+    constitution-scale: '1'
+    willpower-base: '0'
+    willpower-scale: '1'
+    agility-base: '0'
+    agility-scale: '1'
+    dexterity-base: '0'
+    dexterity-scale: '1'
+    strength-base: '0'
+    strength-scale: '1'
+    accuracy-base: '0'
+    accuracy-scale: '1'
+    endurance-base: '0'
+    endurance-scale: '1'
+    finesse-base: '0'
+    finesse-scale: '1'
+  mana-regen: 1.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'regen'
+  - 'wounded'
+  - 'impaired'
+  - 'Special Volley'
+  - 'Firecracker Star'
+  - 'Status Effects'
+  - 'Arcing Projectile'
+  - 'Slip-up'
+  - 'Bola Shot'
+  - 'Dirt Star'
+  - 'Fire Starter'
+  - 'Bounce Shot'
+  - 'Multishot Star'
+  - 'Catapult'
+  - 'Caltrops'
+  - 'The Look Away'
+  - 'vulnerable'
+  icon: 'YELLOW_DYE'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&oStringed Weapon Newbie'
+  exp-source: 16

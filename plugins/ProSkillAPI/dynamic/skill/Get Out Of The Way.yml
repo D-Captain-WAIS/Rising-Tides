@@ -2,7 +2,6 @@ Get Out Of The Way:
   name: 'Get Out Of The Way'
   type: 'Active'
   max-level: 5
-  skill-req: 'Skeddaddle'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -12,9 +11,9 @@ Get Out Of The Way:
     cost-base: '1'
     cost-scale: '0'
     cooldown-base: '4'
-    cooldown-scale: '0'
-    mana-base: '5'
-    mana-scale: '0'
+    cooldown-scale: '0.2'
+    mana-base: '36'
+    mana-scale: '3'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
@@ -24,9 +23,9 @@ Get Out Of The Way:
   icon-data: 10011
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&9&l{name} '
   - ''
-  - '&6&oStat scale:'
+  - '&f&oStat scale:'
   - '&f&oAgility'
   - ''
   - '&9&oDive to the side! I’ll worry about landing later…'

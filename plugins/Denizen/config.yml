@@ -1,5 +1,4 @@
 # Denizen config.
-
 Debug:
     # Whether debug information about Denizen should EVER appear in the server console by default
     # NOTE: You almost ALWAYS want this ON! Leave it at 'true'! To hide debug from scripts, set "debug: false" on the script containers that work fine.
@@ -46,7 +45,6 @@ Debug:
     Warning rate: 10000
     # If set true, core systems will check what thread is performing certain critical actions, and give a warning if the wrong one is used.
     Verify thread: false
-
 Scripts:
     World:
         Events:
@@ -67,7 +65,14 @@ Scripts:
         # If false, it will only initialize once at least one command script is loaded.
         # This defaults to false to avoid any possible interference on servers that don't use command scripts.
         Auto init: false
-
+    Economy:
+        # If enabled, async calls to economy scripts or PlaceholderAPI tags will be sent through to the main thread.
+        # This will remove the illegal-async-access warning, at the cost of risking thread lockup or other issues.
+        # If you're wondering why async is blocked, see explanation @ https://i.alexgoodwin.media/i/misc/2fdd06.png
+        # IF YOU HAVE ASYNC WARNINGS FROM DENIZEN, THIS IS NOT HOW TO FIX IT.
+        # YOU SHOULD YELL AT THE DEVELOPER OF WHATEVER PLUGIN IS TRYING TO MAKE SYNC-ONLY CALLS ASYNC.
+        # ASYNC USAGES OF THE BUKKIT API ARE NEVER ALLOWED EXCEPT WHERE EXPLICITLY DOCUMENTED OTHERWISE.
+        Pass async to main thread: false
 # Settings related to queues.
 Queues:
     # Toggle which parts of a queue ID are used for the queue ID generator.
@@ -80,7 +85,6 @@ Queues:
         Numeric: true
         # Whether to include random words - helps easily distinguish queues in logs. Can create partial uniqueness if numeric is turned off.
         Words: true
-
 # The default options for new Denizen NPCs
 # Whether to spawn NPCs with given traits, and what settings to have by default
 Traits:
@@ -96,7 +100,6 @@ Traits:
         Animated death:
             # Whether the NPC should play a death animation by default.
             Enabled: false
-
 # Whether triggers are on by default, and their individual settings
 Triggers:
     Chat:
@@ -128,7 +131,6 @@ Triggers:
         Enabled: false
         Cooldown: 1s
         Range: 10
-
 Commands:
     Engage:
         # the default timeout for engage, if not specifically set otherwise
@@ -232,7 +234,9 @@ Commands:
         # and that none of Denizen, the Denizen team, Spigot, Mojang, etc. in any way support or endorse abusing these tools.
         # Enable at your own risk.
         Allow restricted actions: false
-
+    Mongo:
+        # Whether to allow the Mongo command.
+        Allow: true
 Tags:
     # How long a tag can parse before force-closing the tag parser engine. Set to 0 to disable tag parse timing entirely.
     Timeout: 10
@@ -255,7 +259,8 @@ Tags:
     # The benefit of enabling this is it prevents locking the server thread to download the data from Mojang servers.
     # The risk is that it may interfere with other plugins or systems that expect correct data to be set.
     Nullify skull skin ids: false
-
+    # If true, polygons default to WorldEdit style block-inclusive logic. If false, use precise 'exclusive' logic.
+    Polygon default inclusive: false
 # Java Reflection is the toolkit for accessing raw underlying Java data.
 # Denizen partially exposes this, for example in 'JavaReflectedObjectTag', as some scripts may have use for this.
 # This however often isn't needed, and sometimes can be abused to access things a script shouldn't have access to.
@@ -280,7 +285,6 @@ Reflection:
     Allow set private fields: false
     # Whether the 'reflectionset' command may set to 'final' fields. This is very likely to be dangerous if enabled.
     Allow set final fields: false
-
 Saves:
     # How long (in seconds) before the offline player flag cache times out.
     # Set to -1 to keep offline player flags loaded perpetually, or to 0 to never cache.
@@ -292,7 +296,17 @@ Saves:
     Skip flag cleaning: false
     # When set to 'true', skips flag cleaning for ChunkTag and LocationTag flags.
     Skip chunk flag cleaning: false
-
+    # When set to 'true', player flag autosaving will be delayed whenever world saves are disabled (eg via '/save-off').
+    # Player flags will still save as normal during shutdown, or when world saving is enabled.
+    # This checks based on your default world (server.worlds.first).
+    Only save if world save is on: false
+    # Delay (DurationTag) after modifying a PlayerTag's offline world-data (gamemode, inventory, etc) before it is saved to file.
+    # Larger delays are better for performance when this is used often. Shorter delays are better for interop.
+    # Set to '0' for instant save on modification. Set to '999h' to only save at shutdown.
+    Save world player file delay: 10s
+    # Duration to retain offline player data being purging.
+    # Higher values are better for perf but worse for RAM. Lower values are better for interop. Set to '0' to never cache.
+    World player data max cache: 1h
 Packets:
     # Whether to allow Denizen to intercept packets from and to player clients.
     # This enables access to certain ScriptEvents, such as PlayerSteers and PlayerReceivesMessage.
@@ -304,7 +318,6 @@ Packets:
     # This defaults to false to avoid any possible interference on servers that don't need packet interception.
     # If this is false, some packet-interception related tags may not work.
     Auto init: false
-
 # This is a special map of custom colors by name, for the '&' tag base to use. 'default' is used when the name is unrecognized. You can add extra keys here.
 # Tags work here and will be pre-parsed at load time. RGB color codes work here.
 Colors:
@@ -324,3 +337,14 @@ Colors:
     npc: <&a>
     # Default: the backup for when a color label is unrecognized. Generally don't touch this.
     default: <white>
+#----------- Important! -----------
+# Your configuration file was outdated.
+# It has been automatically updated.
+# You may notice some duplicated comments or other minor inconsistencies,
+# if these annoy you, you may remove the duplicate comments OR
+# delete the config file to allow it to regenerate.
+#
+# The below value is how many times automatic updates have been applied
+# since you last cleaned this file.
+# ----------- End Important! -----------
+times_changed: 1

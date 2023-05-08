@@ -10,31 +10,76 @@ ATTRIBUTES:
       accuracy: 7
       endurance: 1
       agility: 4
+      finesse: 8
+stHuman: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      human anatomy: 13
+stSWNewbie: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      caltrops: 11
+      dirt star: 33
+      bounce shot: 13
+      catapult: 49
+      multishot star: 31
+      slip-up: 2
+      arcing projectile: 6
+      bola shot: 15
+      firecracker star: 0
+      special volley: 4
+      fire starter: 51
+      the look away: 29
+stNMink: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      nocturnal mink anatomy: 13
+stGunNewbie: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      spray and pray: 27
+      chamber blast: 12
+      blunder leap: 0
+      double tap: 1
+      tactical dive: 4
+      critical shot: 18
+      impairing shot: 19
+      vital shot: 10
+      run: 13
+      pistol whip: 3
+      fast hands: 9
+      dive shot: 21
+stFishman: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      fishman anatomy: 13
 stMWNewbie: 
   rows: 6
   pages: 1
   slots: 
     1: 
-      weeeee: 20
-      hilt strike: 15
-      evade strike: 24
-      double attack: 22
-      dash swing: 11
-      jump attack: 29
-      charged attack: 31
-      overhead swing: 40
-      piercing strike: 4
-      two handed swing: 13
-      poke: 42
-      quick swings: 33
-stMelee Weapon Newbie: 
-  rows: 3
-  pages: 1
-  slots: 
-    1: 
-      hilt strike: 0
-      piercing strike: 2
-      two handed swing: 4
+      weeeee: 4
+      evade strike: 3
+      hilt strike: 9
+      double attack: 2
+      dash swing: 0
+      jump attack: 13
+      charged attack: 11
+      overhead swing: 20
+      piercing strike: 18
+      two handed swing: 27
+      poke: 21
+      quick swings: 12
 stScrapper: 
   rows: 6
   pages: 1
@@ -44,19 +89,36 @@ stScrapper:
       hard kick: 15
       chaaaaaarge: 29
       dropkick: 33
-      skedaddle: 11
       overhand swing: 40
+      skedaddle: 11
       get out of the way: 20
       low kick: 42
       hard punch: 13
       onetwothreefour: 31
       double punch: 22
       running kick: 24
-stMeleeWeaponNewbie: 
-  rows: 3
+stMerfolk: 
+  rows: 6
   pages: 1
   slots: 
     1: 
-      hilt strike: 0
-      two handed swing: 18
-      piercing strike: 9
+      merfolk anatomy: 13
+CLASS_DETAILS: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      race: 31
+      class: 22
+stShandian: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      shandian anatomy: 13
+stDMink: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      diurnal mink anatomy: 13

@@ -1,0 +1,355 @@
+Firecracker Star: 
+  name: 'Firecracker Star'
+  type: 'Active'
+  max-level: 1
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '7'
+    cooldown-scale: '0'
+    mana-base: '6'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&6&oAccuracy'
+  - '&5&oFinesse'
+  - ''
+  - '&a&oA firecracker is the only thing I have on hand.'
+  - '&a&oMight as well shoot it.'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote bmultishot_star'
+                type: 'OP'
+              children:  {}
+            Delay-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.5'
+                delay-scale: '0'
+              children: 
+                Sound-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    sound: 'Entity firework rocket launch'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '2'
+                    pitch-scale: '0'
+                  children:  {}
+                Particle Projectile-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    gravity: '-0.005'
+                    pierce: 'False'
+                    group: 'Enemy'
+                    velocity-base: '3.75'
+                    velocity-scale: '0'
+                    lifespan-base: '10'
+                    lifespan-scale: '0'
+                    spread: 'Cone'
+                    amount-base: '1'
+                    amount-scale: '0'
+                    angle-base: '30'
+                    angle-scale: '0'
+                    forward-base: '1.5'
+                    forward-scale: '0'
+                    upward-base: '0.75'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                    particle: 'Fireworks spark'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '1'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '3'
+                    speed: '0.1'
+                    frequency: '0.005'
+                    use-effect: 'False'
+                  children: 
+                    Damage-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'bfstar_dmg'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children:  {}
+                    Sound-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        sound: 'Entity creeper primed'
+                        volume-base: '400'
+                        volume-scale: '0'
+                        pitch-base: '1.5'
+                        pitch-scale: '0'
+                      children:  {}
+                    Delay-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '2'
+                        delay-scale: '0'
+                      children: 
+                        Sound-j: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            sound: 'Entity generic explode'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '0.5'
+                            pitch-scale: '0'
+                          children:  {}
+                        Damage-k: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'bfstar_explosiondmg'
+                            value-scale: '0'
+                            true: 'False'
+                            classifier: 'explosive'
+                            knockback: 'True'
+                            cause: 'Entity Attack'
+                          children:  {}
+                        Particle-l: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            particle: 'Explosion large'
+                            arrangement: 'Sphere'
+                            radius-base: '0.1'
+                            radius-scale: '0'
+                            particles-base: '4'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '3'
+                            speed: '0.1'
+                            forward: '0'
+                            upward: '1'
+                            right: '0'
+                          children:  {}
+                        Launch-m: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            relative: 'Target'
+                            forward-base: '0'
+                            forward-scale: '0'
+                            upward-base: '1'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                          children:  {}
+                        Flag-n: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Set'
+                            key: 'ignited'
+                          children: 
+                            Value Set-o: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                key: 'burn_dmg'
+                                value-base: 'setburn'
+                                value-scale: '0'
+                              children:  {}
+                    Particle-p: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        particle: 'Fireworks spark'
+                        arrangement: 'Sphere'
+                        radius-base: '0.1'
+                        radius-scale: '0'
+                        particles-base: '20'
+                        particles-scale: '0'
+                        visible-radius: '25'
+                        dx: '0'
+                        dy: '0'
+                        dz: '0'
+                        amount: '1'
+                        speed: '0.1'
+                        forward: '0'
+                        upward: '1'
+                        right: '0'
+                      children:  {}
+                    Delay-q: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '1'
+                        delay-scale: '0'
+                      children: 
+                        Particle-r: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            particle: 'Fireworks spark'
+                            arrangement: 'Sphere'
+                            radius-base: '0.1'
+                            radius-scale: '0'
+                            particles-base: '20'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '1'
+                            speed: '0.1'
+                            forward: '0'
+                            upward: '1'
+                            right: '0'
+                          children:  {}
+                Sound-s: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    sound: 'Item crossbow shoot'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
+                  children:  {}
+            Self-t: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-u: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '0.5'
+                    duration-scale: '0'
+                  children:  {}
+            Value Placeholder-v: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'setburn'
+                type: 'Number'
+                placeholder: '%math_5+({sapi_player_class_attribute:finesse}*0.1)+{qrpg_damage_physical}%'
+              children:  {}
+        Value Placeholder-w: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'bfstar_dmg'
+            type: 'Number'
+            placeholder: '%math_10+({sapi_player_class_attribute:accuracy}*0.1)+{qrpg_damage_physical}%'
+          children:  {}
+        Value Placeholder-x: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'bfstar_explosiondmg'
+            type: 'Number'
+            placeholder: '%math_20+({sapi_player_class_attribute:finesse}*0.25)+{qrpg_damage_physical}%'
+          children:  {}

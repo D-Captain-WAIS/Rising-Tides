@@ -11,28 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1669510262956
+  lastteleport: 1675657323438
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1669519421209
-  login: 1669510243880
+  logout: 1675660222381
+  login: 1675658667991
 money: '0'
 last-account-name: FujinSamurai
 lastlocation:
-  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
-  world-name: dawn_island
-  x: 619.6361404591131
-  y: 78.95953249194032
-  z: -305.1848211508644
-  yaw: 18.42083740234375
-  pitch: -0.5993779897689819
-logoutlocation:
   world: e80714c3-3001-48f0-978d-b9fcfc236840
   world-name: world
-  x: 76.94390799831199
+  x: 64.5948852864118
   y: 170.0
-  z: -282.2842367261013
-  yaw: 55.787017822265625
-  pitch: 25.946340560913086
+  z: -297.81881029427313
+  yaw: 122.53836059570312
+  pitch: 20.096633911132812
+logoutlocation:
+  world: 23e27574-e2c8-4689-8402-f4e488332383
+  world-name: dev
+  x: -14.484647352375916
+  y: -31.0
+  z: -18.101712591315607
+  yaw: -81.73030090332031
+  pitch: 27.749853134155273

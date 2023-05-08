@@ -11,16 +11,16 @@ Overhead Swing:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '6'
+    cooldown-base: '7'
     cooldown-scale: '0'
-    mana-base: '0'
-    mana-scale: '0'
-    points-spent-req-base: '8'
+    mana-base: '25'
+    mana-scale: '2'
+    points-spent-req-base: '1'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 

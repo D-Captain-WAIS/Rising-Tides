@@ -1,0 +1,37 @@
+27.04.2023 - 21:14:42 - [TAB v3.3.2] An error was thrown when executing task
+27.04.2023 - 21:14:42 - java.lang.NullPointerException: Cannot invoke "me.neznamy.tab.shared.features.PlaceholderManagerImpl.getPlaceholder(String)" because the return value of "me.neznamy.tab.shared.TAB.getPlaceholderManager()" is null
+27.04.2023 - 21:14:42 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.setPlaceholders(TabPlaceholder.java:136)
+27.04.2023 - 21:14:42 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.updateValue(PlayerPlaceholderImpl.java:85)
+27.04.2023 - 21:14:42 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.lambda$updateValue$0(PlayerPlaceholderImpl.java:91)
+27.04.2023 - 21:14:42 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:84)
+27.04.2023 - 21:14:42 - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+27.04.2023 - 21:14:42 - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+27.04.2023 - 21:14:42 - 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+27.04.2023 - 21:14:42 - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+27.04.2023 - 21:14:42 - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+27.04.2023 - 21:14:42 - 	at java.base/java.lang.Thread.run(Thread.java:833)
+05.05.2023 - 20:46:16 - [TAB v3.3.2] An error was thrown when executing task
+05.05.2023 - 20:46:16 - java.lang.NullPointerException: Cannot invoke "me.neznamy.tab.shared.features.PlaceholderManagerImpl.getPlaceholder(String)" because the return value of "me.neznamy.tab.shared.TAB.getPlaceholderManager()" is null
+05.05.2023 - 20:46:16 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.setPlaceholders(TabPlaceholder.java:136)
+05.05.2023 - 20:46:16 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.updateValue(PlayerPlaceholderImpl.java:85)
+05.05.2023 - 20:46:16 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.lambda$updateValue$0(PlayerPlaceholderImpl.java:91)
+05.05.2023 - 20:46:16 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:84)
+05.05.2023 - 20:46:16 - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+05.05.2023 - 20:46:16 - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+05.05.2023 - 20:46:16 - 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+05.05.2023 - 20:46:16 - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+05.05.2023 - 20:46:16 - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+05.05.2023 - 20:46:16 - 	at java.base/java.lang.Thread.run(Thread.java:833)
+07.05.2023 - 11:54:26 - [TAB v3.3.2] An error was thrown when executing task
+07.05.2023 - 11:54:26 - java.lang.NullPointerException: Cannot invoke "me.neznamy.tab.api.placeholder.PlaceholderManager.detectPlaceholders(String)" because the return value of "me.neznamy.tab.api.TabAPI.getPlaceholderManager()" is null
+07.05.2023 - 11:54:26 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.getNestedPlaceholders(TabPlaceholder.java:100)
+07.05.2023 - 11:54:26 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.setPlaceholders(TabPlaceholder.java:134)
+07.05.2023 - 11:54:26 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.updateValue(PlayerPlaceholderImpl.java:85)
+07.05.2023 - 11:54:26 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.lambda$updateValue$0(PlayerPlaceholderImpl.java:91)
+07.05.2023 - 11:54:26 - 	at TAB v3.3.2.jar//me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:84)
+07.05.2023 - 11:54:26 - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+07.05.2023 - 11:54:26 - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+07.05.2023 - 11:54:26 - 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+07.05.2023 - 11:54:26 - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+07.05.2023 - 11:54:26 - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+07.05.2023 - 11:54:26 - 	at java.base/java.lang.Thread.run(Thread.java:833)

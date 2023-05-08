@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 81.19.223.219
+ip-address: 86.30.91.104
 afk: false
 socialspy: false
 npc: false
@@ -11,28 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1669507961009
+  lastteleport: 1677341190456
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1669508343761
-  login: 1669507681239
+  logout: 1677384362071
+  login: 1677378142745
 money: '0'
 last-account-name: AceMrTrex
 lastlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 10.99690915866712
-  y: 125.23793391573155
-  z: 435.3814485345424
-  yaw: -12.43817138671875
-  pitch: 40.34949493408203
+  x: -693.0254545427142
+  y: 89.06655963457756
+  z: -255.68675023715303
+  yaw: 117.8795166015625
+  pitch: 28.198671340942383
 logoutlocation:
-  world: e80714c3-3001-48f0-978d-b9fcfc236840
-  world-name: world
-  x: 57.695010715994776
-  y: 160.0
-  z: -286.74679222787364
-  yaw: -52.2060546875
-  pitch: 2.396134614944458
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: -709.379795265176
+  y: 73.90110745021043
+  z: -61.74371423302293
+  yaw: 17.419403076171875
+  pitch: 23.24967384338379

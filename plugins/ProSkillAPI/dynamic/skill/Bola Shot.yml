@@ -1,0 +1,137 @@
+Bola Shot: 
+  name: 'Bola Shot'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '9'
+    cooldown-scale: '1'
+    mana-base: '25'
+    mana-scale: '5'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&5&oFinesse'
+  - ''
+  - '&a&oThis should wrap their legs and'
+  - '&a&ohave them trip hopefully!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote bola_shot'
+                type: 'OP'
+              children:  {}
+            Value Placeholder-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'bolas_dmg'
+                type: 'Number'
+                placeholder: '%math_25+({sapi_player_class_attribute:finesse}*0.1)+{qrpg_damage_physical}%'
+              children:  {}
+            Delay-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '1'
+                delay-scale: '0'
+              children: 
+                Item Projectile-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    group: 'Enemy'
+                    material: 'Gold nugget'
+                    amount: '1'
+                    byte: '10001'
+                    hide-flags: ' {}'
+                    custom: 'False'
+                    velocity-base: '2.5'
+                    velocity-scale: '0'
+                    lifespan-base: '8'
+                    lifespan-scale: '0'
+                    spread: 'Cone'
+                    amount-base: '1'
+                    amount-scale: '0'
+                    angle-base: '30'
+                    angle-scale: '0'
+                    forward-base: '1.5'
+                    forward-scale: '0'
+                    upward-base: '0'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                    use-effect: 'False'
+                  children: 
+                    Damage-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'bolas_dmg'
+                        value-scale: '5'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children:  {}
+                    Status-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        status: 'Root'
+                        duration-base: '2'
+                        duration-scale: '0.2'
+                      children:  {}

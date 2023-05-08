@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 147.235.216.114
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1677347691476
+  login: 1677343142562
+money: '0'
+last-account-name: Dragonbear_alive
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: -61.55677233671853
+  y: 83.16884121505407
+  z: 186.32760816981553
+  yaw: 2.705810546875
+  pitch: 17.25147819519043

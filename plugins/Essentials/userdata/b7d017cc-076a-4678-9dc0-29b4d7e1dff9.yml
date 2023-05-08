@@ -11,28 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1670996857523
+  lastteleport: 1677368787569
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1671001949192
-  login: 1671001444683
+  logout: 1677369378571
+  login: 1677368767160
 money: '0'
 last-account-name: MugiKage
 lastlocation:
   world: e80714c3-3001-48f0-978d-b9fcfc236840
   world-name: world
-  x: 70.17444578553231
+  x: 76.5
   y: 160.0
-  z: -281.71552838013696
-  yaw: -152.26214599609375
-  pitch: 7.046574592590332
+  z: -286.5
+  yaw: -138.3125
+  pitch: 36.59654998779297
 logoutlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 797.6204256166949
-  y: 72.34863553647905
-  z: -246.61207936832648
-  yaw: -41.2467041015625
-  pitch: 7.350025653839111
+  x: 582.2908100585439
+  y: 88.16123958876064
+  z: -169.07406014993748
+  yaw: 1.025390625
+  pitch: 19.20029640197754

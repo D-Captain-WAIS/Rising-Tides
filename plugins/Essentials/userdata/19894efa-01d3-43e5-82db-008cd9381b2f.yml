@@ -4,52 +4,52 @@ godmode: false
 muted: false
 jailed: false
 ip-address: 127.0.0.1
-afk: true
+afk: false
 socialspy: false
 npc: false
 powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1678067185926
+  lastteleport: 1683452445882
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1678039981007
-  login: 1678040436767
-money: '9695300.0'
+  logout: 1683518575192
+  login: 1683518811321
+money: '999999619399.0'
 last-account-name: _D_Captain_
 lastlocation:
-  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
-  world-name: dawn_island
-  x: 899.3686364621378
-  y: 65.0
-  z: -215.06645164367367
-  yaw: -105.94775390625
-  pitch: 15.261457443237305
+  world: 23e27574-e2c8-4689-8402-f4e488332383
+  world-name: dev
+  x: -7.302035190365592
+  y: 138.0
+  z: 1.3340272532342927
+  yaw: 27.6624813079834
+  pitch: 21.577362060546875
 logoutlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 557.2926460109873
-  y: 65.0
-  z: -294.3244100937872
-  yaw: -148.5263671875
-  pitch: 28.630874633789062
+  x: 345.50999637276493
+  y: 74.11831231345153
+  z: -291.10756220013525
+  yaw: -58.3017578125
+  pitch: 23.796510696411133
 homes:
-  marinecut:
+  start:
+    world: 23e27574-e2c8-4689-8402-f4e488332383
+    world-name: dev
+    x: -371.6564285139756
+    y: -10.0
+    z: 364.57296044310374
+    yaw: 6.271052360534668
+    pitch: 71.14292907714844
+  goa_middle:
     world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
     world-name: dawn_island
-    x: 1032.9981800079897
-    y: 50.0
-    z: -175.69999998807907
-    yaw: 36.17337417602539
-    pitch: 36.23352813720703
-  bandit:
-    world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
-    world-name: dawn_island
-    x: 538.0928859179644
-    y: 77.0
-    z: -146.65986701612977
-    yaw: -130.5021209716797
-    pitch: 38.89017105102539
+    x: -8.384423621363915
+    y: 65.0
+    z: 688.6999999880791
+    yaw: 66.23391723632812
+    pitch: 52.373409271240234

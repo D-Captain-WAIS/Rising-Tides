@@ -21,7 +21,7 @@ conversations:
         text: "No thanks\n"
       join:
         text: "Yes! I'll enlist!\n"
-        event: "make_marine,is_marine,pick_race_tp"
+        event: "make_marine,pick_race_tp"
   pirate:
     quester: "\n&c&l[Pirate]"
     first: "desc,choose"
@@ -68,29 +68,44 @@ conversations:
       join:
         text: "Yes! I want to fight for the people!\n"
         event: "make_rev,is_rev,pick_race_tp"
-  fishman:
-    quester: "\n&1&l[Fishman]"
+  seadweller:
+    quester: "\n&9&l[Sea-Dweller]"
     first: "desc,choose"
     stop: 'true'
     final_events: "chat_clear"
     NPC_options:
       desc:
-        text: "\n&fey! I'm Jimbay, a Fishman! Fishmen are creatures of the sea! Want to be one of us? You get:\n\n-Bonus swim speed\n-Water breathing\n-Fishmen only skills\n"
-        conditions: "!tag_talked_jimbay"
-        events: "talked_jimbay"
+        text: "\n&fHey! I'm Jynbei, a &9&lSea-Dweller&f! Want to be one of us?"
+        conditions: "!tag_talked_jynbei"
+        events: "talked_jynbei"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to become a Fishman?\n"
-        pointers: "become,refuse"
+        text: "\n&9&lSea-Dwellers &fare divided into two tribes: &9&o&nFishmen&f and &9&o&nMerfolk&f.\n\n&9&o&nFishmen&f get:\n-Large Bonuses for &aConstitution &fand &cStrength&f.\n-&9&lSea-Dweller&f only skills\n\n&9&o&nMerfolk&f get:\n-Large Bonuses for &aConstitution &fand &cStrength&f.\n-&9&lSea-Dweller&f only skills\n\nBoth tribes can breathe underwater and swim much faster than other races.\n\nWould you like to become a &9&lSea-Dweller&f?"
+        pointers: "become_fishman,become_merfolk,refuse"
+      fishman_confirm:
+        text: "\n&fAre you sure you want to become a &9&oFishman &9&lSea-Dweller&f?\n"
+        pointer: "set_fishman,refuse"
+      merfolk_confirm:
+        text: "\n&fAre you sure you want to become a &9&oMerfolk &9&lSea-Dweller&f?\n"
+        pointer: "set_merfolk,refuse"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      become:
-        text: "Yes! I want to be a fishman!\n"
-        event: "pick_class_tp"
+      become_fishman:
+        text: "I want to be a &9&oFishman&3!\n"
+        pointer: "fishman_confirm"
+      become_merfolk:
+        text: "I want to be a &9&oMerfolk&3!\n"
+        pointer: "merfolk_confirm"
+      set_merfolk:
+        text: "Yes! I want to be a &9&oMerfolk&3!\n"
+        event: "set_merfolk,is_merfolk,pick_class_tp"
+      set_fishman:
+        text: "Yes! I want to be a &9&oFishman&3!\n"
+        event: "set_fishman,is_fishman,pick_class_tp"
   mink:
     quester: "\n&a&l[Mink]"
     first: "desc,choose"
@@ -98,68 +113,75 @@ conversations:
     final_events: "chat_clear"
     NPC_options:
       desc:
-        text: "\n&fHey! I'm Karot, a Mink! Minks are creatures of the wild! Want to be one of us? You get:\n\n-Bonus agility\n-Bonus jump height\n-Mink only skills\n"
+        text: "\n&fHey! I'm Karot, a &a&lMink&f! Want to be one of us?"
         conditions: "!tag_talked_karot"
         events: "talked_karot"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to become a mink?\n"
-        pointers: "become,refuse"
+        text: "\n&a&lMinks &fare divided into two tribes: &e&o&nDiurnal &a&o&nMinks&f and &b&o&nNocturnal &a&o&nMinks&f.\n\n&e&o&nDiurnal &a&o&nMinks&f get:\n-Large Bonuses for &fAgility and &9Dexterity&f.\n-Bonus damage during the &eday&f\n-&a&lMink&f only skills\n\n&b&o&nNocturnal &a&o&nMinks&f get:\n-Large Bonuses for &fAgility and &9Dexterity&f.\n-Bonus damage during the &bnight&f\n-&a&lMink&f only skills\n\nWould you like to become a &a&lMink&f?"
+        pointers: "become_diurnal,become_nocturnal,refuse"
+      diurnal_confirm:
+        text: "\n&fAre you sure you want to become a &e&oDiurnal &a&lMink&f?\n"
+        pointer: "set_diurnal,refuse"
+      nocturnal_confirm:
+        text: "\n&fAre you sure you want to become a &b&oNocturnal &a&lMink&f?\n"
+        pointer: "set_nocturnal,refuse"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      become:
-        text: "Yes! I want to be a mink!\n"
-        event: "pick_class_tp"
-  cyborg:
-    quester: "\n&b&l[Cyborg]"
+      become_diurnal:
+        text: "I want to be a &e&oDiurnal &a&lMink&3!\n"
+        pointer: "diurnal_confirm"
+      become_nocturnal:
+        text: "I want to be a &b&oNocturnal &a&lMink&3!\n"
+        pointer: "nocturnal_confirm"
+      set_diurnal:
+        text: "Yes! I want to be a &e&oDiurnal &a&lMink&3!\n"
+        event: "set_diurnal,is_diurnal,pick_class_tp"
+      set_nocturnal:
+        text: "Yes! I want to be a &b&oNocturnal &a&lMink&3!\n"
+        event: "set_nocturnal,is_nocturnal,pick_class_tp"
+  skycitizen:
+    quester: "\n&b&l[Sky-Citizen]"
     first: "desc,choose"
     stop: 'true'
     final_events: "chat_clear"
     NPC_options:
       desc:
-        text: "\n&fHey! I'm Furanku, a Cyborg! Cyborgs are cybernetic enhanced beings! Want to be one of us? You get:\n\n-Bonus defense\n-Bonus accuracy\n-Cyborg only skills\n"
-        conditions: "!tag_talked_furanku"
-        events: "talked_furanku"
+        text: "\n&fHey! I'm Wypah, a &b&lSky-Citizen&f! Want to be one of us?"
+        conditions: "!tag_talked_wypah"
+        events: "talked_wypah"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to become a cyborg?\n"
-        pointers: "become,refuse"
+        text: "\n&b&lSky-Citizens &fare divided into two tribes: &o&nBirkan&f and &o&nShandian&f.\n\n&o&nShandians&f get:\n-Large Bonuses for &2Endurance &fand &6Accuracy&f.\n-&b&lSky-Citizen&f only skills\n\n&o&nBirkans&f get:\n-Large Bonuses for &2Endurance &fand &5Finesse&f.\n-&b&lSky-Citizen&f only skills\n\nBoth tribes have wings, with Birkan's being cosmetically larger, that allow them to not take fall damage.\n\nWould you like to become a &b&lSky-Citizen&f?"
+        pointers: "become_shandian,become_birkan,refuse"
+      shandian_confirm:
+        text: "\n&fAre you sure you want to become a &oShandian &b&lSky-Citizen&f?\n"
+        pointer: "set_shandian,refuse"
+      birkan_confirm:
+        text: "\n&fAre you sure you want to become a &oBirkan &b&lSky-Citizen&f?\n"
+        pointer: "set_birkan,refuse"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      become:
-        text: "Yes! I want to be a Cyborg!\n"
-        event: "pick_class_tp"
-  longLimb:
-    quester: "\n&d&l[Long-Limb]"
-    first: "desc,choose"
-    stop: 'true'
-    final_events: "chat_clear"
-    NPC_options:
-      desc:
-        text: "\n&fHey! I'm Scratchy Ape, a long-limb! Long-limbs are humans with longer arms or legs! Want to be one of us? You get:\n\n-Bonus dexterity\n-longer range\n-Long-limb only skills\n"
-        conditions: "!tag_talked_scratchy"
-        events: "talked_scratchy"
-        pointers: "plan,refuse"
-      choose:
-        text: "\n&fAre you sure you want to become a long-limb?\n"
-        pointers: "become,refuse"
-    player_options:
-      plan: 
-        text: "Sounds like a plan!\n"
-        pointer: "choose"
-      refuse:
-        text: "No thanks\n"
-      become:
-        text: "Yes! I want to be a long-limb!\n"
-        event: "pick_class_tp"
+      become_shandian:
+        text: "I want to be a &f&oShandian&3!\n"
+        pointer: "shandian_confirm"
+      become_birkan:
+        text: "I want to be a &f&oBirkan&3!\n"
+        pointer: "birkan_confirm"
+      set_birkan:
+        text: "Yes! I want to be a &f&oBirkan&3!\n"
+        event: "set_birkan,is_birkan,pick_class_tp"
+      set_shandian:
+        text: "Yes! I want to be a &f&oShandian&3!\n"
+        event: "set_shandian,is_shandian,pick_class_tp"
   human:
     quester: "\n&c&l[Human]"
     first: "desc,choose"
@@ -167,12 +189,12 @@ conversations:
     final_events: "chat_clear"
     NPC_options:
       desc:
-        text: "\n&fHey! I'm Sango, a human! Humans are beings with immense will! Want to be one of us? You get:\n\n-Bonus willpower\n-Bonus Endurance\n-Human only skills\n"
+        text: "\n&fHey! I'm Sango, a &c&lHuman&f! Want to be one of us?"
         conditions: "!tag_talked_sango"
         events: "talked_sango"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to become a human?\n"
+        text: "\n&c&lHumans &fare beings with good potential for everything!\n\n&c&lHumans&f get:\n\n-Small bonuses for:\n&aConstitution &fand &2Endurance&f,\n&dWillpower&fand Agility,\n&cStrength&f and &9Dexterity&f,\n&6Accuracy&f and &5Finesse\n&f-&c&lHuman&f only skills\n\n&fAre you sure you want to become a &c&lHuman&f?\n"
         pointers: "become,refuse"
     player_options:
       plan: 
@@ -181,8 +203,8 @@ conversations:
       refuse:
         text: "No thanks\n"
       become:
-        text: "Yes! I want to be a human!\n"
-        event: "pick_class_tp"
+        text: "Yes! I want to be a &c&lHuman&3!\n"
+        event: "pick_class_tp,is_human,set_human"
   mWeapon:
     quester: "\n&c&l[M. Weapon]"
     first: "desc,choose"
@@ -196,16 +218,16 @@ conversations:
         pointers: "plan,refuse"
       choose:
         text: "\n&fAre you sure you want to fight with a Melee Weapon?\n"
-        pointers: "becomeMarine,refuse"
+        pointers: "mwn_test,refuse"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      becomeMarine:
+      mwn_test:
         text: "Yes! I want to use a melee weapon!\n"
-        event: "test_scrapper"
+        event: "test_MWN"
   stringed:
     quester: "\n&a&l[Stringed]"
     first: "desc,choose"
@@ -219,15 +241,16 @@ conversations:
         pointers: "plan,refuse"
       choose:
         text: "\n&fAre you sure you want to fight with a Melee Weapon?\n"
-        pointers: "becomeMarine,refuse"
+        pointers: "swn_test,refuse"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      becomeMarine:
+      swn_test:
         text: "Yes! I want to use a stringed weapon!\n"
+        event: "test_SWN"
   guns:
     quester: "\n&b&l[Guns]"
     first: "desc,choose"
@@ -241,15 +264,16 @@ conversations:
         pointers: "plan,refuse"
       choose:
         text: "\n&fAre you sure you want to fight with guns?\n"
-        pointers: "becomeMarine,refuse"
+        pointers: "gn_test,refuse"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      becomeMarine:
+      gn_test:
         text: "Yes! I want to use guns!\n"
+        event: "test_GN"
   doctor:
     quester: "\n&d&l[Doctor]"
     first: "desc,choose"
@@ -262,16 +286,13 @@ conversations:
         events: "talked_lauh"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to fight with medical knowledge?\n"
-        pointers: "becomeMarine,refuse"
+        text: "\nSorry, you're not ready to become a doctor.\n"
     player_options:
       plan: 
         text: "Sounds like a plan!\n"
         pointer: "choose"
       refuse:
         text: "No thanks\n"
-      becomeMarine:
-        text: "Yes! I want to fight with medical knowledge!\n"  
   melee:
     quester: "\n&1&l[Melee]"
     first: "desc,choose"
@@ -297,33 +318,78 @@ conversations:
         event: "test_scrapper"
   god:
     quester: "\n&6&l[God]"
-    first: "marine,pirate,rev"
+    first: "fishman,merfolk,shandian,birkan,diurnal,nocturnal,human,no_weapon"
     stop: 'true'
     final_events: "chat_clear"
     NPC_options:
-      marine:
+      fishman:
         text: "\nWould you like to keep this class?"
-        conditions: "tag_is_marine"
-        pointers: "marine_yes,refuse"
+        conditions: "tag_is_fishman,has_weapon"
+        pointers: "keep,fishman_refuse"
+      merfolk:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_merfolk,has_weapon"
+        pointers: "keep,merfolk_refuse"
+      shandian:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_shandian,has_weapon"
+        pointers: "keep,shandian_refuse"
+      birkan:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_birkan,has_weapon"
+        pointers: "keep,birkan_refuse"
+      diurnal:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_diurnal,has_weapon"
+        pointers: "keep,diurnal_refuse"
+      nocturnal:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_nocturnal,has_weapon"
+        pointers: "keep,nocturnal_refuse"
+      human:
+        text: "\nWould you like to keep this class?"
+        conditions: "tag_is_human,has_weapon"
+        pointers: "keep,human_refuse"
+      no_weapon:
+        text: "\nPlease have your weapon in your inventory."
+        conditions: "!has_weapon"
       pirate:
-        text: "\nWould you like to keep this class?"
-        conditions: "tag_is_pirate"
-        pointers: "pirate_yes,refuse"
-      rev:
-        text: "\nWould you like to keep this class?"
-        conditions: "tag_is_rev"
-        pointers: "rev_yes,refuse"
+        text: "\nGood choice!,has_weapon"
+        condition: "tag_is_pirate"
+        event: "marine_start_folder"
+      marine:
+        text: "\nGood choice!"
+        condition: "tag_is_marine"
+        event: "marine_start_folder"
+      revarmy:
+        text: "\nGood choice!"
+        condition: "tag_is_rev"
+        event: "marine_start_folder"
     player_options:
-      marine_yes:
-        text: "I want this class!\n"
-        events: "marine_start_folder"
-      rev_yes:
-        text: "I want this class!\n"
-      pirate_yes:
-        text: "I want this class!\n"
-      refuse:
+      keep:
+        text: "I want this primary class!\n"
+        pointers: "marine,revarmy,pirate"
+      fishman_refuse:
         text: "No, I'd like to choose something else!"
-        events: "reset_class_choice"
+        events: "take_sword,take_pistol,take_bow,take_gloves,reset_class_choice,set_fishman"
+      merfolk_refuse:
+        text: "No, I'd like to choose something else!"
+        events: "take_sword,take_pistol,take_bow,take_gloves,reset_class_choice,set_merfolk"
+      shandian_refuse:
+        text: "No, I'd like to choose something else!"
+        events: "take_sword,take_pistol,take_bow,take_gloves,reset_class_choice,set_shandian"
+      birkan_refuse:
+        text: "No, I'd like to choose something else!"
+        events: "take_sword,take_pistol,take_bow,take_gloves,reset_class_choice,set_birkan"
+      diurnal_refuse:
+        text: "No, I'd like to choose something else!"
+        events: "take_sword,take_pistol,take_bow,take_gloves,reset_class_choice,set_diurnal"
+      nocturnal_refuse:
+        text: "No, I'd like to choose something else!"
+        events: "take_sword,take_pistol,take_bow,take_gloves,reset_class_choice,set_nocturnal"
+      human_refuse:
+        text: "No, I'd like to choose something else!"
+        events: "take_sword,take_pistol,take_bow,take_gloves,reset_class_choice,set_human"
   combat_guide:
     quester: "\n&6&l[God]"
     first: "like"

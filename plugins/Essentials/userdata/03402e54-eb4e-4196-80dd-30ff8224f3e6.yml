@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 76.132.67.36
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674268909938
+  login: 1674267728001
+money: '0'
+last-account-name: shrekyboy24
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: -15.833099555288511
+  y: 67.49390748022948
+  z: 690.0677493728595
+  yaw: -128.13427734375
+  pitch: 11.999905586242676

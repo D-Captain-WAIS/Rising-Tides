@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1670171002286
-  login: 1670170842739
+  logout: 1675866975776
+  login: 1675866814388
 money: '0'
 last-account-name: Kenneth2210
 logoutlocation:
   world: e80714c3-3001-48f0-978d-b9fcfc236840
   world-name: world
-  x: 66.72283383426154
+  x: 67.44509454795687
   y: 161.1875
-  z: -281.2481352998277
-  yaw: -161.8353271484375
-  pitch: 13.031546592712402
+  z: -281.53358796990244
+  yaw: -174.0238800048828
+  pitch: 36.307376861572266

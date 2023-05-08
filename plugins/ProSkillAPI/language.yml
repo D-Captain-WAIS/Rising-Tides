@@ -11,7 +11,7 @@
 Notifications: 
   cast: '&6{player} &2has cast &6{skill}'
   gain-exp: '&2You have gained &6{exp} experience'
-  gain-lvl: '&6Level Up! &2You are now a &6level {level} {class}'
+  gain-lvl: '&6Level Up! &2You are now &6level {level}'
   lose-exp: '&4You have lost &6{exp} {class} &4experience'
   lose-lvl: '&6Level down... &4You are now a &6level {level} {class}'
 Errors: 
@@ -24,7 +24,7 @@ GUI:
   attribute-title: 'Attributes ({points} points)'
   profess-title: 'Profess'
   skill-tree: ':offset_-8::skills:'
-  skill-class-list: '{player}'
+  skill-class-list: ':offset_-8::vivre:'
 Skill Tree: 
   title: ':offset_-8::vivre:'
   type: '&2Skill Type: &6{name}'

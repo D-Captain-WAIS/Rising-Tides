@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 84.71.32.133
+ip-address: 84.66.251.95
 afk: false
 socialspy: false
 npc: false
@@ -11,28 +11,28 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1670091603674
+  lastteleport: 1674847805907
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1670175723034
-  login: 1670164626930
+  logout: 1674851090342
+  login: 1674846896896
 money: '0'
 last-account-name: Conner_Redson
 lastlocation:
   world: e80714c3-3001-48f0-978d-b9fcfc236840
   world-name: world
-  x: 76.5
-  y: 160.0
-  z: -286.5
-  yaw: -138.46249389648438
-  pitch: 32.39653778076172
+  x: 65.06942377189618
+  y: 164.2098980101244
+  z: -295.5416575372999
+  yaw: -38.5631103515625
+  pitch: 9.596595764160156
 logoutlocation:
-  world: e80714c3-3001-48f0-978d-b9fcfc236840
-  world-name: world
-  x: 42.28792010225913
-  y: 160.0
-  z: -280.1973092770444
-  yaw: -179.41412353515625
-  pitch: 27.74425506591797
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: -91.57961496817596
+  y: 98.0
+  z: 339.8348885945184
+  yaw: -12.3619384765625
+  pitch: 16.047143936157227

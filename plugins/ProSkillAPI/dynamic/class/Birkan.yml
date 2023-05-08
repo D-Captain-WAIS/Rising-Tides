@@ -1,0 +1,41 @@
+Birkan: 
+  name: 'Birkan'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Birkan Anatomy'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&f&oBirkan'
+  exp-source: 16

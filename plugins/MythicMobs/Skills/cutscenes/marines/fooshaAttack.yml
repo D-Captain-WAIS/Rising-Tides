@@ -1,0 +1,40 @@
+fAttack_position1:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=557,65,-172}
+fAttack_position2:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=551,65,-169}
+fAttack_position3:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=555,65,-168}
+fAttack_position4:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=554,65,-165}
+fAttack_position5:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=559,65,-166}
+fAttack_position6:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=558,65,-163}
+fAttack_position7:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=557,65,-160}
+fAttack_position8:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=561,65,-163}
+fAttack_position9:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=560,65,-160}
+fAttack_position10:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=560,65,-156}
+fAttack_position11:
+  Skills:
+  - goto{speedModifier=1;sh=5;sv=5} @location{c=563,65,-159}
+fAttack_suicide:
+  Skills:
+  - delay 300
+  - teleportto{location=0,-150,200} @self
+ArmorStandVanish:  
+  Skills:
+  - effect:particles{particle=AreaEffectCloud;amount=5;yOffset=1;hS=0;vS=0;speed=0;size=0} @self

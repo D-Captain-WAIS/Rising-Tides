@@ -1,0 +1,117 @@
+Vital Shot: 
+  name: 'Vital Shot'
+  type: 'Dynamic'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '9'
+    cooldown-scale: '0.2'
+    mana-base: '40'
+    mana-scale: '5'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Add-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'readybleedproc'
+            amount-base: '1'
+            amount-scale: '0'
+          children:  {}
+        Value-c: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            key: 'readybleedproc'
+            min-value-base: '4'
+            min-value-scale: '0'
+            max-value-base: '999999999999999999999999999999999'
+            max-value-scale: '0'
+          children: 
+            Value Set-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'readybleedproc'
+                value-base: '3'
+                value-scale: '0'
+              children:  {}
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Add-f: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'readybleedproc'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}
+        Passive-g: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            seconds-base: '1'
+            seconds-scale: '0'
+          children:  {}
+        Value Set-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'subtractbleedproc'
+            value-base: '1'
+            value-scale: '0'
+          children:  {}
+        Value Multiply-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'subtractbleedproc'
+            multiplier-base: '-1'
+            multiplier-scale: '0'
+          children:  {}

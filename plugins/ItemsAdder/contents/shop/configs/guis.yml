@@ -1,0 +1,180 @@
+info:
+  namespace: shop
+font_images:
+  marine:
+    path: gui/marine
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  pirate:
+    path: gui/pirate
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  revarmy:
+    path: gui/rev_army
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  absolute:
+    path: gui/absolute
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  beastly:
+    path: gui/beastly
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  beauty:
+    path: gui/beauty
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  blind_luck:
+    path: gui/blind_luck
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  chaser:
+    path: gui/chaser
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  dreamer:
+    path: gui/dreamer
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  gothic:
+    path: gui/gothic
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  honorary:
+    path: gui/honorary
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  humming:
+    path: gui/humming
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  late_bloomer:
+    path: gui/late_bloomer
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  liar:
+    path: gui/liar
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  mom:
+    path: gui/mom
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  money_hungry:
+    path: gui/money_hungry
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  moss_head:
+    path: gui/moss_head
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  mr_nosebleed:
+    path: gui/mr_nosebleed
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  ms_nosebleed:
+    path: gui/ms_nosebleed
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  narcissist:
+    path: gui/narcissist
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  ocean_squire:
+    path: gui/ocean_squire
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  okama:
+    path: gui/okama
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  pigeon_fanatic:
+    path: gui/pigeon_fanatic
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  pops:
+    path: gui/pops
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  raccoon_dog:
+    path: gui/raccoon_dog
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  scholar:
+    path: gui/scholar
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  simpleton:
+    path: gui/simpleton
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  spades:
+    path: gui/spades
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  spoiled:
+    path: gui/spoiled
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  super:
+    path: gui/super
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  surgeon:
+    path: gui/surgeon
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  sweet_tooth:
+    path: gui/sweet_tooth
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  thrillseeker:
+    path: gui/thrillseeker
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  tyrant:
+    path: gui/tyrant
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  ensign:
+    path: gui/ensign
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+
+  

@@ -389,3 +389,11 @@ regions:
         owners: {}
         type: global
         priority: 0
+    charactercreation:
+        min: {x: -13, y: 137, z: -9}
+        max: {x: 13, y: 145, z: 7}
+        members: {}
+        flags: {keep-inventory: true}
+        owners: {}
+        type: cuboid
+        priority: 0

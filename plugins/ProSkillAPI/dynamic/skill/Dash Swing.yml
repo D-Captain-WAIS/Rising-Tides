@@ -10,16 +10,16 @@ Dash Swing:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '6'
-    cooldown-scale: '0'
-    mana-base: '5'
+    cooldown-base: '7'
+    cooldown-scale: '0.5'
+    mana-base: '9'
     mana-scale: '0'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -141,9 +141,28 @@ Dash Swing:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
-        Value Placeholder-k: 
+            Self-k: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-l: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '1'
+                    duration-scale: '0'
+                  children:  {}
+        Value Placeholder-m: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -153,7 +172,7 @@ Dash Swing:
             type: 'Number'
             placeholder: '%math_2+({sapi_player_class_attribute:agility}*0.02)%'
           children:  {}
-        Value Placeholder-l: 
+        Value Placeholder-n: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -163,7 +182,7 @@ Dash Swing:
             type: 'Number'
             placeholder: '%math_ 1+({sapi_player_class_attribute:agility}*0.01)%'
           children:  {}
-        Value Placeholder-m: 
+        Value Placeholder-o: 
           type: 'mechanic'
           indicator: 'None'
           data: 

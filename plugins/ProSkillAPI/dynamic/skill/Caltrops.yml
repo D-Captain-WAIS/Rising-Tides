@@ -1,0 +1,356 @@
+Caltrops: 
+  name: 'Caltrops'
+  type: 'Active'
+  max-level: 5
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '12'
+    cooldown-scale: '0.5'
+    mana-base: '25'
+    mana-scale: '4'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&5&oFinesse'
+  - ''
+  - '&a&oThese little spikes should make the'
+  - "&a&oenemies think about where they're stepping"
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote caltrops'
+                type: 'OP'
+              children:  {}
+            Delay-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.8'
+                delay-scale: '0'
+              children: 
+                Particle Projectile-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    gravity: '-0.05'
+                    pierce: 'False'
+                    group: 'Enemy'
+                    velocity-base: '2.5'
+                    velocity-scale: '0'
+                    lifespan-base: '5'
+                    lifespan-scale: '0'
+                    spread: 'Cone'
+                    amount-base: '1'
+                    amount-scale: '0'
+                    angle-base: '30'
+                    angle-scale: '0'
+                    forward-base: '1.5'
+                    forward-scale: '0'
+                    upward-base: '0.75'
+                    upward-scale: '0'
+                    right-base: '0'
+                    right-scale: '0'
+                    particle: 'Block dust'
+                    material: 'Netherite block'
+                    arrangement: 'Circle'
+                    direction: 'XZ'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '5'
+                    particles-scale: '0'
+                    visible-radius: '50'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    frequency: '0.05'
+                    use-effect: 'False'
+                  children: 
+                    Offset-f: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        forward-base: '0'
+                        forward-scale: '0'
+                        upward-base: '0'
+                        upward-scale: '0'
+                        right-base: '0'
+                        right-scale: '0'
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Repeat-g: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            repetitions-base: '16'
+                            repetitions-scale: '0'
+                            period: '0.5'
+                            delay: '0'
+                            stop-on-fail: 'False'
+                          children: 
+                            Particle-h: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                particle: 'Block dust'
+                                material: 'Netherite block'
+                                arrangement: 'Circle'
+                                direction: 'XZ'
+                                radius-base: '4'
+                                radius-scale: '0'
+                                particles-base: '35'
+                                particles-scale: '0'
+                                visible-radius: '25'
+                                dx: '0'
+                                dy: '0'
+                                dz: '0'
+                                amount: '2'
+                                speed: '0.1'
+                                forward: '0'
+                                upward: '0'
+                                right: '0'
+                              children:  {}
+                            Particle-i: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                particle: 'Block dust'
+                                material: 'Netherite block'
+                                arrangement: 'Circle'
+                                direction: 'XZ'
+                                radius-base: '3'
+                                radius-scale: '0'
+                                particles-base: '35'
+                                particles-scale: '0'
+                                visible-radius: '50'
+                                dx: '0'
+                                dy: '0'
+                                dz: '0'
+                                amount: '2'
+                                speed: '0.1'
+                                forward: '0'
+                                upward: '0'
+                                right: '0'
+                              children:  {}
+                            Particle-j: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                particle: 'Block dust'
+                                material: 'Netherite block'
+                                arrangement: 'Circle'
+                                direction: 'XZ'
+                                radius-base: '2'
+                                radius-scale: '0'
+                                particles-base: '35'
+                                particles-scale: '0'
+                                visible-radius: '50'
+                                dx: '0'
+                                dy: '0'
+                                dz: '0'
+                                amount: '2'
+                                speed: '0.1'
+                                forward: '0'
+                                upward: '0'
+                                right: '0'
+                              children:  {}
+                            Particle-k: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                particle: 'Block dust'
+                                material: 'Netherite block'
+                                arrangement: 'Circle'
+                                direction: 'XZ'
+                                radius-base: '1'
+                                radius-scale: '0'
+                                particles-base: '35'
+                                particles-scale: '0'
+                                visible-radius: '50'
+                                dx: '0'
+                                dy: '0'
+                                dz: '0'
+                                amount: '2'
+                                speed: '0.1'
+                                forward: '0'
+                                upward: '0'
+                                right: '0'
+                              children:  {}
+                            Area-l: 
+                              type: 'target'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                radius-base: '4'
+                                radius-scale: '0'
+                                group: 'Enemy'
+                                wall: 'False'
+                                caster: 'False'
+                                max-base: '99'
+                                max-scale: '0'
+                                random: 'False'
+                              children: 
+                                Flag-m: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    key: 'wounded'
+                                    seconds-base: '5'
+                                    seconds-scale: '0'
+                                  children:  {}
+                                Damage-n: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    type: 'Damage'
+                                    value-base: 'caltrops_dmg'
+                                    value-scale: '0'
+                                    true: 'False'
+                                    classifier: 'wounding'
+                                    knockback: 'False'
+                                    cause: 'Thorns'
+                                  children:  {}
+                                Potion-o: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    potion: 'Slow'
+                                    ambient: 'True'
+                                    tier-base: '2'
+                                    tier-scale: '0'
+                                    seconds-base: '1'
+                                    seconds-scale: '0'
+                                  children:  {}
+                                Damage-p: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    type: 'Damage'
+                                    value-base: 'caltrops_dmg'
+                                    value-scale: '0'
+                                    true: 'False'
+                                    classifier: 'impairing'
+                                    knockback: 'False'
+                                    cause: 'Entity Attack'
+                                  children:  {}
+                                Flag-q: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    key: 'impaired'
+                                    seconds-base: '5'
+                                    seconds-scale: '0'
+                                  children:  {}
+                                Launch-r: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    relative: 'Target'
+                                    forward-base: '0'
+                                    forward-scale: '0'
+                                    upward-base: '-2'
+                                    upward-scale: ' {}'
+                                    right-base: '0'
+                                    right-scale: '0'
+                                  children:  {}
+            Self-s: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-t: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '1'
+                    duration-scale: '0'
+                  children:  {}
+            Value Placeholder-u: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'caltrops_dmg'
+                type: 'Number'
+                placeholder: '%math_2+({sapi_player_class_attribute:finesse}*0.05)%'
+              children:  {}

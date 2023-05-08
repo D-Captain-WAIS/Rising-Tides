@@ -1,0 +1,5 @@
+TEST:
+  base:
+    material: BOW
+    custom-nbt:
+    - 'PublicBukkitValues {"prorpgitems:qrpg_item_skillapi_attr_strength": 8, "prorpgitems:qrpg_item_damage_physical": [B; 64B, 25B, -31B, 71B, -82B, 20B, 122B, -31B, 64B, 34B, -41B, 10B, 61B, 112B, -93B, -41B]}'

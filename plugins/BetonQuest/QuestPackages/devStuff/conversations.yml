@@ -5,13 +5,49 @@ conversations:
     NPC_options:
       choose:
         text: "&fWhat do you need?"
-        pointers: "class,points,dummies"
+        pointers: "class,race,points,dummies"
       class_select:
         text: "&fWhat about your class do you need?"
-        pointers: "scrapper,reset_class"
+        pointers: "scrapper,mwnewbie,gunnewbie,swnewbie,reset_class,give_vivre"
+      race_select:
+        text: "&fWhat race do you want to be?"
+        pointers: "human,fishman,merfolk,brikan,shandian,diurnal,nocturnal"
+      vivre:
+        text: "&fHere's a vivre card"
+        events: "give_vivre"
       set_scrapper:
         text: "&fYou are now a scrapper"
         events: "set_scrapper"
+      set_MWNewbie:
+        text: "&fYou are now a Melee Weapon Newbie"
+        events: "set_MWN"
+      set_GunNewbie:
+        text: "&fYou are now a Gun Newbie"
+        events: "set_GN"
+      set_SWNewbie:
+        text: "&fYou are now a Stringed Weapon Newbie"
+        events: "set_SWN"
+      set_human:
+        text: "&fYou are now a human"
+        events: "set_human"
+      set_fishman:
+        text: "&fYou are now a fishman"
+        events: "set_fishman"
+      set_merfolk:
+        text: "&fYou are now a merfolk"
+        events: "set_merfolk"
+      set_brikan:
+        text: "&fYou are now a brikan"
+        events: "set_brikan"
+      set_shandian:
+        text: "&fYou are now a shandian"
+        events: "set_shandian"
+      set_nocturnal:
+        text: "&fYou are now a nocturnal mink"
+        events: "set_nocturnal"
+      set_diurnal:
+        text: "&fYou are now a diurnal Mink"
+        events: "set_diurnal"
       class_reset:
         text: "&fYour class has been reset"
         events: "reset_class"
@@ -20,7 +56,7 @@ conversations:
         pointers: "exp,sp"
       exp_choose: 
         text: "&fHow much exp do you want?"
-        pointers: "100xp,500xp,1000xp,5000xp,10000xp"
+        pointers: "100xp,500xp,1000xp,5000xp,10000xp,50000xp,100000xp"
       100xp_confirm:
         text: "&fHere you go"
         events: "give_100xp"
@@ -36,6 +72,12 @@ conversations:
       10000xp_confirm:
         text: "&fHere you go"
         events: "give_10000xp"
+      50000xp_confirm:
+        text: "&fHere you go"
+        events: "give_50000xp"
+      100000xp_confirm:
+        text: "&fHere you go"
+        events: "give_100000xp"
       sp_choose:
         text: "&fHow many skill points do you want?"
         pointers: "1sp,5sp,10sp"
@@ -64,6 +106,9 @@ conversations:
       class:
         text: "I want to change my class"
         pointers: "class_select"
+      race:
+        text: "I want to change my race"
+        pointers: "race_select"
       points:
         text: "I want to give myself exp/points"
         pointers: "points_select"
@@ -73,6 +118,36 @@ conversations:
       scrapper:
         text: "I want to become a scrapper"
         pointers: "set_scrapper"
+      gunnewbie:
+        text: "I want to become a gun newbie"
+        pointers: "set_GunNewbie"
+      swnewbie:
+        text: "I want to become a stringed weapon newbie"
+        pointers: "set_SWNewbie"
+      mwnewbie:
+        text: "I want to become a melee weapon newbie"
+        pointers: "set_MWNewbie"
+      human:
+        text: "I want to be a human"
+        pointers: "set_human"
+      fishman:
+        text: "I want to be a fishman"
+        pointers: "set_fishman"
+      merfolk:
+        text: "I want to be a merfolk"
+        pointers: "set_merfolk"
+      brikan:
+        text: "I want to be a brikan"
+        pointers: "set_brikan"
+      shandian:
+        text: "I want to be a shandian"
+        pointers: "set_shandian"
+      nocturnal:
+        text: "I want to be a nocturnal mink"
+        pointers: "set_nocturnal"
+      diurnal:
+        text: "I want to be a diurnal mink"
+        pointers: "set_diurnal"
       reset_class:
         text: "I want to reset my class"
         pointers: "class_reset"
@@ -97,6 +172,12 @@ conversations:
       10000xp:
         text: "10000xp"
         pointers: "10000xp_confirm"
+      50000xp:
+        text: "50000xp"
+        pointers: "50000xp_confirm"
+      100000xp:
+        text: "100000xp"
+        pointers: "100000xp_confirm"
       1sp:
         text: "1sp"
         pointers: "1sp_confirm"
@@ -115,3 +196,6 @@ conversations:
       reset_all:
         text: "I want to reset all the dummies"
         pointers: "reset_all_confirm"
+      give_vivre:
+        text: "I want a vivre card"
+        pointers: "vivre" 

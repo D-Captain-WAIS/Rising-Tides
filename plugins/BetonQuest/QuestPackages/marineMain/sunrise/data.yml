@@ -10,23 +10,38 @@ events:
     talked_jai: "tag add talked_jai"
     talked_gil: "tag add talked_gil"
   #trigger cutscene and instance
-    freeze_cut: "freeze 100"
-    combatTut: "command cinematic play marineCombatTut %player%"
-    play_combatTut: "folder freeze_cut,combatTut period:5"
-    stop_cut: "command cinematic stop %player%"
+    combatTut: "command pcam startother %player% marineFooshaAttack"
+    combatTutSpawns: "folder spawnSwordBandit1,spawnSwordBandit2,spawnSwordBandit3,spawnSwordBandit4,spawnMeleeBandit1,spawnMeleeBandit2,spawnMeleeBandit3,spawnMeleeBandit4,spawnPistolBandit1,spawnPistolBandit2,spawnPistolBandit3"
+    combatTutStay: "command pcam startother %player% marineFooshaAttackEnd"
+    play_combatTut: "folder combatTut,combatTutSpawns,combatTutStay period:5"
+    stop_cut: "opsudo pcam stop"
     enter_combat: "command md play marineCombatTut %player%"
-    folder_combat: "folder stop_cut,enter_combat,stop_bandits,add_hud delay:20 period:0.5"
+    folder_combat: "folder stop_cut,enter_combat,stop_bandits,add_hud delay:15 period:0.5"
     stop_bandits: "folder notify_stop_bandits delay:1.5"
     add_stopped_raid: "objective add stopped_raid"
+    give_test: "give quest_available"
+  #cutscene assets
+    spawnSwordBandit1: mspawnmob 518;80;-145;dawn_island cutscene_swordBandit1:1 1 private
+    spawnSwordBandit2: mspawnmob 518;80;-145;dawn_island cutscene_swordBandit2:1 1 private
+    spawnSwordBandit3: mspawnmob 518;80;-145;dawn_island cutscene_swordBandit3:1 1 private
+    spawnSwordBandit4: mspawnmob 518;80;-145;dawn_island cutscene_swordBandit4:1 1 private
+    spawnMeleeBandit1: mspawnmob 518;80;-145;dawn_island cutscene_meleeBandit1:1 1 private
+    spawnMeleeBandit2: mspawnmob 518;80;-145;dawn_island cutscene_meleeBandit2:1 1 private
+    spawnMeleeBandit3: mspawnmob 518;80;-145;dawn_island cutscene_meleeBandit3:1 1 private
+    spawnMeleeBandit4: mspawnmob 518;80;-145;dawn_island cutscene_meleeBandit4:1 1 private
+    spawnPistolBandit1: mspawnmob 518;80;-145;dawn_island cutscene_pistolBandit1:1 1 private
+    spawnPistolBandit2: mspawnmob 518;80;-145;dawn_island cutscene_pistolBandit2:1 1 private
+    spawnPistolBandit3: mspawnmob 518;80;-145;dawn_island cutscene_pistolBandit3:1 1 private
   #instance rewards
     raid_reward1: "command class exp %player% 25"
     raid_reward2: "command iagive %player% utilities:vivre"
     raid_reward3a: "command wraps give wrapper rusty_cutlass %player%"
     raid_reward3b: "command wraps give wrapper rusty_pistol %player%"
     raid_reward3c: "command wraps give wrapper mountain_wraps %player%"
+    raid_reward4a: "command itemgen give %player% rustycutlass"
     raid_reward4c: "command itemgen give %player% mountainwraps"
     raid_rewards_scrapper: "folder raid_reward3c,raid_reward4c"
-    raid_rewards_mwn: "folder raid_reward3a"
+    raid_rewards_mwn: "folder raid_reward3a,raid_reward4a"
     if_scrapper: "if class_scrapper raid_rewards_scrapper else if_mwn"
     if_mwn: "if class_mwn raid_rewards_mwn else notify_error"
     raid_rewards: "folder raid_reward1,raid_reward2,if_scrapper delay:1"
@@ -63,7 +78,7 @@ events:
     notify_then_open: "notify &6&oThen, open your vivre card and navigate to the chassis system menu!"
     notify_just_click: "notify &6&oAfter which, just navigate to the menu of the island you gained the chassis from, then click on the &9&l[Armor Chassis]&6&o to apply it!"
     chassis_guide: "folder notify_chassis,notify_will,notify_weapon,notify_useweapon,notify_careful,notify_chassis_remove,notify_armor,notify_get_armor,notify_then_open,notify_just_click delay:3 period:7"
-
+  
 objectives:
   stopped_raid: "finishdungeon marineCombatTut events:notify_thanks,raid_rewards,ask_vivre"
 
@@ -80,57 +95,57 @@ conditions:
   class_mwn: "skillapiclass mwnewbie"
 
 items:
-  quest_available: "GOLD_INGOT custom-model-data:33"
-  quest_ongoing: "IRON_INGOT custom-model-data:63"
-  quest_objective: "GOLD_INGOT custom-model-data:63"
-  quest_complete: "IRON_INGOT custom-model-data:33"
+  quest_available: PAPER custom-model-data:10039 #ICON: PAPER {CustomModelData:10039}
+  quest_ongoing: PAPER custom-model-data:10040 #ICON: PAPER:10040
+  quest_objective: PAPER custom-model-data:10038 #ICON: PAPER {CustomModelData:10038}
+  quest_complete: PAPER custom-model-data:10041 #ICON: PAPER:10041
 
 npc_holograms:
   quest_available:
     lines:
-      - "item:quest_available"
+      - "#ICON: PAPER {CustomModelData:10039}"
     conditions: "tag_first_arrival"
     check_interval: 20
     npcs:
     - 28
   quest_ongoing:
     lines:
-      - "item:quest_ongoing"
+      - "#ICON: PAPER {CustomModelData:10039}"
     conditions: "tag_investigation"
     check_interval: 20
     npcs:
     - 29
   objective_tatianna:
     lines:
-      - "item:quest_objective"
+      - "#ICON: PAPER {CustomModelData:10038}"
     conditions: "!tag_tatianna"
     check_interval: 20
     npcs:
     - 30
   objective_nowell:
     lines:
-      - "item:quest_objective"
+      - "#ICON: PAPER {CustomModelData:10038}"
     conditions: "!tag_nowell"
     check_interval: 20
     npcs:
     - 32
   objective_parry:
     lines:
-      - "item:quest_objective"
+      - "#ICON: PAPER {CustomModelData:10038}"
     conditions: "!tag_parry"
     check_interval: 20
     npcs:
     - 34
   objective_jai:
     lines:
-      - "item:quest_objective"
+      - "#ICON: PAPER {CustomModelData:10038}"
     conditions: "!tag_jai"
     check_interval: 20
     npcs:
     - 36
   objective_gil:
     lines:
-      - "item:quest_objective"
+      - "#ICON: PAPER {CustomModelData:10038}"
     conditions: "!tag_gil"
     check_interval: 20
     npcs:

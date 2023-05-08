@@ -36,8 +36,8 @@ swordBanditA:
   - players
   - attacker
   Skills:
-  - model{m=melee_weapon_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
-  - setitemmodel{m=melee_weapon_bandit_a;b=held;i=rusty_cutlass} @self ~onSpawn
+  - model{m=sword_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=sword_bandit_a;b=held;i=rusty_cutlass} @self ~onSpawn
   - randomskill{s=HardSwing,DoubleSwing} @target ~onAttack
 pistolBanditA:  
   Type: WITHER_SKELETON

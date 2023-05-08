@@ -10,9 +10,9 @@ Skedaddle:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '7'
+    cooldown-base: '8'
     cooldown-scale: '0'
-    mana-base: '4'
+    mana-base: '8'
     mana-scale: '0'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
@@ -23,9 +23,9 @@ Skedaddle:
   icon-data: 10004
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&9&l{name} '
   - ''
-  - '&6&oStat scale:'
+  - '&f&oStat scale:'
   - '&f&oAgility'
   - ''
   - "&9&oI'll expend some stamina to increase my leg power!"

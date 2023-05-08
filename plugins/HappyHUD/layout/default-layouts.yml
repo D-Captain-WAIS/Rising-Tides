@@ -1,42 +1,14 @@
 default-layout:
   elements:
-    health:
-      asset: 'vanilla-health'
-      align: left
+    hotbar:
+      asset: 'hotbar-trim'
+      align: center
       position:
-        x: 50.0
+        x: 50.1
+        y: 4.4
+      offset:
+        x: 1
         y: 0
-      offset:
-        x: -10
-        y: 55
-    food:
-      type: 'asset'
-      asset: 'vanilla-hunger'
-      align: right
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: 10
-        y: 55
-    armor:
-      asset: 'vanilla-armor'
-      align: left
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: -10
-        y: 65
-    air:
-      asset: 'vanilla-air'
-      align: right
-      position:
-        x: 50.0
-        y: 0.0
-      offset:
-        x: 10
-        y: 65
 sword-layout:
   elements:
     sword:

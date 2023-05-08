@@ -1,0 +1,206 @@
+Diurnal Mink Anatomy: 
+  name: 'Diurnal Mink Anatomy'
+  type: 'Passive'
+  max-level: 1
+  skill-req-lvl: 0
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '0'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&d&lMink Anatomy'
+  - ''
+  - '&d&oMy &e&l&oDiurnal &d&l&oMink &d&olineage means I have'
+  - '&f&obetter movement &d&oand am more adept &9&owith my hands'
+  - '&d&othan most races.'
+  - ''
+  - '&d&oI also can &d&o&ndeal more '
+  - '&d&o&ndamage &d&oin the &e&o&ndaytime&d&o.'
+  - ''
+  - '&6&o+5% &f&oAgility'
+  - '&6&o+5% &9&oDexterity'
+  - '&6&o+4 in &f&oAgility &6&oevery 5 levels'
+  - '&6&o+4 in &9&oDexterity &6&oevery 5 levels'
+  desc:  []
+  components: 
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Passive-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            seconds-base: '1'
+            seconds-scale: '0'
+          children: 
+            Attribute-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'agility'
+                operation: 'ADD_NUMBER'
+                amount-base: 'agility_bonus'
+                amount-scale: '0'
+                seconds-base: '1'
+                seconds-scale: '0'
+                stackable: 'True'
+              children:  {}
+            Attribute-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'dexterity'
+                operation: 'ADD_NUMBER'
+                amount-base: 'dexterity_bonus'
+                amount-scale: '0'
+                seconds-base: '1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Value Placeholder-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'agility_bonus'
+                type: 'Number'
+                placeholder: '%math_{sapi_player_class_attribute:agility}*0.05%'
+              children:  {}
+            Value Placeholder-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'dexterity_bonus'
+                type: 'Number'
+                placeholder: '%math_{sapi_player_class_attribute:dexterity}*0.05%'
+              children:  {}
+            Value Placeholder-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'lvlover5'
+                type: 'Number'
+                placeholder: '%math_0:DOWN_{sapi_default_currentlevel}/5%'
+              children:  {}
+            Value Set-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: '5lv_bonus'
+                value-base: '4'
+                value-scale: '0'
+              children:  {}
+            Value Multiply-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: '5lv_bonus'
+                multiplier-base: 'lvlover5'
+                multiplier-scale: '0'
+              children:  {}
+            Attribute-j: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'agility'
+                operation: 'ADD_NUMBER'
+                amount-base: '5lv_bonus'
+                amount-scale: '0'
+                seconds-base: '1.1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Attribute-k: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'dexterity'
+                operation: 'ADD_NUMBER'
+                amount-base: '5lv_bonus'
+                amount-scale: '0'
+                seconds-base: '1.1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Time-l: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                time: 'Day'
+              children: 
+                Buff-m: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    immediate: 'False'
+                    type: 'SKILL_DAMAGE'
+                    modifier: 'Multiplier'
+                    category: ''
+                    value-base: '1.2'
+                    value-scale: '0'
+                    seconds-base: '1.1'
+                    seconds-scale: '0'
+                  children:  {}
+                Buff-n: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    immediate: 'False'
+                    type: 'DAMAGE'
+                    modifier: 'Multiplier'
+                    value-base: '1.2'
+                    value-scale: '0'
+                    seconds-base: '1.1'
+                    seconds-scale: '0'
+                  children:  {}
+        Command-o: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            command: 'speed 3'
+            type: 'OP'
+          children:  {}

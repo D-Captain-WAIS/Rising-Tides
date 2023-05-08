@@ -2,7 +2,7 @@ cfg_version: 1.0
 command-aliases: combatlog
 general:
   logging:
-    enabled: true
+    enabled: false
     max-amount: 5
     format:
       time: 'HH:mm'
@@ -36,38 +36,38 @@ general:
         weapon:
           name: '&d&l[Weapon]'
 messages:
-  ignore-zero-damage: false
+  ignore-zero-damage: true
   types:
     NORMAL:
-      enabled: true
+      enabled: false
       messages:
         damager: '&e*** You dealt &7%damage% &edamage to &7%entity%&e. ***'
         victim: '&c*** &7%entity% &cdealt &7%damage% &cdamage to you. ***'
         indicator: ''
       sound: NONE
     CRITICAL:
-      enabled: true
+      enabled: false
       messages:
         damager: '&e*** &lCritical! &eYou dealt &7%damage% &edamage to &7%entity%&e. ***'
         victim: '&d*** &lCritical! &7%entity% &ddealt &7%damage% &ddamage to you. ***'
         indicator: '&8[&c&lCritical!&8]'
       sound: ENTITY_GENERIC_EXPLODE
     DODGE:
-      enabled: true
+      enabled: false
       messages:
         damager: '&6*** &7%entity% &6has dodged your attack! ***'
         victim: '&6*** You has dodged &7%entity% &6attack! ***'
         indicator: '&8[&b&lDodge!&8]'
       sound: BLOCK_SNOW_FALL
     BLOCK:
-      enabled: true
+      enabled: false
       messages:
         damager: '&6*** &7%entity% &6has blocked &7%block%% &6of your attack! Total damage: &7%damage% &6***'
         victim: '&6*** You blocked &7%block%% &6of &7%entity% &6attack! Total damage: &7%damage% &6***'
         indicator: '&8[&e&lBlocked!&8]'
       sound: BLOCK_ANVIL_PLACE
 indicators:
-  enabled: true
+  enabled: false
   format:
     order:
     - '%critical%'

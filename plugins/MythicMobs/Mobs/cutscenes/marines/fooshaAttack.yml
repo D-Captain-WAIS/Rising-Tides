@@ -1,0 +1,219 @@
+cutscene_swordBandit1:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Sword Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=sword_bandit_a;step=1;mode=walk;} @self ~onSpawn
+  - setitemmodel{m=sword_bandit_a;b=held;i=rusty_cutlass} @self ~onSpawn
+  - skill{s=fAttack_position1} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_pistolBandit1:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Pistol Bandit]'
+  Health: 30
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=gun_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=gun_bandit_a;b=held;i=rusty_pistol} @self ~onSpawn
+  - skill{s=fAttack_position2} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_meleeBandit1:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Melee Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=melee_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - skill{s=fAttack_position3} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_swordBandit2:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Sword Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=sword_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=sword_bandit_a;b=held;i=rusty_cutlass} @self ~onSpawn
+  - skill{s=fAttack_position4} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_pistolBandit2:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Pistol Bandit]'
+  Health: 30
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=gun_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=gun_bandit_a;b=held;i=rusty_pistol} @self ~onSpawn
+  - skill{s=fAttack_position5} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_meleeBandit2:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Melee Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=melee_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - skill{s=fAttack_position6} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_swordBandit3:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Sword Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=sword_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=sword_bandit_a;b=held;i=rusty_cutlass} @self ~onSpawn
+  - skill{s=fAttack_position7} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_pistolBandit3:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Pistol Bandit]'
+  Health: 30
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=gun_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=gun_bandit_a;b=held;i=rusty_pistol} @self ~onSpawn
+  - skill{s=fAttack_position8} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_meleeBandit3:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Melee Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=melee_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - skill{s=fAttack_position9} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_swordBandit4:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Sword Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=sword_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - setitemmodel{m=sword_bandit_a;b=held;i=rusty_cutlass} @self ~onSpawn
+  - skill{s=fAttack_position10} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn
+cutscene_meleeBandit4:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Melee Bandit]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.38
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=melee_bandit_a;step=1;mode=walk;n=tag_name} @self ~onSpawn
+  - skill{s=fAttack_position11} @self ~onTimer:1
+  - skill{s=fAttack_suicide} @Self ~onSpawn

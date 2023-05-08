@@ -11,26 +11,26 @@ Scrapper:
   attributes: 
     health-base: '50'
     health-scale: '5'
-    mana-base: '20'
+    mana-base: '30'
     mana-scale: '2'
     constitution-base: '0'
-    constitution-scale: '0'
+    constitution-scale: '1'
     willpower-base: '0'
-    willpower-scale: '0'
+    willpower-scale: '1'
     agility-base: '0'
-    agility-scale: '0'
+    agility-scale: '1'
     dexterity-base: '0'
-    dexterity-scale: '0'
+    dexterity-scale: '1'
     strength-base: '0'
-    strength-scale: '0'
+    strength-scale: '1'
     accuracy-base: '0'
-    accuracy-scale: '0'
+    accuracy-scale: '1'
     endurance-base: '0'
-    endurance-scale: '0'
+    endurance-scale: '1'
     finesse-base: '0'
-    finesse-scale: '0'
+    finesse-scale: '1'
   mana-regen: 1.0
-  tree: 'BASIC_VERTICAL'
+  skill-tree: 'CUSTOM'
   blacklist:  []
   skills: 
   - 'Hard Punch'
@@ -45,11 +45,16 @@ Scrapper:
   - 'Low Kick'
   - 'Get Out Of The Way'
   - 'Chaaaaaarge'
+  - 'regen'
+  - 'Status Effects'
+  - 'wounded'
+  - 'impaired'
+  - 'vulnerable'
   icon: 'YELLOW_DYE'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
-  - '&dI like fighting with my hands and feet.'
+  - '&9&oBrawler Newbie'
   exp-source: 16
 Melee Weapon Newbie: 
   name: 'Melee Weapon Newbie'
@@ -124,8 +129,8 @@ MWNewbie:
     endurance-scale: '1'
     finesse-base: '0'
     finesse-scale: '1'
-  mana-regen: 2.0
-  tree: 'BASIC_VERTICAL'
+  mana-regen: 1.0
+  skill-tree: 'CUSTOM'
   blacklist:  []
   skills: 
   - 'Hilt Strike'
@@ -140,9 +145,456 @@ MWNewbie:
   - 'Poke'
   - 'Weeeee'
   - 'Jump Attack'
+  - 'regen'
+  - 'Status Effects'
+  - 'wounded'
+  - 'impaired'
+  - 'vulnerable'
   icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
-  - '&dClass 1'
+  - '&c&oMelee Weapon Newbie'
+  exp-source: 16
+GunNewbie: 
+  name: 'GunNewbie'
+  action-bar: ''
+  prefix: ''
+  group: 'class'
+  mana: '&2Stamina'
+  max-level: 1000
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '50'
+    health-scale: '5'
+    mana-base: '30'
+    mana-scale: '2'
+    constitution-base: '0'
+    constitution-scale: '1'
+    willpower-base: '0'
+    willpower-scale: '1'
+    agility-base: '0'
+    agility-scale: '1'
+    dexterity-base: '0'
+    dexterity-scale: '1'
+    strength-base: '0'
+    strength-scale: '1'
+    accuracy-base: '0'
+    accuracy-scale: '1'
+    endurance-base: '0'
+    endurance-scale: '1'
+    finesse-base: '0'
+    finesse-scale: '1'
+  mana-regen: 1.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'regen'
+  - 'Critical Shot'
+  - 'Double Tap'
+  - 'Impairing Shot'
+  - 'Blunder Leap'
+  - 'Pistol Whip'
+  - 'Chamber Blast'
+  - 'Spray and Pray'
+  - 'Tactical Dive'
+  - 'RUN'
+  - 'Dive Shot'
+  - 'Fast Hands'
+  - 'Vital Shot'
+  - 'Status Effects'
+  - 'wounded'
+  - 'impaired'
+  - 'vulnerable'
+  icon: 'YELLOW_DYE'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&b&oGun Newbie'
+  exp-source: 16
+SWNewbie: 
+  name: 'SWNewbie'
+  action-bar: ''
+  prefix: ''
+  group: 'class'
+  mana: '&2Stamina'
+  max-level: 1000
+  parent: ''
+  needs-permission: 'true'
+  attributes: 
+    health-base: '50'
+    health-scale: '5'
+    mana-base: '30'
+    mana-scale: '2'
+    constitution-base: '0'
+    constitution-scale: '1'
+    willpower-base: '0'
+    willpower-scale: '1'
+    agility-base: '0'
+    agility-scale: '1'
+    dexterity-base: '0'
+    dexterity-scale: '1'
+    strength-base: '0'
+    strength-scale: '1'
+    accuracy-base: '0'
+    accuracy-scale: '1'
+    endurance-base: '0'
+    endurance-scale: '1'
+    finesse-base: '0'
+    finesse-scale: '1'
+  mana-regen: 1.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'regen'
+  - 'wounded'
+  - 'impaired'
+  - 'Special Volley'
+  - 'Firecracker Star'
+  - 'Status Effects'
+  - 'Arcing Projectile'
+  - 'Slip-up'
+  - 'Bola Shot'
+  - 'Dirt Star'
+  - 'Fire Starter'
+  - 'Bounce Shot'
+  - 'Multishot Star'
+  - 'Catapult'
+  - 'Caltrops'
+  - 'The Look Away'
+  - 'vulnerable'
+  icon: 'YELLOW_DYE'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&oStringed Weapon Newbie'
+  exp-source: 16
+Fishman: 
+  name: 'Fishman'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Fishman Anatomy'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&oFishman'
+  exp-source: 16
+Human: 
+  name: 'Human'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Human Anatomy'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&c&oHuman'
+  exp-source: 16
+Merfolk: 
+  name: 'Merfolk'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Merfolk Anatomy'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&9&oMerfolk'
+  exp-source: 16
+Brikan: 
+  name: 'Brikan'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: '9999'
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: '0.0'
+  skill-tree: 'CUSTOM'
+  blacklist: ' []'
+  skills: 
+  - 'Brikan Anatomy'
+  icon: 'ACACIA_BOAT'
+  icon-data: '0'
+  icon-durability: '0'
+  icon-lore: 
+  - '&f&oBrikan'
+  exp-source: '16'
+Shandian: 
+  name: 'Shandian'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Shandian Anatomy'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&f&oShandian'
+  exp-source: 16
+DMink: 
+  name: 'DMink'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Diurnal Mink Anatomy'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&e&oDiurnal &d&oMink'
+  exp-source: 16
+NMink: 
+  name: 'NMink'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Nocturnal Mink Anatomy'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&b&oNocturnal &d&oMink'
+  exp-source: 16
+Birkan: 
+  name: 'Birkan'
+  action-bar: ''
+  prefix: ''
+  group: 'race'
+  mana: 'Stamina'
+  max-level: 9999
+  parent: ''
+  needs-permission: 'false'
+  attributes: 
+    health-base: '0'
+    health-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    constitution-base: '0'
+    constitution-scale: '0'
+    willpower-base: '0'
+    willpower-scale: '0'
+    agility-base: '0'
+    agility-scale: '0'
+    dexterity-base: '0'
+    dexterity-scale: '0'
+    strength-base: '0'
+    strength-scale: '0'
+    accuracy-base: '0'
+    accuracy-scale: '0'
+    endurance-base: '0'
+    endurance-scale: '0'
+    finesse-base: '0'
+    finesse-scale: '0'
+  mana-regen: 0.0
+  skill-tree: 'CUSTOM'
+  blacklist:  []
+  skills: 
+  - 'Birkan Anatomy'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&f&oBirkan'
   exp-source: 16

@@ -10,16 +10,16 @@ Weeeee:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '10'
-    cooldown-scale: '0'
-    mana-base: '12'
-    mana-scale: '0'
+    cooldown-base: '11'
+    cooldown-scale: '0.2'
+    mana-base: '55'
+    mana-scale: '4'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -69,7 +69,7 @@ Weeeee:
               data: 
                 icon-key: ''
                 counts: 'True'
-                delay-base: '.6'
+                delay-base: '0.6'
                 delay-scale: '0'
               children: 
                 Area-e: 
@@ -98,7 +98,7 @@ Weeeee:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                     Push-g: 
                       type: 'mechanic'
@@ -127,7 +127,7 @@ Weeeee:
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '.3'
+                    delay-base: '0.3'
                     delay-scale: '0'
                   children: 
                     Area-j: 
@@ -156,7 +156,7 @@ Weeeee:
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Custom'
+                            cause: 'Entity Attack'
                           children:  {}
                         Push-l: 
                           type: 'mechanic'
@@ -175,7 +175,7 @@ Weeeee:
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        delay-base: '.4'
+                        delay-base: '0.4'
                         delay-scale: '0'
                       children: 
                         Area-n: 
@@ -204,9 +204,28 @@ Weeeee:
                                 true: 'False'
                                 classifier: 'default'
                                 knockback: 'True'
-                                cause: 'Custom'
+                                cause: 'Entity Attack'
                               children:  {}
-        Value Placeholder-p: 
+            Self-p: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-q: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '0.75'
+                    duration-scale: '0'
+                  children:  {}
+        Value Placeholder-r: 
           type: 'mechanic'
           indicator: 'None'
           data: 

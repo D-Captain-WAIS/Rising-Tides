@@ -1,0 +1,28 @@
+purple_scarf:
+  slot: BACKPACK
+  permission: "shop.purplescarf"
+  item:
+    material: itemsadder:shop:purple_scarf
+    name: "<purple>Purple Scarf<purple>"
+    amount: 1
+hat_mask:
+  slot: HELMET
+  permission: "shop.hatmask"
+  item:
+    material: itemsadder:shop:hat_mask
+    name: "<gold>Hat w/ Mask<gold>"
+    amount: 1
+cap_hat:
+  slot: HELMET
+  permission: "admin.caphat"
+  item:
+    material: itemsadder:shop:cap_hat
+    name: "<gold>Cap's Hat<gold>"
+    amount: 1
+cap_coat:
+  slot: BACKPACK
+  permission: "admin.caphat"
+  item:
+    material: itemsadder:shop:cap_coat
+    name: "<gold>Cap's Coat<gold>"
+    amount: 1

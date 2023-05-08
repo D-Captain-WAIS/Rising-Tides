@@ -11,16 +11,16 @@ Charged Attack:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '8'
-    cooldown-scale: '0'
-    mana-base: '10'
-    mana-scale: '0'
+    cooldown-base: '9'
+    cooldown-scale: '0.2'
+    mana-base: '55'
+    mana-scale: '2'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -100,7 +100,26 @@ Charged Attack:
                 command: 'iaemote charged_attack'
                 type: 'OP'
               children:  {}
-        Value Placeholder-g: 
+            Self-g: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '1.4'
+                    duration-scale: '0'
+                  children:  {}
+        Value Placeholder-i: 
           type: 'mechanic'
           indicator: 'None'
           data: 

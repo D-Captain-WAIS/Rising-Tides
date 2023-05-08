@@ -1,0 +1,60 @@
+info:
+  namespace: utilities
+items:
+  bola:
+    display_name: "bola"
+    permission: extras.bola
+    resource:
+      material: GOLD_NUGGET
+      generate: false
+      model_path: item/bola
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bottle:
+    display_name: "bottle"
+    permission: extras.bottle
+    resource:
+      material: GOLD_NUGGET
+      generate: false
+      model_path: item/oil_bottle
+    item_flags:
+    - HIDE_ATTRIBUTES
+  capsento:
+    display_name: "capsento"
+    permission: extras.capsento
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/murakumogiri
+  gold_question_mark:
+    display_name: "Gold Question Mark"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/gold_question_mark.png
+  gold_exclamation_mark:
+    display_name: "Gold Exclamation Mark"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/gold_exclamation_mark.png
+  iron_question_mark:
+    display_name: "Iron Question Mark"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/iron_question_mark.png
+  iron_exclamation_mark:
+    display_name: "Iron Exclamation Mark"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/iron_exclamation_mark.png
+
+
+
+      

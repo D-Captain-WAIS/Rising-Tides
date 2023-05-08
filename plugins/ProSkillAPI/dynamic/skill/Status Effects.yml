@@ -1,0 +1,945 @@
+Status Effects: 
+  name: 'Status Effects'
+  type: 'Dynamic'
+  max-level: 1
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '0'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Took Skill Damage-kc: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+        mana: 'False'
+        cooldown: 'False'
+        target: 'True'
+        dmg-min: '0'
+        dmg-max: '99999999999'
+        category: 
+        - 'explosive'
+      children: 
+        Flag-lc: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            type: 'Set'
+            key: 'ignited'
+          children: 
+            Value-mc: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                key: 'ignitestacks'
+                min-value-base: '1'
+                min-value-scale: '0'
+                max-value-base: '1'
+                max-value-scale: '0'
+              children: 
+                Flag-nc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'burning1'
+                    seconds-base: '10'
+                    seconds-scale: '0'
+                  children:  {}
+                Flag Clear-oc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'ignited'
+                  children:  {}
+            Value-pc: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                key: 'ignitestacks'
+                min-value-base: '2'
+                min-value-scale: '0'
+                max-value-base: '2'
+                max-value-scale: '0'
+              children: 
+                Flag-qc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'burning2'
+                    seconds-base: '10'
+                    seconds-scale: '0'
+                  children:  {}
+                Flag Clear-rc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'ignited'
+                  children:  {}
+            Value-sc: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                key: 'ignitestacks'
+                min-value-base: '3'
+                min-value-scale: '0'
+                max-value-base: '3'
+                max-value-scale: '0'
+              children: 
+                Flag-tc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'burning3'
+                    seconds-base: '10'
+                    seconds-scale: '0'
+                  children:  {}
+                Flag Clear-uc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'ignited'
+                  children:  {}
+        Value Set-vc: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'burn_dmg'
+            value-base: 'api-taken'
+            value-scale: '0'
+          children:  {}
+        Value Multiply-wc: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'burn_dmg'
+            multiplier-base: '0.2'
+            multiplier-scale: '0'
+          children:  {}
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Passive-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            seconds-base: '1'
+            seconds-scale: '0'
+          children: 
+            Flag-c: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'Bleed'
+              children: 
+                Damage-d: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Multiplier'
+                    value-base: '0.5'
+                    value-scale: '0'
+                    true: 'False'
+                    classifier: 'bleed'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Particle-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Redstone'
+                    dust-color: '#FF0000'
+                    dust-size: '1'
+                    arrangement: 'Sphere'
+                    radius-base: '0.25'
+                    radius-scale: '0'
+                    particles-base: '8'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '1'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0.75'
+                    right: '0'
+                  children:  {}
+            Flag-f: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Not Set'
+                key: 'ignited'
+              children: 
+                Value Set-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'ignitestacks'
+                    value-base: '0'
+                    value-scale: '0'
+                  children:  {}
+            Flag-h: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'burning1'
+              children: 
+                Damage-i: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'burn_dmg'
+                    value-scale: '0'
+                    true: 'False'
+                    classifier: 'burn'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Particle-j: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Small flame'
+                    arrangement: 'Sphere'
+                    radius-base: '0'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0'
+                    right: '0'
+                  children:  {}
+            Flag-k: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'burning2'
+              children: 
+                Damage-l: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 'burn_dmg'
+                    value-scale: '0'
+                    true: 'False'
+                    classifier: 'burn'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Particle-m: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Small flame'
+                    arrangement: 'Sphere'
+                    radius-base: '0'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0'
+                    right: '0'
+                  children:  {}
+                Particle-n: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Lava'
+                    arrangement: 'Sphere'
+                    radius-base: '0'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0'
+                    right: '0'
+                  children:  {}
+            Flag-o: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'burning3'
+              children: 
+                Damage-p: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Multiplier'
+                    value-base: '2'
+                    value-scale: '0'
+                    true: 'False'
+                    classifier: 'burn'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Particle-q: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Small flame'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0'
+                    right: '0'
+                  children:  {}
+                Particle-r: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Lava'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '2'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0'
+                    right: '0'
+                  children:  {}
+                Particle-s: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Landing lava'
+                    arrangement: 'Sphere'
+                    radius-base: '0'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '3'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0'
+                    right: '0'
+                  children:  {}
+            Flag-t: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'ignited'
+              children: 
+                Value-u: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'ignitestacks'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '1'
+                    max-value-scale: '0'
+                  children: 
+                    Particle-v: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        particle: 'Falling obsidian tear'
+                        arrangement: 'Sphere'
+                        radius-base: '0.75'
+                        radius-scale: '0'
+                        particles-base: '4'
+                        particles-scale: '0'
+                        visible-radius: '25'
+                        dx: '0'
+                        dy: '0'
+                        dz: '0'
+                        amount: '4'
+                        speed: '0.1'
+                        forward: '0'
+                        upward: '0'
+                        right: '0'
+                      children:  {}
+                Value-w: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'ignitestacks'
+                    min-value-base: '2'
+                    min-value-scale: '0'
+                    max-value-base: '2'
+                    max-value-scale: '0'
+                  children: 
+                    Particle-x: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        particle: 'Falling obsidian tear'
+                        arrangement: 'Sphere'
+                        radius-base: '0.75'
+                        radius-scale: '0'
+                        particles-base: '6'
+                        particles-scale: '0'
+                        visible-radius: '25'
+                        dx: '0'
+                        dy: '0'
+                        dz: '0'
+                        amount: '5'
+                        speed: '0.1'
+                        forward: '0'
+                        upward: '0'
+                        right: '0'
+                      children:  {}
+                Value-y: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'ignitestacks'
+                    min-value-base: '3'
+                    min-value-scale: '0'
+                    max-value-base: '3'
+                    max-value-scale: '0'
+                  children: 
+                    Particle-z: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        particle: 'Falling obsidian tear'
+                        arrangement: 'Sphere'
+                        radius-base: '0.75'
+                        radius-scale: '0'
+                        particles-base: '10'
+                        particles-scale: '0'
+                        visible-radius: '25'
+                        dx: '0'
+                        dy: '0'
+                        dz: '0'
+                        amount: '6'
+                        speed: '0.1'
+                        forward: '0'
+                        upward: '0'
+                        right: '0'
+                      children:  {}
+            Flag-ab: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Not Set'
+                key: 'wounded'
+              children: 
+                Value Set-bb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'wounds'
+                    value-base: '0'
+                    value-scale: '0'
+                  children:  {}
+            Flag-cb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Not Set'
+                key: 'impaired'
+              children: 
+                Value Set-db: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'impairedstacks'
+                    value-base: '0'
+                    value-scale: '0'
+                  children:  {}
+            Flag-eb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'Bleed2'
+              children: 
+                Damage-fb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Multiplier'
+                    value-base: '1'
+                    value-scale: '0'
+                    true: 'False'
+                    classifier: 'bleed'
+                    knockback: 'True'
+                    cause: 'Entity Attack'
+                  children:  {}
+                Particle-gb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Redstone'
+                    dust-color: '#FF0000'
+                    dust-size: '1'
+                    arrangement: 'Sphere'
+                    radius-base: '0.25'
+                    radius-scale: '0'
+                    particles-base: '16'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '1'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0.75'
+                    right: '0'
+                  children:  {}
+                Flag Clear-hb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'Bleed'
+                  children:  {}
+            Flag-ib: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Not Set'
+                key: 'vulnerable'
+              children: 
+                Value Set-jb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'vulnerablestacks'
+                    value-base: '0'
+                    value-scale: '0'
+                  children:  {}
+            Flag-kb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'exposed1'
+              children: 
+                Defense Buff-lb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Flat'
+                    skill: 'True'
+                    value-base: '1.1'
+                    value-scale: '0'
+                    seconds-base: '1'
+                    seconds-scale: '0'
+                  children:  {}
+                Particle-mb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Bubble pop'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '1'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0.75'
+                    right: '0'
+                  children:  {}
+            Flag-nb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'exposed2'
+              children: 
+                Defense Buff-ob: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Multiplier'
+                    skill: 'True'
+                    value-base: '1.2'
+                    value-scale: '0'
+                    seconds-base: '1'
+                    seconds-scale: '0'
+                  children:  {}
+                Flag Clear-pb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'exposed1'
+                  children:  {}
+                Particle-qb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Bubble pop'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '10'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '1'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0.75'
+                    right: '0'
+                  children:  {}
+            Flag-rb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'exposed3'
+              children: 
+                Defense Buff-sb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Multiplier'
+                    skill: 'True'
+                    value-base: '1.3'
+                    value-scale: '0'
+                    seconds-base: '1'
+                    seconds-scale: '0'
+                  children:  {}
+                Flag Clear-tb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'exposed1'
+                  children:  {}
+                Flag Clear-ub: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'exposed2'
+                  children:  {}
+                Particle-vb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    particle: 'Bubble pop'
+                    arrangement: 'Sphere'
+                    radius-base: '1'
+                    radius-scale: '0'
+                    particles-base: '15'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '1'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0.75'
+                    right: '0'
+                  children:  {}
+            Flag-wb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'flip'
+              children: 
+                Value Placeholder-xb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'yaw'
+                    type: 'Number'
+                    placeholder: '%player_yaw%'
+                  children:  {}
+                Value-yb: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'yaw'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '180'
+                    max-value-scale: '0'
+                  children: 
+                    Value Placeholder-zb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        key: 'flipped_yaw'
+                        type: 'Number'
+                        placeholder: '%math_-180+{player_yaw}%'
+                      children:  {}
+                Value-ac: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'yaw'
+                    min-value-base: '-180'
+                    min-value-scale: '0'
+                    max-value-base: '0'
+                    max-value-scale: '0'
+                  children: 
+                    Value Placeholder-bc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        key: 'flipped_yaw'
+                        type: 'Number'
+                        placeholder: '%math_180+{player_yaw}%'
+                      children:  {}
+                Command-cc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    command: 'tppos ~0 ~0 ~0 {flipped_yaw} 0'
+                    type: 'OP'
+                  children:  {}
+                Flag Toggle-dc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'flip'
+                  children:  {}
+        Value Add-ec: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'readybleedproc'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}
+        Value Add-fc: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'ignitestacks'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}
+        Value Add-gc: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'burn_dmg'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}
+        Value Add-hc: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'wounds'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}
+        Value Add-ic: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'impairedstacks'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}
+        Value Add-jc: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'vulnerablestacks'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}

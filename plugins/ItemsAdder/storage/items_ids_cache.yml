@@ -32,6 +32,15 @@ PAPER:
   hmcwraps:fire_pickaxe_wrap: 10030
   hmcwraps:unwrapper: 10031
   sunrise:bogarp_coat: 10032
+  shop:purple_scarf: 10033
+  shop:hat_mask: 10034
+  utilities:capsento: 10035
+  shop:cap_hat: 10036
+  shop:cap_coat: 10037
+  utilities:gold_question_mark: 10038
+  utilities:gold_exclamation_mark: 10039
+  utilities:iron_question_mark: 10040
+  utilities:iron_exclamation_mark: 10041
 PLAYER_HEAD:
   __manually_handled:iainternal__player_hat_slot: 10000
   __manually_handled:iainternal__player_left_arm_slot: 10001
@@ -48,6 +57,7 @@ LEATHER_HORSE_ARMOR:
   hmccosmetics:explorer_backpack: 10002
 NETHERITE_SWORD:
   hmcwraps:fire_sword: 10000
+  utilities:capsento: 10001
 NETHERITE_PICKAXE:
   hmcwraps:fire_pickaxe: 10000
 IRON_SWORD:
@@ -70,8 +80,11 @@ IRON_SHOVEL:
 IRON_HOE:
   hmcwraps:silver_hoe: 10000
   sunrise:rusty_pistol: 10001
+  sunrise:standard_pistol: 10002
 GOLD_NUGGET:
   sunrise:bullet: 10000
+  utilities:bola: 10001
+  utilities:bottle: 10002
 BOOK:
   utilities:constitution: 10000
   utilities:endurance: 10001
@@ -110,12 +123,23 @@ GOLDEN_SWORD:
   sunrise:wraps_mythical: 10006
   sunrise:wraps_unique: 10007
   sunrise:mountain_wraps: 10008
+  sunrise:standard_gloves: 10009
 GRAY_DYE:
   sunrise:duelist_single_common: 10000
   sunrise:rusty_cutlass: 10001
+  utilities:bola: 10002
+  sunrise:standard_sword: 10003
 GREEN_DYE:
   sunrise:duelist_single_uncommon: 10000
 LIME_DYE:
   sunrise:duelist_single_rare: 10000
 COAL:
   sunrise:rusty_cutlass: 10000
+  sunrise:standard_gloves: 10001
+STICK:
+  utilities:bola: 10000
+  utilities:bottle: 10001
+RAW_IRON:
+  sunrise:standard_issue_bow: 10000
+WHITE_DYE:
+  sunrise:standard_pistol: 10000

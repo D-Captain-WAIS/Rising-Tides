@@ -2,7 +2,7 @@ playerData:
   19894efa-01d3-43e5-82db-008cd9381b2f:
     statpoints: '0'
     investedstatpoints: '0'
-    resetprice: '1000'
+    resetprice: '63000'
     example_item: 'false'
     pointsgiven: '2'
     totalcurrentpoints: '0'

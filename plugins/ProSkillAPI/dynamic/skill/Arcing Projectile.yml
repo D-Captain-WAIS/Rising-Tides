@@ -1,0 +1,273 @@
+Arcing Projectile: 
+  name: 'Arcing Projectile'
+  type: 'Active'
+  max-level: 1
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '8'
+    cooldown-scale: '0'
+    mana-base: '6'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&6&oAccuracy'
+  - ''
+  - '&a&oIf I shoot this in the sky'
+  - '&a&oit won’t land on me, right?  '
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote barcing_projectile'
+                type: 'OP'
+              children:  {}
+            Value Placeholder-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'baprojectile_dmg'
+                type: 'Number'
+                placeholder: '%math_10+({sapi_player_class_attribute:accuracy}*0.13)+{qrpg_damage_physical}%'
+              children:  {}
+            Delay-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.5'
+                delay-scale: '0'
+              children: 
+                Particle Animation-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '1'
+                    frequency: '0.05'
+                    angle: '90'
+                    start: '90'
+                    duration-base: '0.25'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '5'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Crit'
+                    arrangement: 'Sphere'
+                    radius-base: '0'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '1'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '2'
+                    right: '0'
+                    -with-rotation: 'False'
+                  children:  {}
+                Sound-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    sound: 'Item crossbow shoot'
+                    volume-base: '100'
+                    volume-scale: '0'
+                    pitch-base: '1'
+                    pitch-scale: '0'
+                  children:  {}
+                Delay-h: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '3'
+                    delay-scale: '0'
+                  children: 
+                    Nearest-i: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        radius-base: '10'
+                        radius-scale: '0'
+                        group: 'Enemy'
+                        wall: 'False'
+                        caster: 'False'
+                        max-base: '1'
+                        max-scale: '0'
+                      children: 
+                        Particle Animation-j: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            steps: '1'
+                            frequency: '0.05'
+                            angle: '90'
+                            start: '90'
+                            duration-base: '0.2'
+                            duration-scale: '0'
+                            h-translation-base: '0'
+                            h-translation-scale: '0'
+                            v-translation-base: '-8'
+                            v-translation-scale: '0'
+                            h-cycles: '1'
+                            v-cycles: '1'
+                            particle: 'Crit'
+                            arrangement: 'Sphere'
+                            radius-base: '0'
+                            radius-scale: '0'
+                            particles-base: '1'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '4'
+                            speed: '0.1'
+                            forward: '0'
+                            upward: '8'
+                            right: '0'
+                            -with-rotation: 'False'
+                          children:  {}
+                        Sound-k: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            sound: 'Entity arrow hit'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '2'
+                            pitch-scale: '0'
+                          children:  {}
+                        Damage-l: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'baprojectile_dmg'
+                            value-scale: '0'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Entity Attack'
+                          children:  {}
+                        Entity Type-m: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            types: 
+                            - 'Player'
+                          children: 
+                            Potion-n: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                potion: 'Slow'
+                                ambient: 'True'
+                                tier-base: '1'
+                                tier-scale: '0'
+                                seconds-base: '4'
+                                seconds-scale: '0'
+                              children:  {}
+                            Else-o: 
+                              type: 'condition'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                              children: 
+                                Potion-p: 
+                                  type: 'mechanic'
+                                  indicator: 'None'
+                                  data: 
+                                    icon-key: ''
+                                    counts: 'True'
+                                    potion: 'Absorption'
+                                    ambient: 'True'
+                                    tier-base: '2'
+                                    tier-scale: '0'
+                                    seconds-base: '4'
+                                    seconds-scale: '0'
+                                  children:  {}
+            Self-q: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-r: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '0.5'
+                    duration-scale: '0'
+                  children:  {}

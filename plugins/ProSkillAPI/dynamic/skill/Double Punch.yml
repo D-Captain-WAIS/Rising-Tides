@@ -10,10 +10,10 @@ Double Punch:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '4'
-    cooldown-scale: '0'
-    mana-base: '5'
-    mana-scale: '0'
+    cooldown-base: '7'
+    cooldown-scale: '0.2'
+    mana-base: '22'
+    mana-scale: '2'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
@@ -23,9 +23,9 @@ Double Punch:
   icon-data: 10005
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name}'
+  - '&9&l{name}'
   - ''
-  - '&6&oStat scale:'
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - ''
   - '&9&oPunch with both my arms at the same time! '
@@ -97,7 +97,7 @@ Double Punch:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                     Push-g: 
                       type: 'mechanic'

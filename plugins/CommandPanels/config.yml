@@ -6,6 +6,7 @@
 # |        auto-update and minor-updates-only is HEAVILY RECOMMENDED
 # |------------------------------------------------------------------------
 config:
+  allow-unsafe-mini-message: false
   refresh-panels: true
   refresh-delay: 20
   panel-blocks: true

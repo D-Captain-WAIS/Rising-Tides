@@ -24,9 +24,9 @@ Chaaaaaarge:
   icon-data: 10012
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&9&l{name} '
   - ''
-  - '&6&oStat scale:'
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - ''
   - '&9&oAim for the shins! '
@@ -43,29 +43,7 @@ Chaaaaaarge:
       data: 
         icon-key: ''
       children: 
-        Self-b: 
-          type: 'target'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            group: 'enemy'
-            wall: 'false'
-            caster: 'false'
-          children: 
-            Potion-c: 
-              type: 'mechanic'
-              indicator: 'None'
-              data: 
-                icon-key: ''
-                counts: 'True'
-                potion: 'Damage resistance'
-                ambient: 'True'
-                tier-base: '2'
-                tier-scale: '0'
-                seconds-base: '2'
-                seconds-scale: '0.2'
-              children:  {}
-        Value Placeholder-d: 
+        Value Placeholder-b: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -75,7 +53,7 @@ Chaaaaaarge:
             type: 'Number'
             placeholder: '%math_0.75+({sapi_player_class_attribute:agility}*0.01)%'
           children:  {}
-        Value Placeholder-e: 
+        Value Placeholder-c: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -85,14 +63,14 @@ Chaaaaaarge:
             type: 'Number'
             placeholder: '%math_1.75+({sapi_player_class_attribute:agility}*0.01)%'
           children:  {}
-        Ground-f: 
+        Ground-d: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
             type: 'On Ground'
           children: 
-            Launch-g: 
+            Launch-e: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -106,14 +84,14 @@ Chaaaaaarge:
                 right-base: '0'
                 right-scale: '0'
               children:  {}
-        Ground-h: 
+        Ground-f: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
             type: 'Not On Ground'
           children: 
-            Launch-i: 
+            Launch-g: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -127,3 +105,16 @@ Chaaaaaarge:
                 right-base: '0'
                 right-scale: '0'
               children:  {}
+        Defense Buff-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            type: 'Multiplier'
+            skill: 'False'
+            value-base: '0.75'
+            value-scale: '0'
+            seconds-base: '3'
+            seconds-scale: '0'
+          children:  {}

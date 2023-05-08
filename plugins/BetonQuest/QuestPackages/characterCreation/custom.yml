@@ -1,0 +1,4 @@
+player_hider:
+  example_hider:  #All players in a special region cannot see any other players in that region. If a player is outside the region, they can still see the `target_player`.
+    source_player: in_character_creation
+    target_player: in_character_creation

@@ -119,3 +119,6 @@ please-wait-command-cooldown: '&cPlease wait &6{interval} &cto use this command.
 renamed-successfully: '&aItem renamed successfully!'
 cannot-rename: '&cThis item cannot be renamed'
 unknown-category: '&cUnknown category {name}'
+player-stat-value-write-bypass: '&cPlayer has bypass permission. &cValue NOT changed'
+player-stat-value-write-bypass-self: '&cYou have bypass permission. &cValue changed
+  anyway because you executed the command on yourself.'

@@ -10,16 +10,16 @@ Double Attack:
     level-scale: '0'
     cost-base: '1'
     cost-scale: '0'
-    cooldown-base: '6'
-    cooldown-scale: '0'
-    mana-base: '6'
-    mana-scale: '0'
+    cooldown-base: '8'
+    cooldown-scale: '0.4'
+    mana-base: '50'
+    mana-scale: '4'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
+  icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
   icon-lore: 
@@ -97,7 +97,7 @@ Double Attack:
                         true: 'False'
                         classifier: 'default'
                         knockback: 'True'
-                        cause: 'Custom'
+                        cause: 'Entity Attack'
                       children:  {}
                 Delay-g: 
                   type: 'mechanic'
@@ -133,7 +133,7 @@ Double Attack:
                             true: 'False'
                             classifier: 'default'
                             knockback: 'True'
-                            cause: 'Custom'
+                            cause: 'Entity Attack'
                           children:  {}
         Value Placeholder-j: 
           type: 'mechanic'

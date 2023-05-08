@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 82.34.57.96
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1671480742038
+  login: 1671480690597
+money: '0'
+last-account-name: No_Life_Intended
+logoutlocation:
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 581.6379104970584
+  y: 220.0617219638623
+  z: 39.81211513746437
+  yaw: 61.3701171875
+  pitch: 39.29990005493164

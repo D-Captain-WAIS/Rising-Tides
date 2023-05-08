@@ -1,0 +1,419 @@
+Catapult: 
+  name: 'Catapult'
+  type: 'Active'
+  max-level: 5
+  skill-req: 'Multishot Star'
+  skill-req-lvl: 3
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '1'
+    cost-scale: '0'
+    cooldown-base: '10'
+    cooldown-scale: '0.4'
+    mana-base: '60'
+    mana-scale: '2'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'JACK_O_LANTERN'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&a&l{name} '
+  - ''
+  - '&6&oStat scale:'
+  - '&d&oFinesse'
+  - ''
+  - '&a&oJust attaching a piece of explosive to my weapon!'
+  - '&a&oNothing could go wrong!'
+  - '&a&o(Everything will go wrong)'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Command-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                command: 'iaemote bcatapult'
+                type: 'OP'
+              children:  {}
+            Particle Animation-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                steps: '1'
+                frequency: '0.05'
+                angle: '0'
+                start: '0'
+                duration-base: '0.2'
+                duration-scale: '0'
+                h-translation-base: '0'
+                h-translation-scale: '0'
+                v-translation-base: '-0.7'
+                v-translation-scale: '0'
+                h-cycles: '1'
+                v-cycles: '1'
+                particle: 'Electric spark'
+                arrangement: 'Sphere'
+                radius-base: '0'
+                radius-scale: '0'
+                particles-base: '3'
+                particles-scale: '0'
+                visible-radius: '50'
+                dx: '0'
+                dy: '0'
+                dz: '0'
+                amount: '1'
+                speed: '0.1'
+                forward: '0.25'
+                upward: '0.7'
+                right: '0.25'
+                -with-rotation: 'False'
+              children:  {}
+            Delay-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                delay-base: '0.2'
+                delay-scale: '0'
+              children: 
+                Particle Animation-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    steps: '1'
+                    frequency: '0.05'
+                    angle: '0'
+                    start: '0'
+                    duration-base: '1'
+                    duration-scale: '0'
+                    h-translation-base: '0'
+                    h-translation-scale: '0'
+                    v-translation-base: '0'
+                    v-translation-scale: '0'
+                    h-cycles: '1'
+                    v-cycles: '1'
+                    particle: 'Fireworks spark'
+                    arrangement: 'Sphere'
+                    radius-base: '0'
+                    radius-scale: '0'
+                    particles-base: '4'
+                    particles-scale: '0'
+                    visible-radius: '25'
+                    dx: '0'
+                    dy: '0'
+                    dz: '0'
+                    amount: '3'
+                    speed: '0.1'
+                    forward: '0'
+                    upward: '0'
+                    right: '0'
+                    -with-rotation: 'False'
+                  children:  {}
+                Delay-g: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '1'
+                    delay-scale: '0'
+                  children: 
+                    Delay-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Status-i: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            status: 'Stun'
+                            duration-base: '0.2'
+                            duration-scale: '0'
+                          children:  {}
+                    Offset-j: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        forward-base: '0'
+                        forward-scale: '0'
+                        upward-base: '0'
+                        upward-scale: '0'
+                        right-base: '0'
+                        right-scale: '0'
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Particle-k: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            particle: 'Explosion large'
+                            arrangement: 'Sphere'
+                            radius-base: '0.1'
+                            radius-scale: '0'
+                            particles-base: '4'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '1'
+                            speed: '0.1'
+                            forward: '0'
+                            upward: '0'
+                            right: '0'
+                          children:  {}
+                        Sound-l: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            sound: 'Entity generic explode'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '0.5'
+                            pitch-scale: '0'
+                          children:  {}
+                    Launch-m: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        relative: 'Target'
+                        forward-base: '-3'
+                        forward-scale: '0'
+                        upward-base: '0.1'
+                        upward-scale: '0'
+                        right-base: '0'
+                        right-scale: '0'
+                      children:  {}
+                    Area-n: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        radius-base: '3'
+                        radius-scale: '0'
+                        group: 'Enemy'
+                        wall: 'False'
+                        caster: 'False'
+                        max-base: '99'
+                        max-scale: '0'
+                        random: 'False'
+                      children: 
+                        Damage-o: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'bcatapult_explosiondmg'
+                            value-scale: '1'
+                            true: 'False'
+                            classifier: 'explosive'
+                            knockback: 'True'
+                            cause: 'Entity Attack'
+                          children:  {}
+                    Self-p: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Damage-q: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Multiplier'
+                            value-base: '1'
+                            value-scale: '0'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Entity Attack'
+                          children:  {}
+                Delay-r: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '0.7'
+                    delay-scale: '0'
+                  children: 
+                    Flag-s: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        key: 'self projectile'
+                        seconds-base: '0.8'
+                        seconds-scale: '0'
+                      children:  {}
+            Self-t: 
+              type: 'target'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                group: 'enemy'
+                wall: 'false'
+                caster: 'false'
+              children: 
+                Status-u: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Silence'
+                    duration-base: '2.2'
+                    duration-scale: '0'
+                  children:  {}
+                Status-v: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    status: 'Root'
+                    duration-base: '1.2'
+                    duration-scale: '0'
+                  children:  {}
+            Sound-w: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                sound: 'Entity creeper primed'
+                volume-base: '400'
+                volume-scale: '0'
+                pitch-base: '2'
+                pitch-scale: '0'
+              children:  {}
+            Value Placeholder-x: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'bcatapult_explosiondmg'
+                type: 'Number'
+                placeholder: '%math_20+({sapi_player_class_attribute:finesse}*0.2)+{qrpg_damage_physical}%'
+              children:  {}
+            Value Placeholder-y: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'bcatapult_dmg'
+                type: 'Number'
+                placeholder: '%math_20+({sapi_player_class_attribute:accuracy}*0.25)+{qrpg_damage_physical}%'
+              children:  {}
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Passive-ab: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            seconds-base: '0.05'
+            seconds-scale: '0'
+          children: 
+            Flag-bb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Set'
+                key: 'selfprojectile'
+              children: 
+                Area-cb: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    radius-base: '3.5'
+                    radius-scale: '0'
+                    group: 'Enemy'
+                    wall: 'False'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
+                    random: 'False'
+                  children: 
+                    Damage-db: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'bcatapult_dmg'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Custom'
+                      children:  {}

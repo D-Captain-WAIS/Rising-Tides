@@ -1,4 +1,6 @@
-default_hologram: HolographicDisplays
+profiles:
+  initial_name: default
+default_hologram: DecentHolograms
 configVersion: 2.0.0-CONFIG-5 # Don't change this! The plugin's automatic config updater handles it.
 mysql:
   enabled: false

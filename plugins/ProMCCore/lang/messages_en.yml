@@ -273,6 +273,12 @@ EntityType:
   LIGHTNING: Lightning
   PLAYER: Player
   UNKNOWN: Unknown
+  CAMEL: Camel
+  BLOCK_DISPLAY: Block Display
+  INTERACTION: Interaction
+  ITEM_DISPLAY: Item Display
+  SNIFFER: Sniffer
+  TEXT_DISPLAY: Text Display
 Material:
   AIR: Air
   STONE: Stone
@@ -2018,6 +2024,99 @@ Material:
   LEGACY_RECORD_10: Legacy Record 10
   LEGACY_RECORD_11: Legacy Record 11
   LEGACY_RECORD_12: Legacy Record 12
+  CHERRY_PLANKS: Cherry Planks
+  BAMBOO_PLANKS: Bamboo Planks
+  BAMBOO_MOSAIC: Bamboo Mosaic
+  CHERRY_SAPLING: Cherry Sapling
+  SUSPICIOUS_SAND: Suspicious Sand
+  CHERRY_LOG: Cherry Log
+  BAMBOO_BLOCK: Bamboo Block
+  STRIPPED_CHERRY_LOG: Stripped Cherry Log
+  STRIPPED_CHERRY_WOOD: Stripped Cherry Wood
+  STRIPPED_BAMBOO_BLOCK: Stripped Bamboo Block
+  CHERRY_WOOD: Cherry Wood
+  CHERRY_LEAVES: Cherry Leaves
+  TORCHFLOWER: Torchflower
+  PINK_PETALS: Pink Petals
+  CHERRY_SLAB: Cherry Slab
+  BAMBOO_SLAB: Bamboo Slab
+  BAMBOO_MOSAIC_SLAB: Bamboo Mosaic Slab
+  CHISELED_BOOKSHELF: Chiseled Bookshelf
+  DECORATED_POT: Decorated Pot
+  CHERRY_FENCE: Cherry Fence
+  BAMBOO_FENCE: Bamboo Fence
+  CHERRY_STAIRS: Cherry Stairs
+  BAMBOO_STAIRS: Bamboo Stairs
+  BAMBOO_MOSAIC_STAIRS: Bamboo Mosaic Stairs
+  CHERRY_BUTTON: Cherry Button
+  BAMBOO_BUTTON: Bamboo Button
+  CHERRY_PRESSURE_PLATE: Cherry Pressure Plate
+  BAMBOO_PRESSURE_PLATE: Bamboo Pressure Plate
+  CHERRY_DOOR: Cherry Door
+  BAMBOO_DOOR: Bamboo Door
+  CHERRY_TRAPDOOR: Cherry Trapdoor
+  BAMBOO_TRAPDOOR: Bamboo Trapdoor
+  CHERRY_FENCE_GATE: Cherry Fence Gate
+  BAMBOO_FENCE_GATE: Bamboo Fence Gate
+  CHERRY_BOAT: Cherry Boat
+  CHERRY_CHEST_BOAT: Cherry Chest Boat
+  BAMBOO_RAFT: Bamboo Raft
+  BAMBOO_CHEST_RAFT: Bamboo Chest Raft
+  CHERRY_SIGN: Cherry Sign
+  BAMBOO_SIGN: Bamboo Sign
+  OAK_HANGING_SIGN: Oak Hanging Sign
+  SPRUCE_HANGING_SIGN: Spruce Hanging Sign
+  BIRCH_HANGING_SIGN: Birch Hanging Sign
+  JUNGLE_HANGING_SIGN: Jungle Hanging Sign
+  ACACIA_HANGING_SIGN: Acacia Hanging Sign
+  CHERRY_HANGING_SIGN: Cherry Hanging Sign
+  DARK_OAK_HANGING_SIGN: Dark Oak Hanging Sign
+  MANGROVE_HANGING_SIGN: Mangrove Hanging Sign
+  BAMBOO_HANGING_SIGN: Bamboo Hanging Sign
+  CRIMSON_HANGING_SIGN: Crimson Hanging Sign
+  WARPED_HANGING_SIGN: Warped Hanging Sign
+  CAMEL_SPAWN_EGG: Camel Spawn Egg
+  ENDER_DRAGON_SPAWN_EGG: Ender Dragon Spawn Egg
+  IRON_GOLEM_SPAWN_EGG: Iron Golem Spawn Egg
+  SNIFFER_SPAWN_EGG: Sniffer Spawn Egg
+  SNOW_GOLEM_SPAWN_EGG: Snow Golem Spawn Egg
+  WITHER_SPAWN_EGG: Wither Spawn Egg
+  PIGLIN_HEAD: Piglin Head
+  TORCHFLOWER_SEEDS: Torchflower Seeds
+  BRUSH: Brush
+  NETHERITE_UPGRADE_SMITHING_TEMPLATE: Netherite Upgrade Smithing Template
+  SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: Sentry Armor Trim Smithing Template
+  DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: Dune Armor Trim Smithing Template
+  COAST_ARMOR_TRIM_SMITHING_TEMPLATE: Coast Armor Trim Smithing Template
+  WILD_ARMOR_TRIM_SMITHING_TEMPLATE: Wild Armor Trim Smithing Template
+  WARD_ARMOR_TRIM_SMITHING_TEMPLATE: Ward Armor Trim Smithing Template
+  EYE_ARMOR_TRIM_SMITHING_TEMPLATE: Eye Armor Trim Smithing Template
+  VEX_ARMOR_TRIM_SMITHING_TEMPLATE: Vex Armor Trim Smithing Template
+  TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: Tide Armor Trim Smithing Template
+  SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: Snout Armor Trim Smithing Template
+  RIB_ARMOR_TRIM_SMITHING_TEMPLATE: Rib Armor Trim Smithing Template
+  SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: Spire Armor Trim Smithing Template
+  POTTERY_SHARD_ARCHER: Pottery Shard Archer
+  POTTERY_SHARD_PRIZE: Pottery Shard Prize
+  POTTERY_SHARD_ARMS_UP: Pottery Shard Arms Up
+  POTTERY_SHARD_SKULL: Pottery Shard Skull
+  CHERRY_WALL_SIGN: Cherry Wall Sign
+  BAMBOO_WALL_SIGN: Bamboo Wall Sign
+  OAK_WALL_HANGING_SIGN: Oak Wall Hanging Sign
+  SPRUCE_WALL_HANGING_SIGN: Spruce Wall Hanging Sign
+  BIRCH_WALL_HANGING_SIGN: Birch Wall Hanging Sign
+  ACACIA_WALL_HANGING_SIGN: Acacia Wall Hanging Sign
+  CHERRY_WALL_HANGING_SIGN: Cherry Wall Hanging Sign
+  JUNGLE_WALL_HANGING_SIGN: Jungle Wall Hanging Sign
+  DARK_OAK_WALL_HANGING_SIGN: Dark Oak Wall Hanging Sign
+  MANGROVE_WALL_HANGING_SIGN: Mangrove Wall Hanging Sign
+  CRIMSON_WALL_HANGING_SIGN: Crimson Wall Hanging Sign
+  WARPED_WALL_HANGING_SIGN: Warped Wall Hanging Sign
+  BAMBOO_WALL_HANGING_SIGN: Bamboo Wall Hanging Sign
+  POTTED_TORCHFLOWER: Potted Torchflower
+  POTTED_CHERRY_SAPLING: Potted Cherry Sapling
+  PIGLIN_WALL_HEAD: Piglin Wall Head
+  TORCHFLOWER_CROP: Torchflower Crop
 PotionEffectType:
   SPEED: Speed
   SLOW: Slow

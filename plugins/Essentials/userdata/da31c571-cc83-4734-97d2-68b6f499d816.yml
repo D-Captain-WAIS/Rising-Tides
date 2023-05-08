@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 152.18.190.13
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1675701349799
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1675702291728
+  login: 1675701202662
+money: '0'
+last-account-name: kiwigrant
+lastlocation:
+  world: e80714c3-3001-48f0-978d-b9fcfc236840
+  world-name: world
+  x: 70.75778690252936
+  y: 160.0
+  z: -290.7562505508619
+  yaw: -9.462428092956543
+  pitch: 13.496562004089355
+logoutlocation:
+  world: 23e27574-e2c8-4689-8402-f4e488332383
+  world-name: dev
+  x: -7.4503927267122245
+  y: -29.939685635814804
+  z: 6.409756444666675
+  yaw: 118.232421875
+  pitch: -7.050023078918457

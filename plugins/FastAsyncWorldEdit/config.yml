@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Wed Dec 14 00:00:00 EST 2022"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/308"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f0cc26cb"
+date: "Thu Jun 01 00:00:00 EDT 2023"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/413"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f6d5900b"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -342,6 +342,7 @@ limits:
     # Where block properties are specified, any blockstate with the property will be disallowed (e.g. all directions
     # of a waterlogged fence). For blocking/remapping of all occurrences of a property like waterlogged, see
     # remap-properties below.
+    # To generate a blank list, substitute the default content with a set of square brackets [] instead.
     # Example block property blocking:
     #  - "minecraft:conduit[waterlogged=true]"
     #  - "minecraft:piston[extended=false,facing=west]"

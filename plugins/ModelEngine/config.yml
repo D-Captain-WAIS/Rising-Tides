@@ -15,6 +15,9 @@ Model-Generator:
   Compartment-Size: 1000
   Create-Zip: true
   Item-Model: LEATHER_HORSE_ARMOR
+  Register-Post-Server: true
+  Assets-Post-Server: true
+  Debug-Level: 1
 Model-Calibrator:
   Use-Calibration: true
   Animation-Sync: 0.685

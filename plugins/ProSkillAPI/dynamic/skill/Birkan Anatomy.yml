@@ -1,0 +1,180 @@
+Birkan Anatomy: 
+  name: 'Birkan Anatomy'
+  type: 'Passive'
+  max-level: 1
+  skill-req-lvl: 0
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '0'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&f&lSky-Citizen Anatomy'
+  - ''
+  - '&f&oMy &f&l&oBirkan &f&olineage means I have'
+  - '&2&omore stamina &f&oand am more&5&o technically adept'
+  - '&f&othan most races.'
+  - ''
+  - '&f&oI can also &f&o&nnegate fall damage&f&o.'
+  - ''
+  - '&6&o+5% &2&oEndurance'
+  - '&6&o+5% &5&oFinesse'
+  - '&6&o+4 in &2&oEndurance &6&oevery 5 levels'
+  - '&6&o+4 in &5&oFinesse &6&oevery 5 levels'
+  desc:  []
+  components: 
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Passive-b: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            seconds-base: '1'
+            seconds-scale: '0'
+          children: 
+            Attribute-c: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'endurance'
+                operation: 'ADD_NUMBER'
+                amount-base: 'endurance_bonus'
+                amount-scale: '0'
+                seconds-base: '1'
+                seconds-scale: '0'
+                stackable: 'True'
+              children:  {}
+            Attribute-d: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'finesse'
+                operation: 'ADD_NUMBER'
+                amount-base: 'finesse_bonus'
+                amount-scale: '0'
+                seconds-base: '1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Value Placeholder-e: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'endurance_bonus'
+                type: 'Number'
+                placeholder: '%math_{sapi_player_class_attribute:endurance}*0.05%'
+              children:  {}
+            Value Placeholder-f: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'finesse_bonus'
+                type: 'Number'
+                placeholder: '%math_{sapi_player_class_attribute:finesse}*0.05%'
+              children:  {}
+            Value Placeholder-g: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'lvlover5'
+                type: 'Number'
+                placeholder: '%math_0:DOWN_{sapi_default_currentlevel}/5%'
+              children:  {}
+            Value Set-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: '5lv_bonus'
+                value-base: '4'
+                value-scale: '0'
+              children:  {}
+            Value Multiply-i: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: '5lv_bonus'
+                multiplier-base: 'lvlover5'
+                multiplier-scale: '0'
+              children:  {}
+            Attribute-j: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'endurance'
+                operation: 'ADD_NUMBER'
+                amount-base: '5lv_bonus'
+                amount-scale: '0'
+                seconds-base: '1.1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Attribute-k: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'True'
+                key: 'finesse'
+                operation: 'ADD_NUMBER'
+                amount-base: '5lv_bonus'
+                amount-scale: '0'
+                seconds-base: '1.1'
+                seconds-scale: '0'
+                stackable: 'False'
+              children:  {}
+            Block-l: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                standing: 'On Block'
+                material: 'Air'
+              children: 
+                Immunity-m: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    type: 'Fall'
+                    seconds-base: '2'
+                    seconds-scale: '0'
+                    multiplier-base: '0'
+                    multiplier-scale: '0'
+                  children:  {}

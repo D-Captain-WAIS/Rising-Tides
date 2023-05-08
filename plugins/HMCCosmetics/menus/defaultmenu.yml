@@ -11,3 +11,13 @@ items:
     actions:
       any:
         - "[MENU] sunrise -o"
+  shop:
+    slots:
+      - 2
+    item:
+      material: PAPER
+      name: "<gold><bold>[Store]"
+    type: empty
+    actions:
+      any:
+        - "[MENU] shop -o"

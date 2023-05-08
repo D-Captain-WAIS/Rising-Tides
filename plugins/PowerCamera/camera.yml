@@ -1,0 +1,58 @@
+cameras:
+  demo:
+    duration: 6
+    points:
+    - command:title %player% times 20 60 20
+    - command:title %player% subtitle {"text":"https://svenar.nl/powercamera","color":"#ED6E13"}
+    - command:title %player% title ["",{"text":"P","color":"#008CD8"},{"text":"ower","color":"#35A6E2"},{"text":"C","color":"#008CD8"},{"text":"amera","color":"#35A6E2"}]
+    - command:fill 22 253 257 26 255 257 minecraft:glowstone
+    - command:fill 22 253 256 26 255 256 minecraft:red_wool
+    - command:fill 22 253 255 26 255 255 minecraft:orange_wool
+    - command:fill 22 253 254 26 255 254 minecraft:yellow_wool
+    - command:fill 22 253 253 26 255 253 minecraft:green_wool
+    - command:fill 22 253 252 26 255 252 minecraft:blue_wool
+    - command:fill 22 253 251 26 255 251 minecraft:purple_wool
+    - command:fill 22 253 250 26 255 250 minecraft:magenta_wool
+    - command:fill 22 253 249 26 255 249 minecraft:red_wool
+    - command:fill 22 253 248 26 255 248 minecraft:orange_wool
+    - command:fill 22 253 247 26 255 247 minecraft:yellow_wool
+    - command:fill 22 253 246 26 255 246 minecraft:green_wool
+    - command:fill 22 253 245 26 255 245 minecraft:blue_wool
+    - command:fill 22 253 244 26 255 244 minecraft:purple_wool
+    - command:fill 22 253 243 26 255 243 minecraft:magenta_wool
+    - command:fill 22 253 242 26 255 242 minecraft:black_wool
+    - command:fill 23 254 256 25 254 243 minecraft:lantern
+    - command:fill 24 254 256 24 254 243 minecraft:air
+    - location:linear:29db9147-9383-4fc9-a169-3ad2ae98c310;24.418613918553817;253.0;256.5255410214952;180.44563;25.79979
+    - command:fill 22 254 256 26 254 242 minecraft:cyan_wool
+    - command:fill 23 254 256 25 254 243 minecraft:lantern
+    - command:fill 24 254 256 24 254 243 minecraft:air
+    - location:linear:29db9147-9383-4fc9-a169-3ad2ae98c310;24.410196166175623;253.0;251.43776564759258;179.69543;11.999997
+    - command:fill 22 253 257 26 255 242 minecraft:air
+  marinestart:
+    duration: 24
+    points:
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1068.118028974091;93.96242277496839;-192.21700750485186;40.858643;30.029503
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1043.1505769801859;87.22073377061511;-196.62984533431685;2.4501057;30.120165
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1016.7413679992544;78.23233491883407;-187.72566178352136;-39.186737;22.365849
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1013.1782944829107;73.18130532287326;-175.33246398306534;-74.12565;24.387402
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1011.1624469571561;66.82995638455785;-164.4298984782052;-90.35934;9.150578
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1039.2575018130062;65.53370661784948;-164.52968791697126;-90.29899;9.3014345
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1046.6104090067333;65.16374545114851;-164.49321612728488;-70.294044;4.4438496
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1048.1259384761336;65.16374545114851;-164.23761683073877;-38.402596;6.1937895
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;1048.5208224481676;64.97603549168957;-163.06682229989084;-0.11500287;-1.1982111
+  marineFooshaAttack:
+    duration: 10
+    points:
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;616.6999999880791;68.60322745523163;-139.2513225378315;-4.6486816;19.725857
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;613.5433907729487;71.66342061476125;-140.34312940917005;34.76465;35.11336
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;603.358983925492;79.52653245585667;-149.6034398674706;45.19165;38.28112
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;575.295795109304;84.00038274585799;-179.0910584326794;49.86621;59.76257
+  marineFooshaAttackEnd:
+    duration: 5
+    points:
+    - location:linear:0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1;575.1974909838951;86.23680988101012;-178.64044904677803;50.112766;53.0341
+
+players:
+- 19894efa-01d3-43e5-82db-008cd9381b2f
+version: '0.6'

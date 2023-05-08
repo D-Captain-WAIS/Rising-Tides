@@ -10,7 +10,7 @@ Hard Punch:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '2'
+    cooldown-base: '4'
     cooldown-scale: '0'
     mana-base: '5'
     mana-scale: '0'
@@ -23,8 +23,8 @@ Hard Punch:
   icon-data: 10001
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
-  - '&6&oStat scale:'
+  - '&9&l{name} '
+  - '&f&oStat scale:'
   - '&c&oStrength'
   - ''
   - '&9&oI’ll just throw my hand as hard as I can…'

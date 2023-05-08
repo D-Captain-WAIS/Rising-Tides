@@ -200,6 +200,18 @@ worth-calculator:
         '1': 157
       rustycutlass:
         '1': 169
+      rusty_pistol:
+        '1': 110
+      testbow:
+        '1': 145
+      standardsword:
+        '1': 108
+      standardpistol:
+        '1': 165
+      standardbow:
+        '1': 137
+      standardgloves:
+        '1': 129
     custom_items:
       basic:
         '1': 156
