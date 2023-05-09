@@ -1,17 +1,17 @@
-limit: 10
+limit: 2
 active: 1
-health: 50.0
-mana: 30.0
+health: 55.025001525878906
+mana: 32.05
 accounts: 
   acc1: 
     classes: 
       Human: 
-        level: 1
-        points: 1
+        level: 2
+        points: 2
         exp: 0.0
       MWNewbie: 
-        level: 1
-        points: 1
+        level: 2
+        points: 2
         exp: 0.0
     skills: 
       Weeeee: 
@@ -64,7 +64,7 @@ accounts:
       Piercing Strike: 2
       Two Handed Swing: 3
       Dash Swing: 4
-    attrib-points: 0
+    attrib-points: 2
     attribs:  {}
     hover: 
       Flail: 0
@@ -85,6 +85,6 @@ accounts:
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
-      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
+      - 'k00010004qb4007mqqbeclhn4ob6egt70obgclp0k003ehgme2g019kn8pbdedgm8p35e84000j9cg00atj9epp6a20015n62rb5edo62or5004nat39dhkn8qb5ec00600f8dqn6t3fdl6mup35dh262t310002e7oa003m8qbje1m62u880024sobdck04cup2c9nmop1279q74tb55gh6it31dhkm68hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8irapkncsj5411m2sj4bkh7q0000400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'

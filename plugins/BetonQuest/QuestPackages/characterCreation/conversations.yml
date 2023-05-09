@@ -217,7 +217,7 @@ conversations:
         events: "talked_mihuk"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to fight with a Melee Weapon?\n"
+        text: "\n&fwant to try Melee Weapon Newbie?\n"
         pointers: "mwn_test,refuse"
     player_options:
       plan: 
@@ -240,7 +240,7 @@ conversations:
         events: "talked_usap"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to fight with a Melee Weapon?\n"
+        text: "\n&fWant to try out Stringed Newbien?\n"
         pointers: "swn_test,refuse"
     player_options:
       plan: 
@@ -263,7 +263,7 @@ conversations:
         events: "talked_benny"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fAre you sure you want to fight with guns?\n"
+        text: "\n&fWant to try out Gun Newbie?\n"
         pointers: "gn_test,refuse"
     player_options:
       plan: 
@@ -300,12 +300,12 @@ conversations:
     final_events: "chat_clear"
     NPC_options:
       desc:
-        text: "\n&fHey! I'm Gap, Naval Hero! With me is Luchy and Radin! We specialize in using our bodies to fight! Want to be a living weapon? You get:\n\n-Starter Class: Scrapper\n"
+        text: "\n&fHey! I'm Gap, Naval Hero! With me is Luchy and Radin! We specialize in using our bodies to fight! Want to be a living weapon? You get:\n\n-Starter Class: Brawler Newbie\n"
         conditions: "!tag_talked_gap"
         events: "talked_gap"
         pointers: "plan,refuse"
       choose:
-        text: "\n&fWant to try out Scrapper?\n"
+        text: "\n&fWant to try out Brawler Newbie?\n"
         pointers: "scrapperTest,refuse"
     player_options:
       plan: 

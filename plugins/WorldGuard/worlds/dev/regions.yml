@@ -114,9 +114,12 @@ regions:
         - {x: 13, z: 199}
     gd:
         members:
-            groups: [trust-dev, trust-gd]
+            groups: [trust-dev, trust-gd, mgmt]
         flags:
             entry: deny
+            ability-pvp: allow
+            keep-inventory: true
+            pvp: allow
             deny-spawn: ['minecraft:slime']
             natural-hunger-drain: deny
         owners: {}

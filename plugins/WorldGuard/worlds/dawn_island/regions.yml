@@ -13,7 +13,8 @@ regions:
     dawn:
         min: {x: -1500, y: -64, z: -1500}
         max: {x: 1500, y: 319, z: 1500}
-        members: {}
+        members:
+            groups: [mgmt, trust-gd, trust-builders, trust-dev]
         flags:
             keep-inventory: true
             block-trampling: deny
@@ -25,7 +26,7 @@ regions:
                 'minecraft:phantom', 'minecraft:witch', 'minecraft:salmon', 'minecraft:husk',
                 'minecraft:ocelot', 'minecraft:silverfish', 'minecraft:stray', 'minecraft:enderman',
                 'minecraft:dolphin', 'minecraft:vex', 'minecraft:zombie', 'minecraft:drowned',
-                'minecraft:zombie_villager', 'minecraft:panda','minecraft:zombie_villager']
+                'minecraft:zombie_villager', 'minecraft:panda']
             natural-hunger-drain: deny
         owners: {}
         type: cuboid
