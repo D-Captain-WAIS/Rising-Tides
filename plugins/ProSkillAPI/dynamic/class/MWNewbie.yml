@@ -6,7 +6,7 @@ MWNewbie:
   mana: '&2Stamina'
   max-level: 1000
   parent: ''
-  needs-permission: 'true'
+  needs-permission: 'false'
   attributes: 
     health-base: '50'
     health-scale: '5'

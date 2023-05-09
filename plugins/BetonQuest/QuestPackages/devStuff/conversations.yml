@@ -37,7 +37,7 @@ conversations:
         text: "&fYou are now a merfolk"
         events: "set_merfolk"
       set_brikan:
-        text: "&fYou are now a brikan"
+        text: "&fYou are now a birkan"
         events: "set_brikan"
       set_shandian:
         text: "&fYou are now a shandian"
@@ -137,7 +137,7 @@ conversations:
         text: "I want to be a merfolk"
         pointers: "set_merfolk"
       brikan:
-        text: "I want to be a brikan"
+        text: "I want to be a birkan"
         pointers: "set_brikan"
       shandian:
         text: "I want to be a shandian"

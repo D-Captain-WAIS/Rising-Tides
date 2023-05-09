@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1683593391454
-  login: 1683593322049
+  logout: 1683607378949
+  login: 1683605025132
 money: '999999619399.0'
 last-account-name: _D_Captain_
 lastlocation:
@@ -31,11 +31,11 @@ lastlocation:
 logoutlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island
-  x: 745.0886500897207
-  y: 65.0
-  z: -213.2786124218851
-  yaw: -89.71690368652344
-  pitch: 19.119396209716797
+  x: 757.0448293665888
+  y: 66.5
+  z: -211.2732510529582
+  yaw: 91.06006622314453
+  pitch: 33.2193717956543
 homes:
   start:
     world: 23e27574-e2c8-4689-8402-f4e488332383

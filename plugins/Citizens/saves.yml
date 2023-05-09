@@ -30,7 +30,7 @@ npc:
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
-    traitnames: spawned,inventory,hologramtrait,type,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,hologramtrait,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -68,7 +68,7 @@ npc:
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
-    traitnames: spawned,inventory,hologramtrait,type,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,hologramtrait,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -100,7 +100,7 @@ npc:
         skinName: e3161794-82db-409c-b631-a57ba9af0930
         textureRaw: eyJ0aW1lc3RhbXAiOjE1ODM3NDAxMDMwNjgsInByb2ZpbGVJZCI6IjczODJkZGZiZTQ4NTQ1NWM4MjVmOTAwZjg4ZmQzMmY4IiwicHJvZmlsZU5hbWUiOiJZYU9PUCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NlMjUxNjk3NDQ2YzYzN2EwMTU3OTUxOTZiMzU2YThiYTRkOWNlNjU2MGNkNTEwZTE5NDg4Yzk0YTA5NjIzYyJ9fX0=
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -132,7 +132,7 @@ npc:
         skinName: bc48eaf0-1b7a-4bb5-8c2d-eeb162ba2d41
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY3NDU4MjI3MzQ2MiwKICAicHJvZmlsZUlkIiA6ICJkODM0YTU5M2UzYTA0ZjlmODI4NGIxMzQyMWRiMzZkYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJDbGllbnRNb3Rpb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1NzA0OWFiOTU4OGE2NmY5MWI0NTU2ODg2ZjQwMWI3YzhhNTIyMjNjZGNhOTM0ZmZjM2M3NjVlOGJhZTIwYSIKICAgIH0KICB9Cn0=
         updateSkins: false
-    traitnames: spawned,inventory,type,location,age,skintrait,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -164,7 +164,7 @@ npc:
         skinName: 710c28b0-1e12-4e42-a151-104507460093
         textureRaw: eyJ0aW1lc3RhbXAiOjE1NzM5MzU1NDAwNzQsInByb2ZpbGVJZCI6IjE5MjUyMWI0ZWZkYjQyNWM4OTMxZjAyYTg0OTZlMTFiIiwicHJvZmlsZU5hbWUiOiJTZXJpYWxpemFibGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M4YWFjNGU2MzEzOThjMGY0N2ZlODU2MTVlN2Y0OTIxNTUwMDA0MGJiOTA4MTlkNTY4ZTgyNGFjZjk0YmZhNGUifX19
         updateSkins: false
-    traitnames: spawned,inventory,type,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -196,7 +196,7 @@ npc:
         skinName: ce25a1fe-610e-43e6-a27e-7b7b43f3e35e
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYyMDQwMDIxNDk5MywKICAicHJvZmlsZUlkIiA6ICJmNWQwYjFhZTQxNmU0YTE5ODEyMTRmZGQzMWU3MzA1YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDYXRjaFRoZVdhdmUxMCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jZTk4NTk3M2VkNTkwMDEwZjhmZTZiMGFjNGU3YzhmMWZhMjMxNWFkMjU3NmE2Y2Q0YzhkMjQ5Mjg5NWY0OWQyIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -231,7 +231,7 @@ npc:
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
-    traitnames: spawned,inventory,hologramtrait,type,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,hologramtrait,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -263,7 +263,7 @@ npc:
         skinName: f830f3bf-beaf-45ab-9b91-6ff5c83f1cab
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY3NDYxNzU5ODAzMywKICAicHJvZmlsZUlkIiA6ICJiZTQxNTM0NTFiYjQ0MmQ5ODMwNzRhYjRmNDhmMWY5NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJpdHNsZW1vbmNvbGFfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2RmMjZmYzcwNGQwMmU5MDM3NWUyYzkzNDZhNmFjNmY1NWY5NTc1MDE3MzRkZDBhNzUxOTIyMThiMjg3NTUxMmYiCiAgICB9CiAgfQp9
         updateSkins: false
-    traitnames: spawned,inventory,type,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -295,7 +295,7 @@ npc:
         skinName: 9c61db33-03a8-46c8-82b4-b86ee851df06
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYyOTQxNjM2NjYxMywKICAicHJvZmlsZUlkIiA6ICI3NzI3ZDM1NjY5Zjk0MTUxODAyM2Q2MmM2ODE3NTkxOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJsaWJyYXJ5ZnJlYWsiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjk5YWFjZThlNjg2MjA4OWZiYWM2NzZhZGY2NjkyYTZiZDAyNWRlZmFmZGUzMjRjZjZhZTM1NmY0ZDQ3NzljYyIKICAgIH0KICB9Cn0=
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -327,7 +327,7 @@ npc:
         skinName: c4ee4ef8-cda2-4d0d-b8c6-9fe1bfefbd26
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYwNzMyMDg4NzU4OSwKICAicHJvZmlsZUlkIiA6ICI5ZDIyZGRhOTVmZGI0MjFmOGZhNjAzNTI1YThkZmE4ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYWZlRHJpZnQ0OCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hZTU0Yjg1YjlhZjNmNWI3ZmUxNDgzNTEzYTVlMTczMWM2MmE2NTdkZGY3MGQ0MmU2YTBjMDk5ZjExZjdmOTU0IgogICAgfQogIH0KfQ==
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -363,7 +363,7 @@ npc:
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
-    traitnames: spawned,inventory,hologramtrait,type,poses,location,skintrait,age,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,poses,age,skintrait,spawned,scoreboardtrait,location,hologramtrait,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -398,7 +398,7 @@ npc:
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
-    traitnames: spawned,inventory,hologramtrait,type,location,skintrait,age,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,hologramtrait,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -431,7 +431,7 @@ npc:
         skinName: 90c22bef-84c8-4b24-bac8-d258c06d99c5
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY2NDc1MDYwNjM2NCwKICAicHJvZmlsZUlkIiA6ICJkZjAyYTMxZWYzYTY0ZmNlOWZmMTQyNmMzZDA5Zjg2ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZXphYm95ODEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgzMzU1ZGY0MzZjYzk2NjllY2VmZGI0MDNjNDdmZGMyODZhZDQ2NDRhNmQ0Nzk5M2EwYWI2N2EzZGU5MDg0MiIKICAgIH0KICB9Cn0=
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -464,7 +464,7 @@ npc:
         skinName: 005db4db-2b06-4538-8c32-f4f532fb124c
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0MzAzNDcxNzIzNiwKICAicHJvZmlsZUlkIiA6ICJjYmFkZmRmNTRkZTM0N2UwODQ3MjUyMDIyYTFkNGRkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJmaXdpcGVlIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjOGIxMzI3MGExNmU0NDYzMzRjNTJhYjdiZDVjYTQyOWM4NDZkZTllOTE3YzlkZWEzM2RjZmMyOWI2NmIyNjMiCiAgICB9CiAgfQp9
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -497,7 +497,7 @@ npc:
         skinName: 1efc8626-c765-4925-b930-21ffd1fe2a1a
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0MTgzNDg2Nzc4NiwKICAicHJvZmlsZUlkIiA6ICIxNzU1N2FjNTEzMWE0YTUzODAwODg3Y2E4ZTQ4YWQyNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJQZW50YXRpbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lOTYwMzFjYTllODk4ZDUyOTQyYzkxNDJkYjk5YWUzYWEwYmUzMGRjYTUxZGNmMGI5MDRlZDc5MDNlODM3Zjk4IgogICAgfQogIH0KfQ==
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -530,7 +530,7 @@ npc:
         skinName: 22f65189-6036-4799-b656-5f318a0b9033
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY3NDc4MzI2NjY5MCwKICAicHJvZmlsZUlkIiA6ICJiNTAwOGEyMGJkY2U0YjJlOTU5NWZlNzY2MDlmYjUzNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNT1JJU3hTVE9QQkFOIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M0ZjM1NWZmNzMyZmEyZjc0MTkzNzVjOWE5YjRhMjAxZWMzZjEzNzU2ZmM5MmZmN2EwYTcwMzFiNGU0NDJmYmQiCiAgICB9CiAgfQp9
         updateSkins: false
-    traitnames: spawned,inventory,type,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -563,7 +563,7 @@ npc:
         skinName: 679e726d-6330-4311-b801-ed7a7400ae6a
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYxNzcxMTA1NDY1MywKICAicHJvZmlsZUlkIiA6ICJmMGIzYmRkMjEwNDg0Y2VlYjZhNTQyYmZiOGEyNTdiMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbm9uaW1ZVFQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjcwMmM1OTliYmIzZGI3OGMxYmNjYjZkYWRiMWNiNzAyNGJlY2VkNDA2ZjA4MGJhZjdiNTgyY2I5YWFlYzk4MSIKICAgIH0KICB9Cn0=
         updateSkins: false
-    traitnames: spawned,inventory,type,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -596,7 +596,7 @@ npc:
         skinName: ef53c85d-1585-4a6e-8be5-dad5935ffb50
         textureRaw: eyJ0aW1lc3RhbXAiOjE1NTgxNzcyOTkwOTIsInByb2ZpbGVJZCI6ImZkNjBmMzZmNTg2MTRmMTJiM2NkNDdjMmQ4NTUyOTlhIiwicHJvZmlsZU5hbWUiOiJSZWFkIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hMGY3Njk4NGYzNjU3MGY2ZWMzMGVlNjY4MjI0NWMxNWM5MjQ5NmI2YzhlNDZiODdmZjlmZWJjMzFjOGFlMGFhIn19fQ==
         updateSkins: false
-    traitnames: spawned,inventory,type,location,age,skintrait,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -629,7 +629,7 @@ npc:
         skinName: cda34eb7-6043-469e-a7bc-3084ac9b3226
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYxNzQ1Nzk0MTgwOCwKICAicHJvZmlsZUlkIiA6ICIzYTNmNzhkZmExZjQ0OTllYjE5NjlmYzlkOTEwZGYwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb19jcmVyYXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTE2YTdlMWU1Y2Q2NzhiNWE0NjA3OWE2OWE3OTQyYzY3NGYzM2Y5MWQwMTFhNmNkZjg3NWFmY2YzZmJhYzliNCIKICAgIH0KICB9Cn0=
         updateSkins: false
-    traitnames: spawned,inventory,type,location,skintrait,age,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -657,9 +657,9 @@ npc:
         pitch: '-26.9731'
       skintrait:
         fetchDefaultSkin: true
-        signature: AsGexAJOzXU8i3W4a3onjKzbsVr0ygVNDjKXhmm3z+EJHZiGBnOJHcB2uAo8cqm43VWftlhS37o/fVc0U0/aNeGxml/Ok02MC0xjB9gEO8AbEMStipityZ8ifjDAc6Biry2Wc1Yg1oiVK9S3H2Uu+P9YpVV5P21S7rH06zNYzTCmXbEiJMuoYXZBIG9nmV+dsyytxdFlC/SfQehuCMM4ohnnYmn0jEjspFjWLiC0pOU3MLoCP4U/ew4Ynpio7EIu2Cp7X1o6lPsidTJB7jG94doAcLm/1ic/M8g07mjBQ5Q5+gNXSunnju8pSLNugp/wsztMbAoj0Z/xve+DE2+FMsazuDoNixB4238fEOVRQeQPnKGGy2JO/F85EjWSwVyc+tr+i4z4M9GO+qDmvqD0yGK/ahnH4dqgJAshq2b6ihZ0xZEeM0+tK/AOEy1O0qP00OnjOZR4Zt7nckr34RjZsMr9YGOR5MRyBrHDPEJDA3kzzRdbvO+1h7t7D3scaAPFhOitX1tFH99K5bYUt2YyeHw84MaR0cLYAGLlS5wqZgKNoVblCo5Thrx72bSHVnOum+InVA/eAYqdvLe1vVIKYxDygjhzO+CVNoVb9q5KwaOSgePxW+KIeOgRWxFOTVNG9EbfjtN4Z6txId8e2kkQx8D7Xglvz3Z4JZCx+4hkBvs=
+        signature: lIZ+FTu+fiLL7H4QvU8OCif64z+7YALfKOaRN2JNCg3vOcrfeWDFH4RD744zHY/H4ahxnzqG6IXFA+oTRErGzQFdUXVa05GzOlW/UY1UdFSNRjIfK8KKyPRkHskkb5KcCW0cPp2JXucri8FUvn38KBfziFNXcNpFXUlmX8JR5koo0ObOumtsWo8znBqI5/QBq2F2cH02AeSTHcWB8mm7c86gJYEBpKJM4H2V9Ds5x2y4FxKXb9M1wkCMAJ0DYnd1/X2Q1fUYIlm1oJqjtBYmRHEoqrt7m3D7vajQ0Yej0nVKWYSchy6ian5DHk9vCx/2w7t55fHzoMyhuLrladYLvHRh5diSje4ikawwsBA+WcbEN325NsagI4lJsy56ATgjZ0kHYSCGXX7PUf7vdXJGQm72gv88GWrqFzSZEAHqeWvI4t4Rz8KknYzVIa26QM+xH8HP1t6/G4hVzC6Q3TODycCMbP2sddrcFbNVqSCXVOWl44UYIAUJnr4vDJQ9lJqr0+Q4DlVfmdQL73E8yR4vyi6Zkl01K6EBjjO76u9YN5YawSZvyhBY/IwiTCPAka6496HyIhcaJ3b7wYuL0bHgsQIqCk40k29L/cZd/Oh+OhJhkYDuHvKsL64U7eivpeml25QKUL9BKK3QCtGJ477Zs6d3VxF6btHkjnRGKFszxTM=
         skinName: _D_Captain_
-        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4MzU2NzAwODA3NiwKICAicHJvZmlsZUlkIiA6ICIxOTg5NGVmYTAxZDM0M2U1ODJkYjAwOGNkOTM4MWIyZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfRF9DYXB0YWluXyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83ZDdkNTM3NzczMTk0ZWZhZTU2ZmFmM2MxMjljOWUwMDc5ZDdlODhiNWRmZjQzMzljMjUxNDA5NmY3ODRkYmNhIgogICAgfQogIH0KfQ==
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY4MzYwNTAyOTM5NywKICAicHJvZmlsZUlkIiA6ICIxOTg5NGVmYTAxZDM0M2U1ODJkYjAwOGNkOTM4MWIyZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfRF9DYXB0YWluXyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83ZDdkNTM3NzczMTk0ZWZhZTU2ZmFmM2MxMjljOWUwMDc5ZDdlODhiNWRmZjQzMzljMjUxNDA5NmY3ODRkYmNhIgogICAgfQogIH0KfQ==
         updateSkins: true
       lookclose:
         range: '5.0'
@@ -679,7 +679,7 @@ npc:
           '0': 0.0
           '1': 360.0
       spawned: true
-    traitnames: spawned,inventory,type,location,skintrait,age,owner,scoreboardtrait,lookclose,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,owner,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -713,7 +713,7 @@ npc:
         yaw: '132.3405'
         pitch: '3.9504'
       type: PLAYER
-    traitnames: spawned,inventory,type,location,age,skintrait,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -747,7 +747,7 @@ npc:
         yaw: '48.2512'
         pitch: '1.2953'
       type: PLAYER
-    traitnames: spawned,inventory,type,location,skintrait,age,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -781,7 +781,7 @@ npc:
         yaw: '-134.1348'
         pitch: '3.1961'
       type: PLAYER
-    traitnames: spawned,inventory,type,location,age,skintrait,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -816,7 +816,7 @@ npc:
           yaw: '97.5448'
           pitch: '31.4066'
       mounttrait:
-        mountedon: 098a2035-09c3-40b2-9695-af43bdd753b7
+        mountedon: 03bcea52-8d0b-4965-a43e-66a54cdf4bef
       location:
         bodyYaw: 97.5448
         world: dawn_island
@@ -826,7 +826,7 @@ npc:
         yaw: '97.5448'
         pitch: '31.4066'
       type: PLAYER
-    traitnames: spawned,inventory,type,sitting,location,skintrait,age,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -861,7 +861,7 @@ npc:
           yaw: '-0.9965'
           pitch: '2.714'
       mounttrait:
-        mountedon: fd1d829a-bbdc-4a3e-a380-a2e11253a9ff
+        mountedon: 3d9021b0-ebc7-479b-a72b-4ae0824e9334
       location:
         bodyYaw: -0.9965
         world: dawn_island
@@ -871,7 +871,7 @@ npc:
         yaw: '-0.9965'
         pitch: '2.714'
       type: PLAYER
-    traitnames: spawned,inventory,type,sitting,location,age,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,age,skintrait,scoreboardtrait,spawned,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -926,7 +926,7 @@ npc:
         locked: true
       scoreboardtrait:
         color: BLUE
-    traitnames: spawned,inventory,hologramtrait,type,location,age,skintrait,lookclose,scoreboardtrait,owner,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,scoreboardtrait,spawned,location,hologramtrait,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -981,7 +981,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,hologramtrait,type,location,age,skintrait,scoreboardtrait,lookclose,owner,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,hologramtrait,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1003,7 +1003,7 @@ npc:
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: 040186ae-27ea-4ae4-b917-b99a0b6216b2
+        mountedon: 0e3a9cb1-fa51-4020-a1c2-9475eedb4540
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1015,7 +1015,7 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 151.33118
+        bodyYaw: 171.3312
         world: dawn_island
         x: '616.9321'
         y: '67.65'
@@ -1039,7 +1039,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,sitting,location,age,skintrait,lookclose,owner,scoreboardtrait,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,rotationtrait,age,skintrait,scoreboardtrait,spawned,location,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1063,7 +1063,7 @@ npc:
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: 159d6c15-9286-49a8-8ea2-d902dea00a91
+        mountedon: e1ebb6c8-a3fd-4c46-bcaf-3661f517153b
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1075,7 +1075,7 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 151.33118
+        bodyYaw: 171.3312
         world: dawn_island
         x: '616.9321'
         y: '67.65'
@@ -1099,7 +1099,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,sitting,location,age,skintrait,owner,scoreboardtrait,lookclose,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,owner,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1149,7 +1149,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,location,skintrait,age,owner,lookclose,scoreboardtrait,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,owner,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1198,7 +1198,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,location,age,skintrait,lookclose,owner,scoreboardtrait,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1217,13 +1217,13 @@ npc:
           x: '720.1003'
           y: '66.3'
           z: '-193.5986'
-          yaw: '32.2294'
-          pitch: '-24.5517'
+          yaw: '-103.4922'
+          pitch: '-2.4372'
       type: PLAYER
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: abf10309-9bca-4ab1-ba94-099f40c084b6
+        mountedon: 2af501df-95f3-4bf2-aa04-166a5d066fa6
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1235,13 +1235,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 32.229385
+        bodyYaw: -103.4922
         world: dawn_island
         x: '720.1003'
         y: '65.95'
         z: '-193.5986'
-        yaw: '32.2294'
-        pitch: '-24.5517'
+        yaw: '-103.4922'
+        pitch: '-2.4372'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1259,7 +1259,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,sitting,location,age,skintrait,lookclose,owner,scoreboardtrait,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1277,13 +1277,13 @@ npc:
           x: '720.1003'
           y: '66.3'
           z: '-193.5986'
-          yaw: '32.2294'
-          pitch: '-24.5517'
+          yaw: '-103.4922'
+          pitch: '-2.4372'
       type: PLAYER
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: 361a4f1d-8ad7-4c20-b868-87b50d894f98
+        mountedon: 8c002456-a063-4551-bd09-692a0c33cf24
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1295,13 +1295,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 32.229385
+        bodyYaw: -103.4922
         world: dawn_island
         x: '720.1003'
         y: '65.95'
         z: '-193.5986'
-        yaw: '32.2294'
-        pitch: '-24.5517'
+        yaw: '-103.4922'
+        pitch: '-2.4372'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1319,7 +1319,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,sitting,location,age,skintrait,lookclose,owner,scoreboardtrait,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1369,7 +1369,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,location,skintrait,age,lookclose,owner,scoreboardtrait,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1418,7 +1418,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,location,age,skintrait,owner,scoreboardtrait,lookclose,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,scoreboardtrait,spawned,location,owner,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1471,7 +1471,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,hologramtrait,type,location,age,skintrait,scoreboardtrait,owner,lookclose,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,scoreboardtrait,spawned,location,hologramtrait,owner,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1523,7 +1523,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,hologramtrait,type,location,skintrait,age,scoreboardtrait,lookclose,owner,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,scoreboardtrait,spawned,location,hologramtrait,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1576,7 +1576,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: spawned,inventory,type,location,skintrait,age,lookclose,scoreboardtrait,owner,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,scoreboardtrait,spawned,location,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1618,17 +1618,17 @@ npc:
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       location:
-        bodyYaw: 71.26465
+        bodyYaw: -144.70927
         world: dawn_island
         x: '719.2628'
         y: '66.5'
         z: '-188.7'
-        yaw: '71.2646'
-        pitch: '0.0'
+        yaw: '-144.7093'
+        pitch: '-6.0102'
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
-    traitnames: spawned,inventory,hologramtrait,type,location,age,skintrait,scoreboardtrait,lookclose,owner,rotationtrait,mounttrait
+    traitnames: type,inventory,mounttrait,rotationtrait,age,skintrait,spawned,scoreboardtrait,location,hologramtrait,lookclose,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1647,7 +1647,7 @@ npc:
           yaw: '-50.2929'
           pitch: '6.5167'
       mounttrait:
-        mountedon: a3ad67f8-a1af-4002-83d1-fb41093b51d6
+        mountedon: 17116b12-b5d1-4c60-ac1c-53845764d57f
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1665,7 +1665,7 @@ npc:
         z: '9.2818'
         yaw: '-50.2929'
         pitch: '6.5167'
-    traitnames: mirrorname,spawned,inventory,mirror,type,sitting,location,skintrait,scoreboardtrait,owner,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,mirrorname,skintrait,scoreboardtrait,spawned,mirror,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1696,7 +1696,7 @@ npc:
         z: '9.703'
         yaw: '-174.5663'
         pitch: '27.2445'
-    traitnames: mirrorname,spawned,inventory,mirror,type,location,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,mirrorname,skintrait,spawned,scoreboardtrait,mirror,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1717,7 +1717,7 @@ npc:
         textureRaw: eyJ0aW1lc3RhbXAiOjE1NjIyMTE1NDc1MjMsInByb2ZpbGVJZCI6ImZkNjBmMzZmNTg2MTRmMTJiM2NkNDdjMmQ4NTUyOTlhIiwicHJvZmlsZU5hbWUiOiJSZWFkIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lNTI2MThjYWFiMWM3NjJlMjMyYzdhNzg2MWYxNjQwMWFkMTBiOWQ4ZTRlNWY0NzZkZmE3NGM0NDc5ZGZiN2MwIn19fQ==
         updateSkins: false
       mounttrait:
-        mountedon: 8d3e84f9-8029-4a1b-9d41-477a0a352792
+        mountedon: 0ab77dda-6698-4e02-b1ce-1dfb4c47fdd9
       sitting:
         sitting: true
         chair location:
@@ -1738,7 +1738,7 @@ npc:
         z: '-158.9098'
         yaw: '-172.4224'
         pitch: '34.8175'
-    traitnames: spawned,inventory,type,sitting,location,skintrait,owner,scoreboardtrait,mounttrait
+    traitnames: type,inventory,mounttrait,sitting,skintrait,spawned,scoreboardtrait,location,owner
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

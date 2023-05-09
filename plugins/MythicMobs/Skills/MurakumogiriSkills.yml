@@ -1275,17 +1275,17 @@ Haoshoku:
 HaoshokuBlast:
   Skills:
   - effect:particlering{p=reddust;color=#ffffff;radius=3;points=100;amount=1;hS=0;vS=0} @selflocation
-  - damage{amount=500} @EIR{r=3}
+  - damage{amount=1000} @EIR{r=3}
   - delay 2
   - effect:particlering{p=reddust;color=#ffffff;radius=6;points=100;amount=1;hS=0;vS=0} @selflocation
-  - damage{amount=500} @EIR{r=6}
+  - damage{amount=1000} @EIR{r=6}
   - delay 2
   - effect:particlering{p=reddust;color=#ffffff;radius=9;points=100;amount=1;hS=0;vS=0} @selflocation
-  - damage{amount=500} @EIR{r=9}
+  - damage{amount=1000} @EIR{r=9}
   - delay 2
   - effect:particlering{p=reddust;color=#ffffff;radius=12;points=100;amount=1;hS=0;vS=0} @selflocation
   - delay 2
-  - damage{amount=500} @EIR{r=12}
+  - damage{amount=1000} @EIR{r=12}
 HaoshokuLightning:
   Skills:
   - effect:particleline{p=reddust;color=#ff0000;amount=25;size=0.25;zz=true;zzs=10;zzo=0.25;yOffset=0.8;db=0.1;t=40;so=0.5} @Origin{xoffset="<random.-1to1>";yoffset="<random.-1to1>";zoffset="<random.-1to1>"}
