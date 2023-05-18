@@ -11,10 +11,7 @@ MugiKage:
 DrMeaw:
   belowname: §f§r
   abovename: §f§r
-_D_Captain_:
-  abovename: 
-  tagprefix:  &f
-  tabprefix:  &f
+_D_Captain_: {}
 remove: {}
 FujinSamurai:
   abovename: §f§r

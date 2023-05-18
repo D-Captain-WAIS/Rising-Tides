@@ -68,7 +68,7 @@ events:
     notify_get_meat: "notify &9&oObtain Raw Meat for Dadan!\n&e&oGet 10 &c&oRaw Meat &eand return to Dadan! io:title"
     notify_return_dadan: "notify &9&oRaw Meat Secured!\n&e&oReturn to Dadan! io:title"
   #add hud
-    add_hud: "command hh layout %player% add marine-layout"
+    add_hud: "command hh layout %player% add marine-layout -s"
   #vivre guide
     look_chat: "notify &6&oPlease pay attention to chat! io:subtitle"
     notify_congrats: "notify &6&oCongratulations on earning a level! Leveling up awards you with stat points to make you stronger!"

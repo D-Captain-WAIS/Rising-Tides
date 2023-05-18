@@ -11,23 +11,23 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1684428899940
+  lastteleport: 1684439879254
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
   logout: 1684429875157
-  login: 1684413541505
+  login: 1684439852869
 money: '999999519899.0'
 last-account-name: _D_Captain_
 lastlocation:
-  world: 23e27574-e2c8-4689-8402-f4e488332383
-  world-name: dev
-  x: -0.5
-  y: -32.0
-  z: -0.5
-  yaw: 87.9858627319336
-  pitch: 15.657342910766602
+  world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
+  world-name: dawn_island
+  x: 726.2678590590696
+  y: 65.0
+  z: -209.07499998807907
+  yaw: -120.98396301269531
+  pitch: 24.40928840637207
 logoutlocation:
   world: 0c7e7ca9-e5ee-40d7-a730-5bfca4a8f0c1
   world-name: dawn_island

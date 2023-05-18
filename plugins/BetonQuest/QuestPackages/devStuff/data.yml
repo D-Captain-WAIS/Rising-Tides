@@ -14,8 +14,10 @@ events:
   reset_class_confirm: "opsudo class reset confirm"
   stat_point_reset: "command cpdata set %player% statpoints 0"
   invested_stpt_reset: "command cpdata set %player% investedstatpoints 0"
+  remove_marine: "command hh layout %player% remove marine-layout -s"
   reset_class: "folder reset_class_command,reset_class_confirm,stat_point_reset,invested_stpt_reset"
-  reset_total: "folder reset_class,reset_data"
+  reset_tags: "opsudo cp removeall"
+  reset_total: "folder reset_class,reset_data,reset_tags,remove_marine"
   reset_data: "command q purge %player%"
   give_vivre: "command iagive %player% utilities:vivre"
   give_100xp: "opsudo class exp 100"
@@ -38,3 +40,8 @@ events:
   kill_dummyKB2: "command mm m kill DummyGD2KB"
   reset_dummies: "folder kill_dummy1,kill_dummy2,spawn_dummy1,spawn_dummy2"
   reset_dummiesKB: "folder kill_dummyKB1,kill_dummyKB2,spawn_dummyKB1,spawn_dummyKB2"
+
+conditions:
+  gdes: "permission group.trust-gd"
+  mgmt: "permission group.mgmt"
+  non_qa: "or gdes,mgmt"

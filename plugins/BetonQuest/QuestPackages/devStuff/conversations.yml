@@ -5,13 +5,16 @@ conversations:
     NPC_options:
       choose:
         text: "&fWhat do you need?"
-        pointers: "class,race,points,dummies"
+        pointers: "class,race,points,dummies,story"
       class_select:
         text: "&fWhat about your class do you need?"
         pointers: "scrapper,mwnewbie,gunnewbie,swnewbie,reset_class,give_vivre"
       race_select:
         text: "&fWhat race do you want to be?"
         pointers: "human,fishman,merfolk,brikan,shandian,diurnal,nocturnal"
+      story_select:
+        text: "&fWhat about your story do you need?"
+        pointers: "char_create,reset_all"
       vivre:
         text: "&fHere's a vivre card"
         events: "give_vivre"
@@ -102,6 +105,12 @@ conversations:
       reset_all_confirm:
         text: "&fReset all dummies"
         events: "reset_dummies,reset_dummiesKB"
+      char_create_confirm:
+        text: "&fAlright, sending you now!"
+        events: "characterCreation.start,reset_total"
+      reset_total_confirm:
+        text: "&fAlright, your data has been reset"
+        events: "reset_total"
     player_options:
       class:
         text: "I want to change my class"
@@ -115,6 +124,9 @@ conversations:
       dummies:
         text: "I want to spawn/reset the dummies"
         pointers: "dummies_select"
+      story:
+        text: "I want to do story things"
+        pointers: "story_select"
       scrapper:
         text: "I want to become a scrapper"
         pointers: "set_scrapper"
@@ -199,3 +211,9 @@ conversations:
       give_vivre:
         text: "I want a vivre card"
         pointers: "vivre" 
+      char_create:
+        text: "Send me to Character Creation!"
+        pointers: "char_create_confirm"
+      reset_all:
+        text: "Reset all my data"
+        pointers: "reset_total_confirm"

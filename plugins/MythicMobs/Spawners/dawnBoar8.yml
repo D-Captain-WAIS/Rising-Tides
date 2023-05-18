@@ -6,7 +6,7 @@ dawnBoar8:
   Z: -220
   Yaw: 0.0
   Pitch: 0.0
-  Radius: 0
+  Radius: 10
   RadiusY: 1
   UseTimer: true
   MaxMobs: '5'
@@ -25,4 +25,4 @@ dawnBoar8:
   ShowFlames: false
   Breakable: false
   Conditions: []
-  ActiveMobs: 0
+  ActiveMobs: 2
