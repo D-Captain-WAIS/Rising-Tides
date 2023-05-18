@@ -41,6 +41,24 @@ PAPER:
   utilities:gold_exclamation_mark: 10039
   utilities:iron_question_mark: 10040
   utilities:iron_exclamation_mark: 10041
+  shop:bead_hat: 10042
+  shop:pink_corsage: 10043
+  shop:purple_sumo_belt: 10044
+  shop:snake_earrings: 10045
+  shop:bird_glasses: 10046
+  shop:bluedolph: 10047
+  shop:clown_nose: 10048
+  shop:cross_necklace: 10049
+  shop:bubbly_bandanna: 10050
+  shop:god_bandanna: 10051
+  shop:goth_crown: 10052
+  shop:bear_hat: 10053
+  shop:shroom_hat: 10054
+  shop:punk_goggles: 10055
+  shop:goggle_hat: 10056
+  shop:ribbon_cloak: 10057
+  shop:triple_cigar: 10058
+  shop:straw_hat: 10059
 PLAYER_HEAD:
   __manually_handled:iainternal__player_hat_slot: 10000
   __manually_handled:iainternal__player_left_arm_slot: 10001
@@ -136,6 +154,7 @@ LIME_DYE:
 COAL:
   sunrise:rusty_cutlass: 10000
   sunrise:standard_gloves: 10001
+  sunrise:mountain_wraps: 10002
 STICK:
   utilities:bola: 10000
   utilities:bottle: 10001

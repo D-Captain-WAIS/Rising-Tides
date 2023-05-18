@@ -31,13 +31,14 @@ conversations:
     NPC_options:
       hello:
         text: "\nHello officer, how can I help you?\n"
-        conditions: "!tag_tatianna"
+        conditions: "hide_tatianna"
         pointers: "know"
       nope:
         text: "\nNope! sorry, never heard of those guys.\n"
         events: "talked_tatianna"
       talked:
         text: "\nGood luck officer!\n"
+        conditions: "tag_tatianna"
     player_options:
       know:
         text: "Know anything about the Bluejam Pirates?\n"
@@ -49,13 +50,14 @@ conversations:
     NPC_options:
       hello:
         text: "\nWhat do you want!?\n"
-        conditions: "!tag_nowell"
+        conditions: "hide_nowell"
         pointers: "sorry"
       know:
         text: "\nDon't know who that is and don't care, but you guys should be doing your job better and getting rid of those bandits!\n"
         events: "talked_nowell"
       talked:
         text: "\nYou better catch those bandits!\n"
+        conditions: "tag_nowell"
     player_options:
       sorry:
         text: "Sorry I guess?  just trying to see if you know anything about the Bluejam Pirates.\n"
@@ -67,13 +69,14 @@ conversations:
     NPC_options:
       hello:
         text: "\nHow you doing little one?\n"
-        conditions: "!tag_parry"
+        conditions: "hide_parry"
         pointers: "heard"
       remember:
         text: "\nI remember those pirates used to be an active bunch in Gray Terminal back in the day, but I haven't heard anything about em' in quite a long time!\n"
         events: "talked_parry"
       talked:
         text: "\nAny luck on your search?\n"
+        conditions: "tag_parry"
     player_options:
       heard:
         text: "Hi, have you heard anything about the Bluejam Pirates?\n"
@@ -85,13 +88,14 @@ conversations:
     NPC_options:
       nice:
         text: "\nNice costume you got kid, you here to arrest me?\n"
-        conditions: "!tag_jai"
+        conditions: "hide_jai"
         pointers: "badge"
       sorry:
         text: "\nOh so very sorry sir but no i haven't heard anything about them, and I'm totally not doing anything illegal!\n"
         events: "talked_jai"
       talked:
         text: "\nNothing illegal here! No sir!\n"
+        conditions: "tag_jai"
     player_options:
       badge:
         text: "*AHEM* *flashes badge*, No,  i'm here to ask if you know anything about the Bluejam Pirates.\n"
@@ -103,13 +107,14 @@ conversations:
     NPC_options:
       face:
         text: "\nOh it's a new face! We don't get many of those, but how may I help you officer? \n"
-        conditions: "!tag_gil"
+        conditions: "hide_gil"
         pointers: "heard"
       bandits:
         text: "\nI heard some bandits mention their name and- Oh my god! I think I can see some bandits approaching the village!\n"
         events: "play_combatTut,talked_gil,folder_combat,add_stopped_raid,talked_tatianna,talked_nowell,talked_parry,talked_jai"
       thank:
         text: "\nThank you for helping our village out!\n"
+        conditions: "tag_gil"
     player_options:
       heard:
         text: "Hi, have you heard anything about the Bluejam Pirates?\n"
@@ -143,7 +148,7 @@ conversations:
         pointers: "accept,refuse"
       again:
         text: "\nAlright! You can always check the guides through the vivre card!\n"
-        events: "asked_chassis"
+        events: "asked_chassis,notify_talk_makino,talk_makino"
     player_options:
       accept:
         text: "Yes!\n"
@@ -151,5 +156,136 @@ conversations:
       refuse:
         text: "No!\n"
         pointers: "again"
+  maki:
+    quester: "\n&a&l[Maki The Bartender]"
+    first: "first_talk,change_mind,party"
+    stop: 'true'
+    NPC_options:
+      first_talk:
+        text: "\nHey, thanks for defending us against those bandits!\n"
+        condition: "tag_talk_makino"
+        pointers: "no_problem"
+      different:
+        text: "\nOh those ones are from a different group then these guys. The ones in Mt Corvo are the Dadan Family, they're pretty friendly there's no need to fight them.\n"
+        pointers: "as_long"
+      familiar:
+        text: "\nHmmm… That name seems familiar. I think I heard Dadan talk about them, if you want I can introduce you to her, and you can ask her directly.\n"
+        pointers: "great"
+      guide:
+        text: "\nAlright! They are just up the trail leading up the mountain! I can guide you there or meet you there if you like!\n"
+        pointers: "guide_player,meet_player"
+      sure_guide:
+        text: "\nSure I'll guide you there! Just meet me outside! Stay close though! If you go too far and lose me, you can just find me back here!\n"
+        events: "remove_makino,remove_meet_makino,spawn_makino,makino_guide"
+      sure_meet:
+        text: "\nSure I'll meet you there! Just follow the path west into the jungle and take the first left you see! I'll be at the entrance to the tunnel to Dadan's!\n"
+        events: "remove_makino_guide,meet_makino"
+      change_mind:
+        text: "\nHey! Change your mind about meeting me there or me guiding you?\n"
+        conditions: "change_mind"
+        pointers: "guide_player,meet_player"
+      party:
+        text: "\nWelcome to my Bar!\n"
+    player_options:
+      no_problem:
+        text: "No problem! I'm not finished yet though I'm planning to go up Mt Corvo and take care of the rest of them!\n"
+        pointers: "different"
+      as_long: 
+        text: "Ok as long as they are not causing trouble, but I heard those guys have something to do with the Bluejam Pirates?\n"
+        pointers: "familiar"
+      great: 
+        text: "That would be great!\n"
+        pointers: "guide"
+      guide_player:
+        text: "Can you guide me there?\n"
+        pointers: "sure_guide"
+      meet_player:
+        text: "I'll meet you there!\n"
+        pointers: "sure_meet"
+  maki_tunnel:
+    quester: "\n&a&l[Maki The Bartender]"
+    first: "meet"
+    stop: "true"
+    NPC_options:
+      meet:
+        text: "\nThis tunnel leads to Dadan's Hideout. I'll meet you there!\n"
+        pointers: "got_it"
+    player_options:
+      got_it:
+        text: "Got it!\n"
+        events: "going_dadan,remove_meet_makino,objective_reach_dadan"
+  dadan_maki:
+    quester: "\n&a&l[Dadan the Bandit Leader]"
+    first: "oi_maki"
+    stop: "true"
+    NPC_options:
+      oi_maki:
+        text: "\nOi Makino! Who's this kid? Why are you bringing a government dog around my land?\n"
+  maki_dadan:
+    quester: "\n&a&l[Maki The Bartender]"   
+    first: "oh_dadan"
+    stop: "true"
+    NPC_options:
+      oh_dadan:
+        text: "\nOh Dadan, don't worry! He's only interested in the bandits that were attacking the village. He has some questions about that and a pirate named Bluejam.\n"
+  dadan:
+    quester: "\n&a&l[Dadan the Bandit Leader]"
+    first: "oh_and,no_meat,yes_meat,cool"
+    stop: "true"
+    NPC_options:
+      oh_and:
+        text: "\nOh? and how could I be so sure that he wouldn't turn me in the second I tell him what he wants?\n"
+        conditions: "!tag_met_dadan"
+        pointers: "assure"
+      start:
+        text: "\nWell why didn't you start just with that! Bluejam huh? I've got some info about him but first you're gonna have to help me out, recently the other bandits have been taking some food from our supply and so we've been pretty low. If you want anything outta me you gotta hunt some food for us!\n"
+        pointers: "alright"
+      it_will:
+        text: "\nIt sure will! Now get us some grub!\n"
+        events: "folder_maki_leave"
+      no_meat:
+        text: "\nIf you don't have what you promised, then I've got nothing for you\n"
+        conditions: "no_meat"
+      yes_meat:
+        text: "\nYou're back! Got what I requested?\n"
+        conditions: "tag_collected_meat"
+        pointer: "yeah"
+      not_bad:
+        text: "\nNot bad for a marine huh? Now for my end of the deal, I heard that Bluejam was making an alliance with some mountain bandits. A bunch of spineless cowards with no real direction.\n"
+        pointers: "where"
+      should_be:
+        text: "\nIt should just be south of here past the Mid-way Forest and Grey Terminal. Make sure to give that Bluejam fella a swing for me! Guess I didn't teach him enough from last time!\n"
+        pointers: "got_it"
+      cool:
+        text: "\nFor a marine, you're not a bad guy...kinda reminds me of someone I know...\n"
+    player_options:
+      assure:
+        text: "Umm, I can assure you I'm only concerned for the safety of the people. If you don't believe me, perhaps I could help you as well?\n"
+        pointers: "start"
+      alright:
+        text: "Alright fine, but your information better be worth it!"
+        pointers: "it_will"
+      yeah:
+        text: "Yeah some meat just like you wanted.\n"
+        pointer: "not_bad"
+      where:
+        text: "Where's Bluejam's Hideout?\n"
+        pointer: "should_be"
+      got_it:
+        text: "Got it! Thank you!\n"
+        events: "helped_dadan,remove_collected_meat,lv4"
+  maki_leave:
+    quester: "\n&a&l[Maki The Bartender]"
+    first: "see_you"
+    stop: "true"
+    NPC_options: 
+      see_you:
+        text: "\nWell that's that! If you need anything else, I'll be at my bar! It was nice meeting you and thank you so much for all your help!\n"
+        pointers: "no_problem"
+    player_options:
+      no_problem:
+        text: "No problem! Just doing my job!"
+        event: "met_dadan,remove_makino,remove_going_dadan,lv3"
   
+
   

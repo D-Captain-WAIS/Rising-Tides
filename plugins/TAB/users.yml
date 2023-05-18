@@ -13,8 +13,8 @@ DrMeaw:
   abovename: §f§r
 _D_Captain_:
   abovename: 
-  tagprefix: 
-  tabprefix: 
+  tagprefix:  &f
+  tabprefix:  &f
 remove: {}
 FujinSamurai:
   abovename: §f§r

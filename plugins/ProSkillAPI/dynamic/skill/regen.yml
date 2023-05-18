@@ -91,7 +91,7 @@ regen:
                 counts: 'False'
                 key: 'noncombatheal'
                 type: 'Number'
-                placeholder: '%math_2*(0.1*{sapi_player_class_attribute:willpower})%'
+                placeholder: '%math_2*(0.1*{sapi_player_class_attribute:willpower})+1.8%'
               children:  {}
             Value Placeholder-d: 
               type: 'mechanic'

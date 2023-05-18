@@ -1,7 +1,19 @@
 title: ":offset_-8::vivre:"
 rows: 6
 items:
-  purple_scarf:
+  straw_hat_menu:
+    slots:
+      - 0
+    item:
+      material: itemsadder:shop:straw_hat
+      name: "<gold><bold>Basic Straw Hat"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_straw_hat%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_straw_hat%" 
+    type: cosmetic
+    cosmetic: straw_hat
+  purple_scarf_menu:
     slots:
       - 1
     item:
@@ -13,7 +25,7 @@ items:
         - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_purple_scarf%" 
     type: cosmetic
     cosmetic: purple_scarf
-  hat_mask:
+  hat_mask_menu:
     slots:
       - 2
     item:
@@ -25,3 +37,207 @@ items:
         - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_hat_mask%" 
     type: cosmetic
     cosmetic: hat_mask
+  bead_hat_menu:
+    slots:
+      - 3
+    item:
+      material: itemsadder:shop:bead_hat
+      name: "<gold><bold>Bead Hat"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_bead_hat%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_bead_hat%" 
+    type: cosmetic
+    cosmetic: bead_hat
+  pink_corsage_menu:
+    slots:
+      - 4
+    item:
+      material: itemsadder:shop:pink_corsage
+      name: "<gold><bold>Pink Corsage"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_pink_corsage%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_pink_corsage%" 
+    type: cosmetic
+    cosmetic: pink_corsage
+  purple_sumo_belt_menu:
+    slots:
+      - 5
+    item:
+      material: itemsadder:shop:purple_sumo_belt
+      name: "<gold><bold>Purple Sumo Belt"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_purple_sumo_belt%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_purple_sumo_belt%" 
+    type: cosmetic
+    cosmetic: purple_sumo_belt
+  snake_earrings_menu:
+    slots:
+      - 6
+    item:
+      material: itemsadder:shop:snake_earrings
+      name: "<gold><bold>Snake Earrings"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_snake_earrings%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_snake_earrings%" 
+    type: cosmetic
+    cosmetic: snake_earrings
+  bird_glasses_menu:
+    slots:
+      - 7
+    item:
+      material: itemsadder:shop:bird_glasses
+      name: "<gold><bold>Bird Glasses"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_bird_glasses%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_bird_glasses%" 
+    type: cosmetic
+    cosmetic: bird_glasses
+  bluedolph_menu:
+    slots:
+      - 8
+    item:
+      material: itemsadder:shop:bluedolph
+      name: "<gold><bold>Blue Snout"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_bluedolph%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_bluedolph%" 
+    type: cosmetic
+    cosmetic: bluedolph
+  clown_nose_menu:
+    slots:
+      - 9
+    item:
+      material: itemsadder:shop:clown_nose
+      name: "<gold><bold>Clown Nose"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_clown_nose%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_clown_nose%" 
+    type: cosmetic
+    cosmetic: clown_nose
+  cross_necklace_menu:
+    slots:
+      - 10
+    item:
+      material: itemsadder:shop:cross_necklace
+      name: "<gold><bold>Cross Necklace"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_cross_necklace%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_cross_necklace%" 
+    type: cosmetic
+    cosmetic: cross_necklace
+  bubbly_bandanna_menu:
+    slots:
+      - 11
+    item:
+      material: itemsadder:shop:bubbly_bandanna
+      name: "<gold><bold>Bubbly Bandanna"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_bubbly_bandanna%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_bubbly_bandanna%" 
+    type: cosmetic
+    cosmetic: bubbly_bandanna
+  god_bandanna_menu:
+    slots:
+      - 12
+    item:
+      material: itemsadder:shop:god_bandanna
+      name: "<gold><bold>God's Bandanna"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_god_bandanna%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_god_bandanna%" 
+    type: cosmetic
+    cosmetic: god_bandanna
+  goth_crown_menu:
+    slots:
+      - 13
+    item:
+      material: itemsadder:shop:goth_crown
+      name: "<gold><bold>Gothic Crown"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_goth_crown%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_goth_crown%" 
+    type: cosmetic
+    cosmetic: goth_crown
+  bear_hat_menu:
+    slots:
+      - 14
+    item:
+      material: itemsadder:shop:bear_hat
+      name: "<gold><bold>Bear Ears Hat"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_bear_hat%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_bear_hat%" 
+    type: cosmetic
+    cosmetic: bear_hat
+  shroom_hat_menu:
+    slots:
+      - 15
+    item:
+      material: itemsadder:shop:shroom_hat
+      name: "<gold><bold>Shroom Hat"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_shroom_hat%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_shroom_hat%" 
+    type: cosmetic
+    cosmetic: shroom_hat
+  punk_goggles_menu:
+    slots:
+      - 16
+    item:
+      material: itemsadder:shop:punk_goggles
+      name: "<gold><bold>Punk Goggles"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_punk_goggles%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_punk_goggles%" 
+    type: cosmetic
+    cosmetic: punk_goggles
+  goggle_hat_menu:
+    slots:
+      - 17
+    item:
+      material: itemsadder:shop:goggle_hat
+      name: "<gold><bold>Goggle Hat"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_goggle_hat%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_goggle_hat%" 
+    type: cosmetic
+    cosmetic: goggle_hat
+  ribbon_cloak_menu:
+    slots:
+      - 18
+    item:
+      material: itemsadder:shop:ribbon_cloak
+      name: "<gold><bold>Ribbon Cloak"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_ribbon_cloak%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_ribbon_cloak%" 
+    type: cosmetic
+    cosmetic: ribbon_cloak
+  triple_cigar_menu:
+    slots:
+      - 19
+    item:
+      material: itemsadder:shop:triple_cigar
+      name: "<gold><bold>Triple Cigar"
+      lore:
+        - ""
+        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_triple_cigar%"
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_triple_cigar%" 
+    type: cosmetic
+    cosmetic: triple_cigar

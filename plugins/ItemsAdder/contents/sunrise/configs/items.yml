@@ -41,7 +41,7 @@ items:
     display_name: "Mountain Wraps"
     permission: sunrise.mountain_wraps
     resource:
-      material: GOLDEN_SWORD
+      material: COAL
       generate: false
       model_path: item/mountain_wraps
     item_flags:

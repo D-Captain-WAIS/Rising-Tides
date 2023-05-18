@@ -37,3 +37,165 @@ items:
       model_path: item/capcoat
     item_flags:
     - HIDE_ATTRIBUTES
+  bead_hat:
+    display_name: "Beaded Hat"
+    permission: admin.ace_hat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/ace_hat
+    item_flags:
+    - HIDE_ATTRIBUTES
+  pink_corsage:
+    display_name: "Pink Corsage"
+    permission: admin.flower
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/akainu_flower
+    item_flags:
+    - HIDE_ATTRIBUTES
+  purple_sumo_belt:
+    display_name: "Purple Sumo Belt"
+    permission: admin.beastlybelt
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/beastly_belt
+    item_flags:
+    - HIDE_ATTRIBUTES
+  snake_earrings:
+    display_name: "Snake Earrings"
+    permission: admin.snakeearings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/beautiful_earrings
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bird_glasses:
+    display_name: "Bird Glasses"
+    permission: admin.birdglasses
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/bird_glasses
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bluedolph:
+    display_name: "Blue Snout"
+    permission: admin.bluesnout
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/chopper_nose
+    item_flags:
+    - HIDE_ATTRIBUTES
+  clown_nose:
+    display_name: "Clown Nose"
+    permission: admin.clownnose
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/clown_nose
+    item_flags:
+    - HIDE_ATTRIBUTES
+  cross_necklace:
+    display_name: "Cross Necklace"
+    permission: admin.crossnecklace
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cross_necklace
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bubbly_bandanna:
+    display_name: "Bubbly Bandanna"
+    permission: admin.bubblybandanna
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/flower_bandanna
+    item_flags:
+    - HIDE_ATTRIBUTES
+  god_bandanna:
+    display_name: "God Bandanna"
+    permission: admin.godbandanna
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/god_bandana
+    item_flags:
+    - HIDE_ATTRIBUTES
+  goth_crown:
+    display_name: "Gothic Crown"
+    permission: admin.gothcrown
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/goth_crown
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bear_hat:
+    display_name: "Bear Ear Hat"
+    permission: admin.kumahat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/kumahat
+    item_flags:
+    - HIDE_ATTRIBUTES
+  shroom_hat:
+    display_name: "Shroom Hat"
+    permission: admin.godbandanna
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/law_hat
+    item_flags:
+    - HIDE_ATTRIBUTES
+  punk_goggles:
+    display_name: "Steampunk Goggles"
+    permission: admin.punkgoggles
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/punk_goggles
+    item_flags:
+    - HIDE_ATTRIBUTES
+  goggle_hat:
+    display_name: "Goggle Hat"
+    permission: admin.gogglehat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/sabo_hat
+    item_flags:
+    - HIDE_ATTRIBUTES
+  ribbon_cloak:
+    display_name: "Green Ribbon Cloak"
+    permission: admin.ribboncloak
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/short_green_cloak
+    item_flags:
+    - HIDE_ATTRIBUTES
+  triple_cigar:
+    display_name: "Triple Cigar"
+    permission: admin.triplecigar
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/smoker_cigars
+    item_flags:
+    - HIDE_ATTRIBUTES
+  straw_hat:
+    display_name: "Straw Hat"
+    permission: admin.strawhat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/straw_hat
+    item_flags:
+    - HIDE_ATTRIBUTES

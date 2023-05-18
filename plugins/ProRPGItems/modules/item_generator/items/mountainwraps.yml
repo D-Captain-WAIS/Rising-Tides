@@ -1,6 +1,6 @@
 name: §4§l[§c§lWeapon Will§4§l] §8§lMountain Wraps
 lore:
-- '%item_type%'
+- '&c&oGloves'
 - '&7Tier: %TIER_NAME%'
 - '&7Level: &f%ITEM_LEVEL%'
 - '%USER_LEVEL%'

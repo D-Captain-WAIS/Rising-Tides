@@ -1,0 +1,79 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "shop:item/middle_cigar",
+		"1": "shop:item/right_cigar",
+		"2": "shop:item/left_cigar",
+		"particle": "shop:item/middle_cigar"
+	},
+	"elements": [
+		{
+			"name": "middle cigar",
+			"from": [7, 7, 2],
+			"to": [9, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [4, 4, 6, 6], "texture": "#0"},
+				"east": {"uv": [0, 0, 7, 2], "texture": "#0"},
+				"south": {"uv": [4, 6, 6, 8], "texture": "#0"},
+				"west": {"uv": [0, 2, 7, 4], "texture": "#0"},
+				"up": {"uv": [2, 11, 0, 4], "texture": "#0"},
+				"down": {"uv": [4, 4, 2, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "right cigar",
+			"from": [4.15851, 7, 1.76956],
+			"to": [6.15851, 9, 8.76956],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [7.15851, 7, 6.76956]},
+			"faces": {
+				"north": {"uv": [4, 4, 6, 6], "texture": "#1"},
+				"east": {"uv": [0, 0, 7, 2], "texture": "#1"},
+				"south": {"uv": [4, 6, 6, 8], "texture": "#1"},
+				"west": {"uv": [0, 2, 7, 4], "texture": "#1"},
+				"up": {"uv": [2, 11, 0, 4], "texture": "#1"},
+				"down": {"uv": [4, 4, 2, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "left cigar",
+			"from": [9.61104, 7, 0.92807],
+			"to": [11.61104, 9, 7.92807],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [6.61104, 7, 6.92807]},
+			"faces": {
+				"north": {"uv": [4, 4, 6, 6], "texture": "#2"},
+				"east": {"uv": [0, 0, 7, 2], "texture": "#2"},
+				"south": {"uv": [4, 6, 6, 8], "texture": "#2"},
+				"west": {"uv": [0, 2, 7, 4], "texture": "#2"},
+				"up": {"uv": [2, 11, 0, 4], "texture": "#2"},
+				"down": {"uv": [4, 4, 2, 11], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.53, 0.67, 0.62]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.53, 0.67, 0.62]
+		},
+		"firstperson_righthand": {
+			"scale": [0.53, 0.67, 0.62]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.53, 0.67, 0.62]
+		},
+		"ground": {
+			"scale": [0.53, 0.67, 0.62]
+		},
+		"head": {
+			"rotation": [-15.94, 24.69, -2.16],
+			"translation": [-2, -4.25, -7],
+			"scale": [0.53, 0.67, 0.62]
+		},
+		"fixed": {
+			"translation": [0, 0, 0.25],
+			"scale": [0.53, 0.67, 0.62]
+		}
+	}
+}

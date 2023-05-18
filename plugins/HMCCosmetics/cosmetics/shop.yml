@@ -26,3 +26,129 @@ cap_coat:
     material: itemsadder:shop:cap_coat
     name: "<gold>Cap's Coat<gold>"
     amount: 1
+bead_hat:
+  slot: HELMET
+  permission: "shop.bead_hat"
+  item:
+    material: itemsadder:shop:bead_hat
+    name: "<gold>Bead Hat<gold>"
+    amount: 1
+pink_corsage:
+  slot: BACKPACK
+  permission: "shop.pink_corsage"
+  item:
+    material: itemsadder:shop:pink_corsage
+    name: "<gold>Pink Corsage<gold>"
+    amount: 1
+purple_sumo_belt:
+  slot: BACKPACK
+  permission: "shop.purple_sumo_belt"
+  item:
+    material: itemsadder:shop:purple_sumo_belt
+    name: "<gold>Purple Sumo Belt<gold>"
+    amount: 1
+snake_earrings:
+  slot: HELMET
+  permission: "shop.snake_earrings"
+  item:
+    material: itemsadder:shop:snake_earrings
+    name: "<gold>Snake Earrings<gold>"
+    amount: 1
+bird_glasses:
+  slot: HELMET
+  permission: "shop.bird_glasses"
+  item:
+    material: itemsadder:shop:bird_glasses
+    name: "<gold>Bird Glasses<gold>"
+    amount: 1
+bluedolph:
+  slot: HELMET
+  permission: "shop.bluedolph"
+  item:
+    material: itemsadder:shop:bluedolph
+    name: "<gold>Blue Snout<gold>"
+    amount: 1
+clown_nose:
+  slot: HELMET
+  permission: "shop.clown_nose"
+  item:
+    material: itemsadder:shop:clown_nose
+    name: "<gold>Clown Nose<gold>"
+    amount: 1
+cross_necklace:
+  slot: BACKPACK
+  permission: "shop.cross_necklace"
+  item:
+    material: itemsadder:shop:cross_necklace
+    name: "<gold>Cross Necklace<gold>"
+    amount: 1
+bubbly_bandanna:
+  slot: HELMET
+  permission: "shop.bubbly_bandanna"
+  item:
+    material: itemsadder:shop:bubbly_bandanna
+    name: "<gold>Bubbly Bandanna<gold>"
+    amount: 1
+god_bandanna:
+  slot: HELMET
+  permission: "shop.god_bandanna"
+  item:
+    material: itemsadder:shop:god_bandanna
+    name: "<gold>God's Bandanna<gold>"
+    amount: 1
+goth_crown:
+  slot: HELMET
+  permission: "shop.goth_crown"
+  item:
+    material: itemsadder:shop:goth_crown
+    name: "<gold>Gothic Crown<gold>"
+    amount: 1
+bear_hat:
+  slot: HELMET
+  permission: "shop.bear_hat"
+  item:
+    material: itemsadder:shop:bear_hat
+    name: "<gold>Bear Ear Hat<gold>"
+    amount: 1
+shroom_hat:
+  slot: HELMET
+  permission: "shop.shroom_hat"
+  item:
+    material: itemsadder:shop:shroom_hat
+    name: "<gold>Shroom Hat<gold>"
+    amount: 1
+punk_goggles:
+  slot: HELMET
+  permission: "shop.punk_goggles"
+  item:
+    material: itemsadder:shop:punk_goggles
+    name: "<gold>Punk Goggles<gold>"
+    amount: 1
+goggle_hat:
+  slot: HELMET
+  permission: "shop.goggle_hat"
+  item:
+    material: itemsadder:shop:goggle_hat
+    name: "<gold>Goggle Hat<gold>"
+    amount: 1
+ribbon_cloak:
+  slot: BACKPACK
+  permission: "shop.ribbon_cloak"
+  item:
+    material: itemsadder:shop:ribbon_cloak
+    name: "<gold>Green Ribbon Cloak<gold>"
+    amount: 1
+triple_cigar:
+  slot: HELMET
+  permission: "shop.triple_cigar"
+  item:
+    material: itemsadder:shop:triple_cigar
+    name: "<gold>Triple Cigar<gold>"
+    amount: 1
+straw_hat:
+  slot: HELMET
+  permission: "shop.straw_hat"
+  item:
+    material: itemsadder:shop:straw_hat
+    name: "<gold>Basic Straw Hat<gold>"
+    amount: 1

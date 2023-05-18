@@ -5226,10 +5226,8 @@
 "Transformation": "Transformation"
 
 # A disguise option descriptive name
-"Translation (Transform, Left Rotation, Scale, Right Rotation)": "Translation (Transform, Left Rotation, Scale, Right Rotation)"
 
 # Description for the disguise option Transformation
-"Numbers for a position translation": "Numbers for a position translation"
 
 # A disguise option name, has description Used as part of a Transformation
 "Vector3f": "Vector3f"
@@ -5238,7 +5236,6 @@
 "Vector3f (X, Y, Z)": "Vector3f (X, Y, Z)"
 
 # Description for the disguise option Vector3f
-"Used as part of a Transformation": "Used as part of a Transformation"
 
 # A disguise option name, has description Four values used to define part of a Transformation
 "Quaternion": "Quaternion"
@@ -5247,7 +5244,6 @@
 "Quaternion (X, Y, Z, W)": "Quaternion (X, Y, Z, W)"
 
 # Description for the disguise option Quaternion
-"Four values used to define part of a Transformation": "Four values used to define part of a Transformation"
 
 # A disguise option name, has description How the Item Display is transformed
 "Item Display Transform": "Item Display Transform"
@@ -5578,3 +5574,15 @@
 
 # Used for the disguise option Material
 "TORCHFLOWER_CROP": "TORCHFLOWER_CROP"
+
+# A disguise option descriptive name
+"Translation (Transform, Left Rotation, Scale, Right Rotation). 3, then 4, then 3, then 4 numbers. All seperated by a comma": "Translation (Transform, Left Rotation, Scale, Right Rotation). 3, then 4, then 3, then 4 numbers. All seperated by a comma"
+
+# Description for the disguise option Transformation
+"14 comma seperated numbers for a position translation": "14 comma seperated numbers for a position translation"
+
+# Description for the disguise option Vector3f
+"Used as part of a Transformation for the Transform and Scale": "Used as part of a Transformation for the Transform and Scale"
+
+# Description for the disguise option Quaternion
+"Four values used to define part of a Transformation for the rotations": "Four values used to define part of a Transformation for the rotations"

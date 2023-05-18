@@ -1,0 +1,20 @@
+panels:  
+  revstart:
+    perm: skeptic
+    rows: 1
+    title: 's'
+    empty: WHITE_STAINED_GLASS_PANE
+    pre-load-commands:
+    - 'console= tab player %cp-player-name% abovename %img_revarmy%'
+    - 'console= tab player %cp-player-name% tagprefix %img_skeptic% &f'
+    - 'console= tab player %cp-player-name% tabprefix %img_skeptic% &f'
+    commands-on-open:
+    - cpc
+    item:
+      '1':
+        material: FEATHER
+        stack: 1
+        name: '&e&l[Missions]'
+        commands:
+        - msg= &cWIP
+        - cpc

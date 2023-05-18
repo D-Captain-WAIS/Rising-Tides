@@ -112,6 +112,8 @@ mana:
   sender: 'ANYONE'
   enabled: 'true'
   cooldown: 0
+  messages: 
+    received-mana: '&2You have received &6{mana} mana &2from &6{player}'
 options: 
   name: 'options'
   description: 'Views profess options'

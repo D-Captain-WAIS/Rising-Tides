@@ -176,5 +176,15 @@ font_images:
     suggest_in_command: true 
     scale_ratio: 9
     y_position: 8
+  landlubber:
+    path: gui/landlubber
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
+  skeptic:
+    path: gui/skeptic
+    suggest_in_command: true 
+    scale_ratio: 9
+    y_position: 8
 
   

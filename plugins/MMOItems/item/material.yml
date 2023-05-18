@@ -1,0 +1,6 @@
+RAW_MEAT:
+  base:
+    material: BEEF
+    name: §c§l[Raw Meat]
+    lore:
+    - Ingredient for cooking

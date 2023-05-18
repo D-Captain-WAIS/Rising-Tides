@@ -71,15 +71,25 @@ Piercing Strike:
                     icon-key: ''
                     range-base: '4'
                     range-scale: '0'
-                    tolerance-base: '0'
+                    tolerance-base: '0.25'
                     tolerance-scale: '0'
                     group: 'Enemy'
-                    wall: 'False'
+                    wall: 'True'
                     caster: 'False'
                     max-base: '99'
                     max-scale: '0'
                   children: 
-                    Damage-e: 
+                    Flag-e: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        key: 'wounded'
+                        seconds-base: '10'
+                        seconds-scale: '0'
+                      children:  {}
+                    Damage-f: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -93,16 +103,6 @@ Piercing Strike:
                         knockback: 'True'
                         cause: 'Entity Attack'
                       children:  {}
-                    Flag-f: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        key: 'wounded'
-                        seconds-base: '10'
-                        seconds-scale: '0'
-                      children:  {}
             Command-g: 
               type: 'mechanic'
               indicator: 'None'
@@ -112,12 +112,22 @@ Piercing Strike:
                 command: 'iaemote piercing_strike'
                 type: 'OP'
               children:  {}
-        Value Placeholder-h: 
+            Channel-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'False'
+                still: 'False'
+                time-base: '0.5'
+                time-scale: '0'
+              children:  {}
+        Value Placeholder-i: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            counts: 'False'
+            counts: 'True'
             key: 'pstrike_dmg'
             type: 'Number'
             placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'

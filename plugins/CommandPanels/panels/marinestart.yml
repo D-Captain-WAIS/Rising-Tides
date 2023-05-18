@@ -6,8 +6,8 @@ panels:
     empty: WHITE_STAINED_GLASS_PANE
     pre-load-commands:
     - 'console= tab player %cp-player-name% abovename %img_marine%'
-    - 'console= tab player %cp-player-name% tagprefix %img_ensign%'
-    - 'console= tab player %cp-player-name% tabprefix %img_ensign%'
+    - 'console= tab player %cp-player-name% tagprefix %img_ensign% &f'
+    - 'console= tab player %cp-player-name% tabprefix %img_ensign% &f'
     commands-on-open:
     - cpc
     item:

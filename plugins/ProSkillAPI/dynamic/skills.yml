@@ -17,8 +17,6 @@ Hard Punch:
     mana-scale: '0'
     points-spent-req-base: ' {}'
     points-spent-req-scale: '0'
-    incompatible: 
-    - ''
   msg: '&6{player} &2has cast &6{skill}&r'
   icon: 'PUMPKIN_SEEDS'
   icon-data: 10001
@@ -38,83 +36,93 @@ Hard Punch:
     Cast: 
       type: 'trigger'
       indicator: 'None'
-      data: 
-        icon-key: ''
+      data:  {}
       children: 
-        Single-b: 
-          type: 'target'
+        Item-b: 
+          type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
-            range-base: '3'
-            range-scale: '0'
-            tolerance-base: '1'
-            tolerance-scale: '0'
-            group: 'Enemy'
-            wall: 'False'
-            caster: 'false'
+            check-mat: 'false'
+            check-data: 'false'
+            check-lore: 'true'
+            lore: 'Gloves'
+            check-name: 'false'
+            regex: 'false'
           children: 
-            Channel-c: 
+            Command-c: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                still: 'False'
-                time-base: '0.5'
-                time-scale: '0'
+                counts: 'true'
+                command: 'iaemote hard_punch'
+                type: 'OP'
               children:  {}
-            Delay-d: 
-              type: 'mechanic'
+            Single-d: 
+              type: 'target'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
-                delay-base: '0.5'
-                delay-scale: '0'
+                range-base: '3'
+                range-scale: '0'
+                tolerance-base: '1'
+                tolerance-scale: '0'
+                group: 'Enemy'
+                wall: 'true'
+                caster: 'false'
               children: 
-                Damage-e: 
+                Channel-e: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    counts: 'True'
-                    type: 'Damage'
-                    value-base: 'hpunch_damage'
-                    value-scale: '0'
-                    true: 'False'
-                    classifier: 'default'
-                    knockback: 'True'
-                    cause: 'Entity Attack'
+                    counts: 'true'
+                    still: 'true'
+                    time-base: '0.5'
+                    time-scale: '0'
                   children:  {}
-                Sound-f: 
+                Delay-f: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    counts: 'False'
-                    sound: 'Custom'
-                    custom: 'minecraft:scrapper.hard_punch'
-                    volume-base: '100'
-                    volume-scale: '0'
-                    pitch-base: '1'
-                    pitch-scale: '0'
-                  children:  {}
-        Command-g: 
+                    counts: 'true'
+                    delay-base: '0.5'
+                    delay-scale: '0'
+                  children: 
+                    Damage-g: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'true'
+                        type: 'Damage'
+                        value-base: 'hpunch_damage'
+                        value-scale: '0'
+                        true: 'true'
+                        classifier: 'default'
+                        knockback: 'true'
+                      children:  {}
+                    Sound-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'true'
+                        sound: 'Custom'
+                        custom: 'minecraft:scrapper.hard_punch'
+                        volume-base: '100'
+                        volume-scale: '0'
+                        pitch-base: '1'
+                        pitch-scale: '0'
+                      children:  {}
+        Value Placeholder-i: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            counts: 'True'
-            command: 'iaemote hard_punch'
-            type: 'OP'
-          children:  {}
-        Value Placeholder-h: 
-          type: 'mechanic'
-          indicator: 'None'
-          data: 
-            icon-key: ''
-            counts: 'True'
+            counts: 'true'
             key: 'hpunch_damage'
             type: 'Number'
             placeholder: '%math_20+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
@@ -730,15 +738,25 @@ Piercing Strike:
                     icon-key: ''
                     range-base: '4'
                     range-scale: '0'
-                    tolerance-base: '0'
+                    tolerance-base: '0.25'
                     tolerance-scale: '0'
                     group: 'Enemy'
-                    wall: 'False'
+                    wall: 'True'
                     caster: 'False'
                     max-base: '99'
                     max-scale: '0'
                   children: 
-                    Damage-e: 
+                    Flag-e: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        key: 'wounded'
+                        seconds-base: '10'
+                        seconds-scale: '0'
+                      children:  {}
+                    Damage-f: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -752,16 +770,6 @@ Piercing Strike:
                         knockback: 'True'
                         cause: 'Entity Attack'
                       children:  {}
-                    Flag-f: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        key: 'wounded'
-                        seconds-base: '10'
-                        seconds-scale: '0'
-                      children:  {}
             Command-g: 
               type: 'mechanic'
               indicator: 'None'
@@ -771,12 +779,22 @@ Piercing Strike:
                 command: 'iaemote piercing_strike'
                 type: 'OP'
               children:  {}
-        Value Placeholder-h: 
+            Channel-h: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'False'
+                still: 'False'
+                time-base: '0.5'
+                time-scale: '0'
+              children:  {}
+        Value Placeholder-i: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            counts: 'False'
+            counts: 'True'
             key: 'pstrike_dmg'
             type: 'Number'
             placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
@@ -2362,7 +2380,7 @@ regen:
                 counts: 'False'
                 key: 'noncombatheal'
                 type: 'Number'
-                placeholder: '%math_2*(0.1*{sapi_player_class_attribute:willpower})%'
+                placeholder: '%math_2*(0.1*{sapi_player_class_attribute:willpower})+1.8%'
               children:  {}
             Value Placeholder-d: 
               type: 'mechanic'

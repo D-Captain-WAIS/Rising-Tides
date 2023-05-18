@@ -55,7 +55,7 @@ willpower:
     mechanic:  {}
     target:  {}
   stats: 
-    mana-regen: '0.1*a'
+    mana-regen: '2+(0.1*a)'
 agility: 
   display: 'Agility'
   max: '999'

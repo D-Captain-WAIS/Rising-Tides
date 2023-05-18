@@ -11,17 +11,25 @@ npcs:
   "37" : "jai"
   "38" : "gil"
   "39" : "gil"
+  "41" : "maki"
+  "46" : "maki"
+  "47" : "maki_tunnel"
+  "48" : "dadan"
 
 hide_npcs:
-  "28" : tag_investigation
-  "29" : "!tag_investigation"
-  "31" : "!tag_tatianna"
-  "33" : "!tag_nowell"
-  "35" : "!tag_parry"
-  "37" : "!tag_jai"
-  "39" : "!tag_gil"
-  "30" : tag_tatianna
-  "32" : tag_nowell
-  "34" : tag_parry
-  "36" : tag_jai
-  "38" : tag_gil
+  "28" : "!tag_investigation"
+  "29" : "tag_investigation"
+  "31" : "hide_tatianna"
+  "33" : "hide_nowell"
+  "35" : "hide_parry"
+  "37" : "hide_jai"
+  "39" : "hide_gil"
+  "30" : hide_glowing_tatianna
+  "32" : hide_glowing_nowell
+  "34" : hide_glowing_parry
+  "36" : hide_glowing_jai
+  "38" : hide_glowing_gil
+  "41" : hide_makino
+  "46" : hide_glowing_makino
+  "47" : "hide_tunnel_makino"
+  "49" : "hide_dadan_makino"

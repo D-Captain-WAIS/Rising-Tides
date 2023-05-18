@@ -1,0 +1,34 @@
+makiFollowArrive:
+  TargetConditions:
+  - cuboid{location1=256,70,-186;location2=245,67,-199;}
+  Skills:
+  - teleportto{location=0,-200,0} @self
+  - setvariable{var=ownername;scope=skill;value=<target.name>;t=STRING} @owner
+  - command{c="q e <skill.var.ownername> marineMain-sunrise.remove_makino_guide"} @self
+  - command{c="q e <skill.var.ownername> marineMain-sunrise.meet_makino"} @self
+spawnMaki:
+  Skills:
+  - summon{mob=makiFollow;amount=1;summonerIsOwner=true} @Self
+makiFollowSpawn:
+  Skills:
+  - teleportto{location=719.5,65,-216.5} @self
+  - setvariable{var=ownername;scope=skill;value=<target.name>;t=STRING} @owner
+  - setname{name=&a&l[Maki The Bartender] &7&o(<skill.var.ownername>)} @self
+makiLeave:
+  TargetConditions:
+  - distance{d=>35} orElseCast makiSpeed
+  Skills:
+  - teleportto{location=0,-200,0} @self
+  - setvariable{var=ownername;scope=skill;value=<target.name>;t=STRING} @owner
+  - command{c="q e <skill.var.ownername> marineMain-sunrise.remove_makino_guide"} @self
+  - command{c="q e <skill.var.ownername> marineMain-sunrise.meet_makino"} @self
+makiSpeed:
+  TargetConditions:
+  - distance{d=<6} orElseCast makiSlow
+  Skills:
+  - setspeed{speed=1.8;type=walking} @self
+makiSlow:
+  Skills:
+  - setspeed{speed=0;type=walking} @self
+
+  

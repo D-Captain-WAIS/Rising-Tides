@@ -39,11 +39,13 @@ events:
     is_marine: "tag add is_marine"
   #pirate
     talked_loofi: "tag add talked_loofi"
-    make_pirate: "command lp user %player% parent set pirate"
+    pirate_displays: "opsudo cp piratestart"
+    make_pirate: "folder pirate_displays,is_pirate"
     is_pirate: "tag add is_pirate"
   #rev
     talked_sado: "tag add talked_sado"
-    make_rev: "command lp user %player% parent set revolutionary"
+    rev_displays: "opsudo cp revstart"
+    make_rev: "folder rev_displays,is_rev"
     is_rev: "tag add is_rev"
   #chatclear
     empty_line: "notify \n"
@@ -126,7 +128,7 @@ events:
     ask_combat_guide: "folder conv_combat_guide delay:3"
   #teleport to starts
     marine_first_quest: "notify &6&lWelcome to Sunrise Island!\n&9&oSpeak to Marine Captain Bogarp! io:title"
-    marine_teleport: "folder to_marine_first,marine_cut,marineMain-sunrise.first_arrival"
+    marine_teleport: "folder to_marine_first,marine_cut,marineMain-sunrise.first_arrival,marineMain-sunrise.set_marine_spawn"
     marine_start: "folder bon_voyage,marine_notify delay:19"
     marine_notify: "folder marine_first_quest,force_sit delay:1"
     marine_start_folder: "folder satisfied_tp,marine_teleport,marine_start period:5"
@@ -185,6 +187,7 @@ conditions:
     has_bow: "item standardbow"
     has_gloves: "item standardgloves"
     has_weapon: "or has_sword,has_gun,has_bow,has_gloves"
+
 items:
   standardsword: GRAY_DYE lore-containing:Single_Sharp_Duelist
   standardbow: RAW_IRON lore-containing:Bow

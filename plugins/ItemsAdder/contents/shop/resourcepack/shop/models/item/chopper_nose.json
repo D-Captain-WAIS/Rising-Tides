@@ -1,0 +1,44 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [8, 8],
+	"textures": {
+		"1": "shop:item/blue_nose",
+		"2": "shop:item/snout",
+		"particle": "shop:item/snout"
+	},
+	"elements": [
+		{
+			"name": "blue nose",
+			"from": [7, 7, 7],
+			"to": [9, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#1"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#1"},
+				"south": {"uv": [2, 0, 4, 2], "texture": "#1"},
+				"west": {"uv": [2, 2, 4, 4], "texture": "#1"},
+				"up": {"uv": [2, 6, 0, 4], "texture": "#1"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6, 4, 8],
+			"to": [10, 7, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 5, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 6], "texture": "#2"},
+				"east": {"uv": [0, 0, 0, 6], "texture": "#2"},
+				"south": {"uv": [0, 6, 8, 12], "texture": "#2"},
+				"west": {"uv": [0, 0, 0, 6], "texture": "#2"},
+				"up": {"uv": [8, 0, 0, 0], "texture": "#2"},
+				"down": {"uv": [8, 0, 0, 0], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [0, -2, -6.5]
+		}
+	}
+}
