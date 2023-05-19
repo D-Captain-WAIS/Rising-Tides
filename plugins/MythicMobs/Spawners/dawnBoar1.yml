@@ -19,10 +19,10 @@ dawnBoar1:
   CheckForPlayers: true
   ActivationRange: 100
   ScalingRange: 25.0
-  LeashRange: 30
-  HealOnLeash: false
+  LeashRange: 80
+  HealOnLeash: true
   ResetThreatOnLeash: true
   ShowFlames: false
   Breakable: false
   Conditions: []
-  ActiveMobs: 2
+  ActiveMobs: 5

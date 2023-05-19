@@ -648,12 +648,12 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 37.707718
+        bodyYaw: 54.28386
         world: dev
         x: '1.239'
         y: '-32.0'
         z: '-2.3268'
-        yaw: '37.7077'
+        yaw: '54.2839'
         pitch: '0.0'
       skintrait:
         fetchDefaultSkin: true
@@ -816,7 +816,7 @@ npc:
           yaw: '97.5448'
           pitch: '31.4066'
       mounttrait:
-        mountedon: 0f39993d-f5bb-4ead-a529-46d77b85ce6c
+        mountedon: e226b824-edb7-4b37-bf34-293de19adcc5
       location:
         bodyYaw: 97.5448
         world: dawn_island
@@ -861,7 +861,7 @@ npc:
           yaw: '-0.9965'
           pitch: '2.714'
       mounttrait:
-        mountedon: e459f65c-e7d9-4568-9e81-ed49af4d5a9d
+        mountedon: 1c90c162-458d-44cb-b0cd-d16ba543e5db
       location:
         bodyYaw: -0.9965
         world: dawn_island
@@ -884,12 +884,12 @@ npc:
     uuid: 9a458334-2a3a-4de6-aec2-a891f8d7fcd0
     traits:
       location:
-        bodyYaw: 136.759
+        bodyYaw: 124.57617
         world: dawn_island
         x: '1044.1017'
         y: '71.0'
         z: '-165.8977'
-        yaw: '151.7202'
+        yaw: '144.5762'
         pitch: '0.0'
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
@@ -941,12 +941,12 @@ npc:
       scoreboardtrait:
         color: BLUE
       location:
-        bodyYaw: 136.759
+        bodyYaw: 124.57617
         world: dawn_island
         x: '1044.1017'
         y: '71.0'
         z: '-165.8977'
-        yaw: '151.7202'
+        yaw: '144.5762'
         pitch: '0.0'
       skintrait:
         fetchDefaultSkin: true
@@ -997,13 +997,13 @@ npc:
           x: '616.9321'
           y: '68.0'
           z: '-137.1801'
-          yaw: '168.7816'
-          pitch: '-11.6228'
+          yaw: '167.0747'
+          pitch: '-11.3858'
       type: PLAYER
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: 1f349b3d-d149-48f1-9696-b2a11725bb37
+        mountedon: fdad408e-3ddb-455b-a5d4-b34159ebf35c
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1015,13 +1015,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 168.7816
+        bodyYaw: 147.07472
         world: dawn_island
         x: '616.9321'
         y: '67.65'
         z: '-137.1801'
-        yaw: '168.7816'
-        pitch: '-11.6228'
+        yaw: '167.0747'
+        pitch: '-11.3858'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1057,13 +1057,13 @@ npc:
           x: '616.9321'
           y: '68.0'
           z: '-137.1801'
-          yaw: '168.7816'
-          pitch: '-11.6228'
+          yaw: '167.0747'
+          pitch: '-11.3858'
       type: PLAYER
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: 1e79cf85-aede-4de0-8631-53a843db6027
+        mountedon: 266639e5-7f19-40a5-9633-0424cbbbde11
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1075,13 +1075,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 168.7816
+        bodyYaw: 147.07472
         world: dawn_island
         x: '616.9321'
         y: '67.65'
         z: '-137.1801'
-        yaw: '168.7816'
-        pitch: '-11.6228'
+        yaw: '167.0747'
+        pitch: '-11.3858'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1217,13 +1217,13 @@ npc:
           x: '720.1003'
           y: '66.3'
           z: '-193.5986'
-          yaw: '174.3968'
-          pitch: '-0.6141'
+          yaw: '175.1523'
+          pitch: '-0.5786'
       type: PLAYER
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: 91e40ca7-d078-48ed-999d-1b0d184be524
+        mountedon: 2c926839-7d99-40e4-9cac-afec7c50ac02
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1235,13 +1235,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 12.677231
+        bodyYaw: -163.85455
         world: dawn_island
         x: '720.1003'
         y: '65.95'
         z: '-193.5986'
-        yaw: '12.6772'
-        pitch: '-32.5447'
+        yaw: '-163.8546'
+        pitch: '-14.7463'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1277,13 +1277,13 @@ npc:
           x: '720.1003'
           y: '66.3'
           z: '-193.5986'
-          yaw: '174.3968'
-          pitch: '-0.6141'
+          yaw: '175.1523'
+          pitch: '-0.5786'
       type: PLAYER
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       mounttrait:
-        mountedon: 3f847cb9-ef1f-438d-8c91-4afd061261fb
+        mountedon: 5a7af897-321e-4223-b358-b27cd3f4bfd2
       skintrait:
         fetchDefaultSkin: true
         updateSkins: false
@@ -1295,13 +1295,13 @@ npc:
         age: 0
         locked: true
       location:
-        bodyYaw: 11.918625
+        bodyYaw: -163.85455
         world: dawn_island
         x: '720.1003'
         y: '65.95'
         z: '-193.5986'
-        yaw: '11.9186'
-        pitch: '-28.9882'
+        yaw: '-163.8546'
+        pitch: '-14.7463'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1552,13 +1552,13 @@ npc:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       type: PLAYER
       location:
-        bodyYaw: 118.127625
+        bodyYaw: 84.15195
         world: dev
         x: '-0.0255'
         y: '138.0'
         z: '0.5293'
-        yaw: '98.1276'
-        pitch: '-13.1127'
+        yaw: '84.1519'
+        pitch: '0.0'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1618,13 +1618,13 @@ npc:
       owner:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       location:
-        bodyYaw: -176.52887
+        bodyYaw: -143.88104
         world: dawn_island
         x: '719.2628'
         y: '66.5'
         z: '-188.7'
-        yaw: '-176.5289'
-        pitch: '-48.6003'
+        yaw: '-143.881'
+        pitch: '0.9174'
       hologramtrait:
         direction: BOTTOM_UP
         lineHeight: -1.0
@@ -1717,7 +1717,7 @@ npc:
         textureRaw: eyJ0aW1lc3RhbXAiOjE1NjIyMTE1NDc1MjMsInByb2ZpbGVJZCI6ImZkNjBmMzZmNTg2MTRmMTJiM2NkNDdjMmQ4NTUyOTlhIiwicHJvZmlsZU5hbWUiOiJSZWFkIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lNTI2MThjYWFiMWM3NjJlMjMyYzdhNzg2MWYxNjQwMWFkMTBiOWQ4ZTRlNWY0NzZkZmE3NGM0NDc5ZGZiN2MwIn19fQ==
         updateSkins: false
       mounttrait:
-        mountedon: 66cc4719-d1be-453c-92ff-7337d4aab52c
+        mountedon: 65c8d578-ddd0-4409-a9e6-e21757b5e375
       sitting:
         sitting: true
         chair location:
@@ -1766,13 +1766,13 @@ npc:
         uuid: 19894efa-01d3-43e5-82db-008cd9381b2f
       type: PLAYER
       location:
-        bodyYaw: -177.61218
+        bodyYaw: -140.71762
         world: dawn_island
         x: '719.2849'
         y: '66.5'
         z: '-188.6362'
-        yaw: '-177.6122'
-        pitch: '-47.2689'
+        yaw: '-140.7176'
+        pitch: '6.015'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1816,13 +1816,13 @@ npc:
         direction: BOTTOM_UP
         lineHeight: -1.0
       location:
-        bodyYaw: 155.03592
+        bodyYaw: -90.48209
         world: dawn_island
         x: '254.6439'
         y: '68.0'
         z: '-191.4532'
-        yaw: '175.0359'
-        pitch: '-8.9998'
+        yaw: '-90.4821'
+        pitch: '-79.4278'
       scoreboardtrait:
         color: BLUE
       lookclose:
@@ -1865,13 +1865,13 @@ npc:
         direction: BOTTOM_UP
         lineHeight: -1.0
       location:
-        bodyYaw: -3.6920013
+        bodyYaw: 136.20947
         world: dawn_island
         x: '221.3384'
         y: '187.0'
         z: '-31.7126'
-        yaw: '-3.692'
-        pitch: '-5.8612'
+        yaw: '156.2095'
+        pitch: '0.0'
       lookclose:
         range: '5.0'
         disablewhilenavigating: true
@@ -1913,12 +1913,12 @@ npc:
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTU5MTEyOTk1NjE2MywKICAicHJvZmlsZUlkIiA6ICI3NzI3ZDM1NjY5Zjk0MTUxODAyM2Q2MmM2ODE3NTkxOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJsaWJyYXJ5ZnJlYWsiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWZjYjM5MDFiOWJjMWIwYTNlMzhhNTIyODg5NzdlZjgzMmRmM2NkZGI1YzdjM2JhYjBlZGVmM2MzZGI4Y2FjYyIKICAgIH0KICB9Cn0=
         updateSkins: false
       location:
-        bodyYaw: -33.86428
+        bodyYaw: -177.22366
         world: dawn_island
         x: '219.0623'
         y: '187.0'
         z: '-29.4894'
-        yaw: '-33.8643'
+        yaw: '-177.2237'
         pitch: '0.0'
       lookclose:
         range: '5.0'

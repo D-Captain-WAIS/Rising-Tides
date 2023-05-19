@@ -5,7 +5,7 @@ panels:
     title: 's'
     empty: WHITE_STAINED_GLASS_PANE
     pre-load-commands:
-    - 'set-data= statpoints %math_(({cp-data-statpoints}+{sapi_default_currentlevel})-({cp-data-statpoints}+{cp-data-investedstatpoints})-1)*5%'
+    - 'set-data= statpoints %math_(({sapi_player_class_level}-1)*5)-{cp-data-investedstatpoints}%'
     commands-on-open:
     - cpc
     item:

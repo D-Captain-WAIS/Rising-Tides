@@ -1,5 +1,6 @@
 events:
     set_marine_spawn: "objective add marine_boat_spawn"
+    remove_marine_spawn: "objective delete marine_boat_spawn"
     sendRespawnMessage: "notify &c&oYou were defeated!"
     set_adventure: "command gma %player%"
     first_arrival: "tag add first_arrival"
@@ -30,7 +31,7 @@ events:
     play_combatTut: "folder combatTut,combatTutSpawns,combatTutStay period:5"
     stop_cut: "opsudo pcam stop"
     enter_combat: "command md play marineCombatTut %player%"
-    folder_combat: "folder stop_cut,enter_combat,stop_bandits,add_hud delay:15 period:0.5"
+    folder_combat: "folder stop_cut,remove_marine_spawn,enter_combat,stop_bandits,add_hud delay:15 period:0.5"
     stop_bandits: "folder notify_stop_bandits delay:1.5"
     add_stopped_raid: "objective add stopped_raid"
     give_test: "give quest_available"
@@ -58,7 +59,7 @@ events:
     raid_rewards_mwn: "folder raid_reward3a,raid_reward4a"
     if_scrapper: "if class_scrapper raid_rewards_scrapper else if_mwn"
     if_mwn: "if class_mwn raid_rewards_mwn else notify_error"
-    raid_rewards: "folder raid_reward1,raid_reward2,if_scrapper delay:1"
+    raid_rewards: "folder set_marine_spawn,raid_reward1,raid_reward2,if_scrapper delay:1"
   #notify
     notify_investigation: "notify &9&oFind info about the Bluejam Pirates!\n&e&oSpeak to the Foosha Residents! io:title"
     notify_stop_bandits: "notify &e&oStop the bandits from raiding the village!"

@@ -1,55 +1,11 @@
 limit: 2
 active: 1
-health: 65.2249984741211
+health: 50.0
 mana: 36.45
 accounts: 
   acc1: 
-    classes: 
-      Human: 
-        level: 4
-        points: 4
-        exp: 0.0
-      MWNewbie: 
-        level: 4
-        points: 4
-        exp: 0.0
-    skills: 
-      Weeeee: 
-        level: 0
-      Status Effects: 
-        level: 1
-      wounded: 
-        level: 1
-      Hilt Strike: 
-        level: 5
-      Evade Strike: 
-        level: 0
-      Human Anatomy: 
-        level: 1
-      Double Attack: 
-        level: 0
-      Dash Swing: 
-        level: 5
-      regen: 
-        level: 1
-      Overhead Swing: 
-        level: 0
-      Two Handed Swing: 
-        level: 5
-      Poke: 
-        level: 0
-      Quick Swings: 
-        level: 0
-      vulnerable: 
-        level: 5
-      impaired: 
-        level: 5
-      Jump Attack: 
-        level: 0
-      Charged Attack: 
-        level: 0
-      Piercing Strike: 
-        level: 5
+    classes:  {}
+    skills:  {}
     binds:  {}
     bar: 
       enabled: 'true'
@@ -60,11 +16,7 @@ accounts:
       - 4
       - 5
       - 6
-      Hilt Strike: 1
-      Piercing Strike: 2
-      Two Handed Swing: 3
-      Dash Swing: 4
-    attrib-points: 16
+    attrib-points: 0
     attribs:  {}
     hover: 
       Flail: 0
