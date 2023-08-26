@@ -1,0 +1,191 @@
+conversations:
+  jakeDenman:
+    quester: "Jake Denman"
+    first: "founding_dog,ask_finding_dog,is_finding_dog,found_dog,final"
+    NPC_options:
+      ask_finding_dog:
+        text: "Please help me, my dog Doug ran off, please find it for me."
+        conditions: "!tag_finding_dog,!tag_found_dog"
+        pointer: "accept,not"
+      is_finding_dog: 
+        text: "Have you found my dog yet?"
+        conditions: "tag_finding_dog,!tag_found_dog"
+        pointer: "not_yet"
+      waiting:
+        text: "Okay, I'll be waiting"
+      found_dog:
+        text: "Have you found my dog yet?"
+        conditions: "tag_found_dog"
+        pointer: "found"
+      thanks:
+        text: "Thank you for finding Doug, here is a reward"
+      founding_dog:
+        text: "Thanks for Rescuing Doug before, he likes to explore the island a lot, if you see him on your travels by chance please bring him back to me."
+        conditions: "tag_founding_dog"
+      final:
+        text: "Thank you for finding Doug, i'll be sure to put a leash on this rascal"
+        conditions: "tag_found_all_dogs"
+    player_options:
+      accept:
+        text: "I will help you find it"
+        events: "finding_dog"
+      not:
+        text: "I’m busy right now, maybe later."
+      found: 
+        text: "I found Doug."
+        events: "founding_dog,del_found_dog"
+        pointer: "thanks"
+      not_yet: 
+        text: "I'm still looking"
+        pointer: "waiting"
+  denmanDog:
+    quester: "Jake Denman's Dog"
+    first: "random,found"
+    NPC_options:
+      random:
+        text: "Woof"
+        conditions: "!tag_finding_dog"
+      found: 
+        text: "Woof"
+        conditions: "tag_finding_dog"
+        pointer: "owner"
+      confirm:
+        text: "Woof"
+    player_options:
+      owner:
+        text: "Jake's looking for you, go back to him"
+        events: "del_finding_dog,found_dog"
+        pointer: "confirm"        
+  John:
+    quester: "John"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "Hey, did you hear about the secret cult that the people have been talking about recently?"
+        pointer: "listenIn, leave"
+    player_options:
+      listenIn:
+        text: "This sounds interesting, I should try and gather some more information."
+        pointer: "Doe.firstGreeting"
+        #This should automatically start Doe's firstGreeting conversation
+      leave:
+        text: "I should focus, this is not the time for eavesdropping."
+        #Leaving should stop the quest to continue further as there are no pointers after.
+  Doe:
+    quester: "Doe"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "Oh yeah, but is it really more than just a myth or a tale to scare off little children from going out alone at night?"
+        pointer: "listenIn, leave"
+        #Conversation should flow back to John
+    player_options:
+      listenIn:
+        text: "Continue eavesdropping..."
+        pointer: "John2.continueConversation"
+        #This should automatically start Doe's firstGreeting conversation
+      leave:
+        text: "I should focus, this is not the time for eavesdropping."
+  John2:
+    quester: "John"
+    first: "continueConversation"
+    NPC_options:
+      continueConversation:
+        text: "Yeah that was what I initially thought too, but hear me out here. Turns out, one of the regulars from the tavern actually got to meet them face-to-face. Seems like the rumors are much more than just a scary little tale."
+  denmanDog2:
+    quester: "Jake Denman's Dog"
+    first: "random2"
+    NPC_options:
+      random2:
+        text: "Woof"
+        conditions: "!tag_finding_dog2,!tag_found_dog2"
+        pointer: "found2"
+      confirm2:
+        text: "Woof"
+    player_options:
+      found2:
+        text: "Found ya!, go back to Jake"
+        events: "found_dog2"
+        pointer: "confirm2"
+
+  denmanDog3:
+    quester: "Jake Denman's Dog"
+    first: "random3"
+    NPC_options:
+      random3:
+        text: "Woof"
+        conditions: "!tag_finding_dog3,!tag_found_dog3"
+        pointer: "found3"
+      confirm3:
+        text: "Woof"
+    player_options:
+      found3:
+        text: "Found ya!, go back to Jake"
+        events: "found_dog3"
+        pointer: "confirm3"
+
+  denmanDog4:
+    quester: "Jake Denman's Dog"
+    first: "random4"
+    NPC_options:
+      random4:
+        text: "Woof"
+        conditions: "!tag_finding_dog4,!tag_found_dog4"
+        pointer: "found4"
+      confirm4:
+        text: "Woof"
+    player_options:
+      found4:
+        text: "Found ya!, go back to Jake"
+        events: "found_dog4"
+        pointer: "confirm4"
+
+  denmanDog5:
+    quester: "Jake Denman's Dog"
+    first: "random5"
+    NPC_options:
+      random5:
+        text: "Woof"
+        conditions: "!tag_finding_dog5,!tag_found_dog5"
+        pointer: "found5"
+      confirm5:
+        text: "Woof"
+    player_options:
+      found5:
+        text: "Found ya!, go back to Jake"
+        events: "found_dog5"
+        pointer: "confirm5"
+
+  denmanDog6:
+    quester: "Jake Denman's Dog"
+    first: "random6"
+    NPC_options:
+      random6:
+        text: "Woof"
+        conditions: "!tag_finding_dog6,!tag_found_dog6"
+        pointer: "found6"
+      confirm6:
+        text: "Woof"
+    player_options:
+      found6:
+        text: "Found ya!, go back to Jake"
+        events: "found_dog6"
+        pointer: "confirm6"
+    
+    denmanDog7:
+      quester: "Jake Denman's Dog"
+      first: "random7"
+      NPC_options:
+        random7:
+          text: "Woof I'm back"
+          conditions: "tag_found_all_dogs"
+
+
+
+
+            
+        
+
+
+
+

@@ -49,6 +49,7 @@ npc:
     maximum-visited-blocks: 768
     # The default allowed maximum fall distance when pathfinding, set to -1 to use the Minecraft value
     allowed-fall-distance: -1
+    default-stuck-action: teleport to destination
   default:
     # The default bossbar range, in blocks
     bossbar-view-range: 64
