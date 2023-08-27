@@ -18,14 +18,6 @@ panels:
       '12':
         material: BOOK
         stack: 1
-        name: '&e&l[Missions]'
-        customdata: 10008
-        commands:
-        - msg= &cWIP
-        - cpc
-      '13':
-        material: BOOK
-        stack: 1
         name: '&c&l[Skills]'
         customdata: 10011
         commands:
@@ -34,11 +26,10 @@ panels:
       '14':
         material: BOOK
         stack: 1
-        name: '&d&l[Chassis]'
+        name: '&d&l[Vanity]'
         customdata: 10010
         commands:
-        - cosmetic
-        - cpc
+        - op= cp cosmetic
       '22':
         material: cps= self
         name: '&4&l[%cp-player-name%]'
@@ -445,8 +436,9 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases Stamina regen and'
-          - '&d&oproficiency with willpower related skills'
+          - '&d&oIncreases stamina and health regen'
+          - '&d&oas well as proficiency'
+          - '&d&owith willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -482,8 +474,9 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases Stamina regen and'
-          - '&d&oproficiency with willpower related skills'
+          - '&d&oIncreases stamina and health regen'
+          - '&d&oas well as proficiency'
+          - '&d&owith willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -513,8 +506,9 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases Stamina regen and'
-          - '&d&oproficiency with willpower related skills'
+          - '&d&oIncreases stamina and health regen'
+          - '&d&oas well as proficiency'
+          - '&d&owith willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -538,8 +532,9 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases Stamina regen and'
-          - '&d&oproficiency with willpower related skills'
+          - '&d&oIncreases stamina and health regen'
+          - '&d&oas well as proficiency'
+          - '&d&owith willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -557,8 +552,9 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases Stamina regen and'
-          - '&d&oproficiency with willpower related skills'
+          - '&d&oIncreases stamina and health regen'
+          - '&d&oas well as proficiency '
+          - '&d&owith willpower related skills'
           - ''
           - '&4You have no available stat points!'
       #dex

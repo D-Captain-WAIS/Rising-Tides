@@ -20,17 +20,17 @@ Chamber Blast:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10038
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&oA regular shot. '
-  - '&9&oSimple but effective!'
+  - '&e&oA strong shot that '
+  - '&e&oblows away my enemies!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'

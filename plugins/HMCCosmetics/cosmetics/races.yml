@@ -1,0 +1,64 @@
+dog_ears:
+  slot: HELMET
+  permission: "mink"
+  item:
+    material: itemsadder:sunrise:dog_ears
+    name: "<green><bold>Dog Ears"
+    amount: 1
+bear_ears:
+  slot: HELMET
+  permission: "mink"
+  item:
+    material: itemsadder:sunrise:bear_ears
+    name: "<green><bold>Bear Ears"
+    amount: 1
+bunny_ears:
+  slot: HELMET
+  permission: "mink"
+  item:
+    material: itemsadder:sunrise:bunny_ears
+    name: "<green><bold>Bunny Ears"
+    amount: 1
+fishman_head1:
+  slot: HELMET
+  permission: "fishman"
+  item:
+    material: itemsadder:sunrise:fishman_head
+    name: "<blue><bold>Fishman Scales"
+    amount: 1
+shandian_wings:
+  slot: BACKPACK
+  permission: "shandian"
+  item:
+    material: itemsadder:sunrise:shandian_wings
+    name: "<aqua><bold>Small Wings"
+    amount: 1
+dog_tail:
+  slot: BACKPACK
+  permission: "mink"
+  item:
+    material: itemsadder:sunrise:dog_tail
+    name: "<green><bold>Dog Tail"
+    amount: 1
+bear_tail:
+  slot: BACKPACK
+  permission: "mink"
+  item:
+    material: itemsadder:sunrise:bear_tail
+    name: "<green><bold>Bear Tail"
+    amount: 1
+bunny_tail:
+  slot: BACKPACK
+  permission: "mink"
+  item:
+    material: itemsadder:sunrise:bunny_tail
+    name: "<green><bold>Bear Tail"
+    amount: 1
+back_fin:
+  slot: BACKPACK
+  permission: "fishman"
+  item:
+    material: itemsadder:sunrise:back_fin
+    name: "<blue><bold>Back Fin"
+    amount: 1
+    

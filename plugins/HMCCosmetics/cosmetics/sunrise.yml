@@ -19,3 +19,31 @@ rusty_cutlass:
     material: itemsadder:sunrise:rusty_cutlass
     name: "<dark_gray><bold>Rusty Cutlass"
     amount: 1
+basic_marine_hat:
+  slot: HELMET
+  permission: "sunrisecosmetics.marine_hat"
+  item:
+    material: itemsadder:sunrise:marine_hat
+    name: "<blue><bold>Marine Hat"
+    amount: 1
+basic_marine_uniform:
+  slot: CHESTPLATE
+  permission: "sunrisecosmetics.marine_uniform"
+  item:
+    material: itemsadder:sunrise:marine_uniform
+    name: "<blue><bold>Marine Uniform"
+    amount: 1
+basic_marine_pants:
+  slot: LEGGINGS
+  permission: "sunrisecosmetics.marine_pants"
+  item:
+    material: itemsadder:sunrise:marine_pants
+    name: "<blue><bold>Marine Pants"
+    amount: 1
+basic_marine_boots:
+  slot: BOOTS
+  permission: "sunrisecosmetics.marine_boots"
+  item:
+    material: itemsadder:sunrise:marine_boots
+    name: "<blue><bold>Marine Boots"
+    amount: 1

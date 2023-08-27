@@ -1,8 +1,0 @@
-StoredExitLocation:
-  ==: org.bukkit.Location
-  world: dawn_island
-  x: 719.9698773393147
-  y: 66.0
-  z: -201.44096521308302
-  pitch: 7.000373
-  yaw: -1.2109375

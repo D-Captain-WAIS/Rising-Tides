@@ -112,7 +112,7 @@ modules:
 
 item-sub-types:
   single_duelist_sharp:
-    name: '&cSingle Sharp Duelist'
+    name: '&c&oSingle Wield Duelist (Edged)'
     materials:
     - GRAY_DYE
     - GREEN_DYE
@@ -123,6 +123,26 @@ item-sub-types:
     - RED_DYE
     - ORANGE_DYE
     - PAPER
+  polearm_sharp:
+    name: '&c&oPolearm (Edged)'
+    materials:
+    - GUNPOWDER
+    - SLIMEBALL
+    - STRING
+    - LIGHT_BLUE_DYE
+    - MAGENTA_DYE
+    - HONEYCOMB
+    - NETHER_WART
+  buster_blunt:
+    name: '&c&oBuster (Blunt)'
+    materials:
+    - FLINT
+    - CLAY
+    - PRISMARINE_SHARD
+    - PRISMARINE_CRYSTAL
+    - SHULKER_SHELL
+    - BLAZE_ROD
+    - MAGMA_CREAM
   hand_wraps:
     name: '&cHand Wraps'
     materials:
@@ -217,6 +237,20 @@ item-groups:
     - ORANGE_DYE
     - RAW_IRON
     - WHITE_DYE
+    - GUNPOWDER
+    - SLIMEBALL
+    - STRING
+    - LIGHT_BLUE_DYE
+    - MAGENTA_DYE
+    - HONEYCOMB
+    - NETHER_WART
+    - FLINT
+    - CLAY
+    - PRISMARINE_SHARD
+    - PRISMARINE_CRYSTAL
+    - SHULKER_SHELL
+    - BLAZE_ROD
+    - MAGMA_CREAM
   TOOL:
     name: Tool
     materials:

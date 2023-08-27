@@ -1,0 +1,20 @@
+panels:  
+  titlesoverview:
+    perm: titlesoverview
+    rows: 6
+    title: ':offset_-8::vivre:'
+    empty: AIR
+    item:
+      '1':
+        material: PAPER
+        stack: 1
+        name: '&6&l[STORE]'
+        commands:
+        - op= cp storetitles
+      '2':
+        material: PAPER
+        stack: 1
+        name: '&6&l[DAYBREAK ISLAND]'
+        commands:
+        - msg= &c&oWIP
+        - cpc

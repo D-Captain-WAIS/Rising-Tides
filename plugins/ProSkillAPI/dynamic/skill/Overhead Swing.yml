@@ -20,17 +20,17 @@ Overhead Swing:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10020
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oIf I raise my weapon above my head'
-  - '&9&oit should be faster and stronger!'
+  - '&c&oIf I raise my weapon above my head'
+  - '&c&oit should be faster and stronger!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -51,7 +51,7 @@ Overhead Swing:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 

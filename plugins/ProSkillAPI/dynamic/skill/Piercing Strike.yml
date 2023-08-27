@@ -1,7 +1,7 @@
 Piercing Strike: 
   name: 'Piercing Strike'
   type: 'Active'
-  max-level: 5
+  max-level: 1
   skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
@@ -20,17 +20,17 @@ Piercing Strike:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10021
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oI’ll jab my weapon directly into them,'
-  - '&9&oand that should do plenty of damage!'
+  - '&c&oI’ll jab my weapon directly into them,'
+  - '&c&oand that should do plenty of damage!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -51,7 +51,7 @@ Piercing Strike:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 

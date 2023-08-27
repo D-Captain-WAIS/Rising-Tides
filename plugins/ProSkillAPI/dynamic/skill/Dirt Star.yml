@@ -20,8 +20,8 @@ Dirt Star:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10029
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '

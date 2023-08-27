@@ -50,6 +50,7 @@ Scrapper:
   - 'wounded'
   - 'impaired'
   - 'vulnerable'
+  - 'M1 to Basic Attack'
   icon: 'YELLOW_DYE'
   icon-data: 0
   icon-durability: 0
@@ -150,6 +151,7 @@ MWNewbie:
   - 'wounded'
   - 'impaired'
   - 'vulnerable'
+  - 'M1 to Basic Attack'
   icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0
@@ -207,6 +209,7 @@ GunNewbie:
   - 'wounded'
   - 'impaired'
   - 'vulnerable'
+  - 'M1 to Basic Attack'
   icon: 'YELLOW_DYE'
   icon-data: 0
   icon-durability: 0
@@ -264,6 +267,7 @@ SWNewbie:
   - 'Caltrops'
   - 'The Look Away'
   - 'vulnerable'
+  - 'M1 to Basic Attack'
   icon: 'YELLOW_DYE'
   icon-data: 0
   icon-durability: 0

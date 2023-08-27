@@ -1,0 +1,57 @@
+info:
+  namespace: fruits
+items:
+  phoenix:
+    display_name: "phoenix"
+    permission: fruits.phoenix
+    resource:
+      material: apple
+      generate: false
+      model_path: phoenix/toritori
+    item_flags:
+    - HIDE_ATTRIBUTES
+  operation:
+    display_name: "operation"
+    permission: fruits.operation
+    resource:
+      material: apple
+      generate: false
+      model_path: ope/opeope
+    item_flags:
+    - HIDE_ATTRIBUTES
+  quake_crack:
+    display_name: "quake_crack"
+    permission: fruits.quake_crack
+    resource:
+      material: IRON_NUGGET
+      generate: false
+      model_path: quake/seaquakecrack
+    item_flags:
+    - HIDE_ATTRIBUTES
+  quake_crack1:
+    display_name: "quake_crack1"
+    permission: fruits.quake_crack
+    resource:
+      material: IRON_NUGGET
+      generate: false
+      model_path: quake/seaquakecrackframe1
+    item_flags:
+    - HIDE_ATTRIBUTES
+  quake_crack2:
+    display_name: "quake_crack2"
+    permission: fruits.quake_crack
+    resource:
+      material: IRON_NUGGET
+      generate: false
+      model_path: quake/seaquakecrackframe2
+    item_flags:
+    - HIDE_ATTRIBUTES
+  quake_crack3:
+    display_name: "quake_crack3"
+    permission: fruits.quake_crack
+    resource:
+      material: IRON_NUGGET
+      generate: false
+      model_path: quake/seaquakecrackframe3
+    item_flags:
+    - HIDE_ATTRIBUTES

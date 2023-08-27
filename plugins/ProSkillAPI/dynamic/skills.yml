@@ -3,6 +3,7 @@ Hard Punch:
   name: 'Hard Punch'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -17,6 +18,7 @@ Hard Punch:
     mana-scale: '0'
     points-spent-req-base: ' {}'
     points-spent-req-scale: '0'
+    incompatible: ' {}'
   msg: '&6{player} &2has cast &6{skill}&r'
   icon: 'PUMPKIN_SEEDS'
   icon-data: 10001
@@ -36,26 +38,27 @@ Hard Punch:
     Cast: 
       type: 'trigger'
       indicator: 'None'
-      data:  {}
+      data: 
+        icon-key: ''
       children: 
         Item-b: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
-            check-mat: 'false'
-            check-data: 'false'
-            check-lore: 'true'
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
             lore: 'Gloves'
-            check-name: 'false'
-            regex: 'false'
+            check-name: 'False'
+            regex: 'False'
           children: 
             Command-c: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'true'
+                counts: 'True'
                 command: 'iaemote hard_punch'
                 type: 'OP'
               children:  {}
@@ -91,20 +94,7 @@ Hard Punch:
                     delay-base: '0.5'
                     delay-scale: '0'
                   children: 
-                    Damage-g: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'true'
-                        type: 'Damage'
-                        value-base: 'hpunch_damage'
-                        value-scale: '0'
-                        true: 'true'
-                        classifier: 'default'
-                        knockback: 'true'
-                      children:  {}
-                    Sound-h: 
+                    Sound-g: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -117,12 +107,26 @@ Hard Punch:
                         pitch-base: '1'
                         pitch-scale: '0'
                       children:  {}
+                    Damage-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        type: 'Damage'
+                        value-base: 'hpunch_damage'
+                        value-scale: '0'
+                        true: 'False'
+                        classifier: 'default'
+                        knockback: 'True'
+                        cause: 'Entity Attack'
+                      children:  {}
         Value Placeholder-i: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
-            counts: 'true'
+            counts: 'False'
             key: 'hpunch_damage'
             type: 'Number'
             placeholder: '%math_20+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
@@ -131,6 +135,7 @@ Hard Kick:
   name: 'Hard Kick'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -209,7 +214,7 @@ Hard Kick:
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.65'
+                    delay-base: '0'
                     delay-scale: '0'
                   children: 
                     Damage-f: 
@@ -545,7 +550,7 @@ Hilt Bash:
 Hilt Strike: 
   name: 'Hilt Strike'
   type: 'Active'
-  max-level: 5
+  max-level: 1
   skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
@@ -564,17 +569,17 @@ Hilt Strike:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10018
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oThe hilt of this weapon is really sturdy!'
-  - '&9&o This should be able to do good damage.'
+  - '&c&oThe hilt of this weapon is really sturdy!'
+  - '&c&o This should be able to do good damage.'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -595,7 +600,7 @@ Hilt Strike:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -668,7 +673,7 @@ Hilt Strike:
 Piercing Strike: 
   name: 'Piercing Strike'
   type: 'Active'
-  max-level: 5
+  max-level: 1
   skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
@@ -687,17 +692,17 @@ Piercing Strike:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10021
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oI’ll jab my weapon directly into them,'
-  - '&9&oand that should do plenty of damage!'
+  - '&c&oI’ll jab my weapon directly into them,'
+  - '&c&oand that should do plenty of damage!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -718,7 +723,7 @@ Piercing Strike:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -802,7 +807,7 @@ Piercing Strike:
 Two Handed Swing: 
   name: 'Two Handed Swing'
   type: 'Active'
-  max-level: 5
+  max-level: 1
   skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
@@ -821,17 +826,17 @@ Two Handed Swing:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10013
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oIf I use both of my hands to hold the weapon,'
-  - '&9&o it should do more damage, right?'
+  - '&c&oIf I use both of my hands to hold the weapon,'
+  - '&c&o it should do more damage, right?'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -852,7 +857,7 @@ Two Handed Swing:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -2542,7 +2547,8 @@ Two Handed Swing (1):
 Dash Swing: 
   name: 'Dash Swing'
   type: 'Active'
-  max-level: 5
+  max-level: 1
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -2560,18 +2566,18 @@ Dash Swing:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10015
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - '&f&oAgility'
   - ''
-  - '&9&oI’ll run forward as fast as I can'
-  - '&9&oand swing my weapon!'
+  - '&c&oI’ll run forward as fast as I can'
+  - '&c&oand swing my weapon!'
   - ''
   - ''
   - '&7Skill Level: {level} / {max}'
@@ -2593,7 +2599,7 @@ Dash Swing:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -2733,6 +2739,32 @@ Dash Swing:
             type: 'Number'
             placeholder: '%math_20+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
           children:  {}
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-q: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dgroundspeed'
+            type: 'Number'
+            placeholder: '%math_2+({sapi_player_class_attribute:agility}*0.02)%'
+          children:  {}
+        Value Placeholder-r: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dairspeed'
+            type: 'Number'
+            placeholder: '%math_ 1+({sapi_player_class_attribute:agility}*0.01)%'
+          children:  {}
 Charged Attack: 
   name: 'Charged Attack'
   type: 'Active'
@@ -2755,17 +2787,17 @@ Charged Attack:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10014
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oIf I sit there and charge my attack'
-  - '&9&oit’ll do massive damage!'
+  - '&c&oIf I sit there and charge my attack'
+  - '&c&oit’ll do massive damage!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -2786,7 +2818,7 @@ Charged Attack:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -2868,6 +2900,7 @@ Double Attack:
   name: 'Double Attack'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -2885,17 +2918,17 @@ Double Attack:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10016
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oInstead of one swing,'
-  - '&9&owhat if I do two?'
+  - '&c&oInstead of one swing,'
+  - '&c&owhat if I do two?'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -2916,7 +2949,7 @@ Double Attack:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -3033,17 +3066,17 @@ Overhead Swing:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10020
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oIf I raise my weapon above my head'
-  - '&9&oit should be faster and stronger!'
+  - '&c&oIf I raise my weapon above my head'
+  - '&c&oit should be faster and stronger!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -3064,7 +3097,7 @@ Overhead Swing:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -3127,6 +3160,7 @@ Evade Strike:
   name: 'Evade Strike'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -3144,17 +3178,17 @@ Evade Strike:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10017
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oIf I raise my weapon above my head'
-  - '&9&oit should be faster and stronger!'
+  - '&c&oIf I raise my weapon above my head'
+  - '&c&oit should be faster and stronger!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -3205,7 +3239,7 @@ Evade Strike:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -3346,16 +3380,16 @@ Quick Swings:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10035
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oI’ll rapidly swing my weapon!'
+  - '&c&oI’ll rapidly swing my weapon!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -3386,7 +3420,7 @@ Quick Swings:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -3566,7 +3600,7 @@ Poke:
   name: 'Poke'
   type: 'Active'
   max-level: 5
-  skill-req: 'Quick Swings'
+  skill-req: 'None'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -3584,17 +3618,17 @@ Poke:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10022
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oI don’t wanna get too close…'
-  - '&9&owhat about a small poke?'
+  - '&c&oI don’t wanna get too close…'
+  - '&c&owhat about a small poke?'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -3625,7 +3659,7 @@ Poke:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -3717,17 +3751,17 @@ Jump Attack:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10019
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oI’ll leap in the air and '
-  - '&9&oslam down with my weapon!'
+  - '&c&oI’ll leap in the air and '
+  - '&c&oslam down with my weapon!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -3758,7 +3792,7 @@ Jump Attack:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -3860,6 +3894,7 @@ Weeeee:
   name: 'Weeeee'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -3877,17 +3912,17 @@ Weeeee:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10023
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - "&9&oI'll try spinning!"
-  - "&9&oThat's a good trick!"
+  - "&c&oI'll try spinning!"
+  - "&c&oThat's a good trick!"
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -3908,7 +3943,7 @@ Weeeee:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -4096,8 +4131,7 @@ Weeeee:
 Critical Shot: 
   name: 'Critical Shot'
   type: 'Active'
-  max-level: 5
-  skill-req: 'None'
+  max-level: 1
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -4115,17 +4149,17 @@ Critical Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10039
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&oA regular shot. '
-  - '&9&oSimple but effective!'
+  - '&e&oA regular shot. '
+  - '&e&oSimple but effective!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -4276,7 +4310,7 @@ Critical Shot:
                             value-scale: '0'
                             true: 'False'
                             classifier: 'default'
-                            knockback: 'True'
+                            knockback: 'False'
                             cause: 'Entity Attack'
                           children:  {}
                         Flag-l: 
@@ -4353,14 +4387,13 @@ Critical Shot:
                             value-scale: '0'
                             true: 'False'
                             classifier: 'default'
-                            knockback: 'True'
+                            knockback: 'False'
                             cause: 'Entity Attack'
                           children:  {}
 Double Tap: 
   name: 'Double Tap'
   type: 'Active'
-  max-level: 5
-  skill-req: 'None'
+  max-level: 1
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -4378,17 +4411,17 @@ Double Tap:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10041
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&oA regular shot. '
-  - '&9&oSimple but effective!'
+  - '&e&oInstead of one shot,'
+  - '&e&ohow about two?'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -4499,7 +4532,7 @@ Double Tap:
                         value-scale: '0'
                         true: 'False'
                         classifier: 'default'
-                        knockback: 'True'
+                        knockback: 'False'
                         cause: 'Entity Attack'
                       children:  {}
                 Delay-i: 
@@ -4566,7 +4599,7 @@ Double Tap:
                             value-scale: '0'
                             true: 'False'
                             classifier: 'default'
-                            knockback: 'True'
+                            knockback: 'False'
                             cause: 'Entity Attack'
                           children:  {}
                     Particle-m: 
@@ -4635,8 +4668,7 @@ Double Tap:
 Impairing Shot: 
   name: 'Impairing Shot'
   type: 'Active'
-  max-level: 5
-  skill-req: 'None'
+  max-level: 1
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -4654,17 +4686,17 @@ Impairing Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10043
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&oA regular shot. '
-  - '&9&oSimple but effective!'
+  - '&e&oA shot aimed for the leg'
+  - "&e&oit'll slow em down!"
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -4785,7 +4817,7 @@ Impairing Shot:
                         value-scale: '0'
                         true: 'False'
                         classifier: 'default'
-                        knockback: 'True'
+                        knockback: 'False'
                         cause: 'Entity Attack'
                       children:  {}
                     Entity Type-j: 
@@ -4853,7 +4885,7 @@ Impairing Shot:
 Blunder Leap: 
   name: 'Blunder Leap'
   type: 'Active'
-  max-level: 5
+  max-level: 1
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -4871,17 +4903,17 @@ Blunder Leap:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10037
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&oA regular shot. '
-  - '&9&oSimple but effective!'
+  - '&e&oA powerful shot should '
+  - '&e&olaunch me pretty high!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -4943,7 +4975,7 @@ Blunder Leap:
                   indicator: 'None'
                   data: 
                     icon-key: ''
-                    radius-base: '1.5'
+                    radius-base: '2'
                     radius-scale: '0'
                     group: 'Enemy'
                     wall: 'False'
@@ -4973,11 +5005,24 @@ Blunder Leap:
                         icon-key: ''
                         counts: 'True'
                         type: 'Fixed'
-                        speed-base: '0.5'
+                        speed-base: '1'
                         speed-scale: '0'
                         source: 'none'
                       children:  {}
-                Delay-i: 
+                    Potion-i: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Slow'
+                        ambient: 'False'
+                        tier-base: '1'
+                        tier-scale: '0'
+                        seconds-base: '1'
+                        seconds-scale: '0'
+                      children:  {}
+                Delay-j: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -4986,7 +5031,7 @@ Blunder Leap:
                     delay-base: '0.6'
                     delay-scale: '0'
                   children: 
-                    Channel-j: 
+                    Channel-k: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -4996,7 +5041,7 @@ Blunder Leap:
                         time-base: '0.8'
                         time-scale: '0'
                       children:  {}
-                Particle-k: 
+                Particle-l: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -5019,7 +5064,7 @@ Blunder Leap:
                     upward: '0'
                     right: '0'
                   children:  {}
-                Sound-l: 
+                Sound-m: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -5031,7 +5076,7 @@ Blunder Leap:
                     pitch-base: '0.5'
                     pitch-scale: '0'
                   children:  {}
-                Immunity-m: 
+                Immunity-n: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -5043,7 +5088,7 @@ Blunder Leap:
                     multiplier-base: '0'
                     multiplier-scale: '0'
                   children:  {}
-            Value Placeholder-n: 
+            Value Placeholder-o: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -5053,7 +5098,7 @@ Blunder Leap:
                 type: 'Number'
                 placeholder: '%math_10+({sapi_player_class_attribute:accuracy}*0.1)+{qrpg_damage_physical}%'
               children:  {}
-            Self-o: 
+            Self-p: 
               type: 'target'
               indicator: 'None'
               data: 
@@ -5062,7 +5107,7 @@ Blunder Leap:
                 wall: 'false'
                 caster: 'false'
               children: 
-                Status-p: 
+                Status-q: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -5094,17 +5139,17 @@ Chamber Blast:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10038
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&oA regular shot. '
-  - '&9&oSimple but effective!'
+  - '&e&oA strong shot that '
+  - '&e&oblows away my enemies!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -5271,17 +5316,17 @@ Pistol Whip:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10044
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&o A good ol’ smack on the noggin'
-  - '&9&o to knock em back!'
+  - '&e&o A good ol’ smack on the noggin'
+  - '&e&o to knock em back!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -5349,7 +5394,7 @@ Pistol Whip:
                         value-scale: '0'
                         true: 'False'
                         classifier: 'default'
-                        knockback: 'True'
+                        knockback: 'False'
                         cause: 'Entity Attack'
                       children:  {}
                     Status-g: 
@@ -5369,24 +5414,11 @@ Pistol Whip:
                         icon-key: ''
                         counts: 'True'
                         type: 'Fixed'
-                        speed-base: '0.2'
-                        speed-scale: '0.2'
+                        speed-base: '1'
+                        speed-scale: '0'
                         source: 'none'
                       children:  {}
-                    Potion-i: 
-                      type: 'mechanic'
-                      indicator: 'None'
-                      data: 
-                        icon-key: ''
-                        counts: 'True'
-                        potion: 'Blindness'
-                        ambient: 'True'
-                        tier-base: '1'
-                        tier-scale: '0'
-                        seconds-base: '3'
-                        seconds-scale: '0.2'
-                      children:  {}
-        Value Placeholder-j: 
+        Value Placeholder-i: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -5400,7 +5432,6 @@ Spray and Pray:
   name: 'Spray and Pray'
   type: 'Active'
   max-level: 5
-  skill-req: 'None'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -5418,18 +5449,18 @@ Spray and Pray:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10046
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&o I unload all my remaining bullets rapidly,'
-  - '&9&o sadly it decreases my accuracy, but the'
-  - '&9&o random aspect is very deadly!'
+  - '&e&oI unload all my remaining bullets rapidly,'
+  - '&e&osadly it decreases my accuracy, but the'
+  - '&e&orandom aspect is very deadly!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -5563,7 +5594,7 @@ Spray and Pray:
                                 value-scale: '3'
                                 true: 'False'
                                 classifier: 'default'
-                                knockback: 'True'
+                                knockback: 'False'
                                 cause: 'Contact'
                               children:  {}
                             Flag-j: 
@@ -5640,7 +5671,7 @@ Spray and Pray:
                                 value-scale: '3'
                                 true: 'False'
                                 classifier: 'default'
-                                knockback: 'True'
+                                knockback: 'False'
                                 cause: 'Contact'
                               children:  {}
                     Single-o: 
@@ -5650,7 +5681,7 @@ Spray and Pray:
                         icon-key: ''
                         range-base: '1.5'
                         range-scale: '0'
-                        tolerance-base: '0'
+                        tolerance-base: '0.25'
                         tolerance-scale: '0'
                         group: 'Enemy'
                         wall: 'False'
@@ -5667,7 +5698,7 @@ Spray and Pray:
                             value-scale: '3'
                             true: 'False'
                             classifier: 'default'
-                            knockback: 'True'
+                            knockback: 'False'
                             cause: 'Entity Attack'
                           children:  {}
             Command-q: 
@@ -5730,15 +5761,15 @@ Tactical Dive:
     - ''
   msg: '&6{player} &2has cast &6{skill}&r'
   icon: 'PUMPKIN_SEEDS'
-  icon-data: 0
+  icon-data: 10047
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&f&oAgility'
   - ''
-  - '&9&oI gotta dive and reposition!'
+  - '&e&oI gotta dive and reposition!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -5864,18 +5895,22 @@ RUN:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10045
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&e&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&6&oAccuracy'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - '&e&oWhen things get dicey,'
+  - '&e&othe smartest choice is to'
+  - '&e&oalways book it!'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -5923,7 +5958,7 @@ RUN:
                         icon-key: ''
                         counts: 'True'
                         relative: 'Target'
-                        forward-base: '-2'
+                        forward-base: '-3'
                         forward-scale: '0'
                         upward-base: '0'
                         upward-scale: '0'
@@ -5944,7 +5979,7 @@ RUN:
                         icon-key: ''
                         counts: 'True'
                         relative: 'Target'
-                        forward-base: '-0.75'
+                        forward-base: '-1'
                         forward-scale: '0'
                         upward-base: '0'
                         upward-scale: '0'
@@ -5973,17 +6008,16 @@ Dive Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10040
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
-  - '&9&oDexterity'
+  - '&f&oAgility'
   - ''
-  - '&9&oIf I raise my weapon above my head'
-  - '&9&oit should be faster and stronger!'
+  - '&e&oI dive backwards and shoot!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -6242,7 +6276,7 @@ Dive Shot:
                                     value-scale: '4'
                                     true: 'False'
                                     classifier: 'default'
-                                    knockback: 'True'
+                                    knockback: 'False'
                                     cause: 'Entity Attack'
                                   children:  {}
                                 Flag-w: 
@@ -6309,7 +6343,7 @@ Dive Shot:
                                     value-scale: '0'
                                     true: 'False'
                                     classifier: 'default'
-                                    knockback: 'True'
+                                    knockback: 'False'
                                     cause: 'Entity Attack'
                                   children:  {}
 Fast Hands: 
@@ -6333,17 +6367,17 @@ Fast Hands:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10042
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oImproves my trigger finger'
-  - '&9&oallowing me to shoot faster'
+  - '&e&oImproves my trigger finger'
+  - '&e&oallowing me to shoot faster'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -6402,7 +6436,7 @@ Status Effects:
   - '&2Cooldown: {attr:cooldown}'
   desc:  []
   components: 
-    Took Skill Damage-kc: 
+    Took Skill Damage-a: 
       type: 'trigger'
       indicator: 'None'
       data: 
@@ -6415,7 +6449,7 @@ Status Effects:
         category: 
         - 'explosive'
       children: 
-        Flag-lc: 
+        Flag-b: 
           type: 'condition'
           indicator: 'None'
           data: 
@@ -6423,7 +6457,7 @@ Status Effects:
             type: 'Set'
             key: 'ignited'
           children: 
-            Value-mc: 
+            Value-c: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6434,7 +6468,7 @@ Status Effects:
                 max-value-base: '1'
                 max-value-scale: '0'
               children: 
-                Flag-nc: 
+                Flag-d: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6444,7 +6478,7 @@ Status Effects:
                     seconds-base: '10'
                     seconds-scale: '0'
                   children:  {}
-                Flag Clear-oc: 
+                Flag Clear-e: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6452,7 +6486,7 @@ Status Effects:
                     counts: 'True'
                     key: 'ignited'
                   children:  {}
-            Value-pc: 
+            Value-f: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6463,7 +6497,7 @@ Status Effects:
                 max-value-base: '2'
                 max-value-scale: '0'
               children: 
-                Flag-qc: 
+                Flag-g: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6473,7 +6507,7 @@ Status Effects:
                     seconds-base: '10'
                     seconds-scale: '0'
                   children:  {}
-                Flag Clear-rc: 
+                Flag Clear-h: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6481,7 +6515,7 @@ Status Effects:
                     counts: 'True'
                     key: 'ignited'
                   children:  {}
-            Value-sc: 
+            Value-i: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6492,7 +6526,7 @@ Status Effects:
                 max-value-base: '3'
                 max-value-scale: '0'
               children: 
-                Flag-tc: 
+                Flag-j: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6502,7 +6536,7 @@ Status Effects:
                     seconds-base: '10'
                     seconds-scale: '0'
                   children:  {}
-                Flag Clear-uc: 
+                Flag Clear-k: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6510,7 +6544,7 @@ Status Effects:
                     counts: 'True'
                     key: 'ignited'
                   children:  {}
-        Value Set-vc: 
+        Value Set-l: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -6520,7 +6554,7 @@ Status Effects:
             value-base: 'api-taken'
             value-scale: '0'
           children:  {}
-        Value Multiply-wc: 
+        Value Multiply-m: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -6530,13 +6564,36 @@ Status Effects:
             multiplier-base: '0.2'
             multiplier-scale: '0'
           children:  {}
+    Environment Damage-n: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+        mana: 'False'
+        cooldown: 'False'
+        type: 'Lava'
+      children: 
+        Damage-o: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            type: 'Multiplier'
+            value-base: '5'
+            value-scale: '0'
+            true: 'False'
+            classifier: 'lava'
+            knockback: 'False'
+            cause: 'Entity Attack'
+          children:  {}
     Initialize: 
       type: 'trigger'
       indicator: 'None'
       data: 
         icon-key: ''
       children: 
-        Passive-b: 
+        Passive-q: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -6545,7 +6602,7 @@ Status Effects:
             seconds-base: '1'
             seconds-scale: '0'
           children: 
-            Flag-c: 
+            Flag-r: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6553,7 +6610,7 @@ Status Effects:
                 type: 'Set'
                 key: 'Bleed'
               children: 
-                Damage-d: 
+                Damage-s: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6567,7 +6624,7 @@ Status Effects:
                     knockback: 'True'
                     cause: 'Entity Attack'
                   children:  {}
-                Particle-e: 
+                Particle-t: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6591,7 +6648,7 @@ Status Effects:
                     upward: '0.75'
                     right: '0'
                   children:  {}
-            Flag-f: 
+            Flag-u: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6599,7 +6656,7 @@ Status Effects:
                 type: 'Not Set'
                 key: 'ignited'
               children: 
-                Value Set-g: 
+                Value Set-v: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6609,7 +6666,7 @@ Status Effects:
                     value-base: '0'
                     value-scale: '0'
                   children:  {}
-            Flag-h: 
+            Flag-w: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6617,7 +6674,7 @@ Status Effects:
                 type: 'Set'
                 key: 'burning1'
               children: 
-                Damage-i: 
+                Damage-x: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6631,7 +6688,7 @@ Status Effects:
                     knockback: 'True'
                     cause: 'Entity Attack'
                   children:  {}
-                Particle-j: 
+                Particle-y: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6653,7 +6710,7 @@ Status Effects:
                     upward: '0'
                     right: '0'
                   children:  {}
-            Flag-k: 
+            Flag-z: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6661,7 +6718,7 @@ Status Effects:
                 type: 'Set'
                 key: 'burning2'
               children: 
-                Damage-l: 
+                Damage-ab: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6675,7 +6732,7 @@ Status Effects:
                     knockback: 'True'
                     cause: 'Entity Attack'
                   children:  {}
-                Particle-m: 
+                Particle-bb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6697,7 +6754,7 @@ Status Effects:
                     upward: '0'
                     right: '0'
                   children:  {}
-                Particle-n: 
+                Particle-cb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6719,7 +6776,7 @@ Status Effects:
                     upward: '0'
                     right: '0'
                   children:  {}
-            Flag-o: 
+            Flag-db: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6727,7 +6784,7 @@ Status Effects:
                 type: 'Set'
                 key: 'burning3'
               children: 
-                Damage-p: 
+                Damage-eb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6741,7 +6798,7 @@ Status Effects:
                     knockback: 'True'
                     cause: 'Entity Attack'
                   children:  {}
-                Particle-q: 
+                Particle-fb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6763,7 +6820,7 @@ Status Effects:
                     upward: '0'
                     right: '0'
                   children:  {}
-                Particle-r: 
+                Particle-gb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6785,7 +6842,7 @@ Status Effects:
                     upward: '0'
                     right: '0'
                   children:  {}
-                Particle-s: 
+                Particle-hb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6807,7 +6864,7 @@ Status Effects:
                     upward: '0'
                     right: '0'
                   children:  {}
-            Flag-t: 
+            Flag-ib: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6815,7 +6872,7 @@ Status Effects:
                 type: 'Set'
                 key: 'ignited'
               children: 
-                Value-u: 
+                Value-jb: 
                   type: 'condition'
                   indicator: 'None'
                   data: 
@@ -6826,7 +6883,7 @@ Status Effects:
                     max-value-base: '1'
                     max-value-scale: '0'
                   children: 
-                    Particle-v: 
+                    Particle-kb: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -6848,7 +6905,7 @@ Status Effects:
                         upward: '0'
                         right: '0'
                       children:  {}
-                Value-w: 
+                Value-lb: 
                   type: 'condition'
                   indicator: 'None'
                   data: 
@@ -6859,7 +6916,7 @@ Status Effects:
                     max-value-base: '2'
                     max-value-scale: '0'
                   children: 
-                    Particle-x: 
+                    Particle-mb: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -6881,7 +6938,7 @@ Status Effects:
                         upward: '0'
                         right: '0'
                       children:  {}
-                Value-y: 
+                Value-nb: 
                   type: 'condition'
                   indicator: 'None'
                   data: 
@@ -6892,7 +6949,7 @@ Status Effects:
                     max-value-base: '3'
                     max-value-scale: '0'
                   children: 
-                    Particle-z: 
+                    Particle-ob: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -6914,7 +6971,7 @@ Status Effects:
                         upward: '0'
                         right: '0'
                       children:  {}
-            Flag-ab: 
+            Flag-pb: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6922,7 +6979,7 @@ Status Effects:
                 type: 'Not Set'
                 key: 'wounded'
               children: 
-                Value Set-bb: 
+                Value Set-qb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6932,7 +6989,7 @@ Status Effects:
                     value-base: '0'
                     value-scale: '0'
                   children:  {}
-            Flag-cb: 
+            Flag-rb: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6940,7 +6997,7 @@ Status Effects:
                 type: 'Not Set'
                 key: 'impaired'
               children: 
-                Value Set-db: 
+                Value Set-sb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6950,7 +7007,7 @@ Status Effects:
                     value-base: '0'
                     value-scale: '0'
                   children:  {}
-            Flag-eb: 
+            Flag-tb: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -6958,7 +7015,7 @@ Status Effects:
                 type: 'Set'
                 key: 'Bleed2'
               children: 
-                Damage-fb: 
+                Damage-ub: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6972,7 +7029,7 @@ Status Effects:
                     knockback: 'True'
                     cause: 'Entity Attack'
                   children:  {}
-                Particle-gb: 
+                Particle-vb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -6996,7 +7053,7 @@ Status Effects:
                     upward: '0.75'
                     right: '0'
                   children:  {}
-                Flag Clear-hb: 
+                Flag Clear-wb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7004,7 +7061,7 @@ Status Effects:
                     counts: 'True'
                     key: 'Bleed'
                   children:  {}
-            Flag-ib: 
+            Flag-xb: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -7012,7 +7069,7 @@ Status Effects:
                 type: 'Not Set'
                 key: 'vulnerable'
               children: 
-                Value Set-jb: 
+                Value Set-yb: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7022,7 +7079,7 @@ Status Effects:
                     value-base: '0'
                     value-scale: '0'
                   children:  {}
-            Flag-kb: 
+            Flag-zb: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -7030,7 +7087,7 @@ Status Effects:
                 type: 'Set'
                 key: 'exposed1'
               children: 
-                Defense Buff-lb: 
+                Defense Buff-ac: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7043,7 +7100,7 @@ Status Effects:
                     seconds-base: '1'
                     seconds-scale: '0'
                   children:  {}
-                Particle-mb: 
+                Particle-bc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7065,7 +7122,7 @@ Status Effects:
                     upward: '0.75'
                     right: '0'
                   children:  {}
-            Flag-nb: 
+            Flag-cc: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -7073,7 +7130,7 @@ Status Effects:
                 type: 'Set'
                 key: 'exposed2'
               children: 
-                Defense Buff-ob: 
+                Defense Buff-dc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7086,7 +7143,7 @@ Status Effects:
                     seconds-base: '1'
                     seconds-scale: '0'
                   children:  {}
-                Flag Clear-pb: 
+                Flag Clear-ec: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7094,7 +7151,7 @@ Status Effects:
                     counts: 'True'
                     key: 'exposed1'
                   children:  {}
-                Particle-qb: 
+                Particle-fc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7116,7 +7173,7 @@ Status Effects:
                     upward: '0.75'
                     right: '0'
                   children:  {}
-            Flag-rb: 
+            Flag-gc: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -7124,7 +7181,7 @@ Status Effects:
                 type: 'Set'
                 key: 'exposed3'
               children: 
-                Defense Buff-sb: 
+                Defense Buff-hc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7137,7 +7194,7 @@ Status Effects:
                     seconds-base: '1'
                     seconds-scale: '0'
                   children:  {}
-                Flag Clear-tb: 
+                Flag Clear-ic: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7145,7 +7202,7 @@ Status Effects:
                     counts: 'True'
                     key: 'exposed1'
                   children:  {}
-                Flag Clear-ub: 
+                Flag Clear-jc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7153,7 +7210,7 @@ Status Effects:
                     counts: 'True'
                     key: 'exposed2'
                   children:  {}
-                Particle-vb: 
+                Particle-kc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7175,7 +7232,7 @@ Status Effects:
                     upward: '0.75'
                     right: '0'
                   children:  {}
-            Flag-wb: 
+            Flag-lc: 
               type: 'condition'
               indicator: 'None'
               data: 
@@ -7183,7 +7240,7 @@ Status Effects:
                 type: 'Set'
                 key: 'flip'
               children: 
-                Value Placeholder-xb: 
+                Value Placeholder-mc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7193,7 +7250,7 @@ Status Effects:
                     type: 'Number'
                     placeholder: '%player_yaw%'
                   children:  {}
-                Value-yb: 
+                Value-nc: 
                   type: 'condition'
                   indicator: 'None'
                   data: 
@@ -7204,7 +7261,7 @@ Status Effects:
                     max-value-base: '180'
                     max-value-scale: '0'
                   children: 
-                    Value Placeholder-zb: 
+                    Value Placeholder-oc: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -7214,7 +7271,7 @@ Status Effects:
                         type: 'Number'
                         placeholder: '%math_-180+{player_yaw}%'
                       children:  {}
-                Value-ac: 
+                Value-pc: 
                   type: 'condition'
                   indicator: 'None'
                   data: 
@@ -7225,7 +7282,7 @@ Status Effects:
                     max-value-base: '0'
                     max-value-scale: '0'
                   children: 
-                    Value Placeholder-bc: 
+                    Value Placeholder-qc: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -7235,7 +7292,7 @@ Status Effects:
                         type: 'Number'
                         placeholder: '%math_180+{player_yaw}%'
                       children:  {}
-                Command-cc: 
+                Command-rc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7244,7 +7301,7 @@ Status Effects:
                     command: 'tppos ~0 ~0 ~0 {flipped_yaw} 0'
                     type: 'OP'
                   children:  {}
-                Flag Toggle-dc: 
+                Flag Toggle-sc: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -7252,7 +7309,25 @@ Status Effects:
                     counts: 'True'
                     key: 'flip'
                   children:  {}
-        Value Add-ec: 
+            Flag-tc: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                type: 'Not Set'
+                key: 'isM1ing'
+              children: 
+                Value Set-uc: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'm1'
+                    value-base: '0'
+                    value-scale: '0'
+                  children:  {}
+        Value Add-vc: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -7262,7 +7337,7 @@ Status Effects:
             amount-base: '0'
             amount-scale: '0'
           children:  {}
-        Value Add-fc: 
+        Value Add-wc: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -7272,7 +7347,7 @@ Status Effects:
             amount-base: '0'
             amount-scale: '0'
           children:  {}
-        Value Add-gc: 
+        Value Add-xc: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -7282,7 +7357,7 @@ Status Effects:
             amount-base: '0'
             amount-scale: '0'
           children:  {}
-        Value Add-hc: 
+        Value Add-yc: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -7292,7 +7367,7 @@ Status Effects:
             amount-base: '0'
             amount-scale: '0'
           children:  {}
-        Value Add-ic: 
+        Value Add-zc: 
           type: 'mechanic'
           indicator: 'None'
           data: 
@@ -7302,13 +7377,23 @@ Status Effects:
             amount-base: '0'
             amount-scale: '0'
           children:  {}
-        Value Add-jc: 
+        Value Add-ad: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'vulnerablestacks'
+            amount-base: '0'
+            amount-scale: '0'
+          children:  {}
+        Value Add-bd: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'm1'
             amount-base: '0'
             amount-scale: '0'
           children:  {}
@@ -7333,18 +7418,22 @@ Vital Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10048
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&e&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&f&oAgility'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - "&e&oI'll try to aim my shot"
+  - '&e&oon a vital spot '
+  - '&e&oto cause bleeding'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -7451,8 +7540,8 @@ Multishot Star:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10031
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -7667,8 +7756,8 @@ Firecracker Star:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10036
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -8022,8 +8111,8 @@ Arcing Projectile:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10024
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -8295,8 +8384,8 @@ Slip-up:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10032
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -8640,8 +8729,8 @@ Bola Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10025
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -8713,7 +8802,10 @@ Bola Shot:
                     material: 'Gold nugget'
                     amount: '1'
                     byte: '10001'
-                    hide-flags: ' {}'
+                    hide-flags: 
+                    - ' '
+                    - '{'
+                    - '}'
                     custom: 'False'
                     velocity-base: '2.5'
                     velocity-scale: '0'
@@ -8778,8 +8870,8 @@ Dirt Star:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10029
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -8962,8 +9054,8 @@ Fire Starter:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10030
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -9016,7 +9108,10 @@ Fire Starter:
                     material: 'Gold nugget'
                     amount: '1'
                     byte: '10002'
-                    hide-flags: ' {}'
+                    hide-flags: 
+                    - ' '
+                    - '{'
+                    - '}'
                     custom: 'False'
                     velocity-base: '3'
                     velocity-scale: '0'
@@ -9089,8 +9184,8 @@ Bounce Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10026
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -9409,8 +9504,8 @@ Special Volley:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10033
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -9584,7 +9679,6 @@ Catapult:
   name: 'Catapult'
   type: 'Active'
   max-level: 5
-  skill-req: 'Multishot Star'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -9602,8 +9696,8 @@ Catapult:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10028
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -9754,7 +9848,31 @@ Catapult:
                             duration-base: '0.2'
                             duration-scale: '0'
                           children:  {}
-                    Offset-j: 
+                        Remember-j: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            key: 'mypain'
+                            group: 'enemy'
+                            wall: 'false'
+                            caster: 'false'
+                          children: 
+                            Damage-k: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                type: 'Damage'
+                                value-base: 'bcatapult_dmg'
+                                value-scale: '1'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                    Offset-l: 
                       type: 'target'
                       indicator: 'None'
                       data: 
@@ -9769,7 +9887,7 @@ Catapult:
                         wall: 'false'
                         caster: 'false'
                       children: 
-                        Particle-k: 
+                        Particle-m: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -9791,7 +9909,7 @@ Catapult:
                             upward: '0'
                             right: '0'
                           children:  {}
-                        Sound-l: 
+                        Sound-n: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -9803,7 +9921,7 @@ Catapult:
                             pitch-base: '0.5'
                             pitch-scale: '0'
                           children:  {}
-                    Launch-m: 
+                    Launch-o: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -9817,12 +9935,12 @@ Catapult:
                         right-base: '0'
                         right-scale: '0'
                       children:  {}
-                    Area-n: 
+                    Area-p: 
                       type: 'target'
                       indicator: 'None'
                       data: 
                         icon-key: ''
-                        radius-base: '3'
+                        radius-base: '1'
                         radius-scale: '0'
                         group: 'Enemy'
                         wall: 'False'
@@ -9831,7 +9949,7 @@ Catapult:
                         max-scale: '0'
                         random: 'False'
                       children: 
-                        Damage-o: 
+                        Damage-q: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -9845,7 +9963,7 @@ Catapult:
                             knockback: 'True'
                             cause: 'Entity Attack'
                           children:  {}
-                    Self-p: 
+                    Self-r: 
                       type: 'target'
                       indicator: 'None'
                       data: 
@@ -9854,13 +9972,13 @@ Catapult:
                         wall: 'false'
                         caster: 'false'
                       children: 
-                        Damage-q: 
+                        Damage-s: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
-                            type: 'Multiplier'
+                            type: 'Damage'
                             value-base: '1'
                             value-scale: '0'
                             true: 'False'
@@ -9868,26 +9986,89 @@ Catapult:
                             knockback: 'True'
                             cause: 'Entity Attack'
                           children:  {}
-                Delay-r: 
+                Delay-t: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.7'
+                    delay-base: '0.8'
                     delay-scale: '0'
                   children: 
-                    Flag-s: 
+                    Flag-u: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'self projectile'
-                        seconds-base: '0.8'
+                        seconds-base: '0.75'
                         seconds-scale: '0'
                       children:  {}
-            Self-t: 
+                Delay-v: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '1'
+                    delay-scale: '0'
+                  children: 
+                    Particle Projectile-w: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        gravity: '0'
+                        pierce: 'True'
+                        group: 'Enemy'
+                        velocity-base: '-3'
+                        velocity-scale: '0'
+                        lifespan-base: '0.65'
+                        lifespan-scale: '0'
+                        spread: 'Cone'
+                        amount-base: '1'
+                        amount-scale: '0'
+                        angle-base: '30'
+                        angle-scale: '0'
+                        forward-base: '0'
+                        forward-scale: '0'
+                        upward-base: '0'
+                        upward-scale: '0'
+                        right-base: '0'
+                        right-scale: '0'
+                        particle: 'Falling dust'
+                        material: 'Dirt'
+                        arrangement: 'Sphere'
+                        radius-base: '0'
+                        radius-scale: '0'
+                        particles-base: '0'
+                        particles-scale: '0'
+                        visible-radius: '0'
+                        dx: '0'
+                        dy: '0'
+                        dz: '0'
+                        amount: '0'
+                        speed: '0'
+                        frequency: '0'
+                        use-effect: 'False'
+                      children: 
+                        Damage-x: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'bcatapult_dmg'
+                            value-scale: '1'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Entity Attack'
+                          children:  {}
+            Self-y: 
               type: 'target'
               indicator: 'None'
               data: 
@@ -9896,7 +10077,7 @@ Catapult:
                 wall: 'false'
                 caster: 'false'
               children: 
-                Status-u: 
+                Status-z: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -9906,7 +10087,7 @@ Catapult:
                     duration-base: '2.2'
                     duration-scale: '0'
                   children:  {}
-                Status-v: 
+                Status-ab: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -9916,7 +10097,7 @@ Catapult:
                     duration-base: '1.2'
                     duration-scale: '0'
                   children:  {}
-            Sound-w: 
+            Sound-bb: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -9928,7 +10109,7 @@ Catapult:
                 pitch-base: '2'
                 pitch-scale: '0'
               children:  {}
-            Value Placeholder-x: 
+            Value Placeholder-cb: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -9938,7 +10119,7 @@ Catapult:
                 type: 'Number'
                 placeholder: '%math_20+({sapi_player_class_attribute:finesse}*0.2)+{qrpg_damage_physical}%'
               children:  {}
-            Value Placeholder-y: 
+            Value Placeholder-db: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -9954,24 +10135,24 @@ Catapult:
       data: 
         icon-key: ''
       children: 
-        Passive-ab: 
+        Passive-fb: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
-            seconds-base: '0.05'
+            seconds-base: '0.3'
             seconds-scale: '0'
           children: 
-            Flag-bb: 
+            Flag-gb: 
               type: 'condition'
               indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
-                key: 'selfprojectile'
+                key: 'self projectile'
               children: 
-                Area-cb: 
+                Area-hb: 
                   type: 'target'
                   indicator: 'None'
                   data: 
@@ -9985,19 +10166,13 @@ Catapult:
                     max-scale: '0'
                     random: 'False'
                   children: 
-                    Damage-db: 
+                    Remember Targets-ib: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        type: 'Damage'
-                        value-base: 'bcatapult_dmg'
-                        value-scale: '0'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Custom'
+                        key: 'mypain'
                       children:  {}
 Caltrops: 
   name: 'Caltrops'
@@ -10020,8 +10195,8 @@ Caltrops:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10027
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -10993,8 +11168,8 @@ The Look Away:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10034
   icon-durability: 0
   icon-lore: 
   - "&a&lWhat's That?!"
@@ -12975,3 +13150,3048 @@ Birkan Anatomy:
                     multiplier-base: '0'
                     multiplier-scale: '0'
                   children:  {}
+M1 to Basic Attack: 
+  name: 'M1 to Basic Attack'
+  type: 'Active'
+  max-level: 1
+  skill-req: 'None'
+  skill-req-lvl: 1
+  needs-permission: 'false'
+  cooldown-message: 'false'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '0.33'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: 
+    - ''
+  msg: '&6{player} &2has cast &6{skill}'
+  icon: 'ACACIA_BOAT'
+  icon-data: 0
+  icon-durability: 0
+  icon-lore: 
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  desc:  []
+  components: 
+    Left Click-a: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+        mana: 'False'
+        cooldown: 'True'
+        crouch: 'Dont crouch'
+      children: 
+        Item-b: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Wield Duelist'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Class-c: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                class: 'MWStudent'
+                exact: 'True'
+              children:  {}
+            Else-d: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+              children: 
+                Value Add-e: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'm1'
+                    amount-base: '1'
+                    amount-scale: '0'
+                  children:  {}
+                Flag-f: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'isM1ing'
+                    seconds-base: '0.8'
+                    seconds-scale: '0'
+                  children:  {}
+                Value-g: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '1'
+                    max-value-scale: '0'
+                  children: 
+                    Command-h: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_1'
+                        type: 'OP'
+                      children:  {}
+                    Self-i: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-j: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-k: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-l: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-m: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-n: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Single-o: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'false'
+                          children: 
+                            Damage-p: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-q: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '2'
+                    min-value-scale: '0'
+                    max-value-base: '2'
+                    max-value-scale: '0'
+                  children: 
+                    Command-r: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_2'
+                        type: 'OP'
+                      children:  {}
+                    Self-s: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-t: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-u: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-v: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-w: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-x: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Single-y: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'false'
+                          children: 
+                            Damage-z: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-ab: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '3'
+                    min-value-scale: '0'
+                    max-value-base: '3'
+                    max-value-scale: '0'
+                  children: 
+                    Command-bb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_3'
+                        type: 'OP'
+                      children:  {}
+                    Self-cb: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-db: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-eb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-fb: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-gb: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-hb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Single-ib: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'false'
+                          children: 
+                            Damage-jb: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-kb: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '4'
+                    min-value-scale: '0'
+                    max-value-base: '4'
+                    max-value-scale: '0'
+                  children: 
+                    Command-lb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_4'
+                        type: 'OP'
+                      children:  {}
+                    Self-mb: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-nb: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-ob: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Cooldown-pb: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            skill: 'M1 to Basic Attack'
+                            type: 'Seconds'
+                            value-base: '-2'
+                            value-scale: '0'
+                          children:  {}
+                    Delay-qb: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Cone-rb: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            angle-base: '45'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-sb: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+        Value Placeholder-tb: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'True'
+            key: 'm1_dmg'
+            type: 'Number'
+            placeholder: '%math_({sapi_player_class_attribute:dexterity}*0.01)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-ub: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Gloves'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Class-vb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                class: 'BStudent'
+                exact: 'True'
+              children:  {}
+            Else-wb: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+              children: 
+                Value Add-xb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'm1'
+                    amount-base: '1'
+                    amount-scale: '0'
+                  children:  {}
+                Flag-yb: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'isM1ing'
+                    seconds-base: '0.8'
+                    seconds-scale: '0'
+                  children:  {}
+                Value-zb: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '1'
+                    max-value-scale: '0'
+                  children: 
+                    Command-ac: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote bn_m1_1'
+                        type: 'OP'
+                      children:  {}
+                    Self-bc: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-cc: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-dc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-ec: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-fc: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-gc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Single-hc: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'false'
+                          children: 
+                            Damage-ic: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-jc: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '2'
+                    min-value-scale: '0'
+                    max-value-base: '2'
+                    max-value-scale: '0'
+                  children: 
+                    Command-kc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote bn_m1_2'
+                        type: 'OP'
+                      children:  {}
+                    Self-lc: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-mc: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-nc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-oc: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-pc: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-qc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Cone-rc: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            angle-base: '45'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-sc: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-tc: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '3'
+                    min-value-scale: '0'
+                    max-value-base: '3'
+                    max-value-scale: '0'
+                  children: 
+                    Command-uc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote bn_m1_3'
+                        type: 'OP'
+                      children:  {}
+                    Self-vc: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-wc: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-xc: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-yc: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-zc: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-ad: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Cone-bd: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            angle-base: '45'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-cd: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-dd: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '4'
+                    min-value-scale: '0'
+                    max-value-base: '4'
+                    max-value-scale: '0'
+                  children: 
+                    Command-ed: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote bn_m1_4'
+                        type: 'OP'
+                      children:  {}
+                    Self-fd: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-gd: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-hd: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Cooldown-id: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            skill: 'M1 to Basic Attack'
+                            type: 'Seconds'
+                            value-base: '-2'
+                            value-scale: '0'
+                          children:  {}
+                    Delay-jd: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Single-kd: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'false'
+                          children: 
+                            Damage-ld: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+        Item-md: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Single Gunslinger'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Class-nd: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                class: 'GStudent'
+                exact: 'True'
+              children:  {}
+            Else-od: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+              children: 
+                Value Add-pd: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'm1'
+                    amount-base: '1'
+                    amount-scale: '0'
+                  children:  {}
+                Flag-qd: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'isM1ing'
+                    seconds-base: '0.8'
+                    seconds-scale: '0'
+                  children:  {}
+                Value-rd: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '1'
+                    max-value-scale: '0'
+                  children: 
+                    Command-sd: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote gn_m1_1'
+                        type: 'OP'
+                      children:  {}
+                    Self-td: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-ud: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-vd: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-wd: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-xd: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-yd: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Single-zd: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '2.5'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'false'
+                          children: 
+                            Damage-ae: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-be: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '2'
+                    min-value-scale: '0'
+                    max-value-base: '2'
+                    max-value-scale: '0'
+                  children: 
+                    Command-ce: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote gn_m1_2'
+                        type: 'OP'
+                      children:  {}
+                    Self-de: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-ee: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-fe: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-ge: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-he: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-ie: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.25'
+                        delay-scale: '0'
+                      children: 
+                        Cone-je: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '5'
+                            range-scale: '0'
+                            angle-base: '45'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-ke: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                            Push-le: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Fixed'
+                                speed-base: '0.33'
+                                speed-scale: '0'
+                                source: 'none'
+                              children:  {}
+                        Particle-me: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            particle: 'Campfire signal smoke'
+                            arrangement: 'Sphere'
+                            radius-base: '0'
+                            radius-scale: '0'
+                            particles-base: '3'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '3'
+                            speed: '0.1'
+                            forward: '1.6'
+                            upward: '1.75'
+                            right: '0'
+                          children:  {}
+                        Sound-ne: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            sound: 'Entity generic explode'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '0.5'
+                            pitch-scale: '0'
+                          children:  {}
+                Value-oe: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '3'
+                    min-value-scale: '0'
+                    max-value-base: '3'
+                    max-value-scale: '0'
+                  children: 
+                    Command-pe: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote gn_m1_3'
+                        type: 'OP'
+                      children:  {}
+                    Self-qe: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-re: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-se: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-te: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-ue: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-ve: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Single-we: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '2.5'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'false'
+                          children: 
+                            Damage-xe: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-ye: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '4'
+                    min-value-scale: '0'
+                    max-value-base: '4'
+                    max-value-scale: '0'
+                  children: 
+                    Command-ze: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote gn_m1_4'
+                        type: 'OP'
+                      children:  {}
+                    Self-af: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-bf: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-cf: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Cooldown-df: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            skill: 'M1 to Basic Attack'
+                            type: 'Seconds'
+                            value-base: '-2'
+                            value-scale: '0'
+                          children:  {}
+                    Delay-ef: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Cone-ff: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '5'
+                            range-scale: '0'
+                            angle-base: '45'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-gf: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                            Push-hf: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Fixed'
+                                speed-base: '0.33'
+                                speed-scale: '0'
+                                source: 'none'
+                              children:  {}
+                        Particle-if: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            particle: 'Campfire signal smoke'
+                            arrangement: 'Sphere'
+                            radius-base: '0'
+                            radius-scale: '0'
+                            particles-base: '3'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '3'
+                            speed: '0.1'
+                            forward: '1.6'
+                            upward: '1.75'
+                            right: '0'
+                          children:  {}
+                        Sound-jf: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            sound: 'Entity generic explode'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '0.5'
+                            pitch-scale: '0'
+                          children:  {}
+        Item-kf: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Bow'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Class-lf: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                class: 'GStudent'
+                exact: 'True'
+              children:  {}
+            Else-mf: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+              children: 
+                Value Add-nf: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'm1'
+                    amount-base: '1'
+                    amount-scale: '0'
+                  children:  {}
+                Flag-of: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'isM1ing'
+                    seconds-base: '0.8'
+                    seconds-scale: '0'
+                  children:  {}
+                Value-pf: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '1'
+                    max-value-scale: '0'
+                  children: 
+                    Command-qf: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote swn_m1_1'
+                        type: 'OP'
+                      children:  {}
+                    Self-rf: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-sf: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-tf: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-uf: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-vf: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-wf: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.33'
+                        delay-scale: '0'
+                      children: 
+                        Particle Projectile-xf: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            gravity: '-0.01'
+                            pierce: 'False'
+                            group: 'Enemy'
+                            velocity-base: '2.25'
+                            velocity-scale: '0'
+                            lifespan-base: '4'
+                            lifespan-scale: '0'
+                            spread: 'Cone'
+                            amount-base: '1'
+                            amount-scale: '0'
+                            angle-base: '30'
+                            angle-scale: '0'
+                            forward-base: '1.25'
+                            forward-scale: '0'
+                            upward-base: '0.75'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                            particle: 'Crit'
+                            arrangement: 'Sphere'
+                            radius-base: '0'
+                            radius-scale: '0'
+                            particles-base: '3'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '1'
+                            speed: '0.1'
+                            frequency: '0.05'
+                            use-effect: 'False'
+                          children: 
+                            Damage-yf: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'False'
+                                cause: 'Entity Attack'
+                              children:  {}
+                        Sound-zf: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            sound: 'Item crossbow shoot'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '2'
+                            pitch-scale: '0'
+                          children:  {}
+                Value-ag: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '2'
+                    min-value-scale: '0'
+                    max-value-base: '2'
+                    max-value-scale: '0'
+                  children: 
+                    Command-bg: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote swn_m1_2'
+                        type: 'OP'
+                      children:  {}
+                    Self-cg: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-dg: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-eg: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-fg: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-gg: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-hg: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.33'
+                        delay-scale: '0'
+                      children: 
+                        Sound-ig: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            sound: 'Item crossbow shoot'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '2'
+                            pitch-scale: '0'
+                          children:  {}
+                        Particle Projectile-jg: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            gravity: '-0.01'
+                            pierce: 'False'
+                            group: 'Enemy'
+                            velocity-base: '2.5'
+                            velocity-scale: '0'
+                            lifespan-base: '4'
+                            lifespan-scale: '0'
+                            spread: 'Cone'
+                            amount-base: '1'
+                            amount-scale: '0'
+                            angle-base: '30'
+                            angle-scale: '0'
+                            forward-base: '1.25'
+                            forward-scale: '0'
+                            upward-base: '0.75'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                            particle: 'Crit'
+                            arrangement: 'Sphere'
+                            radius-base: '0'
+                            radius-scale: '0'
+                            particles-base: '3'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '1'
+                            speed: '0.1'
+                            frequency: '0.05'
+                            use-effect: 'False'
+                          children: 
+                            Damage-kg: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'False'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-lg: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '3'
+                    min-value-scale: '0'
+                    max-value-base: '3'
+                    max-value-scale: '0'
+                  children: 
+                    Command-mg: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote swn_m1_3'
+                        type: 'OP'
+                      children:  {}
+                    Self-ng: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-og: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-pg: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Flag-qg: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-rg: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-sg: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.3'
+                        delay-scale: '0'
+                      children: 
+                        Particle Projectile-tg: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            gravity: '-0.01'
+                            pierce: 'False'
+                            group: 'Enemy'
+                            velocity-base: '2.5'
+                            velocity-scale: '0'
+                            lifespan-base: '5'
+                            lifespan-scale: '0'
+                            spread: 'Cone'
+                            amount-base: '1'
+                            amount-scale: '0'
+                            angle-base: '30'
+                            angle-scale: '0'
+                            forward-base: '1.25'
+                            forward-scale: '0'
+                            upward-base: '0.75'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                            particle: 'Crit'
+                            arrangement: 'Sphere'
+                            radius-base: '0'
+                            radius-scale: '0'
+                            particles-base: '3'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '1'
+                            speed: '0.1'
+                            frequency: '0.05'
+                            use-effect: 'False'
+                          children: 
+                            Damage-ug: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'False'
+                                cause: 'Entity Attack'
+                              children:  {}
+                        Sound-vg: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            sound: 'Item crossbow shoot'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '2'
+                            pitch-scale: '0'
+                          children:  {}
+                Value-wg: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '4'
+                    min-value-scale: '0'
+                    max-value-base: '4'
+                    max-value-scale: '0'
+                  children: 
+                    Command-xg: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        command: 'iaemote swn_m1_4'
+                        type: 'OP'
+                      children:  {}
+                    Self-yg: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-zg: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-ah: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.8'
+                        delay-scale: '0'
+                      children: 
+                        Cooldown-bh: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            skill: 'M1 to Basic Attack'
+                            type: 'Seconds'
+                            value-base: '-2'
+                            value-scale: '0'
+                          children:  {}
+                    Delay-ch: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.33'
+                        delay-scale: '0'
+                      children: 
+                        Sound-dh: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            sound: 'Item crossbow shoot'
+                            volume-base: '400'
+                            volume-scale: '0'
+                            pitch-base: '2'
+                            pitch-scale: '0'
+                          children:  {}
+                        Particle Projectile-eh: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            gravity: '-0.01'
+                            pierce: 'False'
+                            group: 'Enemy'
+                            velocity-base: '2.5'
+                            velocity-scale: '0'
+                            lifespan-base: '4'
+                            lifespan-scale: '0'
+                            spread: 'Cone'
+                            amount-base: '1'
+                            amount-scale: '0'
+                            angle-base: '30'
+                            angle-scale: '0'
+                            forward-base: '1.25'
+                            forward-scale: '0'
+                            upward-base: '0.75'
+                            upward-scale: '0'
+                            right-base: '0'
+                            right-scale: '0'
+                            particle: 'Crit'
+                            arrangement: 'Sphere'
+                            radius-base: '0'
+                            radius-scale: '0'
+                            particles-base: '3'
+                            particles-scale: '0'
+                            visible-radius: '25'
+                            dx: '0'
+                            dy: '0'
+                            dz: '0'
+                            amount: '1'
+                            speed: '0.1'
+                            frequency: '0.05'
+                            use-effect: 'False'
+                          children: 
+                            Damage-fh: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '0'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'False'
+                                cause: 'Entity Attack'
+                              children:  {}
+        Single-gh: 
+          type: 'target'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            range-base: '2.5'
+            range-scale: '0'
+            tolerance-base: '0'
+            tolerance-scale: '0'
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'false'
+          children: 
+            Damage-hh: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'False'
+                type: 'Damage'
+                value-base: '0.5'
+                value-scale: '0'
+                true: 'False'
+                classifier: 'default'
+                knockback: 'False'
+                cause: 'Entity Attack'
+              children:  {}
+        Item-ih: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Polearm'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Class-jh: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                class: 'MWStudent'
+                exact: 'True'
+              children:  {}
+            Else-kh: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+              children: 
+                Value Add-lh: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'm1'
+                    amount-base: '1'
+                    amount-scale: '0'
+                  children:  {}
+                Flag-mh: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'isM1ing'
+                    seconds-base: '0.9'
+                    seconds-scale: '0'
+                  children:  {}
+                Value-nh: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '1'
+                    max-value-scale: '0'
+                  children: 
+                    Command-oh: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_p1'
+                        type: 'OP'
+                      children:  {}
+                    Self-ph: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-qh: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-rh: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.9'
+                        delay-scale: '0'
+                      children: 
+                        Flag-sh: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-th: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-uh: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.4'
+                        delay-scale: '0'
+                      children: 
+                        Cone-vh: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '5'
+                            range-scale: '0'
+                            angle-base: '50'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-wh: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '1'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-xh: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '2'
+                    min-value-scale: '0'
+                    max-value-base: '2'
+                    max-value-scale: '0'
+                  children: 
+                    Command-yh: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_p2'
+                        type: 'OP'
+                      children:  {}
+                    Self-zh: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-ai: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-bi: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.9'
+                        delay-scale: '0'
+                      children: 
+                        Flag-ci: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-di: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-ei: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.4'
+                        delay-scale: '0'
+                      children: 
+                        Linear-fi: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '5'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-gi: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '1'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-hi: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '3'
+                    min-value-scale: '0'
+                    max-value-base: '3'
+                    max-value-scale: '0'
+                  children: 
+                    Command-ii: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_p3'
+                        type: 'OP'
+                      children:  {}
+                    Self-ji: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-ki: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-li: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.9'
+                        delay-scale: '0'
+                      children: 
+                        Flag-mi: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-ni: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-oi: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.4'
+                        delay-scale: '0'
+                      children: 
+                        Cone-pi: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '5'
+                            range-scale: '0'
+                            angle-base: '50'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-qi: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '1'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-ri: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '4'
+                    min-value-scale: '0'
+                    max-value-base: '4'
+                    max-value-scale: '0'
+                  children: 
+                    Command-si: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_p4'
+                        type: 'OP'
+                      children:  {}
+                    Self-ti: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-ui: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.45'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-vi: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.9'
+                        delay-scale: '0'
+                      children: 
+                        Cooldown-wi: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            skill: 'M1 to Basic Attack'
+                            type: 'Seconds'
+                            value-base: '-2'
+                            value-scale: '0'
+                          children:  {}
+                    Delay-xi: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.5'
+                        delay-scale: '0'
+                      children: 
+                        Area-yi: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            radius-base: '5'
+                            radius-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                            random: 'False'
+                          children: 
+                            Damage-zi: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '1'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+        Item-aj: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'False'
+            check-data: 'False'
+            check-lore: 'True'
+            lore: 'Buster'
+            check-name: 'False'
+            regex: 'False'
+          children: 
+            Class-bj: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                class: 'MWStudent'
+                exact: 'True'
+              children:  {}
+            Else-cj: 
+              type: 'condition'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+              children: 
+                Value Add-dj: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'm1'
+                    amount-base: '1'
+                    amount-scale: '0'
+                  children:  {}
+                Flag-ej: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'isM1ing'
+                    seconds-base: '1.25'
+                    seconds-scale: '0'
+                  children:  {}
+                Value-fj: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '1'
+                    min-value-scale: '0'
+                    max-value-base: '1'
+                    max-value-scale: '0'
+                  children: 
+                    Command-gj: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_b1'
+                        type: 'OP'
+                      children:  {}
+                    Self-hj: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-ij: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.7'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-jj: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '1.25'
+                        delay-scale: '0'
+                      children: 
+                        Flag-kj: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-lj: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-mj: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.65'
+                        delay-scale: '0'
+                      children: 
+                        Single-nj: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '4'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'false'
+                          children: 
+                            Damage-oj: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '5'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-pj: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '2'
+                    min-value-scale: '0'
+                    max-value-base: '2'
+                    max-value-scale: '0'
+                  children: 
+                    Command-qj: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_b2'
+                        type: 'OP'
+                      children:  {}
+                    Self-rj: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-sj: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.7'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-tj: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '1.25'
+                        delay-scale: '0'
+                      children: 
+                        Flag-uj: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-vj: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-wj: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.65'
+                        delay-scale: '0'
+                      children: 
+                        Single-xj: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '4'
+                            range-scale: '0'
+                            tolerance-base: '0.5'
+                            tolerance-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'false'
+                          children: 
+                            Damage-yj: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '5'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-zj: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '3'
+                    min-value-scale: '0'
+                    max-value-base: '3'
+                    max-value-scale: '0'
+                  children: 
+                    Command-ak: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_b3'
+                        type: 'OP'
+                      children:  {}
+                    Self-bk: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-ck: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.7'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-dk: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '1.25'
+                        delay-scale: '0'
+                      children: 
+                        Flag-ek: 
+                          type: 'condition'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            type: 'Not Set'
+                            key: 'isM1ing'
+                          children: 
+                            Cooldown-fk: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                skill: 'M1 to Basic Attack'
+                                type: 'Seconds'
+                                value-base: '-2'
+                                value-scale: '0'
+                              children:  {}
+                    Delay-gk: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.65'
+                        delay-scale: '0'
+                      children: 
+                        Cone-hk: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '4'
+                            range-scale: '0'
+                            angle-base: '40'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'False'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-ik: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '4'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                Value-jk: 
+                  type: 'condition'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    key: 'm1'
+                    min-value-base: '4'
+                    min-value-scale: '0'
+                    max-value-base: '4'
+                    max-value-scale: '0'
+                  children: 
+                    Command-kk: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        command: 'iaemote mwn_m1_b4'
+                        type: 'OP'
+                      children:  {}
+                    Self-lk: 
+                      type: 'target'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        group: 'enemy'
+                        wall: 'false'
+                        caster: 'false'
+                      children: 
+                        Status-mk: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            status: 'Silence'
+                            duration-base: '0.7'
+                            duration-scale: '0'
+                          children:  {}
+                    Delay-nk: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '1.25'
+                        delay-scale: '0'
+                      children: 
+                        Cooldown-ok: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'False'
+                            skill: 'M1 to Basic Attack'
+                            type: 'Seconds'
+                            value-base: '-2'
+                            value-scale: '0'
+                          children:  {}
+                    Delay-pk: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'False'
+                        delay-base: '0.65'
+                        delay-scale: '0'
+                      children: 
+                        Cone-qk: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            range-base: '3'
+                            range-scale: '0'
+                            angle-base: '45'
+                            angle-scale: '0'
+                            group: 'Enemy'
+                            wall: 'True'
+                            caster: 'False'
+                            max-base: '99'
+                            max-scale: '0'
+                          children: 
+                            Damage-rk: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'False'
+                                type: 'Damage'
+                                value-base: 'm1_dmg'
+                                value-scale: '4'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}

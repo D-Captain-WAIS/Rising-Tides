@@ -199,3 +199,316 @@ items:
       model_path: item/straw_hat
     item_flags:
     - HIDE_ATTRIBUTES
+  orange_sunglasses:
+    display_name: "Orange Sunglasses"
+    permission: admin.orange_sunglasses
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/orange_sunglasses
+    item_flags:
+    - HIDE_ATTRIBUTES
+  yellow_sunglasses:
+    display_name: "Yellow Sunglasses"
+    permission: admin.yellow_sunglasses
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/yellow_sunglasses
+    item_flags:
+    - HIDE_ATTRIBUTES
+  swan_headband:
+    display_name: "Swan Headband"
+    permission: admin.swan_headband
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/swan_headband
+    item_flags:
+    - HIDE_ATTRIBUTES
+  money_eyes:
+    display_name: "Swan Headband"
+    permission: admin.money_eyes
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/money_eyes
+    item_flags:
+    - HIDE_ATTRIBUTES
+  heart_eyes:
+    display_name: "Heart Eyes"
+    permission: admin.heart_eyes
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/heart_eyes
+    item_flags:
+    - HIDE_ATTRIBUTES
+  soul_shades:
+    display_name: "Soul Shades"
+    permission: admin.soul_shades
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/soul_shades
+    item_flags:
+    - HIDE_ATTRIBUTES
+  triangle_shades:
+    display_name: "Triangle Shades"
+    permission: admin.triangle_shades
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/triangle_sunglasses
+    item_flags:
+    - HIDE_ATTRIBUTES
+  absolute:
+    display_name: "absolute"
+    permission: admin.absolute
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/absolute.png 
+  beastly:
+    display_name: "beastly"
+    permission: admin.beastly
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/beastly.png
+  beauty:
+    display_name: "beauty"
+    permission: admin.beauty
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/beauty.png
+  blind_luck:
+    display_name: "Blind Luck"
+    permission: admin.blind_luck
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/blind_luck.png
+  chaser:
+    display_name: "Chaser"
+    permission: admin.chaser
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/chaser.png
+  dreamer:
+    display_name: "Dreamer"
+    permission: admin.dreamer
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/dreamer.png
+  gothic:
+    display_name: "Gothic"
+    permission: admin.gothic
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/gothic.png
+  honorary:
+    display_name: "Honorary"
+    permission: admin.honorary
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/honorary.png
+  humming:
+    display_name: "Humming"
+    permission: admin.humming
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/humming.png
+  late_bloomer:
+    display_name: "late_bloomer"
+    permission: admin.late_bloomer
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/late_bloomer.png
+  liar:
+    display_name: "liar"
+    permission: admin.liar
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/liar.png
+  mom:
+    display_name: "mom"
+    permission: admin.mom
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/mom.png
+  money_hungry:
+    display_name: "money_hungry"
+    permission: admin.money_hungry
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/money_hungry.png
+  moss_head:
+    display_name: "moss_head"
+    permission: admin.moss_head
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/moss_head.png
+  mr_nosebleed:
+    display_name: "mr_nosebleed"
+    permission: admin.mr_nosebleed
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/mr_nosebleed.png
+  ms_nosebleed:
+    display_name: "ms_nosebleed"
+    permission: admin.ms_nosebleed
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/ms_nosebleed.png
+  narcissist:
+    display_name: "narcissist"
+    permission: admin.narcissist
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/narcissist.png
+  ocean_squire:
+    display_name: "ocean_squire"
+    permission: admin.ocean_squire
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/ocean_squire.png
+  okama:
+    display_name: "okama"
+    permission: admin.okama
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/okama.png
+  pigeon_fanatic:
+    display_name: "pigeon_fanatic"
+    permission: admin.pigeon_fanatic
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/pigeon_fanatic.png
+  pops:
+    display_name: "pops"
+    permission: admin.pops
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/pops.png
+  raccoon_dog:
+    display_name: "raccoon_dog"
+    permission: admin.raccoon_dog
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/raccoon_dog.png
+  scholar:
+    display_name: "scholar"
+    permission: admin.scholar
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/scholar.png
+  simpleton:
+    display_name: "simpleton"
+    permission: admin.simpleton
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/simpleton.png
+  spades:
+    display_name: "spades"
+    permission: admin.spades
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/spades.png
+  spoiled:
+    display_name: "spoiled"
+    permission: admin.spoiled
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/spoiled.png
+  super:
+    display_name: "super"
+    permission: admin.super
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/super.png
+  surgeon:
+    display_name: "surgeon"
+    permission: admin.surgeon
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/surgeon.png
+  sweet_tooth:
+    display_name: "sweet_tooth"
+    permission: admin.sweet_tooth
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/sweet_tooth.png
+  thrillseeker:
+    display_name: "thrillseeker"
+    permission: admin.thrillseeker
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/thrillseeker.png
+  tyrant:
+    display_name: "tyrant"
+    permission: admin.tyrant
+    resource:
+      material: GHAST_TEAR
+      generate: true
+      textures: 
+      - gui/tyrant.png
+    
+    

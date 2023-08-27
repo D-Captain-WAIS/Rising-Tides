@@ -1,7 +1,8 @@
 Dash Swing: 
   name: 'Dash Swing'
   type: 'Active'
-  max-level: 5
+  max-level: 1
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -19,18 +20,18 @@ Dash Swing:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10015
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - '&f&oAgility'
   - ''
-  - '&9&oI’ll run forward as fast as I can'
-  - '&9&oand swing my weapon!'
+  - '&c&oI’ll run forward as fast as I can'
+  - '&c&oand swing my weapon!'
   - ''
   - ''
   - '&7Skill Level: {level} / {max}'
@@ -52,7 +53,7 @@ Dash Swing:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 
@@ -191,4 +192,30 @@ Dash Swing:
             key: 'dswing_dmg'
             type: 'Number'
             placeholder: '%math_20+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          children:  {}
+    Initialize: 
+      type: 'trigger'
+      indicator: 'None'
+      data: 
+        icon-key: ''
+      children: 
+        Value Placeholder-q: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dgroundspeed'
+            type: 'Number'
+            placeholder: '%math_2+({sapi_player_class_attribute:agility}*0.02)%'
+          children:  {}
+        Value Placeholder-r: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'False'
+            key: 'dairspeed'
+            type: 'Number'
+            placeholder: '%math_ 1+({sapi_player_class_attribute:agility}*0.01)%'
           children:  {}

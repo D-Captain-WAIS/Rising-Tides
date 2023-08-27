@@ -1,0 +1,79 @@
+Gun_Bandit: 
+  Type: WITHER_SKELETON
+  Display: 'Gun Bandit'
+  Health: 80
+  Damage: 0
+  Options:
+    AlwaysShowName: true
+    Silent: true
+    PreventOtherDrops: true
+    MovementSpeed: 0.3
+    PreventRandomEquipment: true
+    FollowRange: 10
+  Modules:
+   ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - fleeConditional{distance=7.5;speed=1.;safespeed=0.9;conditions=[  - inlineofsight true ]}
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  - players
+  Skills:
+  - model{mid=gun_bandit;n=false;s=1} @self ~onSpawn
+  - skill{skill=Shoot} @target ~onTimer:140
+  HealthBar:
+    Enabled: true
+    Offset: 0.5
+Brawler_Bandit: 
+  Type: WITHER_SKELETON
+  Display: 'Brawler Bandit'
+  Health: 150
+  Damage: 0
+  Options:
+    AlwaysShowName: True
+    Silent: true
+    PreventOtherDrops: true
+    MovementSpeed: 0.2
+    PreventRandomEquipment: true
+    FollowRange: 32
+  Modules:
+   ThreatTable: true
+   AIGoalSelectors:
+   - clear
+   - randomstroll
+   AITargetSelectors:
+   - players
+   - attacker
+  Skills:
+  - model{mid=brawler_bandit;n=false;s=1} @self ~onSpawn
+  - randomskill{skills=Punch,Kick,Punch_Kick} @target ~onAttack
+  HealthBar:
+    Enabled: true
+    Offset: 0.5
+Sword_Bandit: 
+  Type: WITHER_SKELETON
+  Display: 'Sword Bandit'
+  Health: 100
+  Damage: 0
+  Options:
+    AlwaysShowName: True
+    Silent: true
+    PreventOtherDrops: true
+    MovementSpeed: 0.3
+    PreventRandomEquipment: true
+    FollowRange: 32
+  Modules:
+   ThreatTable: true
+   AIGoalSelectors:
+   - clear
+   - randomstroll
+   AITargetSelectors:
+   - players
+   - attacker
+  Skills:
+  - model{mid=sword_bandit;n=false;s=1} @self ~onSpawn
+  - randomskill{skills=Single_Swing,Double_Swing} @target ~onAttack
+  HealthBar:
+    Enabled: true
+    Offset: 0.5

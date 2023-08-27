@@ -95,7 +95,7 @@ conversations:
         events: "give_10sp"
       dummies_select:
         text: "&fDo you want to reset the dummies?"
-        pointers: "reset_kb,reset,reset_all"
+        pointers: "reset_kb,reset,reset_all_dummies"
       reset_confirm:
         text: "&fReset the no-knockback dummies"
         events: "reset_dummies"
@@ -128,7 +128,7 @@ conversations:
         text: "I want to do story things"
         pointers: "story_select"
       scrapper:
-        text: "I want to become a scrapper"
+        text: "I want to become a Brawler Newbie"
         pointers: "set_scrapper"
       gunnewbie:
         text: "I want to become a gun newbie"
@@ -205,7 +205,7 @@ conversations:
       reset_kb:
         text: "I want to reset the knockback dummies"
         pointers: "reset_kb_confirm"
-      reset_all:
+      reset_all_dummies:
         text: "I want to reset all the dummies"
         pointers: "reset_all_confirm"
       give_vivre:
@@ -217,3 +217,138 @@ conversations:
       reset_all:
         text: "Reset all my data"
         pointers: "reset_total_confirm"
+  SpawnGod:
+    quester: "&6&l[God]"
+    first: choose
+    NPC_options:
+      choose:
+        text: "&fWhat primary class do you want?"
+        pointers: "scrapper,gunnewbie,swnewbie,mwnewbie,inventory,pvp"
+      set_scrapper:
+        text: "&fYou are now a Brawling Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_gloves,set_scrapper,give_100000xp"
+      set_MWNewbie:
+        text: "&fYou are now a Melee Weapon Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_sword,set_MWN,give_100000xp"
+      set_GunNewbie:
+        text: "&fYou are now a Gun Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_pistol,set_GN,give_100000xp"
+      set_SWNewbie:
+        text: "&fYou are now a Stringed Weapon Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_bow,set_SWN,give_100000xp"
+      clear_inventory:
+        text: "&fCleaning your inventory..."
+        events: "clear_inventory"
+      warp_pvp:
+        text: "&fSending you to the arena..."
+        events: "warp_pvp"
+    player_options:
+      scrapper:
+        text: "I want to become a Brawling Newbie"
+        pointers: "set_scrapper"
+      gunnewbie:
+        text: "I want to become a gun newbie"
+        pointers: "set_GunNewbie"
+      swnewbie:
+        text: "I want to become a stringed weapon newbie"
+        pointers: "set_SWNewbie"
+      mwnewbie:
+        text: "I want to become a melee weapon newbie"
+        pointers: "set_MWNewbie"
+      inventory:
+        text: "I just want to clear my inventory"
+        pointers: "clear_inventory"
+      pvp:
+        text: "I'm satisfied with my class, send me to the arena!"
+        pointers: "warp_pvp"
+  ArenaGod:
+    quester: "&6&l[God]"
+    first: choose
+    NPC_options:
+      choose:
+        text: "&fWhat primary class do you want?"
+        pointers: "scrapper,gunnewbie,swnewbie,mwnewbie,inventory,spawn,tournament"
+      set_scrapper:
+        text: "&fYou are now a Brawling Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_gloves,set_scrapper,give_100000xp"
+      set_MWNewbie:
+        text: "&fYou are now a Melee Weapon Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_sword,set_MWN,give_100000xp"
+      set_GunNewbie:
+        text: "&fYou are now a Gun Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_pistol,set_GN,give_100000xp"
+      set_SWNewbie:
+        text: "&fYou are now a Stringed Weapon Newbie"
+        events: "reset_class,marineMain-sunrise.raid_reward2,characterCreation.give_bow,set_SWN,give_100000xp"
+      clear_inventory:
+        text: "&fCleaning your inventory..."
+        events: "clear_inventory"
+      warp_spawn:
+        text: "&fSending you to spawn..."
+        events: "warp_spawn"
+      join_tournament:
+        text: "&fYou have joined the tournament"
+        events: "tournament_join"
+    player_options:
+      scrapper:
+        text: "I want to become a Brawling Newbie"
+        pointers: "set_scrapper"
+      gunnewbie:
+        text: "I want to become a gun newbie"
+        pointers: "set_GunNewbie"
+      swnewbie:
+        text: "I want to become a stringed weapon newbie"
+        pointers: "set_SWNewbie"
+      mwnewbie:
+        text: "I want to become a melee weapon newbie"
+        pointers: "set_MWNewbie"
+      inventory:
+        text: "I just want to clear my inventory"
+        pointers: "clear_inventory"
+      spawn:
+        text: "I'm satisfied with my class, send me to spawn!"
+        pointers: "warp_spawn"
+      tournament:
+        text: "I want to join the tournament!"
+        pointers: "join_tournament"
+  ArenaNPCGod:
+    quester: "&6&l[God]"
+    first: choose
+    NPC_options:
+      choose:
+        text: "&fWhat would you like spawned?"
+        pointers: "1bandit,bandits4,bandits10,boars,tournament,class"
+      1bandit_confirm:
+        text: "&fSpawned."
+        events: "spawn_bandit4"
+      bandits4_confirm:
+        text: "&fSpawned."
+        events: "4_bandits"
+      bandits10_confirm:
+        text: "&fSpawned."
+        events: "10_bandits"
+      boar_confirm:
+        text: "&fSpawned."
+        events: "4_boars"
+      join_tournament:
+        text: "&fYou have joined the tournament"
+        events: "tournament_join"
+    player_options:
+      1bandit:
+        text: "I want to spawn 1 bandits"
+        pointer: "1bandit_confirm"
+      bandits4:
+        text: "I want to spawn 4 bandits"
+        pointer: "bandits4_confirm"
+      bandits10:
+        text: "I want to spawn 10 bandits"
+        pointer: "bandits10_confirm"
+      boars:
+        text: "I want to spawn boars"
+        pointer: "boar_confirm"
+      tournament:
+        text: "I want to join the tournament!"
+        pointers: "join_tournament"
+      class:
+        text: "I want to change my class!"
+        pointers: "ArenaGod.choose"

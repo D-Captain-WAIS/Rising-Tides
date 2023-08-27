@@ -1,0 +1,9 @@
+dirt-splat:
+  require-unique: true
+  elements:
+    splat:
+      asset: dirt-splat
+      align: center
+      position:
+        x: 50.0
+        y: 100.0

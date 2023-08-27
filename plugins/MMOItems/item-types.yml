@@ -18,7 +18,7 @@ SINGLESHARPDUELIST:
     display: IRON_SWORD:0
     
     # Name displayed in the item lore.
-    name: 'Single Sharp Duelist'
+    name: 'Single Wield Duelist (Edged)'
     
     # Template of an unidentified item.
     unident-item:
@@ -33,7 +33,7 @@ SINGLESHARPDUELIST:
 
 DUALSHARPDUELIST:
     display: STONE_SWORD
-    name: 'Dual Sharp Duelist'
+    name: 'Dual Wield Duelist (Edged)'
     unident-item:
         name: '&f#prefix#Unidentified Sword'
         lore:
@@ -44,9 +44,9 @@ DUALSHARPDUELIST:
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-DUALSHARPDUELIST:
+SINGLEBLUNTDUELIST:
     display: IRON_SWORD:0
-    name: 'Dual Sharp Duelist'   
+    name: 'Single Wield Duelist (Blunt)'   
     unident-item:
         name: '&f#prefix#Unidentified Sword'
         lore:
@@ -59,7 +59,7 @@ DUALSHARPDUELIST:
 
 DUALBLUNTDUELIST:
     display: STONE_SWORD
-    name: 'Dual Blunt Duelist'
+    name: 'Dual Wield Duelist (Blunt)'
     unident-item:
         name: '&f#prefix#Unidentified Sword'
         lore:
@@ -72,7 +72,7 @@ DUALBLUNTDUELIST:
 
 SHARPPOLEARM:
     display: TRIDENT
-    name: 'Sharp Polearm'
+    name: 'Polearm (Edged)'
     unident-item:
         name: '&f#prefix#Unidentified Sword'
         lore:
@@ -85,7 +85,7 @@ SHARPPOLEARM:
 
 BLUNTPOLEARM:
     display: TRIDENT
-    name: 'Blunt Polearm'
+    name: 'Polearm (Blunt)'
     unident-item:
         name: '&f#prefix#Unidentified Sword'
         lore:
@@ -98,7 +98,7 @@ BLUNTPOLEARM:
 
 SHARPBUSTER:
     display: IRON_AXE
-    name: 'Sharp Buster'
+    name: 'Buster (Edged)'
     unident-item:
         name: '&f#prefix#Unidentified Sword'
         lore:
@@ -111,7 +111,7 @@ SHARPBUSTER:
 
 BLUNTBUSTER:
     display: IRON_AXE
-    name: 'Blunt Buster'
+    name: 'Buster (Blunt)'
     unident-item:
         name: '&f#prefix#Unidentified Sword'
         lore:
@@ -252,9 +252,9 @@ EXPLOSIVEHEAVYORDNANCE:
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-ORNAMENT:
+BACK:
     display: GOLD_NUGGET
-    name: 'Ornament'
+    name: 'Back Accessory'
     unident-item:
         name: '&f#prefix#Unidentified Ornament'
         lore:
@@ -265,9 +265,36 @@ ORNAMENT:
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-ACCESSORY:
+RING:
     display: DIAMOND
-    name: 'Accessory'
+    name: 'Ring'
+    unident-item:
+        name: '&f#prefix#Unidentified Accessory'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+
+TRINKET:
+    display: DIAMOND
+    name: 'Trinket'
+    unident-item:
+        name: '&f#prefix#Unidentified Accessory'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+ARTIFACT:
+    display: DIAMOND
+    name: 'Artifact'
     unident-item:
         name: '&f#prefix#Unidentified Accessory'
         lore:

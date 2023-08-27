@@ -59,6 +59,45 @@ PAPER:
   shop:ribbon_cloak: 10057
   shop:triple_cigar: 10058
   shop:straw_hat: 10059
+  utilities:back: 10060
+  utilities:ring: 10061
+  utilities:trinket: 10062
+  utilities:necklace: 10063
+  utilities:artifact: 10064
+  utilities:compass: 10065
+  shop:orange_sunglasses: 10066
+  shop:yellow_sunglasses: 10067
+  shop:swan_headband: 10068
+  shop:money_eyes: 10069
+  shop:heart_eyes: 10070
+  utilities:logbook: 10071
+  utilities:mushi: 10072
+  shop:soul_shades: 10073
+  shop:triangle_shades: 10074
+  sunrise:back_fin: 10075
+  sunrise:fishman_head: 10076
+  sunrise:shandian_wings: 10077
+  sunrise:bear_ears: 10078
+  sunrise:bear_tail: 10079
+  sunrise:bunny_tail: 10080
+  sunrise:bunny_ears: 10081
+  sunrise:dog_ears: 10082
+  sunrise:dog_tail: 10083
+  utilities:yoru: 10084
+  myitems:marble_brick: 10085
+  myitems:cracked_marble_brick: 10086
+  myitems:moss_marble_brick: 10087
+  myitems:dark_oxidized_copper: 10088
+  myitems:yellow_wood: 10089
+  myitems:orange_wood: 10090
+  myitems:green_wood: 10091
+  shellcity:marble_brick: 10092
+  shellcity:cracked_marble_brick: 10093
+  shellcity:moss_marble_brick: 10094
+  shellcity:dark_oxidized_copper: 10095
+  shellcity:yellow_wood: 10096
+  shellcity:orange_wood: 10097
+  shellcity:green_wood: 10098
 PLAYER_HEAD:
   __manually_handled:iainternal__player_hat_slot: 10000
   __manually_handled:iainternal__player_left_arm_slot: 10001
@@ -131,6 +170,42 @@ PUMPKIN_SEEDS:
   sunrise:low_kick: 10010
   sunrise:gootw: 10011
   sunrise:charge: 10012
+  sunrise:2h_attack: 10013
+  sunrise:charge_attack: 10014
+  sunrise:dash_swing: 10015
+  sunrise:double_attack: 10016
+  sunrise:evade_strike: 10017
+  sunrise:hilt_strike: 10018
+  sunrise:jump_attack: 10019
+  sunrise:overhead_swing: 10020
+  sunrise:piercing_strike: 10021
+  sunrise:poke: 10022
+  sunrise:wee: 10023
+  sunrise:arc_shot: 10024
+  sunrise:bola_shot: 10025
+  sunrise:bounce_shot: 10026
+  sunrise:caltrops: 10027
+  sunrise:catapult: 10028
+  sunrise:dirt_star: 10029
+  sunrise:firestarter: 10030
+  sunrise:multishot: 10031
+  sunrise:slipup: 10032
+  sunrise:special_volley: 10033
+  sunrise:whats_that: 10034
+  sunrise:quick_swings: 10035
+  sunrise:firecracker: 10036
+  sunrise:blunder_leap: 10037
+  sunrise:chamber_blast: 10038
+  sunrise:critical_shot: 10039
+  sunrise:dive_shot: 10040
+  sunrise:double_tap: 10041
+  sunrise:fast_hands: 10042
+  sunrise:impairing_shot: 10043
+  sunrise:pistol_whip: 10044
+  sunrise:run: 10045
+  sunrise:spray_and_pray: 10046
+  sunrise:tactical_dive: 10047
+  sunrise:vital_shot: 10048
 GOLDEN_SWORD:
   sunrise:wraps_common: 10000
   sunrise:wraps_uncommon: 10001
@@ -147,6 +222,7 @@ GRAY_DYE:
   sunrise:rusty_cutlass: 10001
   utilities:bola: 10002
   sunrise:standard_sword: 10003
+  sunrise:griffon: 10004
 GREEN_DYE:
   sunrise:duelist_single_uncommon: 10000
 LIME_DYE:
@@ -160,5 +236,61 @@ STICK:
   utilities:bottle: 10001
 RAW_IRON:
   sunrise:standard_issue_bow: 10000
+  sunrise:slingshot: 10001
 WHITE_DYE:
   sunrise:standard_pistol: 10000
+  sunrise:musket: 10001
+  sunrise:launcher: 10002
+GHAST_TEAR:
+  shop:absolute: 10000
+  shop:beastly: 10001
+  shop:beauty: 10002
+  shop:blind_luck: 10003
+  shop:chaser: 10004
+  shop:dreamer: 10005
+  shop:gothic: 10006
+  shop:honorary: 10007
+  shop:humming: 10008
+  shop:late_bloomer: 10009
+  shop:liar: 10010
+  shop:mom: 10011
+  shop:money_hungry: 10012
+  shop:moss_head: 10013
+  shop:mr_nosebleed: 10014
+  shop:ms_nosebleed: 10015
+  shop:narcissist: 10016
+  shop:ocean_squire: 10017
+  shop:okama: 10018
+  shop:pigeon_fanatic: 10019
+  shop:pops: 10020
+  shop:raccoon_dog: 10021
+  shop:scholar: 10022
+  shop:simpleton: 10023
+  shop:spades: 10024
+  shop:spoiled: 10025
+  shop:super: 10026
+  shop:surgeon: 10027
+  shop:sweet_tooth: 10028
+  shop:thrillseeker: 10029
+  shop:tyrant: 10030
+APPLE:
+  fruits:phoenix: 10000
+  fruits:operation: 10001
+IRON_NUGGET:
+  fruits:quake_crack: 10000
+  fruits:quake_crack1: 10001
+  fruits:quake_crack2: 10002
+  fruits:quake_crack3: 10003
+LEATHER_CHESTPLATE:
+  sunrise:marine_uniform: 10000
+LEATHER_HELMET:
+  sunrise:marine_hat: 10000
+LEATHER_LEGGINGS:
+  sunrise:marine_pants: 10000
+LEATHER_BOOTS:
+  sunrise:marine_boots: 10000
+GUNPOWDER:
+  utilities:capsento: 10000
+  sunrise:bandit_glaive: 10001
+FLINT:
+  sunrise:bandit_club: 10000

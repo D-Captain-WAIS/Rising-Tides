@@ -1,0 +1,8 @@
+info:
+  namespace: sunrise
+armors_rendering:
+  marine_uniform_basic:
+    color: "#d60000"
+    layer_1: armor/marine_uniform_layer_1
+    layer_2: armor/marine_uniform_layer_2
+    use_color: false

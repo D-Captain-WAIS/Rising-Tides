@@ -39,10 +39,10 @@ messages:
   ignore-zero-damage: true
   types:
     NORMAL:
-      enabled: false
+      enabled: true
       messages:
-        damager: '&e*** You dealt &7%damage% &edamage to &7%entity%&e. ***'
-        victim: '&c*** &7%entity% &cdealt &7%damage% &cdamage to you. ***'
+        damager: '&e***&cDealt 🗡&7%damage% &cdamage&e***'
+        victim: '&c*** &cTook 🗡&7%damage% &cdamage***'
         indicator: ''
       sound: NONE
     CRITICAL:
@@ -75,9 +75,11 @@ indicators:
     - '%dodge%'
     - '%damage%'
     damage-types:
-      physical: '&c-%damage%❤'
+      physical: '&c-%damage%🗡'
+      wounding: '&c-%damage%🗡'
+      bleed: '&4-%damage%☁'
       magical: '&d-%damage%'
-      fire: '&4-%damage%☀'
+      burn: '&4-%damage%🔥'
       poison: '&a-%damage%☣'
       wind: '&7-%damage%'
       water: '&9-%damage%'

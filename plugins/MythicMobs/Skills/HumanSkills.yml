@@ -1,0 +1,47 @@
+ResetAi:
+  Skills:
+  - runaigoalselector{goal=clear} 
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+  - runaitargetselector{target=attackers}
+Shoot:
+  Skills:
+  - state{state=gun;lo=0} @self
+  - look{headonly=true;immediately=true} @Target
+  - delay 16
+  - shoot{type=ARROW;velocity=5;damage=10}
+Punch:
+  Cooldown: 5
+  Skills:
+  - state{state=punch;lo=0} @self
+  - delay 12
+  - damage{amount=10} @target 
+  - delay 5
+Kick:
+  Cooldown: 5
+  Skills:
+  - state{state=kick;lo=0} @self
+  - delay 11
+  - damage{amount=10} @target
+Punch_Kick:
+  Cooldown: 10
+  Skills:
+  - state{state=punch_kick;lo=0} @self
+  - delay 12
+  - damage{amount=10} @target 
+  - delay 5
+  - damage{amount=10} @target 
+Single_Swing:
+  Cooldown: 5
+  Skills:
+  - state{state=single_swing;lo=0} @self
+  - delay 12
+  - damage{amount=10} @target 
+Double_Swing:
+  Cooldown: 10
+  Skills:
+  - state{state=double_swing;lo=0} @self
+  - delay 12
+  - damage{amount=10} @target 
+  - delay 15
+  - damage{amount=10} @target 

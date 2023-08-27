@@ -20,17 +20,17 @@ Charged Attack:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10014
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&c&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oIf I sit there and charge my attack'
-  - '&9&oit’ll do massive damage!'
+  - '&c&oIf I sit there and charge my attack'
+  - '&c&oit’ll do massive damage!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -51,7 +51,7 @@ Charged Attack:
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
-            lore: 'Single Sharp Duelist'
+            lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
           children: 

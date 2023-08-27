@@ -1,0 +1,139 @@
+game:
+  ==: game
+  announcement.game_info.interval: 30
+  announcement.starting.interval: 20
+  announcement.starting.times: 5
+  clear_items_on_death: false
+  damage-type.melee: true
+  damage-type.ranged: true
+  delete_groups: false
+  destination.arena_entrances:
+    1:
+      ==: org.bukkit.Location
+      world: tourney
+      x: -103.22171764667236
+      y: 62.0
+      z: 154.6471972062901
+      pitch: 3.9150448
+      yaw: -88.153595
+    2:
+      ==: org.bukkit.Location
+      world: tourney
+      x: -25.82500054250654
+      y: 62.0
+      z: 153.7625044844159
+      pitch: 21.095236
+      yaw: 88.94522
+  destination.border_center: null
+  destination.exit:
+    ==: org.bukkit.Location
+    world: world
+    x: 76.5
+    y: 160.0
+    z: -286.5
+    pitch: 36.59655
+    yaw: -138.3125
+  destination.lobby:
+    ==: org.bukkit.Location
+    world: tourney
+    x: -65.98916263309778
+    y: 63.0
+    z: 60.55351118893104
+    pitch: 8.2902
+    yaw: 4.27771
+  destination.watchroom:
+    ==: org.bukkit.Location
+    world: tourney
+    x: -65.48226231558174
+    y: 68.0
+    z: 120.02545256293931
+    pitch: 11.330307
+    yaw: 1.4970093
+  group_mode: false
+  items.blacklist: null
+  items.whitelist: null
+  keep_exp: false
+  killer: false
+  kit: null
+  maximum.groups: 0
+  maximum.players: 100
+  maximum.players_per_group: 0
+  message.killer.join: false
+  message.killer.quit: false
+  message.winner.join: false
+  message.winner.quit: false
+  minimum.groups: 0
+  minimum.players: 2
+  name: Tournament
+  power_of_two: false
+  prefix.killer: ''
+  prefix.killer_priority: false
+  prefix.winner: ''
+  prizes:
+    FIRST:
+      ==: prize
+      items_give_interval: 30
+      leader.commands.command_list:
+      - broadcast %player% has won the tournament!
+      leader.commands.enabled: false
+      leader.commands.some_number.divided: false
+      leader.commands.some_number.value: 100.0
+      leader.items.enabled: false
+      leader.items.item_list: null
+      member.commands.command_list:
+      - broadcast %player% has won the tournament!
+      member.commands.enabled: false
+      member.commands.some_number.divided: false
+      member.commands.some_number.value: 100.0
+      member.items.enabled: false
+      member.items.item_list: null
+      treat_leaders_as_members: true
+    SECOND:
+      ==: prize
+      items_give_interval: 30
+      leader.commands.command_list:
+      - broadcast %player% is the first runner up of the tournament!
+      leader.commands.enabled: false
+      leader.commands.some_number.divided: false
+      leader.commands.some_number.value: 100.0
+      leader.items.enabled: false
+      leader.items.item_list: null
+      member.commands.command_list:
+      - broadcast %player% is the first runner up of the tournament!
+      member.commands.enabled: false
+      member.commands.some_number.divided: false
+      member.commands.some_number.value: 100.0
+      member.items.enabled: false
+      member.items.item_list: null
+      treat_leaders_as_members: true
+    THIRD:
+      ==: prize
+      items_give_interval: 30
+      leader.commands.command_list:
+      - broadcast %player% is the second runner up of the tournament!
+      leader.commands.enabled: false
+      leader.commands.some_number.divided: false
+      leader.commands.some_number.value: 100.0
+      leader.items.enabled: false
+      leader.items.item_list: null
+      member.commands.command_list:
+      - broadcast %player% is the second runner up of the tournament!
+      member.commands.enabled: false
+      member.commands.some_number.divided: false
+      member.commands.some_number.value: 100.0
+      member.items.enabled: false
+      member.items.item_list: null
+      treat_leaders_as_members: true
+  pvp: true
+  run_commands.after_battle: null
+  run_commands.before_battle: null
+  time.expiration: 3600
+  time.preparation: 10
+  type: EliminationTournamentGame
+  use_kits: false
+  worldborder.damage: 5.0
+  worldborder.enable: false
+  worldborder.final_size: 500
+  worldborder.initial_size: 5000
+  worldborder.interval: 120
+  worldborder.shrink: 25

@@ -23,9 +23,16 @@ items:
     display_name: "capsento"
     permission: extras.capsento
     resource:
-      material: PAPER
+      material: gunpowder
       generate: false
       model_path: item/murakumogiri
+  yoru:
+    display_name: "yoru"
+    permission: extras.yoru
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/yoru
   gold_question_mark:
     display_name: "Gold Question Mark"
     resource:
@@ -54,6 +61,80 @@ items:
       generate: true
       textures:
       - item/iron_exclamation_mark.png
+  back:
+    display_name: "back"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/back.png
+  ring:
+    display_name: "ring"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/ring.png
+  trinket:
+    display_name: "trinket"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/trinket.png
+  necklace:
+    display_name: "necklace"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/necklace.png
+  artifact:
+    display_name: "artifact"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/artifact.png
+  compass:
+    display_name: "compass"
+    permission: extras.compass
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/compass
+  logbook:
+    display_name: "&e&l[Log Book]"
+    permission: extras.logbook
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/logbook
+    events:
+      interact:
+        right:
+          execute_commands:
+            cmd1:
+              command: 'cp vivre {player}'
+              as_console: true
+      drop:
+        cancel: true  
+  mushi:
+    display_name: "&a&l[Snail Transponder]"
+    permission: extras.mushi
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/marine_mushi
+    events:
+      interact:
+        right:
+          execute_commands:
+            cmd1:
+              command: 'cp vivre {player}'
+              as_console: true
+      drop:
+        cancel: true  
 
 
 

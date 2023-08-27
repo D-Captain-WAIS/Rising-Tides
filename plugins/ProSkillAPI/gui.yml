@@ -22,17 +22,17 @@ stSWNewbie:
   pages: 1
   slots: 
     1: 
-      caltrops: 11
+      caltrops: 20
       dirt star: 33
-      bounce shot: 13
-      catapult: 49
+      bounce shot: 22
+      catapult: 40
       multishot star: 31
-      slip-up: 2
-      arcing projectile: 6
-      bola shot: 15
-      firecracker star: 0
-      special volley: 4
-      fire starter: 51
+      slip-up: 11
+      bola shot: 24
+      arcing projectile: 15
+      firecracker star: 4
+      special volley: 13
+      fire starter: 42
       the look away: 29
 stNMink: 
   rows: 6
@@ -45,17 +45,17 @@ stGunNewbie:
   pages: 1
   slots: 
     1: 
-      spray and pray: 27
+      spray and pray: 19
       chamber blast: 12
       blunder leap: 0
-      double tap: 1
       tactical dive: 4
-      critical shot: 18
-      impairing shot: 19
-      vital shot: 10
+      double tap: 9
+      critical shot: 1
+      impairing shot: 10
+      vital shot: 27
       run: 13
       pistol whip: 3
-      fast hands: 9
+      fast hands: 18
       dive shot: 21
 stFishman: 
   rows: 6
@@ -68,18 +68,18 @@ stMWNewbie:
   pages: 1
   slots: 
     1: 
-      weeeee: 4
-      evade strike: 3
-      hilt strike: 9
-      double attack: 2
-      dash swing: 0
-      jump attack: 13
-      charged attack: 11
-      overhead swing: 20
-      piercing strike: 18
-      two handed swing: 27
-      poke: 21
-      quick swings: 12
+      weeeee: 20
+      hilt strike: 4
+      evade strike: 22
+      double attack: 24
+      dash swing: 11
+      jump attack: 29
+      charged attack: 33
+      overhead swing: 42
+      piercing strike: 13
+      two handed swing: 15
+      poke: 40
+      quick swings: 31
 stScrapper: 
   rows: 6
   pages: 1
@@ -110,6 +110,12 @@ CLASS_DETAILS:
     1: 
       race: 31
       class: 22
+stBirkan: 
+  rows: 6
+  pages: 1
+  slots: 
+    1: 
+      birkan anatomy: 13
 stShandian: 
   rows: 6
   pages: 1

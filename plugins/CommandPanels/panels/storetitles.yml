@@ -1,0 +1,509 @@
+panels:  
+  storetitles:
+    perms: storetitles
+    rows: 6
+    title: ':offset_-8::vivre:'
+    empty: AIR
+    item:
+      '0':
+        material: PAPER
+        stack: 1
+        name: '&c&lREMOVE TITLE'
+        commands:
+        - console= tab player %cp-player-name% belowname
+      '1':
+        material: BARRIER
+        stack: 1
+        name: '%img_absolute%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.absolute
+          material: GHAST_TEAR
+          name: "%img_absolute%"
+          customdata:  10000
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_absolute%
+      '2':
+        material: BARRIER
+        stack: 1
+        name: '%img_beastly%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.beastly
+          material: GHAST_TEAR
+          name: "%img_beastly%"
+          customdata:  10001
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_beastly%
+      '3':
+        material: BARRIER
+        stack: 1
+        name: '%img_beauty%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.beauty
+          material: GHAST_TEAR
+          name: "%img_beauty%"
+          customdata:  10002
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_beauty%
+      '4':
+        material: BARRIER
+        stack: 1
+        name: '%img_blind_luck%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.blind_luck
+          material: GHAST_TEAR
+          name: "%img_blind_luck%"
+          customdata:  10003
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_blind_luck%
+      '5':
+        material: BARRIER
+        stack: 1
+        name: '%img_chaser%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.chaser
+          material: GHAST_TEAR
+          name: "%img_chaser%"
+          customdata:  10004
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_chaser%
+      '6':
+        material: BARRIER
+        stack: 1
+        name: '%img_dreamer%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.dreamer
+          material: GHAST_TEAR
+          name: "%img_dreamer%"
+          customdata:  10005
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_dreamer%
+      '7':
+        material: BARRIER
+        stack: 1
+        name: '%img_gothic%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.gothic
+          material: GHAST_TEAR
+          name: "%img_gothic%"
+          customdata:  10006
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_gothic%
+      '8':
+        material: BARRIER
+        stack: 1
+        name: '%img_honorary%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.honorary
+          material: GHAST_TEAR
+          name: "%img_honorary%"
+          customdata:  10007
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_honorary%
+      '9':
+        material: BARRIER
+        stack: 1
+        name: '%img_humming%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.humming
+          material: GHAST_TEAR
+          name: "%img_humming%"
+          customdata:  10008
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_humming%
+      '10':
+        material: BARRIER
+        stack: 1
+        name: '%img_late_bloomer%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.late_bloomer
+          material: GHAST_TEAR
+          name: "%img_late_bloomer%"
+          customdata:  10009
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_late_bloomer%
+      '11':
+        material: BARRIER
+        stack: 1
+        name: '%img_liar%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.liar
+          material: GHAST_TEAR
+          name: "%img_liar%"
+          customdata:  10010
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_liar%
+      '12':
+        material: BARRIER
+        stack: 1
+        name: '%img_mom%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.mom
+          material: GHAST_TEAR
+          name: "%img_mom%"
+          customdata:  10011
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_mom%
+      '13':
+        material: BARRIER
+        stack: 1
+        name: '%img_money_hungry%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.money_hungry
+          material: GHAST_TEAR
+          name: "%img_money_hungry%"
+          customdata:  10012
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_money_hungry%
+      '14':
+        material: BARRIER
+        stack: 1
+        name: '%img_moss_head%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.moss_head
+          material: GHAST_TEAR
+          name: "%img_moss_head%"
+          customdata:  10013
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_moss_head%
+      '15':
+        material: BARRIER
+        stack: 1
+        name: '%img_mr_nosebleed%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.mr_nosebleed
+          material: GHAST_TEAR
+          name: "%img_mr_nosebleed%"
+          customdata:  10014
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_mr_nosebleed%
+      '16':
+        material: BARRIER
+        stack: 1
+        name: '%img_ms_nosebleed%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.ms_nosebleed
+          material: GHAST_TEAR
+          name: "%img_mr_nosebleed%"
+          customdata:  10015
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_ms_nosebleed%
+      '17':
+        material: BARRIER
+        stack: 1
+        name: '%img_narcissist%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.narcissist
+          material: GHAST_TEAR
+          name: "%img_narcissist%"
+          customdata:  10016
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_narcissist%
+      '18':
+        material: BARRIER
+        stack: 1
+        name: '%img_ocean_squire%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.ocean_squire
+          material: GHAST_TEAR
+          name: "%img_ocean_squire%"
+          customdata:  10017
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_ocean_squire%
+      '19':
+        material: BARRIER
+        stack: 1
+        name: '%img_okama%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.okama
+          material: GHAST_TEAR
+          name: "%img_okama%"
+          customdata:  10018
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_okama%
+      '20':
+        material: BARRIER
+        stack: 1
+        name: '%img_pigeon_fanatic%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.pigeon_fanatic
+          material: GHAST_TEAR
+          name: "%img_pigeon_fanatic%"
+          customdata:  10019
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_pigeon_fanatic%
+      '21':
+        material: BARRIER
+        stack: 1
+        name: '%img_pops%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.pops
+          material: GHAST_TEAR
+          name: "%img_pops%"
+          customdata:  10020
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_pops%
+      '22':
+        material: BARRIER
+        stack: 1
+        name: '%img_raccoon_dog%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.raccoon_dog
+          material: GHAST_TEAR
+          name: "%img_raccoon_dog%"
+          customdata:  10021
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_raccoon_dog%
+      '23':
+        material: BARRIER
+        stack: 1
+        name: '%img_scholar%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.scholar
+          material: GHAST_TEAR
+          name: "%img_scholar%"
+          customdata:  10022
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_scholar%
+      '24':
+        material: BARRIER
+        stack: 1
+        name: '%img_simpleton%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.simpleton
+          material: GHAST_TEAR
+          name: "%img_simpleton%"
+          customdata:  10023
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_simpleton%
+      '25':
+        material: BARRIER
+        stack: 1
+        name: '%img_spades%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.spades
+          material: GHAST_TEAR
+          name: "%img_spades%"
+          customdata:  10024
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_spades%
+      '26':
+        material: BARRIER
+        stack: 1
+        name: '%img_spoiled%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.spoiled
+          material: GHAST_TEAR
+          name: "%img_spoiled%"
+          customdata:  10025
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_spoiled%
+      '27':
+        material: BARRIER
+        stack: 1
+        name: '%img_super%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.super
+          material: GHAST_TEAR
+          name: "%img_super%"
+          customdata:  10026
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_super%
+      '28':
+        material: BARRIER
+        stack: 1
+        name: '%img_surgeon%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.surgeon
+          material: GHAST_TEAR
+          name: "%img_super%"
+          customdata:  10027
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_super%
+      '29':
+        material: BARRIER
+        stack: 1
+        name: '%img_sweet_tooth%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.sweet_tooth
+          material: GHAST_TEAR
+          name: "%img_sweet_tooth%"
+          customdata:  10028
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_sweet_tooth%
+      '30':
+        material: BARRIER
+        stack: 1
+        name: '%img_thrillseeker%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.thrillseeker
+          material: GHAST_TEAR
+          name: "%img_thrillseeker%"
+          customdata:  10029
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_thrillseeker%
+      '31':
+        material: BARRIER
+        stack: 1
+        name: '%img_tyrant%'
+        lore:
+        - '&c&l[LOCKED]'
+        has0:
+          value0: '%cp-player-name% HASPERM'
+          compare0: shop.tyrant
+          material: GHAST_TEAR
+          name: "%img_tyrant%"
+          customdata:  10030
+          lore:
+          - '&a&l[UNLOCKED]'
+          commands:
+          - console= tab player %cp-player-name% belowname %img_tyrant%

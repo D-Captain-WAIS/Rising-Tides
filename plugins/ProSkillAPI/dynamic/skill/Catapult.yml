@@ -2,7 +2,6 @@ Catapult:
   name: 'Catapult'
   type: 'Active'
   max-level: 5
-  skill-req: 'Multishot Star'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -20,8 +19,8 @@ Catapult:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10028
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -172,7 +171,31 @@ Catapult:
                             duration-base: '0.2'
                             duration-scale: '0'
                           children:  {}
-                    Offset-j: 
+                        Remember-j: 
+                          type: 'target'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            key: 'mypain'
+                            group: 'enemy'
+                            wall: 'false'
+                            caster: 'false'
+                          children: 
+                            Damage-k: 
+                              type: 'mechanic'
+                              indicator: 'None'
+                              data: 
+                                icon-key: ''
+                                counts: 'True'
+                                type: 'Damage'
+                                value-base: 'bcatapult_dmg'
+                                value-scale: '1'
+                                true: 'False'
+                                classifier: 'default'
+                                knockback: 'True'
+                                cause: 'Entity Attack'
+                              children:  {}
+                    Offset-l: 
                       type: 'target'
                       indicator: 'None'
                       data: 
@@ -187,7 +210,7 @@ Catapult:
                         wall: 'false'
                         caster: 'false'
                       children: 
-                        Particle-k: 
+                        Particle-m: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -209,7 +232,7 @@ Catapult:
                             upward: '0'
                             right: '0'
                           children:  {}
-                        Sound-l: 
+                        Sound-n: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -221,7 +244,7 @@ Catapult:
                             pitch-base: '0.5'
                             pitch-scale: '0'
                           children:  {}
-                    Launch-m: 
+                    Launch-o: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
@@ -235,12 +258,12 @@ Catapult:
                         right-base: '0'
                         right-scale: '0'
                       children:  {}
-                    Area-n: 
+                    Area-p: 
                       type: 'target'
                       indicator: 'None'
                       data: 
                         icon-key: ''
-                        radius-base: '3'
+                        radius-base: '1'
                         radius-scale: '0'
                         group: 'Enemy'
                         wall: 'False'
@@ -249,7 +272,7 @@ Catapult:
                         max-scale: '0'
                         random: 'False'
                       children: 
-                        Damage-o: 
+                        Damage-q: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
@@ -263,7 +286,7 @@ Catapult:
                             knockback: 'True'
                             cause: 'Entity Attack'
                           children:  {}
-                    Self-p: 
+                    Self-r: 
                       type: 'target'
                       indicator: 'None'
                       data: 
@@ -272,13 +295,13 @@ Catapult:
                         wall: 'false'
                         caster: 'false'
                       children: 
-                        Damage-q: 
+                        Damage-s: 
                           type: 'mechanic'
                           indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
-                            type: 'Multiplier'
+                            type: 'Damage'
                             value-base: '1'
                             value-scale: '0'
                             true: 'False'
@@ -286,26 +309,89 @@ Catapult:
                             knockback: 'True'
                             cause: 'Entity Attack'
                           children:  {}
-                Delay-r: 
+                Delay-t: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.7'
+                    delay-base: '0.8'
                     delay-scale: '0'
                   children: 
-                    Flag-s: 
+                    Flag-u: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'self projectile'
-                        seconds-base: '0.8'
+                        seconds-base: '0.75'
                         seconds-scale: '0'
                       children:  {}
-            Self-t: 
+                Delay-v: 
+                  type: 'mechanic'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    counts: 'True'
+                    delay-base: '1'
+                    delay-scale: '0'
+                  children: 
+                    Particle Projectile-w: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'True'
+                        gravity: '0'
+                        pierce: 'True'
+                        group: 'Enemy'
+                        velocity-base: '-3'
+                        velocity-scale: '0'
+                        lifespan-base: '0.65'
+                        lifespan-scale: '0'
+                        spread: 'Cone'
+                        amount-base: '1'
+                        amount-scale: '0'
+                        angle-base: '30'
+                        angle-scale: '0'
+                        forward-base: '0'
+                        forward-scale: '0'
+                        upward-base: '0'
+                        upward-scale: '0'
+                        right-base: '0'
+                        right-scale: '0'
+                        particle: 'Falling dust'
+                        material: 'Dirt'
+                        arrangement: 'Sphere'
+                        radius-base: '0'
+                        radius-scale: '0'
+                        particles-base: '0'
+                        particles-scale: '0'
+                        visible-radius: '0'
+                        dx: '0'
+                        dy: '0'
+                        dz: '0'
+                        amount: '0'
+                        speed: '0'
+                        frequency: '0'
+                        use-effect: 'False'
+                      children: 
+                        Damage-x: 
+                          type: 'mechanic'
+                          indicator: 'None'
+                          data: 
+                            icon-key: ''
+                            counts: 'True'
+                            type: 'Damage'
+                            value-base: 'bcatapult_dmg'
+                            value-scale: '1'
+                            true: 'False'
+                            classifier: 'default'
+                            knockback: 'True'
+                            cause: 'Entity Attack'
+                          children:  {}
+            Self-y: 
               type: 'target'
               indicator: 'None'
               data: 
@@ -314,7 +400,7 @@ Catapult:
                 wall: 'false'
                 caster: 'false'
               children: 
-                Status-u: 
+                Status-z: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -324,7 +410,7 @@ Catapult:
                     duration-base: '2.2'
                     duration-scale: '0'
                   children:  {}
-                Status-v: 
+                Status-ab: 
                   type: 'mechanic'
                   indicator: 'None'
                   data: 
@@ -334,7 +420,7 @@ Catapult:
                     duration-base: '1.2'
                     duration-scale: '0'
                   children:  {}
-            Sound-w: 
+            Sound-bb: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -346,7 +432,7 @@ Catapult:
                 pitch-base: '2'
                 pitch-scale: '0'
               children:  {}
-            Value Placeholder-x: 
+            Value Placeholder-cb: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -356,7 +442,7 @@ Catapult:
                 type: 'Number'
                 placeholder: '%math_20+({sapi_player_class_attribute:finesse}*0.2)+{qrpg_damage_physical}%'
               children:  {}
-            Value Placeholder-y: 
+            Value Placeholder-db: 
               type: 'mechanic'
               indicator: 'None'
               data: 
@@ -372,24 +458,24 @@ Catapult:
       data: 
         icon-key: ''
       children: 
-        Passive-ab: 
+        Passive-fb: 
           type: 'mechanic'
           indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
-            seconds-base: '0.05'
+            seconds-base: '0.3'
             seconds-scale: '0'
           children: 
-            Flag-bb: 
+            Flag-gb: 
               type: 'condition'
               indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
-                key: 'selfprojectile'
+                key: 'self projectile'
               children: 
-                Area-cb: 
+                Area-hb: 
                   type: 'target'
                   indicator: 'None'
                   data: 
@@ -403,17 +489,11 @@ Catapult:
                     max-scale: '0'
                     random: 'False'
                   children: 
-                    Damage-db: 
+                    Remember Targets-ib: 
                       type: 'mechanic'
                       indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
-                        type: 'Damage'
-                        value-base: 'bcatapult_dmg'
-                        value-scale: '0'
-                        true: 'False'
-                        classifier: 'default'
-                        knockback: 'True'
-                        cause: 'Custom'
+                        key: 'mypain'
                       children:  {}

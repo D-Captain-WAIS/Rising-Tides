@@ -20,8 +20,8 @@ Multishot Star:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10031
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '

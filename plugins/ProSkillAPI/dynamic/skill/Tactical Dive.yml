@@ -20,15 +20,15 @@ Tactical Dive:
     - ''
   msg: '&6{player} &2has cast &6{skill}&r'
   icon: 'PUMPKIN_SEEDS'
-  icon-data: 0
+  icon-data: 10047
   icon-durability: 0
   icon-lore: 
-  - '&c&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&f&oAgility'
   - ''
-  - '&9&oI gotta dive and reposition!'
+  - '&e&oI gotta dive and reposition!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'

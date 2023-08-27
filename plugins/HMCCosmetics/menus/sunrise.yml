@@ -21,7 +21,50 @@ items:
       name: "<dark_gray><bold>Rusty Pistol"
       lore:
         - ""
-        - "<gray>Equipped: <#6D9DC5>%HMCCosmetics_equipped_rusty_pistol%"
         - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_rusty_pistol%" 
     type: cosmetic
     cosmetic: rusty_pistol
+  marine_hat_menu:
+    slots:
+      - 3
+    item:
+      material: itemsadder:sunrise:marine_hat
+      name: "<blue><bold>Marine Hat"
+      lore:
+        - ""
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_basic_marine_hat%" 
+    type: cosmetic
+    cosmetic: basic_marine_hat
+  marine_uniform_menu:
+    slots:
+      - 4
+    item:
+      material: itemsadder:sunrise:marine_uniform
+      name: "<blue><bold>Marine Uniform"
+      lore:
+        - ""
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_basic_marine_uniform%" 
+    type: cosmetic
+    cosmetic: basic_marine_uniform
+  marine_pants_menu:
+    slots:
+      - 5
+    item:
+      material: itemsadder:sunrise:marine_pants
+      name: "<blue><bold>Marine Pants"
+      lore:
+        - ""
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_basic_marine_pants%" 
+    type: cosmetic
+    cosmetic: basic_marine_pants
+  marine_boots_menu:
+    slots:
+      - 6
+    item:
+      material: itemsadder:sunrise:marine_boots
+      name: "<blue><bold>Marine Boots"
+      lore:
+        - ""
+        - "<gray>Unlocked: <#6D9DC5>%HMCCosmetics_unlocked_basic_marine_boots%" 
+    type: cosmetic
+    cosmetic: basic_marine_boots

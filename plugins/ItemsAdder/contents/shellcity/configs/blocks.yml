@@ -1,0 +1,94 @@
+info:
+  namespace: shellcity
+items:
+  marble_brick:
+    display_name: marble_brick
+    permission: shellcity.blocks.marble_brick
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - block/marble_brick.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+  cracked_marble_brick:
+    display_name: cracked_marble_brick
+    permission: shellcity.blocks.cracked_marble_brick
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - block/cracked_marble_brick.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+  moss_marble_brick:
+    display_name: moss_marble_brick
+    permission: shellcity.blocks.moss_marble_brick
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - block/moss_marble_brick.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+  dark_oxidized_copper:
+    display_name: dark_oxidized_copper
+    permission: shellcity.blocks.dark_oxidized_copper
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - block/copper.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+  yellow_wood:
+    display_name: yellow_wood
+    permission: shellcity.blocks.yellow_wood
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - block/yellow_wood.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+  orange_wood:
+    display_name: yellow_wood
+    permission: shellcity.blocks.orange_wood
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - block/orange_wood.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+  green_wood:
+    display_name: green_wood
+    permission: shellcity.blocks.green_wood
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+        - block/green_wood.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM

@@ -6,6 +6,7 @@ lore:
 - '%USER_LEVEL%'
 - ''
 - '%GENERATOR_DAMAGE%'
+- '%GENERATOR_SKILLS%'
 color: -1,-1,-1
 unbreakable: true
 item-flags:
@@ -479,9 +480,14 @@ generator:
         default:
           chance: 35.0
   skills:
-    minimum: 0
-    maximum: 0
-    list: {}
+    minimum: 1
+    maximum: 1
+    list:
+      m1 to basic attack:
+        chance: 100.0
+        min-level: 1
+        max-level: 1
+        lore-format: []
 target-requirements: {}
 enchanted: false
 model-data: 10003

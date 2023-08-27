@@ -2,11 +2,10 @@
 # HMCCosmetics Configuration (Remapped)
 #
 config-version: 1
-
 default-menu: defaultmenu
 debug-mode: false
 database-settings:
-  type: sqlite #MYSQL, SQLite, INTERNAL (not recommended!)
+  type: sqlite
   mysql:
     database: database
     password: cherryBomb
@@ -14,16 +13,28 @@ database-settings:
     host: localhost
     user: username
   delay:
-    enabled: false # This is for if other plugins need to handle certain aspects of a player first.
-    delay: 20 # In ticks
+    enabled: false
+    delay: 20
 cosmetic-settings:
-  tick-period: 20 # In ticks, determines how many times a player cosmetics should be updated. -1 to disable.
+  tick-period: 20
   # Ticking periods is something that ensures new players near a player get the packets to actually apply to the user.
 
-  unapply-on-death: false # If when a player dies, their cosmetics should be unapplied. If this is true, use hmccosmetics.unapplydeath.bypass to bypass
-  force-permission-join: true # Checks a player permission if they can have a cosmetic when they join the server.
+  unapply-on-death: false
+  force-permission-join: true
+  force-show-join: false
+  emote-distance: -1
+  emote-block-check: true
+  emote-air-check: true
+  emote-damage-leave: true
+  emote-invincible: false
+  helmet-add-enchantments: false
+  chest-add-enchantments: false
+  leggings-add-enchantments: false
+  boots-add-enchantments: false
 
-  emote-distance: -1 # This shows how far away the camera should be while a player is doing an emote. Negative is behind player.
+  # This attempts to destroy cosmetics that get loose in the wild, such as through a player entering creative mode.
+  # Most servers who don't use creative mode and have properly set up the plugin should have no need for this and can leave it disabled.
+  destroy-loose-cosmetics: false
 
   # view distance in blocks that other players will see the backpack cosmetic
   # setting this to lower than the server player view distance should fix the
@@ -35,11 +46,20 @@ cosmetic-settings:
     y: 3
     z: 0.5
 dye-menu:
-  # If you use ItemsAdder, set this to "§f:offset_-8::cosmetics_gui:"
+  # If you use ItemsAdder, set this to "§f:offset_-8::dye_menu:"
   # If you use Oraxen, set this to "<glyph:neg_shift_8><glyph:dye_menu>"
-  title: "§f"
+  title: §f
   input-slot: 19
   output-slot: 25
+hook-settings:
+  itemsadder:
+    # This causes the plugin to reload itself after any ItemsAdder change. This keeps the plugin fully up to date with IA, but
+    # could cause console spam as HMCCosmetics has to reload itself as well.
+    reload-on-change: false
+  worldguard:
+    # Checks worldguard regions for HMCC flags. If set to false, flags will not work properly.
+    # Requires restart to apply changes.
+    player-move-check: true
 wardrobe:
   # spawn static wardrobe if in this radius of wardrobe-location
   static-radius: 10
@@ -49,38 +69,50 @@ wardrobe:
   equip-pumpkin: false
   # Rather than having a set exit location, this will send the player back to where they entered the wardrobe. Not recommended for WG regions
   return-last-location: false
+  # If players in wardrobes should be able to equip any cosmetic, regardless of permission (Cosmetics they do not have access to will be removed when they leave the wardrobe)
+  unchecked-wardrobe-cosmetics: false
+  menu-options:
+    enter-open-menu: false
+  gamemode-options:
+    exit-gamemode-enabled: false
+    exit-gamemode: SURVIVAL
+
   # Bossbar that shows when a player is in a wardrobe.
   bossbar:
     enabled: false
-    text: "Left-Click to open the menu!"
-    progress: 1.0 # Goes between 0.0 -> 1.0
+    text: Left-Click to open the menu!
+    progress: 1.0
     overlay: PROGRESS
     color: BLUE
   transition:
     enabled: true
-    text: "<black>"
+    # If you use ItemsAdder, set this to "<black>%img_title%
+    # If you use Oraxen, set this to "<black><glyph:title>"
+    text: <black>
     delay: 40
-    title-fade-in: 1000 # milliseconds
-    title-stay: 500 # milliseconds
-    title-fade-out: 1000 # milliseconds
-  wardrobe-location:
-    world: "World"
-    x: 0
-    y: 0
-    z: 0
-    yaw: 0
-    pitch: 0
-  viewer-location:
-    world: "World"
-    x: 5
-    y: 0
-    z: 5
-    yaw: 0
-    pitch: 0
-  leave-location:
-    world: "World"
-    x: 5
-    y: 5
-    z: 5
-    yaw: 0
-    pitch: 0
+    title-fade-in: 1000
+    title-stay: 500
+    title-fade-out: 1000
+  wardrobes:
+    default:
+      npc-location:
+        world: world
+        x: 0
+        y: 0
+        z: 0
+        yaw: 0
+        pitch: 0
+      viewer-location:
+        world: world
+        x: 5
+        y: 0
+        z: 5
+        yaw: 0
+        pitch: 0
+      leave-location:
+        world: world
+        x: 5
+        y: 5
+        z: 5
+        yaw: 0
+        pitch: 0

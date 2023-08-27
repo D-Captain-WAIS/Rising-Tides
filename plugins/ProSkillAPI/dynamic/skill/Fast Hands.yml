@@ -19,17 +19,17 @@ Fast Hands:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10042
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&9&oDexterity'
   - ''
-  - '&9&oImproves my trigger finger'
-  - '&9&oallowing me to shoot faster'
+  - '&e&oImproves my trigger finger'
+  - '&e&oallowing me to shoot faster'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'

@@ -1,0 +1,5 @@
+SENTO:
+  base:
+    material: PAPER
+    custom-model-data: 10035.0
+    name: sento

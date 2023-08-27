@@ -1,0 +1,20 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+Quake_Crack:
+  Id: IRON_NUGGET
+  CustomModelData: 10000
+  Display: 'quake'
+Quake_Crack1:
+  Id: IRON_NUGGET
+  CustomModelData: 10001
+  Display: 'quake'
+Quake_Crack2:
+  Id: IRON_NUGGET
+  CustomModelData: 10002
+  Display: 'quake'
+Quake_Crack3:
+  Id: IRON_NUGGET
+  CustomModelData: 10003
+  Display: 'quake'

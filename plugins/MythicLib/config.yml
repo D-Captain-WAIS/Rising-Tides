@@ -98,7 +98,7 @@ game-indicators:
   # Use format: 'ᜌ{icon} &f{value}ᜌ' along with the resource pack
   # provided in the wiki in order to remove the gray background
   damage:
-    enabled: true
+    enabled: false
     decimal-format: '0.#'
     format: '{icon} &f{value}'
     custom-font:

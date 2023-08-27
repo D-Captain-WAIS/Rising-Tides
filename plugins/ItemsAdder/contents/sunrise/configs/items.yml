@@ -279,6 +279,15 @@ items:
       model_path: item/standard_issue_bow
     item_flags:
     - HIDE_ATTRIBUTES
+  slingshot:
+    display_name: "slingshot"
+    permission: sunrise.slingshot
+    resource:
+      material: RAW_IRON
+      generate: false
+      model_path: item/slingshot
+    item_flags:
+    - HIDE_ATTRIBUTES
   standard_sword:
     display_name: "Standard Sword"
     permission: sunrise.standardSword
@@ -286,6 +295,24 @@ items:
       material: GRAY_DYE
       generate: false
       model_path: item/standardsword
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bandit_glaive:
+    display_name: "Bandit Glaive"
+    permission: sunrise.bandit_glaive
+    resource:
+      material: GUNPOWDER
+      generate: false
+      model_path: item/basicpolearm
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bandit_club:
+    display_name: "Bandit Club"
+    permission: sunrise.bandit_club
+    resource:
+      material: FLINT
+      generate: false
+      model_path: item/banditclub
     item_flags:
     - HIDE_ATTRIBUTES
   standard_gloves:
@@ -306,4 +333,370 @@ items:
       model_path: item/standardpistol
     item_flags:
     - HIDE_ATTRIBUTES
-       
+  musket:
+    display_name: "Musket"
+    permission: sunrise.musket
+    resource:
+      material: WHITE_DYE
+      generate: false
+      model_path: item/musket
+    item_flags:
+    - HIDE_ATTRIBUTES
+  launcher:
+    display_name: "Launcher"
+    permission: sunrise.launcher
+    resource:
+      material: WHITE_DYE
+      generate: false
+      model_path: item/launcher
+    item_flags:
+    - HIDE_ATTRIBUTES
+  griffon:
+    display_name: "Griffon"
+    permission: sunrise.grffon
+    resource:
+      material: GRAY_DYE
+      generate: false
+      model_path: item/griffon
+    item_flags:
+    - HIDE_ATTRIBUTES
+  2h_attack:
+    displayname: "&c2h_attack"
+    permission: risingtides.2h_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/2h_attack.png
+  charge_attack:
+    displayname: "&ccharge_attack"
+    permission: risingtides.charge_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/charge_attack.png
+  dash_swing:
+    displayname: "&cdash_swing"
+    permission: risingtides.dash_swing
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/dash_swing.png
+  double_attack:
+    displayname: "&cdouble_attack"
+    permission: risingtides.double_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/double_attack.png
+  evade_strike:
+    displayname: "&cevade_strike"
+    permission: risingtides.evade_strike
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/evade_strike.png
+  hilt_strike:
+    displayname: "&chilt_strike"
+    permission: risingtides.hilt_strike
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/hilt_strike.png
+  jump_attack:
+    displayname: "&cjump_attack"
+    permission: risingtides.jump_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/jump_attack.png  
+  overhead_swing:
+    displayname: "&coverhead_swing"
+    permission: risingtides.overhead_swing
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/overhead_swing.png   
+  piercing_strike:
+    displayname: "&cpiercing_strike"
+    permission: risingtides.piercing_strike
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/piercing_strike.png   
+  poke:
+    displayname: "&cpoke"
+    permission: risingtides.poke
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/poke.png 
+  quick_swings:
+    displayname: "&cquick_swings"
+    permission: risingtides.quick_swings
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/quick_swings.png  
+  wee:
+    displayname: "&cwee"
+    permission: risingtides.wee
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/wee.png  
+  arc_shot:
+    displayname: "&carc_shot"
+    permission: risingtides.arc_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/arc_shot.png   
+  bola_shot:
+    displayname: "&cbola_shot"
+    permission: risingtides.bola_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/bola_shot.png    
+  bounce_shot:
+    displayname: "&cbounce_shot"
+    permission: risingtides.bounce_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/bounce_shot.png   
+  caltrops:
+    displayname: "&ccaltrops"
+    permission: risingtides.caltrops
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/caltrops.png    
+  catapult:
+    displayname: "&ccatapult"
+    permission: risingtides.catapult
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/catapult.png     
+  dirt_star:
+    displayname: "&cdirt_star"
+    permission: risingtides.catapult
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/dirt_shot.png  
+  firecracker:
+    displayname: "&cfirecracker"
+    permission: risingtides.firecracker
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/firecracker.png              
+  firestarter:
+    displayname: "&cfirestarter"
+    permission: risingtides.firestarter
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/firestarter.png                            
+  multishot:
+    displayname: "&cmultishot"
+    permission: risingtides.multishot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/multishot.png                         
+  slipup:
+    displayname: "&cslipup"
+    permission: risingtides.slipup
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/slip_up.png                       
+  special_volley:
+    displayname: "&cspecial_volley"
+    permission: risingtides.special_volley
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/special_volley.png                    
+  whats_that:
+    displayname: "&cwhats_that"
+    permission: risingtides.whats_that
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/whats_that.png     
+  blunder_leap:
+    displayname: "&6blunder_leap"
+    permission: risingtides.blunder_leap
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/blunder_leap.png
+  chamber_blast:
+    displayname: "&6chamber_blast"
+    permission: risingtides.chamber_blast
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/chamber_blast.png
+  critical_shot:
+    displayname: "&6critical_shot"
+    permission: risingtides.critical_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/critical_shot.png  
+  dive_shot:
+    displayname: "&6dive_shot"
+    permission: risingtides.dive_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/dive_shot.png  
+  double_tap:
+    displayname: "&6double_tap"
+    permission: risingtides.double_tap
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/double_tap.png 
+  fast_hands:
+    displayname: "&6fast_hands"
+    permission: risingtides.fast_hands
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/fast_hands.png   
+  impairing_shot:
+    displayname: "&6impairing_shot"
+    permission: risingtides.impairing_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/impairing_shot.png     
+  pistol_whip:
+    displayname: "&6pistol_whip"
+    permission: risingtides.pistol_whip
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/pistol_whip.png
+  run:
+    displayname: "&6run"
+    permission: risingtides.run
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/run.png
+  spray_and_pray:
+    displayname: "&6spray_and_pray"
+    permission: risingtides.spray_and_pray
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/spray_and_pray.png
+  tactical_dive:
+    displayname: "&6tactical_dive"
+    permission: risingtides.tactical_dive
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/tactical_dive.png
+  vital_shot:
+    displayname: "&6vital_shot"
+    permission: risingtides.vital_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - item/vital_shot.png
+  marine_uniform:
+    display_name: "Marine Uniform"
+    permission: sunrise.marine_uniform
+    resource:
+      generate: true
+      textures:
+      - armor/torso_common
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: marine_uniform_basic
+  marine_hat:
+    display_name: "Marine hat"
+    permission: sunrise.marine_hat
+    resource:
+      generate: true
+      textures:
+      - armor/helmet_common
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: marine_uniform_basic
+  marine_pants:
+    display_name: "Marine Pants"
+    permission: sunrise.marine_pants
+    resource:
+      generate: true
+      textures:
+      - armor/legs_common
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: marine_uniform_basic
+  marine_boots:
+    display_name: "Marine Boots"
+    permission: sunrise.marine_boots
+    resource:
+      generate: true
+      textures:
+      - armor/boots_common
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: feet
+        custom_armor: marine_uniform_basic

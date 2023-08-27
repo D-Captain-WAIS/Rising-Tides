@@ -368,9 +368,50 @@ generator:
         max: 0
         flat-range: false
         round: false
+  sockets:
+    GEM:
+      minimum: 0
+      maximum: 0
+      lore-format:
+      - '&8&m               &f  「 GEMS 」  &8&m               '
+      - '%SOCKET_GEM_COMMON%'
+      - '%SOCKET_GEM_RARE%'
+      list:
+        common:
+          chance: 35.0
+        rare:
+          chance: 15.0
+    ESSENCE:
+      minimum: 0
+      maximum: 0
+      lore-format:
+      - '&8&m               &f  「 ESSENCES 」  &8&m               '
+      - '%SOCKET_ESSENCE_DEFAULT%'
+      list:
+        default:
+          chance: 35.0
+    RUNE:
+      minimum: 0
+      maximum: 0
+      lore-format:
+      - '&8&m               &f  「 RUNES 」  &8&m               '
+      - '%SOCKET_RUNE_DEFAULT%'
+      list:
+        default:
+          chance: 35.0
+  skills:
+    minimum: 0
+    maximum: 0
+    list:
+      ability-1:
+        chance: 0.0
+        min-level: 1
+        max-level: 1
+        lore-format:
+        - '&bSample Ability: &7[&f%level%&7]'
   skillapi-attributes:
     minimum: 1
-    maximum: 1
+    maximum: 4
     lore-format:
     - '%SKILLAPI_ATTRIBUTE_VITALITY%'
     - '%SKILLAPI_ATTRIBUTE_SPIRIT%'
@@ -447,46 +488,5 @@ generator:
         min: 0
         max: 0
         flat-range: false
-  sockets:
-    GEM:
-      minimum: 0
-      maximum: 0
-      lore-format:
-      - '&8&m               &f  「 GEMS 」  &8&m               '
-      - '%SOCKET_GEM_COMMON%'
-      - '%SOCKET_GEM_RARE%'
-      list:
-        common:
-          chance: 35.0
-        rare:
-          chance: 15.0
-    ESSENCE:
-      minimum: 0
-      maximum: 0
-      lore-format:
-      - '&8&m               &f  「 ESSENCES 」  &8&m               '
-      - '%SOCKET_ESSENCE_DEFAULT%'
-      list:
-        default:
-          chance: 35.0
-    RUNE:
-      minimum: 0
-      maximum: 0
-      lore-format:
-      - '&8&m               &f  「 RUNES 」  &8&m               '
-      - '%SOCKET_RUNE_DEFAULT%'
-      list:
-        default:
-          chance: 35.0
-  skills:
-    minimum: 0
-    maximum: 0
-    list:
-      ability-1:
-        chance: 0.0
-        min-level: 1
-        max-level: 1
-        lore-format:
-        - '&bSample Ability: &7[&f%level%&7]'
 target-requirements: {}
 enchanted: false

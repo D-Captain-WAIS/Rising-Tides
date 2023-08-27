@@ -14,7 +14,7 @@ resource-pack:
       pack-port: 8163
     external-host:
       enabled: true
-      url: https://www.dropbox.com/s/015pgz0gdloknl0/dev%20server.zip?dl=1
+      url: https://www.dropbox.com/scl/fi/hx9pk6qglzomlzpm82w6x/generated.zip?rlkey=cn5kvsvpvjwwrd9aj82q0p0qn&dl=1
       skip-url-file-type-check___DONT_ASK_HELP_IF_SET_TRUE: false
   apply-on-join: true
   kick-player-on-decline: true

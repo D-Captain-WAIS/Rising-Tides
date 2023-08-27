@@ -2,6 +2,7 @@ Hard Kick:
   name: 'Hard Kick'
   type: 'Active'
   max-level: 5
+  skill-req: 'None'
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -80,7 +81,7 @@ Hard Kick:
                   data: 
                     icon-key: ''
                     counts: 'True'
-                    delay-base: '0.65'
+                    delay-base: '0'
                     delay-scale: '0'
                   children: 
                     Damage-f: 

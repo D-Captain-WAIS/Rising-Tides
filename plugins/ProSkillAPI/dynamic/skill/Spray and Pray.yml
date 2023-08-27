@@ -2,7 +2,6 @@ Spray and Pray:
   name: 'Spray and Pray'
   type: 'Active'
   max-level: 5
-  skill-req: 'None'
   skill-req-lvl: 3
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -20,18 +19,18 @@ Spray and Pray:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10046
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
   - '&6&oAccuracy'
   - ''
-  - '&9&o I unload all my remaining bullets rapidly,'
-  - '&9&o sadly it decreases my accuracy, but the'
-  - '&9&o random aspect is very deadly!'
+  - '&e&oI unload all my remaining bullets rapidly,'
+  - '&e&osadly it decreases my accuracy, but the'
+  - '&e&orandom aspect is very deadly!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -165,7 +164,7 @@ Spray and Pray:
                                 value-scale: '3'
                                 true: 'False'
                                 classifier: 'default'
-                                knockback: 'True'
+                                knockback: 'False'
                                 cause: 'Contact'
                               children:  {}
                             Flag-j: 
@@ -242,7 +241,7 @@ Spray and Pray:
                                 value-scale: '3'
                                 true: 'False'
                                 classifier: 'default'
-                                knockback: 'True'
+                                knockback: 'False'
                                 cause: 'Contact'
                               children:  {}
                     Single-o: 
@@ -252,7 +251,7 @@ Spray and Pray:
                         icon-key: ''
                         range-base: '1.5'
                         range-scale: '0'
-                        tolerance-base: '0'
+                        tolerance-base: '0.25'
                         tolerance-scale: '0'
                         group: 'Enemy'
                         wall: 'False'
@@ -269,7 +268,7 @@ Spray and Pray:
                             value-scale: '3'
                             true: 'False'
                             classifier: 'default'
-                            knockback: 'True'
+                            knockback: 'False'
                             cause: 'Entity Attack'
                           children:  {}
             Command-q: 

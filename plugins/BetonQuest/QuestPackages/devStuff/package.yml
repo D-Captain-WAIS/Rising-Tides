@@ -1,2 +1,5 @@
 npcs:
   '21': "God"
+  '60': "SpawnGod"
+  '61': "ArenaGod"
+  '162': "ArenaNPCGod"

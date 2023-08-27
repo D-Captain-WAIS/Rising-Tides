@@ -1,8 +1,3 @@
 playerData:
   19894efa-01d3-43e5-82db-008cd9381b2f:
-    statpoints: '-65'
-    investedstatpoints: '0'
-    resetprice: '1000'
-    example_item: 'false'
-    pointsgiven: '2'
-    totalcurrentpoints: '0'
+    statpoints: '%math_(({sapi_player_class_level}-1)*5)-{cp-data-investedstatpoints}%'

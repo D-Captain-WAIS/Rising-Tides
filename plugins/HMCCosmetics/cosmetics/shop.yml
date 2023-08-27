@@ -138,6 +138,13 @@ ribbon_cloak:
     material: itemsadder:shop:ribbon_cloak
     name: "<gold>Green Ribbon Cloak<gold>"
     amount: 1
+triangle_shades:
+  slot: HELMET
+  permission: "shop.triangle_shades"
+  item:
+    material: itemsadder:shop:triangle_shades
+    name: "<gold>Triangle Shades<gold>"
+    amount: 1
 triple_cigar:
   slot: HELMET
   permission: "shop.triple_cigar"
@@ -145,10 +152,52 @@ triple_cigar:
     material: itemsadder:shop:triple_cigar
     name: "<gold>Triple Cigar<gold>"
     amount: 1
+rockstar_shades:
+  slot: HELMET
+  permission: "shop.rockstar_shades"
+  item:
+    material: itemsadder:shop:soul_shades
+    name: "<gold>Rockstar Shades<gold>"
+    amount: 1
 straw_hat:
   slot: HELMET
   permission: "shop.straw_hat"
   item:
     material: itemsadder:shop:straw_hat
     name: "<gold>Basic Straw Hat<gold>"
+    amount: 1
+orange_sunglasses:
+  slot: HELMET
+  permission: "shop.orange_sunglasses"
+  item:
+    material: itemsadder:shop:orange_sunglasses
+    name: "<gold>Orange Sunglasses<gold>"
+    amount: 1
+yellow_sunglasses:
+  slot: HELMET
+  permission: "shop.yellow_sunglasses"
+  item:
+    material: itemsadder:shop:yellow_sunglasses
+    name: "<gold>Yellow Sunglasses<gold>"
+    amount: 1
+swan_headband:
+  slot: HELMET
+  permission: "shop.swan_headband"
+  item:
+    material: itemsadder:shop:swan_headband
+    name: "<gold>Cotton Headband<gold>"
+    amount: 1
+money_eyes:
+  slot: HELMET
+  permission: "shop.money_eyes"
+  item:
+    material: itemsadder:shop:money_eyes
+    name: "<gold>Money Eyes<gold>"
+    amount: 1
+heart_eyes:
+  slot: HELMET
+  permission: "shop.heart_eyes"
+  item:
+    material: itemsadder:shop:heart_eyes
+    name: "<gold>Heart Eyes<gold>"
     amount: 1

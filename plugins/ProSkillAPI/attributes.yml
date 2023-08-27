@@ -16,7 +16,7 @@
 #   hunger           | [PREM] Increases how long hunger lasts. This attribute is always based off of a base value of 1. A resulting value of 2 would double how long the hunger bar lasts, for example.
 #   hunger-heal      | [PREM] Increases how much you heal while satiated
 #   knockback-resist | [PREM, 1.9+] Probability of resisting knockback as a decimal (1.0 is 100% change to resist)
-#   luck	         | [PREM, 1.9+] loot table chances
+#   luck	          | [PREM, 1.9+] loot table chances
 #   mana	         | The max mana of the player
 #   mana-regen       | The amount of mana regeneration the player has
 #   move-speed       | The movement speed of the player
@@ -28,8 +28,8 @@
 #   skill-defense-<classification> | [PREM] The amount of damage taken by skills with the specified classification
 constitution: 
   display: 'Constitution'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '1'
   icon-lore: 
   - '&6Constitution &7(&2{amount}&7)'
@@ -43,8 +43,8 @@ constitution:
     health: '((a*0.025)*a)+v'
 willpower: 
   display: 'Willpower'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '6'
   icon-lore: 
   - '&6Willpower &7(&2{amount}&7)'
@@ -58,8 +58,8 @@ willpower:
     mana-regen: '2+(0.1*a)'
 agility: 
   display: 'Agility'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '5'
   icon-lore: 
   - '&6Agility &7(&2{amount}&7)'
@@ -67,8 +67,8 @@ agility:
   - '&7Increase movement capabilities'
 dexterity: 
   display: 'Dexterity'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '10'
   icon-lore: 
   - '&6Dexterity &7(&2{amount}&7)'
@@ -76,8 +76,8 @@ dexterity:
   - '&7Increases weapon proficiency.'
 strength: 
   display: 'Strength'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '14'
   icon-lore: 
   - '&6Strength &7(&2{amount}&7)'
@@ -89,8 +89,8 @@ strength:
     target:  {}
 accuracy: 
   display: 'Accuracy'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '14'
   icon-lore: 
   - '&6Accuracy &7(&2{amount}&7)'
@@ -102,8 +102,8 @@ accuracy:
     target:  {}
 endurance: 
   display: 'Endurance'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '14'
   icon-lore: 
   - '&6Endurance &7(&2{amount}&7)'
@@ -117,8 +117,8 @@ endurance:
     mana: '((a*0.05)*a)+v'
 finesse: 
   display: 'Finesse'
-  max: '999'
-  icon: 'ink sack'
+  max: '99999'
+  icon: 'apple'
   icon-data: '14'
   icon-lore: 
   - '&6Finesse &7(&2{amount}&7)'

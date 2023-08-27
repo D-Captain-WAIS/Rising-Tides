@@ -1605,10 +1605,40 @@ HaoshokuLightning:
   - effect:particleline{p=reddust;color=#000000;amount=25;size=0.25;zz=true;zzs=10;zzo=0.25;yOffset=0.8;db=0.1;t=40;so=0.5} @Origin{xoffset="<random.-6to6>";yoffset="<random.-6to6>";zoffset="<random.-6to6>"}
   - effect:particleline{p=reddust;color=#ff0000;amount=25;size=0.25;zz=true;zzs=10;zzo=0.25;yOffset=0.8;db=0.1;t=40;so=0.5} @Origin{xoffset="<random.-6to6>";yoffset="<random.-6to6>";zoffset="<random.-6to6>"}
   - effect:particleline{p=reddust;color=#000000;amount=25;size=0.25;zz=true;zzs=10;zzo=0.25;yOffset=0.8;db=0.1;t=40;so=0.5} @Origin{xoffset="<random.-6to6>";yoffset="<random.-6to6>";zoffset="<random.-6to6>"}  
-    
-    
-  
-    
+QuakeCrack:
+  Skills:
+  - equip{item=Quake_Crack1:4} 
+  - delay 2
+  - equip{item=Quake_Crack2:4} 
+  - delay 2
+  - equip{item=Quake_Crack3:4} 
+  - delay 2
+  - equip{item=Quake_Crack:4} 
+  - delay 2
+QuakeCrackRemove:
+  Skills:
+  - equip{item=Quake_Crack:4} 
+  - delay 2
+  - equip{item=Quake_Crack3:4}
+  - delay 2
+  - equip{item=Quake_Crack2:4} 
+  - delay 2 
+  - equip{item=Quake_Crack1:4}
+  - delay 2
+  - teleportto{location=0,-999,0} @self  
+QuakeTest:
+  Skills:
+  - command{c="iaemote Kaishin";op=true;ac=true} @trigger
+  - stun{duration=490, f=true} @trigger
+  - sound{s=block.beacon.activate;p=1.5;v=6} @selflocation
+  - delay 10
+  - effect:particles{particle=mob;mob=GuraCrack;amount=1;yOffset=-0.5;sideOffset=1} @selflocation
+  - effect:particles{particle=mob;mob=GuraCrack;amount=1;yOffset=-0.5;sideOffset=-1} @selflocation
+  - sound{s=block.glass.break;v=6} @selflocation
+  - sound{s=block.glass.break;v=6;p=1.5} @selflocation
+  - sound{s=block.glass.break;v=6;p=2} @selflocation
+  - sound{s=block.glass.break;v=6;p=0.5} @selflocation
+  - sound{s=block.glass.break;v=6;p=0.01} @selflocation
     
     
   

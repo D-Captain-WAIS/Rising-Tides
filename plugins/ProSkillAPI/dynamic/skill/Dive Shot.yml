@@ -20,17 +20,16 @@ Dive Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10040
   icon-durability: 0
   icon-lore: 
-  - '&9&l{name} '
+  - '&e&l{name} '
   - ''
   - '&6&oStat scale:'
-  - '&9&oDexterity'
+  - '&f&oAgility'
   - ''
-  - '&9&oIf I raise my weapon above my head'
-  - '&9&oit should be faster and stronger!'
+  - '&e&oI dive backwards and shoot!'
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
@@ -289,7 +288,7 @@ Dive Shot:
                                     value-scale: '4'
                                     true: 'False'
                                     classifier: 'default'
-                                    knockback: 'True'
+                                    knockback: 'False'
                                     cause: 'Entity Attack'
                                   children:  {}
                                 Flag-w: 
@@ -356,6 +355,6 @@ Dive Shot:
                                     value-scale: '0'
                                     true: 'False'
                                     classifier: 'default'
-                                    knockback: 'True'
+                                    knockback: 'False'
                                     cause: 'Entity Attack'
                                   children:  {}

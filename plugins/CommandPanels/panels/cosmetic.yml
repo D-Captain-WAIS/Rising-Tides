@@ -1,0 +1,19 @@
+panels:  
+  cosmetic:
+    perm: cosmetic
+    rows: 6
+    title: ':offset_-8::vivre:'
+    empty: AIR
+    item:
+      '21':
+        material: PAPER
+        stack: 1
+        name: '&e&l[Titles]'
+        commands:
+        - op= cp titlesoverview
+      '23':
+        material: PAPER
+        stack: 1
+        name: '&d&l[Chassis]'
+        commands:
+        - op= cosmetic

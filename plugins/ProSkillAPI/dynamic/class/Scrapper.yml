@@ -49,6 +49,7 @@ Scrapper:
   - 'wounded'
   - 'impaired'
   - 'vulnerable'
+  - 'M1 to Basic Attack'
   icon: 'YELLOW_DYE'
   icon-data: 0
   icon-durability: 0

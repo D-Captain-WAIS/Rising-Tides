@@ -19,18 +19,22 @@ Vital Shot:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'ACACIA_BOAT'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10048
   icon-durability: 0
   icon-lore: 
-  - '&d{name} &7({level}/{max})'
-  - '&2Type: &6{type}'
+  - '&e&l{name} '
   - ''
-  - '{req:level}Level: {attr:level}'
-  - '{req:cost}Cost: {attr:cost}'
+  - '&6&oStat scale:'
+  - '&f&oAgility'
   - ''
-  - '&2Mana: {attr:mana}'
-  - '&2Cooldown: {attr:cooldown}'
+  - "&e&oI'll try to aim my shot"
+  - '&e&oon a vital spot '
+  - '&e&oto cause bleeding'
+  - ''
+  - '&7Skill Level: {level} / {max}'
+  - '&7Stamina: {attr:mana}'
+  - '&7Cooldown: {attr:cooldown}'
   desc:  []
   components: 
     Cast: 

@@ -212,6 +212,10 @@ worth-calculator:
         '1': 137
       standardgloves:
         '1': 129
+      banditclub:
+        '1': 115
+      banditglaive:
+        '1': 174
     custom_items:
       basic:
         '1': 156

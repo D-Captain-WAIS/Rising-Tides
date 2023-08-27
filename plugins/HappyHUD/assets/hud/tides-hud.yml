@@ -120,5 +120,28 @@ hotbar-trim:
       offset:
         x: 0
         y: 9
+dirt-splat:
+  layers:
+    splat:
+      texture:
+        scale: 2
+        path: assets/r-tides/dirtsplat.png
+      offset:
+        x: 0
+        y: 0
+    splat-2:
+      texture:
+        scale: 2
+        path: assets/r-tides/dirtsplat.png
+      offset:
+        x: -25
+        y: 0
+    splat-3:
+      texture:
+        scale: 2
+        path: assets/r-tides/dirtsplat.png
+      offset:
+        x: 25
+        y: 0
         
 

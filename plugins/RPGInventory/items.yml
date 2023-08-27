@@ -1,0 +1,70 @@
+BACK:
+    type: accessory
+    material: PAPER
+    durability: 10060
+    name: '&6Back Slot'
+    slot: 9
+    restrictions:
+    - 'mmoitemstype{type=BACK}'
+    lore:
+    - Drag & drop an item to equip it.
+RIGHT_RING:
+    type: accessory
+    material: PAPER
+    durability: 10061
+    name: '&6Right Ring Slot'
+    slot: 10
+    restrictions:
+    - 'mmoitemstype{type=RING}'
+    lore:
+    - Drag & drop an item to equip it.
+LEFT_RING:
+    type: accessory
+    material: PAPER
+    durability: 10061
+    name: '&6Left Ring Slot'
+    slot: 11
+    restrictions:
+    - 'mmoitemstype{type=RING}'
+    lore:
+    - Drag & drop an item to equip it.
+NECKLACE:
+    type: accessory
+    material: PAPER
+    durability: 10063
+    name: '&6Necklace Slot'
+    slot: 12
+    restrictions:
+    - 'mmoitemstype{type=NECKLACE}'
+    lore:
+    - Drag & drop an item to equip it.
+TRINKET:
+    type: accessory
+    material: PAPER
+    durability: 10062
+    name: '&6Trinket Slot'
+    slot: 13
+    restrictions:
+    - 'mmoitemstype{type=TRINKET}'
+    lore:
+    - Drag & drop an item to equip it.
+ARTIFACT:
+    type: accessory
+    material: PAPER
+    durability: 10064
+    name: '&6Artifact Slot'
+    slot: 14
+    restrictions:
+    - 'mmoitemstype{type=ARTIFACT}'
+    - 'unique{enabled=true}'
+    lore:
+    - Drag & drop an item to equip it.
+
+# Misc
+FILL:
+    type: fill
+    material: DIAMOND_HOE
+    durability: 15
+    name: '&a'
+    slot: -1
+    lore: []

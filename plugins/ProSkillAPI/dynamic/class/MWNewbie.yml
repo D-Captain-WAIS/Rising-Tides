@@ -49,6 +49,7 @@ MWNewbie:
   - 'wounded'
   - 'impaired'
   - 'vulnerable'
+  - 'M1 to Basic Attack'
   icon: 'ACACIA_BOAT'
   icon-data: 0
   icon-durability: 0

@@ -20,8 +20,8 @@ Fire Starter:
     incompatible: 
     - ''
   msg: '&6{player} &2has cast &6{skill}'
-  icon: 'JACK_O_LANTERN'
-  icon-data: 0
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10030
   icon-durability: 0
   icon-lore: 
   - '&a&l{name} '
@@ -74,7 +74,10 @@ Fire Starter:
                     material: 'Gold nugget'
                     amount: '1'
                     byte: '10002'
-                    hide-flags: ' {}'
+                    hide-flags: 
+                    - ' '
+                    - '{'
+                    - '}'
                     custom: 'False'
                     velocity-base: '3'
                     velocity-scale: '0'

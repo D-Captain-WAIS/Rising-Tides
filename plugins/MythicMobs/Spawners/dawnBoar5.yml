@@ -6,7 +6,7 @@ dawnBoar5:
   Z: -361
   Yaw: 0.0
   Pitch: 0.0
-  Radius: 10
+  Radius: 0
   RadiusY: 1
   UseTimer: true
   MaxMobs: '5'
@@ -19,10 +19,10 @@ dawnBoar5:
   CheckForPlayers: true
   ActivationRange: 100
   ScalingRange: 25.0
-  LeashRange: 80
-  HealOnLeash: true
+  LeashRange: 30
+  HealOnLeash: false
   ResetThreatOnLeash: true
   ShowFlames: false
   Breakable: false
   Conditions: []
-  ActiveMobs: 5
+  ActiveMobs: 0

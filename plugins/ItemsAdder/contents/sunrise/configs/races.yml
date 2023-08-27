@@ -1,0 +1,84 @@
+info:
+  namespace: sunrise
+items:
+  back_fin:
+    display_name: "Back Fin"
+    permission: fishman
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/back_fin
+    item_flags:
+    - HIDE_ATTRIBUTES
+  fishman_head:
+    display_name: "fishman_head"
+    permission: fishman
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/fishman_head1
+    item_flags:
+    - HIDE_ATTRIBUTES
+  shandian_wings:
+    display_name: "Shandian Wings"
+    permission: shandian
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/shandian_wings
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bear_ears:
+    display_name: "bear_ears"
+    permission: mink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/bear_ears
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bear_tail:
+    display_name: "bear_tail"
+    permission: mink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/bear_tail
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bunny_tail:
+    display_name: "bunny_tail"
+    permission: mink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/bunny_tail
+    item_flags:
+    - HIDE_ATTRIBUTES
+  bunny_ears:
+    display_name: "bunny_ears"
+    permission: mink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/bunny_ears
+    item_flags:
+    - HIDE_ATTRIBUTES
+  dog_ears:
+    display_name: "dog_ears"
+    permission: mink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/dog_ears
+    item_flags:
+    - HIDE_ATTRIBUTES
+  dog_tail:
+    display_name: "dog_tail"
+    permission: mink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/dog_tail
+    item_flags:
+    - HIDE_ATTRIBUTES
