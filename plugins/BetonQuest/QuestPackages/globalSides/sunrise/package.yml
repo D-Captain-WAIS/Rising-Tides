@@ -1,0 +1,17 @@
+npcs: 
+    '292' : denmanDog
+    '254' : jakeDenman
+    '295' : denmanDog2
+    '297' : denmanDog3
+    '298' : denmanDog4
+    '299' : denmanDog5
+    '300' : denmanDog6
+    '301' : denmanDog7
+hide_npcs:
+    '292' : tag_found_dog
+    '295' : tag_founding_dog2
+    '297' : tag_founding_dog3
+    '298' : tag_founding_dog4
+    '299' : tag_founding_dog5
+    '300' : tag_founding_dog6
+    '301' : "!tag_found_all_dogs"

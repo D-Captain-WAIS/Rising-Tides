@@ -1,0 +1,52 @@
+events: 
+    finding_dog: "tag add finding_dog"
+    del_finding_dog: "tag delete finding_dog"
+    found_dog: "tag add found_dog"
+    revEavesdrop: "folder revEavesdropBlindness,revEavesdropSlow,revEavesdropConversations"
+    revEavesdropBlindness: "effect DARKNESS 15 1 hidden noicon"
+    revEavesdropSlow: "effect SLOW 15 1 hidden noicon"
+    revEavesdropConversations: "folder testConversation"
+    testConversation: "conversation John"
+    give_eavesdrop_test: "objective add eavesdrop_test"
+    found_dog2: "tag add found_dog2"
+    finding_dog2: "tag add finding_dog2"
+    found_dog3: "tag add found_dog3"
+    finding_dog3: "tag add finding_dog3"
+    found_dog4: "tag add found_dog4"
+    finding_dog4: "tag add finding_dog4"
+    found_dog5: "tag add found_dog5"
+    finding_dog5: "tag add finding_dog5"
+    found_dog6: "tag add found_dog6"
+    finding_dog6: "tag add finding_dog6"
+    founding_dog : "tag add founding_dog"
+    del_found_dog: "tag delete found_dog"
+
+conditions: 
+    tag_finding_dog: "tag finding_dog"
+    tag_finding_dog2: "tag finding_dog2"
+    tag_found_dog: "tag found_dog"
+    tag_found_dog2: "tag found_dog2"
+    tag_found_dog3: "tag found_dog3"
+    tag_finding_dog3: "tag finding_dog3"
+    tag_found_dog4: "tag found_dog4"
+    tag_finding_dog4: "tag finding_dog4"
+    tag_found_dog5: "tag found_dog5"
+    tag_finding_dog5: "tag finding_dog5"
+    tag_found_dog6: "tag found_dog6"
+    tag_finding_dog6: "tag finding_dog6"
+    tag_found_all_dogs: "and tag_found_dog2,tag_found_dog3,tag_found_dog4,tag_found_dog5,tag_found_dog6"
+    tag_founding_dog2: "or tag_found_dog2,!tag_founding_dog"
+    tag_founding_dog3: "or tag_found_dog3,!tag_founding_dog"
+    tag_founding_dog4: "or tag_found_dog4,!tag_founding_dog"
+    tag_founding_dog5: "or tag_found_dog5,!tag_founding_dog"
+    tag_founding_dog6: "or tag_found_dog6,!tag_founding_dog"
+    tag_founding_dog: "tag founding_dog"
+
+  #eavesdrop
+    tag_is_rev: "tag characterCreation.is_rev"
+    eavesdrop_test_chance: "random 1-10"
+
+objectives:
+    eavesdrop_test: "location 2.5;-11;6.5;dev 4 conditions:tag_is_rev,eavesdrop_test_chance events:revEavesdrop"
+
+
