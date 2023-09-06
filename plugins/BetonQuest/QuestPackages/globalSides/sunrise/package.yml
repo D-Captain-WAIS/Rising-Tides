@@ -7,6 +7,7 @@ npcs:
     '299' : denmanDog5
     '300' : denmanDog6
     '301' : denmanDog7
+    '172' : edmireSwitch
 hide_npcs:
     '292' : tag_found_dog
     '295' : tag_founding_dog2

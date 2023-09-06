@@ -118,6 +118,24 @@ emotes:
       take_damage: false
       deal_damage: false
       in_air: false
+  b2hand_swing:
+    id: b2hand_swing
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
+  p2hand_swing:
+    id: p2hand_swing
+    enabled: true
+    can_player_move: true
+    cancel_conditions:
+      sneak: false
+      take_damage: false
+      deal_damage: false
+      in_air: false
   piercing_strike:
     id: piercing_strike
     enabled: true

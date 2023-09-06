@@ -172,13 +172,281 @@ conversations:
         events: "found_dog6"
         pointer: "confirm6"
     
-    denmanDog7:
-      quester: "Jake Denman's Dog"
-      first: "random7"
-      NPC_options:
-        random7:
-          text: "Woof I'm back"
-          conditions: "tag_found_all_dogs"
+  denmanDog7:
+    quester: "Jake Denman's Dog"
+    first: "random7"
+    NPC_options:
+      random7:
+        text: "Woof I'm back"
+        conditions: "tag_found_all_dogs"
+
+  edmireSwitch:
+    quester: "Edmire Switch"
+    first: "done3,third,done2,second,done,start"
+    NPC_options:
+      start:
+        text: "I have noticed the increasing need to hunt to keep the animal population under control, will you help me in this task?"
+        conditions: "!tag_mobdone"
+        pointer: "notime,time"
+      done:
+        text: "Thank you"
+        conditions: "tag_mobdone"
+        events: "startsecond"
+      second:
+        text: "I have once again noticed the increasing need to hunt to keep the animal population under control, will you help me deal with this task?"
+        events: "mobsecond"
+        conditions: "Begin2"
+        pointer: "notime2,time2"
+      done2:
+        text: "Thank you again"
+        conditions: "Thanks2"
+        events: "startthird"
+      third:
+        text: "I request you help me once more in dealing with the rest of the beast population, will you assist me in this?"
+        conditions: "Begin3"
+        events: "mobthird"
+        pointer: "notime3,time3"
+      done3:
+        text: "Thank you again"
+        conditions: "Thanks3"
+    player_options:
+      time:
+        text: "I have the time for a hunt."
+        events: "mobstart"
+      notime:
+        text: "I am too busy to hunt currently."
+      time2:
+        text: "I have the time for a hunt."
+        events: "mobsecond"
+      notime2:
+        text: "I am too busy to hunt currently."
+      time3:
+        text: "I have the time for a hunt."
+        events: "mobthird"
+      notime3:
+        text: "I am too busy to hunt currently."
+
+  monkeyPersonA:
+    quester: "Person A"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "The jungle west of the kingdom lately has been pretty dangerous, people have said there's been a lot of monkeys."
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Eavesdrop..."
+        pointer: "monkeyPersonB.firstReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  monkeyPersonB:
+    quester: "Person B"
+    first: "firstReply"
+    NPC_options:
+      firstReply:
+        text: "That’s funny, how can monkeys be dangerous? They’re so cute."
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Continue eavesdropping..."
+        pointer: "monkeyPersonA1.secondReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  monkeyPersonA1:
+    quester: "Person A"
+    first: "secondReply"
+    NPC_options:
+      secondReply:
+        text: "Apparently, they have weapons!"
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Continue eavesdropping..."
+        pointer: "monkeyPersonB1.thirdReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  monkeyPersonB1:
+    quester: "Person B"
+    first: "thirdReply"
+    NPC_options:
+      thirdReply:
+        text: "I mean…they DO have opposable thumbs so that’s plausible, like they’re using sticks?"
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Continue eavesdropping..."
+        pointer: "monkeyPersonA2.fourthReply"
+      ignore:
+        text: "Leave Conversation"
+        events: "give_convos"
+  monkeyPersonA2:
+    quester: "Person A"
+    first: "fourthReply"
+    NPC_options:
+      fourthReply:
+        text: "Nah, like... guns"
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Continue eavesdropping..."
+        pointer: "monkeyPersonB2.lastReply"
+      ignore:
+        text: "Leave conversation"
+        event: "give_convos"
+  monkeyPersonB2:
+    quester: "Person B"
+    first: "lastReply"
+    NPC_options:
+      lastReply:
+        text: "You're an idiot."
+        events: "give_convos"
+#Spider Dungeon Hint
+  spiderPersonA:
+    quester: "Person A"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "That graveyard near Nozomi gives me the creeps."
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening: 
+        text: "Eavesdrop..."
+        pointer: "spiderPersonB.firstReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  spiderPersonB:
+    quester: "Person B"
+    first: "firstReply"
+    NPC_options:
+      firstReply:
+        text: "It's a graveyard, it gives EVERYONE the creeps."
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Continue eavesdropping..."
+        pointer: "spiderPersonA1.secondReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  spiderPersonA1:
+    quester: "Person A"
+    first: "secondReply"
+    NPC_options:
+      secondReply:
+        text: "No, I mean...it feels so *alive*...like there's something under the ground."
+        pointer: "continueConversation, ignore"
+    player_options:
+      continueConversation:
+        text: "Continue eavesdropping..."
+        pointer: "spiderPersonB1.thirdReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  spiderPersonB1:
+    quester: "Person B"
+    first: "thirdReply"
+    NPC_options:
+      thirdReply:
+        text: "Yeah dude...bodies."
+        pointer: "continueConversation, ignore"
+    player_options:
+      continueConversation:
+        text: "Continue Eavesdropping..."
+        pointer: "spiderPersonA2.lastReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  spiderPersonA2:
+    quester: "Person A"
+    first: "lastReply"
+    NPC_options:
+      lastReply:
+        text: "Why do you never take me seriously?"
+#Vegapunk Assistant Hint 1
+  vegaPersonA:
+    quester: "Person A"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "I think I saw a robot at the pond northeast of the island."
+        pointer: "continueConversation, ignore"
+    player_options:
+      continueConversation:
+        text: "Eavesdrop..."
+        pointer: "vegaPersonB.firstReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  vegaPersonB:
+    quester: "Person B"
+    first: "firstReply"
+    NPC_options:
+      firstReply:
+        text: "Define robot."
+        pointer: "continueConversation, ignore"
+    player_options:
+      continueConversation:
+        text: "Continue eavesdropping..."
+        pointer: "vegaPersonA1.secondReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  vegaPersonA1:
+    quester: "Person A"
+    first: "secondReply"
+    NPC_options:
+      secondReply:
+        text: "Beep boop robot, I don’t know man, it looked like it was made of metal and had lights on it"
+        pointer: "continueConversation, ignore"
+    player_options:
+      continueConversation:
+        text: "Continue Eavesdropping..."
+        pointer: "vegaPersonB1.thirdReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  vegaPersonB1:
+    quester: "Person B"
+    first: "thirdReply"
+    NPC_options:
+      thirdReply:
+        text: "Maybe you saw a really colorful sign."
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Continue eavesdropping..."
+        pointer: "vegaPersonA2.fourthReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  vegaPersonA2:
+    quester: "Person A"
+    first: "fourthReply"
+    NPC_options:
+      fourthReply:
+        text: "Can signs just fly away?"
+        pointer: "continueListening, ignore"
+    player_options:
+      continueListening:
+        text: "Continue eavesdropping..."
+        pointer: "vegaPersonB2.lastReply"
+      ignore:
+        text: "Leave conversation"
+        events: "give_convos"
+  vegaPersonB2:
+    quester: "Person B"
+    first: "lastReply"
+    NPC_options:
+      lastReply:
+        text: "Depends on what you ate or drank beforehand."
+        events: "give_convos"
+
+  
+    
 
 
 

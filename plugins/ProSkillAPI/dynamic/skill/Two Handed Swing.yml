@@ -1,8 +1,12 @@
 Two Handed Swing: 
   name: 'Two Handed Swing'
   type: 'Active'
+<<<<<<< Updated upstream
   max-level: 1
   skill-req: 'None'
+=======
+  max-level: 5
+>>>>>>> Stashed changes
   skill-req-lvl: 1
   needs-permission: 'false'
   cooldown-message: 'true'
@@ -17,8 +21,6 @@ Two Handed Swing:
     mana-scale: '0'
     points-spent-req-base: '0'
     points-spent-req-scale: '0'
-    incompatible: 
-    - ''
   msg: '&6{player} &2has cast &6{skill}'
   icon: 'PUMPKIN_SEEDS'
   icon-data: 10013
@@ -40,27 +42,35 @@ Two Handed Swing:
     Cast: 
       type: 'trigger'
       indicator: 'None'
-      data: 
-        icon-key: ''
+      data:  {}
       children: 
         Item-b: 
           type: 'condition'
           indicator: 'None'
           data: 
             icon-key: ''
+<<<<<<< Updated upstream
             check-mat: 'False'
             check-data: 'False'
             check-lore: 'True'
             lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
+=======
+            check-mat: 'false'
+            check-data: 'false'
+            check-lore: 'true'
+            lore: 'Single Sharp Duelist'
+            check-name: 'false'
+            regex: 'false'
+>>>>>>> Stashed changes
           children: 
             Delay-c: 
               type: 'mechanic'
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
+                counts: 'true'
                 delay-base: '0.6'
                 delay-scale: '0'
               children: 
@@ -74,8 +84,8 @@ Two Handed Swing:
                     angle-base: '75'
                     angle-scale: '0'
                     group: 'Enemy'
-                    wall: 'False'
-                    caster: 'False'
+                    wall: 'false'
+                    caster: 'false'
                     max-base: '99'
                     max-scale: '0'
                   children: 
@@ -84,13 +94,13 @@ Two Handed Swing:
                       indicator: 'None'
                       data: 
                         icon-key: ''
-                        counts: 'True'
+                        counts: 'true'
                         type: 'Damage'
                         value-base: '2hswing_dmg'
                         value-scale: '0'
-                        true: 'False'
+                        true: 'false'
                         classifier: 'default'
-                        knockback: 'True'
+                        knockback: 'true'
                         cause: 'Entity Attack'
                       children:  {}
             Command-f: 
@@ -98,7 +108,7 @@ Two Handed Swing:
               indicator: 'None'
               data: 
                 icon-key: ''
-                counts: 'True'
+                counts: 'true'
                 command: 'iaemote 2hand_swing'
                 type: 'OP'
               children:  {}
@@ -107,8 +117,146 @@ Two Handed Swing:
           indicator: 'None'
           data: 
             icon-key: ''
-            counts: 'True'
+            counts: 'false'
             key: '2hswing_dmg'
             type: 'Number'
             placeholder: '%math_25+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
           children:  {}
+        Value Placeholder-h: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'false'
+            key: 'b2hand_swing'
+            type: 'Number'
+            placeholder: '%math_35+({sapi_player_class_attribute:dexterity}*0.45)+{qrpg_damage_physical}%'
+          children:  {}
+        Value Placeholder-i: 
+          type: 'mechanic'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            counts: 'false'
+            key: 'p2hand_swing'
+            type: 'Number'
+            placeholder: '%math_20+({sapi_player_class_attribute:dexterity}*0.225)+{qrpg_damage_physical}%'
+          children:  {}
+        Item-j: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'false'
+            check-data: 'false'
+            check-lore: 'true'
+            lore: 'Buster'
+            check-name: 'false'
+            regex: 'false'
+          children: 
+            Command-k: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'true'
+                command: 'iaemote b2hand_swing'
+                type: 'OP'
+              children:  {}
+            Delay-l: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'true'
+                delay-base: '0.7'
+                delay-scale: '0'
+              children: 
+                Cone-m: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '5'
+                    range-scale: '0'
+                    angle-base: '50'
+                    angle-scale: '0'
+                    group: 'Enemy'
+                    wall: 'false'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
+                  children: 
+                    Damage-n: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'true'
+                        type: 'Damage'
+                        value-base: 'b2hand_swing'
+                        value-scale: '0'
+                        true: 'false'
+                        classifier: 'default'
+                        knockback: 'true'
+                        cause: 'Entity Attack'
+                      children:  {}
+        Item-o: 
+          type: 'condition'
+          indicator: 'None'
+          data: 
+            icon-key: ''
+            check-mat: 'false'
+            check-data: 'false'
+            check-lore: 'true'
+            lore: 'Polearm'
+            check-name: 'false'
+            regex: 'false'
+          children: 
+            Command-p: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'true'
+                command: 'iaemote p2hand_swing'
+                type: 'OP'
+              children:  {}
+            Delay-q: 
+              type: 'mechanic'
+              indicator: 'None'
+              data: 
+                icon-key: ''
+                counts: 'true'
+                delay-base: '0.6'
+                delay-scale: '0'
+              children: 
+                Cone-r: 
+                  type: 'target'
+                  indicator: 'None'
+                  data: 
+                    icon-key: ''
+                    range-base: '5.5'
+                    range-scale: '0'
+                    angle-base: '60'
+                    angle-scale: '0'
+                    group: 'Enemy'
+                    wall: 'false'
+                    caster: 'False'
+                    max-base: '99'
+                    max-scale: '0'
+                  children: 
+                    Damage-s: 
+                      type: 'mechanic'
+                      indicator: 'None'
+                      data: 
+                        icon-key: ''
+                        counts: 'true'
+                        type: 'Damage'
+                        value-base: 'p2hand_swing'
+                        value-scale: '0'
+                        true: 'false'
+                        classifier: 'default'
+                        knockback: 'true'
+                        cause: 'Entity Attack'
+                      children:  {}
