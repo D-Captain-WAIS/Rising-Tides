@@ -1,4 +1,7 @@
 events: 
+    sending_letter: "tag add sending_letter"
+    sending_reply: "tag add sending_reply"
+    sent_reply: "tag add sent_reply"
     finding_dog: "tag add finding_dog"
     del_finding_dog: "tag delete finding_dog"
     found_dog: "tag add found_dog"
@@ -40,6 +43,9 @@ events:
 
 
 conditions: 
+    tag_sent_reply: "tag sent_reply"
+    tag_sending_letter: "tag sending_letter"
+    tag_sending_reply: "tag sending_reply"
     tag_finding_dog: "tag finding_dog"
     tag_finding_dog2: "tag finding_dog2"
     tag_found_dog: "tag found_dog"

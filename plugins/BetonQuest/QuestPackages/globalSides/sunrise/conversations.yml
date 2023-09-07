@@ -1,4 +1,25 @@
 conversations:
+  fredflin:
+    quester: "Fred Flin"
+    first: "ask_send_letter,is_sending_letter,sent_reply"
+    NPC_options: 
+      ask_send_letter: 
+        text: "Will you send this letter to my love for me?"
+        conditions: "!tag_sending_letter,!tag_sending_reply,!tag_sent_reply"
+        pointer: "accept,not"
+      is_sending_letter: 
+        text: "Have you sent the letter yet?"
+        conditions: "tag_sending_letter,!tag_sending_reply"
+      sent_reply: 
+        text: "YES!!!! she accepted, goodbye i'm off to finish her task for me"
+        conditions: "tag_sending_reply,!tag_sent_reply"
+        events: "sent_reply"
+    player_options: 
+      accept: 
+        text: "I will pass your letter to her for you."
+        events: "sending_letter"
+      not:
+        text: "I do not have time currently."
   jakeDenman:
     quester: "Jake Denman"
     first: "founding_dog,ask_finding_dog,is_finding_dog,found_dog,final"

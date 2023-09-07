@@ -158,7 +158,7 @@ conversations:
         pointers: "again"
   maki:
     quester: "\n&a&l[Maki The Bartender]"
-    first: "first_talk,change_mind,party"
+    first: "first_talk,change_mind,do_send_letter,done_send_letter,party"
     stop: 'true'
     NPC_options:
       first_talk:
@@ -184,6 +184,13 @@ conversations:
         text: "\nHey! Change your mind about meeting me there or me guiding you?\n"
         conditions: "change_mind"
         pointers: "guide_player,meet_player"
+      do_send_letter: 
+        text: "Ok, give this to him for me, come back after."
+        conditions: "globalSides-sunrise.tag_sending_letter,!globalSides-sunrise.tag_sending_reply"
+        events: "globalSides-sunrise.sending_reply"
+      done_send_letter:
+        text: "Maki: I hope he will finally get the hint after he finds out I don't have a sister, and my heart already belongs to someone else."
+        conditions: "globalSides-sunrise.tag_sending_reply"
       party:
         text: "\nWelcome to my Bar!\n"
     player_options:
