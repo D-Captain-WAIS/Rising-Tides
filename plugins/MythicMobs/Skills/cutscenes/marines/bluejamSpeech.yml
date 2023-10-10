@@ -1,0 +1,177 @@
+blueJamSpeech:
+  Skills:
+  - defaultstate{mid=speaking_bluejam;t=idle;s=speechloop} @self 
+  - delay 30 #1.5 seconds
+  - state{mid=speaking_bluejam;s=speechloop;r=true} @self
+  - state{mid=speaking_bluejam;state=speechloopangry;li=3;lo=3} @self
+  - delay 90 #6 seconds
+  - state{mid=speaking_bluejam;state=speechloopangry;r=true} @self
+  - state{state=speechloop;li=1} @self
+  - delay 40 #10 seconds
+  - state{mid=speaking_bluejam;s=speechloop;r=true} @self
+  - state{state=speechloopangry;li=1} @self
+  - delay 90 #14.5 seconds
+  - state{mid=speaking_bluejam;state=speechloopangry;r=true} @self
+  - state{state=speechloop;li=1} @self
+  - delay 70 #18 seconds
+  - state{mid=speaking_bluejam;s=speechloop;r=true} @self
+  - state{state=speechloopangry;li=1} @self
+  - delay 90 #22.5 seconds
+  - state{mid=speaking_bluejam;state=speechloopangry;r=true} @self
+  - state{state=speechloop;li=1} @self
+  - delay 100 #27.5 seconds
+  - state{mid=speaking_bluejam;s=speechloop;r=true} @self
+  - state{state=speechcheer;li=1} @self
+  - delay 300 #42.5 seconds
+  - teleportto{location=0,-200,0} @self
+clusterSpeech1:
+  Skills:
+  - setrotation{relative=false;yaw=-136} @self
+  - delay 120 #6 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+clusterSpeech2:
+  Skills:
+  - setrotation{relative=false;yaw=-180} @self
+  - delay 120 #6 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+clusterSpeech3:
+  Skills:
+  - setrotation{relative=false;yaw=-145} @self
+  - delay 120 #6 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+clusterSpeech4:
+  Skills:
+  - setrotation{relative=false;yaw=140} @self
+  - delay 120 #6 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+clusterSpeech5:
+  Skills:
+  - setrotation{relative=false;yaw=132} @self
+  - delay 120 #6 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+clusterSpeech6:
+  Skills:
+  - setrotation{relative=false;yaw=-136} @self
+  - delay 120 #6 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+clusterSpeech7:
+  Skills:
+  - setrotation{relative=false;yaw=-132} @self
+  - delay 120 #6 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=cluster_mob;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+swordPirateSpeech:
+  Skills:
+  - defaultstate{mid=pirate_sword;t=idle;s=cutscene_idle} @self 
+  - delay 120 #6 seconds
+  - defaultstate{mid=pirate_sword;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=pirate_sword;t=idle;s=cutscene_idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=pirate_sword;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=pirate_sword;t=idle;s=cutscene_idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=pirate_sword;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+brawlerPirateSpeech:
+  Skills:
+  - defaultstate{mid=pirate_brawler;t=idle;s=idle} @self 
+  - delay 120 #6 seconds
+  - defaultstate{mid=pirate_brawler;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=pirate_brawler;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=pirate_brawler;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=pirate_brawler;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=pirate_brawler;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+gunnerPirateSpeech:
+  Skills:
+  - defaultstate{mid=pirate_gunner;t=idle;s=idle} @self 
+  - delay 120 #6 seconds
+  - defaultstate{mid=pirate_gunner;t=idle;s=cheer} @self 
+  - delay 80 #12 seconds
+  - defaultstate{mid=pirate_gunner;t=idle;s=idle} @self 
+  - delay 160 #20 seconds
+  - defaultstate{mid=pirate_gunner;t=idle;s=cheer} @self 
+  - delay 80 #24 seconds
+  - defaultstate{mid=pirate_gunner;t=idle;s=idle} @self 
+  - delay 120 #30 seconds
+  - defaultstate{mid=pirate_gunner;t=idle;s=cheer} @self  
+  - delay 250
+  - teleportto{location=0,-200,0} @self
+

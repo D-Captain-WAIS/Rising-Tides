@@ -36,38 +36,41 @@ Hilt Bash:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Ground-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             type: 'On Ground'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote hilt_strike'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.6'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -78,20 +81,22 @@ Hilt Bash:
                     classifier: 'default'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Status-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Stun'
                     duration-base: '0.5'
                     duration-scale: '0.2'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
         Single-g: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             range-base: '2'
@@ -101,4 +106,6 @@ Hilt Bash:
             group: 'Enemy'
             wall: 'False'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children:  {}

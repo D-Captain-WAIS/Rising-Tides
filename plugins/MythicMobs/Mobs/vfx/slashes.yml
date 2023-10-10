@@ -1,0 +1,19 @@
+rightHorizontalSlash:
+  Type: WITHER_SKELETON
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Collidable: false
+    NoGravity: true
+    Invincible: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=slash_vfx;usm=true} @self ~onSpawn
+  - skill{s=RightHorizontalSlash} @self ~onSpawn

@@ -2117,6 +2117,38 @@ Material:
   POTTED_CHERRY_SAPLING: Potted Cherry Sapling
   PIGLIN_WALL_HEAD: Piglin Wall Head
   TORCHFLOWER_CROP: Torchflower Crop
+  SUSPICIOUS_GRAVEL: Suspicious Gravel
+  PITCHER_PLANT: Pitcher Plant
+  SNIFFER_EGG: Sniffer Egg
+  CALIBRATED_SCULK_SENSOR: Calibrated Sculk Sensor
+  PITCHER_POD: Pitcher Pod
+  MUSIC_DISC_RELIC: Music Disc Relic
+  WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: Wayfinder Armor Trim Smithing Template
+  SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: Shaper Armor Trim Smithing Template
+  SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: Silence Armor Trim Smithing Template
+  RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: Raiser Armor Trim Smithing Template
+  HOST_ARMOR_TRIM_SMITHING_TEMPLATE: Host Armor Trim Smithing Template
+  ANGLER_POTTERY_SHERD: Angler Pottery Sherd
+  ARCHER_POTTERY_SHERD: Archer Pottery Sherd
+  ARMS_UP_POTTERY_SHERD: Arms Up Pottery Sherd
+  BLADE_POTTERY_SHERD: Blade Pottery Sherd
+  BREWER_POTTERY_SHERD: Brewer Pottery Sherd
+  BURN_POTTERY_SHERD: Burn Pottery Sherd
+  DANGER_POTTERY_SHERD: Danger Pottery Sherd
+  EXPLORER_POTTERY_SHERD: Explorer Pottery Sherd
+  FRIEND_POTTERY_SHERD: Friend Pottery Sherd
+  HEART_POTTERY_SHERD: Heart Pottery Sherd
+  HEARTBREAK_POTTERY_SHERD: Heartbreak Pottery Sherd
+  HOWL_POTTERY_SHERD: Howl Pottery Sherd
+  MINER_POTTERY_SHERD: Miner Pottery Sherd
+  MOURNER_POTTERY_SHERD: Mourner Pottery Sherd
+  PLENTY_POTTERY_SHERD: Plenty Pottery Sherd
+  PRIZE_POTTERY_SHERD: Prize Pottery Sherd
+  SHEAF_POTTERY_SHERD: Sheaf Pottery Sherd
+  SHELTER_POTTERY_SHERD: Shelter Pottery Sherd
+  SKULL_POTTERY_SHERD: Skull Pottery Sherd
+  SNORT_POTTERY_SHERD: Snort Pottery Sherd
+  PITCHER_CROP: Pitcher Crop
 PotionEffectType:
   SPEED: Speed
   SLOW: Slow

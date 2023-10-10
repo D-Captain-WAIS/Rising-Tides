@@ -61,4 +61,25 @@ back_fin:
     material: itemsadder:sunrise:back_fin
     name: "<blue><bold>Back Fin"
     amount: 1
+shark_back_fin:
+  slot: BACKPACK
+  permission: "fishman"
+  item:
+    material: itemsadder:sunrise:shark_back_fin
+    name: "<blue><bold>Shark Fin"
+    amount: 1
+lshark_hand_fin:
+  slot: OFFHAND
+  permission: "fishman"
+  item:
+    material: itemsadder:sunrise:shark_hand_fins
+    name: "<blue><bold>Shark Arm Fin"
+    amount: 1
+rshark_hand_fin:
+  slot: MAINHAND
+  permission: "fishman"
+  item:
+    material: itemsadder:sunrise:shark_hand_fins
+    name: "<blue><bold>Shark Arm Fin"
+    amount: 1
     

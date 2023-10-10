@@ -38,13 +38,13 @@ Critical Shot:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,48 +53,53 @@ Critical Shot:
             lore: 'Single Gunslinger'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'False'
                 command: 'iaemote pcritical_shot'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Channel-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 still: 'False'
                 time-base: '0.5'
                 time-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'cshot_dmg'
                 type: 'Number'
                 placeholder: '%math_20+({sapi_player_class_attribute:accuracy}*0.14)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-f: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.65'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Sound-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -103,10 +108,11 @@ Critical Shot:
                     volume-scale: '0'
                     pitch-base: '2'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -125,10 +131,11 @@ Critical Shot:
                     forward: '1.5'
                     upward: '1.5'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-i: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'readybleedproc'
@@ -136,10 +143,11 @@ Critical Shot:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Item Projectile-j: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -168,10 +176,11 @@ Critical Shot:
                         right-base: '0'
                         right-scale: '0'
                         use-effect: 'False'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-k: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -182,30 +191,33 @@ Critical Shot:
                             classifier: 'default'
                             knockback: 'False'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Flag-l: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
                             key: 'Bleed'
                             seconds-base: '3'
                             seconds-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Value Add-m: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'readybleedproc'
                         amount-base: 'subtractbleedproc'
                         amount-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Value-n: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'readybleedproc'
@@ -213,10 +225,11 @@ Critical Shot:
                     min-value-scale: '0'
                     max-value-base: '0'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Item Projectile-o: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -245,10 +258,11 @@ Critical Shot:
                         right-base: '0'
                         right-scale: '0'
                         use-effect: 'False'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-p: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -259,4 +273,6 @@ Critical Shot:
                             classifier: 'default'
                             knockback: 'False'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}

@@ -22,73 +22,61 @@ sword-layout:
         y: -25
 marine-layout:
   elements: 
-    hp:
-      asset: 'marine-hp'
+    hp-stm:
+      asset: 'marine-hp-stm'
       offset:
         x: 0
-        y: 40
+        y: 0
       position:
         x: 1
-        y: 50
-    stm:
-      asset: 'stamina'
+        y: 99
+    tracking:
+      asset: 'tracking-hud'
+      align: center
       position:
-        x: 2
-        y: 50
-    exp:
-      asset: 'exp-level'
+        x: 50
+        y: 0
       offset:
         x: 0
-        y: -27
-      position:
-        x: 1.5
-        y: 50
+        y: 57
 pirate-layout:
   elements: 
-    hp:
-      asset: 'pirate-hp'
+    hp-stm:
+      asset: 'pirate-hp-stm'
       offset:
         x: 0
-        y: 40
+        y: 0
       position:
         x: 1
-        y: 50
-    stm:
-      asset: 'stamina'
+        y: 99
+    tracking:
+      asset: 'tracking-hud'
+      align: center
       position:
-        x: 2
-        y: 50
-    exp:
-      asset: 'exp-level'
+        x: 50
+        y: 0
       offset:
         x: 0
-        y: -27
-      position:
-        x: 1.5
-        y: 50
+        y: 57
 revarmy-layout:
   elements: 
-    hp:
-      asset: 'revarmy-hp'
+    hp-stm:
+      asset: 'revarmy-hp-stm'
       offset:
         x: 0
-        y: 40
+        y: 0
       position:
         x: 1
-        y: 50
-    stm:
-      asset: 'stamina'
+        y: 99
+    tracking:
+      asset: 'tracking-hud'
+      align: center
       position:
-        x: 2
-        y: 50
-    exp:
-      asset: 'exp-level'
+        x: 50
+        y: 0
       offset:
         x: 0
-        y: -27
-      position:
-        x: 1.5
-        y: 50
+        y: 57
 cp-layout:
   elements: 
     hp:

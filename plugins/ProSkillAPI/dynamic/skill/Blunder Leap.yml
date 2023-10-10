@@ -38,13 +38,13 @@ Blunder Leap:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,28 +53,31 @@ Blunder Leap:
             lore: 'Single Gunslinger'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote pblunder_leap'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.6'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Launch-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -85,10 +88,11 @@ Blunder Leap:
                     upward-scale: '0'
                     right-base: '0'
                     right-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Area-f: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     radius-base: '2'
@@ -99,10 +103,11 @@ Blunder Leap:
                     max-base: '99'
                     max-scale: '0'
                     random: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -113,10 +118,11 @@ Blunder Leap:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Push-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -124,10 +130,11 @@ Blunder Leap:
                         speed-base: '1'
                         speed-scale: '0'
                         source: 'none'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Potion-i: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -137,29 +144,32 @@ Blunder Leap:
                         tier-scale: '0'
                         seconds-base: '1'
                         seconds-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Delay-j: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.6'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Channel-k: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         still: 'False'
                         time-base: '0.8'
                         time-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Particle-l: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -179,10 +189,11 @@ Blunder Leap:
                     forward: '0'
                     upward: '0'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Sound-m: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -191,10 +202,11 @@ Blunder Leap:
                     volume-scale: '0'
                     pitch-base: '0.5'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Immunity-n: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -203,33 +215,38 @@ Blunder Leap:
                     seconds-scale: '0'
                     multiplier-base: '0'
                     multiplier-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Value Placeholder-o: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bleap_dmg'
                 type: 'Number'
                 placeholder: '%math_10+({sapi_player_class_attribute:accuracy}*0.1)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Self-p: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-q: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '0.8'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

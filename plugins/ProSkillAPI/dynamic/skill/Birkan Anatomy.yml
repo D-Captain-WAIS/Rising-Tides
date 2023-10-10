@@ -39,22 +39,23 @@ Birkan Anatomy:
   components: 
     Initialize: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Passive-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             seconds-base: '1'
             seconds-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Attribute-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -65,10 +66,11 @@ Birkan Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -79,60 +81,66 @@ Birkan Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'endurance_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:endurance}*0.05%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-f: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'finesse_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:finesse}*0.05%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-g: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'lvlover5'
                 type: 'Number'
                 placeholder: '%math_0:DOWN_{sapi_default_currentlevel}/5%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Set-h: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: '5lv_bonus'
                 value-base: '4'
                 value-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Multiply-i: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: '5lv_bonus'
                 multiplier-base: 'lvlover5'
                 multiplier-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-j: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -143,10 +151,11 @@ Birkan Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-k: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -157,18 +166,20 @@ Birkan Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Block-l: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 standing: 'On Block'
                 material: 'Air'
+              preview: 
+                enabled: 'false'
               children: 
                 Immunity-m: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -177,4 +188,6 @@ Birkan Anatomy:
                     seconds-scale: '0'
                     multiplier-base: '0'
                     multiplier-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

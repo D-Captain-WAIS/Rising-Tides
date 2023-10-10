@@ -1,0 +1,1484 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: &id001
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: NONE
+  location:
+    ==: org.bukkit.Location
+    x: 499.0
+    y: 70.0
+    z: 818.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 484.0
+    y: 70.0
+    z: 937.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 491.0
+    y: 70.0
+    z: 898.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 505.0
+    y: 70.0
+    z: 786.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 511.0
+    y: 70.0
+    z: 722.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+    targetType: &id004
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: PLAYER
+    location: &id002
+      ==: org.bukkit.Location
+      x: 647.0
+      y: 74.0
+      z: 989.0
+      pitch: 0.0
+      yaw: 0.0
+    teleportTarget:
+      ==: org.bukkit.Location
+      x: 647.4381213160343
+      y: 74.0
+      z: 976.3000000119209
+      pitch: 4.8823733
+      yaw: -179.33684
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 0
+    targetType: &id003
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: PARTY
+    location: *id002
+    trigger: null
+    message: §e§oI shouldn't go this way! I have no time!
+  targetType: *id003
+  location: *id002
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: true
+    radius: 8.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 511.0
+    y: 70.0
+    z: 756.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 487.0
+    y: 70.0
+    z: 917.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 510.0
+    y: 70.0
+    z: 707.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 497.0
+    y: 70.0
+    z: 823.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 480.0
+    y: 70.0
+    z: 945.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+    targetType: *id004
+    location: &id005
+      ==: org.bukkit.Location
+      x: 664.0
+      y: 62.0
+      z: 1019.0
+      pitch: 0.0
+      yaw: 0.0
+    teleportTarget:
+      ==: org.bukkit.Location
+      x: 664.5120394261235
+      y: 63.0
+      z: 1007.0813956140685
+      pitch: 0.5985482
+      yaw: -179.98044
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 0
+    targetType: *id003
+    location: *id005
+    trigger: null
+    message: §e§oI shouldn't go this way! I have no time!
+  targetType: *id003
+  location: *id005
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: true
+    radius: 8.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 504.0
+    y: 70.0
+    z: 806.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 513.0
+    y: 70.0
+    z: 762.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 505.0
+    y: 70.0
+    z: 795.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionFinishDungeon
+    leave: true
+    targetType: *id004
+    location: &id006
+      ==: org.bukkit.Location
+      x: 490.0
+      y: 70.0
+      z: 687.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+  targetType: *id003
+  location: *id006
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.gates.TriggerGateAnd
+    allowRetrigger: false
+    triggers:
+    - ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+      mob: any
+      count: 53
+      allowRetrigger: false
+      radius: 0.0
+      conditions: []
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 494.0
+    y: 70.0
+    z: 829.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 509.0
+    y: 70.0
+    z: 778.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 487.0
+    y: 70.0
+    z: 902.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 488.0
+    y: 70.0
+    z: 871.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 507.0
+    y: 70.0
+    z: 689.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 487.0
+    y: 70.0
+    z: 890.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 564.0
+    y: 68.0
+    z: 954.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oI've got no choice!!! I've got to handle this myself!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 510.0
+    y: 70.0
+    z: 772.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 509.0
+    y: 70.0
+    z: 767.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: vaultParticleRemover
+    delay: 0
+    levelString: '0'
+    interval: 0
+    targetType: *id001
+    location: &id007
+      ==: org.bukkit.Location
+      x: 649.0
+      y: 65.0
+      z: 928.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    maxCount: 1
+    yaw: 0.0
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+    targetType: *id004
+    location: *id007
+    teleportTarget:
+      ==: org.bukkit.Location
+      x: 649.422857022177
+      y: 65.0
+      z: 933.3000000119209
+      pitch: -1.5203347
+      yaw: 0.78449154
+    trigger: null
+  targetType: *id003
+  location: *id007
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 496.0
+    y: 70.0
+    z: 849.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 514.0
+    y: 70.0
+    z: 704.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 483.0
+    y: 70.0
+    z: 920.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 483.0
+    y: 70.0
+    z: 954.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 511.0
+    y: 70.0
+    z: 749.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 494.0
+    y: 70.0
+    z: 837.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 488.0
+    y: 70.0
+    z: 880.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 493.0
+    y: 70.0
+    z: 890.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 490.0
+    y: 70.0
+    z: 866.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 494.0
+    y: 70.0
+    z: 860.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 668.0
+    y: 84.0
+    z: 912.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 4.0
+    conditions: []
+  message: §e§oI think this must be BlueJam's Office...the map to the gates are right
+    there...He must have planned this all out from here!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+    targetType: *id004
+    location: &id008
+      ==: org.bukkit.Location
+      x: 632.0
+      y: 62.0
+      z: 1002.0
+      pitch: 0.0
+      yaw: 0.0
+    teleportTarget:
+      ==: org.bukkit.Location
+      x: 632.6540399685938
+      y: 64.0
+      z: 993.2754162813673
+      pitch: -1.1971021
+      yaw: -177.9245
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+    messageType: 0
+    targetType: *id003
+    location: *id008
+    trigger: null
+    message: §e§oI shouldn't go this way! I have no time!
+  targetType: *id003
+  location: *id008
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: true
+    radius: 8.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 485.0
+    y: 70.0
+    z: 924.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 488.0
+    y: 70.0
+    z: 859.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 508.0
+    y: 70.0
+    z: 738.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 508.0
+    y: 70.0
+    z: 727.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 598.0
+    y: 68.0
+    z: 954.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oBackup will arrive way too late too!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 490.0
+    y: 70.0
+    z: 912.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 492.0
+    y: 70.0
+    z: 875.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 507.0
+    y: 70.0
+    z: 733.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 654.0
+    y: 78.0
+    z: 945.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oEverybody's already gone! I gotta hurry to the gates!!!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 513.0
+    y: 70.0
+    z: 699.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 492.0
+    y: 70.0
+    z: 852.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 649.0
+    y: 65.0
+    z: 937.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oThat took way too long...I gotta hurry!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 500.0
+    y: 70.0
+    z: 814.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 512.0
+    y: 70.0
+    z: 693.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 482.0
+    y: 70.0
+    z: 931.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 487.0
+    y: 70.0
+    z: 907.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 481.0
+    y: 70.0
+    z: 950.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 508.0
+    y: 70.0
+    z: 790.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 493.0
+    y: 70.0
+    z: 843.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: vaultParticles1
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 649.0
+    y: 64.0
+    z: 928.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 511.0
+    y: 70.0
+    z: 714.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 496.0
+    y: 70.0
+    z: 833.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 510.0
+    y: 70.0
+    z: 686.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 502.0
+    y: 70.0
+    z: 800.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+  commandType: 0
+  forEachPlayer: false
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 630.0
+    y: 63.0
+    z: 908.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  command: screeneffect stop %player_name%
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id003
+  location:
+    ==: org.bukkit.Location
+    x: 616.0
+    y: 68.0
+    z: 954.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oCrap!...There's no time to wait for Captain Bogarp!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 510.0
+    y: 70.0
+    z: 743.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 481.0
+    y: 70.0
+    z: 940.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0

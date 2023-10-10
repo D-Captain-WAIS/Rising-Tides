@@ -171,6 +171,7 @@ npc:
     player-join-update-delay: 3s
     # How often to update placeholders
     placeholder-update-frequency: 5m
+    try-fetch-default-skin: true
   chunks:
     # Whether to keep NPC chunks loaded
     always-keep-loaded: false
@@ -208,6 +209,8 @@ npc:
   # Use packet NPCs for name holograms (experimental)
   use-packet-holograms: false
   delay-player-teleport: -1
+  shops:
+    global-view-permission: ''
 general:
   authlib:
     # Search for gameprofiles using this URL

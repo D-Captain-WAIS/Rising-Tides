@@ -37,22 +37,23 @@ Hard Kick:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote hard_kick'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Cone-c: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             range-base: '4'
@@ -64,29 +65,32 @@ Hard Kick:
             caster: 'False'
             max-base: '99'
             max-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Channel-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 still: 'False'
                 time-base: '0.65'
                 time-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Delay-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-f: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -97,10 +101,11 @@ Hard Kick:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Sound-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -110,14 +115,17 @@ Hard Kick:
                         volume-scale: '0'
                         pitch-base: '1'
                         pitch-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
         Value Placeholder-h: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'kick_damage'
             type: 'Number'
             placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

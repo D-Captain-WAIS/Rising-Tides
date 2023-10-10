@@ -1,8 +1,9 @@
 profiles:
   initial_name: default
 default_hologram: DecentHolograms
-configVersion: 2.0.0-CONFIG-5 # Don't change this! The plugin's automatic config updater handles it.
+configVersion: 2.0.0-CONFIG-6 # Don't change this! The plugin's automatic config updater handles it.
 mysql:
+  reconnect_interval: 1000
   enabled: false
   host: ''
   port: ''
@@ -33,7 +34,7 @@ conversation_IO_config:
   chest:
     show_number: true
     show_npc_text: true
-default_interceptor: packet,simple
+default_interceptor: redischat,packet,simple
 display_chat_after_conversation: true
 combat_delay: 5
 notify_pullback: true
@@ -50,6 +51,7 @@ sounds:
 cmd_blacklist:
 - spawn
 hook:
+  redischat: true
   fake-block: true
   decentholograms: true
   citizens: true

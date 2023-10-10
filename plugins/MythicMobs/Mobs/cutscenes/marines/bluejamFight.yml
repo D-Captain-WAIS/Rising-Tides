@@ -1,0 +1,41 @@
+regularRandomCrate:
+  Type: WITHER_SKELETON
+  Display: ''
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Collidable: false
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=large_crate;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=<random.0-180>} @self ~onSpawn
+  - velocity{m=set;x=0;y=0;z=0;delay=1} @self ~onDamaged
+  - state{mid=large_crate;s=damaged;li=3;lo=3} @self ~onDamaged
+  - sound{s=item.axe.strip} @self ~onDamaged
+phase1SpeechBlueJam:
+  Type: WITHER_SKELETON
+  Display: ''
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=Speaking_Phase1BlueJam;step=1} @self ~onSpawn
+  - defaultstate{mid=Speaking_Phase1BlueJam;t=idle;s=phase1speechloop} @self ~onSpawn
+  - setrotation{relative=false;yaw=-90} @self ~onSpawn
+  - defaultstate{mid=Speaking_Phase1BlueJam;t=idle;s=phase1speechloop} @self ~onSpawn
+  

@@ -436,9 +436,8 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases stamina and health regen'
-          - '&d&oas well as proficiency'
-          - '&d&owith willpower related skills'
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -474,9 +473,8 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases stamina and health regen'
-          - '&d&oas well as proficiency'
-          - '&d&owith willpower related skills'
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -506,9 +504,8 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases stamina and health regen'
-          - '&d&oas well as proficiency'
-          - '&d&owith willpower related skills'
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -532,9 +529,8 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases stamina and health regen'
-          - '&d&oas well as proficiency'
-          - '&d&owith willpower related skills'
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
           - ''
           - '&fAvailable Points: &e%cp-data-statpoints%'
           - '&a[Left Click] &f: &e+1'
@@ -552,9 +548,8 @@ panels:
           customdata: 10002
           lore:
           - ''
-          - '&d&oIncreases stamina and health regen'
-          - '&d&oas well as proficiency '
-          - '&d&owith willpower related skills'
+          - '&d&oIncreases Stamina regen and'
+          - '&d&oproficiency with willpower related skills'
           - ''
           - '&4You have no available stat points!'
       #dex

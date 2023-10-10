@@ -36,16 +36,16 @@ M1 to Basic Attack:
   components: 
     Left Click-a: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
         mana: 'False'
         cooldown: 'True'
         crouch: 'Dont crouch'
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,44 +54,49 @@ M1 to Basic Attack:
             lore: 'Single Wield Duelist'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Class-c: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 class: 'MWStudent'
                 exact: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Else-d: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
+              preview: 
+                enabled: 'false'
               children: 
                 Value Add-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'm1'
                     amount-base: '1'
                     amount-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'isM1ing'
                     seconds-base: '0.8'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-g: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -99,55 +104,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '1'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_1'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-i: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-j: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-k: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-l: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-m: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -155,19 +166,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-n: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-o: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -177,10 +190,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'True'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-p: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -191,10 +205,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-q: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -202,55 +217,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '2'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-r: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_2'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-s: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-t: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-u: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-v: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-w: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -258,19 +279,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-x: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-y: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -280,10 +303,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'True'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-z: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -294,10 +318,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-ab: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -305,55 +330,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-bb: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_3'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-cb: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-db: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-eb: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-fb: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-gb: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -361,19 +392,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-hb: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-ib: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -383,10 +416,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'True'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-jb: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -397,10 +431,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-kb: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -408,47 +443,52 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '4'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-lb: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_4'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-mb: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-nb: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-ob: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cooldown-pb: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -456,19 +496,21 @@ M1 to Basic Attack:
                             type: 'Seconds'
                             value-base: '-2'
                             value-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-qb: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-rb: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -480,10 +522,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-sb: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -494,20 +537,22 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
         Value Placeholder-tb: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'm1_dmg'
             type: 'Number'
             placeholder: '%math_({sapi_player_class_attribute:dexterity}*0.01)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Item-ub: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -516,44 +561,49 @@ M1 to Basic Attack:
             lore: 'Gloves'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Class-vb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 class: 'BStudent'
                 exact: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Else-wb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
+              preview: 
+                enabled: 'false'
               children: 
                 Value Add-xb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'm1'
                     amount-base: '1'
                     amount-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag-yb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'isM1ing'
                     seconds-base: '0.8'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-zb: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -561,55 +611,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '1'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-ac: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote bn_m1_1'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-bc: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-cc: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-dc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-ec: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-fc: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -617,19 +673,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-gc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-hc: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -639,10 +697,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'True'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-ic: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -653,10 +712,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-jc: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -664,55 +724,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '2'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-kc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote bn_m1_2'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-lc: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-mc: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-nc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-oc: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-pc: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -720,19 +786,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-qc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-rc: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -744,10 +812,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-sc: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -758,10 +827,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-tc: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -769,55 +839,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-uc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote bn_m1_3'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-vc: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-wc: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-xc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-yc: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-zc: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -825,19 +901,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-ad: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-bd: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -849,10 +927,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-cd: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -863,10 +942,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-dd: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -874,47 +954,52 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '4'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-ed: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote bn_m1_4'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-fd: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-gd: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-hd: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cooldown-id: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -922,19 +1007,21 @@ M1 to Basic Attack:
                             type: 'Seconds'
                             value-base: '-2'
                             value-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-jd: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-kd: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -944,10 +1031,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'False'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-ld: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -958,10 +1046,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
         Item-md: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -970,44 +1059,49 @@ M1 to Basic Attack:
             lore: 'Single Gunslinger'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Class-nd: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 class: 'GStudent'
                 exact: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Else-od: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
+              preview: 
+                enabled: 'false'
               children: 
                 Value Add-pd: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'm1'
                     amount-base: '1'
                     amount-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag-qd: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'isM1ing'
                     seconds-base: '0.8'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-rd: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1015,55 +1109,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '1'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-sd: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote gn_m1_1'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-td: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-ud: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-vd: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-wd: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-xd: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1071,19 +1171,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-yd: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-zd: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '2.5'
@@ -1093,10 +1195,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'True'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-ae: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1107,10 +1210,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-be: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1118,55 +1222,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '2'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-ce: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote gn_m1_2'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-de: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-ee: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-fe: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-ge: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-he: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1174,19 +1284,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-ie: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.25'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-je: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '5'
@@ -1198,10 +1310,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-ke: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1212,10 +1325,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                             Push-le: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1223,10 +1337,11 @@ M1 to Basic Attack:
                                 speed-base: '0.33'
                                 speed-scale: '0'
                                 source: 'none'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                         Particle-me: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1245,10 +1360,11 @@ M1 to Basic Attack:
                             forward: '1.6'
                             upward: '1.75'
                             right: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Sound-ne: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -1257,10 +1373,11 @@ M1 to Basic Attack:
                             volume-scale: '0'
                             pitch-base: '0.5'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                 Value-oe: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1268,55 +1385,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-pe: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote gn_m1_3'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-qe: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-re: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-se: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-te: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-ue: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1324,19 +1447,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-ve: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-we: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '2.5'
@@ -1346,10 +1471,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'False'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-xe: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1360,10 +1486,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-ye: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1371,47 +1498,52 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '4'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-ze: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote gn_m1_4'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-af: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-bf: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-cf: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cooldown-df: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1419,19 +1551,21 @@ M1 to Basic Attack:
                             type: 'Seconds'
                             value-base: '-2'
                             value-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-ef: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-ff: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '5'
@@ -1443,10 +1577,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-gf: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1457,10 +1592,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                             Push-hf: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1468,10 +1604,11 @@ M1 to Basic Attack:
                                 speed-base: '0.33'
                                 speed-scale: '0'
                                 source: 'none'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                         Particle-if: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1490,10 +1627,11 @@ M1 to Basic Attack:
                             forward: '1.6'
                             upward: '1.75'
                             right: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Sound-jf: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1502,10 +1640,11 @@ M1 to Basic Attack:
                             volume-scale: '0'
                             pitch-base: '0.5'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
         Item-kf: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -1514,44 +1653,49 @@ M1 to Basic Attack:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Class-lf: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 class: 'GStudent'
                 exact: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Else-mf: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
+              preview: 
+                enabled: 'false'
               children: 
                 Value Add-nf: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'm1'
                     amount-base: '1'
                     amount-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag-of: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'isM1ing'
                     seconds-base: '0.8'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-pf: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1559,55 +1703,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '1'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-qf: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote swn_m1_1'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-rf: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-sf: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-tf: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-uf: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-vf: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1615,19 +1765,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-wf: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.33'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Particle Projectile-xf: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1663,10 +1815,11 @@ M1 to Basic Attack:
                             speed: '0.1'
                             frequency: '0.05'
                             use-effect: 'False'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-yf: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1677,10 +1830,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'False'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                         Sound-zf: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1689,10 +1843,11 @@ M1 to Basic Attack:
                             volume-scale: '0'
                             pitch-base: '2'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                 Value-ag: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1700,55 +1855,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '2'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-bg: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote swn_m1_2'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-cg: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-dg: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-eg: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-fg: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-gg: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1756,19 +1917,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-hg: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.33'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Sound-ig: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1777,10 +1940,11 @@ M1 to Basic Attack:
                             volume-scale: '0'
                             pitch-base: '2'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Particle Projectile-jg: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1816,10 +1980,11 @@ M1 to Basic Attack:
                             speed: '0.1'
                             frequency: '0.05'
                             use-effect: 'False'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-kg: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1830,10 +1995,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'False'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-lg: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1841,55 +2007,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-mg: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote swn_m1_3'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-ng: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-og: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-pg: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-qg: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-rg: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1897,19 +2069,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-sg: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.3'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Particle Projectile-tg: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1945,10 +2119,11 @@ M1 to Basic Attack:
                             speed: '0.1'
                             frequency: '0.05'
                             use-effect: 'False'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-ug: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -1959,10 +2134,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'False'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                         Sound-vg: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -1971,10 +2147,11 @@ M1 to Basic Attack:
                             volume-scale: '0'
                             pitch-base: '2'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                 Value-wg: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -1982,47 +2159,52 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '4'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-xg: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         command: 'iaemote swn_m1_4'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-yg: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-zg: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-ah: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cooldown-bh: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -2030,19 +2212,21 @@ M1 to Basic Attack:
                             type: 'Seconds'
                             value-base: '-2'
                             value-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-ch: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.33'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Sound-dh: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -2051,10 +2235,11 @@ M1 to Basic Attack:
                             volume-scale: '0'
                             pitch-base: '2'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Particle Projectile-eh: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -2090,10 +2275,11 @@ M1 to Basic Attack:
                             speed: '0.1'
                             frequency: '0.05'
                             use-effect: 'False'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-fh: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2104,10 +2290,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'False'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
         Single-gh: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             range-base: '2.5'
@@ -2117,10 +2304,11 @@ M1 to Basic Attack:
             group: 'Enemy'
             wall: 'False'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children: 
             Damage-hh: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'False'
@@ -2131,10 +2319,11 @@ M1 to Basic Attack:
                 classifier: 'default'
                 knockback: 'False'
                 cause: 'Entity Attack'
+              preview: 
+                enabled: 'false'
               children:  {}
         Item-ih: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -2143,44 +2332,49 @@ M1 to Basic Attack:
             lore: 'Polearm'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Class-jh: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 class: 'MWStudent'
                 exact: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Else-kh: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
+              preview: 
+                enabled: 'false'
               children: 
                 Value Add-lh: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'm1'
                     amount-base: '1'
                     amount-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag-mh: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'isM1ing'
                     seconds-base: '0.9'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-nh: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2188,55 +2382,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '1'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-oh: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_p1'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-ph: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-qh: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-rh: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.9'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-sh: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-th: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2244,19 +2444,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-uh: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.4'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-vh: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '5'
@@ -2268,10 +2470,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-wh: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2282,10 +2485,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-xh: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2293,55 +2497,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '2'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-yh: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_p2'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-zh: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-ai: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-bi: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.9'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-ci: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-di: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2349,19 +2559,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-ei: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.4'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Linear-fi: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '5'
@@ -2373,10 +2585,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-gi: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2387,10 +2600,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-hi: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2398,55 +2612,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-ii: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_p3'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-ji: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-ki: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-li: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.9'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-mi: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-ni: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2454,19 +2674,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-oi: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.4'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-pi: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '5'
@@ -2478,10 +2700,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-qi: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2492,10 +2715,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-ri: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2503,47 +2727,52 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '4'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-si: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_p4'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-ti: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-ui: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.45'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-vi: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.9'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cooldown-wi: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -2551,19 +2780,21 @@ M1 to Basic Attack:
                             type: 'Seconds'
                             value-base: '-2'
                             value-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-xi: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.5'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Area-yi: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             radius-base: '5'
@@ -2574,10 +2805,11 @@ M1 to Basic Attack:
                             max-base: '99'
                             max-scale: '0'
                             random: 'False'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-zi: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2588,10 +2820,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
         Item-aj: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -2600,44 +2833,49 @@ M1 to Basic Attack:
             lore: 'Buster'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Class-bj: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 class: 'MWStudent'
                 exact: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Else-cj: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
+              preview: 
+                enabled: 'false'
               children: 
                 Value Add-dj: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'm1'
                     amount-base: '1'
                     amount-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag-ej: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     key: 'isM1ing'
                     seconds-base: '1.25'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-fj: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2645,55 +2883,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '1'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-gj: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_b1'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-hj: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-ij: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.7'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-jj: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '1.25'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-kj: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-lj: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2701,19 +2945,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-mj: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.65'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-nj: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '4'
@@ -2723,10 +2969,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'True'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-oj: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2737,10 +2984,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-pj: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2748,55 +2996,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '2'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-qj: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_b2'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-rj: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-sj: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.7'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-tj: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '1.25'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-uj: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-vj: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2804,19 +3058,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-wj: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.65'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Single-xj: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '4'
@@ -2826,10 +3082,11 @@ M1 to Basic Attack:
                             group: 'Enemy'
                             wall: 'True'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-yj: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2840,10 +3097,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-zj: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2851,55 +3109,61 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-ak: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_b3'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-bk: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-ck: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.7'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-dk: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '1.25'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Flag-ek: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Not Set'
                             key: 'isM1ing'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Cooldown-fk: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2907,19 +3171,21 @@ M1 to Basic Attack:
                                 type: 'Seconds'
                                 value-base: '-2'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Delay-gk: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.65'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-hk: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '4'
@@ -2931,10 +3197,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-ik: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -2945,10 +3212,11 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Value-jk: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'm1'
@@ -2956,47 +3224,52 @@ M1 to Basic Attack:
                     min-value-scale: '0'
                     max-value-base: '4'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Command-kk: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         command: 'iaemote mwn_m1_b4'
                         type: 'OP'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Self-lk: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-mk: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
                             status: 'Silence'
                             duration-base: '0.7'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-nk: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '1.25'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cooldown-ok: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'False'
@@ -3004,19 +3277,21 @@ M1 to Basic Attack:
                             type: 'Seconds'
                             value-base: '-2'
                             value-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-pk: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.65'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Cone-qk: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             range-base: '3'
@@ -3028,10 +3303,11 @@ M1 to Basic Attack:
                             caster: 'False'
                             max-base: '99'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-rk: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'False'
@@ -3042,4 +3318,6 @@ M1 to Basic Attack:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}

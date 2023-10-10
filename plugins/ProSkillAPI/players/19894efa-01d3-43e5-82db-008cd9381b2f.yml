@@ -1,11 +1,39 @@
-limit: 2
+limit: 10
 active: 1
 health: 50.0
-mana: 36.45
+mana: 30.0
 accounts: 
   acc1: 
-    classes:  {}
-    skills:  {}
+    classes: 
+      MWNewbie: 
+        level: 1
+        points: 1
+        exp: 0.0
+    skills: 
+      Weeeee: 
+        level: 0
+      Evade Strike: 
+        level: 0
+      Double Attack: 
+        level: 0
+      Dash Swing: 
+        level: 1
+      Jump Attack: 
+        level: 0
+      Charged Attack: 
+        level: 0
+      Hilt Bash: 
+        level: 5
+      Overhead Swing: 
+        level: 0
+      Two Handed Swing: 
+        level: 1
+      Piercing Strike: 
+        level: 1
+      Poke: 
+        level: 0
+      Quick Swings: 
+        level: 0
     binds:  {}
     bar: 
       enabled: 'true'
@@ -16,18 +44,12 @@ accounts:
       - 4
       - 5
       - 6
+      Two Handed Swing: 1
+      Dash Swing: 2
+      Hilt Bash: 3
+      Piercing Strike: 4
     attrib-points: 0
     attribs:  {}
-    hover: 
-      Flail: 0
-      Running Kick: 1
-      Chaaaaaarge: 2
-      Hard Kick: 3
-      Dropkick: 4
-      Get Out Of The Way: 5
-      Hard Punch: 6
-      Skedaddle: 7
-    instant:  {}
     hunger: 1.0
     extra: 
       combatItems: 
@@ -37,6 +59,6 @@ accounts:
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
-      - 'k00010004qb4007mqqbeclhn4ob6egt70obgclp0k003ehgme2g019kn8pbdedgm8p35e84000j9cg00atj9epp6a20015n62rb5edo62or5004nat39dhkn8qb5ec00600f8dqn6t3fdl6mup35dh262t310002e7oa003m8qbje1m62u880024sobdck04cup2c9nmop1279q74tb55gh6it31dhkm68hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp62u925gh78pboegh3k8irapkncsj5411m2sj4bkh7q0000400agrfeln780g0'
+      - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'
       - 'k00010004qb4006mqqbeclhn4ob6egt62qbi0400agrfeln78080'

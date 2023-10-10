@@ -39,7 +39,7 @@ messages:
   ignore-zero-damage: true
   types:
     NORMAL:
-      enabled: true
+      enabled: false
       messages:
         damager: '&e***&cDealt 🗡&7%damage% &cdamage&e***'
         victim: '&c*** &cTook 🗡&7%damage% &cdamage***'
@@ -67,7 +67,7 @@ messages:
         indicator: '&8[&e&lBlocked!&8]'
       sound: BLOCK_ANVIL_PLACE
 indicators:
-  enabled: false
+  enabled: true
   format:
     order:
     - '%critical%'

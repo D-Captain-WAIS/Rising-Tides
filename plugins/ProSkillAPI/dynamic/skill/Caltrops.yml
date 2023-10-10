@@ -38,13 +38,13 @@ Caltrops:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,28 +53,31 @@ Caltrops:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote caltrops'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.8'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Particle Projectile-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -112,10 +115,11 @@ Caltrops:
                     speed: '0.1'
                     frequency: '0.05'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Offset-f: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         forward-base: '0'
@@ -127,10 +131,11 @@ Caltrops:
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Repeat-g: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -139,10 +144,11 @@ Caltrops:
                             period: '0.5'
                             delay: '0'
                             stop-on-fail: 'False'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Particle-h: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -163,10 +169,11 @@ Caltrops:
                                 forward: '0'
                                 upward: '0'
                                 right: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                             Particle-i: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -187,10 +194,11 @@ Caltrops:
                                 forward: '0'
                                 upward: '0'
                                 right: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                             Particle-j: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -211,10 +219,11 @@ Caltrops:
                                 forward: '0'
                                 upward: '0'
                                 right: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                             Particle-k: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -235,10 +244,11 @@ Caltrops:
                                 forward: '0'
                                 upward: '0'
                                 right: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                             Area-l: 
                               type: 'target'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 radius-base: '4'
@@ -249,20 +259,22 @@ Caltrops:
                                 max-base: '99'
                                 max-scale: '0'
                                 random: 'False'
+                              preview: 
+                                enabled: 'false'
                               children: 
                                 Flag-m: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
                                     key: 'wounded'
                                     seconds-base: '5'
                                     seconds-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Damage-n: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -273,10 +285,11 @@ Caltrops:
                                     classifier: 'wounding'
                                     knockback: 'False'
                                     cause: 'Thorns'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Potion-o: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -286,10 +299,11 @@ Caltrops:
                                     tier-scale: '0'
                                     seconds-base: '1'
                                     seconds-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Damage-p: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -300,20 +314,22 @@ Caltrops:
                                     classifier: 'impairing'
                                     knockback: 'False'
                                     cause: 'Entity Attack'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Flag-q: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
                                     key: 'impaired'
                                     seconds-base: '5'
                                     seconds-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Launch-r: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -324,33 +340,38 @@ Caltrops:
                                     upward-scale: ' {}'
                                     right-base: '0'
                                     right-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
             Self-s: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-t: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '1'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Value Placeholder-u: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'caltrops_dmg'
                 type: 'Number'
                 placeholder: '%math_2+({sapi_player_class_attribute:finesse}*0.05)%'
+              preview: 
+                enabled: 'false'
               children:  {}

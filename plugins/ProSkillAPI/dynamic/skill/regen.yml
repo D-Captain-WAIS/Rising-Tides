@@ -36,7 +36,6 @@ regen:
   components: 
     Took Skill Damage-i: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
         mana: 'False'
@@ -46,10 +45,11 @@ regen:
         dmg-max: '99999999999'
         category: 
         - 'igniter'
+      preview: 
+        enabled: 'false'
       children: 
         Value-j: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             key: 'ignitestacks'
@@ -57,85 +57,96 @@ regen:
             min-value-scale: '0'
             max-value-base: '2'
             max-value-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Value Add-k: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'ignitestacks'
                 amount-base: '1'
                 amount-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
     Initialize: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Passive-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             seconds-base: '1'
             seconds-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Value Placeholder-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'False'
                 key: 'noncombatheal'
                 type: 'Number'
                 placeholder: '%math_2*(0.1*{sapi_player_class_attribute:willpower})+1.8%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'False'
                 key: 'combatheal'
                 type: 'Number'
                 placeholder: '%math_2*(0.025*{sapi_player_class_attribute:willpower})%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Combat-e: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 combat: 'False'
                 seconds: '10'
+              preview: 
+                enabled: 'false'
               children: 
                 Heal-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     type: 'Health'
                     value-base: 'noncombatheal'
                     value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Combat-g: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 combat: 'True'
                 seconds: '10'
+              preview: 
+                enabled: 'false'
               children: 
                 Heal-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     type: 'Health'
                     value-base: 'combatheal'
                     value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

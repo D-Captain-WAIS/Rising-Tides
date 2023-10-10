@@ -39,41 +39,44 @@ Low Kick:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote low_kick'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Channel-c: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             still: 'True'
             time-base: '0.33'
             time-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Delay-d: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             delay-base: '0.33'
             delay-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Cone-e: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 range-base: '4'
@@ -85,10 +88,11 @@ Low Kick:
                 caster: 'False'
                 max-base: '99'
                 max-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -99,10 +103,11 @@ Low Kick:
                     classifier: 'default'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Potion-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -112,10 +117,11 @@ Low Kick:
                     tier-scale: '0'
                     seconds-base: '2'
                     seconds-scale: '0.2'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Sound-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -125,14 +131,17 @@ Low Kick:
                     volume-scale: '0'
                     pitch-base: '1'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
         Value Placeholder-i: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'lkick_dmg'
             type: 'Number'
             placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

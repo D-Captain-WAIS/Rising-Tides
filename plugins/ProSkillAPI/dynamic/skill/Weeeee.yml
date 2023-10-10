@@ -39,13 +39,13 @@ Weeeee:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,28 +54,31 @@ Weeeee:
             lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote weeeee'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.6'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Area-e: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     radius-base: '4'
@@ -86,10 +89,11 @@ Weeeee:
                     max-base: '99'
                     max-scale: '0'
                     random: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-f: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -100,10 +104,11 @@ Weeeee:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Push-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -111,29 +116,32 @@ Weeeee:
                         speed-base: '-1'
                         speed-scale: '0.2'
                         source: 'none'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Status-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         status: 'Silence'
                         duration-base: '1.2'
                         duration-scale: '0.2'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Delay-i: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.3'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Area-j: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         radius-base: '4'
@@ -144,10 +152,11 @@ Weeeee:
                         max-base: '99'
                         max-scale: '0'
                         random: 'False'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-k: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -158,10 +167,11 @@ Weeeee:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Push-l: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -169,19 +179,21 @@ Weeeee:
                             speed-base: '-1'
                             speed-scale: '0.2'
                             source: 'none'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-m: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         delay-base: '0.4'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Area-n: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             radius-base: '3'
@@ -192,10 +204,11 @@ Weeeee:
                             max-base: '99'
                             max-scale: '0'
                             random: 'False'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-o: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -206,33 +219,38 @@ Weeeee:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
             Self-p: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-q: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '0.75'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
         Value Placeholder-r: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'wee_dmg'
             type: 'Number'
             placeholder: '%math_10+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

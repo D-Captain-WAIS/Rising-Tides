@@ -39,13 +39,13 @@ Dirt Star:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,57 +54,63 @@ Dirt Star:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote bmultishot_star'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bdstar_dmg'
                 type: 'Number'
                 placeholder: '%math_25+({sapi_player_class_attribute:finesse}*0.1)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Self-e: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '0.6'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Delay-g: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Particle Projectile-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -141,10 +147,11 @@ Dirt Star:
                     speed: '0.1'
                     frequency: '0.05'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Potion-i: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -154,10 +161,11 @@ Dirt Star:
                         tier-scale: '0'
                         seconds-base: '4'
                         seconds-scale: '0.2'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Potion-j: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -167,10 +175,11 @@ Dirt Star:
                         tier-scale: '0'
                         seconds-base: '2'
                         seconds-scale: '0.4'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Damage-k: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -181,4 +190,6 @@ Dirt Star:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}

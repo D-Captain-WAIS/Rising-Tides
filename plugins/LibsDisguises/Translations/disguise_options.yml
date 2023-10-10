@@ -652,3 +652,12 @@
 
 # Found in the disguise options for TextDisplay and uses a String
 "setText": "setText"
+
+# Found in the disguise options for Entity and uses a int
+"setTicksFrozen": "setTicksFrozen"
+
+# Found in the disguise options for Camel and uses a boolean
+
+# Found in the disguise options for Sniffer and uses a State
+# Found in the disguise options for Display and uses a int
+"setTeleportDuration": "setTeleportDuration"

@@ -39,13 +39,13 @@ Double Attack:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,28 +54,31 @@ Double Attack:
             lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote double_attack'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Single-e: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     range-base: '4'
@@ -85,10 +88,11 @@ Double Attack:
                     group: 'Enemy'
                     wall: 'False'
                     caster: 'false'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-f: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -99,19 +103,21 @@ Double Attack:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Delay-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.4'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Single-h: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         range-base: '4'
@@ -121,10 +127,11 @@ Double Attack:
                         group: 'Enemy'
                         wall: 'False'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-i: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -135,14 +142,17 @@ Double Attack:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
         Value Placeholder-j: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'dattack_dmg'
             type: 'Number'
             placeholder: '%math_20+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

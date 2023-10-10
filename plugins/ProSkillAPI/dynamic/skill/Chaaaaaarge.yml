@@ -39,40 +39,43 @@ Chaaaaaarge:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Value Placeholder-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'airspeed'
             type: 'Number'
             placeholder: '%math_0.75+({sapi_player_class_attribute:agility}*0.01)%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Placeholder-c: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'runningspeed'
             type: 'Number'
             placeholder: '%math_1.75+({sapi_player_class_attribute:agility}*0.01)%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Ground-d: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             type: 'On Ground'
+          preview: 
+            enabled: 'false'
           children: 
             Launch-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -83,17 +86,19 @@ Chaaaaaarge:
                 upward-scale: '0'
                 right-base: '0'
                 right-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Ground-f: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             type: 'Not On Ground'
+          preview: 
+            enabled: 'false'
           children: 
             Launch-g: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -104,10 +109,11 @@ Chaaaaaarge:
                 upward-scale: '0'
                 right-base: '0'
                 right-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Defense Buff-h: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
@@ -117,4 +123,6 @@ Chaaaaaarge:
             value-scale: '0'
             seconds-base: '3'
             seconds-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}

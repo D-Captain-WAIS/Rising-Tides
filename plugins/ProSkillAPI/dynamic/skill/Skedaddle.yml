@@ -37,13 +37,13 @@ Skedaddle:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Potion-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
@@ -53,4 +53,6 @@ Skedaddle:
             tier-scale: '0'
             seconds-base: '5'
             seconds-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}

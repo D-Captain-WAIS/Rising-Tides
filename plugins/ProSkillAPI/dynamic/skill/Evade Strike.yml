@@ -39,43 +39,46 @@ Evade Strike:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Value Placeholder-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'airspeed'
             type: 'Number'
             placeholder: '%math_-0.5-({sapi_player_class_attribute:agility}*0.01)%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Placeholder-c: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'groundspeed'
             type: 'Number'
             placeholder: '%math_-1.5-({sapi_player_class_attribute:agility}*0.02)%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Placeholder-d: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'estrike_dmg'
             type: 'Number'
             placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Item-e: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -84,28 +87,31 @@ Evade Strike:
             lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-f: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote evade_strike'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-g: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '.33'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Single-h: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     range-base: '4'
@@ -115,10 +121,11 @@ Evade Strike:
                     group: 'Enemy'
                     wall: 'False'
                     caster: 'false'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-i: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -129,26 +136,29 @@ Evade Strike:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Delay-j: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '.31'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Ground-k: 
                       type: 'condition'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         type: 'Not On Ground'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Launch-l: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -159,17 +169,19 @@ Evade Strike:
                             upward-scale: '0'
                             right-base: '0'
                             right-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Ground-m: 
                       type: 'condition'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         type: 'On Ground'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Launch-n: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -180,23 +192,27 @@ Evade Strike:
                             upward-scale: '0'
                             right-base: '0'
                             right-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Delay-o: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         delay-base: '.6'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-p: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
                             status: 'Root'
                             duration-base: '0.5'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}

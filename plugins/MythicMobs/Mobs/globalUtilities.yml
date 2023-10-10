@@ -1,0 +1,18 @@
+treasureChest:
+  Type: ARMOR_STAND
+  Display: '&c&l[Pistol Marine]'
+  Health: 999999999
+  Damage: 0
+  Options:
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Invincible: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=treasure_chest;step=1;} @self ~onSpawn 
+  - state{mid=treasure_chest;s=opening;li=3;lo=3} @self ~onInteract 

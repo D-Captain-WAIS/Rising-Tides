@@ -35,7 +35,6 @@ Status Effects:
   components: 
     Took Skill Damage-a: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
         mana: 'False'
@@ -45,18 +44,20 @@ Status Effects:
         dmg-max: '99999999999'
         category: 
         - 'explosive'
+      preview: 
+        enabled: 'false'
       children: 
         Flag-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             type: 'Set'
             key: 'ignited'
+          preview: 
+            enabled: 'false'
           children: 
             Value-c: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 key: 'ignitestacks'
@@ -64,28 +65,31 @@ Status Effects:
                 min-value-scale: '0'
                 max-value-base: '1'
                 max-value-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Flag-d: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'burning1'
                     seconds-base: '10'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Clear-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'ignited'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Value-f: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 key: 'ignitestacks'
@@ -93,28 +97,31 @@ Status Effects:
                 min-value-scale: '0'
                 max-value-base: '2'
                 max-value-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Flag-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'burning2'
                     seconds-base: '10'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Clear-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'ignited'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Value-i: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 key: 'ignitestacks'
@@ -122,57 +129,63 @@ Status Effects:
                 min-value-scale: '0'
                 max-value-base: '3'
                 max-value-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Flag-j: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'burning3'
                     seconds-base: '10'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Clear-k: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'ignited'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
         Value Set-l: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'burn_dmg'
             value-base: 'api-taken'
             value-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Multiply-m: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'burn_dmg'
             multiplier-base: '0.2'
             multiplier-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
     Environment Damage-n: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
         mana: 'False'
         cooldown: 'False'
         type: 'Lava'
+      preview: 
+        enabled: 'false'
       children: 
         Damage-o: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
@@ -183,33 +196,37 @@ Status Effects:
             classifier: 'lava'
             knockback: 'False'
             cause: 'Entity Attack'
+          preview: 
+            enabled: 'false'
           children:  {}
     Initialize: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Passive-q: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             seconds-base: '1'
             seconds-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Flag-r: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'Bleed'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-s: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -220,10 +237,11 @@ Status Effects:
                     classifier: 'bleed'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-t: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -244,36 +262,40 @@ Status Effects:
                     forward: '0'
                     upward: '0.75'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-u: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Not Set'
                 key: 'ignited'
+              preview: 
+                enabled: 'false'
               children: 
                 Value Set-v: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'ignitestacks'
                     value-base: '0'
                     value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-w: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'burning1'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-x: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -284,10 +306,11 @@ Status Effects:
                     classifier: 'burn'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-y: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -306,18 +329,20 @@ Status Effects:
                     forward: '0'
                     upward: '0'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-z: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'burning2'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-ab: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -328,10 +353,11 @@ Status Effects:
                     classifier: 'burn'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-bb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -350,10 +376,11 @@ Status Effects:
                     forward: '0'
                     upward: '0'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-cb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -372,18 +399,20 @@ Status Effects:
                     forward: '0'
                     upward: '0'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-db: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'burning3'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-eb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -394,10 +423,11 @@ Status Effects:
                     classifier: 'burn'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-fb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -416,10 +446,11 @@ Status Effects:
                     forward: '0'
                     upward: '0'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-gb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -438,10 +469,11 @@ Status Effects:
                     forward: '0'
                     upward: '0'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-hb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -460,18 +492,20 @@ Status Effects:
                     forward: '0'
                     upward: '0'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-ib: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'ignited'
+              preview: 
+                enabled: 'false'
               children: 
                 Value-jb: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'ignitestacks'
@@ -479,10 +513,11 @@ Status Effects:
                     min-value-scale: '0'
                     max-value-base: '1'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Particle-kb: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -501,10 +536,11 @@ Status Effects:
                         forward: '0'
                         upward: '0'
                         right: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Value-lb: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'ignitestacks'
@@ -512,10 +548,11 @@ Status Effects:
                     min-value-scale: '0'
                     max-value-base: '2'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Particle-mb: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -534,10 +571,11 @@ Status Effects:
                         forward: '0'
                         upward: '0'
                         right: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Value-nb: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'ignitestacks'
@@ -545,10 +583,11 @@ Status Effects:
                     min-value-scale: '0'
                     max-value-base: '3'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Particle-ob: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -567,54 +606,60 @@ Status Effects:
                         forward: '0'
                         upward: '0'
                         right: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
             Flag-pb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Not Set'
                 key: 'wounded'
+              preview: 
+                enabled: 'false'
               children: 
                 Value Set-qb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'wounds'
                     value-base: '0'
                     value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-rb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Not Set'
                 key: 'impaired'
+              preview: 
+                enabled: 'false'
               children: 
                 Value Set-sb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'impairedstacks'
                     value-base: '0'
                     value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-tb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'Bleed2'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-ub: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -625,10 +670,11 @@ Status Effects:
                     classifier: 'bleed'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-vb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -649,44 +695,49 @@ Status Effects:
                     forward: '0'
                     upward: '0.75'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Clear-wb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'Bleed'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-xb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Not Set'
                 key: 'vulnerable'
+              preview: 
+                enabled: 'false'
               children: 
                 Value Set-yb: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'vulnerablestacks'
                     value-base: '0'
                     value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-zb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'exposed1'
+              preview: 
+                enabled: 'false'
               children: 
                 Defense Buff-ac: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -696,10 +747,11 @@ Status Effects:
                     value-scale: '0'
                     seconds-base: '1'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-bc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -718,18 +770,20 @@ Status Effects:
                     forward: '0'
                     upward: '0.75'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-cc: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'exposed2'
+              preview: 
+                enabled: 'false'
               children: 
                 Defense Buff-dc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -739,18 +793,20 @@ Status Effects:
                     value-scale: '0'
                     seconds-base: '1'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Clear-ec: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'exposed1'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-fc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -769,18 +825,20 @@ Status Effects:
                     forward: '0'
                     upward: '0.75'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-gc: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'exposed3'
+              preview: 
+                enabled: 'false'
               children: 
                 Defense Buff-hc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -790,26 +848,29 @@ Status Effects:
                     value-scale: '0'
                     seconds-base: '1'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Clear-ic: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'exposed1'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Clear-jc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'exposed2'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle-kc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -828,28 +889,31 @@ Status Effects:
                     forward: '0'
                     upward: '0.75'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-lc: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'flip'
+              preview: 
+                enabled: 'false'
               children: 
                 Value Placeholder-mc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'yaw'
                     type: 'Number'
                     placeholder: '%player_yaw%'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Value-nc: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'yaw'
@@ -857,20 +921,22 @@ Status Effects:
                     min-value-scale: '0'
                     max-value-base: '180'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Value Placeholder-oc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'flipped_yaw'
                         type: 'Number'
                         placeholder: '%math_-180+{player_yaw}%'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Value-pc: 
                   type: 'condition'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     key: 'yaw'
@@ -878,119 +944,133 @@ Status Effects:
                     min-value-scale: '0'
                     max-value-base: '0'
                     max-value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Value Placeholder-qc: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'flipped_yaw'
                         type: 'Number'
                         placeholder: '%math_180+{player_yaw}%'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Command-rc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     command: 'tppos ~0 ~0 ~0 {flipped_yaw} 0'
                     type: 'OP'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Flag Toggle-sc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'flip'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Flag-tc: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Not Set'
                 key: 'isM1ing'
+              preview: 
+                enabled: 'false'
               children: 
                 Value Set-uc: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     key: 'm1'
                     value-base: '0'
                     value-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
         Value Add-vc: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'readybleedproc'
             amount-base: '0'
             amount-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Add-wc: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'ignitestacks'
             amount-base: '0'
             amount-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Add-xc: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'burn_dmg'
             amount-base: '0'
             amount-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Add-yc: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'wounds'
             amount-base: '0'
             amount-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Add-zc: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'impairedstacks'
             amount-base: '0'
             amount-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Add-ad: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'vulnerablestacks'
             amount-base: '0'
             amount-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Add-bd: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'm1'
             amount-base: '0'
             amount-scale: '0'
+          preview: 
+            enabled: 'false'
           children:  {}

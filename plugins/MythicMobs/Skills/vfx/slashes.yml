@@ -1,0 +1,13 @@
+RightHorizontalSlash:
+  Skills:
+  - delay 4
+  - state{mid=slash_vfx;s=right_left} @self
+  - delay 20
+  - teleportto{location=0,-200,0} @self
+LeftHorizontalSlash:
+  Skills:
+  - delay 4
+  - state{mid=slash_vfx;s=right_left} @self
+  - delay 20
+  - teleportto{location=0,-200,0} @self
+ 

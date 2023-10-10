@@ -14,7 +14,7 @@ resource-pack:
       pack-port: 8163
     external-host:
       enabled: true
-      url: https://www.dropbox.com/scl/fi/hx9pk6qglzomlzpm82w6x/generated.zip?rlkey=cn5kvsvpvjwwrd9aj82q0p0qn&dl=1
+      url: https://www.dropbox.com/scl/fi/sz19xwfb0t6uolzjiw63p/generated.zip?rlkey=oaj89sif1xlwvy7oq73wmfg8j&dl=1
       skip-url-file-type-check___DONT_ASK_HELP_IF_SET_TRUE: false
   apply-on-join: true
   kick-player-on-decline: true
@@ -45,8 +45,8 @@ resource-pack:
     compress-png-files: true
     compress-json-files: true
     generate-custom-armors-textures:
-      vanilla_1_17: true
-      optifine: true
+      vanilla_1_17: false
+      optifine: false
     disable-overwrite-leather-armor-layers-textures: false
     ignore-files-ext:
     - db
@@ -87,10 +87,7 @@ blocks:
   cancel-break-wrong-tool:
     enabled: true
     send-actionbar: true
-  campfire:
-    unlit-on-place: true
-    allow-any-item: true
-    drop_when_broken: false
+  campfire: {}
   disable-REAL: false
   disable-REAL_NOTE: false
   disable-REAL_TRANSPARENT: false
@@ -101,10 +98,16 @@ blocks:
     only-new-chunks: true
   convert-legacy-ia-region-files: true
   remove-unused-palettes-on-region-save: false
+  campfire_enhancements:
+    unlit_on_place: true
+    allow_any_item: true
+    drop_when_broken: false
+    enable: true
 items:
   fix-show-attack-and-damage-as-lore: true
   give_death_location_maps: false
   hide-custom-durability-lore: false
+  handle-wear-held-actions-on-unexpected-inventory-changes: true
 liquids:
   enabled: true
 huds:
@@ -165,8 +168,8 @@ entities:
   max-furniture-vehicles-per-chunk: 30
   allow-removing-old-furnitures_2_3_11: false
   custom-entitites:
-    enabled: true
-    emotes: true
+    enabled: false
+    emotes: false
     interval-rendering-packets-ticks: 1
     optimized-packets: true
 recipes:
@@ -178,6 +181,9 @@ recipes:
       on-pickup:
         any: false
         ingredients: true
+      on-item-click:
+        any: true
+        ingredients: true
   remove-vanilla-recipes:
     enabled: true
     list:
@@ -185,6 +191,14 @@ recipes:
       IRON_INGOT: false
   show-no-permission-popup-in-recipebook: true
   show-no-permission-chat-message: false
+  crafting:
+    enabled: true
+  cooking:
+    enabled: true
+  anvil:
+    enabled: true
+  smithing:
+    enabled: true
 debug:
   items:
     log-files-loading: false
@@ -259,3 +273,6 @@ debug:
     log-entities-loading: false
     log-entities-loading-disabled: false
   benchmark: false
+compatibility:
+  worldguard:
+    show_legacy_furniture_flags: true

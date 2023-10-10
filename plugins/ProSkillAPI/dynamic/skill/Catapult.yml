@@ -39,13 +39,13 @@ Catapult:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,19 +54,21 @@ Catapult:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote bcatapult'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Particle Animation-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -98,19 +100,21 @@ Catapult:
                 upward: '0.7'
                 right: '0.25'
                 -with-rotation: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.2'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Particle Animation-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -142,48 +146,53 @@ Catapult:
                     upward: '0'
                     right: '0'
                     -with-rotation: 'False'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Delay-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '1'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Delay-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         delay-base: '0.8'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Status-i: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
                             status: 'Stun'
                             duration-base: '0.2'
                             duration-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Remember-j: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             key: 'mypain'
                             group: 'enemy'
                             wall: 'false'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-k: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -194,10 +203,11 @@ Catapult:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Offset-l: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         forward-base: '0'
@@ -209,10 +219,11 @@ Catapult:
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Particle-m: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -231,10 +242,11 @@ Catapult:
                             forward: '0'
                             upward: '0'
                             right: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Sound-n: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -243,10 +255,11 @@ Catapult:
                             volume-scale: '0'
                             pitch-base: '0.5'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Launch-o: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -257,10 +270,11 @@ Catapult:
                         upward-scale: '0'
                         right-base: '0'
                         right-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Area-p: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         radius-base: '1'
@@ -271,10 +285,11 @@ Catapult:
                         max-base: '99'
                         max-scale: '0'
                         random: 'False'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-q: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -285,19 +300,21 @@ Catapult:
                             classifier: 'explosive'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Self-r: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-s: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -308,38 +325,42 @@ Catapult:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                 Delay-t: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.8'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Flag-u: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'self projectile'
                         seconds-base: '0.75'
                         seconds-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Delay-v: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '1'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Particle Projectile-w: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -376,10 +397,11 @@ Catapult:
                         speed: '0'
                         frequency: '0'
                         use-effect: 'False'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-x: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -390,39 +412,43 @@ Catapult:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
             Self-y: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-z: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '2.2'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Status-ab: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Root'
                     duration-base: '1.2'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Sound-bb: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -431,53 +457,59 @@ Catapult:
                 volume-scale: '0'
                 pitch-base: '2'
                 pitch-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-cb: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bcatapult_explosiondmg'
                 type: 'Number'
                 placeholder: '%math_20+({sapi_player_class_attribute:finesse}*0.2)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-db: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bcatapult_dmg'
                 type: 'Number'
                 placeholder: '%math_20+({sapi_player_class_attribute:accuracy}*0.25)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
     Initialize: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Passive-fb: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             seconds-base: '0.3'
             seconds-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Flag-gb: 
               type: 'condition'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 type: 'Set'
                 key: 'self projectile'
+              preview: 
+                enabled: 'false'
               children: 
                 Area-hb: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     radius-base: '3.5'
@@ -488,12 +520,15 @@ Catapult:
                     max-base: '99'
                     max-scale: '0'
                     random: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Remember Targets-ib: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'mypain'
+                      preview: 
+                        enabled: 'false'
                       children:  {}

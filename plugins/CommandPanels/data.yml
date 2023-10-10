@@ -1,3 +1,310 @@
 playerData:
   19894efa-01d3-43e5-82db-008cd9381b2f:
-    statpoints: '%math_(({sapi_player_class_level}-1)*5)-{cp-data-investedstatpoints}%'
+    statpoints: '410'
+    investedstatpoints: '310'
+    resetprice: '32500'
+    example_item: 'false'
+    pointsgiven: '2'
+    totalcurrentpoints: '0'
+  4f09e9ff-f5f0-4c42-a4a3-77c85dc32e65:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '78000'
+  b7d017cc-076a-4678-9dc0-29b4d7e1dff9:
+    statpoints: '0'
+    investedstatpoints: '0'
+    resetprice: '127100'
+  7494992d-e1ff-4bbd-9072-1666d3f5bac0:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '63000'
+  d8aaee3b-02c2-48c0-b387-66a68ca0f577:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '354500'
+  75f8a6ca-767c-4b33-bc2e-9e388fe22aa1:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '322000'
+  72cd5eb1-7b57-49d9-bc2e-4bfe23959874:
+    statpoints: '0'
+    investedstatpoints: '10'
+    resetprice: '2000'
+  9eace2c5-f8e0-41b4-beb0-35a296ec53a6:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '209200'
+  e05c6094-4d4b-401c-a466-53cd4ea640c3:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '277500'
+  609a6151-825d-4fe9-a23d-0ccc55b08ad5:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '324500'
+  957ae757-fcea-4235-b339-b88fa71f9df8:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '125000'
+  f52d7d90-700e-459b-988b-d60b0131c21f:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '600000'
+  01263ead-cfd1-4ac1-b4c8-fd616f9609ce:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '154500'
+  daba1f51-7b6a-4f32-a4a4-ead2f7d376a7:
+    statpoints: '310'
+    investedstatpoints: '0'
+  ecbfb5a4-7102-4933-83cd-5e4230aa55b8:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '63000'
+  87a71629-6062-40d0-9710-29e234ee2ec2:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  8146fd6d-15cd-4d5b-8e50-4b40fb7ce3e2:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '155800'
+  ab7583a5-d26a-401d-a91c-e27789670455:
+    statpoints: '10'
+    investedstatpoints: '300'
+    resetprice: '136000'
+  777c695b-2ce9-486b-b168-569886b2db64:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  f0a977d3-fa11-4fb2-8d79-ccac131fc6b9:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  9d1a3fde-3700-450b-ba32-c9304a9f181c:
+    statpoints: '310'
+    investedstatpoints: '0'
+  23bace51-31ee-4fdb-bed3-d7c1075684c8:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1400'
+  2f4e1946-b341-4289-95f4-6fe7df00a92d:
+    statpoints: '0'
+    investedstatpoints: '0'
+    resetprice: '150700'
+  54e990d1-6f1d-4b7d-a1d3-b94343f7ccdb:
+    statpoints: '0'
+    investedstatpoints: '5'
+    resetprice: '1500'
+  b266837f-b2e9-464b-a8fc-80ec4b6153bb:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '32000'
+  6cd11487-c79d-4af4-8afd-e8c29f2b70a5:
+    statpoints: '5'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  f72eff92-ca45-49bd-88c4-772f78533f95:
+    statpoints: '310'
+    investedstatpoints: '0'
+  bfd9f6ad-029f-41df-a8ab-0cd204cd8728:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '156000'
+  d6ef9142-36c3-407f-b3fd-56b8d2f59726:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  0bbe811e-04a8-4d78-b40a-fbdeee10c1d6:
+    statpoints: '4'
+    investedstatpoints: '306'
+    resetprice: '31600'
+  4cc9f7c2-c00e-44dd-821c-699980095ede:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '94000'
+  ae11c365-4679-40c8-81e5-93beb615e2d2:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '187000'
+  c44cd4c9-5908-4270-9c37-47b82b4348fb:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '63000'
+  5ea6a724-fc3e-4030-8bbe-4b8611f87630:
+    statpoints: '310'
+    investedstatpoints: '0'
+  a1732b00-e931-4546-a4cc-4ae04dd1e955:
+    statpoints: '310'
+    investedstatpoints: '0'
+  63483243-9415-4804-9c97-d2abfe111016:
+    statpoints: '310'
+    investedstatpoints: '0'
+  3e671752-8418-4111-bb58-8085d9377f17:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  ce1b80f0-85f6-479a-a96b-76abc0e02cde:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '90300'
+  b28f0ecb-de85-4eea-bbbb-bc12816b3acd:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  7f45d21f-a9b0-48a8-b898-30144d6c0750:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '63100'
+  f984d3b7-6bec-41a8-af36-f1721c95a75b:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '892000'
+  c8d92afe-14b7-4a82-8c10-e29e3269c2c8:
+    statpoints: '50'
+    investedstatpoints: '260'
+    resetprice: '58000'
+  bec469cd-5267-46be-ab78-df1f5f783d92:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  549332ef-200a-4b16-a430-bd3e275d81d7:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  402d888e-140f-45f0-8af1-0dd6125b8459:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  ab48b2fb-a5e8-4622-b783-e01ff6bfd59b:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  7e581105-fb07-4cb1-a0b7-b4fdc0f2c30c:
+    statpoints: '192'
+    investedstatpoints: '118'
+    resetprice: '12800'
+  7ebde1a8-40d5-4663-a8ca-44551c514403:
+    statpoints: '225'
+    investedstatpoints: '85'
+    resetprice: '9500'
+  de0dc04e-67ac-43ad-823f-f6cb631377e5:
+    statpoints: '310'
+    investedstatpoints: '0'
+  d5536d0f-efa8-40e6-907e-34af3c8a339a:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  efa03037-eb4c-418a-a210-762b49355d6e:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  ee6737c8-88a8-43a6-bf20-41c7839ef4d9:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '63000'
+  0bcdd053-64fe-41c6-8a3c-7ace2c93e84d:
+    statpoints: '310'
+    investedstatpoints: '0'
+  e444afb3-8427-455e-b1b1-a926254bed11:
+    statpoints: '0'
+    investedstatpoints: '0'
+    resetprice: '6900'
+  afcd513a-9fc5-4fe8-8dde-69702f5fbe79:
+    statpoints: '310'
+    investedstatpoints: '0'
+  822c3ff3-a9d9-4ee3-8a73-eba285e302a4:
+    statpoints: '310'
+    investedstatpoints: '0'
+  1a2edef4-2118-428e-b540-051f07a7ab43:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '94000'
+  93f8bf9d-a19c-446e-b976-5bb1779ce1f1:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  9c235fc0-63a2-45b1-9945-f06aab187036:
+    statpoints: '310'
+    investedstatpoints: '0'
+  7883bef5-cd52-44fa-8f13-46f8f52353d0:
+    statpoints: '3'
+    investedstatpoints: '307'
+    resetprice: '93700'
+  538900a6-9df8-4e72-97b7-aa97afd37658:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  4efd7e67-ed9c-418e-b5ee-9cd4de8ebb74:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '63000'
+  04796460-48a9-4a14-9ea4-7b4383cebc95:
+    statpoints: '110'
+    investedstatpoints: '200'
+    resetprice: '21000'
+  a3d8c042-72e3-42ef-87e9-1dfeb6f3d432:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '23000'
+  b9915316-53e6-4d66-9c5f-e23fe416b1e1:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  92453a51-d901-4c9a-bacf-3306edfd9970:
+    statpoints: '310'
+    investedstatpoints: '0'
+  bd5c4499-e468-4da9-846f-393a7887b13b:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '54000'
+  c47ea70f-4280-4d3f-b793-ae95fb819c4d:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  eac6b178-d4cb-4564-8895-8a91d2aedd14:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  d6d250ed-3d03-4ad5-bc81-3d3683fb6c0d:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '32000'
+  5097cefa-5923-4033-a358-e4b2b72befa1:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  b55b41fb-9f2e-4077-878c-7b8a0b61887e:
+    statpoints: '0'
+    investedstatpoints: '310'
+    resetprice: '218000'
+  72429041-74c8-416f-9096-1e602168fbd4:
+    statpoints: '310'
+    investedstatpoints: '0'
+  2e2648b6-b5b1-4144-84a9-ea37f8111f7e:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '31000'
+  a44ef9f5-d575-456c-b4e2-e50be2f84e1c:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'
+  9810848a-19d1-4b29-9458-506311250b35:
+    statpoints: '310'
+    investedstatpoints: '0'
+  d6473725-e427-400e-ba28-e34f53b4dfe1:
+    statpoints: '310'
+    investedstatpoints: '0'
+  20e97b60-aff3-4b19-929e-e475ccebbb05:
+    statpoints: '310'
+    investedstatpoints: '0'
+  d3f6f2c2-1bbb-4064-8d6e-c4be8d6df9be:
+    statpoints: '310'
+    investedstatpoints: '0'
+  61f74d9f-72be-4b7f-bf7c-6fce58a5d89c:
+    statpoints: '310'
+    investedstatpoints: '0'
+  ebd04b0c-b243-4f62-84df-be14a1c11d04:
+    statpoints: '310'
+    investedstatpoints: '0'
+    resetprice: '1000'

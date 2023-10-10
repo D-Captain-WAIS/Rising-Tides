@@ -1,0 +1,20 @@
+dawnRat1:
+  MobName: dawnRat
+  World: dawn_island
+  X: 340
+  Y: 31
+  Z: 475
+  Yaw: 0.0
+  Pitch: 0.0
+  MobLevel: '1'
+  Radius: 1.0
+  MaxMobs: '7'
+  Warmup: 30
+  Cooldown: 10
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0
+  LeashRange: 30.0
+  ResetThreatOnLeash: true
+  HealOnLeash: false
+  ActivationRange: 100.0

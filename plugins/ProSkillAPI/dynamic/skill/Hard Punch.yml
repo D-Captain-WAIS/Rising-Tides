@@ -36,13 +36,13 @@ Hard Punch:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -51,19 +51,21 @@ Hard Punch:
             lore: 'Gloves'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote hard_punch'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Single-d: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 range-base: '3'
@@ -73,29 +75,32 @@ Hard Punch:
                 group: 'Enemy'
                 wall: 'true'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Channel-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'true'
                     still: 'true'
                     time-base: '0.5'
                     time-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Delay-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'true'
                     delay-base: '0.5'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Sound-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'true'
@@ -105,10 +110,11 @@ Hard Punch:
                         volume-scale: '0'
                         pitch-base: '1'
                         pitch-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Damage-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -119,14 +125,17 @@ Hard Punch:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
         Value Placeholder-i: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'hpunch_damage'
             type: 'Number'
             placeholder: '%math_20+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

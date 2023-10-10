@@ -29,10 +29,10 @@ Coin: Moeda
 Coins: Moedas
 PlayerPoint: PlayerPoint
 PlayerPoints: PlayerPoints
-Token: "Token"
-Tokens: "Tokens"
-ClaimBlock: "ClaimBlock"
-ClaimBlocks: "ClaimBlocks"
+Token: Token
+Tokens: Tokens
+ClaimBlock: ClaimBlock
+ClaimBlocks: ClaimBlocks
 Status: Estado
 Ready: Disponível
 Not_Ready: Indisponível
@@ -87,24 +87,31 @@ Layout_Does_Not_Exist: '&cEste layout não existe!'
 Layout_Activated: '&7O layout ''&b%name%&7'' foi &aativado&7.'
 Layout_Deleted: '&7O layout ''&b%name%&7'' foi &cdeletado&7.'
 Enter_Correct_Name_Space: '&cPor favor, não use espaços.'
-Sure_That_You_Want_To_Loose_Your_Data: '&7Tem certeza de que &cnão &7quer &csalvar &7suas alterações?'
+Sure_That_You_Want_To_Loose_Your_Data: '&7Tem certeza de que &cnão &7quer &csalvar
+  &7suas alterações?'
 Close: Fechar
 Layout_Already_Activated: '&7Este layout &cjá foi ativado&7!'
-Layout_Set_Replacement_For_Money: '&7Ícone, que &esubstitui o icone de dinheiro&7, quando &eum plugin de economia não é detectado.'
-Layout_Hint_Same_Slot_Amount: '&7Ambos os trocadores devem ter &7a mesma quantidade de slots&7!'
+Layout_Set_Replacement_For_Money: '&7Ícone, que &esubstitui o icone de dinheiro&7,
+  quando &eum plugin de economia não é detectado.'
+Layout_Hint_Same_Slot_Amount: '&7Ambos os trocadores devem ter &7a mesma quantidade
+  de slots&7!'
 Current_Amount: Valor atual
 Trade_Spam: '&7Este jogador &já recebeu uma solicitação de troca&7!'
 Plugin_Reloading: '&cO plugin será recarregado agora...'
 Success_Plugin_Reloaded: '&aO plugin foi recarregado.'
 Player_is_not_in_range: '&7O jogador &c%player% &7 não está no alcance &7!'
 Cannot_trade_in_that_GameMode: '&7Você não pode Trocar &7neste modo de jogo!'
-Other_cannot_trade_in_that_GameMode: '&7Este jogador não pode trocar &7com seu modo de jogo!'
+Other_cannot_trade_in_that_GameMode: '&7Este jogador não pode trocar &7com seu modo
+  de jogo!'
 Trade_cancelled_by_attack: '&cA troca foi cancelada devido a um ataque.'
-Trade_Partner_No_Space: '&7Seu parceiro de troca não tem &cnenhum espaço &7em seu inventário!'
+Trade_Partner_No_Space: '&7Seu parceiro de troca não tem &cnenhum espaço &7em seu
+  inventário!'
 Trade_Offline: '&7Você &cnão está mais disponível &7para solicitações de troca!'
 Trade_Online: '&7Agora você está &adisponível &7para solicitações de troca!'
-Trade_Partner_is_Offline: '&7Este jogador &cnão está disponível &7para pedidos de troca!'
-Trade_You_are_Offline: '&7Use "%command%&e/trade toggle%command%&7" para trocar de novo.'
+Trade_Partner_is_Offline: '&7Este jogador &cnão está disponível &7para pedidos de
+  troca!'
+Trade_You_are_Offline: '&7Use "%command%&e/trade toggle%command%&7" para trocar de
+  novo.'
 Trade_Placed_Blocked_Item: '&7Este item &não &7pode ser negociado!'
 Cannot_trade_in_bed: '&cVocê não pode Trocar&7 enquanto estiver deitado na cama.'
 Cannot_trade_in_world: '&7Você não pode Trocar &7neste mundo!'
@@ -119,9 +126,13 @@ Your_request_expired: '&7Sua solicitação de troca para &e%player% &7expirou&7.
 Request_expired: '&7A solicitação de troca de &e%player% &7expirou&7.'
 Fancy_Countdown: ' &7- &e%seconds%s'
 Economy_Error: '&7O comércio foi &cancelado &7devido a um &cerro econômico&7.'
-Items_Dropped: '&7Seu inventário estava &ccheio&7, alguns itens foram &cdropados no chão&7!'
+Items_Dropped: '&7Seu inventário estava &ccheio&7, alguns itens foram &cdropados no
+  chão&7!'
 TradeLog_Disabled: '&7O registro de transações está &cdesativado&7!'
-Sign_Enter_Amount: "^^^^^^^^\nInsira a quantia\nacima"
+Sign_Enter_Amount: |-
+  ^^^^^^^^
+  Insira a quantia
+  acima
 Leftclick: Clique-esquerdo
 Rightclick: Clique-direito
 Shift_Leftclick: Shift-Clique-esquerdo
@@ -140,8 +151,8 @@ Exp_Points: Pontos de EXP
 Exp_Point: Ponto de EXP
 Reset: Resetar
 Balance_limit_reached: '&7Seu saldo é &cinsuficiente&7.'
-AnvilGUI_Title: 'Repair & Name'
-Shulker_Box: 'Shulker Box'
-Trade_Finish_Report_Receive: "  &a+ &7%object%"
-Trade_Finish_Report_Give: "  &c- &7%object%"
-Trade_Finish_Report_Object_Item: "%amount%x %item%"
+AnvilGUI_Title: Repair & Name
+Shulker_Box: Shulker Box
+Trade_Finish_Report_Receive: '  &a+ &7%object%'
+Trade_Finish_Report_Give: '  &c- &7%object%'
+Trade_Finish_Report_Object_Item: '%amount%x %item%'

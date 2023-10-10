@@ -38,13 +38,13 @@ Special Volley:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,38 +53,42 @@ Special Volley:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote bspecial_volley'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bspvolley_dmg'
                 type: 'Number'
                 placeholder: '%math_12+({sapi_player_class_attribute:accuracy}*0.12)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Repeat-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -93,10 +97,11 @@ Special Volley:
                     period: '0.45'
                     delay: '0'
                     stop-on-fail: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Particle Projectile-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -132,10 +137,11 @@ Special Volley:
                         speed: '0.1'
                         frequency: '0.05'
                         use-effect: 'False'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-h: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -146,10 +152,11 @@ Special Volley:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Sound-i: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -158,10 +165,11 @@ Special Volley:
                             volume-scale: '0'
                             pitch-base: '1.5'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Sound-j: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -170,23 +178,27 @@ Special Volley:
                         volume-scale: '0'
                         pitch-base: '1.3'
                         pitch-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
             Self-k: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-l: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '1'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

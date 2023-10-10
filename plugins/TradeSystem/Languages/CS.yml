@@ -27,6 +27,12 @@ GUI_Title: '&cObchodování s %player%%tradesystem_countdown_fancy%'
 Money_Amount: Tvůj obnos peněz
 Coin: mince
 Coins: Mince
+PlayerPoint: PlayerPoint
+PlayerPoints: PlayerPoints
+Token: Token
+Tokens: Tokens
+ClaimBlock: ClaimBlock
+ClaimBlocks: ClaimBlocks
 Status: Status
 Ready: Připraven
 Not_Ready: Nepřipraven
@@ -84,7 +90,8 @@ Enter_Correct_Name_Space: '&cNepoužívej prosím mezery!.'
 Sure_That_You_Want_To_Loose_Your_Data: '&7Jsi si jist &7že &cnechceš &7uložit změny?'
 Close: Zavřít
 Layout_Already_Activated: '&7Toto rozložení &cjiž bylo aktivováno&7!'
-Layout_Set_Replacement_For_Money: '&7Ikona která &enahradí ikonu penez&7, když &ekdyž není zjišten žadný &7ekonomický plugin.'
+Layout_Set_Replacement_For_Money: '&7Ikona která &enahradí ikonu penez&7, když &ekdyž
+  není zjišten žadný &7ekonomický plugin.'
 Layout_Hint_Same_Slot_Amount: '&7Oba hráči &cmusí mít &cstejný počet slotů&7!'
 Current_Amount: Aktualní částka
 Trade_Spam: '&7Tento hráč &cjiž obdržel žádost o trade&7!'
@@ -92,18 +99,23 @@ Plugin_Reloading: '&cPlugin se znovu načítá...'
 Success_Plugin_Reloaded: '&aPlugin se znovu načetl.'
 Player_is_not_in_range: '&c%player% &7není v dosahu&7!'
 Cannot_trade_in_that_GameMode: '&7V tomto &cherním režimu &7nelze obchodovat!'
-Other_cannot_trade_in_that_GameMode: '&7Tento hráč &cnemůže obchodovat &7v tomto herním modu!'
+Other_cannot_trade_in_that_GameMode: '&7Tento hráč &cnemůže obchodovat &7v tomto herním
+  modu!'
 Trade_cancelled_by_attack: '&cObchod byl zrušen protože jsi byl zraněn!.'
-Trade_Partner_No_Space: '&7Tvůj obchodní partner &cnemůže obchodovat protože &7nemá místo v inventáři!'
+Trade_Partner_No_Space: '&7Tvůj obchodní partner &cnemůže obchodovat protože &7nemá
+  místo v inventáři!'
 Trade_Offline: '&7Již nejsi &ck dispozici &7pro obchodování!'
 Trade_Online: '&7Nyní jsi &ak dispozici &7pro obchodování!'
 Trade_Partner_is_Offline: '&7Tento hráč &cneni k dispozici &7pro obchodování!'
-Trade_You_are_Offline: '&7Zadej "%command%&e/trade toggle%command%&7" pro opakování obchodu.'
+Trade_You_are_Offline: '&7Zadej "%command%&e/trade toggle%command%&7" pro opakování
+  obchodu.'
 Trade_Placed_Blocked_Item: '&7S touto &cpoložkou &7nemůžeš obchodovat!'
 Cannot_trade_in_bed: '&cNemůžes obchodovat&7, když ležíš v posteli.'
 Cannot_trade_in_world: '&7V toomto &csvětě &7nelze obchodovat!'
 Other_cannot_trade_in_world: '&7Tento hráč §cnemůže &7nemůže obchodovat ve svém světě!'
 Cannot_trade_while_invisible: '&cNemůžeš obchodovat &7když jsi &cneviditelný&7!'
+Cannot_trade_in_region: '&7You &ccannot trade &7in this region!'
+Other_cannot_trade_in_region: '&7This player &ccannot trade &7in their region!'
 Other_is_already_trading: '&7Tento hráč &cjiž v tuto &7chvíli obchoduje, prosím počkej.'
 Online: Online
 Offline: Offline
@@ -112,23 +124,31 @@ Request_expired: '&7Požadavek na obchod od &e%player% vypršel&7.'
 Fancy_Countdown: ' &7- &e%seconds%s'
 Economy_Error: '&7Obchod byl &czrušen &7kvůli &cchybě ekonomiky&7.'
 Items_Dropped: '&7Tvůj inventář je &cplný&7, nějaké věci byli &cvyhozeny na zem&7!'
-TradeLog_Disabled: "&7Logování obchodů bylo &cvypnuto&7!"
-Sign_Enter_Amount: "^^^^^^^^\nVlož částku\nnahoře"
-Leftclick: 'Levý klik'
-Rightclick: 'Pravý klik'
-Shift_Leftclick: 'Shift-Levý klik'
-Shift_Rightclick: 'Shift-Pravý klik'
-Select: 'Vybrat'
-Select_Foreign_Preview: 'Vyber cizí náhled'
-Edit: 'Změnit'
-Edit_Variant: 'Změnit variantu'
-Variant: 'Varianta'
-Cancel: 'Zrušit'
-Finish: 'Dokončit'
-Levels: 'Levely'
-Level: 'Level'
+TradeLog_Disabled: '&7Logování obchodů bylo &cvypnuto&7!'
+Sign_Enter_Amount: |-
+  ^^^^^^^^
+  Vlož částku
+  nahoře
+Leftclick: Levý klik
+Rightclick: Pravý klik
+Shift_Leftclick: Shift-Levý klik
+Shift_Rightclick: Shift-Pravý klik
+Select: Vybrat
+Select_Foreign_Preview: Vyber cizí náhled
+Edit: Změnit
+Edit_Variant: Změnit variantu
+Variant: Varianta
+Cancel: Zrušit
+Finish: Dokončit
+Levels: Levely
+Level: Level
 Too_Little_Exp: '&cNemáš &cexp na obchodování&7.'
-Exp_Points: "Xp body"
-Exp_Point: "Xp bod"
-Open_GUI_Error: '&7Obchod byl &czrušen &7 kvůli &cotevření inventáře&7.'
-Reset: "Reset"
+Exp_Points: Xp body
+Exp_Point: Xp bod
+Reset: Reset
+Balance_limit_reached: '&7Váš zůstatek je &cnedostatečný&7.'
+AnvilGUI_Title: Repair & Name
+Shulker_Box: Shulker Box
+Trade_Finish_Report_Receive: '  &a+ &7%object%'
+Trade_Finish_Report_Give: '  &c- &7%object%'
+Trade_Finish_Report_Object_Item: '%amount%x %item%'

@@ -39,22 +39,23 @@ Overhand Swing:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote overhand_swing'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Single-c: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             range-base: '3'
@@ -64,29 +65,32 @@ Overhand Swing:
             group: 'Enemy'
             wall: 'False'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children: 
             Channel-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 still: 'True'
                 time-base: '.45'
                 time-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.45'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -97,20 +101,22 @@ Overhand Swing:
                     classifier: 'default'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Status-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Stun'
                     duration-base: '1'
                     duration-scale: '0.2'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Sound-h: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -120,14 +126,17 @@ Overhand Swing:
                 volume-scale: '0'
                 pitch-base: '1'
                 pitch-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Value Placeholder-i: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'swing_dmg'
             type: 'Number'
             placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

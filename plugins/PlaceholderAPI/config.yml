@@ -22,6 +22,7 @@ expansions:
     Rounding: half-up
     Decimals: 3
     Debug: false
+    Disable-Warnings: false
   player:
     ping_value:
       high: 100
@@ -39,3 +40,6 @@ expansions:
       medium: '&e'
       high: '&c'
       low: '&a'
+  checkitem:
+    give_enabled: false
+    remove_enabled: false

@@ -163,6 +163,7 @@ dynamics:
     disable-soil-dehydration: false
     disable-coral-block-fade: false
     snow-fall-blocks: []
+    disable-copper-block-fade: false
 blacklist:
     use-as-whitelist: false
     logging:

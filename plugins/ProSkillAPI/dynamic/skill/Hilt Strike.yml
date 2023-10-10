@@ -39,13 +39,13 @@ Hilt Strike:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,29 +54,32 @@ Hilt Strike:
             lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote hilt_strike'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Channel-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 still: 'True'
                 time-base: '0.54'
                 time-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Single-e: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     range-base: '3'
@@ -86,10 +89,11 @@ Hilt Strike:
                     group: 'Enemy'
                     wall: 'False'
                     caster: 'false'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-f: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -100,24 +104,28 @@ Hilt Strike:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Status-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         status: 'Stun'
                         duration-base: '1'
                         duration-scale: '0.2'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
         Value Placeholder-h: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'hstrike_dmg'
             type: 'Number'
             placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

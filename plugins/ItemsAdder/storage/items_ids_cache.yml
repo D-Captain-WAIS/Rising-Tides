@@ -1,147 +1,111 @@
 PAPER:
-  z_iainternal:icon_left_blue: 10000
-  z_iainternal:icon_right_blue: 10001
-  z_iainternal:icon_search: 10002
-  z_iainternal:icon_cancel: 10003
-  z_iainternal:icon_arrow_chest: 10004
-  z_iainternal:icon_back_orange: 10005
-  z_iainternal:icon_next_orange: 10006
-  utilites:vivre: 10007
-  _iainternal:icon_left_blue: 10008
-  _iainternal:icon_right_blue: 10009
-  _iainternal:icon_search: 10010
-  _iainternal:icon_cancel: 10011
-  _iainternal:icon_arrow_chest: 10012
-  _iainternal:icon_back_orange: 10013
-  _iainternal:icon_next_orange: 10014
-  utilities:vivre: 10015
-  hmccosmetics:backpack: 10016
-  hmccosmetics:backpack_thirdperson: 10017
-  hmccosmetics:lantern_cosmetic: 10018
-  hmccosmetics:baseball_hat: 10019
-  hmccosmetics:hmccosmetics_icon: 10020
-  hmccosmetics:arrow_back: 10021
-  hmccosmetics:arrow_next: 10022
-  hmccosmetics:kite_item: 10023
-  hmccosmetics:future_wings: 10024
-  hmccosmetics:future_wings_thirdperson: 10025
-  hmccosmetics:frog_hat: 10026
-  hmccosmetics:jetpack: 10027
-  hmccosmetics:hammer: 10028
-  hmcwraps:fire_sword_wrap: 10029
-  hmcwraps:fire_pickaxe_wrap: 10030
-  hmcwraps:unwrapper: 10031
-  sunrise:bogarp_coat: 10032
-  shop:purple_scarf: 10033
-  shop:hat_mask: 10034
-  utilities:capsento: 10035
-  shop:cap_hat: 10036
-  shop:cap_coat: 10037
-  utilities:gold_question_mark: 10038
-  utilities:gold_exclamation_mark: 10039
-  utilities:iron_question_mark: 10040
-  utilities:iron_exclamation_mark: 10041
-  shop:bead_hat: 10042
-  shop:pink_corsage: 10043
-  shop:purple_sumo_belt: 10044
-  shop:snake_earrings: 10045
-  shop:bird_glasses: 10046
-  shop:bluedolph: 10047
-  shop:clown_nose: 10048
-  shop:cross_necklace: 10049
-  shop:bubbly_bandanna: 10050
-  shop:god_bandanna: 10051
-  shop:goth_crown: 10052
-  shop:bear_hat: 10053
-  shop:shroom_hat: 10054
-  shop:punk_goggles: 10055
-  shop:goggle_hat: 10056
-  shop:ribbon_cloak: 10057
-  shop:triple_cigar: 10058
-  shop:straw_hat: 10059
-  utilities:back: 10060
-  utilities:ring: 10061
-  utilities:trinket: 10062
-  utilities:necklace: 10063
-  utilities:artifact: 10064
-  utilities:compass: 10065
-  shop:orange_sunglasses: 10066
-  shop:yellow_sunglasses: 10067
-  shop:swan_headband: 10068
-  shop:money_eyes: 10069
-  shop:heart_eyes: 10070
-  utilities:logbook: 10071
-  utilities:mushi: 10072
-  shop:soul_shades: 10073
-  shop:triangle_shades: 10074
-  sunrise:back_fin: 10075
-  sunrise:fishman_head: 10076
-  sunrise:shandian_wings: 10077
-  sunrise:bear_ears: 10078
-  sunrise:bear_tail: 10079
-  sunrise:bunny_tail: 10080
-  sunrise:bunny_ears: 10081
-  sunrise:dog_ears: 10082
-  sunrise:dog_tail: 10083
-  utilities:yoru: 10084
-  myitems:marble_brick: 10085
-  myitems:cracked_marble_brick: 10086
-  myitems:moss_marble_brick: 10087
-  myitems:dark_oxidized_copper: 10088
-  myitems:yellow_wood: 10089
-  myitems:orange_wood: 10090
-  myitems:green_wood: 10091
-  shellcity:marble_brick: 10092
-  shellcity:cracked_marble_brick: 10093
-  shellcity:moss_marble_brick: 10094
-  shellcity:dark_oxidized_copper: 10095
-  shellcity:yellow_wood: 10096
-  shellcity:orange_wood: 10097
-  shellcity:green_wood: 10098
-PLAYER_HEAD:
-  __manually_handled:iainternal__player_hat_slot: 10000
-  __manually_handled:iainternal__player_left_arm_slot: 10001
-  __manually_handled:iainternal__player_right_arm_slot: 10002
-  __manually_handled:iainternal__player_phead_0: 10003
-  __manually_handled:iainternal__player_parm_left_3: 10004
-  __manually_handled:iainternal__player_pbody_2: 10005
-  __manually_handled:iainternal__player_pleg_left_1: 10006
-  __manually_handled:iainternal__player_pleg_right_5: 10007
-  __manually_handled:iainternal__player_parm_right_4: 10008
-LEATHER_HORSE_ARMOR:
-  hmccosmetics:beanie: 10000
-  hmccosmetics:paintbrush: 10001
-  hmccosmetics:explorer_backpack: 10002
-NETHERITE_SWORD:
-  hmcwraps:fire_sword: 10000
-  utilities:capsento: 10001
-NETHERITE_PICKAXE:
-  hmcwraps:fire_pickaxe: 10000
-IRON_SWORD:
-  hmcwraps:silver_sword: 10000
-  sunrise:rusty_cutlass: 10001
-  sunrise:duelist_single_common: 10002
-  sunrise:duelist_single_uncommon: 10003
-  sunrise:duelist_single_rare: 10004
-  sunrise:duelist_single_ultra_rare: 10005
-  sunrise:duelist_single_epic: 10006
-  sunrise:duelist_single_legendary: 10007
-  sunrise:duelist_single_mythical: 10008
-  sunrise:duelist_single_unique: 10009
-IRON_AXE:
-  hmcwraps:silver_axe: 10000
-IRON_PICKAXE:
-  hmcwraps:silver_pickaxe: 10000
-IRON_SHOVEL:
-  hmcwraps:silver_shovel: 10000
-IRON_HOE:
-  hmcwraps:silver_hoe: 10000
-  sunrise:rusty_pistol: 10001
-  sunrise:standard_pistol: 10002
-GOLD_NUGGET:
-  sunrise:bullet: 10000
-  utilities:bola: 10001
-  utilities:bottle: 10002
+  utilities:vivre: 10000
+  shop:purple_scarf: 10001
+  shop:hat_mask: 10002
+  shop:cap_hat: 10003
+  shop:cap_coat: 10004
+  shop:bead_hat: 10005
+  shop:pink_corsage: 10006
+  shop:purple_sumo_belt: 10007
+  shop:snake_earrings: 10008
+  shop:bird_glasses: 10009
+  shop:bluedolph: 10010
+  shop:clown_nose: 10011
+  shop:cross_necklace: 10012
+  shop:bubbly_bandanna: 10013
+  shop:god_bandanna: 10014
+  shop:goth_crown: 10015
+  shop:bear_hat: 10016
+  shop:shroom_hat: 10017
+  shop:punk_goggles: 10018
+  shop:goggle_hat: 10019
+  shop:ribbon_cloak: 10020
+  shop:triple_cigar: 10021
+  shop:straw_hat: 10022
+  shop:orange_sunglasses: 10023
+  shop:yellow_sunglasses: 10024
+  shop:swan_headband: 10025
+  shop:money_eyes: 10026
+  shop:heart_eyes: 10027
+  shop:soul_shades: 10028
+  shop:triangle_shades: 10029
+  hmccosmetics:backpack: 10030
+  hmccosmetics:backpack_thirdperson: 10031
+  hmccosmetics:lantern_cosmetic: 10032
+  hmccosmetics:baseball_hat: 10033
+  hmccosmetics:hmccosmetics_icon: 10034
+  hmccosmetics:arrow_back: 10035
+  hmccosmetics:arrow_next: 10036
+  hmccosmetics:kite_item: 10037
+  hmccosmetics:future_wings: 10038
+  hmccosmetics:future_wings_thirdperson: 10039
+  hmccosmetics:frog_hat: 10040
+  hmccosmetics:jetpack: 10041
+  hmccosmetics:hammer: 10042
+  _iainternal:icon_left_blue: 10043
+  _iainternal:icon_right_blue: 10044
+  _iainternal:icon_search: 10045
+  _iainternal:icon_cancel: 10046
+  _iainternal:icon_arrow_chest: 10047
+  _iainternal:icon_back_orange: 10048
+  _iainternal:icon_next_orange: 10049
+  hmcwraps:fire_sword_wrap: 10050
+  hmcwraps:fire_pickaxe_wrap: 10051
+  hmcwraps:unwrapper: 10052
+  shellcity:marble_brick: 10053
+  shellcity:cracked_marble_brick: 10054
+  shellcity:moss_marble_brick: 10055
+  shellcity:dark_oxidized_copper: 10056
+  shellcity:yellow_wood: 10057
+  shellcity:orange_wood: 10058
+  shellcity:green_wood: 10059
+  sunrise:bogarp_coat: 10060
+  sunrise:pirate_coat: 10061
+  sunrise:rev_coat: 10062
+  sunrise:marine_hat: 10063
+  sunrise:back_fin: 10064
+  sunrise:shark_back_fin: 10065
+  sunrise:shark_hand_fins: 10066
+  sunrise:fishman_head: 10067
+  sunrise:shandian_wings: 10068
+  sunrise:bear_ears: 10069
+  sunrise:bear_tail: 10070
+  sunrise:bunny_tail: 10071
+  sunrise:bunny_ears: 10072
+  sunrise:dog_ears: 10073
+  sunrise:dog_tail: 10074
+  utilities:yoru: 10075
+  utilities:blank_quest: 10076
+  utilities:campaign_objective: 10077
+  utilities:campaign_available: 10078
+  utilities:campaign_in_progress: 10079
+  utilities:campaign_page: 10080
+  utilities:campaign_record: 10081
+  utilities:mission_objective: 10082
+  utilities:mission_available: 10083
+  utilities:mission_in_progress: 10084
+  utilities:mission_page: 10085
+  utilities:quest_objective: 10086
+  utilities:quest_available: 10087
+  utilities:quest_in_progress: 10088
+  utilities:quest_page: 10089
+  utilities:quest_record: 10090
+  utilities:logbook_feats_icon: 10091
+  utilities:logbook_maps_icon: 10092
+  utilities:logbook_missions_icon: 10093
+  utilities:logbook_quests_icon: 10094
+  utilities:logbook_records_icon: 10095
+  utilities:logbook_next: 10096
+  utilities:logbook_back: 10097
+  utilities:iron_question_mark: 10098
+  utilities:back: 10099
+  utilities:ring: 10100
+  utilities:trinket: 10101
+  utilities:necklace: 10102
+  utilities:artifact: 10103
+  utilities:compass: 10104
+  utilities:logbook: 10105
+  utilities:mushi: 10106
 BOOK:
   utilities:constitution: 10000
   utilities:endurance: 10001
@@ -151,96 +115,69 @@ BOOK:
   utilities:dexterity: 10005
   utilities:accuracy: 10006
   utilities:finesse: 10007
-  utilities:missions: 10008
-  utilities:respec: 10009
-  utilities:chassis: 10010
-  utilities:skills: 10011
+  utilities:respec: 10008
+  utilities:missions: 10009
+  utilities:skills: 10010
+  utilities:chassis: 10011
   utilities:combat: 10012
 PUMPKIN_SEEDS:
   utilities:empty: 10000
-  sunrise:hard_punch: 10001
-  sunrise:hard_kick: 10002
-  sunrise:flail: 10003
-  sunrise:skedaddle: 10004
-  sunrise:double_punch: 10005
-  sunrise:ottf: 10006
-  sunrise:overhand_swing: 10007
-  sunrise:running_kick: 10008
-  sunrise:dropkick: 10009
-  sunrise:low_kick: 10010
-  sunrise:gootw: 10011
-  sunrise:charge: 10012
-  sunrise:2h_attack: 10013
-  sunrise:charge_attack: 10014
-  sunrise:dash_swing: 10015
-  sunrise:double_attack: 10016
-  sunrise:evade_strike: 10017
-  sunrise:hilt_strike: 10018
-  sunrise:jump_attack: 10019
-  sunrise:overhead_swing: 10020
-  sunrise:piercing_strike: 10021
-  sunrise:poke: 10022
-  sunrise:wee: 10023
-  sunrise:arc_shot: 10024
-  sunrise:bola_shot: 10025
-  sunrise:bounce_shot: 10026
-  sunrise:caltrops: 10027
-  sunrise:catapult: 10028
-  sunrise:dirt_star: 10029
-  sunrise:firestarter: 10030
-  sunrise:multishot: 10031
-  sunrise:slipup: 10032
-  sunrise:special_volley: 10033
-  sunrise:whats_that: 10034
-  sunrise:quick_swings: 10035
-  sunrise:firecracker: 10036
-  sunrise:blunder_leap: 10037
-  sunrise:chamber_blast: 10038
-  sunrise:critical_shot: 10039
-  sunrise:dive_shot: 10040
-  sunrise:double_tap: 10041
-  sunrise:fast_hands: 10042
-  sunrise:impairing_shot: 10043
-  sunrise:pistol_whip: 10044
-  sunrise:run: 10045
-  sunrise:spray_and_pray: 10046
-  sunrise:tactical_dive: 10047
-  sunrise:vital_shot: 10048
-GOLDEN_SWORD:
-  sunrise:wraps_common: 10000
-  sunrise:wraps_uncommon: 10001
-  sunrise:wraps_rare: 10002
-  sunrise:wraps_ultra_rare: 10003
-  sunrise:wraps_epic: 10004
-  sunrise:wraps_legendary: 10005
-  sunrise:wraps_mythical: 10006
-  sunrise:wraps_unique: 10007
-  sunrise:mountain_wraps: 10008
-  sunrise:standard_gloves: 10009
-GRAY_DYE:
-  sunrise:duelist_single_common: 10000
-  sunrise:rusty_cutlass: 10001
-  utilities:bola: 10002
-  sunrise:standard_sword: 10003
-  sunrise:griffon: 10004
-GREEN_DYE:
-  sunrise:duelist_single_uncommon: 10000
-LIME_DYE:
-  sunrise:duelist_single_rare: 10000
-COAL:
-  sunrise:rusty_cutlass: 10000
-  sunrise:standard_gloves: 10001
-  sunrise:mountain_wraps: 10002
-STICK:
-  utilities:bola: 10000
-  utilities:bottle: 10001
-RAW_IRON:
-  sunrise:standard_issue_bow: 10000
-  sunrise:slingshot: 10001
-WHITE_DYE:
-  sunrise:standard_pistol: 10000
-  sunrise:musket: 10001
-  sunrise:launcher: 10002
+  sunrise:2h_attack: 10001
+  sunrise:charge_attack: 10002
+  sunrise:dash_swing: 10003
+  sunrise:double_attack: 10004
+  sunrise:evade_strike: 10005
+  sunrise:hilt_strike: 10006
+  sunrise:jump_attack: 10007
+  sunrise:overhead_swing: 10008
+  sunrise:piercing_strike: 10009
+  sunrise:poke: 10010
+  sunrise:quick_swings: 10011
+  sunrise:wee: 10012
+  sunrise:arc_shot: 10013
+  sunrise:bola_shot: 10014
+  sunrise:bounce_shot: 10015
+  sunrise:caltrops: 10016
+  sunrise:catapult: 10017
+  sunrise:dirt_star: 10018
+  sunrise:firecracker: 10019
+  sunrise:firestarter: 10020
+  sunrise:multishot: 10021
+  sunrise:slipup: 10022
+  sunrise:special_volley: 10023
+  sunrise:whats_that: 10024
+  sunrise:blunder_leap: 10025
+  sunrise:chamber_blast: 10026
+  sunrise:critical_shot: 10027
+  sunrise:dive_shot: 10028
+  sunrise:double_tap: 10029
+  sunrise:fast_hands: 10030
+  sunrise:impairing_shot: 10031
+  sunrise:pistol_whip: 10032
+  sunrise:run: 10033
+  sunrise:spray_and_pray: 10034
+  sunrise:tactical_dive: 10035
+  sunrise:vital_shot: 10036
+  sunrise:hard_punch: 10037
+  sunrise:hard_kick: 10038
+  sunrise:flail: 10039
+  sunrise:skedaddle: 10040
+  sunrise:double_punch: 10041
+  sunrise:ottf: 10042
+  sunrise:overhand_swing: 10043
+  sunrise:running_kick: 10044
+  sunrise:dropkick: 10045
+  sunrise:low_kick: 10046
+  sunrise:gootw: 10047
+  sunrise:charge: 10048
+APPLE:
+  fruits:phoenix: 10000
+  fruits:operation: 10001
+IRON_NUGGET:
+  fruits:quake_crack: 10000
+  fruits:quake_crack1: 10001
+  fruits:quake_crack2: 10002
+  fruits:quake_crack3: 10003
 GHAST_TEAR:
   shop:absolute: 10000
   shop:beastly: 10001
@@ -273,24 +210,77 @@ GHAST_TEAR:
   shop:sweet_tooth: 10028
   shop:thrillseeker: 10029
   shop:tyrant: 10030
-APPLE:
-  fruits:phoenix: 10000
-  fruits:operation: 10001
-IRON_NUGGET:
-  fruits:quake_crack: 10000
-  fruits:quake_crack1: 10001
-  fruits:quake_crack2: 10002
-  fruits:quake_crack3: 10003
+LEATHER_HORSE_ARMOR:
+  hmccosmetics:beanie: 10000
+  hmccosmetics:paintbrush: 10001
+  hmccosmetics:explorer_backpack: 10002
+NETHERITE_SWORD:
+  hmcwraps:fire_sword: 10000
+NETHERITE_PICKAXE:
+  hmcwraps:fire_pickaxe: 10000
+IRON_SWORD:
+  hmcwraps:silver_sword: 10000
+  sunrise:duelist_single_ultra_rare: 10001
+  sunrise:duelist_single_epic: 10002
+  sunrise:duelist_single_legendary: 10003
+  sunrise:duelist_single_mythical: 10004
+  sunrise:duelist_single_unique: 10005
+IRON_AXE:
+  hmcwraps:silver_axe: 10000
+IRON_PICKAXE:
+  hmcwraps:silver_pickaxe: 10000
+IRON_SHOVEL:
+  hmcwraps:silver_shovel: 10000
+IRON_HOE:
+  hmcwraps:silver_hoe: 10000
+  sunrise:rusty_pistol: 10001
+GRAY_DYE:
+  sunrise:rusty_cutlass: 10000
+  sunrise:duelist_single_common: 10001
+  sunrise:standard_sword: 10002
+  sunrise:griffon: 10003
+GOLD_NUGGET:
+  sunrise:bullet: 10000
+  utilities:bola: 10001
+  utilities:bottle: 10002
+COAL:
+  sunrise:mountain_wraps: 10000
+  sunrise:standard_gloves: 10001
+GREEN_DYE:
+  sunrise:duelist_single_uncommon: 10000
+LIME_DYE:
+  sunrise:duelist_single_rare: 10000
+GOLDEN_SWORD:
+  sunrise:wraps_common: 10000
+  sunrise:wraps_uncommon: 10001
+  sunrise:wraps_rare: 10002
+  sunrise:wraps_ultra_rare: 10003
+  sunrise:wraps_epic: 10004
+  sunrise:wraps_legendary: 10005
+  sunrise:wraps_mythical: 10006
+  sunrise:wraps_unique: 10007
+GUNPOWDER:
+  sunrise:bandit_glaive: 10000
+  utilities:capsento: 10001
+FLINT:
+  sunrise:bandit_club: 10000
+WHITE_DYE:
+  sunrise:standard_pistol: 10000
+  sunrise:musket: 10001
+  sunrise:launcher: 10002
 LEATHER_CHESTPLATE:
   sunrise:marine_uniform: 10000
-LEATHER_HELMET:
-  sunrise:marine_hat: 10000
 LEATHER_LEGGINGS:
   sunrise:marine_pants: 10000
 LEATHER_BOOTS:
   sunrise:marine_boots: 10000
-GUNPOWDER:
-  utilities:capsento: 10000
-  sunrise:bandit_glaive: 10001
-FLINT:
-  sunrise:bandit_club: 10000
+PLAYER_HEAD:
+  __manually_handled:_iainternal__player_phead_0: 10000
+  __manually_handled:_iainternal__player_parm_left_3: 10001
+  __manually_handled:_iainternal__player_pbody_2: 10002
+  __manually_handled:_iainternal__player_pleg_left_1: 10003
+  __manually_handled:_iainternal__player_pleg_right_5: 10004
+  __manually_handled:_iainternal__player_parm_right_4: 10005
+PHANTOM_MEMBRANE:
+  sunrise:cannon: 10000
+  sunrise:dynamite: 10001

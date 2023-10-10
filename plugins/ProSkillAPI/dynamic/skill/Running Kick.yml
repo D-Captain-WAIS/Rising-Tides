@@ -40,49 +40,53 @@ Running Kick:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote running_kick'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Placeholder-c: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'rkick_dmg'
             type: 'Number'
             placeholder: '%math_25+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Placeholder-d: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'runningspeed'
             type: 'Number'
             placeholder: '%math_1.75+({sapi_player_class_attribute:agility}*0.01)%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Ground-e: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             type: 'On Ground'
+          preview: 
+            enabled: 'false'
           children: 
             Launch-f: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -93,17 +97,19 @@ Running Kick:
                 upward-scale: '0'
                 right-base: '0'
                 right-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Ground-g: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             type: 'Not On Ground'
+          preview: 
+            enabled: 'false'
           children: 
             Launch-h: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -114,29 +120,32 @@ Running Kick:
                 upward-scale: '0'
                 right-base: '0'
                 right-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Value Placeholder-i: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'airspeed'
             type: 'Number'
             placeholder: '%math_0.75+({sapi_player_class_attribute:agility}*0.01)%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Delay-j: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             delay-base: '0.8'
             delay-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Cone-k: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 range-base: '4'
@@ -148,10 +157,11 @@ Running Kick:
                 caster: 'False'
                 max-base: '99'
                 max-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-l: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -162,33 +172,38 @@ Running Kick:
                     classifier: 'default'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Status-m: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 status: 'Root'
                 duration-base: '0.25'
                 duration-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Self-n: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             group: 'enemy'
             wall: 'false'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children: 
             Status-o: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 status: 'Silence'
                 duration-base: '0.8'
                 duration-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}

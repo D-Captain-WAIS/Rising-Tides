@@ -5214,13 +5214,10 @@
 "TEXT_DISPLAY": "TEXT_DISPLAY"
 
 # Used for the disguise option Particle
-"DRIPPING_CHERRY_LEAVES": "DRIPPING_CHERRY_LEAVES"
 
 # Used for the disguise option Particle
-"FALLING_CHERRY_LEAVES": "FALLING_CHERRY_LEAVES"
 
 # Used for the disguise option Particle
-"LANDING_CHERRY_LEAVES": "LANDING_CHERRY_LEAVES"
 
 # A disguise option name, has description Numbers for a position translation
 "Transformation": "Transformation"
@@ -5513,16 +5510,12 @@
 "SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE": "SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE"
 
 # Used for the disguise option Material
-"POTTERY_SHARD_ARCHER": "POTTERY_SHARD_ARCHER"
 
 # Used for the disguise option Material
-"POTTERY_SHARD_PRIZE": "POTTERY_SHARD_PRIZE"
 
 # Used for the disguise option Material
-"POTTERY_SHARD_ARMS_UP": "POTTERY_SHARD_ARMS_UP"
 
 # Used for the disguise option Material
-"POTTERY_SHARD_SKULL": "POTTERY_SHARD_SKULL"
 
 # Used for the disguise option Material
 "CHERRY_WALL_SIGN": "CHERRY_WALL_SIGN"
@@ -5586,3 +5579,129 @@
 
 # Description for the disguise option Quaternion
 "Four values used to define part of a Transformation for the rotations": "Four values used to define part of a Transformation for the rotations"
+# Used for the disguise option Particle
+
+# A disguise option name, has description The current mindset of a Sniffer
+
+# Description for the disguise option Sniffer State
+
+# Used for the disguise option Sniffer State
+
+# Used for the disguise option Sniffer State
+
+# Used for the disguise option Sniffer State
+
+# Used for the disguise option Sniffer State
+
+# Used for the disguise option Sniffer State
+
+# Used for the disguise option Sniffer State
+
+# Used for the disguise option Sniffer State
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+
+# Used for the disguise option Material
+# Used for the disguise option Particle
+"DRIPPING_CHERRY_LEAVES": "DRIPPING_CHERRY_LEAVES"
+
+# Used for the disguise option Particle
+"FALLING_CHERRY_LEAVES": "FALLING_CHERRY_LEAVES"
+
+# Used for the disguise option Particle
+"LANDING_CHERRY_LEAVES": "LANDING_CHERRY_LEAVES"
+
+# Used for the disguise option Material
+"POTTERY_SHARD_ARCHER": "POTTERY_SHARD_ARCHER"
+
+# Used for the disguise option Material
+"POTTERY_SHARD_PRIZE": "POTTERY_SHARD_PRIZE"
+
+# Used for the disguise option Material
+"POTTERY_SHARD_ARMS_UP": "POTTERY_SHARD_ARMS_UP"
+
+# Used for the disguise option Material
+"POTTERY_SHARD_SKULL": "POTTERY_SHARD_SKULL"
+# Used for the disguise option EntityPose
+"LONG_JUMPING": "LONG_JUMPING"
+
+# Used for the disguise option EntityPose
+"CROAKING": "CROAKING"
+
+# Used for the disguise option EntityPose
+"USING_TONGUE": "USING_TONGUE"
+
+# Used for the disguise option EntityPose
+"SITTING": "SITTING"
+
+# Used for the disguise option EntityPose
+"ROARING": "ROARING"
+
+# Used for the disguise option EntityPose
+"SNIFFING": "SNIFFING"
+
+# Used for the disguise option EntityPose
+"EMERGING": "EMERGING"
+
+# Used for the disguise option EntityPose
+"DIGGING": "DIGGING"

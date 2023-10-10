@@ -12,9 +12,10 @@ DrMeaw:
   belowname: §f§r
   abovename: §f§r
 _D_Captain_:
-  abovename: 
-  tagprefix:  &f
-  tabprefix:  &f
+  abovename: §f§r
+  tagprefix: §f§r
+  tabprefix: §f§r
+  belowname: §f§r
 remove: {}
 FujinSamurai:
   abovename: §f§r

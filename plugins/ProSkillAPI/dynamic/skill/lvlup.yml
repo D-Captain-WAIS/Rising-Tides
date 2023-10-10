@@ -26,16 +26,18 @@ lvlup:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'cp addstpt'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}

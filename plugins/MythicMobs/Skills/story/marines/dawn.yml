@@ -30,5 +30,21 @@ makiSpeed:
 makiSlow:
   Skills:
   - setspeed{speed=0;type=walking} @self
+meleePirateAI:
+  Skills:
+  - runaigoalselector{goal=clear} 
+  - runaigoalselector{goal=meleeattack}
+  - runaigoalselector{goal=randomstroll}
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+enterCombatBJVault:
+  Skills:
+  - summon{t=vaultPiratesActivator} @selflocation
+startBanditConvo:
+  Conditions:
+  - playerwithin{d=2} true
+  Skills:
+  - command{c="q e <target.name> marineMain-sunrise.vaultPirate_convo"} @NearestPlayer{r=2}
+  - teleportto{location=0,-216.5,0} @self
 
   

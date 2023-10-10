@@ -37,22 +37,23 @@ OneTwoThreeFour:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote 1234'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Single-c: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             range-base: '3'
@@ -62,19 +63,21 @@ OneTwoThreeFour:
             group: 'Enemy'
             wall: 'False'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children: 
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.4'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -85,19 +88,21 @@ OneTwoThreeFour:
                     classifier: 'default'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Delay-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.2'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -108,19 +113,21 @@ OneTwoThreeFour:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Delay-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         delay-base: '0.2'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-i: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -131,19 +138,21 @@ OneTwoThreeFour:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Delay-j: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
                             delay-base: '0.2'
                             delay-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Damage-k: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -154,10 +163,11 @@ OneTwoThreeFour:
                                 classifier: 'default'
                                 knockback: 'True'
                                 cause: 'Entity Attack'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
             Sound-l: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -167,33 +177,38 @@ OneTwoThreeFour:
                 volume-scale: '0'
                 pitch-base: '1'
                 pitch-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Value Placeholder-m: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'ootf_dmg'
             type: 'Number'
             placeholder: '%math_12+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Self-n: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             group: 'enemy'
             wall: 'false'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children: 
             Status-o: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 status: 'Silence'
                 duration-base: '1.2'
                 duration-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}

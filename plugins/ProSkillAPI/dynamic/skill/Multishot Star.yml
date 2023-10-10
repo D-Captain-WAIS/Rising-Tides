@@ -39,13 +39,13 @@ Multishot Star:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,28 +54,31 @@ Multishot Star:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote bmultishot_star'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Sound-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -84,10 +87,11 @@ Multishot Star:
                     volume-scale: '0'
                     pitch-base: '1'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Sound-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -96,10 +100,11 @@ Multishot Star:
                     volume-scale: '0'
                     pitch-base: '1.2'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Sound-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -108,10 +113,11 @@ Multishot Star:
                     volume-scale: '0'
                     pitch-base: '1.4'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Sound-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -120,10 +126,11 @@ Multishot Star:
                     volume-scale: '0'
                     pitch-base: '1.6'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Sound-i: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -132,10 +139,11 @@ Multishot Star:
                     volume-scale: '0'
                     pitch-base: '1.8'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle Projectile-j: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -171,10 +179,11 @@ Multishot Star:
                     speed: '0.1'
                     frequency: '0.005'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-k: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -185,33 +194,38 @@ Multishot Star:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
             Value Placeholder-l: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bmstar_dmg'
                 type: 'Number'
                 placeholder: '%math_15+({sapi_player_class_attribute:accuracy}*0.15)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Self-m: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-n: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '0.5'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

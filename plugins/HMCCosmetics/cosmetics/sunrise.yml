@@ -5,6 +5,20 @@ bogarp_coat:
     material: itemsadder:sunrise:bogarp_coat
     name: "<blue>Bogarp's Coat<blue>"
     amount: 1
+pirate_coat:
+  slot: BACKPACK
+  permission: "sunrisecosmetics.piratecoat"
+  item:
+    material: itemsadder:sunrise:pirate_coat
+    name: "<red>Pirate Coat<red>"
+    amount: 1
+rev_coat:
+  slot: BACKPACK
+  permission: "sunrisecosmetics.revcoat"
+  item:
+    material: itemsadder:sunrise:rev_coat
+    name: "<green>Revolutionary's Coat<green>"
+    amount: 1
 rusty_pistol:
   slot: OFFHAND
   permission: "sunrisecosmetics.rusty_pistol"

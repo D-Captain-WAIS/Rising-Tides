@@ -39,23 +39,24 @@ Poke:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Value Placeholder-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'False'
             key: 'poke_dmg'
             type: 'Number'
             placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Item-c: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -64,28 +65,31 @@ Poke:
             lore: 'Single Wield Duelist (Edged)'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote poke'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Single-f: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     range-base: '4'
@@ -95,10 +99,11 @@ Poke:
                     group: 'Enemy'
                     wall: 'False'
                     caster: 'false'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -109,10 +114,11 @@ Poke:
                         classifier: 'wounding'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Push-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -120,14 +126,17 @@ Poke:
                         speed-base: '0.25'
                         speed-scale: '.05'
                         source: 'none'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Flag-i: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'wounded'
                         seconds-base: '10'
                         seconds-scale: '1'
+                      preview: 
+                        enabled: 'false'
                       children:  {}

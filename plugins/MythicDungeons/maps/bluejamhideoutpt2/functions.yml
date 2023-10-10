@@ -1,0 +1,407 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: &id001
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: NONE
+  location:
+    ==: org.bukkit.Location
+    x: 636.0
+    y: 63.0
+    z: 911.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -71.74856567382812
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: &id004
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: PARTY
+  location:
+    ==: org.bukkit.Location
+    x: 652.0
+    y: 69.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oI can't go this way! They're all going to go down! I need to find somewhere
+    to hide!!!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 634.0
+    y: 64.0
+    z: 918.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -89.43865966796875
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+    targetType: &id002
+      ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+      value: PLAYER
+    location: &id003
+      ==: org.bukkit.Location
+      x: 659.0
+      y: 68.0
+      z: 915.0
+      pitch: 0.0
+      yaw: 0.0
+    teleportTarget:
+      ==: org.bukkit.Location
+      x: 659.3000000119209
+      y: 67.0
+      z: 915.3000000119209
+      pitch: 16.952309
+      yaw: 87.20386
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+    commandType: 0
+    forEachPlayer: true
+    targetType: *id002
+    location: *id003
+    trigger: null
+    command: screeneffect fullscreen BLACK 60 60 60 freeze %player_name% After some
+      time...
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: vaultParticleRemover
+    delay: 0
+    levelString: '0'
+    interval: 0
+    targetType: *id001
+    location: *id003
+    trigger: null
+    maxCount: 1
+    yaw: 0.0
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: spawn
+    targetType: *id001
+    location: *id003
+    trigger: null
+  targetType: *id004
+  location: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: brawlerPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 647.0
+    y: 63.0
+    z: 919.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -97.04251098632812
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTitle
+  fadeOut: 10
+  fadeIn: 10
+  subtitle: §9§lFind a place to hide from Bluejam's army!
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 645.0
+    y: 65.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  title: ' '
+  stay: 80
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: brawlerPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 649.0
+    y: 63.0
+    z: 912.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -62.910369873046875
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: brawlerPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 640.0
+    y: 63.0
+    z: 916.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -82.48684692382812
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: vaultParticles1
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 659.0
+    y: 67.0
+    z: 915.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: brawlerPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 627.0
+    y: 64.0
+    z: 913.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -82.20318603515625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 645.0
+    y: 63.0
+    z: 914.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -76.13223266601562
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 623.0
+    y: 67.0
+    z: 954.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oThey're going to corner me if I go this way! I need to find somewhere
+    to hide!!!
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+    targetType: *id002
+    location: &id005
+      ==: org.bukkit.Location
+      x: 649.0
+      y: 66.0
+      z: 933.0
+      pitch: 0.0
+      yaw: 0.0
+    teleportTarget:
+      ==: org.bukkit.Location
+      x: 649.6730162628824
+      y: 65.0
+      z: 930.0582162988773
+      pitch: 3.6839688
+      yaw: 179.40494
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: vaultParticleRemover
+    delay: 0
+    levelString: '0'
+    interval: 0
+    targetType: *id001
+    location: *id005
+    trigger: null
+    maxCount: 1
+    yaw: 0.0
+  targetType: *id004
+  location: *id005
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 2.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 651.0
+    y: 63.0
+    z: 920.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -95.33831787109375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: vaultParticles1
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 649.0
+    y: 64.0
+    z: 933.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+  commandType: 0
+  forEachPlayer: false
+  targetType: *id004
+  location:
+    ==: org.bukkit.Location
+    x: 645.0
+    y: 65.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  command: screeneffect stop %player_name%
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: brawlerPirateVault
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 630.0
+    y: 63.0
+    z: 908.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -70.50482177734375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: vaultParticles2
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 659.0
+    y: 66.0
+    z: 919.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: spawn
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 0.0

@@ -8,6 +8,12 @@ rusty_cutlass:
   Attributes:
     All:
       Damage: 0
+standard_sword:
+  id: gray_dye
+  Model: 10002
+  Attributes:
+    All:
+      Damage: 0
 rusty_pistol:
   id: iron_hoe
   Model: 10001
@@ -20,4 +26,7 @@ bullet:
   Attributes:
     All:
       Damage: 0
+shark_hand_fin:
+  id: paper
+  Model: 10066
 

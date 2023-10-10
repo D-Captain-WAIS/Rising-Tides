@@ -1,61 +1,78 @@
 BACK:
     type: accessory
     material: PAPER
-    durability: 10060
+    durability: 10099
     name: '&6Back Slot'
     slot: 9
     restrictions:
-    - 'mmoitemstype{type=BACK}'
+    - loretag{tag="&cBack"}
     lore:
     - Drag & drop an item to equip it.
 RIGHT_RING:
     type: accessory
     material: PAPER
-    durability: 10061
+    durability: 10100
     name: '&6Right Ring Slot'
     slot: 10
     restrictions:
-    - 'mmoitemstype{type=RING}'
+    - loretag{tag="&cRing"}
     lore:
     - Drag & drop an item to equip it.
 LEFT_RING:
     type: accessory
     material: PAPER
-    durability: 10061
+    durability: 10100
     name: '&6Left Ring Slot'
     slot: 11
     restrictions:
-    - 'mmoitemstype{type=RING}'
+    - loretag{tag="&cRing"}
     lore:
     - Drag & drop an item to equip it.
 NECKLACE:
     type: accessory
     material: PAPER
-    durability: 10063
+    durability: 10102
     name: '&6Necklace Slot'
     slot: 12
     restrictions:
-    - 'mmoitemstype{type=NECKLACE}'
+    - loretag{tag="&cNecklace"}
     lore:
     - Drag & drop an item to equip it.
 TRINKET:
     type: accessory
     material: PAPER
-    durability: 10062
+    durability: 10101
     name: '&6Trinket Slot'
     slot: 13
     restrictions:
-    - 'mmoitemstype{type=TRINKET}'
+    - loretag{tag="&cTrinket"}
     lore:
     - Drag & drop an item to equip it.
 ARTIFACT:
     type: accessory
     material: PAPER
-    durability: 10064
+    durability: 10103
     name: '&6Artifact Slot'
     slot: 14
     restrictions:
-    - 'mmoitemstype{type=ARTIFACT}'
+    - loretag{tag="&cArtifact"}
+    - 'unique{enabled=true}'
+    lore:
+    - Drag & drop an item to equip it.
+WEAPON:
+    type: weapon
+    material: IRON_SWORD
+    name: '&6Weapon Slot'
+    slot: 15
+    restrictions:
+    - loretag{tag="&cSingle Wield Duelist (Edged)"}
+    - loretag{tag="&cSingle Wield Duelist (Blunt)"}
+    - loretag{tag="&cDual Wield Duelist (Edged)"}
+    - loretag{tag="&cDual Wield Duelist (Blunt)"}
+    - loretag{tag="&cBuster (Edged)"}
+    - loretag{tag="&cBuster (Blunt)"}
+    - loretag{tag="&cPolearm (Edged)"}
+    - loretag{tag="&cPolearm (Blunt)"}
     - 'unique{enabled=true}'
     lore:
     - Drag & drop an item to equip it.

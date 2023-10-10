@@ -39,13 +39,13 @@ Bounce Shot:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,38 +54,42 @@ Bounce Shot:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote bmultishot_star'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bbncshot_dmg'
                 type: 'Number'
                 placeholder: '%math_15+({sapi_player_class_attribute:accuracy}*0.2)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Particle Projectile-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -121,20 +125,22 @@ Bounce Shot:
                     speed: '0.1'
                     frequency: '0.05'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Entity Type-g: 
                       type: 'condition'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         types: 
                         - 'Player'
                         - 'Wither skeleton'
                         - 'Pig'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-h: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -145,10 +151,11 @@ Bounce Shot:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Sound-i: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -157,16 +164,18 @@ Bounce Shot:
                             volume-scale: '0'
                             pitch-base: '1'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Else-j: 
                       type: 'condition'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Particle-k: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -185,10 +194,11 @@ Bounce Shot:
                             forward: '0'
                             upward: '0'
                             right: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Sound-l: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -197,10 +207,11 @@ Bounce Shot:
                             volume-scale: '0'
                             pitch-base: '0.5'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Nearest-m: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             radius-base: '6'
@@ -210,28 +221,31 @@ Bounce Shot:
                             caster: 'False'
                             max-base: '1'
                             max-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Chance-n: 
                               type: 'condition'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 chance-base: '50'
                                 chance-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children: 
                                 Value Multiply-o: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
                                     key: 'bbncshot_dmg'
                                     multiplier-base: '2.5'
                                     multiplier-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Damage-p: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -242,10 +256,11 @@ Bounce Shot:
                                     classifier: 'default'
                                     knockback: 'True'
                                     cause: 'Entity Attack'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Sound-q: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -254,16 +269,18 @@ Bounce Shot:
                                     volume-scale: '0'
                                     pitch-base: '1.2'
                                     pitch-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                             Else-r: 
                               type: 'condition'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
+                              preview: 
+                                enabled: 'false'
                               children: 
                                 Damage-s: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -274,10 +291,11 @@ Bounce Shot:
                                     classifier: 'default'
                                     knockback: 'True'
                                     cause: 'Entity Attack'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Sound-t: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -286,10 +304,11 @@ Bounce Shot:
                                     volume-scale: '0'
                                     pitch-base: '1.2'
                                     pitch-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                 Sound-u: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -298,23 +317,27 @@ Bounce Shot:
                     volume-scale: '0'
                     pitch-base: '2'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Self-v: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-w: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '0.5'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

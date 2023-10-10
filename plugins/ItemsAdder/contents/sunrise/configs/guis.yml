@@ -9,3 +9,23 @@ font_images:
     path: gui/skill_green
     suggest_in_command: true
     y_position: 15
+  logbook_quests:
+    path: gui/logbook_quests
+    suggest_in_command: true
+    y_position: 15
+  logbook_maps:
+    path: gui/logbook_maps
+    suggest_in_command: true
+    y_position: 15
+  logbook_missions:
+    path: gui/logbook_missions
+    suggest_in_command: true
+    y_position: 15
+  logbook_feats:
+    path: gui/logbook_feats
+    suggest_in_command: true
+    y_position: 15
+  logbook_records:
+    path: gui/logbook_records
+    suggest_in_command: true
+    y_position: 15

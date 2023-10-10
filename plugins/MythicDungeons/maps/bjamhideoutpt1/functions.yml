@@ -1,0 +1,1202 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: &id001
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: NONE
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 70.0
+    z: 955.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 69.0
+    z: 960.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 553.0
+    y: 85.0
+    z: 981.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 53.44647216796875
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 69.0
+    z: 959.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCommand
+  commandType: 1
+  forEachPlayer: false
+  targetType: &id002
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: PARTY
+  location:
+    ==: org.bukkit.Location
+    x: 482.0
+    y: 70.0
+    z: 951.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  command: screeneffect stop %player%
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 74.0
+    z: 959.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 72.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 72.0
+    z: 959.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 520.0
+    y: 85.0
+    z: 925.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -32.590576171875
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 530.0
+    y: 70.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -178.33447265625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 553.0
+    y: 85.0
+    z: 926.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 107.3660659790039
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 70.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 532.0
+    y: 70.0
+    z: 961.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 164.196044921875
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 520.0
+    y: 85.0
+    z: 982.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -114.34130859375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 72.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 70.0
+    z: 956.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 74.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 542.0
+    y: 70.0
+    z: 943.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 51.722412109375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 71.0
+    z: 959.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 649.0
+    y: 65.0
+    z: 939.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: -0.993844747543335
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 69.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 540.0
+    y: 70.0
+    z: 961.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 167.330078125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 523.0
+    y: 85.0
+    z: 983.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 151.14019775390625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 633.0
+    y: 65.0
+    z: 950.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 61.470523834228516
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 69.0
+    z: 956.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 526.0
+    y: 70.0
+    z: 968.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 518.0
+    y: 70.0
+    z: 940.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -21.3917236328125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 535.0
+    y: 70.0
+    z: 930.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 7.53564453125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 72.0
+    z: 956.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 69.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 642.0
+    y: 65.0
+    z: 960.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 132.67552185058594
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 628.0
+    y: 65.0
+    z: 964.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: -120.04573059082031
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 74.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 71.0
+    z: 960.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 523.0
+    y: 85.0
+    z: 924.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 34.8193359375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 73.0
+    z: 959.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 73.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 70.0
+    z: 960.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionFinishDungeon
+  leave: true
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 655.0
+    y: 70.0
+    z: 959.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: true
+    radius: 3.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 71.0
+    z: 956.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 73.0
+    z: 960.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 71.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionMessage
+  messageType: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 649.0
+    y: 68.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  message: §e§oI should defeat everyone down here before heading further in...
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 545.0
+    y: 70.0
+    z: 970.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 2.12744140625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 71.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 647.0
+    y: 65.0
+    z: 944.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 55.56711959838867
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 70.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 553.0
+    y: 85.0
+    z: 984.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 130.287109375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 528.0
+    y: 70.0
+    z: 954.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: -88.14599609375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 73.0
+    z: 956.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 633.0
+    y: 65.0
+    z: 967.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 174.96263122558594
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleeBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 632.0
+    y: 64.0
+    z: 958.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 126.55035400390625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionStartDungeon
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 481.0
+    y: 70.0
+    z: 950.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: true
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 72.0
+    z: 960.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 532.0
+    y: 70.0
+    z: 952.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 0.53955078125
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 652.0
+    y: 65.0
+    z: 941.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: -38.61705017089844
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordPirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 641.0
+    y: 65.0
+    z: 951.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: 52.293670654296875
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: meleePirate
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 551.0
+    y: 85.0
+    z: 924.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 45.50746536254883
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 73.0
+    z: 957.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: pistolBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 534.0
+    y: 70.0
+    z: 956.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: false
+    conditions: []
+  maxCount: 1
+  yaw: 93.058837890625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 650.0
+    y: 70.0
+    z: 959.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: any
+    count: 21
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: swordBandit
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 628.0
+    y: 65.0
+    z: 947.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 25.0
+    conditions: []
+  maxCount: 1
+  yaw: -38.61705017089844

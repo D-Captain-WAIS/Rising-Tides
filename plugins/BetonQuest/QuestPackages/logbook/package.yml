@@ -1,0 +1,357 @@
+menus:
+  logbook_quests1:
+    height: 6
+    title: ":offset_-8::logbook_quests:"
+    bind: "logbook"
+    slots:
+      0*52: "findBJHideout,findDenmanDog,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage"
+      8: "questsNext"
+      26: "mapsPage"
+      35: "missionsPage"
+      44: "featsPage"
+      53: "recordsPage"
+    items:
+      #GUI Buttons
+        blankQuestPage:
+          item: "blank_quest"
+          text:
+          - "A Blank Logbook Page..."
+          - "Take quests to fill the logbook!"
+        questsNext:
+          item: "next_button"
+          text:
+          - "&a&lNEXT PAGE"
+        mapsPage:
+          item: "maps_icon"
+          text:
+          - "&c&lMAPS"
+          click:
+            left: "open_maps"
+        missionsPage:
+          item: "missions_icon"
+          text:
+          - "&b&lMISSIONS"
+          click:
+            left: "open_missions"
+        featsPage:
+          item: "feats_icon"
+          text:
+          - "&2&lFEATS"
+          click:
+            left: "open_feats"
+        recordsPage:
+          item: "records_icon"
+          text:
+          - "&f&lRECORDS"
+          click:
+            left: "open_records"
+      #Marine Story
+        findBJHideout:
+          item: "campaign_page"
+          text:
+          - "&e&l&n[CAMPAIGN QUEST] Prove Your Worth! Capture BlueJam"
+          - "&e&oPart 5: Dadan's Info!"
+          - ""
+          - "&f&oAfter doing your end of the deal for Dadan, she explains"
+          - "&f&ohow the Bluejam Pirates and the Mountain Bandits have"
+          - "&f&omade an alliance and this is all happening in"
+          - "&f&o&nBluejam's Pirate Hideout!"
+          - ""
+          - "&e&o&n(Head to the entrance of Bluejam's hideout)"
+          - "&6&l[Click on this page to track this quest!]"
+          conditions: marineMain-sunrise.tag_met_dadan
+          click: "findBJHideout_set"
+      #Global Side Quests
+        findDenmanDog:
+          item: "quest_page"
+          text:
+          - "&a&l&n[SIDE QUEST] A Pet's Salvation"
+          - ""
+          - "&f&oA Villager by the docks of Shuna Village lost his "
+          - "&f&opet after it went out exploring again, he asked me "
+          - "&f&oto please help him find it."
+          - ""
+          - "&a&o&n(Find Jake Denman's Dog)"
+          - "&2&l[Click on this page to track this quest!]"
+          conditions: globalSides-sunrise.tag_finding_dog
+          click: "findDenmanDog1_set"
+  logbook_maps1:
+    height: 6
+    title: ":offset_-8::logbook_maps:"
+    slots:
+      0*52: ""
+      8: "questsPage"
+      35: "missionsPage"
+      44: "featsPage"
+      53: "recordsPage"
+    items:
+        blankQuestPage:
+          item: "blank_quest"
+          text:
+          - "A Blank Logbook Page..."
+          - "Take quests to fill the logbook!"
+        questsNext:
+          item: "next_button"
+          text:
+          - "&a&lNEXT PAGE"
+        questsPage:
+          item: "quests_icon"
+          text:
+          - "&e&lQUESTS"
+          click:
+            left: "open_quests"
+        missionsPage:
+          item: "missions_icon"
+          text:
+          - "&b&lMISSIONS"
+          click:
+            left: "open_missions"
+        featsPage:
+          item: "feats_icon"
+          text:
+          - "&2&lFEATS"
+          click:
+            left: "open_feats"
+        recordsPage:
+          item: "records_icon"
+          text:
+          - "&f&lRECORDS"
+          click:
+            left: "open_records"
+  logbook_missions1:
+    height: 6
+    title: ":offset_-8::logbook_missions:"
+    slots:
+      0*52: "blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage,blankQuestPage"
+      8: "questsPage"
+      17: "mapsPage"
+      26: "questsNext"
+      44: "featsPage"
+      53: "recordsPage"
+    items:
+        blankQuestPage:
+          item: "blank_quest"
+          text:
+          - "A Blank Logbook Page..."
+          - "Take missions to fill the logbook!"
+        questsPage:
+          item: "quests_icon"
+          text:
+          - "&e&lQUESTS"
+          click:
+            left: "open_quests"
+        questsNext:
+          item: "next_button"
+          text:
+          - "&a&lNEXT PAGE"
+        mapsPage:
+          item: "maps_icon"
+          text:
+          - "&c&lMAPS"
+          click:
+            left: "open_maps"
+        missionsPage:
+          item: "missions_icon"
+          text:
+          - "&b&lMISSIONS"
+          click:
+            left: "open_missions"
+        featsPage:
+          item: "feats_icon"
+          text:
+          - "&2&lFEATS"
+          click:
+            left: "open_feats"
+        recordsPage:
+          item: "records_icon"
+          text:
+          - "&f&lRECORDS"
+          click:
+            left: "open_records"
+  logbook_feats_hub:
+    height: 6
+    title: ":offset_-8::logbook_feats:"
+    slots:
+      0*52: ""
+      8: "questsPage"
+      17: "mapsPage"
+      26: "missionsPage"
+      53: "recordsPage"
+    items:
+        blankQuestPage:
+          item: "blank_quest"
+          text:
+          - "A Blank Logbook Page..."
+          - "Take quests to fill the logbook!"
+        questsNext:
+          item: "next_button"
+          text:
+          - "&a&lNEXT PAGE"
+        questsPage:
+          item: "quests_icon"
+          text:
+          - "&e&lQUESTS"
+          click:
+            left: "open_quests"
+        mapsPage:
+          item: "maps_icon"
+          text:
+          - "&c&lMAPS"
+          click:
+            left: "open_maps"
+        missionsPage:
+          item: "missions_icon"
+          text:
+          - "&b&lMISSIONS"
+          click:
+            left: "open_missions"
+        featsPage:
+          item: "feats_icon"
+          text:
+          - "&2&lFEATS"
+          click:
+            left: "open_feats"
+        recordsPage:
+          item: "records_icon"
+          text:
+          - "&f&lRECORDS"
+          click:
+            left: "open_records"
+  logbook_records_hub:
+    height: 6
+    title: ":offset_-8::logbook_records:"
+    slots:
+      0*52: ""
+      8: "questsPage"
+      17: "mapsPage"
+      26: "missionsPage"
+      35: "featsPage"
+    items:
+        blankQuestPage:
+          item: "blank_quest"
+          text:
+          - "A Blank Logbook Page..."
+          - "Take quests to fill the logbook!"
+        questsNext:
+          item: "next_button"
+          text:
+          - "&a&lNEXT PAGE"
+        questsPage:
+          item: "quests_icon"
+          text:
+          - "&e&lQUESTS"
+          click:
+            left: "open_quests"
+        mapsPage:
+          item: "maps_icon"
+          text:
+          - "&c&lMAPS"
+          click:
+            left: "open_maps"
+        missionsPage:
+          item: "missions_icon"
+          text:
+          - "&b&lMISSIONS"
+          click:
+            left: "open_missions"
+        featsPage:
+          item: "feats_icon"
+          text:
+          - "&2&lFEATS"
+          click:
+            left: "open_feats"
+        recordsPage:
+          item: "records_icon"
+          text:
+          - "&f&lRECORDS"
+          click:
+            left: "open_records"
+  
+events:
+  #instance loading screen
+      loading_screen: "command screeneffect fullscreen BLACK 60 5000 60 freeze %player% Loading Instance... "
+  #logbook buttons
+      open_maps: menu open logbook_maps1
+      open_quests: menu open logbook_quests1
+      open_feats: menu open logbook_feats_hub
+      open_missions: menu open logbook_missions1
+      open_records: menu open logbook_records_hub
+  #tracking variable addition
+      tracking_name_add: "objective add tracking_name"
+      tracking_obj_add: "objective add tracking_objective"
+  #tracking type set
+      type_campaign_set: "variable tracking_name type [CAMPAIGN]"
+      type_side_set: "variable tracking_name type [SIDE_QUEST]"
+      type_mission_set: "variable tracking_name type [MISSION]"
+  #Marine Story Tracking
+    #Dawn Island
+      findBJHideout_set: "folder trackBJHideout,type_campaign_set,findBJHideout_set1,findBJHideout_set2,findBJHideout_set3,findBJHideout_set4,findBJHideout_set5"
+      findBJHideout_set1: "variable tracking_name name Prove_Your_Worth!"
+      findBJHideout_set2: "variable tracking_name name2 Capture_Bluejam!"
+      findBJHideout_set3: "variable tracking_objective part1 Head_to_the"
+      findBJHideout_set4: "variable tracking_objective part2 entrance_of"
+      findBJHideout_set5: "variable tracking_objective part3 Bluejam's_hideout."
+      trackBJHideout: "opsudo find bjamhideout"
+      BJHideoutpt1_set: "folder type_campaign_set,BJHideoutpt1_set1,BJHideoutpt1_set2,BJHideoutpt1_set3,BJHideoutpt1_set4,BJHideoutpt1_set5"
+      BJHideoutpt1_set1: "variable tracking_name name A_Nefarious_Plan!"
+      BJHideoutpt1_set2: variable tracking_name name2 ""
+      BJHideoutpt1_set3: "variable tracking_objective part1 Go_further_into"
+      BJHideoutpt1_set4: "variable tracking_objective part2 Bluejam's_hideout."
+      BJHideoutpt1_set5: variable tracking_objective part3 ""
+  #Side Quest Tracking
+    #Find Denman's Dog part 1 at the hunter's lodge
+      findDenmanDog1_set: "folder trackDenmanDog1,type_side_set,findDenmanDog1_set1,findDenmanDog1_set2,findDenmanDog1_set3,findDenmanDog1_set4,findDenmanDog1_set5,denmanDog1_continueFindRadius"
+      findDenmanDog1_set1: "variable tracking_name name A_Pet's"
+      findDenmanDog1_set2: "variable tracking_name name2 Salvation"
+      findDenmanDog1_set3: "variable tracking_objective part1 Find_Jake"
+      findDenmanDog1_set4: "variable tracking_objective part2 Denman's_Dog!"
+      findDenmanDog1_set5: variable tracking_objective part3 ""
+      addDenmanDog1_findRadius: "particle denmanDog1 loc:-194;69.5;-759;dawn_island;0;0 private"
+      denmanDog1_continueCheck_findRadius: "if trackingCheckDenmanDog1 denmanDog1_continueFindRadius else addDenmanDog1_findRadius"
+      denmanDog1_continueFindRadius_objective: "objective add denmanDog1_FindRadius"
+      denmanDog1_continueFindRadius: "folder denmanDog1_continueFindRadius_objective,addDenmanDog1_findRadius"
+      trackDenmanDog1: "opsudo find denmandog1"
+
+conditions:
+  #Side Quests
+    #Find Denman's Dog part 1 at the hunter's lodge
+      trackingDenmanDog1: "variable %objective.tracking_name.name2% Salvation"
+      trackingCheckDenmanDog1: "and !globalSides-sunrise.tag_found_dog,trackingDenmanDog1"
+
+objectives:
+  #Tracking Variable
+      tracking_name: "variable no_chat"
+      tracking_objective: "variable no_chat"
+  #Side Quests
+    #Find Denman's Dog part 1 at the hunter's lodge
+      denmanDog1_FindRadius: "delay 2 seconds interval:2 events:denmanDog1_continueCheck_findRadius"
+
+effects:
+  denmanDog1:
+    class: Circle
+    type: delayed
+    enable_rotation: false
+    whole_circle: true
+    iterations: 20
+    particle: villager_happy
+    height: 1
+    particles: 250
+    radius: 14
+
+
+items:
+    logbook: "PAPER name:&e&l[Log_Book] custom-model-data:10071"
+    blank_quest: PAPER name:&f&lBlank_Page custom-model-data:10122
+    next_button: PAPER custom-model-data:10120
+    back_button: PAPER custom-model-data:10121
+    maps_icon: PAPER custom-model-data:10116
+    missions_icon: PAPER custom-model-data:10117
+    feats_icon: PAPER custom-model-data:10115
+    quests_icon: PAPER custom-model-data:10118
+    records_icon: PAPER custom-model-data:10119
+    campaign_page: PAPER custom-model-data:10123
+    quest_page: PAPER custom-model-data:10125
+    mission_page: PAPER custom-model-data:10124
+    
+  
+      

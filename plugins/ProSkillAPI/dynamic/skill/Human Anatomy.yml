@@ -49,22 +49,23 @@ Human Anatomy:
   components: 
     Initialize: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Passive-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             seconds-base: '1'
             seconds-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Attribute-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -75,10 +76,11 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'True'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -89,60 +91,66 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'const_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:constitution}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-f: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'strength_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:strength}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-g: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'lvlover5'
                 type: 'Number'
                 placeholder: '%math_0:DOWN_{sapi_default_currentlevel}/5%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Set-h: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: '5lv_bonus'
                 value-base: '2'
                 value-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Multiply-i: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: '5lv_bonus'
                 multiplier-base: 'lvlover5'
                 multiplier-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-j: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -153,10 +161,11 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-k: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -167,70 +176,77 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-l: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'endurance_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:endurance}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-m: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'willpower_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:willpower}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-n: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'agility_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:agility}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-o: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'accuracy_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:accuracy}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-p: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'dex_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:dexterity}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-q: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'finesse_bonus'
                 type: 'Number'
                 placeholder: '%math_{sapi_player_class_attribute:finesse}*0.025%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-r: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -241,10 +257,11 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-s: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -255,10 +272,11 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-t: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -269,10 +287,11 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-u: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -283,10 +302,11 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-v: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -297,10 +317,11 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-w: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -311,10 +332,11 @@ Human Anatomy:
                 seconds-base: '1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-x: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -325,10 +347,11 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-y: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -339,10 +362,11 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-z: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -353,10 +377,11 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-ab: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -367,10 +392,11 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-bb: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -381,10 +407,11 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}
             Attribute-cb: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -395,4 +422,6 @@ Human Anatomy:
                 seconds-base: '1.1'
                 seconds-scale: '0'
                 stackable: 'False'
+              preview: 
+                enabled: 'false'
               children:  {}

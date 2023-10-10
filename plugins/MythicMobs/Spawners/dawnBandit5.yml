@@ -1,0 +1,18 @@
+dawnBandit5:
+  MobName: pistolBandit
+  World: dawn_island
+  X: -295
+  Y: 94
+  Z: -188
+  Yaw: 0.0
+  Pitch: 0.0
+  MobLevel: '1'
+  MaxMobs: '1'
+  Radius: 1.0
+  Warmup: 30
+  Cooldown: 10
+  HealOnLeash: false
+  ResetThreatOnLeash: true
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 1

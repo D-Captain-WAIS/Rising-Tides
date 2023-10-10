@@ -38,22 +38,23 @@ Double Punch:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote double_punch'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Cone-c: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             range-base: '4'
@@ -65,29 +66,32 @@ Double Punch:
             caster: 'False'
             max-base: '99'
             max-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Channel-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 still: 'False'
                 time-base: '0.45'
                 time-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Delay-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.45'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-f: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -98,10 +102,11 @@ Double Punch:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Push-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -109,10 +114,11 @@ Double Punch:
                         speed-base: '0.3'
                         speed-scale: '0.05'
                         source: 'none'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
             Sound-h: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -122,14 +128,17 @@ Double Punch:
                 volume-scale: '0'
                 pitch-base: '1'
                 pitch-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Value Placeholder-i: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'double_punch_dmg'
             type: 'Number'
             placeholder: '%math_30+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

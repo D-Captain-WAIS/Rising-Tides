@@ -1,0 +1,37 @@
+defaultPlayer:
+  Type: WITHER_SKELETON
+  Display: ''
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0.15
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Collidable: false
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=player_model;drive=true;usestatemachine=true} @self ~onSpawn
+  - skill{s=playerModelSetup} @self ~onSpawn
+  - skill{s=setSprintPlayer} @Owner ~onTimer:1
+  - message{m=<caster.var.equippedweapon>} @owner ~onTimer:100
+  - skill{s=TwoHandedSwingCheckItem} @self ~onSignal:mwnTwoHandedSwing
+  # - state{mid=player_model;s=mwn_twohandedswing_sduelist;lerpout=3;lerpin=3} @self ~onTimer:120
+  - ChangePart{modelid=player_model;partid=cape;newmodelid=marinecoat;newpartid=cape} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=collar;newmodelid=marinecoat;newpartid=collar} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=body_armor;newmodelid=marineuniform;newpartid=Body} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=armor_right;newmodelid=marineuniform;newpartid=RightArm} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=armor_left;newmodelid=marineuniform;newpartid=LeftArm} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=race_body;newmodelid=shark_back_fin;newpartid=shark_backfin} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=lleg_armor;newmodelid=marinefatigues;newpartid=LeftLeg} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=rleg_armor;newmodelid=marinefatigues;newpartid=RightLeg} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=lboot;newmodelid=marine_boots;newpartid=LeftLeg} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=rboot;newmodelid=marine_boots;newpartid=RightLeg} @self ~onSpawn
+  - ChangePart{modelid=player_model;partid=headwear;newmodelid=marine_cap;newpartid=hat} @self ~onSpawn
+  - setitemmodel{mid=player_model;bone=right_hand;i=standard_sword} @self ~onSpawn
+  - setitemmodel{mid=player_model;bone=race_right;i=shark_hand_fin} @self ~onSpawn
+  - setitemmodel{mid=player_model;bone=race_left;i=shark_hand_fin} @self ~onSpawn
+  

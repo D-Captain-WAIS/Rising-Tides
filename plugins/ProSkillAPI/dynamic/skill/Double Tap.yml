@@ -38,13 +38,13 @@ Double Tap:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,38 +53,42 @@ Double Tap:
             lore: 'Single Gunslinger'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'False'
                 command: 'iaemote pcritical_shot'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'dtap_dmg'
                 type: 'Number'
                 placeholder: '%math_10+({sapi_player_class_attribute:accuracy}*0.12)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Sound-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -93,10 +97,11 @@ Double Tap:
                     volume-scale: '0'
                     pitch-base: '2'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Item Projectile-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -128,10 +133,11 @@ Double Tap:
                     right-base: '0'
                     right-scale: '0'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -142,19 +148,21 @@ Double Tap:
                         classifier: 'default'
                         knockback: 'False'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Delay-i: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.3'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Sound-j: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -163,10 +171,11 @@ Double Tap:
                         volume-scale: '0'
                         pitch-base: '2'
                         pitch-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Item Projectile-k: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -195,10 +204,11 @@ Double Tap:
                         right-base: '0'
                         right-scale: '0'
                         use-effect: 'False'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-l: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -209,10 +219,11 @@ Double Tap:
                             classifier: 'default'
                             knockback: 'False'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                     Particle-m: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -231,10 +242,11 @@ Double Tap:
                         forward: '1.5'
                         upward: '1.5'
                         right: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                 Particle-n: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -253,23 +265,27 @@ Double Tap:
                     forward: '1.5'
                     upward: '1.5'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Self-o: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-p: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '0.9'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

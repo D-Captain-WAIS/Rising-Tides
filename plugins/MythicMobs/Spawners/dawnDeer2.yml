@@ -1,0 +1,36 @@
+dawnDeer2:
+  World: dawn_island
+  X: -543
+  Y: 67
+  Z: -407
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  Radius: 10.0
+  RadiusY: 1.0
+  UseTimer: true
+  MaxMobs: '5'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 10
+  Warmup: 30
+  ActivationRange: 100.0
+  ScalingRange: 32.0
+  LeashRange: 30.0
+  HealOnLeash: false
+  ResetThreatOnLeash: true
+  CheckForPlayers: true
+  ShowFlames: false
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0
+  MobName: ''
+MobName: dawnDeer
+World: dawn_island
+X: -543
+Y: 67
+Z: -407
+Yaw: 0.0
+Pitch: 0.0
+Conditions: &id003 []
+SpawnConditions: *id003

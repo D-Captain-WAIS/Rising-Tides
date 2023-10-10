@@ -39,13 +39,13 @@ Fire Starter:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,19 +54,21 @@ Fire Starter:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Delay-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.65'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Item Projectile-d: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -95,10 +97,11 @@ Fire Starter:
                     right-base: '0'
                     right-scale: '0'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-e: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -109,23 +112,27 @@ Fire Starter:
                         classifier: 'igniter'
                         knockback: 'True'
                         cause: 'Custom'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Flag-f: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         key: 'ignited'
                         seconds-base: '20'
                         seconds-scale: '1'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
             Command-g: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote fire_starter'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}

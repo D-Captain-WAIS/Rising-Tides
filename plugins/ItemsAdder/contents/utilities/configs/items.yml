@@ -33,34 +33,167 @@ items:
       material: PAPER
       generate: false
       model_path: item/yoru
-  gold_question_mark:
-    display_name: "Gold Question Mark"
+  blank_quest:
+    display_name: "blank_quest"
     resource:
       material: PAPER
       generate: true
       textures:
-      - item/gold_question_mark.png
-  gold_exclamation_mark:
-    display_name: "Gold Exclamation Mark"
+      - item/blank_quest.png
+  campaign_objective:
+    display_name: "campaign_objective"
     resource:
       material: PAPER
       generate: true
       textures:
-      - item/gold_exclamation_mark.png
+      - item/campaign_objective.png
+  campaign_available:
+    display_name: "campaign_available"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/campaign_available.png
+  campaign_in_progress:
+    display_name: "campaign_in_progress"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/campaign_in_progress.png
+  campaign_page:
+    display_name: "campaign_page"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/campaign_page.png
+  campaign_record:
+    display_name: "campaign_record"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/campaign_record.png
+  mission_objective:
+    display_name: "mission_objective"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/mission_objective.png
+  mission_available:
+    display_name: "mission_available"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/mission_available.png
+  mission_in_progress:
+    display_name: "mission_in_progress"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/mission_in_progress.png
+  mission_page:
+    display_name: "mission_page"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/mission_page.png
+  quest_objective:
+    display_name: "quest_objective"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/quest_objective.png
+  quest_available:
+    display_name: "quest_available"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/quest_available.png
+  quest_in_progress:
+    display_name: "quest_in_progress"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/quest_in_progress.png
+  quest_page:
+    display_name: "quest_page"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/quest_page.png
+  quest_record:
+    display_name: "quest_record"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/quest_record.png
+  logbook_feats_icon:
+    display_name: "logbook_feats_icon"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/logbook_feats_icon.png
+  logbook_maps_icon:
+    display_name: "logbook_maps_icon"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/logbook_maps_icon.png
+  logbook_missions_icon:
+    display_name: "logbook_missions_icon"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/logbook_missions_icon.png
+  logbook_quests_icon:
+    display_name: "logbook_quests_icon"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/logbook_quests_icon.png
+  logbook_records_icon:
+    display_name: "logbook_records_icon"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/logbook_records_icon.png
+  logbook_next:
+    display_name: "logbook_next"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/logbook_next.png
+  logbook_back:
+    display_name: "logbook_back"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - item/logbook_back.png
   iron_question_mark:
-    display_name: "Iron Question Mark"
+    display_name: "iron_question_mark"
     resource:
       material: PAPER
       generate: true
       textures:
       - item/iron_question_mark.png
-  iron_exclamation_mark:
-    display_name: "Iron Exclamation Mark"
-    resource:
-      material: PAPER
-      generate: true
-      textures:
-      - item/iron_exclamation_mark.png
   back:
     display_name: "back"
     resource:

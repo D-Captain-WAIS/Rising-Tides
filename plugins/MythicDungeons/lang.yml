@@ -230,10 +230,10 @@ commands:
 # Messages dedicated to the operating of dungeon instances.
 
 instance:
-  loading: Loading instance...
+  loading: ''
   is-saving: '&cinstance is saving! Please wait and try again.'
   timed-out: '&cCould not load instance! Please submit a bug report'
-  loaded: instance loaded!
+  loaded: ''
   failed: '&cFailed to load instance! Please submit a bug report'
   requirements:
     # $1 = Name of the player who doesn't meet the requirements.
@@ -279,6 +279,8 @@ instance:
     item-banned: '&cThis item is banned in this dungeon!'
     command-deny: '&cThat command is not allowed in this dungeon!'
     spectate-deny: '&cCan''t spectate players outside the dungeon!'
+    all-lives-lost-and-spectating: '&cAll players have lost all their lives! Use &6/md
+      leave &cto leave the dungeon.'
   queue:
     # $1 = Name of the dungeon the player is about to play.
     dungeon-ready: '&eDungeon ''&6$1&e'' is now available! Are you ready?'
@@ -355,6 +357,7 @@ instance:
       not-dead: '&cThis player isn''t dead!'
       # $1 = Name of the player who has been revived.
       revived: '&a&l$1 &awas revived!!'
+    savepoint: '&eStarting at the party leader''s last checkpoint!'
 
 # ###########################
 # # MISCELLANEOUS MESSAGES ##

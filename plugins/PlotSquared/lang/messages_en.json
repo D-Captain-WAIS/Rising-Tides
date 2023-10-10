@@ -59,7 +59,7 @@
   "worldedit.worldedit_bypass": "<prefix><gray><italic>To bypass your restrictions use </gray><dark_aqua><command></dark_aqua></italic>",
   "worldedit.worldedit_bypassed": "<prefix><gray>Currently bypassing WorldEdit restriction.</gray>",
   "gamemode.gamemode_was_bypassed": "<prefix><gold>You bypassed the gamemode (</gold><gray><gamemode></gray><gold>) <gold>set for </gold><gray><plot>.</gray>",
-  "height.height_limit": "<prefix><gold>This plot area has building height limits: Min height: </gold><gray><minHeight></gray><gold>, Max height: </gold><gray><maxHeight></gray>",
+  "height.height_limit": "<prefix><gold>This plot area has building height limits: Min height: </gold><gray><minheight></gray><gold>, Max height: </gold><gray><maxheight></gray>",
   "notification.notify_enter": "<prefix><gray><player> entered your plot (</gray><gold><area>;<plot></gold><gray>).</gray>",
   "notification.notify_leave": "<prefix><gray><player> left your plot (</gray><gold><area>;<plot></gold><gray>).</gray>",
   "swap.swap_overlap": "<prefix><red>The proposed areas are not allowed to overlap.</red>",
@@ -124,7 +124,7 @@
   "economy.cannot_afford_merge": "<prefix><red>You cannot afford to merge the plots. It costs <gold><money></gold>.</red>",
   "economy.added_balance": "<prefix><gold><money> </gold><gray>has been added to your balance.</gray>",
   "economy.removed_balance": "<prefix><gold><money> </gold><gray>has been taken from your balance.</gray>",
-  "economy.removed_granted_plot": "<prefix><gray>You used <usedGrants> plot grant(s), you've got </gray><gold><remainingGrants></gold> <gray>left.</gray>",
+  "economy.removed_granted_plot": "<prefix><gray>You used <used_grants> plot grant(s), you've got </gray><gold><remaining_grants></gold> <gray>left.</gray>",
   "setup.choose_generator": "<gold>What generator do you want?</gold>",
   "setup.setup_not_started": "<prefix><gold>No setup started.</gold>",
   "setup.setup_init": "<prefix><gold>Usage: </gold><gray>/plot setup <value></gray>",
@@ -514,7 +514,7 @@
   "flag.flag_info_name": "<gray>Name: <gold><flag></gold></gray>",
   "flag.flag_info_category": "<gray>Category: </gray><gold><value></gold>",
   "flag.flag_info_description": "<gray>Description: </gray>",
-  "flag.flag_info_example": "<gray>Example: <click:suggest_command:<command> <flag> <value>><gold><command> <flag> <value></click></gold></gray>",
+  "flag.flag_info_example": "<gray>Example: <click:run_command:<command> <flag> <value>><gold><command> <flag> <value></click></gold></gray>",
   "flag.flag_info_default_value": "<gray>Default Value: <value></gray>",
   "flags.flag_category_string": "<gray>String Flags</gray>",
   "flags.flag_category_integers": "<gray>Integer Flags</gray>",
@@ -719,5 +719,8 @@
   "plotjukebox.jukebox_header": "Plot Jukebox",
   "plotjukebox.click_to_play": "<green>Click to play!</green>",
   "plotjukebox.cancel_music": "<gold>Cancel music</gold>",
-  "plotjukebox.reset_music": "<red>Click to remove the music!</red>"
+  "plotjukebox.reset_music": "<red>Click to remove the music!</red>",
+  "kick.player_not_in_plot": "<prefix><red>The player <gray><player></gray> is not on this plot.</red>",
+  "kick.cannot_kick_player": "<prefix><red>You cannot kick the player <gray><player></gray>.</red>",
+  "flags.flag_description_sculk_sensor_interact": "<gray>Set to `true` to allow guests to interact with sculk sensors.</gray>"
 }

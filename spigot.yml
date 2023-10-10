@@ -81,6 +81,8 @@ world-settings:
     mob-spawn-range: 8
     end-portal-sound-radius: 0
     growth:
+      pitcherplant-modifier: 100
+      torchflower-modifier: 100
       cactus-modifier: 100
       cane-modifier: 100
       melon-modifier: 100
@@ -128,6 +130,7 @@ world-settings:
       tick-inactive-villagers: true
       ignore-spectators: false
     entity-tracking-range:
+      display: 128
       players: 48
       animals: 48
       monsters: 48

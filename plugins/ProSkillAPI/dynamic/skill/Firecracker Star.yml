@@ -39,13 +39,13 @@ Firecracker Star:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -54,28 +54,31 @@ Firecracker Star:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote bmultishot_star'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.5'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Sound-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -84,10 +87,11 @@ Firecracker Star:
                     volume-scale: '0'
                     pitch-base: '2'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Particle Projectile-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -123,10 +127,11 @@ Firecracker Star:
                     speed: '0.1'
                     frequency: '0.005'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -137,10 +142,11 @@ Firecracker Star:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Sound-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -149,19 +155,21 @@ Firecracker Star:
                         volume-scale: '0'
                         pitch-base: '1.5'
                         pitch-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Delay-i: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         delay-base: '2'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Sound-j: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -170,10 +178,11 @@ Firecracker Star:
                             volume-scale: '0'
                             pitch-base: '0.5'
                             pitch-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Damage-k: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -184,10 +193,11 @@ Firecracker Star:
                             classifier: 'explosive'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Particle-l: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -206,10 +216,11 @@ Firecracker Star:
                             forward: '0'
                             upward: '1'
                             right: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Launch-m: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -220,28 +231,31 @@ Firecracker Star:
                             upward-scale: '0'
                             right-base: '0'
                             right-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Flag-n: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             type: 'Set'
                             key: 'ignited'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Value Set-o: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
                                 key: 'burn_dmg'
                                 value-base: 'setburn'
                                 value-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                     Particle-p: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -260,19 +274,21 @@ Firecracker Star:
                         forward: '0'
                         upward: '1'
                         right: '0'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Delay-q: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         delay-base: '1'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Particle-r: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -291,10 +307,11 @@ Firecracker Star:
                             forward: '0'
                             upward: '1'
                             right: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                 Sound-s: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -303,53 +320,60 @@ Firecracker Star:
                     volume-scale: '0'
                     pitch-base: '1'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Self-t: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-u: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Silence'
                     duration-base: '0.5'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Value Placeholder-v: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'setburn'
                 type: 'Number'
                 placeholder: '%math_5+({sapi_player_class_attribute:finesse}*0.1)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
         Value Placeholder-w: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'bfstar_dmg'
             type: 'Number'
             placeholder: '%math_10+({sapi_player_class_attribute:accuracy}*0.1)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Placeholder-x: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'bfstar_explosiondmg'
             type: 'Number'
             placeholder: '%math_20+({sapi_player_class_attribute:finesse}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

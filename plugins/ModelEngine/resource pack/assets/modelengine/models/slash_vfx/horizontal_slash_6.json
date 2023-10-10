@@ -1,0 +1,1 @@
+{"textures":{"1":"modelengine:entity/slashvfx1"},"elements":[{"from":[8.0,8.0,5.7000003],"to":[14.0,8.0,20.7],"faces":{"up":{"uv":[9.0,0.0,6.0,7.5],"tintindex":0,"rotation":0,"texture":"#1"},"down":{"uv":[3.0,15.0,0.0,7.5],"tintindex":0,"rotation":0,"texture":"#1"}}}]}

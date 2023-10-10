@@ -1,0 +1,387 @@
+info:
+  namespace: sunrise
+items:  
+  2h_attack:
+    displayname: "&c2h_attack"
+    permission: risingtides.2h_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/2h_attack.png
+  charge_attack:
+    displayname: "&ccharge_attack"
+    permission: risingtides.charge_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/charge_attack.png
+  dash_swing:
+    displayname: "&cdash_swing"
+    permission: risingtides.dash_swing
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/dash_swing.png
+  double_attack:
+    displayname: "&cdouble_attack"
+    permission: risingtides.double_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/double_attack.png
+  evade_strike:
+    displayname: "&cevade_strike"
+    permission: risingtides.evade_strike
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/evade_strike.png
+  hilt_strike:
+    displayname: "&chilt_strike"
+    permission: risingtides.hilt_strike
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/hilt_strike.png
+  jump_attack:
+    displayname: "&cjump_attack"
+    permission: risingtides.jump_attack
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/jump_attack.png  
+  overhead_swing:
+    displayname: "&coverhead_swing"
+    permission: risingtides.overhead_swing
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/overhead_swing.png   
+  piercing_strike:
+    displayname: "&cpiercing_strike"
+    permission: risingtides.piercing_strike
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/piercing_strike.png   
+  poke:
+    displayname: "&cpoke"
+    permission: risingtides.poke
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/poke.png 
+  quick_swings:
+    displayname: "&cquick_swings"
+    permission: risingtides.quick_swings
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/quick_swings.png  
+  wee:
+    displayname: "&cwee"
+    permission: risingtides.wee
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/wee.png  
+  arc_shot:
+    displayname: "&carc_shot"
+    permission: risingtides.arc_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/arc_shot.png   
+  bola_shot:
+    displayname: "&cbola_shot"
+    permission: risingtides.bola_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/bola_shot.png    
+  bounce_shot:
+    displayname: "&cbounce_shot"
+    permission: risingtides.bounce_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/bounce_shot.png   
+  caltrops:
+    displayname: "&ccaltrops"
+    permission: risingtides.caltrops
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/caltrops.png    
+  catapult:
+    displayname: "&ccatapult"
+    permission: risingtides.catapult
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/catapult.png     
+  dirt_star:
+    displayname: "&cdirt_star"
+    permission: risingtides.catapult
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/dirt_shot.png  
+  firecracker:
+    displayname: "&cfirecracker"
+    permission: risingtides.firecracker
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/firecracker.png              
+  firestarter:
+    displayname: "&cfirestarter"
+    permission: risingtides.firestarter
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/firestarter.png                            
+  multishot:
+    displayname: "&cmultishot"
+    permission: risingtides.multishot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/multishot.png                         
+  slipup:
+    displayname: "&cslipup"
+    permission: risingtides.slipup
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/slip_up.png                       
+  special_volley:
+    displayname: "&cspecial_volley"
+    permission: risingtides.special_volley
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/special_volley.png                    
+  whats_that:
+    displayname: "&cwhats_that"
+    permission: risingtides.whats_that
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/whats_that.png     
+  blunder_leap:
+    displayname: "&6blunder_leap"
+    permission: risingtides.blunder_leap
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/blunder_leap.png
+  chamber_blast:
+    displayname: "&6chamber_blast"
+    permission: risingtides.chamber_blast
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/chamber_blast.png
+  critical_shot:
+    displayname: "&6critical_shot"
+    permission: risingtides.critical_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/critical_shot.png  
+  dive_shot:
+    displayname: "&6dive_shot"
+    permission: risingtides.dive_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/dive_shot.png  
+  double_tap:
+    displayname: "&6double_tap"
+    permission: risingtides.double_tap
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/double_tap.png 
+  fast_hands:
+    displayname: "&6fast_hands"
+    permission: risingtides.fast_hands
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/fast_hands.png   
+  impairing_shot:
+    displayname: "&6impairing_shot"
+    permission: risingtides.impairing_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/impairing_shot.png     
+  pistol_whip:
+    displayname: "&6pistol_whip"
+    permission: risingtides.pistol_whip
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/pistol_whip.png
+  run:
+    displayname: "&6run"
+    permission: risingtides.run
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/run.png
+  spray_and_pray:
+    displayname: "&6spray_and_pray"
+    permission: risingtides.spray_and_pray
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/spray_and_pray.png
+  tactical_dive:
+    displayname: "&6tactical_dive"
+    permission: risingtides.tactical_dive
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/tactical_dive.png
+  vital_shot:
+    displayname: "&6vital_shot"
+    permission: risingtides.vital_shot
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/vital_shot.png
+  hard_punch:
+    displayname: "&cHard Punch"
+    permission: risingtides.hard_punch
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/hard_punch.png
+  hard_kick:
+    displayname: "&cHard Kick"
+    permission: risingtides.hard_kick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/hard_kick.png    
+  flail:
+    displayname: "&cflail"
+    permission: risingtides.flail
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/flail.png  
+  skedaddle:
+    displayname: "&cskedaddle"
+    permission: risingtides.skedaddle
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/skedaddle.png   
+  double_punch:
+    displayname: "&cdouble_punch"
+    permission: risingtides.double_punch
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/double_punch.png    
+  ottf:
+    displayname: "&c1234"
+    permission: risingtides.ottf
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/ottf.png 
+  overhand_swing:
+    displayname: "&coverhand_swing"
+    permission: risingtides.overhand_swing
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/overhand_swing.png  
+  running_kick:
+    displayname: "&running_kick"
+    permission: risingtides.running_kick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/running_kick.png 
+  dropkick:
+    displayname: "&dropkick"
+    permission: risingtides.dropkick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/dropkick.png 
+  low_kick:
+    displayname: "&low_kick"
+    permission: risingtides.low_kick
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/low_kick.png 
+  gootw:
+    displayname: "&gootw"
+    permission: risingtides.gootw
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/gootw.png
+  charge:
+    displayname: "&charge"
+    permission: risingtides.charge
+    resource:
+      material: PUMPKIN_SEEDS
+      generate: true
+      textures:
+      - icons/charge.png

@@ -309,3 +309,11 @@ attr:
   sender: 'PLAYER_ONLY'
   enabled: 'true'
   cooldown: 0
+forcepoints: 
+  name: 'forcepoints'
+  description: 'Adds, subtracts or sets skill points'
+  permission: 'skillapi.force'
+  args: '<add|set> [player] <amount> [group]'
+  sender: 'ANYONE'
+  enabled: 'true'
+  cooldown: 0

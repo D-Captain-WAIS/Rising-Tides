@@ -38,13 +38,13 @@ Pistol Whip:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,29 +53,32 @@ Pistol Whip:
             lore: 'Single Gunslinger'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote hilt_strike'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Channel-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 still: 'False'
                 time-base: '0.54'
                 time-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Single-e: 
                   type: 'target'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     range-base: '3'
@@ -85,10 +88,11 @@ Pistol Whip:
                     group: 'Enemy'
                     wall: 'False'
                     caster: 'false'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-f: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -99,20 +103,22 @@ Pistol Whip:
                         classifier: 'default'
                         knockback: 'False'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Status-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
                         status: 'Silence'
                         duration-base: '1'
                         duration-scale: '0.2'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Push-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -120,14 +126,17 @@ Pistol Whip:
                         speed-base: '1'
                         speed-scale: '0'
                         source: 'none'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
         Value Placeholder-i: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'pwhip_dmg'
             type: 'Number'
             placeholder: '%math_15+({sapi_player_class_attribute:dexterity}*0.3)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}

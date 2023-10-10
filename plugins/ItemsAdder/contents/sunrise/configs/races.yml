@@ -10,6 +10,24 @@ items:
       model_path: races/back_fin
     item_flags:
     - HIDE_ATTRIBUTES
+  shark_back_fin:
+    display_name: "Shark Back Fin"
+    permission: fishman
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/shark_back_fin
+    item_flags:
+    - HIDE_ATTRIBUTES
+  shark_hand_fins:
+    display_name: "Shark Hand Fin"
+    permission: fishman
+    resource:
+      material: PAPER
+      generate: false
+      model_path: races/shark_hand_fins
+    item_flags:
+    - HIDE_ATTRIBUTES
   fishman_head:
     display_name: "fishman_head"
     permission: fishman

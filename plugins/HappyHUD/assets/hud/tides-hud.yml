@@ -34,24 +34,135 @@ pirate-hp:
         listener: health
         increment: 16
         orientation: horizontal
-revarmy-hp:
+revarmy-hp-stm:
   layers:
     hp-text:
-      text: "<white>%hp-bar-value%/%hp-bar-max%"
+      text: "<white>%nf_5X_sapi_default_currenthealth%/%nf_5X_sapi_default_currentmaxhealth%"
       font: "default-outline"
       offset:
         x: 70
         y: -30
+    stm-text:
+      text: "<white>%nf_5X_sapi_default_currentmana%/%nf_5X_sapi_default_currentmaxmana%"
+      font: "default-outline"
+      offset:
+        x: 70
+        y: -48
+    rank-text:
+      texture:
+        path: assets/r-tides/skeptic.png
+      offset:
+        x: 71
+        y: -88
     outline:
       texture:
-        path: assets/r-tides/hp_empty.png
+        path: assets/r-tides/rev_empty.png
     hp-bar:
       texture:
-        path: assets/r-tides/revarmy_noborder.png
+        path: assets/r-tides/hp_full.png
+      offset:
+        x: 45
+        y: -26
       function:
         listener: health
         increment: 16
         orientation: horizontal
+    stm-bar:
+      texture:
+        path: assets/r-tides/stamina_full.png
+      function:
+        listener: stamina
+        increment: 16
+        orientation: horizontal
+      offset:
+        x: 44
+        y: -45
+marine-hp-stm:
+  layers:
+    hp-text:
+      text: "<white>%nf_5X_sapi_default_currenthealth%/%nf_5X_sapi_default_currentmaxhealth%"
+      font: "default-outline"
+      offset:
+        x: 70
+        y: -28
+    stm-text:
+      text: "<white>%nf_5X_sapi_default_currentmana%/%nf_5X_sapi_default_currentmaxmana%"
+      font: "default-outline"
+      offset:
+        x: 70
+        y: -46
+    rank-text:
+      texture:
+        path: assets/r-tides/seaman_first_class.png
+      offset:
+        x: 53
+        y: -86
+    outline:
+      texture:
+        path: assets/r-tides/marine_empty.png
+    hp-bar:
+      texture:
+        path: assets/r-tides/hp_full.png
+      offset:
+        x: 45
+        y: -24
+      function:
+        listener: health
+        increment: 16
+        orientation: horizontal
+    stm-bar:
+      texture:
+        path: assets/r-tides/stamina_full.png
+      function:
+        listener: stamina
+        increment: 16
+        orientation: horizontal
+      offset:
+        x: 44
+        y: -43
+pirate-hp-stm:
+  layers:
+    hp-text:
+      text: "<white>%nf_5X_sapi_default_currenthealth%/%nf_5X_sapi_default_currentmaxhealth%"
+      font: "default-outline"
+      offset:
+        x: 70
+        y: -32
+    stm-text:
+      text: "<white>%nf_5X_sapi_default_currentmana%/%nf_5X_sapi_default_currentmaxmana%"
+      font: "default-outline"
+      offset:
+        x: 70
+        y: -50
+    rank-text:
+      texture:
+        path: assets/r-tides/landlubber.png
+      offset:
+        x: 71
+        y: -90
+    outline:
+      texture:
+        path: assets/r-tides/pirate_empty.png
+    hp-bar:
+      texture:
+        path: assets/r-tides/hp_full.png
+      offset:
+        x: 45
+        y: -28
+      function:
+        listener: health
+        increment: 16
+        orientation: horizontal
+    stm-bar:
+      texture:
+        path: assets/r-tides/stamina_full.png
+      function:
+        listener: stamina
+        increment: 16
+        orientation: horizontal
+      offset:
+        x: 44
+        y: -47
 cp-hp:
   layers:
     hp-text:
@@ -119,7 +230,7 @@ hotbar-trim:
         path: assets/r-tides/hotbar_trim.png
       offset:
         x: 0
-        y: 9
+        y: -100
 dirt-splat:
   layers:
     splat:
@@ -143,5 +254,83 @@ dirt-splat:
       offset:
         x: 25
         y: 0
+tracking-hud:
+  layers:
+    tracking-type-text:
+      text: "%betonquest_logbook:objective.tracking_name.type%"
+      font: "unicode"
+      align: center
+      offset:
+        x: 68
+        y: -6
+    tracking-name-text:
+      text: "%betonquest_logbook:objective.tracking_name.name%"
+      font: "unicode"
+      align: center
+      offset:
+        x: 68
+        y: -15
+    tracking-name2-text:
+      text: "%betonquest_logbook:objective.tracking_name.name2%"
+      font: "unicode"
+      align: center
+      offset:
+        x: 68
+        y: -24
+    tracking-obj-text1:
+      text: "%betonquest_logbook:objective.tracking_objective.part1%"
+      font: "unicode"
+      align: center
+      offset:
+        x: 186
+        y: -6
+    tracking-obj-text2:
+      text: "%betonquest_logbook:objective.tracking_objective.part2%"
+      font: "unicode"
+      align: center
+      offset:
+        x: 186
+        y: -15
+    tracking-obj-text3:
+      text: "%betonquest_logbook:objective.tracking_objective.part3%"
+      font: "unicode"
+      align: center
+      offset:
+        x: 186
+        y: -24
+    exp_text:
+      text: "%nf_5X_sapi_default_currentexp%/%nf_5X_sapi_default_currentrequiredexp%"
+      font: "default-outline"
+      align: center
+      offset: 
+        x: 127
+        y: -30
+    level_text:
+      text: "%sapi_default_currentlevel%"
+      font: "default-outline"
+      align: center
+      offset: 
+        x: 127
+        y: -12
+    tracking-bar:
+      texture:
+        path: assets/r-tides/navigation_hud_empty.png
+      offset: 
+        x: 0
+        y: 6
+    exp-sphere:
+      texture:
+        path: assets/r-tides/navigation_hud.png
+      offset:
+        x: 113
+        y: -2
+      function:
+        listener: class_exp
+        increment: 16
+        orientation: vertical
+    tracking-bg:
+      texture:
+        path: assets/r-tides/navigation_hud_bg.png
+    
         
 

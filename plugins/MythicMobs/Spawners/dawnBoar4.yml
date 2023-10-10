@@ -13,7 +13,7 @@ dawnBoar4:
   MobLevel: '1'
   MobsPerSpawn: 1
   Cooldown: 10
-  CooldownTimer: 0
+  CooldownTimer: 1
   Warmup: 30
   WarmupTimer: 0
   CheckForPlayers: true

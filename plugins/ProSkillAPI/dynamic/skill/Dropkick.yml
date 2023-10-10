@@ -40,31 +40,33 @@ Dropkick:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote dropkick'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Delay-c: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             delay-base: '0.5'
             delay-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Cone-d: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 range-base: '4'
@@ -76,10 +78,11 @@ Dropkick:
                 caster: 'False'
                 max-base: '99'
                 max-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -90,10 +93,11 @@ Dropkick:
                     classifier: 'default'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Push-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -101,10 +105,11 @@ Dropkick:
                     speed-base: '.5'
                     speed-scale: '.1'
                     source: 'none'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Sound-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -114,10 +119,11 @@ Dropkick:
                     volume-scale: '0'
                     pitch-base: '1'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Potion-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -127,19 +133,21 @@ Dropkick:
                     tier-scale: '0'
                     seconds-base: '3'
                     seconds-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
         Delay-i: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             delay-base: '0.15'
             delay-scale: '0'
+          preview: 
+            enabled: 'false'
           children: 
             Launch-j: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -150,24 +158,28 @@ Dropkick:
                 upward-scale: '0'
                 right-base: '0'
                 right-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Value Placeholder-k: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'dkick_dmg'
             type: 'Number'
             placeholder: '%math_35+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Value Placeholder-l: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'jumpspeed'
             type: 'Number'
             placeholder: '%math_0.5+({sapi_player_class_attribute:agility}*0.01)%'
+          preview: 
+            enabled: 'false'
           children:  {}

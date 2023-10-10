@@ -22,8 +22,6 @@ prevent-mob-spawn: false
 no-players-toggle: false
 worlds:
   dawn_island:
-    x: 0.5
-    z: 0.5
-    radiusX: 1500
-    radiusZ: 1500
-    wrapping: false
+    border_size: 2500
+    center_x: 38
+    center_z: -59

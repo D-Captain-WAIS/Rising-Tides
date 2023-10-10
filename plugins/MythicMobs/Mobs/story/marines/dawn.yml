@@ -20,5 +20,159 @@ makiFollow:
   - skill{s=makiFollowSpawn} @self ~onSpawn
   - skill{s=makiFollowArrive} @self ~onTimer:1
   - skill{s=makiLeave} @Owner ~onTimer:1
+swordPirateVault:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Sword Pirate]'
+  Health: 80
+  Damage: 0
+  Options:
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Despawn: false
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=pirate_sword;s=1;n=name} @self ~onSpawn
+  - skill{s=meleePirateAI} @self ~onSignal:attack
+  - randomskill{skills=Single_Swing,Double_Swing} @target ~onAttack
+brawlerPirateVault:  
+  Type: WITHER_SKELETON
+  Display: '&c&l[Melee Pirate]'
+  Health: 100
+  Damage: 0
+  Options:
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Despawn: false
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=pirate_brawler;s=1;n=name} @self ~onSpawn
+  - skill{s=meleePirateAI} @self ~onSignal:attack
+  - skill{s=BasicMeleeAttack} @target ~onAttack
+vaultPiratesActivator:
+  Type: PIG
+  Display: ''
+  Health: 40
+  Damage: 0
+  Options:
+    Invisible: true
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Despawn: false
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - signal{s=attack} @EIR{r=50} ~onSpawn
+  - teleportto{location=0,-200,0} @self ~onTimer:20
+vaultParticles1:
+  Type: PIG
+  Display: ''
+  Health: 40
+  Damage: 0
+  Options:
+    Invisible: true
+    Invincible: true
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Despawn: false
+    Collidable: false
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - effect:particles{p=villager_happy;a=2;y=1} @Ring{r=2;p=40} ~onTimer:10
+  - teleportto{location=0,-200,0} @self ~onSignal:remove
+vaultParticleRemover:
+  Type: PIG
+  Display: ''
+  Health: 40
+  Damage: 0
+  Options:
+    Invisible: true
+    Invincible: true
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Despawn: false
+    Collidable: false
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - signal{s=remove} @EIR{r=4} ~onSpawn
+  - teleportto{location=0,-200,0} @self ~onTimer:10
+vaultParticles2:
+  Type: PIG
+  Display: ''
+  Health: 40
+  Damage: 0
+  Options:
+    Invisible: true
+    Invincible: true
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Despawn: false
+    Collidable: false
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - effect:particles{p=villager_happy;a=2;y=1} @Ring{r=2;p=40} ~onTimer:10
+  - skill{s=startBanditConvo} @self ~onTimer:10
+bjamFightEnterParticles:
+  Type: PIG
+  Display: ''
+  Health: 40
+  Damage: 0
+  Options:
+    Invisible: true
+    Invincible: true
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+    Despawn: false
+    Collidable: false
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - effect:particles{p=villager_happy;a=2;y=1} @Ring{r=4;p=40} ~onTimer:10
+
+  
   
   

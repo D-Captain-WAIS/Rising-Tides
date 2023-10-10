@@ -38,13 +38,13 @@ Impairing Shot:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,48 +53,53 @@ Impairing Shot:
             lore: 'Single Gunslinger'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'False'
                 command: 'iaemote pcritical_shot'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Channel-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 still: 'False'
                 time-base: '0.5'
                 time-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
             Value Placeholder-e: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'ishot_dmg'
                 type: 'Number'
                 placeholder: '%math_16+({sapi_player_class_attribute:accuracy}*0.12)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-f: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.65'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Sound-g: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -103,10 +108,11 @@ Impairing Shot:
                     volume-scale: '0'
                     pitch-base: '2'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Item Projectile-h: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -138,10 +144,11 @@ Impairing Shot:
                     right-base: '0'
                     right-scale: '0'
                     use-effect: 'False'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-i: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'True'
@@ -152,18 +159,20 @@ Impairing Shot:
                         classifier: 'default'
                         knockback: 'False'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Entity Type-j: 
                       type: 'condition'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         types: 
                         - 'Player'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Potion-k: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -173,16 +182,18 @@ Impairing Shot:
                             tier-scale: '0'
                             seconds-base: '4'
                             seconds-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                         Else-l: 
                           type: 'condition'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Potion-m: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -192,10 +203,11 @@ Impairing Shot:
                                 tier-scale: '0'
                                 seconds-base: '4'
                                 seconds-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                 Particle-n: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -214,4 +226,6 @@ Impairing Shot:
                     forward: '1.5'
                     upward: '1.5'
                     right: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}

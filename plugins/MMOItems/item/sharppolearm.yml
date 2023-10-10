@@ -1,5 +1,6 @@
 SENTO:
   base:
-    material: PAPER
-    custom-model-data: 10035.0
+    material: GUNPOWDER
+    custom-model-data: 10001.0
     name: sento
+    attack-damage: 9999999.0

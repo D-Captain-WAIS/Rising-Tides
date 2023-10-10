@@ -1,0 +1,36 @@
+dawnRat5:
+  World: dawn_island
+  X: 357
+  Y: 31
+  Z: 445
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  Radius: 1.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '7'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 10
+  Warmup: 30
+  ActivationRange: 100.0
+  ScalingRange: 25.0
+  LeashRange: 30.0
+  HealOnLeash: false
+  ResetThreatOnLeash: true
+  CheckForPlayers: true
+  ShowFlames: false
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0
+  MobName: ''
+MobName: dawnRat
+World: dawn_island
+X: 357
+Y: 31
+Z: 445
+Yaw: 0.0
+Pitch: 0.0
+Conditions: &id003 []
+SpawnConditions: *id003

@@ -1,0 +1,19 @@
+dawnBandit1:
+  MobName: meleeBandit
+  World: dawn_island
+  X: -290
+  Y: 94
+  Z: -191
+  Yaw: 0.0
+  Pitch: 0.0
+  MobLevel: '1'
+  MaxMobs: '1'
+  Radius: 1.0
+  Cooldown: 10
+  Warmup: 30
+  HealOnLeash: false
+  ResetThreatOnLeash: true
+  ShowFlames: false
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 1

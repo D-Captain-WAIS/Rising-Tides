@@ -1,12 +1,10 @@
-# ---------------------------------------------- #
-#              General Configuration             #
-# ---------------------------------------------- #
-# If you are unsure of how to use this file,     #
-# but would like to change how the plugin shows  #
-# text, visit the BukkitDev page at:             #
-# http://dev.bukkit.org/bukkit-plugins/skillapi/ #
-# and look at the default configuration section  #
-# ---------------------------------------------- #
+# -------------------------------------------------------------------------------------------------------------------------- #
+#                                              General Configuration                                                         #
+# -------------------------------------------------------------------------------------------------------------------------- #
+# If you are unsure of how to use this file but would like to change how the plugin shows text, visit the BukkitDev page at: #
+# https://www.spigotmc.org/resources/proskillapi-create-custom-races-classes-skills-spells-with-an-easy-online-editor.91913/ #
+# and look at the default configuration section                                                                              #
+# -------------------------------------------------------------------------------------------------------------------------- #
 Accounts: 
 
   # The main class group used for GUI displays
@@ -292,9 +290,6 @@ GUI:
   - 'level_up'
   - 'exp_lost'
 
-  # Whether to display class information on a scoreboard
-  scoreboard-enabled: 'false'
-
   # Whether to add a prefix to players with their class name
   show-class-name: 'false'
 
@@ -316,58 +311,8 @@ Casting:
   # Whether the main casting option is enabled
   enabled: 'true'
 
-  # Whether to use the mult-bar implementation.
-  # When enabled:
-  # - Left/Right clicking on item opens skill bars
-  # - Skills assigned through tree
-  # - Preview when hovering in the skill bar
-  # - Limited number of skills can be put on skill bars
-  # When disabled:
-  # - Left/Right clicking on item cycles through skills
-  # - Preview when hovering the item
-  # - No limit on skills (though makes cycling hard to find skills)
-  bars: 'true'
-
-  # Whether to use the combat bar implementation. Details:
-  # - Specified slot becomes a toggle item
-  # - Can optionally move over or require interacting (left, right, or drop) to swap modes
-  # - Swaps between combat mode and passive mode
-  # - In combat mode, works like the classic skill bar
-  # - In passive mode, no skills are shown
-  # - Passive and combat modes each have their own stored contents
-  # - combat mode uses the skill bar settings
-  combat: 'true'
-
   # Global cooldown between skill casts in seconds
   cooldown: '0'
-
-  # Settings for skill target indicators that play effects
-  # to show where a skill will hit
-  cast-indicator: 
-
-    # Whether the feature is enabled
-    enabled: 'false'
-
-    # How tightly to pack particles in the effect. A higher
-    # density will play more particles. It represents the
-    # amount of particles played per block units
-    density: '1'
-
-    # How often the particles are played for the effect
-    # in plays per second
-    frequency: '10'
-
-    # How fast position animations happen in blocks per second
-    animation: '1'
-
-    # Particle to use when it has a target
-    particle: 
-      particle: 'crit'
-      dx: '0'
-      dy: '0'
-      dz: '0'
-      speed: '0'
-      amount: '1'
 
   # The slot the item is kept in, must be in the range 1-9
   slot: '9'
@@ -413,6 +358,53 @@ Casting:
     - 'the cast item and will be'
     - 'cast immediately when switching'
     - 'to their slot.'
+  # What casting mode to use. Available options are:
+  # ITEM:
+  # - The casting slot is set to a casting item
+  # - Left/Right clicking on item cycles through skills
+  # - Preview skill components while hovering the item
+  # - No limit on skills (though makes cycling hard to find skills)
+  # BARS:
+  # - The casting slot is set to a casting item
+  # - Left clicking on item opens hover bar
+  # - Preview skill components while in hover bar the item
+  # - Dropping skill indicator while in hover bar casts the skill
+  # - Right clicking on item opens instant bar
+  # - Selecting a slot while in instant bar immediately casts the skill
+  # - Skills are assigned through the /class skill menu
+  # - Limited number of skills can be put on skill bars
+  # COMBAT:
+  # - The casting slot becomes a toggle item
+  # - Swaps between combat mode and passive mode
+  # - In combat mode, works like the instant skill bar
+  # - In passive mode, no skills are shown
+  # - Skills are assigned through the /class skill menu
+  # ACTION_BAR:
+  # - Hand swapping (F by default) enters casting mode
+  # - Assigned skills are displayed in the action bar
+  # - Pressing the corresponding number key casts the desired skill
+  # - Skills are assigned through the /class skill menu
+  # TITLE:
+  # - Hand swapping (F by default) enters casting mode
+  # - Assigned skills are displayed as a title
+  # - Pressing the corresponding number key casts the desired skill
+  # - Skills are assigned through the /class skill menu
+  # SUBTITLE:
+  # - Hand swapping (F by default) enters casting mode
+  # - Assigned skills are displayed as a subtitle
+  # - Pressing the corresponding number key casts the desired skill
+  # - Skills are assigned through the /class skill menu
+  # CHAT:
+  # - Hand swapping (F by default) enters casting mode
+  # - Assigned skills are displayed in the chat
+  # - Pressing the corresponding number key casts the desired skill
+  # - Skills are assigned through the /class skill menu
+  mode: 'combat'
+
+  # The format for skills displayed while on a text casting mode (action-bar, title, subtitle or chat)
+  message-mode-format: 
+    skill: '&6[%number%] &a%skill%'
+    separator: '&7 - '
 
 Click Combos: 
 
@@ -627,3 +619,23 @@ Worlds:
   # The worlds to include in the enable/disable list
   worlds: 
   - 'world'
+
+PVP: 
+
+  #The minimum level the player must be to be able to PVP with other players. -1 disables this option.
+  min-level: '-1'
+
+  #The maximum level difference two players must have to be able to PVP. -1 disables this option.
+  level-range: '-1'
+
+# Customize the scoreboard here
+scoreboard: 
+  enabled: 'falsee'
+  title: '&6&l%sapi_default_currentgroupname%'
+  format: 
+  - '&2Health &c%sapi_default_scurrenthealth%'
+  - '&2%sapi_default_currentmananame% &b%sapi_default_scurrentmana%'
+  - '&2Level &a%sapi_default_currentlevel%'
+  - '&2Exp &a%sapi_default_scurrentexp%'
+  - '&2AP &a%sapi_default_attributepoints%'
+  - '&2SP &a%sapi_default_skillpoints%'

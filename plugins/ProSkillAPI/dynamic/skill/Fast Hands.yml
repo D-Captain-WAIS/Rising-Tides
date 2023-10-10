@@ -38,13 +38,13 @@ Fast Hands:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Cooldown-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
@@ -52,4 +52,6 @@ Fast Hands:
             type: 'Percent'
             value-base: '-25'
             value-scale: '3'
+          preview: 
+            enabled: 'false'
           children:  {}

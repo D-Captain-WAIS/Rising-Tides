@@ -20,6 +20,6 @@ on-join:
   random-player-camera-path: []
   show-once: true
 camera-effects:
-  invisible: false
-  spectator-mode: true
+  invisible: true
+  spectator-mode: false
 version: '0.6'

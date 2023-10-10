@@ -1,0 +1,27 @@
+summonPlayerModel:
+  Skills:
+  - summon{mob=defaultPlayer;amount=1;summonerIsOwner=true} @selflocation
+playerModelSetup:
+  Skills:
+  - modelplayerskin @Owner
+  - mountmodel{d=true;f=true;mode=force_walking} @Owner 
+  - setparent @Owner
+  # - setmodeltag{mid=player_model;p=faction;t="%img_marine%"} @Self
+  # - setmodeltag{mid=player_model;p=name;t="%img_ensign% Richard Vermillion"} @Self
+  # - setmodeltag{mid=player_model;p=title;t="%img_absolute%"} @Self
+  # - setmodeltag{mid=player_model;p=guild;t="&o&9<S.W.O.R.D>"} @Self
+  #variable setup
+  - setvariable{var=motionTypeCheck;scope=caster;value=walking;t=STRING} @self
+setSprintPlayer:
+  Conditions:
+  - (velocity{v=>0.15} true && varEquals{var=caster.motionTypeCheck;value="walking"}) orElseCast setWalkPlayer
+  Skills:
+  - defaultstate{mid=player_model;type=walk;state=sprint} @self
+  - setvariable{var=motionTypeCheck;scope=caster;value=sprinting;t=STRING} @self
+setWalkPlayer:
+  Conditions:
+  - (velocity{v=<0.15} true && varEquals{var=caster.motionTypeCheck;value="sprinting"}) true 
+  Skills:
+  - defaultstate{mid=player_model;type=walk;state=walk} @self
+  - setvariable{var=motionTypeCheck;scope=caster;value=walking;t=STRING} @self
+

@@ -38,13 +38,13 @@ Slip-up:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Item-b: 
           type: 'condition'
-          indicator: 'None'
           data: 
             icon-key: ''
             check-mat: 'False'
@@ -53,28 +53,31 @@ Slip-up:
             lore: 'Bow'
             check-name: 'False'
             regex: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Command-c: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 command: 'iaemote slipup'
                 type: 'OP'
+              preview: 
+                enabled: 'false'
               children:  {}
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 delay-base: '0.7'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Particle Animation-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -106,28 +109,31 @@ Slip-up:
                     upward: '0.7'
                     right: '0.25'
                     -with-rotation: 'False'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Delay-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     delay-base: '0.2'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Self-g: 
                       type: 'target'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         group: 'enemy'
                         wall: 'false'
                         caster: 'false'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Offset-h: 
                           type: 'target'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             forward-base: '0'
@@ -139,10 +145,11 @@ Slip-up:
                             group: 'enemy'
                             wall: 'false'
                             caster: 'false'
+                          preview: 
+                            enabled: 'false'
                           children: 
                             Particle Animation-i: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -174,19 +181,21 @@ Slip-up:
                                 upward: '0'
                                 right: '0'
                                 -with-rotation: 'False'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                             Delay-j: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
                                 delay-base: '2'
                                 delay-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children: 
                                 Area-k: 
                                   type: 'target'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     radius-base: '5'
@@ -197,10 +206,11 @@ Slip-up:
                                     max-base: '99'
                                     max-scale: '0'
                                     random: 'False'
+                                  preview: 
+                                    enabled: 'false'
                                   children: 
                                     Damage-l: 
                                       type: 'mechanic'
-                                      indicator: 'None'
                                       data: 
                                         icon-key: ''
                                         counts: 'True'
@@ -211,10 +221,11 @@ Slip-up:
                                         classifier: 'explosive'
                                         knockback: 'True'
                                         cause: 'Entity Attack'
+                                      preview: 
+                                        enabled: 'false'
                                       children:  {}
                                     Launch-m: 
                                       type: 'mechanic'
-                                      indicator: 'None'
                                       data: 
                                         icon-key: ''
                                         counts: 'True'
@@ -225,10 +236,11 @@ Slip-up:
                                         upward-scale: '0'
                                         right-base: '0'
                                         right-scale: '0'
+                                      preview: 
+                                        enabled: 'false'
                                       children:  {}
                                 Sound-n: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -237,10 +249,11 @@ Slip-up:
                                     volume-scale: '0'
                                     pitch-base: '0.5'
                                     pitch-scale: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                                 Particle-o: 
                                   type: 'mechanic'
-                                  indicator: 'None'
                                   data: 
                                     icon-key: ''
                                     counts: 'True'
@@ -259,10 +272,11 @@ Slip-up:
                                     forward: '0'
                                     upward: '0'
                                     right: '0'
+                                  preview: 
+                                    enabled: 'false'
                                   children:  {}
                             Sound-p: 
                               type: 'mechanic'
-                              indicator: 'None'
                               data: 
                                 icon-key: ''
                                 counts: 'True'
@@ -271,10 +285,11 @@ Slip-up:
                                 volume-scale: '0'
                                 pitch-base: '2'
                                 pitch-scale: '0'
+                              preview: 
+                                enabled: 'false'
                               children:  {}
                         Potion-q: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -284,62 +299,70 @@ Slip-up:
                             tier-scale: '0'
                             seconds-base: '1.5'
                             seconds-scale: '0'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
             Value Placeholder-r: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'bslipup_dmg'
                 type: 'Number'
                 placeholder: '%math_30+({sapi_player_class_attribute:finesse}*0.6)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
             Self-s: 
               type: 'target'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 group: 'enemy'
                 wall: 'false'
                 caster: 'false'
+              preview: 
+                enabled: 'false'
               children: 
                 Status-t: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
                     status: 'Root'
                     duration-base: '1.2'
                     duration-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Value Placeholder-u: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 key: 'setburn'
                 type: 'Number'
                 placeholder: '%math_10+({sapi_player_class_attribute:finesse}*0.15)+{qrpg_damage_physical}%'
+              preview: 
+                enabled: 'false'
               children:  {}
         Self-v: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             group: 'enemy'
             wall: 'false'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children: 
             Status-w: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 status: 'Silence'
                 duration-base: '0.75'
                 duration-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}

@@ -1,0 +1,517 @@
+speechBlueJam:
+  Type: WITHER_SKELETON
+  Display: ''
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=speaking_bluejam;step=1} @self ~onSpawn
+  - skill{s=blueJamSpeech} @self ~onSpawn
+speechCluster1:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=cluster_mob;step=1} @self ~onSpawn
+  - skill{s=clusterSpeech1} @self ~onSpawn
+speechCluster2:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=cluster_mob;step=2} @self ~onSpawn
+  - skill{s=clusterSpeech2} @self ~onSpawn
+speechCluster3:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=cluster_mob;step=3} @self ~onSpawn
+  - skill{s=clusterSpeech3} @self ~onSpawn
+speechCluster4:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=cluster_mob;step=4} @self ~onSpawn
+  - skill{s=clusterSpeech4} @self ~onSpawn
+speechCluster5:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=cluster_mob;step=4} @self ~onSpawn
+  - skill{s=clusterSpeech5} @self ~onSpawn
+speechCluster6:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=cluster_mob;step=4} @self ~onSpawn
+  - skill{s=clusterSpeech6} @self ~onSpawn
+speechCluster7:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=cluster_mob;step=4} @self ~onSpawn
+  - skill{s=clusterSpeech7} @self ~onSpawn
+#21 men
+speechSwordPirate1:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_sword;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-154} @self ~onSpawn
+  - skill{s=swordPirateSpeech} @self ~onSpawn
+speechSwordPirate2:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_sword;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=152} @self ~onSpawn
+  - skill{s=swordPirateSpeech} @self ~onSpawn
+speechSwordPirate3:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_sword;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=167} @self ~onSpawn
+  - skill{s=swordPirateSpeech} @self ~onSpawn
+speechSwordPirate4:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_sword;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-153} @self ~onSpawn
+  - skill{s=swordPirateSpeech} @self ~onSpawn
+speechSwordPirate5:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_sword;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=137} @self ~onSpawn
+  - skill{s=swordPirateSpeech} @self ~onSpawn
+speechSwordPirate6:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_sword;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-150} @self ~onSpawn
+  - skill{s=swordPirateSpeech} @self ~onSpawn
+speechSwordPirate7:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_sword;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-170} @self ~onSpawn
+  - skill{s=swordPirateSpeech} @self ~onSpawn
+#28 men
+speechBrawlerPirate1:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_brawler;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=160} @self ~onSpawn
+  - skill{s=brawlerPirateSpeech} @self ~onSpawn
+speechBrawlerPirate2:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_brawler;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=157} @self ~onSpawn
+  - skill{s=brawlerPirateSpeech} @self ~onSpawn
+speechBrawlerPirate3:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_brawler;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-132} @self ~onSpawn
+  - skill{s=brawlerPirateSpeech} @self ~onSpawn
+speechBrawlerPirate4:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_brawler;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=133} @self ~onSpawn
+  - skill{s=brawlerPirateSpeech} @self ~onSpawn
+speechBrawlerPirate5:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_brawler;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-145} @self ~onSpawn
+  - skill{s=brawlerPirateSpeech} @self ~onSpawn
+speechBrawlerPirate6:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_brawler;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-171} @self ~onSpawn
+  - skill{s=brawlerPirateSpeech} @self ~onSpawn
+speechBrawlerPirate7:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_brawler;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-171} @self ~onSpawn
+  - skill{s=brawlerPirateSpeech} @self ~onSpawn
+#35 men
+speechGunnerPirate1:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_gunner;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-179} @self ~onSpawn
+  - skill{s=gunnerPirateSpeech} @self ~onSpawn
+speechGunnerPirate2:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_gunner;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=168} @self ~onSpawn
+  - skill{s=gunnerPirateSpeech} @self ~onSpawn
+speechGunnerPirate3:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_gunner;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=138} @self ~onSpawn
+  - skill{s=gunnerPirateSpeech} @self ~onSpawn
+speechGunnerPirate4:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_gunner;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-112} @self ~onSpawn
+  - skill{s=gunnerPirateSpeech} @self ~onSpawn
+speechGunnerPirate5:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_gunner;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-127} @self ~onSpawn
+  - skill{s=gunnerPirateSpeech} @self ~onSpawn
+speechGunnerPirate6:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_gunner;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=-161} @self ~onSpawn
+  - skill{s=gunnerPirateSpeech} @self ~onSpawn
+speechGunnerPirate7:
+  Type: WITHER_SKELETON
+  Display: '&c&l[Bandits]'
+  Health: 50
+  Damage: 0
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Silent: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{m=pirate_gunner;step=1} @self ~onSpawn
+  - setrotation{relative=false;yaw=175} @self ~onSpawn
+  - skill{s=gunnerPirateSpeech} @self ~onSpawn

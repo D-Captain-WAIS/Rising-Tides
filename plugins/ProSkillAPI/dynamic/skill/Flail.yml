@@ -36,22 +36,23 @@ Flail:
   components: 
     Cast: 
       type: 'trigger'
-      indicator: 'None'
       data: 
         icon-key: ''
+      preview: 
+        enabled: 'false'
       children: 
         Command-b: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             command: 'iaemote flail'
             type: 'OP'
+          preview: 
+            enabled: 'false'
           children:  {}
         Area-c: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             radius-base: '3'
@@ -62,19 +63,21 @@ Flail:
             max-base: '99'
             max-scale: '0'
             random: 'False'
+          preview: 
+            enabled: 'false'
           children: 
             Delay-d: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'False'
                 delay-base: '0.4'
                 delay-scale: '0'
+              preview: 
+                enabled: 'false'
               children: 
                 Damage-e: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -85,19 +88,21 @@ Flail:
                     classifier: 'default'
                     knockback: 'True'
                     cause: 'Entity Attack'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
                 Delay-f: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'False'
                     delay-base: '0.2'
                     delay-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children: 
                     Damage-g: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
@@ -108,19 +113,21 @@ Flail:
                         classifier: 'default'
                         knockback: 'True'
                         cause: 'Entity Attack'
+                      preview: 
+                        enabled: 'false'
                       children:  {}
                     Delay-h: 
                       type: 'mechanic'
-                      indicator: 'None'
                       data: 
                         icon-key: ''
                         counts: 'False'
                         delay-base: '0.2'
                         delay-scale: '0'
+                      preview: 
+                        enabled: 'false'
                       children: 
                         Damage-i: 
                           type: 'mechanic'
-                          indicator: 'None'
                           data: 
                             icon-key: ''
                             counts: 'True'
@@ -131,10 +138,11 @@ Flail:
                             classifier: 'default'
                             knockback: 'True'
                             cause: 'Entity Attack'
+                          preview: 
+                            enabled: 'false'
                           children:  {}
                 Sound-j: 
                   type: 'mechanic'
-                  indicator: 'None'
                   data: 
                     icon-key: ''
                     counts: 'True'
@@ -144,10 +152,11 @@ Flail:
                     volume-scale: '0'
                     pitch-base: '1'
                     pitch-scale: '0'
+                  preview: 
+                    enabled: 'false'
                   children:  {}
             Sound-k: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
@@ -157,33 +166,38 @@ Flail:
                 volume-scale: '0'
                 pitch-base: '1'
                 pitch-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}
         Value Placeholder-l: 
           type: 'mechanic'
-          indicator: 'None'
           data: 
             icon-key: ''
             counts: 'True'
             key: 'flail_damage'
             type: 'Number'
             placeholder: '%math_10+({sapi_player_class_attribute:strength}*0.25)+{qrpg_damage_physical}%'
+          preview: 
+            enabled: 'false'
           children:  {}
         Self-m: 
           type: 'target'
-          indicator: 'None'
           data: 
             icon-key: ''
             group: 'enemy'
             wall: 'false'
             caster: 'false'
+          preview: 
+            enabled: 'false'
           children: 
             Status-n: 
               type: 'mechanic'
-              indicator: 'None'
               data: 
                 icon-key: ''
                 counts: 'True'
                 status: 'Silence'
                 duration-base: '0.7'
                 duration-scale: '0'
+              preview: 
+                enabled: 'false'
               children:  {}

@@ -1,0 +1,36 @@
+  NotRightWeapon:
+    Skills:
+    - message{m="&c&oYou don't have the right weapon equipped!"}
+#Two Handed Swing  
+  TwoHandedSwingSignal:
+    Skills:
+    - signal{s=mwnTwoHandedSwing} @mountedmodel
+  TwoHandedSwingCheckItem:
+    Skills:
+    - message{m=checked weapon} @owner
+    - setvariable{var=caster.equippedweapon;value=%checkitem_getinfo:15_lorecontains:0%;t=STRING} @Owner
+    - message{m=<caster.var.equippedweapon>} @owner
+    - skill{s=TwoHandedSwing} @self
+  TwoHandedSwing:
+    TargetConditions:
+    - (varEquals{var=caster.equippedweapon;value="&c&oSingle Wield Duelist (Edged)"} true || varEquals{var=caster.equippedweapon;value="&c&oSingle Wield Duelist (Blunt)"} true) true orElseCast TwoHandedSwingBuster
+    Skills:
+    - state{mid=player_model;s=mwn_twohandedswing_sduelist;lerpout=3;lerpin=3} @self
+    - delay 5
+    - summon{type=rightHorizontalSlash;amount=1} @selflocation
+  TwoHandedSwingBuster:
+    TargetConditions:
+    - (varEquals{var=caster.equippedweapon;value="Buster (Edged)"} true || varEquals{var=caster.equippedweapon;value="Buster (Blunt)"} true) true orElseCast TwoHandedSwingPolearm
+    Skills:
+    - message{m=checked weapon} @owner
+    - state{mid=player_model;s=mwn_twohandedswing_buster;lerpout=3;lerpin=3} @self
+    - delay 5
+    - summon{type=rightHorizontalSlash;amount=1} @selflocation
+  TwoHandedSwingPolearm:
+    TargetConditions:
+    - (varEquals{var=caster.equippedweapon;value="Polearm (Edged)"} true || varEquals{var=caster.equippedweapon;value="Polearm (Blunt)"} true) true orElseCast NotRightWeapon
+    Skills:
+    - message{m=checked weapon} @owner
+    - state{mid=player_model;s=mwn_twohandedswing_polearm;lerpout=3;lerpin=3} @self
+    - delay 5
+    - summon{type=rightHorizontalSlash;amount=1} @selflocation

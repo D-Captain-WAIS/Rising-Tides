@@ -292,7 +292,31 @@ conversations:
     player_options:
       no_problem:
         text: "No problem! Just doing my job!"
-        event: "met_dadan,remove_makino,remove_going_dadan,lv3"
-  
+        event: "met_dadan,remove_makino,remove_going_dadan,lv3,find_hideout,spy_bluejam"
+  bandit:
+    quester: "\n&4&l[BlueJam Pirate]"
+    first: "who_u"
+    stop: "true"
+    NPC_options:
+      who_u:
+        text: "\nHey you! What are you doing here? Aren't you supposed to be moving the equipment?"
+        pointers: "yessir,explanation,piss"
+      recognize:
+        text: "\nWait a second. I don't seem to recognize you. GET EM!"
+        event: "enterCombatVault"
+      marine:
+        text: "\nWait a second...MARINE! GET EM!"
+        event: "enterCombatVault"
+    player_options:
+      yessir:
+        text: "Uhhhh…Yessir! I'll get on it right after I-"
+        pointers: "recognize"
+      explanation:
+        text: "You know...I have a VERY good explanation for this I &oswear"
+        pointers: "marine"
+      piss:
+        text: "Piss off and &lDIE!!!!!\n"
+        event: "enterCombatVault"
+      
 
   
