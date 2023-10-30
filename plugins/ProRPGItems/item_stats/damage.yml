@@ -17,7 +17,7 @@ _vanilla_generic:
 physical:
   priority: 1000
   name: Physical Damage
-  format: '&6⚔ Damage: &f%value%'
+  format: '&4⚔ Damage: &f%value%'
   attached-damage-causes: []
   on-hit-actions: {}
   biome-damage-modifier:

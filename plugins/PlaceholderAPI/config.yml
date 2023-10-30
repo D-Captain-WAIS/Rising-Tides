@@ -43,3 +43,9 @@ expansions:
   checkitem:
     give_enabled: false
     remove_enabled: false
+  javascript:
+    enable_parse_command: false
+    debug: false
+    github_script_downloads: false
+    argument_split: ','
+    use_quick_js: true

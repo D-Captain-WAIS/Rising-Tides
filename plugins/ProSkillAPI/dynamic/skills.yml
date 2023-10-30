@@ -871,7 +871,7 @@ Two Handed Swing:
     level-scale: '0'
     cost-base: '0'
     cost-scale: '0'
-    cooldown-base: '0'
+    cooldown-base: '5'
     cooldown-scale: '0'
     mana-base: '0'
     mana-scale: '0'
@@ -894,7 +894,7 @@ Two Handed Swing:
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
-  - '&7Cooldown: {attr:cooldown}'
+  - '&7Default Cooldown:  {attr:cooldown}'
   desc:  []
   components: 
     Cast: 
@@ -913,6 +913,55 @@ Two Handed Swing:
           preview: 
             enabled: 'false'
           children:  {}
+        Message-c: 
+          type: 'mechanic'
+          data: 
+            icon-key: ''
+            counts: 'false'
+            message: 'Cooldown Reduction: {cdr}'
+          preview: 
+            enabled: 'false'
+          children:  {}
+        Cooldown-d: 
+          type: 'mechanic'
+          data: 
+            icon-key: ''
+            counts: 'true'
+            skill: 'Two Handed Swing'
+            type: 'Seconds'
+            value-base: 'cdr'
+            value-scale: '0'
+          preview: 
+            enabled: 'false'
+          children:  {}
+    Initialize: 
+      type: 'trigger'
+      data:  {}
+      preview: 
+        enabled: 'false'
+      children: 
+        Passive-f: 
+          type: 'mechanic'
+          data: 
+            icon-key: ''
+            counts: 'false'
+            seconds-base: '1'
+            seconds-scale: '0'
+          preview: 
+            enabled: 'false'
+          children: 
+            Value Placeholder-g: 
+              type: 'mechanic'
+              data: 
+                icon-key: ''
+                counts: 'false'
+                key: 'cdr'
+                type: 'Number'
+                placeholder: '%javascript_weapon_cdr%'
+                save: 'true'
+              preview: 
+                enabled: 'false'
+              children:  {}
 Double Punch: 
   name: 'Double Punch'
   type: 'Active'

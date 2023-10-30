@@ -3,9 +3,13 @@ lore:
 - '%item_type%'
 - '&7Tier: %TIER_NAME%'
 - '&7Level: &f%ITEM_LEVEL%'
-- '%USER_LEVEL%'
+- ''
+- '§f▶ &7&oA standard cutlass issued'
+- '§f▶ &7&oby the World Government'
 - ''
 - '%GENERATOR_DAMAGE%'
+- '&9⌚ Cooldown Reduction: &f1.5'
+- '&6↔ Range Modifier: &f1'
 - '%GENERATOR_SKILLS%'
 color: -1,-1,-1
 unbreakable: true
@@ -44,14 +48,13 @@ generator:
     minimum: 1
     maximum: 1
     lore-format:
-    - '%DAMAGE_PHYSICAL%'
     - '%DAMAGE_MAGICAL%'
     - '%DAMAGE_POISON%'
     - '%DAMAGE_FIRE%'
     - '%DAMAGE_WATER%'
     - '%DAMAGE_WIND%'
-    - ''
     - '%DAMAGE__VANILLA_GENERIC%'
+    - '%DAMAGE_PHYSICAL%'
     list:
       physical:
         chance: 100.0

@@ -1,15 +1,27 @@
-'Two Handed Swing':
+Two Handed Swing: 
   name: 'Two Handed Swing'
   type: 'Active'
-  max-level: '1'
+  max-level: 1
   skill-req-lvl: 0
-  needs-permission: false
-  cooldown-message: true
+  needs-permission: 'false'
+  cooldown-message: 'true'
+  attributes: 
+    level-base: '1'
+    level-scale: '0'
+    cost-base: '0'
+    cost-scale: '0'
+    cooldown-base: '5'
+    cooldown-scale: '0'
+    mana-base: '0'
+    mana-scale: '0'
+    points-spent-req-base: '0'
+    points-spent-req-scale: '0'
+    incompatible: '[]'
   msg: '&6{player} &2has cast &6{skill}'
-  combo: ''
-  icon: 'Pumpkin seeds'
-  icon-data: '10001'
-  icon-lore:
+  icon: 'PUMPKIN_SEEDS'
+  icon-data: 10001
+  icon-durability: 0
+  icon-lore: 
   - '&c&lTwo Handed Swing'
   - ''
   - '&6&oStat scale:'
@@ -21,29 +33,71 @@
   - ''
   - '&7Skill Level: {level} / {max}'
   - '&7Stamina: {attr:mana}'
-  - '&7Cooldown: {attr:cooldown}'
-  'attributes':
-    level-base: 1
-    level-scale: 0
-    cost-base: 0
-    cost-scale: 0
-    cooldown-base: 5
-    cooldown-scale: 0
-    mana-base: 0
-    mana-scale: 0
-    points-spent-req-base: 0
-    points-spent-req-scale: 0
-    incompatible: []
-  components:
-    'Cast-a':
+  - '&7Default Cooldown:  {attr:cooldown}'
+  desc:  []
+  components: 
+    Cast: 
       type: 'trigger'
-      comment: ''
-      children:
-        'Command-b':
+      data:  {}
+      preview: 
+        enabled: 'false'
+      children: 
+        Command-b: 
           type: 'mechanic'
-          comment: ''
-          'data':
+          data: 
             icon-key: ''
-            counts: true
+            counts: 'true'
             command: 'mm test cast -s TwoHandedSwingSignal'
             type: 'OP'
+          preview: 
+            enabled: 'false'
+          children:  {}
+        Message-c: 
+          type: 'mechanic'
+          data: 
+            icon-key: ''
+            counts: 'false'
+            message: 'Cooldown Reduction: {cdr}'
+          preview: 
+            enabled: 'false'
+          children:  {}
+        Cooldown-d: 
+          type: 'mechanic'
+          data: 
+            icon-key: ''
+            counts: 'true'
+            skill: 'Two Handed Swing'
+            type: 'Seconds'
+            value-base: 'cdr'
+            value-scale: '0'
+          preview: 
+            enabled: 'false'
+          children:  {}
+    Initialize: 
+      type: 'trigger'
+      data:  {}
+      preview: 
+        enabled: 'false'
+      children: 
+        Passive-f: 
+          type: 'mechanic'
+          data: 
+            icon-key: ''
+            counts: 'false'
+            seconds-base: '1'
+            seconds-scale: '0'
+          preview: 
+            enabled: 'false'
+          children: 
+            Value Placeholder-g: 
+              type: 'mechanic'
+              data: 
+                icon-key: ''
+                counts: 'false'
+                key: 'cdr'
+                type: 'Number'
+                placeholder: '%javascript_weapon_cdr%'
+                save: 'true'
+              preview: 
+                enabled: 'false'
+              children:  {}
