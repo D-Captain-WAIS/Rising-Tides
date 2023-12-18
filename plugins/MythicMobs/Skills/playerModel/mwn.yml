@@ -17,7 +17,7 @@
     Skills:
     - state{mid=player_model;s=mwn_twohandedswing_sduelist;lerpout=3;lerpin=3} @self
     - delay 5
-    - summon{type=rightHorizontalSlash;amount=1} @selflocation
+    - summon{type=rightHorizontalSlash;amount=1} @Forward{f=1.2;yOffset=0.25;rot=<caster.l.pitch>}
   TwoHandedSwingBuster:
     TargetConditions:
     - (varEquals{var=caster.equippedweapon;value="Buster (Edged)"} true || varEquals{var=caster.equippedweapon;value="Buster (Blunt)"} true) true orElseCast TwoHandedSwingPolearm

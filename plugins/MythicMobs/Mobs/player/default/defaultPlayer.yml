@@ -17,21 +17,32 @@ defaultPlayer:
   - model{m=player_model;drive=true;usestatemachine=true} @self ~onSpawn
   - skill{s=playerModelSetup} @self ~onSpawn
   - skill{s=setSprintPlayer} @Owner ~onTimer:1
-  - message{m=<caster.var.equippedweapon>} @owner ~onTimer:100
+#combo system
+  - skills{s=hitstun} @self ~onDamage
+#timers    
+  - skill{s=hitstunTimer} @self ~onTimer:1
+  - skill{s=m1Timer} @self ~onTimer:1
+  - skill{s=hitstunTimerReset} @self ~onTimer:1
+  - skill{s=m1TimerReset} @self ~onTimer:1
+#MWN  
+  - skill{s=civCombatantM1_1} @self ~onSignal:civCombatantM1
   - skill{s=TwoHandedSwingCheckItem} @self ~onSignal:mwnTwoHandedSwing
-  # - state{mid=player_model;s=mwn_twohandedswing_sduelist;lerpout=3;lerpin=3} @self ~onTimer:120
+#Cosmetic settings armor  
   - ChangePart{modelid=player_model;partid=cape;newmodelid=marinecoat;newpartid=cape} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=collar;newmodelid=marinecoat;newpartid=collar} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=body_armor;newmodelid=marineuniform;newpartid=Body} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=armor_right;newmodelid=marineuniform;newpartid=RightArm} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=armor_left;newmodelid=marineuniform;newpartid=LeftArm} @self ~onSpawn
-  - ChangePart{modelid=player_model;partid=race_body;newmodelid=shark_back_fin;newpartid=shark_backfin} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=lleg_armor;newmodelid=marinefatigues;newpartid=LeftLeg} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=rleg_armor;newmodelid=marinefatigues;newpartid=RightLeg} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=lboot;newmodelid=marine_boots;newpartid=LeftLeg} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=rboot;newmodelid=marine_boots;newpartid=RightLeg} @self ~onSpawn
   - ChangePart{modelid=player_model;partid=headwear;newmodelid=marine_cap;newpartid=hat} @self ~onSpawn
+#hand item settings  
   - setitemmodel{mid=player_model;bone=right_hand;i=standard_sword} @self ~onSpawn
+#race cosmetics  
+  - ChangePart{modelid=player_model;partid=race_body;newmodelid=shark_back_fin;newpartid=shark_backfin} @self ~onSpawn
   - setitemmodel{mid=player_model;bone=race_right;i=shark_hand_fin} @self ~onSpawn
   - setitemmodel{mid=player_model;bone=race_left;i=shark_hand_fin} @self ~onSpawn
+  
   

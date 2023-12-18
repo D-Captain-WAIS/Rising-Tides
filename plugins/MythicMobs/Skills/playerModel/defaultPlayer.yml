@@ -12,6 +12,9 @@ playerModelSetup:
   # - setmodeltag{mid=player_model;p=guild;t="&o&9<S.W.O.R.D>"} @Self
   #variable setup
   - setvariable{var=motionTypeCheck;scope=caster;value=walking;t=STRING} @self
+  - setvariable{var=caster.hitstunTimer;type=FLOAT;value=0} @self
+  - setvariable{var=caster.m1Timer;type=FLOAT;value=0} @self
+  - setvariable{var=caster.m1Count;type=INTEGER;value=0} @self
 setSprintPlayer:
   Conditions:
   - (velocity{v=>0.15} true && varEquals{var=caster.motionTypeCheck;value="walking"}) orElseCast setWalkPlayer
@@ -24,4 +27,6 @@ setWalkPlayer:
   Skills:
   - defaultstate{mid=player_model;type=walk;state=walk} @self
   - setvariable{var=motionTypeCheck;scope=caster;value=walking;t=STRING} @self
-
+testDamage:
+  Skills:
+  - damage{a=400} @LivinginCone{a=45;r=3}

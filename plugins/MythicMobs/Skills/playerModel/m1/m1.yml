@@ -1,0 +1,55 @@
+m1Timer:
+  Conditions:
+  - varEquals{var=caster.m1Timer;value=>0} true
+  Skills:
+    - variablesubtract{var=caster.m1Timer;amount=0.05} @self
+m1TimerReset:
+  Conditions:
+  - varEquals{var=caster.m1Timer;value=<0} true
+  Skills:
+    - setvariable{var=caster.m1Timer;value=0} @self
+civCombatantM1:
+  Skills:
+  - signal{s=civCombatantM1} @mountedmodel
+civCombatantM1_1:
+  Conditions:
+  - varEquals{var=caster.m1Timer;value=>0} true && varEquals{var=caster.m1Count;value=0} orElseCast civCombatantM1_2
+  Skills:
+  - state{mid=player_model;s=civ_combatant_m1_1}
+  - variableadd{var=caster.m1Count;amount=1}
+  - delay 6
+  - damage{a=%javascript_weapon_dmg%;element=physical;tags=hitstun,light} @LivingInCone{a=15;r=3 + 15 * %javascript_weapon_rm%}
+civCombatantM1_2:
+  Conditions:
+  - varEquals{var=caster.m1Timer;value=>0} true && varEquals{var=caster.m1Count;value=1} orElseCast civCombatantM1_3
+  Skills:
+  - state{mid=player_model;s=civ_combatant_m1_2}
+  - variableadd{var=caster.m1Count;amount=1}
+  - delay 6
+  - damage{a=%javascript_m1_dmg%;element=physical;tags=hitstun,light} @LivingInCone{a=15;r=3 + 15 * %javascript_weapon_rm%}
+civCombatantM1_3:
+  Conditions:
+  - varEquals{var=caster.m1Timer;value=>0} true && varEquals{var=caster.m1Count;value=2} orElseCast civCombatantM1_4
+  Skills:
+  - state{mid=player_model;s=civ_combatant_m1_3}
+  - variableadd{var=caster.m1Count;amount=1}
+  - delay 6
+  - damage{a=%javascript_m1_dmg%;element=physical;tags=hitstun,light} @LivingInCone{a=15;r=3 + 15 * %javascript_weapon_rm%}
+civCombatantM1_4:
+  Conditions:
+  - varEquals{var=caster.m1Timer;value=>0} true && varEquals{var=caster.m1Count;value=3} orElseCast civCombatantM1_5
+  Skills:
+  - state{mid=player_model;s=civ_combatant_m1_3}
+  - variableadd{var=caster.m1Count;amount=1}
+  - delay 6
+  - damage{a=%javascript_m1_dmg%;element=physical;tags=hitstun,light} @LivingInCone{a=15;r=3 + 15 * %javascript_weapon_rm%}
+civCombatantM1_5:
+  Conditions:
+  - varEquals{var=caster.m1Timer;value=>0} true && varEquals{var=caster.m1Count;value=4} 
+  Skills:
+  - state{mid=player_model;s=civ_combatant_m1_3}
+  - delay 8
+  - damage{a=%javascript_m1_dmg%;element=physical;tags=hitstun,light} @LivingInCone{a=15;r=3 + 15 * %javascript_weapon_rm%}
+  - delay 12
+  - setvariable{var=caster.m1Count;value=0}
+  - setvariable{var=caster.m1Timer;value=0}

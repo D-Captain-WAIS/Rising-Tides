@@ -3,9 +3,13 @@ lore:
 - '%item_type%'
 - '&7Tier: %TIER_NAME%'
 - '&7Level: &f%ITEM_LEVEL%'
-- '%USER_LEVEL%'
+- ''
+- '§f▶ &7&oA makeshift glaive'
+- '§f▶ &7&oused by bandits.'
 - ''
 - '%GENERATOR_DAMAGE%'
+- '&9⌚ Cooldown Reduction: &f0'
+- '&6↔ Range Modifier: &f1.5'
 - '%GENERATOR_SKILLS%'
 color: -1,-1,-1
 unbreakable: true
@@ -50,7 +54,6 @@ generator:
     - '%DAMAGE_FIRE%'
     - '%DAMAGE_WATER%'
     - '%DAMAGE_WIND%'
-    - ''
     - '%DAMAGE__VANILLA_GENERIC%'
     list:
       physical:

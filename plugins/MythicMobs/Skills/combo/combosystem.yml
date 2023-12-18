@@ -1,0 +1,34 @@
+hitstunTimer:
+  Conditions:
+  - varEquals{var=caster.hitstunTimer;value=>0} true
+  Skills:
+    - variablesubtract{var=caster.hitstunTimer;amount=0.05} @self
+hitstunTimerReset:
+  Conditions:
+  - varEquals{var=caster.hitstunTimer;value=<0} true
+  Skills:
+  - setvariable{var=caster.hitstunTimer;amount=0} @self
+hitstun:
+  Conditions:
+  - damagetag{tag=hitstun}
+  Skills:
+  - randomskill{skills=hit1,hit2,hit3,hit4,hit5,hit6}
+  - command{c="class mobcast <mob.uuid> hitstun"} @Owner
+hit1:
+  Skills:
+  - state{mid=playermodel;s=hit1} @self
+hit2:
+  Skills:
+  - state{mid=playermodel;s=hit2} @self
+hit3:
+  Skills:
+  - state{mid=playermodel;s=hit3} @self
+hit4:
+  Skills:
+  - state{mid=playermodel;s=hit4} @self
+hit5:
+  Skills:
+  - state{mid=playermodel;s=hit5} @self
+hit6:
+  Skills:
+  - state{mid=playermodel;s=hit6} @self
